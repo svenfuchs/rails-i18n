@@ -1,3 +1,6 @@
+# Norwegian, bokmål (book language) translations for Ruby on Rails
+# by Johann Manaf Tepstad (jsha@adopt-a-camel.com)
+
 {
   :"no-BM" => {
     :support => {
@@ -7,26 +10,23 @@
     },
     :date => {
       :formats => {
-        :default => "%Y-%m-%d",
-        :short => "%b %d",
-        :long => "%B %d, %Y",
-        :only_day => "%e"
+        :default => "%d.%m.%Y",
+        :short => "%e. %b",
+        :long => "%e. %B %Y",
       },
-      :day_names => Date::DAYNAMES,
-      :abbr_day_names => Date::ABBR_DAYNAMES,
-      :month_names => Date::MONTHNAMES,
-      :abbr_month_names => Date::ABBR_MONTHNAMES,
-      :order => [:year, :month, :day]
+      :day_names => %w(mandag tirsdag onsdag torsdag fredag lørdag søndag),
+      :abbr_day_names => %w(man tir ons tor fre lør søn),
+      :month_names => %w(januar februar mars april mai juni juli august september oktober november desember),
+      :abbr_month_names => %w(jan feb mar apr mai jun jul aug sep okt nov des),
+      :order => [:day, :month, :year]
     },
     :time => {
       :formats => {
-        :default => "%a, %d %b %Y %H:%M:%S %z",
-        :short => "%d %b %H:%M",
-        :long => "%B %d, %Y %H:%M",
-        :only_second  => "%S"
-      },
-      :am => "am",
-      :pm => "pm"
+        :default => "%A, %e. %B %Y, %H:%M",
+        :time => "%H:%M",
+        :short => "%e. %B, %H:%M",
+        :long => "%A, %e. %B %Y, %H:%M",
+      }
     },
     :datetime => {
       :distance_in_words => {
@@ -35,11 +35,11 @@
         :x_seconds => ["1 sekund", "{{count}} sekunder"],
         :less_than_x_minutes => ["mindre enn 1 minutt", "mindre enn {{count}} minutter"],
         :x_minutes => ["1 minutt", "{{count}} minutter"],
-        :about_x_hours => ["ca. 1 time", "ca. {{count}} timer"],
+        :about_x_hours => ["omtrent 1 time", "omtrent {{count}} timer"],
         :x_days => ["1 dag", "{{count}} dager"],
-        :about_x_months => ["ca. 1 måned", "ca. {{count}} måneder"],
+        :about_x_months => ["omtrent 1 måned", "omtrent {{count}} måneder"],
         :x_months => ["1 måned", "{{count}} måneder"],
-        :about_x_years => ["ca. 1 år", "ca. {{count}} år"],
+        :about_x_years => ["omtrent 1 år", "omtrent {{count}} år"],
         :over_x_years => ["over 1 år", "over {{count}} år"]
       }
     },
@@ -51,25 +51,9 @@
       },
       :currency => {
         :format => {
-          :unit => "$",
+          :unit => "kr",
           :precision => 2,
-          :format => "%u%n"
-        }
-      },
-      :human => {
-        :format => {
-          :precision => 1,
-          :delimiter => ""
-        }
-      },
-      :percentage => {
-        :format => {
-          :delimiter => ""
-        }
-      },
-      :precision => {
-        :format => {
-          :delimiter => ""
+          :format => "%u %n"
         }
       }
     },
