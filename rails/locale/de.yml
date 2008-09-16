@@ -20,8 +20,8 @@
       long: "%A, %e. %B %Y, %H:%M Uhr"
       only_second: "%S"
 
-    am: ""
-    pm: ""
+    am: "vormittags"
+    pm: "nachmittags"
       
   datetime:
     distance_in_words:
@@ -71,7 +71,7 @@
         
   active_record:
     error:
-      header_message: ["Konnte das {{object_name}} Objekt nicht speichern: 1 Fehler.", "Konnte das {{object_name}} Objekt nicht speichern: {{count}} Fehler."]
+      header_message: ["Konnte dieses {{object_name}} Objekt nicht speichern: 1 Fehler.", "Konnte dieses {{object_name}} Objekt nicht speichern: {{count}} Fehler."]
       message: "Bitte überprüfen Sie die folgenden Felder:"
     error_messages:
       inclusion: "ist kein gültiger Wert"
