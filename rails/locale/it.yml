@@ -1,4 +1,4 @@
-"it":
+it:
   date:
     formats:
       default: "%d-%m-%Y"

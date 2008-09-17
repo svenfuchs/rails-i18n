@@ -1,4 +1,7 @@
-"de":
+# German translations for Ruby on Rails 
+# by Clemens Kofler (clemens@railway.at)
+
+de:
   date:
     formats:
       default: "%d.%m.%Y"

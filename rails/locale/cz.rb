@@ -1,4 +1,5 @@
-# Czech translations for Ruby on Rails by Karel Minařík (karmi@karmi.cz)
+# Czech translations for Ruby on Rails 
+# by Karel Minařík (karmi@karmi.cz)
 
 { :'cz' => {
 
