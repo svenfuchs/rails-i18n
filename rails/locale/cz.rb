@@ -1,6 +1,6 @@
 # Czech translations for Ruby on Rails by Karel Minařík (karmi@karmi.cz)
 
-{ :'cz-CZ' => {
+{ :'cz' => {
 
     # ActiveSupport
     :support => {

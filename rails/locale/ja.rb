@@ -1,5 +1,5 @@
 { 
-  :'ja-JP' => {
+  :'ja' => {
     # date and time formats
     :date => {
       :formats => {

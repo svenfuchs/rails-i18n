@@ -1,5 +1,5 @@
 { 
-  :'th-TH' => {
+  :'th' => {
     :date => {
       :formats => {
         :default      => lambda { |date| "%d-%m-#{date.year+543}" },

@@ -1,5 +1,5 @@
 {
-  :'nl-NL' => {
+  :'nl' => {
     :date => {
       :formats => {
         :default      => "%d/%m/%Y",
