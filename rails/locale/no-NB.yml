@@ -1,4 +1,4 @@
-# Norwegian, norsk bokmål, by irb.no
+# Norwegian, norsk bokmÃ¥l, by irb.no
 "no-NB":
   support:
     array:
@@ -8,8 +8,8 @@
       default: "%d.%m.%Y"
       short: "%e. %b"
       long: "%e. %B %Y"
-    day_names: [søndag, mandag, tirsdag, onsdag, torsdag, fredag, lørdag]
-    abbr_day_names: [søn, man, tir, ons, tor, fre, lør]
+    day_names: [sÃ¸ndag, mandag, tirsdag, onsdag, torsdag, fredag, lÃ¸rdag]
+    abbr_day_names: [sÃ¸n, man, tir, ons, tor, fre, lÃ¸r]
     month_names: [~, januar, februar, mars, april, mai, juni, juli, august, september, oktober, november, desember]
     abbr_month_names: [~, jan, feb, mar, apr, mai, jun, jul, aug, sep, okt, nov, des]
     order: [:day, :month, :year]
@@ -41,17 +41,17 @@
         one: "1 dag"
         other: "{{count}} dager"
       about_x_months:
-        one: "rundt 1 måned"
-        other: "rundt {{count}} måneder"
+        one: "rundt 1 mÃ¥ned"
+        other: "rundt {{count}} mÃ¥neder"
       x_months:
-        one: "1 måned"
-        other: "{{count}} måneder"
+        one: "1 mÃ¥ned"
+        other: "{{count}} mÃ¥neder"
       about_x_years:
-        one: "rundt 1 år"
-        other: "rundt {{count}} år"
+        one: "rundt 1 Ã¥r"
+        other: "rundt {{count}} Ã¥r"
       over_x_years:
-        one: "over 1 år"
-        other: "over {{count}} år"
+        one: "over 1 Ã¥r"
+        other: "over {{count}} Ã¥r"
   number:
     format:
       precision: 2
@@ -68,27 +68,27 @@
   active_record:
     errors:
       template:
-        header: "kunne ikke lagre {{model}} på grunn av {{count}} feil."
-        body: "det oppstod problemer i følgende felt:"
+        header: "kunne ikke lagre {{model}} pÃ¥ grunn av {{count}} feil."
+        body: "det oppstod problemer i fÃ¸lgende felt:"
       messages:
         inclusion: "er ikke inkludert i listen"
         exclusion: "er reservert"
         invalid: "er ugyldig"
         confirmation: "passer ikke bekreftelsen"
-        accepted: "må være akseptert"
-        empty: "kan ikke være tom"
-        blank: "kan ikke være blank"
+        accepted: "mÃ¥ vÃ¦re akseptert"
+        empty: "kan ikke vÃ¦re tom"
+        blank: "kan ikke vÃ¦re blank"
         too_long: "er for lang (maksimum {{count}} tegn)"
         too_short: "er for kort (minimum {{count}} tegn)"
         wrong_length: "er av feil lengde (maksimum {{count}} tegn)"
         taken: "er allerede i bruk"
         not_a_number: "er ikke et tall"
-        greater_than: "må være større enn {{count}}"
-        greater_than_or_equal_to: "må være større enn eller lik {{count}}"
-        equal_to: "må være lik {{count}}"
-        less_than: "må være mindre enn {{count}}"
-        less_than_or_equal_to: "må være mindre enn eller lik {{count}}"
-        odd: "må være oddetall"
-        even: "må være partall"
+        greater_than: "mÃ¥ vÃ¦re stÃ¸rre enn {{count}}"
+        greater_than_or_equal_to: "mÃ¥ vÃ¦re stÃ¸rre enn eller lik {{count}}"
+        equal_to: "mÃ¥ vÃ¦re lik {{count}}"
+        less_than: "mÃ¥ vÃ¦re mindre enn {{count}}"
+        less_than_or_equal_to: "mÃ¥ vÃ¦re mindre enn eller lik {{count}}"
+        odd: "mÃ¥ vÃ¦re oddetall"
+        even: "mÃ¥ vÃ¦re partall"
       # models:
       # attributes:

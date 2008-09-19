@@ -1,7 +1,7 @@
 # French translations for Ruby on Rails 
 # by Christian Lescuyer (christian@flyingcoders.com)
 
-"fr":
+fr:
   date:
     formats:
       default: "%d/%m/%Y"
