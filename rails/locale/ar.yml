@@ -1,0 +1,103 @@
+# Arabic translations for Ruby on Rails 
+# by Rida Al Barazi (me@rida.me)
+
+ar:
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%e %b"
+      long: "%B %e, %Y"
+      only_day: "%e"
+
+    day_names: [الأحد, الإثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
+    abbr_day_names: [الأحد, الإثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
+    month_names: [~, يناير, فبراير, مارس, ابريل, مايو, يونيو, يوليو, اغسطس, سبتمبر, اكتوبر, نوفمبر, ديسمبر]
+    abbr_month_names: [~, يناير, فبراير, مارس, ابريل, مايو, يونيو, يوليو, اغسطس, سبتمبر, اكتوبر, نوفمبر, ديسمبر]
+    order: [ :day, :month, :year ]
+  
+  time:
+    formats:
+      default: "%a %b %d %H:%M:%S %Z %Y"
+      time: "%H:%M"
+      short: "%d %b %H:%M"
+      long: "%B %d, %Y %H:%M"
+      only_second: "%S"
+      
+      datetime:
+        formats:
+          default: "%Y-%m-%dT%H:%M:%S%Z"
+          
+      am: 'صباحا'
+      pm: 'مساءا'
+      
+  datetime:
+    distance_in_words:
+      half_a_minute: 'نصق دقيقة'
+      less_than_x_seconds:
+        zero: 'أقل من ثانية'
+        one: 'ثانية واحدة'
+        other: '{{count}} ثوان'
+      x_seconds:
+        one: 'ثانية واحدة'
+        other: '{{count}} ثوان'
+      less_than_x_minutes:
+        zero: 'أقل من دقيقة'
+        one: 'دقيقة واحدة'
+        other: '{{count}} دقائق'
+      x_minutes:
+        one: 'دقيقة واحدة'
+        other: '{{count}} دقائق'
+      about_x_hours:
+        one: 'حوالي ساعة واحدة'
+        other: '{{count}} ساعات'
+      x_days:
+        one: 'يوم واحد'
+        other: '{{count}} أيام'
+      about_x_months:
+        one: 'حوالي شهر واحد'
+        other: '{{count}} أشهر'
+      x_months:
+        one: 'شهر واحد'
+        other: '{{count}} أشهر'
+      about_x_years:
+        one: 'حوالي سنة'
+        other: '{{count}} سنوات'
+      over_x_years:
+        one: 'أكثر من سنة'
+        other: '{{count}} سنوات'
+      
+  number:
+    format:
+      precision: 3
+      separator: '.'
+      delimiter: ','
+    currency:
+      format:
+        unit: '$'
+        precision: 2
+        format: '%u %n'
+        
+  active_record:
+    error:
+      header_message: ["ليس بالامكان حفظ {{object_name}}: خطأ واحد", "ليس بالامكان حفظ {{object_name}}: {{count}} أخطاء."]
+      message: "يرجى التحقق من الحقول التالية:"
+    error_messages:
+      inclusion: "ليس خيارا مقبولا"
+      exclusion: "محجوز"
+      invalid: "غير معرف أو محدد"
+      confirmation: "لا تتوافق مع التأكيد"
+      accepted: "يجب أن تقبل"
+      empty: "فارغ, نرجو ملء الحقل"
+      blank: "فارغ, نرجو ملء الحقل"
+      too_long: "أطول من اللازم (الحد الأقصى هو {{count}})"
+      too_short: "أقصر من اللازم (الحد الأدنى هو {{count}})"
+      wrong_length: "بطول غير مناسب (يجب أن يكون {{count}})"
+      taken: "غير متوفر (مستخد)"
+      not_a_number: "ليس رقما"
+      greater_than: "يجب أن يكون أكبر من {{count}}"
+      greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي {{count}}"
+      equal_to: "يجب أن يساوي {{count}}"
+      less_than: "يجب أن يكون أصغر من {{count}}"
+      less_than_or_equal_to: "يجب أن يكون أصغرأو يساوي {{count}}"
+      odd: "يجب أن يكون فردي",
+      even: "يجب أن يكون زوجي"
