@@ -73,7 +73,6 @@ ar:
       delimiter: ','
     currency:
       format:
-        unit: '$'
         precision: 2
         format: '%u %n'
         
