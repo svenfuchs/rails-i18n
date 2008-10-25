@@ -1,0 +1,110 @@
+# Danish translation file for standard Ruby on Rails internationalization
+# by Lars Hoeg (http://www.lenio.dk/)
+
+da:
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%e. %b %Y"
+      long: "%e. %B %Y"
+      only_day: "%e"
+
+    day_names: [søndag, mandag, tirsdag, onsdag, torsdag, fredag, lørdag]
+    abbr_day_names: [sø, ma, ti, on, to, fr, lø]
+    month_names: [~, januar, februar, marts, april, maj, juni, juli, august, september, oktober, november, december]
+    abbr_month_names: [~, jan, feb, mar, apr, maj, jun, jul, aug, sep, okt, nov, dec]
+    order: [ :day, :month, :year ]
+
+  time:
+    formats:
+      default: "%e. %B %Y, %H:%M"
+      short: "%e. %b %Y, %H:%M"
+      long: "%A, %e. %B %Y, %H:%M"
+      time: "%H:%M"
+      only_second: "%S"
+
+      datetime:
+        formats:
+          default: "%d-%m-%YT%H:%M:%S%Z"
+
+    am: ""
+    pm: ""
+
+  support:
+    array:
+      sentence_connector: "og"
+      skip_last_comma: true
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "et halvt minut"
+      less_than_x_seconds:
+        one:  "mindre end et sekund"
+        many: "mindre end {{count}} sekunder"
+      x_seconds:
+        one:  "et sekund"
+        many: "{{count}} sekunder"
+      less_than_x_minutes:
+        one:  "mindre end et minut"
+        many: "mindre end {{count}} minutter"
+      x_minutes:
+        one:  "et minut"
+        many: "{{count}} minutter"
+      about_x_hours:
+        one:  "cirka en time"
+        many: "cirka {{count}} timer"
+      x_days:
+        one:  "en dag"
+        many: "{{count}} dage"
+      about_x_months:
+        one:  "cirka en måned"
+        many: "cirka {{count}} måneder"
+      x_months:
+        one:  "en måned"
+        many: "{{count}} måneder"
+      about_x_years:
+        one:  "cirka et år"
+        many: "cirka {{count}} år"
+      over_x_years:
+        one:  "mere end et år"
+        many: "mere end {{count}} år"
+
+  number:
+    format:
+      separator: ","
+      delimiter: "."
+      precision: 3
+    currency:
+      format:
+        format: "%u %n"
+        unit: "DKK"
+        precision: 2
+
+  activerecord:
+    errors:
+      messages:
+        inclusion: "er ikke i listen"
+        exclusion: "er reserveret"
+        invalid: "er ikke gyldig"
+        confirmation: "stemmer ikke overens"
+        accepted: "skal accepteres"
+        empty: "må ikke udelades"
+        blank: "skal udfyldes"
+        too_long: "er for lang (maksimum {{count}} tegn)"
+        too_short: "er for kort (minimum {{count}} tegn)"
+        wrong_length: "har forkert længde (skulle være {{count}} tegn)"
+        taken: "er allerede brugt"
+        not_a_number: "er ikke et tal"
+        greater_than: "skal være større end {{count}}"
+        greater_than_or_equal_to: "skal være større end eller lig med {{count}}"
+        equal_to: "skal være lig med {{count}}"
+        less_than: "skal være mindre end {{count}}"
+        less_than_or_equal_to: "skal være mindre end eller lig med {{count}}"
+        odd: "skal være ulige"
+        even: "skal være lige"
+
+      template:
+        header:
+          one:   "En fejl forhindrede {{model}} i at blive gemt"
+          other:  "{{count}} fejl forhindrede denne {{model}} i at blive gemt"
+        body: "Der var problemer med følgende felter:"
