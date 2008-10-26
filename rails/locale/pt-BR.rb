@@ -36,10 +36,10 @@
         :x_minutes           => ['1 minuto', '{{count}} minutos'],
         :about_x_hours       => ['aproximadamente 1 hora', 'aproximadamente {{count}} horas'],
         :x_days              => ['1 dia', '{{count}} dias'],
-        :about_x_months      => ['aproximadamente 1 mês', '{{count}} meses'],
+        :about_x_months      => ['aproximadamente 1 mês', 'aproximadamente {{count}} meses'],
         :x_months            => ['1 mês', '{{count}} meses'],
-        :about_x_years       => ['aproximadamente 1 ano', '{{count}} anos'],
-        :over_x_years        => ['mais de 1 ano', '{{count}} anos']
+        :about_x_years       => ['aproximadamente 1 ano', 'aproximadamente {{count}} anos'],
+        :over_x_years        => ['mais de 1 ano', 'mais de {{count}} anos']
       }
     },
 
