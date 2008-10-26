@@ -35,41 +35,41 @@
       half_a_minute: 'pola minute'
       less_than_x_seconds:
         zero: 'manje od 1 sekunde'
-        one: '1 sekund'
-        few: '{{count}} sekunde'
-        other: '{{count}} sekundi'
+        one: 'manje od 1 sekund'
+        few: 'manje od {{count}} sekunde'
+        other: 'manje od {{count}} sekundi'
       x_seconds:
         one: '1 sekunda'
         few: '{{count}} sekunde'
         other: '{{count}} sekundi'
       less_than_x_minutes:
         zero: 'manje od minuta'
-        one: '1 minut'
-        other: '{{count}} minuta'
+        one: 'manje od 1 minut'
+        other: 'manje od {{count}} minuta'
       x_minutes:
         one: '1 minut'
         other: '{{count}} minuta'
       about_x_hours:
         one: 'oko 1 sat'
-        few: '{{count}} sata'
-        other: '{{count}} sati'
+        few: 'oko {{count}} sata'
+        other: 'oko {{count}} sati'
       x_days:
         one: '1 dan'
         other: '{{count}} dana'
       about_x_months:
         one: 'oko 1 mesec'
-        few: '{{count}} meseca'
-        other: '{{count}} meseci'
+        few: 'oko {{count}} meseca'
+        other: 'oko {{count}} meseci'
       x_months:
         one: '1 mesec'
         few: '{{count}} meseca'
         other: '{{count}} meseci'
       about_x_years:
         one: 'oko 1 godine'
-        other: '{{count}} godine'
+        other: 'oko {{count}} godine'
       over_x_years:
         one: 'preko 1 godine'
-        other: '{{count}} godine'
+        other: 'preko {{count}} godine'
       
   number:
     format:

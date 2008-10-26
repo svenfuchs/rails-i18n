@@ -32,14 +32,14 @@ fr:
       half_a_minute: "une demi-minute"
       less_than_x_seconds:
         zero:  "moins d'une seconde"
-        one:   "moins d'une  seconde"
+        one:   "moins de 1 seconde"
         other: "moins de {{count}} secondes"
       x_seconds:
         one:   "1 seconde"
         other: "{{count}} secondes"
       less_than_x_minutes:
         zero:  "moins d'une minute"
-        one:   "moins d'une minute"
+        one:   "moins de 1 minute"
         other: "moins de {{count}} minutes"
       x_minutes:
         one:   "1 minute"

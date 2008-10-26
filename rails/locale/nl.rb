@@ -39,9 +39,9 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute       => 'een halve minuut',
-        :less_than_x_seconds => {:zero => 'minder dan een seconde', :one => 'minder dan een seconde', :other => '{{count}} secondes'},
+        :less_than_x_seconds => {:zero => 'minder dan een seconde', :one => 'minder dan 1 seconde', :other => 'minder dan {{count}} secondes'},
         :x_seconds           => {:one => '1 seconde', :other => '{{count}} secondes'},
-        :less_than_x_minutes => {:zero => 'minder dan een minuut', :one => 'minder dan een  minuut', :other => '{{count}} minuten'},
+        :less_than_x_minutes => {:zero => 'minder dan een minuut', :one => 'minder dan 1 minuut', :other => 'minder dan {{count}} minuten'},
         :x_minutes           => {:one => "1 minuut", :other => "{{count}} minuten"},
         :about_x_hours       => {:one => 'ongeveer 1 uur', :other => 'ongeveer {{count}} uren'},
         :x_days              => {:one => '1 dag', :other => '{{count}} dagen'},
