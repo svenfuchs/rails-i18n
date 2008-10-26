@@ -39,16 +39,16 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute       => 'een halve minuut',
-        :less_than_x_seconds => {:zero => 'minder dan een seconde', :one => '1 seconde', :other => '{{count}} secondes'},
+        :less_than_x_seconds => {:zero => 'minder dan een seconde', :one => 'minder dan 1 seconde', :other => 'minder dan {{count}} secondes'},
         :x_seconds           => {:one => '1 seconde', :other => '{{count}} secondes'},
-        :less_than_x_minutes => {:zero => 'minder dan een minuut', :one => '1 minuut', :other => '{{count}} minuten'},
+        :less_than_x_minutes => {:zero => 'minder dan een minuut', :one => 'minder dan 1 minuut', :other => 'minder dan {{count}} minuten'},
         :x_minutes           => {:one => "1 minuut", :other => "{{count}} minuten"},
-        :about_x_hours       => {:one => 'ongeveer 1 uur', :other => '{{count}} uren'},
+        :about_x_hours       => {:one => 'ongeveer 1 uur', :other => 'ongeveer {{count}} uren'},
         :x_days              => {:one => '1 dag', :other => '{{count}} dagen'},
-        :about_x_months      => {:one => 'ongeveer 1 maand', :other => '{{count}} maanden'},
+        :about_x_months      => {:one => 'ongeveer 1 maand', :other => 'ongeveer {{count}} maanden'},
         :x_months            => {:one => '1 maand', :other => '{{count}} maanden'},
-        :about_x_years       => {:one => 'ongeveer 1 jaar', :other => '{{count}} jaren'},
-        :over_x_years        => {:one => 'langer dan 1 jaar', :other => '{{count}} jaren'}
+        :about_x_years       => {:one => 'ongeveer 1 jaar', :other => 'ongeveer {{count}} jaren'},
+        :over_x_years        => {:one => 'langer dan 1 jaar', :other => 'langer dan {{count}} jaren'}
       }
     },
     :number => {

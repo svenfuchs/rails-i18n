@@ -41,16 +41,16 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute       => 'medio minuto',
-        :less_than_x_seconds => {:zero => 'menos de 1 segundo', :one => '1 segundo', :other => '{{count}} segundos'},
+        :less_than_x_seconds => {:zero => 'menos de 1 segundo', :one => 'menos de 1 segundo', :other => 'menos de {{count}} segundos'},
         :x_seconds           => {:one => '1 second', :other => '{{count}} seconds'},
-        :less_than_x_minutes => {:zero => 'menos de 1 minuto', :one => '1 minuto', :other => '{{count}} minutos'},
+        :less_than_x_minutes => {:zero => 'menos de 1 minuto', :one => 'menos de 1 minuto', :other => 'menos de {{count}} minutos'},
         :x_minutes           => {:one => "1 minuto", :other => "{{count}} minutos"},
-        :about_x_hours       => {:one => 'aproximadamente 1 hora', :other => '{{count}} horas'},
+        :about_x_hours       => {:one => 'aproximadamente 1 hora', :other => 'aproximadamente {{count}} horas'},
         :x_days              => {:one => '1 día', :other => '{{count}} días'},
-        :about_x_months      => {:one => 'aproximandamente 1 mes', :other => '{{count}} mes'},
+        :about_x_months      => {:one => 'aproximandamente 1 mes', :other => 'aproximadamente {{count}} mes'},
         :x_months            => {:one => '1 month', :other => '{{count}} mes'},
-        :about_x_years       => {:one => 'aproximadamente 1 año', :other => '{{count}} años'},
-        :over_x_years        => {:one => 'más de 1 año', :other => '{{count}} años'}
+        :about_x_years       => {:one => 'aproximadamente 1 año', :other => 'aproximadamente {{count}} años'},
+        :over_x_years        => {:one => 'más de 1 año', :other => 'más de {{count}} años'}
       }
     },
 
