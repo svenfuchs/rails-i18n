@@ -18,10 +18,9 @@ de:
   time:
     formats:
       default: "%A, %e. %B %Y, %H:%M Uhr"
-      time: "%H:%M"
       short: "%e. %B, %H:%M Uhr"
       long: "%A, %e. %B %Y, %H:%M Uhr"
-      only_second: "%S"
+      time: "%H:%M"
 
     am: "vormittags"
     pm: "nachmittags"
@@ -71,28 +70,51 @@ de:
       format:
         unit: '€'
         format: '%n%u'
+        separator: 
+        delimiter: 
+        precision: 
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+
+  support:
+    array:
+      sentence_connector: "und"
+      skip_last_comma: true
         
-  active_record:
-    error:
-      header_message: ["Konnte dieses {{object_name}} Objekt nicht speichern: 1 Fehler.", "Konnte dieses {{object_name}} Objekt nicht speichern: {{count}} Fehler."]
-      message: "Bitte überprüfen Sie die folgenden Felder:"
-    error_messages:
-      inclusion: "ist kein gültiger Wert"
-      exclusion: "ist nicht verfügbar"
-      invalid: "ist nicht gültig"
-      confirmation: "stimmt nicht mit der Bestätigung überein"
-      accepted: "muss akzeptiert werden"
-      empty: "muss ausgefüllt werden"
-      blank: "muss ausgefüllt werden"
-      too_long: "ist zu lang (nicht mehr als {{count}} Zeichen)"
-      too_short: "ist zu kurz (nicht weniger als {{count}} Zeichen)"
-      wrong_length: "hat die falsche Länge (muss genau {{count}} Zeichen haben)"
-      taken: "ist bereits vergeben"
-      not_a_number: "ist keine Zahl"
-      greater_than: "muss größer als {{count}} sein"
-      greater_than_or_equal_to: "muss größer oder gleich {{count}} sein"
-      equal_to: "muss genau {{count}} sein"
-      less_than: "muss kleiner als {{count}} sein"
-      less_than_or_equal_to: "muss kleiner oder gleich {{count}} sein"
-      odd: "muss ungerade sein"
-      even: "muss gerade sein"
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "Konnte dieses {{object_name}} Objekt nicht speichern: 1 Fehler."
+          other:  "Konnte dieses {{object_name}} Objekt nicht speichern: {{count}} Fehler."
+        body: "Bitte überprüfen Sie die folgenden Felder:"
+
+      messages:
+        inclusion: "ist kein gültiger Wert"
+        exclusion: "ist nicht verfügbar"
+        invalid: "ist nicht gültig"
+        confirmation: "stimmt nicht mit der Bestätigung überein"
+        accepted: "muss akzeptiert werden"
+        empty: "muss ausgefüllt werden"
+        blank: "muss ausgefüllt werden"
+        too_long: "ist zu lang (nicht mehr als {{count}} Zeichen)"
+        too_short: "ist zu kurz (nicht weniger als {{count}} Zeichen)"
+        wrong_length: "hat die falsche Länge (muss genau {{count}} Zeichen haben)"
+        taken: "ist bereits vergeben"
+        not_a_number: "ist keine Zahl"
+        greater_than: "muss größer als {{count}} sein"
+        greater_than_or_equal_to: "muss größer oder gleich {{count}} sein"
+        equal_to: "muss genau {{count}} sein"
+        less_than: "muss kleiner als {{count}} sein"
+        less_than_or_equal_to: "muss kleiner oder gleich {{count}} sein"
+        odd: "muss ungerade sein"
+        even: "muss gerade sein"
+      models:
