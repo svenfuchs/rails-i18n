@@ -35,41 +35,41 @@
       half_a_minute: 'пола минуте'
       less_than_x_seconds:
         zero: 'мање од 1 секунде'
-        one: '1 секунд'
-        few: '{{count}} секунде'
-        other: '{{count}} секунди'
+        one: 'мање од 1 секунд'
+        few: 'мање од {{count}} секунде'
+        other: 'мање од {{count}} секунди'
       x_seconds:
         one: '1 секунда'
         few: '{{count}} секунде'
         other: '{{count}} секунди'
       less_than_x_minutes:
         zero: 'мање од минута'
-        one: '1 минут'
-        other: '{{count}} минута'
+        one: 'мање од 1 минут'
+        other: 'мање од {{count}} минута'
       x_minutes:
         one: '1 минут'
         other: '{{count}} минута'
       about_x_hours:
         one: 'око 1 сат'
-        few: '{{count}} сата'
-        other: '{{count}} сати'
+        few: 'око {{count}} сата'
+        other: 'око {{count}} сати'
       x_days:
         one: '1 дан'
         other: '{{count}} дана'
       about_x_months:
         one: 'око 1 месец'
-        few: '{{count}} месеца'
-        other: '{{count}} месеци'
+        few: 'око {{count}} месеца'
+        other: 'око {{count}} месеци'
       x_months:
         one: '1 месец'
         few: '{{count}} месеца'
         other: '{{count}} месеци'
       about_x_years:
         one: 'око 1 године'
-        other: '{{count}} године'
+        other: 'око {{count}} године'
       over_x_years:
         one: 'преко 1 године'
-        other: '{{count}} године'
+        other: 'преко {{count}} године'
       
   number:
     format:
