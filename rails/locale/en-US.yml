@@ -32,36 +32,36 @@
       half_a_minute: 'half a minute'
       less_than_x_seconds:
         zero: 'less than 1 second'
-        one: '1 second'
-        other: '{{count}} seconds'
+        one: 'less than 1 second'
+        other: 'less than {{count}} seconds'
       x_seconds:
         one: '1 second'
         other: '{{count}} seconds'
       less_than_x_minutes:
         zero: 'less than a minute'
-        one: '1 minute'
-        other: '{{count}} minutes'
+        one: 'less than a minute'
+        other: 'less than {{count}} minutes'
       x_minutes:
         one: '1 minute'
         other: '{{count}} minutes'
       about_x_hours:
         one: 'about 1 hour'
-        other: '{{count}} hours'
+        other: 'about {{count}} hours'
       x_days:
         one: '1 day'
         other: '{{count}} days'
       about_x_months:
         one: 'about 1 month'
-        other: '{{count}} months'
+        other: 'about {{count}} months'
       x_months:
         one: '1 month'
         other: '{{count}} months'
       about_x_years:
         one: 'about 1 year'
-        other: '{{count}} years'
+        other: 'about {{count}} years'
       over_x_years:
         one: 'over 1 year'
-        other: '{{count}} years'
+        other: 'over {{count}} years'
       
   number:
     format:

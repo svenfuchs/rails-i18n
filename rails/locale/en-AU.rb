@@ -39,16 +39,16 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute       => 'half a minute',
-        :less_than_x_seconds => {:zero => 'less than 1 second', :one => '1 second', :other => '{{count}} seconds'},
+        :less_than_x_seconds => {:zero => 'less than a second', :one => 'less than a second', :other => 'less than {{count}} seconds'},
         :x_seconds           => {:one => '1 second', :other => '{{count}} seconds'},
-        :less_than_x_minutes => {:zero => 'less than a minute', :one => '1 minute', :other => '{{count}} minutes'},
+        :less_than_x_minutes => {:zero => 'less than a minute', :one => 'less than a minute', :other => 'less than {{count}} minutes'},
         :x_minutes           => {:one => "1 minute", :other => "{{count}} minutes"},
-        :about_x_hours       => {:one => 'about 1 hour', :other => '{{count}} hours'},
+        :about_x_hours       => {:one => 'about 1 hour', :other => 'about {{count}} hours'},
         :x_days              => {:one => '1 day', :other => '{{count}} days'},
-        :about_x_months      => {:one => 'about 1 month', :other => '{{count}} months'},
+        :about_x_months      => {:one => 'about 1 month', :other => 'about {{count}} months'},
         :x_months            => {:one => '1 month', :other => '{{count}} months'},
-        :about_x_years       => {:one => 'about 1 year', :other => '{{count}} years'},
-        :over_x_years        => {:one => 'over 1 year', :other => '{{count}} years'}
+        :about_x_years       => {:one => 'about 1 year', :other => 'about {{count}} years'},
+        :over_x_years        => {:one => 'over 1 year', :other => 'over {{count}} years'}
       }
     },
     :number => {
