@@ -1,0 +1,21 @@
+h1. Rails Locale Data Repository
+
+Central point to collect locale data for use in Ruby on Rails.
+
+To contribute just send me a pull request, patch or plain text file.
+
+Please pay attention to save your files as UTF-8.
+
+h2. Rails translations
+
+Simple tool for testing the integrity of your key structure:
+
+Make sure you have the Ruby I18n gem installed. If you haven't already you can try: 
+
+sudo gem install svenfuchs-i18n -s http://gems.github.com
+
+Then, standing in the root directory of this repository, do:
+
+ruby rails/test/structure.rb [your-locale]
+
+Assuming that there is a file rails/locale/[your-locale].{rb,yml} you will get a summary of missing and bogus keys as well as extra pluralization keys in your locale data.
