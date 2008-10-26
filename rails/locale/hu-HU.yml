@@ -1,0 +1,102 @@
+# Hungarian translations for Ruby on Rails 
+# by Richard Abonyi (richard.abonyi@gmail.com)
+# thanks to KKata, replaced and #hup.hu
+# note: translations ~ 90% complete
+
+"hu-HU":
+  date:
+    formats:
+      default: "%Y.%m.%d."
+      short: "%b %e."
+      long: "%Y. %B %e."
+      only_day: "%e."
+    day_names: [vasárnap, hétfő, kedd, szerda, csütörtök, péntek, szombat]
+    abbr_day_names: [v., h., k., sze., cs., p., szo.]
+    month_names: [~, január, február, március, április, május, június, július, augusztus, szeptember, október, november, december]
+    abbr_month_names: [~, jan., febr., márc., ápr., máj., jún., júl., aug., szept., okt., nov., dec.]
+    order: [ :year, :month, :day ]
+  
+  time:
+    formats:
+      default: "%Y. %B %e., %A, %H:%M"
+      time: "%H:%M"
+      short: "%B %e., %H:%M"
+      long: "%Y. %B %e., %A, %H:%M"
+      only_second: "%S"
+    am: "de."
+    pm: "du."
+      
+  datetime:
+    distance_in_words:
+      half_a_minute: 'fél perc'
+      less_than_x_seconds:
+        zero: 'kevesebb, mint 1 másodperc'
+        one: 'kevesebb, mint 1 másodperc'
+        other: 'kevesebb, mint {{count}} másodperc'
+      x_seconds:
+        one: '1 másodperc'
+        other: '{{count}} másodperc'
+      less_than_x_minutes:
+        zero: 'kevesebb, mint 1 perc'
+        one: 'kevesebb, mint 1 perc'
+        other: 'kevesebb, mint {{count}} perc'
+      x_minutes:
+        one: '1 perc'
+        other: '{{count}} perc'
+      about_x_hours:
+        one: 'majdnem 1 óra'
+        other: 'majdnem {{count}} óra'
+      x_days:
+        one: '1 nap'
+        other: '{{count}} nap'
+      about_x_months:
+        one: 'majdnem 1 hónap'
+        other: 'majdnem {{count}} hónap'
+      x_months:
+        one: '1 hónap'
+        other: '{{count}} hónap'
+      about_x_years:
+        one: 'majdnem 1 év'
+        other: 'majdnem {{count}} év'
+      over_x_years:
+        one: 'több, mint 1 év'
+        other: 'több, mint {{count}} év'
+      
+  number:
+    format:
+      precision: 2
+      separator: ','
+      delimiter: ' '
+    currency:
+      format:
+        unit: 'Ft'
+        precision: 0
+        format: '%n %u'
+        
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "1 hiba miatt nem menthető a következő: {{model}}"
+          other: "{{count}} hiba miatt nem menthető a következő: {{model}}"
+        body: "Problémás mezők:"          
+      messages:
+        inclusion: "nincs a listában"
+        exclusion: "nem elérhető"
+        invalid: "nem megfelelő"
+        confirmation: "nem egyezik"
+        accepted: "nincs elfogadva"
+        empty: "nincs megadva"
+        blank: "nincs megadva"
+        too_long: "túl hosszú (nem lehet több {{count}} karakternél)"
+        too_short: "túl rövid (legalább {{count}} karakter)"
+        wrong_length: "nem megfelelő hossz (szükséges: {{count}} karakter)"
+        taken: "már foglalt"
+        not_a_number: "nem szám"
+        greater_than: "nagyobb kell legyen, mint {{count}}"
+        greater_than_or_equal_to: "nagyobb vagy egyenlő kell legyen a következővel: {{count}}"
+        equal_to: "egyenlő kell legyen a következővel: {{count}}"
+        less_than: "kevesebb kell legyen, mint {{count}}"
+        less_than_or_equal_to: "kevesebb vagy egyenlő kell legyen a következővel: {{count}}"
+        odd: "páratlan kell legyen"
+        even: "páros kell legyen"
