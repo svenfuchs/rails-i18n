@@ -75,27 +75,30 @@ it:
         precision: 2
         format: '%n %u'
         
-  active_record:
-    error:
-      header_message: ["Non posso salvare questo {{object_name}}: 1 errore", "Non posso salvare questo {{object_name}}: {{count}} errori."]
-      message: "Per favore ricontrolla i seguenti campi:"
-    error_messages:
-      inclusion: "non è incluso nella lista"
-      exclusion: "è riservato"
-      invalid: "non è valido"
-      confirmation: "non coincide con la conferma"
-      accepted: "deve essere accettata"
-      empty: "non può essere vuoto"
-      blank: "non può essere lasciato in bianco"
-      too_long: "è troppo lungo (il massimo è {{count}} lettere)"
-      too_short: "è troppo corto (il minimo è {{count}} lettere)"
-      wrong_length: "è della lunghezza sbagliata (deve essere di {{count}} lettere)"
-      taken: "è già in uso"
-      not_a_number: "non è un numero"
-      greater_than: "deve essere superiore a {{count}}"
-      greater_than_or_equal_to: "deve essere superiore o uguale a {{count}}"
-      equal_to: "deve essere uguale a {{count}}"
-      less_than: "deve essere meno di {{count}}"
-      less_than_or_equal_to: "deve essere meno o uguale a {{count}}"
-      odd: "deve essere dispari"
-      even: "deve essere pari"
+  activerecord:
+    errors:
+      template:
+        header: 
+          one: "Non posso salvare questo {{object_name}}: 1 errore"
+          other: "Non posso salvare questo {{object_name}}: {{count}} errori."
+        body: "Per favore ricontrolla i seguenti campi:"
+      messages:
+        inclusion: "non è incluso nella lista"
+        exclusion: "è riservato"
+        invalid: "non è valido"
+        confirmation: "non coincide con la conferma"
+        accepted: "deve essere accettata"
+        empty: "non può essere vuoto"
+        blank: "non può essere lasciato in bianco"
+        too_long: "è troppo lungo (il massimo è {{count}} lettere)"
+        too_short: "è troppo corto (il minimo è {{count}} lettere)"
+        wrong_length: "è della lunghezza sbagliata (deve essere di {{count}} lettere)"
+        taken: "è già in uso"
+        not_a_number: "non è un numero"
+        greater_than: "deve essere superiore a {{count}}"
+        greater_than_or_equal_to: "deve essere superiore o uguale a {{count}}"
+        equal_to: "deve essere uguale a {{count}}"
+        less_than: "deve essere meno di {{count}}"
+        less_than_or_equal_to: "deve essere meno o uguale a {{count}}"
+        odd: "deve essere dispari"
+        even: "deve essere pari"

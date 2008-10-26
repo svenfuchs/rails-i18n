@@ -77,27 +77,30 @@ fr:
       format:
         units: [ Octet, ko, Mo, Go, To ]
         
-  active_record:
-    error:
-      header_message: ["Impossible de sauver {{object_name}}: 1 erreur", "Impossible de sauver {{object_name}}: {{count}} errors."]
-      message: "Veuillez vérifier les champs suivants :"
-    error_messages:
-      inclusion: "n'est pas inclus(e) dans la liste"
-      exclusion: "n'est pas disponible"
-      invalid: "n'est pas valide"
-      confirmation: "ne concorde pas avec la confirmation"
-      accepted: "doit être accepté(e)"
-      empty: "doit être rempli(e)"
-      blank: "doit être rempli(e)"
-      too_long: "est trop long (pas plus de {{count}} caractères)"
-      too_short: "est trop court (au moins {{count}} caractères)"
-      wrong_length: "ne fait pas la bonne longueur (doit comporter {{count}} caractères)"
-      taken: "n'est pas disponible"
-      not_a_number: "n'est pas un nombre"
-      greater_than: "doit être supérieur à {{count}}"
-      greater_than_or_equal_to: "doit être supérieur ou égal à {{count}}"
-      equal_to: "doit être égal à {{count}}"
-      less_than: "doit être inférieur à {{count}}"
-      less_than_or_equal_to: "doit être inférieur ou égal à {{count}}"
-      odd: "doit être impair"
-      even: "doit être pair"
+  activerecord:
+    errors:
+      template:
+        header: 
+          one: "Impossible de sauver {{object_name}}: 1 erreur"
+          other: "Impossible de sauver {{object_name}}: {{count}} errors."
+        body: "Veuillez vérifier les champs suivants :"
+      messages:
+        inclusion: "n'est pas inclus(e) dans la liste"
+        exclusion: "n'est pas disponible"
+        invalid: "n'est pas valide"
+        confirmation: "ne concorde pas avec la confirmation"
+        accepted: "doit être accepté(e)"
+        empty: "doit être rempli(e)"
+        blank: "doit être rempli(e)"
+        too_long: "est trop long (pas plus de {{count}} caractères)"
+        too_short: "est trop court (au moins {{count}} caractères)"
+        wrong_length: "ne fait pas la bonne longueur (doit comporter {{count}} caractères)"
+        taken: "n'est pas disponible"
+        not_a_number: "n'est pas un nombre"
+        greater_than: "doit être supérieur à {{count}}"
+        greater_than_or_equal_to: "doit être supérieur ou égal à {{count}}"
+        equal_to: "doit être égal à {{count}}"
+        less_than: "doit être inférieur à {{count}}"
+        less_than_or_equal_to: "doit être inférieur ou égal à {{count}}"
+        odd: "doit être impair"
+        even: "doit être pair"

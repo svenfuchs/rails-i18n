@@ -71,33 +71,36 @@
     },
 
     # Active Record
-    :active_record => {
-      :error => {
-        :header_message => ["{{object_name}} no pudo guardarse: 1 error", "{{object_name}}: {{count}} errores."],
-        :message => "Por favor revise los campos siguientes:"
-      }
-    },
-    :active_record => {
-      :error_messages => {
-        :inclusion => "no está incluido en la lista",
-        :exclusion => "no está disponible",
-        :invalid => "no es válido",
-        :confirmation => "no coincide con la confirmación",
-        :accepted  => "debe ser aceptado",
-        :empty => "no puede estar vacío",
-        :blank => "no puede estar en blanco",
-        :too_long => "es demasiado largo (no más de {{count}} caracteres)",
-        :too_short => "es demasiado corto (no menos de {{count}} caracteres)",
-        :wrong_length => "no tiene la longitud correcta (debe ser de {{count}} caracteres)",
-        :taken => "no está disponible",
-        :not_a_number => "no es un número",
-        :greater_than => "debe ser mayor a {{count}}",
-        :greater_than_or_equal_to => "debe ser mayor o igual a {{count}}",
-        :equal_to => "debe ser igual a {{count}}",
-        :less_than => "debe ser menor que {{count}}",
-        :less_than_or_equal_to => "debe ser menor o igual que {{count}}",
-        :odd => "debe ser par",
-        :even => "debe ser impar"
+    :activerecord => {
+      :errors => {
+        :template => {
+          :header => {
+            :one => "{{object_name}} no pudo guardarse: 1 error", 
+            :other => "{{object_name}}: {{count}} errores."
+          },
+          :body => "Por favor revise los campos siguientes:"
+        },
+        :messages => {
+          :inclusion => "no está incluido en la lista",
+          :exclusion => "no está disponible",
+          :invalid => "no es válido",
+          :confirmation => "no coincide con la confirmación",
+          :accepted  => "debe ser aceptado",
+          :empty => "no puede estar vacío",
+          :blank => "no puede estar en blanco",
+          :too_long => "es demasiado largo (no más de {{count}} caracteres)",
+          :too_short => "es demasiado corto (no menos de {{count}} caracteres)",
+          :wrong_length => "no tiene la longitud correcta (debe ser de {{count}} caracteres)",
+          :taken => "no está disponible",
+          :not_a_number => "no es un número",
+          :greater_than => "debe ser mayor a {{count}}",
+          :greater_than_or_equal_to => "debe ser mayor o igual a {{count}}",
+          :equal_to => "debe ser igual a {{count}}",
+          :less_than => "debe ser menor que {{count}}",
+          :less_than_or_equal_to => "debe ser menor o igual que {{count}}",
+          :odd => "debe ser par",
+          :even => "debe ser impar"
+        }
       }
     }
   }

@@ -65,7 +65,7 @@
       format:
         delimiter: ""
         precision: 4
-  active_record:
+  activerecord:
     errors:
       template:
         header: "kunne ikkje lagra {{model}} grunna {{count}} feil."

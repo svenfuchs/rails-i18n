@@ -67,33 +67,36 @@
     },
 
     # Active Record
-    :active_record => {
-      :error => {
-        :header_message => ["Couldn't save this {{object_name}}: 1 error", "Couldn't save this {{object_name}}: {{count}} errors."],
-        :message => "Please check the following fields, dude:"
-      }
-    },
-    :active_record => {
-      :error_messages => {
-        :inclusion => "ain't included in the list",
-        :exclusion => "ain't available",
-        :invalid => "ain't valid",
-        :confirmation => "don't match its confirmation",
-        :accepted  => "gotta be accepted",
-        :empty => "gotta be given",
-        :blank => "gotta be given",
-        :too_long => "is too long-ish (no more than {{count}} characters)",
-        :too_short => "is too short-ish (no less than {{count}} characters)",
-        :wrong_length => "ain't got the right length (gotta be {{count}} characters)",
-        :taken => "ain't available",
-        :not_a_number => "ain't a number",
-        :greater_than => "gotta be greater than {{count}}",
-        :greater_than_or_equal_to => "gotta be greater than or equal to {{count}}",
-        :equal_to => "gotta be equal to {{count}}",
-        :less_than => "gotta be less than {{count}}",
-        :less_than_or_equal_to => "gotta be less than or equal to {{count}}",
-        :odd => "gotta be odd",
-        :even => "gotta be even"
+    :activerecord => {
+      :errors => {
+        :template => {
+          :header => {
+            :one => "Couldn't save this {{object_name}}: 1 error",
+            :other => "Couldn't save this {{object_name}}: {{count}} errors."
+          },
+          :body => "Please check the following fields, dude:"
+        },
+        :messages => {
+          :inclusion => "ain't included in the list",
+          :exclusion => "ain't available",
+          :invalid => "ain't valid",
+          :confirmation => "don't match its confirmation",
+          :accepted  => "gotta be accepted",
+          :empty => "gotta be given",
+          :blank => "gotta be given",
+          :too_long => "is too long-ish (no more than {{count}} characters)",
+          :too_short => "is too short-ish (no less than {{count}} characters)",
+          :wrong_length => "ain't got the right length (gotta be {{count}} characters)",
+          :taken => "ain't available",
+          :not_a_number => "ain't a number",
+          :greater_than => "gotta be greater than {{count}}",
+          :greater_than_or_equal_to => "gotta be greater than or equal to {{count}}",
+          :equal_to => "gotta be equal to {{count}}",
+          :less_than => "gotta be less than {{count}}",
+          :less_than_or_equal_to => "gotta be less than or equal to {{count}}",
+          :odd => "gotta be odd",
+          :even => "gotta be even"
+        }
       }
     }
   }

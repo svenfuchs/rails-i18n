@@ -35,9 +35,9 @@ class KeyStructure
       next unless result[direction].size > 0
       case direction
       when :pluralization
-        puts "\nThere are the following extra pluralization keys for #{@locale.inspect}"
+        puts "\nThe following pluralization keys seem to differ:"
       else
-        puts "\nThe following keys seem to be #{direction} for #{@locale.inspect}"
+        puts "\nThe following keys seem to be #{direction} for #{@locale.inspect}:"
       end
       puts '   ' + result[direction].join("\n   ")
     end
@@ -54,9 +54,9 @@ class KeyStructure
         if data.has_key?(key)
           @key_stack << key
           if namespace?(value)
-            compare(direction, value, data[key])
+            compare direction, value, (namespace?(data[key]) ? data[key] : {})
           elsif pluralization?(value)
-            compare(:pluralization, value, data[key])
+            compare :pluralization, value, (pluralization?(data[key]) ? data[key] : {})
           end
           @key_stack.pop
         else

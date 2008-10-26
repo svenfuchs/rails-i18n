@@ -67,33 +67,36 @@
     },
 
     # Active Record
-    :active_record => {
-      :error => {
-        :header_message => ["Kon dit {{object_name}} object niet opslaan: 1 fout.", "Kon dit {{object_name}} niet opslaan: {{count}} fouten."],
-        :message => "Controleer alstublieft de volgende velden:"
-      }
-    },
-    :active_record => {
-      :error_messages => {
-        :inclusion => "is niet in de lijst opgenomen",
-        :exclusion => "is niet beschikbaar",
-        :invalid => "is ongeldig",
-        :confirmation => "komt niet met z'n bevestiging overeen",
-        :accepted  => "moet worden geaccepteerd",
-        :empty => "moet opgegeven zijn",
-        :blank => "moet opgegeven zijn",
-        :too_long => "is te lang (niet meer dan {{count}} karakters)",
-        :too_short => "is te kort (niet minder dan {{count}} karakters)",
-        :wrong_length => "heeft niet de juiste lengte (moet precies {{count}} karakters zijn)",
-        :taken => "is niet beschikbaar",
-        :not_a_number => "is niet een getal",
-        :greater_than => "moet groter zijn dan {{count}}",
-        :greater_than_or_equal_to => "moet groter of gelijk zijn aan {{count}}",
-        :equal_to => "moet gelijk zijn aan {{count}}",
-        :less_than => "moet minder zijn dan {{count}}",
-        :less_than_or_equal_to => "moet minder of gelijk zijn aan {{count}}",
-        :odd => "moet oneven zijn",
-        :even => "moet even zijn"
+    :activerecord => {
+      :errors => {
+        :template => {
+          :header => {
+            :one => "Kon dit {{object_name}} object niet opslaan: 1 fout.", 
+            :other => "Kon dit {{object_name}} niet opslaan: {{count}} fouten."
+          },
+          :body => "Controleer alstublieft de volgende velden:"
+        },
+        :messages => {
+          :inclusion => "is niet in de lijst opgenomen",
+          :exclusion => "is niet beschikbaar",
+          :invalid => "is ongeldig",
+          :confirmation => "komt niet met z'n bevestiging overeen",
+          :accepted  => "moet worden geaccepteerd",
+          :empty => "moet opgegeven zijn",
+          :blank => "moet opgegeven zijn",
+          :too_long => "is te lang (niet meer dan {{count}} karakters)",
+          :too_short => "is te kort (niet minder dan {{count}} karakters)",
+          :wrong_length => "heeft niet de juiste lengte (moet precies {{count}} karakters zijn)",
+          :taken => "is niet beschikbaar",
+          :not_a_number => "is niet een getal",
+          :greater_than => "moet groter zijn dan {{count}}",
+          :greater_than_or_equal_to => "moet groter of gelijk zijn aan {{count}}",
+          :equal_to => "moet gelijk zijn aan {{count}}",
+          :less_than => "moet minder zijn dan {{count}}",
+          :less_than_or_equal_to => "moet minder of gelijk zijn aan {{count}}",
+          :odd => "moet oneven zijn",
+          :even => "moet even zijn"
+        }
       }
     }
   }
