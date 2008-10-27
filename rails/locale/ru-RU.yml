@@ -55,7 +55,6 @@ ru-RU:
     percentage:
       format:
         delimiter: ""
-        precision: 2
         
     precision:
       format:
@@ -167,4 +166,5 @@ ru-RU:
   support:
     array:
       sentence_connector: "и"
+      skip_last_comma: true
 
