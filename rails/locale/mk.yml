@@ -1,4 +1,4 @@
-﻿# Macedonian translations for Ruby on Rails 
+# Macedonian translations for Ruby on Rails 
 # by Dejan Dimić (dejan.dimic@gmail.com)
 
 "mk":
@@ -22,15 +22,13 @@
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
       only_second: "%S"
-      
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
-          
-      am: 'АМ'
-      pm: 'ПМ'
+
+    am: 'АМ'
+    pm: 'ПМ'
       
   datetime:
+    formats:
+      default: "%Y-%m-%dT%H:%M:%S%Z"
     distance_in_words:
       half_a_minute: 'пола минута'
       less_than_x_seconds:
