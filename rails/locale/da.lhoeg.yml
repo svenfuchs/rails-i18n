@@ -40,34 +40,34 @@ da:
       half_a_minute: "et halvt minut"
       less_than_x_seconds:
         one:  "mindre end et sekund"
-        many: "mindre end {{count}} sekunder"
+        other: "mindre end {{count}} sekunder"
       x_seconds:
         one:  "et sekund"
-        many: "{{count}} sekunder"
+        other: "{{count}} sekunder"
       less_than_x_minutes:
         one:  "mindre end et minut"
-        many: "mindre end {{count}} minutter"
+        other: "mindre end {{count}} minutter"
       x_minutes:
         one:  "et minut"
-        many: "{{count}} minutter"
+        other: "{{count}} minutter"
       about_x_hours:
         one:  "cirka en time"
-        many: "cirka {{count}} timer"
+        other: "cirka {{count}} timer"
       x_days:
         one:  "en dag"
-        many: "{{count}} dage"
+        other: "{{count}} dage"
       about_x_months:
         one:  "cirka en måned"
-        many: "cirka {{count}} måneder"
+        other: "cirka {{count}} måneder"
       x_months:
         one:  "en måned"
-        many: "{{count}} måneder"
+        other: "{{count}} måneder"
       about_x_years:
         one:  "cirka et år"
-        many: "cirka {{count}} år"
+        other: "cirka {{count}} år"
       over_x_years:
         one:  "mere end et år"
-        many: "mere end {{count}} år"
+        other: "mere end {{count}} år"
 
   number:
     format:
