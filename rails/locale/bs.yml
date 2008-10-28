@@ -22,15 +22,13 @@
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
       only_second: "%S"
-      
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
           
-      am: 'АМ'
-      pm: 'PМ'
+    am: 'АМ'
+    pm: 'PМ'
       
   datetime:
+    formats:
+      default: "%Y-%m-%dT%H:%M:%S%Z"
     distance_in_words:
       half_a_minute: 'pola minute'
       less_than_x_seconds:
