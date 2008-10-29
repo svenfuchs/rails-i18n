@@ -2,9 +2,11 @@ h1. Rails Locale Data Repository
 
 Central point to collect locale data for use in Ruby on Rails.
 
-To contribute just send me a pull request, patch or plain text file.
+To contribute just send me a pull request, patch or plain text file. 
 
-Please pay attention to save your files as UTF-8.
+Please include a comment with the language/locale name and your name and email address (or other contact information like your github profile) to the locale file so people can come contact you and ask questions etc.
+
+Also, please pay attention to save your files as UTF-8.
 
 h2. Rails translations
 
