@@ -94,8 +94,8 @@
       :errors => {
         :template => {
           :header => {
-            :one => "{{object_name}} não pôde ser salvo: 1 erro", 
-            :other => "{{object_name}} não pôde ser salvo: {{count}} erros."
+            :one => "{{model}} não pôde ser salvo: 1 erro", 
+            :other => "{{model}} não pôde ser salvo: {{count}} erros."
           },
           :body => "Por favor, cheque os seguintes campos:"
         },

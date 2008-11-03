@@ -64,7 +64,7 @@
     # Active Record
     :active_record => {
       :error => {
-        :header_message => ["保存できませんでした {{object_name}}: 1 エラー", "保存できませんでした {{object_name}}: {{count}} エラー."],
+        :header_message => ["保存できませんでした {{model}}: 1 エラー", "保存できませんでした {{model}}: {{count}} エラー."],
         :message => "以下のメッセージを確認してください:"
       }
     },

@@ -75,8 +75,8 @@
       :errors => {
         :template => {
           :header => {
-            :one => "{{object_name}} no pudo guardarse: 1 error", 
-            :other => "{{object_name}}: {{count}} errores."
+            :one => "{{model}} no pudo guardarse: 1 error", 
+            :other => "{{model}}: {{count}} errores."
           },
           :body => "Por favor revise los campos siguientes:"
         },

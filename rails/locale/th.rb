@@ -71,7 +71,7 @@
     # Active Record
     :active_record => {
       :error => {
-        :header_message => "ไม่สามารถบันทึก {{object_name}} ได้เนื่องจากเกิด {{count}} ข้อผิดพลาด",
+        :header_message => "ไม่สามารถบันทึก {{model}} ได้เนื่องจากเกิด {{count}} ข้อผิดพลาด",
         :message => "โปรดตรวจสอบข้อมูลที่คุณกรอกในช่องต่อไปนี้:"
       }
     },

@@ -81,8 +81,8 @@ fr:
     errors:
       template:
         header: 
-          one: "Impossible de sauver {{object_name}}: 1 erreur"
-          other: "Impossible de sauver {{object_name}}: {{count}} errors."
+          one: "Impossible de sauver {{model}}: 1 erreur"
+          other: "Impossible de sauver {{model}}: {{count}} errors."
         body: "Veuillez vérifier les champs suivants :"
       messages:
         inclusion: "n'est pas inclus(e) dans la liste"

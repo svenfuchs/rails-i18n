@@ -86,9 +86,9 @@
     errors:
       template:
         header: 
-          one: 'Нисам успео сачувати {{object_name}}: 1 грешка.'
-          few: 'Нисам успео сачувати {{object_name}}: {{count}} грешке.'
-          other: 'Нисам успео сачувати {{object_name}}: {{count}} грешки.'
+          one: 'Нисам успео сачувати {{model}}: 1 грешка.'
+          few: 'Нисам успео сачувати {{model}}: {{count}} грешке.'
+          other: 'Нисам успео сачувати {{model}}: {{count}} грешки.'
         body: "Молим Вас да проверите следећа поља:"
       messages:
         inclusion: "није у листи"

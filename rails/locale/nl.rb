@@ -71,8 +71,8 @@
       :errors => {
         :template => {
           :header => {
-            :one => "Kon dit {{object_name}} object niet opslaan: 1 fout.", 
-            :other => "Kon dit {{object_name}} niet opslaan: {{count}} fouten."
+            :one => "Kon dit {{model}} object niet opslaan: 1 fout.", 
+            :other => "Kon dit {{model}} niet opslaan: {{count}} fouten."
           },
           :body => "Controleer alstublieft de volgende velden:"
         },

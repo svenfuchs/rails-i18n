@@ -78,7 +78,7 @@ ar:
         
   active_record:
     error:
-      header_message: ["ليس بالامكان حفظ {{object_name}}: خطأ واحد", "ليس بالامكان حفظ {{object_name}}: {{count}} أخطاء."]
+      header_message: ["ليس بالامكان حفظ {{model}}: خطأ واحد", "ليس بالامكان حفظ {{model}}: {{count}} أخطاء."]
       message: "يرجى التحقق من الحقول التالية:"
     error_messages:
       inclusion: "ليس خيارا مقبولا"

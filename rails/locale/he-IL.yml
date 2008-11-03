@@ -79,7 +79,7 @@
         
   active_record:
     error:
-      header_message: ["לא ניתן לשמור {{object_name}}: שגיאה אחת", "לא ניתן לשמור {{object_name}}: {{count}} שגיאות."]
+      header_message: ["לא ניתן לשמור {{model}}: שגיאה אחת", "לא ניתן לשמור {{model}}: {{count}} שגיאות."]
       message: "אנא בדוק את השדות הבאים:"
     error_messages:
       inclusion: "לא נכלל ברשימה"
