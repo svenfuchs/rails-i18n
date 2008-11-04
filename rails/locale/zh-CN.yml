@@ -1,93 +1,115 @@
+# Chinese (China) translations for Ruby on Rails 
+# by tsechingho (http://github.com/tsechingho)
+
 "zh-CN":
   date:
     formats:
       default: "%Y-%m-%d"
-      short: "%b %e日"
-      long: "%Y年 %B %e日"
-      only_day: "%e日"
-
-    day_names: [星期天 星期一 星期二 星期三 星期四 星期五 星期六]
-    abbr_day_names: [日 一 二 三 四 五 六]
-    month_names: [~, 1月 2月 3月 4月 5月 6月 7月 8月 9月 10月 11月 12月]
-    abbr_month_names: [~, 1月 2月 3月 4月 5月 6月 7月 8月 9月 10月 11月 12月]
+      short: "%b%d日"
+      long: "%Y年%b%d日"
+    day_names: [星期天, 星期一, 星期二, 星期三, 星期四, 星期五, 星期六]
+    abbr_day_names: [日, 一, 二, 三, 四, 五, 六]
+    month_names: [~, 一月, 二月, 三月, 四月, 五月, 六月, 七月, 八月, 九月, 十月, 十一月, 十二月]
+    abbr_month_names: [~, 1月, 2月, 3月, 4月, 5月, 6月, 7月, 8月, 9月, 10月, 11月, 12月]
     order: [ :year, :month, :day ]
   
   time:
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
-      time: "%H:%M"
-      short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
-      only_second: "%S"
-      
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
-          
-      am: '上午'
-      pm: '下午'
-      
+      default: "%Y年%b%d日 %A %H:%M:%S %Z"
+      short: "%b%d日 %H:%M"
+      long: "%Y年%b%d日 %H:%M"
+    am: "上午"
+    pm: "下午"
+  
   datetime:
     distance_in_words:
-      half_a_minute: '半分钟'
+      half_a_minute: "半分钟"
       less_than_x_seconds:
-        zero: '一秒内'
-        other: '{{count}} 秒'
+        one: "一秒内"
+        other: "少于 {{count}} 秒"
       x_seconds:
-        other: '{{count}} 秒'
+        one: "一秒"
+        other: "{{count}} 秒"
       less_than_x_minutes:
-        zero: '一分钟内'
-        other: '{{count}} 分钟'
+        one: "一分钟内"
+        other: "少于 {{count}} 分钟"
       x_minutes:
-        other: '{{count}} 分钟'
+        one: "一分钟"
+        other: "{{count}} 分钟"
       about_x_hours:
-        one: '一小时內'
-        other: '{{count}} 小时'
+        one: "大约一小时"
+        other: "大约 {{count}} 小时"
       x_days:
-        other: '{{count}} 天'
+        one: "一天"
+        other: "{{count}} 天"
       about_x_months:
-        one: ' 一个月内'
-        other: '{{count}} 个月'
+        one: "大约一个月"
+        other: "大约 {{count}} 个月"
       x_months:
-        other: '{{count}} months'
+        one: "一个月"
+        other: "{{count}} 个月"
       about_x_years:
-        one: ' 1 年内'
-        other: '{{count}} 年'
+        one: "大约一年"
+        other: "大约 {{count}} 年"
       over_x_years:
-        other: '{{count}} 年以上'
-      
+        one: "一年以上"
+        other: "{{count}} 年以上"
+  
   number:
     format:
+      separator: "."
+      delimiter: ","
       precision: 3
-      separator: '.'
-      delimiter: ','
     currency:
       format:
-        unit: '￥'
+        format: "%u %n"
+        unit: "CNY"
+        separator: "."
+        delimiter: ","
         precision: 2
-        format: '%u %n'
-        
-  active_record:
-    error:
-      header_message: ["无法保存 {{model}}: 1 错误", "无法保存 {{model}}: {{count}} 错误."]
-      message: "请检查以下字段:"
-    error_messages:
-      inclusion: "不包含于列表中"
-      exclusion: "不能用"
-      invalid: "不合法"
-      confirmation: "与确认值不匹配"
-      accepted: "必须接受"
-      empty: "不能留空"
-      blank: "不能为空字符"
-      too_long: "过长 (不能超过 {{count}} 个字符)"
-      too_short: "过短 (不能少于 {{count}} 个字符)"
-      wrong_length: "长度非法 (必须为 {{count}} 个字符)"
-      taken: "不可用"
-      not_a_number: "不是数字"
-      greater_than: "必须大于 {{count}}"
-      greater_than_or_equal_to: "必须大于或等于 {{count}}"
-      equal_to: "必须等于 {{count}}"
-      less_than: "必须小于 {{count}}"
-      less_than_or_equal_to: "必须小于或等于 {{count}}"
-      odd: "必须为单数"
-      even: "必须为双数"
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+  
+  support:
+    array:
+      sentence_connector: "和"
+      skip_last_comma: true
+  
+  activerecord:
+    errors:
+      template:
+        header: 
+          one: "有 1 个错误发生导致「{{model}}」无法被保存。"
+          other: "有 {{count}} 个错误发生导致「{{model}}」无法被保存。"
+        body: "如下字段出现错误："
+      messages:
+        inclusion: "不包含于列表中"
+        exclusion: "是保留关键字"
+        invalid: "是无效的"
+        confirmation: "与确认值不匹配"
+        accepted: "必须是可被接受的"
+        empty: "不能留空"
+        blank: "不能为空字符"
+        too_long: "过长（最长为 {{count}} 个字符）"
+        too_short: "過短（最短为 {{count}} 个字符）"
+        wrong_length: "长度非法（必须为 {{count}} 个字符）"
+        taken: "已经被使用"
+        not_a_number: "不是数字"
+        greater_than: "必须大于 {{count}}"
+        greater_than_or_equal_to: "必须大于或等于 {{count}}"
+        equal_to: "必须等于 {{count}}"
+        less_than: "必须小于 {{count}}"
+        less_than_or_equal_to: "必须小于或等于 {{count}}"
+        odd: "必须为单数"
+        even: "必须为双数"
+  
+
+  
