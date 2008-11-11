@@ -1,5 +1,6 @@
 # Arabic translations for Ruby on Rails 
 # by Rida Al Barazi (me@rida.me)
+# just edited some typos, Ahmed Hazem (nardgo@gmail.com)
 
 ar:
   date:
@@ -32,7 +33,7 @@ ar:
       
   datetime:
     distance_in_words:
-      half_a_minute: 'نصق دقيقة'
+      half_a_minute: 'نصف دقيقة'
       less_than_x_seconds:
         zero: 'أقل من ثانية'
         one: 'ثانية واحدة'
@@ -91,12 +92,12 @@ ar:
       too_long: "أطول من اللازم (الحد الأقصى هو {{count}})"
       too_short: "أقصر من اللازم (الحد الأدنى هو {{count}})"
       wrong_length: "بطول غير مناسب (يجب أن يكون {{count}})"
-      taken: "غير متوفر (مستخد)"
+      taken: "غير متوفر (مستخدم)"
       not_a_number: "ليس رقما"
       greater_than: "يجب أن يكون أكبر من {{count}}"
       greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي {{count}}"
       equal_to: "يجب أن يساوي {{count}}"
       less_than: "يجب أن يكون أصغر من {{count}}"
-      less_than_or_equal_to: "يجب أن يكون أصغرأو يساوي {{count}}"
+      less_than_or_equal_to: "يجب أن يكون أصغر أو يساوي {{count}}"
       odd: "يجب أن يكون فردي",
       even: "يجب أن يكون زوجي"
