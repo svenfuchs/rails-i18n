@@ -1,6 +1,6 @@
 # Arabic translations for Ruby on Rails 
 # by Rida Al Barazi (me@rida.me)
-# just edited some typos, Ahmed Hazem (nardgo@gmail.com)
+# updated by Ahmed Hazem (nardgo@gmail.com)
 
 ar:
   date:
@@ -8,7 +8,6 @@ ar:
       default: "%Y-%m-%d"
       short: "%e %b"
       long: "%B %e, %Y"
-      only_day: "%e"
 
     day_names: [الأحد, الإثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
     abbr_day_names: [الأحد, الإثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
@@ -19,31 +18,27 @@ ar:
   time:
     formats:
       default: "%a %b %d %H:%M:%S %Z %Y"
-      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
-      only_second: "%S"
+    am: 'صباحا'
+    pm: 'مساءا'
       
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
-          
-      am: 'صباحا'
-      pm: 'مساءا'
-      
+  support:
+    array:
+      sentence_connector: "و"
+      skip_last_comma: false
+
   datetime:
     distance_in_words:
       half_a_minute: 'نصف دقيقة'
       less_than_x_seconds:
-        zero: 'أقل من ثانية'
-        one: 'ثانية واحدة'
+        one: 'أقل من ثانية'
         other: '{{count}} ثوان'
       x_seconds:
         one: 'ثانية واحدة'
         other: '{{count}} ثوان'
       less_than_x_minutes:
-        zero: 'أقل من دقيقة'
-        one: 'دقيقة واحدة'
+        one: 'أقل من دقيقة'
         other: '{{count}} دقائق'
       x_minutes:
         one: 'دقيقة واحدة'
@@ -69,35 +64,51 @@ ar:
       
   number:
     format:
-      precision: 3
       separator: '.'
       delimiter: ','
+      precision: 3
+    human:
+      format:
+        delimiter: ','
+        precision: 1
     currency:
       format:
+        separator: '.'
+        delimiter: ','
         precision: 2
         format: '%u %n'
+        unit: '$'
+    percentage:
+      format:
+        delimiter: ','
+    precision:
+      format:
+        delimiter: ','
         
-  active_record:
-    error:
-      header_message: ["ليس بالامكان حفظ {{model}}: خطأ واحد", "ليس بالامكان حفظ {{model}}: {{count}} أخطاء."]
-      message: "يرجى التحقق من الحقول التالية:"
-    error_messages:
-      inclusion: "ليس خيارا مقبولا"
-      exclusion: "محجوز"
-      invalid: "غير معرف أو محدد"
-      confirmation: "لا تتوافق مع التأكيد"
-      accepted: "يجب أن تقبل"
-      empty: "فارغ, نرجو ملء الحقل"
-      blank: "فارغ, نرجو ملء الحقل"
-      too_long: "أطول من اللازم (الحد الأقصى هو {{count}})"
-      too_short: "أقصر من اللازم (الحد الأدنى هو {{count}})"
-      wrong_length: "بطول غير مناسب (يجب أن يكون {{count}})"
-      taken: "غير متوفر (مستخدم)"
-      not_a_number: "ليس رقما"
-      greater_than: "يجب أن يكون أكبر من {{count}}"
-      greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي {{count}}"
-      equal_to: "يجب أن يساوي {{count}}"
-      less_than: "يجب أن يكون أصغر من {{count}}"
-      less_than_or_equal_to: "يجب أن يكون أصغر أو يساوي {{count}}"
-      odd: "يجب أن يكون فردي",
-      even: "يجب أن يكون زوجي"
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "ليس بالامكان حفظ {{model}}: خطأ واحد."
+          other: "ليس بالامكان حفظ {{model}}: {{count}} أخطاء."
+        body: "يرجى التحقق من الحقول التالية:"
+      messages:
+        inclusion: "ليس خيارا مقبولا"
+        exclusion: "محجوز"
+        invalid: "غير معرف أو محدد"
+        confirmation: "لا تتوافق مع التأكيد"
+        accepted: "يجب أن تقبل"
+        empty: "فارغ، يرجى ملء الحقل"
+        blank: "فارغ، يرجى ملء الحقل"
+        too_long: "أطول من اللازم (الحد الأقصى هو {{count}})"
+        too_short: "أقصر من اللازم (الحد الأدنى هو {{count}})"
+        wrong_length: "بطول غير مناسب (يجب أن يكون {{count}})"
+        taken: "غير متوفر (مستخدم)"
+        not_a_number: "ليس رقما"
+        greater_than: "يجب أن يكون أكبر من {{count}}"
+        greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي {{count}}"
+        equal_to: "يجب أن يساوي {{count}}"
+        less_than: "يجب أن يكون أصغر من {{count}}"
+        less_than_or_equal_to: "يجب أن يكون أصغر من أو يساوي {{count}}"
+        odd: "يجب أن يكون فردي"
+        even: "يجب أن يكون زوجي"
