@@ -9,7 +9,7 @@
         :only_day     => "%e"
       },
       :day_names => %w(Domingo Segunda Terça Quarta Quinta Sexta Sábado),
-      :abbr_day_names => %w(Do Se Te Qa Qi Sx Sa),
+      :abbr_day_names => %w(Dom Seg Ter Qua Qui Sex Sáb),
       :month_names => [nil] + %w(Janeiro Fevereiro Março Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro),
       :abbr_month_names => [nil] + %w(Jan Fev Mar Abr Mai Jun Jul Ago Set Out Nov Dez),
       :order => [:day, :month, :year]
