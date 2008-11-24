@@ -64,6 +64,7 @@ ru-RU:
       format:
         delimiter: ""
         precision: 1
+      storage_units: [байт, КБ, МБ, ГБ, ТБ]
 
   datetime:
     distance_in_words:

@@ -74,8 +74,8 @@ fr:
         precision: 2
         format: '%n %u'
     human:
-      format:
-        units: [ Octet, ko, Mo, Go, To ]
+      storage_units: [ Octet, ko, Mo, Go, To ]
+        
         
   activerecord:
     errors:
