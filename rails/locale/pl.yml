@@ -11,9 +11,6 @@ pl:
       format:
         format: "%n %u"
         unit: "PLN"
-        separator: ","
-        delimiter: " "
-        precision: 2
     percentage:
       format:
         delimiter: ""
