@@ -102,7 +102,7 @@ pl:
         too_long: "jest za długie (maksymalnie {{count}} znaków)"
         too_short: "jest za krótkie (minimalnie {{count}} znaków)"
         wrong_length: "jest nieprawidłowej długości (powinna wynosić {{count}} znaków)"
-        taken: "zostało już użyte"
+        taken: "zostało już zajęte"
         not_a_number: "nie jest liczbą"
         greater_than: "musi być większe niż {{count}}"
         greater_than_or_equal_to: "musi być większe lub równe {{count}}"
