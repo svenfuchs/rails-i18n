@@ -26,8 +26,8 @@ pl:
   date:
     formats:
       default: "%Y-%m-%d"
-      short: "%b %d"
-      long: "%B %d, %Y"
+      short: "%d %b"
+      long: "%d %B %Y"
     
     day_names: [Niedziela, Poniedziałek, Wtorek, Środa, Czwartek, Piątek, Sobota]
     abbr_day_names: [nie, pon, wto, śro, czw, pia, sob]
