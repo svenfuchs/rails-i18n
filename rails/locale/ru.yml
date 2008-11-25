@@ -10,7 +10,7 @@
 # (http://github.com/yaroslav/russian). Следующие данные -- выдержка их него, чтобы
 # была возможность минимальной локализации приложения на русский язык.
 
-ru-RU:
+ru:
   date:
     formats:
       default: "%d.%m.%Y"
@@ -64,6 +64,7 @@ ru-RU:
       format:
         delimiter: ""
         precision: 1
+      storage_units: [байт, КБ, МБ, ГБ, ТБ]
 
   datetime:
     distance_in_words:

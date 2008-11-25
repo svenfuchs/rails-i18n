@@ -11,9 +11,9 @@ exec %(
   echo 'created tmp dir';
   echo 'cloning rails';
   git clone git://github.com/rails/rails.git;
-  cp ./rails/actionpack/lib/action_view/locale/en-US.yml #{curr_dir}/rails/rails/action_view.yml;
-  cp ./rails/activerecord/lib/active_record/locale/en-US.yml #{curr_dir}/rails/rails/active_record.yml;
-  cp ./rails/activesupport/lib/active_support/locale/en-US.yml #{curr_dir}/rails/rails/active_support.yml;
+  cp ./rails/actionpack/lib/action_view/locale/en.yml #{curr_dir}/rails/rails/action_view.yml;
+  cp ./rails/activerecord/lib/active_record/locale/en.yml #{curr_dir}/rails/rails/active_record.yml;
+  cp ./rails/activesupport/lib/active_support/locale/en.yml #{curr_dir}/rails/rails/active_support.yml;
   cd ..;
   rm -rf rails-i18n;
 )
