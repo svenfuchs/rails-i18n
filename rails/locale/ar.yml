@@ -76,27 +76,28 @@ ar:
         precision: 2
         format: '%u %n'
         
-  active_record:
-    error:
-      header_message: ["ليس بالامكان حفظ {{object_name}}: خطأ واحد", "ليس بالامكان حفظ {{object_name}}: {{count}} أخطاء."]
-      message: "يرجى التحقق من الحقول التالية:"
-    error_messages:
-      inclusion: "ليس خيارا مقبولا"
-      exclusion: "محجوز"
-      invalid: "غير معرف أو محدد"
-      confirmation: "لا تتوافق مع التأكيد"
-      accepted: "يجب أن تقبل"
-      empty: "فارغ, نرجو ملء الحقل"
-      blank: "فارغ, نرجو ملء الحقل"
-      too_long: "أطول من اللازم (الحد الأقصى هو {{count}})"
-      too_short: "أقصر من اللازم (الحد الأدنى هو {{count}})"
-      wrong_length: "بطول غير مناسب (يجب أن يكون {{count}})"
-      taken: "غير متوفر (مستخد)"
-      not_a_number: "ليس رقما"
-      greater_than: "يجب أن يكون أكبر من {{count}}"
-      greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي {{count}}"
-      equal_to: "يجب أن يساوي {{count}}"
-      less_than: "يجب أن يكون أصغر من {{count}}"
-      less_than_or_equal_to: "يجب أن يكون أصغرأو يساوي {{count}}"
-      odd: "يجب أن يكون فردي",
-      even: "يجب أن يكون زوجي"
+  activerecord:
+    errors:
+      template:
+        header: "ليس بالامكان حفظ {{model}}:"
+        body: "يرجى التحقق من الحقول التالية:"
+      messages:
+        inclusion: "ليس خيارا مقبولا"
+        exclusion: "محجوز"
+        invalid: "غير معرف أو محدد"
+        confirmation: "لا تتوافق مع التأكيد"
+        accepted: "يجب أن تقبل"
+        empty: "فارغ, نرجو ملء الحقل"
+        blank: "فارغ, نرجو ملء الحقل"
+        too_long: "أطول من اللازم (الحد الأقصى هو {{count}})"
+        too_short: "أقصر من اللازم (الحد الأدنى هو {{count}})"
+        wrong_length: "بطول غير مناسب (يجب أن يكون {{count}})"
+        taken: "غير متوفر (مستخد)"
+        not_a_number: "ليس رقما"
+        greater_than: "يجب أن يكون أكبر من {{count}}"
+        greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي {{count}}"
+        equal_to: "يجب أن يساوي {{count}}"
+        less_than: "يجب أن يكون أصغر من {{count}}"
+        less_than_or_equal_to: "يجب أن يكون أصغرأو يساوي {{count}}"
+        odd: "يجب أن يكون فردي"
+        even: "يجب أن يكون زوجي"
