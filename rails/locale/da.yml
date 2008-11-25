@@ -83,6 +83,7 @@ da:
         # separator: 
         delimiter: ""
         precision: 1
+      storage_units: [Bytes, KB, MB, GB, TB]
     percentage:
       format:
         # separator:
