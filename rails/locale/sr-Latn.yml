@@ -1,4 +1,4 @@
-# Serbian (Latin) translations for Ruby on Rails 
+# Serbian (Latin) translations for Ruby on Rails
 # by Dejan Dimić (dejan.dimic@gmail.com)
 
 "sr-Latn":
@@ -14,7 +14,7 @@
     month_names: [~, Januar, Februar, Mart, April, Maj, Jun, Jul, Avgust, Septembar, Oktobar, Novembar, Decembar]
     abbr_month_names: [~, Jan, Feb, Mar, Apr, Maj, Jun, Jul, Avg, Sep, Okt, Nov, Dec]
     order: [ :day, :month, :year ]
-  
+
   time:
     formats:
       default: "%a %b %d %H:%M:%S %Z %Y"
@@ -22,14 +22,14 @@
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
       only_second: "%S"
-      
+
       datetime:
         formats:
           default: "%Y-%m-%dT%H:%M:%S%Z"
-          
+
       am: 'AM'
       pm: 'PM'
-      
+
   datetime:
     distance_in_words:
       half_a_minute: 'pola minute'
@@ -70,7 +70,7 @@
       over_x_years:
         one: 'preko 1 godine'
         other: 'preko {{count}} godine'
-      
+
   number:
     format:
       precision: 3
@@ -81,7 +81,11 @@
         unit: 'DIN'
         precision: 2
         format: '%n %u'
-        
+
+  support:
+    array:
+      sentence_connector: "i"
+
   activerecord:
     errors:
       template:
@@ -89,7 +93,7 @@
           one: 'Nisam uspeo sačuvati {{model}}: 1 greška'
           few: 'Nisam uspeo sačuvati {{model}}: {{count}} greške.'
           other: 'Nisam uspeo sačuvati {{model}}: {{count}} greški.'
-        body: "Molim Vas proverite sledeća polja:"      
+        body: "Molim Vas proverite sledeća polja:"
       messages:
         inclusion: "nije u listi"
         exclusion: "nije dostupno"

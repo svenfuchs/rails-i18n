@@ -14,7 +14,7 @@
     month_names: [~, Januar, Februar, Mart, April, Maj, Јun, Јul, Аvgust, Septembar, Оktobar, Novembar, Decembar]
     abbr_month_names: [~, Jan, Feb, Mar, Apr, Мaj, Jun, Јul, Avg, Sep, Okt, Nov, Dec]
     order: [ :day, :month, :year ]
-  
+
   time:
     formats:
       default: "%a %b %d %H:%M:%S %Z %Y"
@@ -22,10 +22,10 @@
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
       only_second: "%S"
-          
+
     am: 'АМ'
     pm: 'PМ'
-      
+
   datetime:
     formats:
       default: "%Y-%m-%dT%H:%M:%S%Z"
@@ -68,7 +68,7 @@
       over_x_years:
         one: 'preko 1 godine'
         other: 'preko {{count}} godine'
-      
+
   number:
     format:
       precision: 3
@@ -79,11 +79,15 @@
         unit: 'KM'
         precision: 2
         format: '%n %u'
-        
+
+  support:
+    array:
+      sentence_connector: "i"
+
   activerecord:
     errors:
       template:
-        header: 
+        header:
           one: 'nisam uspio sačuvati {{model}}: 1 greška.'
           few: 'nisam uspio sačuvati {{model}}: {{count}} greške.'
           other: 'nisam uspio sačuvati {{model}}: {{count}} greški.'
