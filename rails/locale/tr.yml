@@ -5,8 +5,9 @@ tr:
   date:
     formats:
       default: "%d.%m.%Y"
+      numeric: "%d.%m.%Y"
       short: "%e %b"
-      long: "%e %B %Y"
+      long: "%e %B %Y, %A"
       only_day: "%e"
 
     day_names: [Pazar, Pazartesi, Salı, Çarşamba, Perşembe, Cuma, Cumartesi]
@@ -18,8 +19,9 @@ tr:
   time:
     formats:
       default: "%a %d.%b.%y %H:%M"
+      numeric: "%d.%b.%y %H:%M"
       short: "%e %B, %H:%M"
-      long: "%a %d.%b.%y %H:%M"
+      long: "%e %B %Y, %A, %H:%M"
       time: "%H:%M"
 
     am: "öğleden önce"
