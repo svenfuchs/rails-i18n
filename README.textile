@@ -21,3 +21,27 @@ Then, standing in the root directory of this repository, do:
 ruby rails/test/structure.rb [your-locale]
 
 Assuming that there is a file rails/locale/[your-locale].{rb,yml} you will get a summary of missing and bogus keys as well as extra pluralization keys in your locale data.
+
+h2. Rails I18n Textmate bundle
+
+Still in a very experimental state but already helpful for me.
+
+The bundle adds a single command: extract translation (shift-cmd-e)
+
+# expects you to have a string selected (including single or double quotes)
+# prompts you for a dot-separated key
+# opens the file /log/translations.yml (creating it when not available)
+# adds the translation (mapping the dot-separated key to nested yaml keys)
+# replaces the selected string in your source-code with the dot-separated key wrapped into a call to t(your.key)
+
+It currently expects that you're working with English views, so it uses :en as a locale in translation.yml.
+
+Note that Textmate, while active, won't reload the translations.yml for you if it's already open. When you give the focus to another application and then go back to Textmate (e.g. with cmd-tab, cmd-tab) it will reload the file. I found it useful to have translations.yml open on a second monitor while extracting translations from my application.
+
+I still have to figure out how to automatically select the next string after this command has run. It works well to just use Textmate's "Find Next" though:
+
+# hit cmd-f and give it <code>("|').*(\1)</code> as a search expression, tell it to use this as a "Regular expression"
+# hit return and it will select the next string
+# use shift-cmd-e to extract that string
+# hit cmd-g to select the next string
+

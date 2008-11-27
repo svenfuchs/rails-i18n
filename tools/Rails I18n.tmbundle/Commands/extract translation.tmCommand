@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/ruby 
+
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_i18n.rb'
+
+class Hash
+  def deep_merge(other)
+    # deep_merge by Stefan Rusterholz, see http://www.ruby-forum.com/topic/142809
+    merger = proc { |key, v1, v2| Hash === v1 &amp;&amp; Hash === v2 ? v1.merge(v2, &amp;merger) : v2 }
+    merge(other, &amp;merger)
+  end
+
+  def set(keys, value)
+    key = keys.shift
+    if keys.empty?
+      self[key] = value
+    else
+      self[key] ||= {}
+      self[key].set keys, value
+    end
+  end
+end
+
+project_dir = ENV['TM_PROJECT_DIRECTORY']
+path = File.join(project_dir, 'log', 'translations')
+
+translation = ENV['TM_SELECTED_TEXT'].gsub(/^\s*("|')|("|')\s*$/, '')
+key = TextMate::UI.request_string :title =&gt; 'Key', :prompt =&gt; 'Key'
+keys = ['en'] + key.split('.')
+
+log_file = File.open(path, 'a+')
+log_file.puts "#{key}: #{translation}"
+
+data = { 'en' =&gt; {} }
+data.set keys, translation
+
+path = File.join(project_dir, 'log', 'translations.yml')
+data = data.deep_merge YAML.load(File.open(path, 'r') { |f| f.read }) if File.exists?(path)
+
+File.open(path, 'w+') { |f| f.write YAML.dump(data) }
+
+print "t(:'#{key}')"
+</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@E</string>
+	<key>name</key>
+	<string>extract translation</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>914BB49A-6809-425F-812E-7C3C5321D403</string>
+</dict>
+</plist>
