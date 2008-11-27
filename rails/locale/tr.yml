@@ -2,6 +2,8 @@
 # by Ozgun Ataman (ozataman@gmail.com)
 
 tr:
+  locale:
+    native_name: Türkçe
   date:
     formats:
       default: "%d.%m.%Y"
