@@ -27,8 +27,14 @@ ar:
         formats:
           default: "%Y-%m-%dT%H:%M:%S%Z"
           
-      am: 'صباحا'
-      pm: 'مساءا'
+    am: 'صباحا'
+    pm: 'مساءا'
+
+  # Used in array.to_sentence.
+  support:
+    array:
+      sentence_connector: "و"
+      skip_last_comma: false
       
   datetime:
     distance_in_words:
