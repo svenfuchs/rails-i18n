@@ -74,19 +74,23 @@ tr:
       format:
         unit: 'TRY'
         format: '%n%u'
-        separator: 
-        delimiter: 
-        precision: 
+        separator: ','
+        delimiter: '.'
+        precision: 2
     percentage:
       format:
-        delimiter: ""
+        delimiter: '.'
+        separator: ','
+        precision: 2
     precision:
       format:
-        delimiter: ""
+        delimiter: '.'
+        separator: ','
     human:
       format:
-        delimiter: ""
-        precision: 1
+        delimiter: '.'
+        separator: ','
+        precision: 2
 
   support:
     array:
