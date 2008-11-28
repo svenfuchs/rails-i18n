@@ -85,6 +85,9 @@ ar:
   activerecord:
     errors:
       template:
+        header:
+          one:    "هناك خطأ واحد يمنع {{model}} من الحفظ"
+          other:  "{{count}} أخطاء منعت {{model}} من الحفظ"
         header: "ليس بالامكان حفظ {{model}}:"
         body: "يرجى التحقق من الحقول التالية:"
       messages:
