@@ -77,8 +77,8 @@ pt-BR:
       errors: 
         template: 
           header: 
-            one: "{{model não pôde ser salvo 1 erro"
-            other: "{{model não pôde ser salvo {{count erros."
+            one: "{{model}} não pôde ser salvo 1 erro"
+            other: "{{model}} não pôde ser salvo {{count}} erros."
           
           body: "Por favor, cheque os seguintes campos"
         
@@ -90,15 +90,15 @@ pt-BR:
           accepted: "precisa ser aceito"
           empty: "não pode ser vazio"
           blank: "não pode ser vazio"
-          too_long: "é muito longo (não mais do que {{count caracteres)"
-          too_short: "é muito curto (não menos do que {{count caracteres)"
-          wrong_length: "não é do tamanho correto (precisa ter {{count caracteres)"
+          too_long: "é muito longo (não mais do que {{count}} caracteres)"
+          too_short: "é muito curto (não menos do que {{count}} caracteres)"
+          wrong_length: "não é do tamanho correto (precisa ter {{count}} caracteres)"
           taken: "não está disponível"
           not_a_number: "não é um número"
-          greater_than: "precisa ser maior do que {{count"
-          greater_than_or_equal_to: "precisa ser maior ou igual a {{count"
-          equal_to: "precisa ser igual a {{count"
-          less_than: "precisa ser menor do que {{count"
-          less_than_or_equal_to: "precisa ser menor ou igual a {{count"
+          greater_than: "precisa ser maior do que {{count}}"
+          greater_than_or_equal_to: "precisa ser maior ou igual a {{count}}"
+          equal_to: "precisa ser igual a {{count}}"
+          less_than: "precisa ser menor do que {{count}}"
+          less_than_or_equal_to: "precisa ser menor ou igual a {{count}}"
           odd: "precisa ser ímpar"
           even: "precisa ser par"
