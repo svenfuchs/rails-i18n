@@ -18,6 +18,7 @@ es-MX:
       format:
         delimiter: ""
         precision: 1
+      storage_units: [Bytes, KB, MB, GB, TB]
     precision:
       format:
         delimiter: ""
