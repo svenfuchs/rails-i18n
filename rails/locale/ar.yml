@@ -20,14 +20,21 @@ ar:
       default: "%a %b %d %H:%M:%S %Z %Y"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
+      only_second: "%S"
+      
+      datetime:
+        formats:
+          default: "%Y-%m-%dT%H:%M:%S%Z"
+          
     am: 'صباحا'
     pm: 'مساءا'
-      
+
+  # Used in array.to_sentence.
   support:
     array:
       sentence_connector: "و"
       skip_last_comma: false
-
+      
   datetime:
     distance_in_words:
       half_a_minute: 'نصف دقيقة'
