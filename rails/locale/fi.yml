@@ -63,14 +63,14 @@ fi:
     distance_in_words:
       half_a_minute: "puoli minuuttia"
       less_than_x_seconds:
-        one:   "vähemmän kuin sekunti"
-        other: "vähemmän kuin {{count}} sekuntia"
+        one:   "aiemmin kuin sekunti"
+        other: "aiemmin kuin {{count}} sekuntia"
       x_seconds:
         one:   "sekunti"
         other: "{{count}} sekuntia"
       less_than_x_minutes:
-        one:   "vähemmän kuin minuutti"
-        other: "vähemmän kuin {{count}} minuuttia"
+        one:   "aiemmin kuin minuutti"
+        other: "aiemmin kuin {{count}} minuuttia"
       x_minutes:
         one:   "minuutti"
         other: "{{count}} minuuttia"
