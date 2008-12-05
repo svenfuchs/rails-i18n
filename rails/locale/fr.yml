@@ -74,15 +74,15 @@ fr:
         precision: 2
         format: '%n %u'
     human:
-      format:
-        units: [ Octet, ko, Mo, Go, To ]
+      storage_units: [ Octet, ko, Mo, Go, To ]
+        
         
   activerecord:
     errors:
       template:
         header: 
-          one: "Impossible de sauver {{object_name}}: 1 erreur"
-          other: "Impossible de sauver {{object_name}}: {{count}} errors."
+          one: "Impossible d'enregistrer {{model}}: 1 erreur"
+          other: "Impossible d'enregistrer {{model}}: {{count}} erreurs."
         body: "Veuillez vérifier les champs suivants :"
       messages:
         inclusion: "n'est pas inclus(e) dans la liste"

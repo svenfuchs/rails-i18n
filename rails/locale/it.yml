@@ -79,8 +79,8 @@ it:
     errors:
       template:
         header: 
-          one: "Non posso salvare questo {{object_name}}: 1 errore"
-          other: "Non posso salvare questo {{object_name}}: {{count}} errori."
+          one: "Non posso salvare questo {{model}}: 1 errore"
+          other: "Non posso salvare questo {{model}}: {{count}} errori."
         body: "Per favore ricontrolla i seguenti campi:"
       messages:
         inclusion: "non è incluso nella lista"

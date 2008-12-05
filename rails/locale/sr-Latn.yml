@@ -86,9 +86,9 @@
     errors:
       template:
         header:
-          one: 'Nisam uspeo sačuvati {{object_name}}: 1 greška'
-          few: 'Nisam uspeo sačuvati {{object_name}}: {{count}} greške.'
-          other: 'Nisam uspeo sačuvati {{object_name}}: {{count}} greški.'
+          one: 'Nisam uspeo sačuvati {{model}}: 1 greška'
+          few: 'Nisam uspeo sačuvati {{model}}: {{count}} greške.'
+          other: 'Nisam uspeo sačuvati {{model}}: {{count}} greški.'
         body: "Molim Vas proverite sledeća polja:"      
       messages:
         inclusion: "nije u listi"

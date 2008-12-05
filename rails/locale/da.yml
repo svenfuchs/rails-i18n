@@ -7,7 +7,6 @@ da:
       default: "%d.%m.%Y"
       short: "%e. %b %Y"
       long: "%e. %B %Y"
-      only_day: "%e"
 
     day_names: [søndag, mandag, tirsdag, onsdag, torsdag, fredag, lørdag]
     abbr_day_names: [sø, ma, ti, on, to, fr, lø]
@@ -20,13 +19,6 @@ da:
       default: "%e. %B %Y, %H:%M"
       short: "%e. %b %Y, %H:%M"
       long: "%A, %e. %B %Y, %H:%M"
-      time: "%H:%M"
-      only_second: "%S"
-
-      datetime:
-        formats:
-          default: "%d-%m-%YT%H:%M:%S%Z"
-
     am: ""
     pm: ""
 
@@ -78,7 +70,25 @@ da:
       format:
         format: "%u %n"
         unit: "DKK"
+        separator: ","
+        delimiter: "."
         precision: 2
+    precision:
+      format:
+        # separator:
+        delimiter: ""
+        # precision:
+    human:
+      format:
+        # separator: 
+        delimiter: ""
+        precision: 1
+      storage_units: [Bytes, KB, MB, GB, TB]
+    percentage:
+      format:
+        # separator:
+        delimiter: ""
+        # precision:
 
   activerecord:
     errors:
