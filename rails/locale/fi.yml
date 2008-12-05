@@ -1,7 +1,7 @@
 # Finnish translations for Ruby on Rails 
 # by Marko Seppä (marko.seppa@gmail.com)
 
-fi-FI:
+fi:
   date:
     formats:
       default: "%e. %Bta %Y"
@@ -63,31 +63,31 @@ fi-FI:
     distance_in_words:
       half_a_minute: "puoli minuuttia"
       less_than_x_seconds:
-        one:   "vähemmän kuin 1 sekunti"
+        one:   "vähemmän kuin sekunti"
         other: "vähemmän kuin {{count}} sekuntia"
       x_seconds:
-        one:   "1 sekunti"
+        one:   "sekunti"
         other: "{{count}} sekuntia"
       less_than_x_minutes:
-        one:   "vähemmän kuin 1 minuutti"
+        one:   "vähemmän kuin minuutti"
         other: "vähemmän kuin {{count}} minuuttia"
       x_minutes:
-        one:   "1 minuutti"
-        other: "{{count}} 1 minuuttia"
+        one:   "minuutti"
+        other: "{{count}} minuuttia"
       about_x_hours:
-        one:   "noin 1 tunti"
+        one:   "noin tunti"
         other: "noin {{count}} tuntia"
       x_days:
-        one:   "1 päivä"
+        one:   "päivä"
         other: "{{count}} päivää"
       about_x_months:
         one:   "noin kuukausi"
         other: "noin {{count}} kuukautta"
       x_months:
-        one:   "1 kuukausi"
+        one:   "kuukausi"
         other: "{{count}} kuukautta"
       about_x_years:
-        one:   "1 vuosi"
+        one:   "vuosi"
         other: "noin {{count}} vuotta"
       over_x_years:
         one:   "yli vuosi"
@@ -101,8 +101,8 @@ fi-FI:
           other:  "{{count}} virhettä esti tämän {{model}} mallinteen tallentamisen"
         body: "Seuraavat kentät aiheuttivat ongelmia:"
       messages:
-        inclusion: "ei ole listattu"
-        exclusion: "on varattu"
+        inclusion: "ei löydy listauksesta"
+        exclusion: "on jo varattu"
         invalid: "on kelvoton"
         confirmation: "ei vastaa varmennusta"
         accepted: "täytyy olla hyväksytty"
