@@ -18,8 +18,8 @@
         :short   => "%d %b",
         :long    => "%d. %B %Y",
       },
-      :day_names         => %w{Sobota Neděle Pondělí Úterý Středa Čtvrtek Pátek},
-      :abbr_day_names    => %w{So Ne Po Út St Čt Pá},
+      :day_names         => %w{Neděle Pondělí Úterý Středa Čtvrtek Pátek Sobota},
+      :abbr_day_names    => %w{Ne Po Út St Čt Pá So},
       :month_names       => %w{~ Leden Únor Březen Duben Květen Červen Červenec Srpen Září Říjen Listopad Prosinec},
       :abbr_month_names  => %w{~ Led Úno Bře Dub Kvě Čvn Čvc Srp Zář Říj Lis Pro},
       :order             => [:day, :month, :year]
