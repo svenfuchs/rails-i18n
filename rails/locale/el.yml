@@ -9,7 +9,7 @@ el:
       delimiter: "."
       # Number of decimals, behind the separator (the number 1 with a precision of 2 gives: 1,00)
       precision: 3
-      
+        
     # Used in number_to_currency()
     currency:
       format:
