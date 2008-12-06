@@ -4,13 +4,16 @@
 # original translation into French by Christian Lescuyer
 
 fr-CH:
+  support:
+    array:
+      sentence_connector: "et"
+      skip_last_comma: true
+  
   date:
     formats:
       default: "%d.%m.%Y"
       short: "%e. %b"
       long: "%e. %B %Y"
-      long_ordinal: "%e %B %Y"
-      only_day: "%e"
 
     day_names: [dimanche, lundi, mardi, mercredi, jeudi, vendredi, samedi]
     abbr_day_names: [dim, lun, mar, mer, jeu, ven, sam]
@@ -21,11 +24,8 @@ fr-CH:
   time:
     formats:
       default: "%d. %B %Y %H:%M"
-      time: "%H:%M"
       short: "%d. %b %H:%M"
       long: "%A, %d. %B %Y %H:%M:%S %Z"
-      long_ordinal: "%A, %d. %B %Y %H:%M:%S %Z"
-      only_second: "%S"
     am: 'am'
     pm: 'pm'
 
@@ -33,15 +33,13 @@ fr-CH:
     distance_in_words:
       half_a_minute: "une demi-minute"
       less_than_x_seconds:
-        zero:  "moins d'une seconde"
-        one:   "moins de 1 seconde"
+        one:   "moins d'une seconde"
         other: "moins de {{count}} secondes"
       x_seconds:
         one:   "1 seconde"
         other: "{{count}} secondes"
       less_than_x_minutes:
-        zero:  "moins d'une minute"
-        one:   "moins de 1 minute"
+        one:   "moins d'une minute"
         other: "moins de {{count}} minutes"
       x_minutes:
         one:   "1 minute"
@@ -69,13 +67,15 @@ fr-CH:
     format:
       precision: 3
       separator: '.'
-      delimiter: '\''
+      delimiter: "'"
     currency:
       format:
         unit: 'CHF'
         precision: 2
         format: '%n %u'
     human:
+      format:
+        precision: 2
       storage_units: [ Octet, ko, Mo, Go, To ]
         
         
