@@ -93,7 +93,7 @@ pl:
         body: "Błędy dotyczą następujących pól:"
       messages:
         inclusion: "nie znajduje się na liście dopuszczalnych wartości"
-        exclusion: "znajduję się na liście zabronionych wartości"
+        exclusion: "znajduje się na liście zabronionych wartości"
         invalid: "jest nieprawidłowe"
         confirmation: "nie zgadza się z potwierdzeniem"
         accepted: "musi być zaakceptowane"
