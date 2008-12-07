@@ -1,3 +1,6 @@
+# Greek translations for Rails
+# by Nick Kokkos (nkokkos@gmail.com)
+
 el:
   number:
     # Used in number_with_delimiter()
@@ -44,7 +47,7 @@ el:
         # separator: 
         delimiter: ""
         precision: 1
-      storage_units: [Bytes, KB, MB, GB, TB]
+    #  storage_units: [Bytes, KB, MB, GB, TB]
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
@@ -63,23 +66,23 @@ el:
         one:   "ένα λεπτό"
         other: "{{count}} λεπτά"
       about_x_hours:
-        one:   "about 1 hour"
-        other: "about {{count}} hours"
+        one:   "1 ώρα περίπου"
+        other: "{{count}} hours περίπου"
       x_days:
-        one:   "1 day"
-        other: "{{count}} days"
+        one:   "1 μέρα"
+        other: "{{count}} μέρες"
       about_x_months:
-        one:   "about 1 month"
-        other: "about {{count}} months"
+        one:   "1 μήνα περίπου"
+        other: "{{count}} μήνες περίπου"
       x_months:
-        one:   "1 month"
-        other: "{{count}} months"
+        one:   "1 μήνα"
+        other: "{{count}} μήνες"
       about_x_years:
-        one:   "about 1 year"
-        other: "about {{count}} years"
+        one:   "ένα χρόνο περίπου"
+        other: "{{count}} χρόνια περίπου"
       over_x_years:
-        one:   "over 1 year"
-        other: "over {{count}} years"
+        one:   "πάνω απο 1 χρόνο"
+        other: "πάνω απο {{count}} χρόνια"
 
   activerecord:
     errors:
@@ -88,7 +91,7 @@ el:
           one:    "1 error prohibited this {{model}} from being saved"
           other:  "{{count}} errors prohibited this {{model}} from being saved"
         # The variable :count is also available
-        body: "There were problems with the following fields:"
+        body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία :"
 
 
   activerecord:
@@ -96,25 +99,25 @@ el:
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
-        inclusion: "is not included in the list"
+        inclusion: "δεν συμπεριλαβάνεται στη λίστα"
         exclusion: "is reserved"
         invalid: "is invalid"
         confirmation: "doesn't match confirmation"
         accepted: "must be accepted"
         empty: "can't be empty"
         blank: "can't be blank"
-        too_long: "is too long (maximum is {{count}} characters)"
-        too_short: "is too short (minimum is {{count}} characters)"
+        too_long: "είναι πολύ μεγάλο (το μέγιστο μήκος είναι {{count}} χαρακτήρες)"
+        too_short: "είναι πολύ μικρό (το μικρότερο μήκος είναι {{count}} χαρακτήρες)"
         wrong_length: "is the wrong length (should be {{count}} characters)"
         taken: "has already been taken"
         not_a_number: "is not a number"
-        greater_than: "must be greater than {{count}}"
-        greater_than_or_equal_to: "must be greater than or equal to {{count}}"
-        equal_to: "must be equal to {{count}}"
-        less_than: "must be less than {{count}}"
-        less_than_or_equal_to: "must be less than or equal to {{count}}"
-        odd: "must be odd"
-        even: "must be even"
+        greater_than: "πρέπει να είναι μεγαλύτερο απο {{count}}"
+        greater_than_or_equal_to: "πρέπει να είναι μεγαλύτερο ή ίσον με {{count}}"
+        equal_to: "πρέπει να είναι ίσον με  {{count}}"
+        less_than: "πρέπει να είναι λιγότερο απο {{count}}"
+        less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσον με {{count}}"
+        odd: "πρέπει να είναι περιττός"
+        even: "πρέπει να είναι άρτιος"
         # Append your own errors here or at the model/attributes scope.
 
       # You can define own errors for models or model attributes.
@@ -150,12 +153,13 @@ el:
       # Use the strftime parameters for formats.
       # When no format has been given, it uses default.
       # You can provide other formats here if you like!
-      default: "%Y-%m-%d"
-      short: "%b %d"
-      long: "%B %d, %Y"
+      default: "%d-%m-%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+      only_day: "%e"
       
-    day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
-    abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+    day_names: [Κυριακή, Δευτέρα, Τρίτη, Τετάρτη, Πέμπτη, Παρασκευή, Σάββατο]
+    abbr_day_names: [Κυρ, Δευ, Τρι, Τετ, Πεμ, Παρ, Σαβ]
       
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
