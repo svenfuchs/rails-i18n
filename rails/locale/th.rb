@@ -1,3 +1,6 @@
+# original author unknown (please make yourself known!)
+# activerecord keys fixed by Jittat Fakcharoenphol (jittat@gmail.com)
+
 { 
   :'th' => {
     :date => {
