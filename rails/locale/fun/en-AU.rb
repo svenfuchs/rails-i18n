@@ -1,3 +1,5 @@
+# original by Dr. Nic
+
 {
   :'en-AU' => {
     :date => {
