@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/ruby 
+require 'rubygems'
+require 'i18n'
+I18n.locale = :en
+I18n.load_path &lt;&lt; File.join(ENV['TM_PROJECT_DIRECTORY'], 'config', 'locales', 'en.yml')
+
+class &lt;&lt; Object
+  def const_missing(const)
+    nil
+  end
+end
+
+def method_missing(method, *args)
+  "**#{method}**"
+end
+
+def t(*args)
+  I18n.t(*args)
+end
+
+def args_to_array(*args)
+  args
+end
+
+args = eval('args_to_array(' + ENV['TM_SELECTED_TEXT'] + ')')
+
+if args.last.is_a?(Hash)
+  args.last.each { |k, v| args.last[k] = "**#{k}**" if v.nil? }
+end
+
+print I18n.t(*args)
+</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@I</string>
+	<key>name</key>
+	<string>Lookup Translation</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>7DAF30C3-0247-4E94-AA44-DD2E69A6E236</string>
+</dict>
+</plist>
