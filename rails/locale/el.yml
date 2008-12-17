@@ -1,4 +1,4 @@
-# Greek translations for Rails
+# Greek translations for Ruby on Rails
 # by Nick Kokkos (nkokkos@gmail.com)
 
 el:
@@ -88,8 +88,8 @@ el:
     errors:
       template:
         header:
-          one:    "1 error prohibited this {{model}} from being saved"
-          other:  "{{count}} errors prohibited this {{model}} from being saved"
+          one:    "1 λάθος εμπόδισε αυτό το {{model}} να αποθηκευθεί"
+          other:  "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
         # The variable :count is also available
         body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία :"
 
@@ -100,17 +100,17 @@ el:
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
         inclusion: "δεν συμπεριλαβάνεται στη λίστα"
-        exclusion: "is reserved"
-        invalid: "is invalid"
-        confirmation: "doesn't match confirmation"
-        accepted: "must be accepted"
-        empty: "can't be empty"
-        blank: "can't be blank"
+        exclusion: "είναι κρατημένο"
+        invalid: "είναι άκυρο"
+        confirmation: "δεν ταιριάζει με την επικύρωση"
+        accepted: "πρέπει να είναι αποδεκτό"
+        empty: "δεν πρέπει να είναι άδειο"
+        blank: "δεν πρέπει να είναι κενό"
         too_long: "είναι πολύ μεγάλο (το μέγιστο μήκος είναι {{count}} χαρακτήρες)"
         too_short: "είναι πολύ μικρό (το μικρότερο μήκος είναι {{count}} χαρακτήρες)"
-        wrong_length: "is the wrong length (should be {{count}} characters)"
-        taken: "has already been taken"
-        not_a_number: "is not a number"
+        wrong_length: "έχει λανθασμένο μήκος (πρέπει να είναι {{count}} χαρακτήρες)"
+        taken: "το έχουν ήδη χρησιμοποιήσει"
+        not_a_number: "δεν είναι ένας αριθμός"
         greater_than: "πρέπει να είναι μεγαλύτερο απο {{count}}"
         greater_than_or_equal_to: "πρέπει να είναι μεγαλύτερο ή ίσον με {{count}}"
         equal_to: "πρέπει να είναι ίσον με  {{count}}"
@@ -162,8 +162,8 @@ el:
     abbr_day_names: [Κυρ, Δευ, Τρι, Τετ, Πεμ, Παρ, Σαβ]
       
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
-    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
-    abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    month_names: [~, Ιανοάριος, Φεβρουάριος, Μάρτιος, Απρίλιος, Μάιος, Ιούνιος, Ιούλιος, Άυγουστος, Σεπτέμβριος, Οκτώβριος, Νοέμβριος, Δεκέμβριος]
+    abbr_month_names: [~, Ιαν, Φεβ, Μάρ, Απρ, Μαι, Ιουν, Ιούλ, Αυγ, Σεπ, Οκτ, Νοε, Δεκ]
     # Used in date_select and datime_select.
     order: [ :year, :month, :day ]
 
@@ -172,11 +172,13 @@ el:
       default: "%a, %d %b %Y %H:%M:%S %z"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
-    am: "am"
-    pm: "pm"
+    am: "πμ"
+    pm: "μμ"
+
+
       
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "and"
+      sentence_connector: "και"
       skip_last_comma: false
