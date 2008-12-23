@@ -47,7 +47,7 @@ el:
         # separator: 
         delimiter: ""
         precision: 1
-    #  storage_units: [Bytes, KB, MB, GB, TB]
+        storage_units: [Bytes, KB, MB, GB, TB]
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
@@ -100,7 +100,7 @@ el:
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
         inclusion: "δεν συμπεριλαβάνεται στη λίστα"
-        exclusion: "είναι κρατημένο"
+        exclusion: "είναι δεσμευμένο"
         invalid: "είναι άκυρο"
         confirmation: "δεν ταιριάζει με την επικύρωση"
         accepted: "πρέπει να είναι αποδεκτό"
@@ -168,10 +168,17 @@ el:
     order: [ :year, :month, :day ]
 
   time:
-    formats:
-      default: "%a, %d %b %Y %H:%M:%S %z"
+      formats:
+      default: "%a %d %b %Y, %H:%M:%S %z"
+      time: "%H:%M"
       short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
+      long: "%d %B %Y %H:%M"
+      only_second: "%S"
+      
+      datetime:
+        formats:
+          default: "%d-%m-%YT%H:%M:%S%Z"
+          
     am: "πμ"
     pm: "μμ"
 
