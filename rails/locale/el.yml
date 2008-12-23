@@ -17,7 +17,7 @@ el:
     currency:
       format:
         # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
-        # in Greek currency values would be represented as (e.g €5,78:five euros and seventy eight cents or €1.012,45: one thousand twelve euros and 45 cents)
+        # in Greek currency values would be represented as (e.g €5,78:five euros and seventy eight  cents or €1.012,45: one thousand twelve euros and 45 cents)
         format: "%u%n"
         unit: "€"
         # These three are to override number.format and are optional
@@ -169,22 +169,20 @@ el:
     order: [ :year, :month, :day ]
 
   time:
-      formats:
+    formats:
       default: "%a %d %b %Y, %H:%M:%S %z"
       time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
       only_second: "%S"
-      
-      datetime:
-        formats:
-          default: "%d-%m-%YT%H:%M:%S%Z"
-          
-    am: "πμ"
-    pm: "μμ"
+    am: "am"
+    pm: "pm"
 
+  datetime:
+    formats:
+      default: "%d-%m-%YT%H:%M:%S%Z"
+    
 
-      
 # Used in array.to_sentence.
   support:
     array:
