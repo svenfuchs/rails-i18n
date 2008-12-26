@@ -98,7 +98,7 @@
         inclusion: "finns inte i listan"
         exclusion: "är reserverat"
         invalid: "är ogiltigt"
-        confirmation: "stämmer inte övererens"
+        confirmation: "stämmer inte överens"
         accepted : "måste vara accepterad"
         empty: "får ej vara tom"
         blank: "måste anges"
