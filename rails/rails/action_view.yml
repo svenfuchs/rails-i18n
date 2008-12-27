@@ -1,4 +1,4 @@
-"en-US":
+"en":
   number:
     # Used in number_with_delimiter()
     # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
@@ -80,6 +80,13 @@
       over_x_years:
         one:   "over 1 year"
         other: "over {{count}} years"
+    prompts:
+      year:   "Year"
+      month:  "Month"
+      day:    "Day"
+      hour:   "Hour"
+      minute: "Minute"
+      second: "Seconds"
 
   activerecord:
     errors:

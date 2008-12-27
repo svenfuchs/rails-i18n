@@ -18,7 +18,7 @@ class KeyStructure
     @locale = locale.to_sym
     init_backend
 
-    @reference = I18n.backend.translations[:'en-US']
+    @reference = I18n.backend.translations[:'en']
     @data = I18n.backend.translations[@locale]
     
     @result = {:bogus => [], :missing => [], :pluralization => []}
