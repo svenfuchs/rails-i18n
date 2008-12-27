@@ -119,6 +119,13 @@ ru:
         few:   "больше {{count}} лет"
         many:  "больше {{count}} лет"
         other: "больше {{count}} лет"
+    prompts:
+      year: "Год"
+      month: "Месяц"
+      day: "День"
+      hour: "Часов"
+      minute: "Минут"
+      second: "Секунд"
 
   activerecord:
     errors:
