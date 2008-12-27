@@ -1,20 +1,12 @@
-require 'tmpdir'
+curr_dir = File.expand_path(File.dirname(__FILE__))
+rails_locale_dir = File.expand_path(File.join(curr_dir, "..", "rails"))
 
-curr_dir = Dir.pwd
-tmp_dir = Dir.tmpdir
-FileUtils.rm_rf "#{tmp_dir}/rails-i18n" if File.exists? "#{tmp_dir}/rails-i18n"
+puts "Fetching latest Rails locale files to #{rails_locale_dir}"
 
 exec %(
-  cd #{tmp_dir};
-  mkdir rails-i18n;
-  cd rails-i18n;
-  echo 'created tmp dir';
-  echo 'cloning rails';
-  git clone git://github.com/rails/rails.git;
-  cp ./rails/actionpack/lib/action_view/locale/en.yml #{curr_dir}/rails/rails/action_view.yml;
-  cp ./rails/activerecord/lib/active_record/locale/en.yml #{curr_dir}/rails/rails/active_record.yml;
-  cp ./rails/activesupport/lib/active_support/locale/en.yml #{curr_dir}/rails/rails/active_support.yml;
-  cd ..;
-  rm -rf rails-i18n;
-)
+  curl http://github.com/rails/rails/tree/master/actionpack/lib/action_view/locale/en.yml?raw=true > #{rails_locale_dir}/action_view.yml
 
+  curl http://github.com/rails/rails/tree/master/activerecord/lib/active_record/locale/en.yml?raw=true > #{rails_locale_dir}/active_record.yml
+
+  curl http://github.com/rails/rails/tree/master/activesupport/lib/active_support/locale/en.yml?raw=true > #{rails_locale_dir}/active_support.yml
+)
