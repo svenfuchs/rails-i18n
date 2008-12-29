@@ -54,41 +54,41 @@ es:
       half_a_minute: "medio minuto" 
       less_than_x_seconds:
         one:  "menos de 1 segundo" 
-        many: "menos de {{count}} segundos"
+        other: "menos de {{count}} segundos"
       x_seconds:
         one:  "1 segundo" 
-        many: "{{count}} segundos" 
+        other: "{{count}} segundos" 
       less_than_x_minutes:
         one:  "menos de 1 minuto" 
-        many: "menos de {{count}} minutos" 
+        other: "menos de {{count}} minutos" 
       x_minutes:
         one:  "1 minuto" 
-        many: "{{count}} minutos" 
+        other: "{{count}} minutos" 
       about_x_hours:
         one:  "alrededor de 1 hora" 
-        many: "alrededor de {{count}} horas" 
+        other: "alrededor de {{count}} horas" 
       x_days:
         one:  "1 día" 
-        many: "{{count}} días" 
+        other: "{{count}} días" 
       about_x_months:
         one:  "alrededor de 1 mes" 
-        many: "alrededor de {{count}} meses" 
+        other: "alrededor de {{count}} meses" 
       x_months:
         one:  "1 mes" 
-        many: "{{count}} meses" 
+        other: "{{count}} meses" 
       about_x_years:
         one:  "alrededor de 1 año" 
-        many: "alrededor de {{count}} años" 
+        other: "alrededor de {{count}} años" 
       over_x_years:
         one:  "más de 1 año" 
-        many: "más de {{count}} años" 
+        other: "más de {{count}} años" 
 
   activerecord:
     errors:
       template:
         header:
           one:   "no se pudo guardar este {{model}} porque se encontró 1 error" 
-          many:  "no se pudo guardar este {{model}} porque se encontraron {{count}} errores" 
+          other:  "no se pudo guardar este {{model}} porque se encontraron {{count}} errores" 
         # The variable :count is also available
         body: "Se encontraron problemas con los siguientes campos:" 
 
@@ -152,5 +152,4 @@ es:
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "y" 
-
+      sentence_connector: "y"
