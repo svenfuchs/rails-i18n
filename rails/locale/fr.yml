@@ -75,8 +75,12 @@ fr:
         format: '%n %u'
     human:
       storage_units: [ Octet, ko, Mo, Go, To ]
-        
-        
+  
+  support:
+    array:
+      sentence_connector: 'et'
+      skip_last_comma: true
+  
   activerecord:
     errors:
       template:
