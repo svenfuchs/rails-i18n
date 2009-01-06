@@ -1,5 +1,6 @@
 # Korean (한글) translations for Ruby on Rails 
 # by John Hwang (jhwang@tavon.org)
+# http://github.com/tavon
 
 ko:
   date:
@@ -44,7 +45,7 @@ ko:
         one:   "약 한시간"
         other: "약 {{count}}시간"
       x_days:
-        one:   "1일"
+        one:   "하루"
         other: "{{count}}일"
       about_x_months:
         one:   "약 한달"
@@ -132,20 +133,20 @@ ko:
       messages:
         inclusion: "은 목록에 포함되어 있지 않습니다"
         exclusion: "은 예약되어 있습니다"
-        invalid: "은 무호입니다"
+        invalid: "은 무효입니다"
         confirmation: "은 확인이 되지 않았습니다"
         accepted: "은 인정되어야 합니다"
         empty: "은 비어두면 안 됩니다"
         blank: "은 비어두면 안 됩니다"
         too_long: "은 너무 깁니다 (최대 {{count}}자 까지)"
         too_short: "은 너무 짧습니다 (최소 {{count}}자 까지)"
-        wrong_length: "은 길이가 틀렸습니다 ({{count}}자를력 필요합니다)"
-        taken: "이미 선택된 겁니다"
+        wrong_length: "은 길이가 틀렸습니다 ({{count}}자를 필요합니다)"
+        taken: "은 이미 선택된 겁니다"
         not_a_number: "은 숫자가 아닙니다"
         greater_than: "은 {{count}}이상을 요구합니다"
         greater_than_or_equal_to: "은 {{count}}과 같거나 이상을 요구합니다"
-        equal_to: "{{count}}과 같아야 합니다"
-        less_than: "{{count}}과 같아야 합니다"
+        equal_to: "은 {{count}}과 같아야 합니다"
+        less_than: "은 {{count}}과 같아야 합니다"
         less_than_or_equal_to: "은 {{count}}과 같거나 이하을 요구합니다"
         odd: "은 홀수을 요구합니다"
         even: "은 짝수을 요구합니다"
