@@ -1,6 +1,8 @@
 # Vietnamese translation for Ruby on Rails
-# by Do Hai Bac, Eldoy Software http://www.eldoy.com
-vn:
+# by
+#   Do Hai Bac, Eldoy Software http://www.eldoy.com
+#   Ngoc Dao, http://cntt.tv
+vi:
   number:
     # Used in number_with_delimiter()
     # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
@@ -16,8 +18,8 @@ vn:
     currency:
       format:
         # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
-        format: "%n%u"
-        unit: "VND"
+        format: "%n %u"
+        unit: "đồng"
         # These three are to override number.format and are optional
         separator: ","
         delimiter: "."
@@ -46,86 +48,109 @@ vn:
         # separator:
         delimiter: ""
         precision: 1
+      storage_units: [Bytes, KB, MB, GB, TB]
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:
       half_a_minute: "30 giây"
       less_than_x_seconds:
-        one:  "chưa tới 1 giây"
-        many: "chưa tới {{count}} giây"
+        one:   "chưa tới 1 giây"
+        other: "chưa tới {{count}} giây"
       x_seconds:
-        one:  "1 giây"
-        many: "{{count}} giây"
+        one:   "1 giây"
+        other: "{{count}} giây"
       less_than_x_minutes:
-        one:  "chưa tới 1 phút"
-        many: "chưa tới {{count}} phút"
+        one:   "chưa tới 1 phút"
+        other: "chưa tới {{count}} phút"
       x_minutes:
-        one:  "1 phút"
-        many: "{{count}} phút"
+        one:   "1 phút"
+        other: "{{count}} phút"
       about_x_hours:
-        one:  "khoảng 1 giờ"
-        many: "khoảng {{count}} giờ"
+        one:   "khoảng 1 giờ"
+        other: "khoảng {{count}} giờ"
       x_days:
-        one:  "1 ngày"
-        many: "{{count}} ngày"
+        one:   "1 ngày"
+        other: "{{count}} ngày"
       about_x_months:
-        one:  "khoảng 1 tháng"
-        many: "khoảng {{count}} tháng"
+        one:   "khoảng 1 tháng"
+        other: "khoảng {{count}} tháng"
       x_months:
-        one:  "1 tháng"
-        many: "{{count}} tháng"
+        one:   "1 tháng"
+        other: "{{count}} tháng"
       about_x_years:
-        one:  "khoảng 1 năm"
-        many: "khoảng {{count}} năm"
+        one:   "khoảng 1 năm"
+        other: "khoảng {{count}} năm"
       over_x_years:
-        one:  "hơn 1 năm"
-        many: "hơn {{count}} năm"
+        one:   "hơn 1 năm"
+        other: "hơn {{count}} năm"
+    prompts:
+      year:   "Năm"
+      month:  "Tháng"
+      day:    "Ngày"
+      hour:   "Giờ"
+      minute: "Phút"
+      second: "Giây"
 
   activerecord:
     errors:
       template:
-        header: "{{count}} lỗi ngăn chặn {{model}} này trong khi ghi"
-        # one: "1 lỗi ngăn chặn {{model}} này trong khi ghi"
-        # many: "{{count}} lỗi ngăn chặn {{model}} này trong khi ghi"
+        header:
+          one:   "1 lỗi ngăn không cho lưu {{model}} này"
+          other: "{{count}} lỗi ngăn không cho lưu {{model}} này"
         # The variable :count is also available
-        body: "Có một số lỗi với các vị trí sau:"
+        body: "Có lỗi với các mục sau:"
 
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
         inclusion: "không có trong danh sách"
         exclusion: "đã được giành trước"
-        invalid: "không hợp chuẩn"
-        confirmation: "lặp lại không đúng"
+        invalid: "không hợp lệ"
+        confirmation: "không khớp với xác nhận"
         accepted: "phải được đồng ý"
         empty: "không thể rỗng"
         blank: "không thể để trắng"
-        too_long: "Quá dài (tối đa {{count}} ký tự)"
-        too_short: "Quá ngắn (tối thiểu {{count}} ký tự)"
-        wrong_length: "Độ dài không đúng (phải là {{count}} ký tự)"
-        taken: "Đã được người khac đăng kí"
-        not_a_number: "Không phải là số"
-        greater_than: "Phải lớn hơn {{count}}"
-        greater_than_or_equal_to: "Phải lớn hơn hoặc bằng {{count}}"
-        equal_to: "Phải bằng {{count}}"
-        less_than: "Phải nhỏ hơn {{count}}"
-        less_than_or_equal_to: "Phải nhỏ hơn hoặc bằng {{count}}"
-        odd: "Phải là số chẵn"
-        even: "Phải là số lẻ"
+        too_long: "quá dài (tối đa {{count}} ký tự)"
+        too_short: "quá ngắn (tối thiểu {{count}} ký tự)"
+        wrong_length: "độ dài không đúng (phải là {{count}} ký tự)"
+        taken: "đã có"
+        not_a_number: "không phải là số"
+        greater_than: "phải lớn hơn {{count}}"
+        greater_than_or_equal_to: "phải lớn hơn hoặc bằng {{count}}"
+        equal_to: "phải bằng {{count}}"
+        less_than: "phải nhỏ hơn {{count}}"
+        less_than_or_equal_to: "phải nhỏ hơn hoặc bằng {{count}}"
+        odd: "phải là số chẵn"
+        even: "phải là số lẻ"
+        # Append your own errors here or at the model/attributes scope.
 
-      #models:
-      # Overrides default messages
-      #  user:
-      #  attributes:
-
-    attributes:
-      # Overrides model and default messages.
-      user:
-        login: "Đăng nhập"
-        email: "Email"
-        password: "Mật khẩu"
-        password_confirmation: "Mật khẩu"
+      # You can define own errors for models or model attributes.
+      # The values :model, :attribute and :value are always available for interpolation.
+      #
+      # For example,
+      #   models:
+      #     user:
+      #       blank: "This is a custom blank message for {{model}}: {{attribute}}"
+      #       attributes:
+      #         login:
+      #           blank: "This is a custom blank message for User login"
+      # Will define custom blank validation message for User model and 
+      # custom blank validation message for login attribute of User model.
+      # models:
+        
+    # Translate model names. Used in Model.human_name().
+    #models:
+      # For example,
+      #   user: "Dude"
+      # will translate User model name to "Dude"
+    
+    # Translate model attribute names. Used in Model.human_attribute_name(attribute).
+    #attributes:
+      # For example,
+      #   user:
+      #     login: "Handle"
+      # will translate User attribute "login" as "Handle"
 
   date:
     formats:
@@ -150,11 +175,12 @@ vn:
       default: "%a, %d %b %Y %H:%M:%S %z"
       short: "%d %b %H:%M"
       long: "%d %B, %Y %H:%M"
-      article: "%B %d, %Y"
     am: "sáng"
     pm: "chiều"
 
   # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "và"
+      words_connector: ", "
+      two_words_connector: " và "
+      last_word_connector: ", và "
