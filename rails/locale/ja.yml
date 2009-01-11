@@ -97,11 +97,8 @@ ja:
         header:
           one:   "{{model}}にエラーが発生しました。"
           other: "{{model}}に{{count}}つのエラーが発生しました。"
-
         body: "次の項目を確認してください。"
 
-  activerecord:
-    errors:
       messages:
         inclusion: "は一覧にありません。"
         exclusion: "は予約されています。"
@@ -122,6 +119,4 @@ ja:
         less_than_or_equal_to: "は{{count}}以下の値にしてください。"
         odd: "は奇数にしてください。"
         even: "は偶数にしてください。"
-
-      models:
 
