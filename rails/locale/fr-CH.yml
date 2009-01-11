@@ -2,18 +2,16 @@
 # by Yann Lugrin (yann.lugrin@sans-savoir.net, http://github.com/yannlugrin)
 #
 # original translation into French by Christian Lescuyer
+# contributor: Sebastien Grosjean - ZenCocoon.com
 
 fr-CH:
-  support:
-    array:
-      sentence_connector: "et"
-      skip_last_comma: true
-  
   date:
     formats:
       default: "%d.%m.%Y"
       short: "%e. %b"
       long: "%e. %B %Y"
+      long_ordinal: "%e %B %Y"
+      only_day: "%e"
 
     day_names: [dimanche, lundi, mardi, mercredi, jeudi, vendredi, samedi]
     abbr_day_names: [dim, lun, mar, mer, jeu, ven, sam]
@@ -24,8 +22,11 @@ fr-CH:
   time:
     formats:
       default: "%d. %B %Y %H:%M"
+      time: "%H:%M"
       short: "%d. %b %H:%M"
       long: "%A, %d. %B %Y %H:%M:%S %Z"
+      long_ordinal: "%A %d %B %Y %H:%M:%S %Z"
+      only_second: "%S"
     am: 'am'
     pm: 'pm'
 
@@ -62,6 +63,13 @@ fr-CH:
       over_x_years:
         one:   "plus d'un an"
         other: "plus de {{count}} ans"
+    prompts:
+      year:   "Année"
+      month:  "Mois"
+      day:    "Jour"
+      hour:   "Heure"
+      minute: "Minute"
+      second: "Seconde"
   
   number:
     format:
@@ -76,12 +84,15 @@ fr-CH:
     human:
       format:
         precision: 2
-      storage_units: [ Octet, ko, Mo, Go, To ]
+      storage_units: [ Octet, Ko, Mo, Go, To ]
   
   support:
     array:
       sentence_connector: 'et'
       skip_last_comma: true
+      word_connector: ", "
+      two_words_connector: " et "
+      last_word_connector: " et "
   
   activerecord:
     errors:
