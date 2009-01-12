@@ -166,7 +166,8 @@ el:
     month_names: [~, Ιανοάριος, Φεβρουάριος, Μάρτιος, Απρίλιος, Μάιος, Ιούνιος, Ιούλιος, Άυγουστος, Σεπτέμβριος, Οκτώβριος, Νοέμβριος, Δεκέμβριος]
     abbr_month_names: [~, Ιαν, Φεβ, Μάρ, Απρ, Μαι, Ιουν, Ιούλ, Αυγ, Σεπ, Οκτ, Νοε, Δεκ]
     # Used in date_select and datime_select.
-    order: [ :year, :month, :day ]
+    # original was: order: [ :year, :month, :day ] 
+    order: [ :day, :month, :year ]
 
   time:
     formats:
