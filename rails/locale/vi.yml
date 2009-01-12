@@ -1,7 +1,8 @@
 # Vietnamese translation for Ruby on Rails
 # by
-#   Do Hai Bac, Eldoy Software http://www.eldoy.com
-#   Ngoc Dao, http://cntt.tv
+#   Do Hai Bac (dohaibac@gmail.com)
+#   Dao Thanh Ngoc (ngocdaothanh@gmail.com, http://github.com/ngocdaothanh/rails-i18n/tree/master)
+
 vi:
   number:
     # Used in number_with_delimiter()
