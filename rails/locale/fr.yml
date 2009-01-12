@@ -84,7 +84,7 @@ fr:
     human:
       format:
         precision: 2
-      storage_units: [ Octet, Ko, Mo, Go, To ]
+      storage_units: [ Octet, ko, Mo, Go, To ]
   
   support:
     array:
