@@ -89,7 +89,7 @@ el:
     errors:
       template:
         header:
-          one:    "1 λάθος εμπόδισε αυτό το {{model}} να αποθηκευθεί"
+          one:    "1 λάθος παρεμπόδισε αυτό το {{model}} να αποθηκευθεί"
           other:  "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
         # The variable :count is also available
         body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία :"
