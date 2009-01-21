@@ -24,8 +24,11 @@ fi:
 
   support:
     array:
-      sentence_connector: "ja"
-      skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " ja "
+      last_word_connector: " ja "
+
+
 
   number:
     format:
@@ -92,7 +95,14 @@ fi:
       over_x_years:
         one:   "yli vuosi"
         other: "yli {{count}} vuotta"
- 
+    prompts:
+      year:   "Vuosi"
+      month:  "Kuukausi"
+      day:    "Päivä"
+      hour:   "Tunti"
+      minute: "Minuutti"
+      second: "Sekuntia"
+  
   activerecord:
     errors:
       template:
