@@ -1,5 +1,6 @@
 # Romanian translations for Ruby on Rails 
 # by Catalin Ilinca (me@talin.ro)
+# updated by kfl62 (bogus keys are now commented)
 
 ro:
   date:
@@ -7,32 +8,32 @@ ro:
       default: "%d-%m-%Y"
       short: "%d %b"
       long: "%d %B %Y"
-      only_day: "%e"
+#      only_day: "%e"
 
     day_names: [Duminică, Luni, Marți, Miercuri, Joi, Vineri, Sâmbată]
     abbr_day_names: [Dum, Lun, Mar, Mie, Joi, Vin, Sâm]
-    month_names: [~, Ianuarie, Februarie, Martie, Aprilie, Mai, Iunie, Iulie, August, Semtembrie, Octombrie, Noiembrie, Decembrie]
+    month_names: [~, Ianuarie, Februarie, Martie, Aprilie, Mai, Iunie, Iulie, August, Septembrie, Octombrie, Noiembrie, Decembrie]
     abbr_month_names: [~, Ian, Feb, Mar, Apr, Mai, Iun, Iul, Aug, Sep, Oct, Noi, Dec]
     order: [ :day, :month, :year ]
   
   time:
     formats:
       default: "%a %d %b %Y, %H:%M:%S %z"
-      time: "%H:%M"
+#      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
-      only_second: "%S"
+#      only_second: "%S"
       
-      datetime:
-        formats:
-          default: "%d-%m-%YT%H:%M:%S%Z"
+#      datetime:
+#        formats:
+#          default: "%d-%m-%YT%H:%M:%S%Z"
           
-    am: 'am'
-    pm: 'pm'
+    am: ''
+    pm: ''
       
   datetime:
     distance_in_words:
-      half_a_minute: "jumatate de minut"
+      half_a_minute: "jumătate de minut"
       less_than_x_seconds:
         one:  "mai puțin de o secundă"
         other: "mai puțin de {{count}} secunde"
@@ -62,7 +63,14 @@ ro:
         other: "aproximativ {{count}} ani"
       over_x_years:
         one:  "mai mult de un an"
-        other: "mai muți {{count}} ani"
+        other: "mai mult de {{count}} ani"
+    prompts:
+      year:   "Anul"
+      month:  "Luna"
+      day:    "Ziua"
+      hour:   "Ora"
+      minute: "Minutul"
+      second: "Secunda"
       
   number:
     format:
@@ -73,7 +81,25 @@ ro:
       format:
         unit: 'RON'
         precision: 2
+        separator: '.'
+        delimiter: ','
         format: '%n %u'
+    percentage:
+      format:
+        # separator:
+        delimiter: ","
+#        precision: 2
+    precision:
+      format:
+        # separator:
+        delimiter: ""
+        # precision:
+    human:
+      format:
+#        separator: "."
+        delimiter: ","
+        precision: 1
+      storage_units: [Bytes, KB, MB, GB, TB]
         
   activerecord:
     errors:
@@ -101,7 +127,10 @@ ro:
         less_than: "trebuie să fie mai mic decât {{count}}"
         less_than_or_equal_to: "trebuie să fie mai mic sau egal cu {{count}}"
         odd: "trebuie să fie par"
-        even: "trebuie să fie imapar"
+        even: "trebuie să fie impar"
   support:
       array:
-        sentence_connector: "și"
+#        sentence_connector: "și"
+        words_connector: ", "
+        two_words_connector: " şi "
+        last_word_connector: " şi "
