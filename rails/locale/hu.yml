@@ -2,6 +2,7 @@
 # by Richard Abonyi (richard.abonyi@gmail.com)
 # thanks to KKata, replaced and #hup.hu
 # Cleaned up by László Bácsi (http://lackac.hu)
+# updated by kfl62 kfl62g@gmail.com
 
 "hu":
   date:
@@ -27,14 +28,14 @@
     distance_in_words:
       half_a_minute: 'fél perc'
       less_than_x_seconds:
-        zero: 'kevesebb, mint 1 másodperc'
+#        zero: 'kevesebb, mint 1 másodperc'
         one: 'kevesebb, mint 1 másodperc'
         other: 'kevesebb, mint {{count}} másodperc'
       x_seconds:
         one: '1 másodperc'
         other: '{{count}} másodperc'
       less_than_x_minutes:
-        zero: 'kevesebb, mint 1 perc'
+#        zero: 'kevesebb, mint 1 perc'
         one: 'kevesebb, mint 1 perc'
         other: 'kevesebb, mint {{count}} perc'
       x_minutes:
@@ -58,6 +59,13 @@
       over_x_years:
         one: 'több, mint 1 év'
         other: 'több, mint {{count}} év'
+    prompts:
+      year:   "Év"
+      month:  "Hónap"
+      day:    "Nap"
+      hour:   "Óra"
+      minute: "Perc"
+      second: "Másodperc"
 
   number:
     format:
@@ -85,9 +93,11 @@
 
   support:
     array:
-      sentence_connector: "és"
-      skip_last_comma: true
-
+#      sentence_connector: "és"
+#      skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " és "
+      last_word_connector: " és "
   activerecord:
     errors:
       template:
