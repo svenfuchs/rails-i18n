@@ -4,9 +4,9 @@
     :date => {
       :formats => {
         :default      => "%d/%m/%Y",
-        :short        => lambda { |date| "#{date.day} %b" },
-        :long         => lambda { |date| "#{date.day} de %B de %Y" },
-        :only_day     => "%e"
+        :short        => "%d de %B",
+        :long         => "%d de %B de %Y",
+        :only_day     => "%d"
       },
       :day_names => %w(Domingo Segunda Terça Quarta Quinta Sexta Sábado),
       :abbr_day_names => %w(Dom Seg Ter Qua Qui Sex Sáb),
@@ -16,11 +16,21 @@
     },
     :time => {
       :formats => {
-        :default      => lambda { |time| "%A, #{time.day} de %B de %Y, %H:%M hs" },
+        :default      => "%A, %d de %B de %Y, %H:%M hs",
         :time         => "%H:%M hs",
-        :short        => lambda { |time| "#{time.day}/%m, %H:%M hs" },
-        :long         => lambda { |time| "%A, #{time.day} de %B de %Y, %H:%M hs" },
-        :only_second  => "%S"
+        :short        => "%d/%m, %H:%M hs",
+        :long         => "%A, %d de %B de %Y, %H:%M hs",
+        :only_second  => "%S",
+        :datetime => {
+          :formats => {
+            :default => "%Y-%m-%dT%H:%M:%S%Z",
+          },
+        },
+      },
+      :time_with_zone => {
+        :formats => {
+          :default => lambda { |time| "%Y-%m-%d %H:%M:%S #{time.formatted_offset(false, 'UTC')}" }
+        },
       },
       :am => '',
       :pm => ''
@@ -84,8 +94,32 @@
         :format => {
           :unit => 'R$',
           :precision => 2,
-          :format => '%u %n'
+          :format => '%u %n',
+          :separator => ',',
+          :delimiter => '.'
         }
+      },
+      :percentage => {
+        :format => {
+          :delimiter => '.'
+        }
+      },
+      :precision => {
+        :format => {
+          :delimiter => '.'
+        }        
+      },
+      :human => {
+        :format => {
+          :precision => 1,
+          :delimiter => '.'
+        }                
+      }
+    },
+    :support => {
+      :array => {
+        :sentence_connector => "e",
+        :skip_last_comma => true              
       }
     },
 
