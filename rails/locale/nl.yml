@@ -1,0 +1,109 @@
+# Dutch translation in YML by Ariejan de Vroom <ariejan@ariejan.net>
+#  - Sponsored by Kabisa ICT - http://kabisa.nl
+#
+# Fully compatible with Translate (the Rails translation plugin) 
+#  - http://developer.newsdesk.se/2009/01/21/translate-new-rails-i18n-plugin-with-a-nice-web-ui/
+--- 
+nl: 
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%e %b"
+      long: "%e %B %Y"
+      only_day: "%e"
+    day_names: [Zondag, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag]
+    abbr_day_names: [Zon, Maa, Din, Woe, Don, Vri, Zat]      
+    month_names: [~, Januari, Februari, Maart, April, Mei, Juni, Juli, Augustus, September, Oktober, November, December]
+    abbr_month_names: [~, Jan, Feb, Mar, Apr, Mei, Jun, Jul, Aug, Sep, Okt, Nov, Dec]
+    order: [:day, :month, :year]
+    
+  time:
+    formats:
+      default: "%a %d %b %Y %H:%M:%S %Z"
+      time: "%H:%M"
+      short: "%d %b %H:%M"
+      long: "%d %B %Y %H:%M"
+      only_second: "%S"
+
+      datetime:
+        formats:
+          default: "%d-%m-%YT%H:%M:%S%Z"
+
+    am: "'s ochtends"
+    pm: "'s middages"
+
+  datetime:
+    format:
+      default: "%Y-%m-%dT%H:%M:%S%Z"
+      
+    distance_in_words:
+      half_a_minute: "halve minuut"
+      less_than_x_seconds:
+        one:  "minder dan één seconde"
+        other: "minder dan {{count}} seconden"
+      x_seconds:
+        one:  "1 seconde"
+        other: "{{count}} seconden"
+      less_than_x_minutes:
+        one:  "minder dan één minuut"
+        other: "minder dan {{count}} minuten"
+      x_minutes:
+        one:  "1 minuut"
+        other: "{{count}} minuten"
+      about_x_hours:
+        one:  "ongeveer één uur"
+        other: "ongeveer {{count}} uur"
+      x_days:
+        one:  "1 dag"
+        other: "{{count}} dagen"
+      about_x_months:
+        one:  "ongeveer één maand"
+        other: "ongeveer {{count}} maanden"
+      x_months:
+        one:  "1 maand"
+        other: "{{count}} maanden"
+      about_x_years:
+        one:  "ongeveer één jaar"
+        other: "ongeveer {{count}} jaren"
+      over_x_years:
+        one:  "langer dan één jaar"
+        other: "langer {{count}} jaar"
+
+  number:
+    format:
+      precision: 2
+      separator: ','
+      delimiter: '.'
+    currency:
+      format:
+        unit: '€'
+        precision: 2
+        format: '%u %n'
+
+  activerecord:
+    errors:
+      template:
+        header: 
+          one: "Kon dit {{model}} object niet opslaan: 1 fout."
+          other: "Kon dit {{model}} niet opslaan: {{count}} fouten."
+        body: "Controleer alstublieft de volgende velden:"
+      messages:
+        inclusion: "is niet in de lijst opgenomen"
+        exclusion: "is niet beschikbaar"
+        invalid: "is ongeldig"
+        confirmation: "komt niet met de bevestiging overeen"
+        accepted: "moet worden geaccepteerd"
+        empty: "moet opgegeven zijn"
+        blank: "moet opgegeven zijn"
+        too_long: "is te lang (niet meer dan {{count}} tekens)"
+        too_short: "is te kort (niet minder dan {{count}} tekens)"
+        wrong_length: "heeft niet de juiste lengte (moet {{count}} tekens lang zijn)"
+        taken: "is niet beschikbaar"
+        not_a_number: "is geen getal"
+        greater_than: "moet groter zijn dan {{count}}"
+        greater_than_or_equal_to: "moet groter of gelijk zijn aan {{count}}"
+        equal_to: "moet gelijk zijn aan {{count}}"
+        less_than: "moet minder zijn dan {{count}}"
+        less_than_or_equal_to: "moet minder of gelijk zijn aan {{count}}"
+        odd: "moet oneven zijn"
+        even: "moet even zijn"
