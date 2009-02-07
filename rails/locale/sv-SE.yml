@@ -47,8 +47,19 @@
         # separator: 
         delimiter: ""
         # precision: 1
-      storage_units: [Byte, KB, MB, GB, TB]
-
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+              
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:
@@ -83,6 +94,13 @@
       over_x_years:
         one:   "mer än ett år"
         other: "mer än {{count}} år"
+    prompts:
+      year:   "År"
+      month:  "Månad"
+      day:    "Dag"
+      hour:   "Timme"
+      minute: "Minut"
+      second: "Sekund"
         
   activerecord:
     errors:
@@ -168,9 +186,10 @@
       long: "%d %B, %Y %H:%M"
     am: ""
     pm: ""
-      
+            
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "och"
-      skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " och "
+      last_word_connector: " och "
