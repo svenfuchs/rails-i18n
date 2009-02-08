@@ -73,7 +73,7 @@ tr:
       delimiter: '.'
     currency:
       format:
-        unit: 'TRY'
+        unit: 'TL'
         format: '%n %u'
         separator: ','
         delimiter: '.'
