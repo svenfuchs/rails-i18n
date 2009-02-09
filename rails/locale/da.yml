@@ -1,7 +1,8 @@
 # Danish translation file for standard Ruby on Rails internationalization
-# by Lars Hoeg (http://www.lenio.dk/)
+# by Lars Hoeg (larshoeg@gmail.com, http://www.lenio.dk/)
 
 da:
+  # active_support
   date:
     formats:
       default: "%d.%m.%Y"
@@ -24,8 +25,13 @@ da:
 
   support:
     array:
-      sentence_connector: "og"
-      skip_last_comma: true
+      # Rails 2.2
+      #sentence_connector: "og"
+      #skip_last_comma: true
+      # Rails 2.3
+      words_connector: ", "
+      two_words_connector: " og "
+      last_word_connector: " og "
 
   datetime:
     distance_in_words:
@@ -60,7 +66,15 @@ da:
       over_x_years:
         one:  "mere end et år"
         other: "mere end {{count}} år"
+    prompts:
+      second: "Sekund"
+      minute: "Minut"
+      hour: "Time"
+      day: "Dag"
+      month: "Måned"
+      year: "År"
 
+  # action_view
   number:
     format:
       separator: ","
@@ -83,13 +97,28 @@ da:
         # separator: 
         delimiter: ""
         precision: 1
-      storage_units: [Bytes, KB, MB, GB, TB]
+      # Rails 2.2
+      #storage_units: [Bytes, KB, MB, GB, TB]
+      # Rails 2.3
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
     percentage:
       format:
         # separator:
         delimiter: ""
         # precision:
 
+  # active_record
   activerecord:
     errors:
       messages:
