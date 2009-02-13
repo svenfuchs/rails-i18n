@@ -6,6 +6,7 @@
     # ActiveSupport
     :support => {
       :array => {
+				:two_words_connector => ' a ',
         :sentence_connector => 'a',
         :skip_last_comma => true
       }
@@ -56,7 +57,17 @@
         :format => {
           :precision => 1,
           :delimiter => ''
-        }
+        },
+				:storage_units => {
+	        :format => "%n %u",
+	        :units => {
+	          :byte => "B",
+	          :kb   => "KB",
+	          :mb   => "MB",
+	          :gb   => "GB",
+	          :tb   => "TB",
+					}
+				}
       },
       :percentage => {
         :format => {
