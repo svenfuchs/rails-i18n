@@ -102,7 +102,7 @@ sw:
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
         # inclusion: "is not included in the list"
-        # exclusion: "is reserved"
+        exclusion: "haiwezi kutumika"
         invalid: "haifai"
         confirmation: "haifanani na hapo chini"
         # accepted: "must be accepted"
