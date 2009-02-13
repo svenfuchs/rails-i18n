@@ -43,7 +43,7 @@ gl-ES:
     day_names:        [Domingo, Luns, Martes, Mércores, Xoves, Venres, Sábado]
     abbr_day_names:   [Dom, Lun, Mar, Mer, Xov, Ven, Sab]
     month_names:      [~, Xaneiro, Febreiro, Marzo, Abril, Maio, Xunio, Xullo, Agosto, Setembro, Outubro, Novembro, Decembro]
-    abbr_month_names: [~, Xan, Feb, Maz, Abr, Mai, Xun, Xul, Ago, Set, Out, Nov, Dec]
+    abbr_month_names: [~, Xan, Feb, Mar, Abr, Mai, Xun, Xul, Ago, Set, Out, Nov, Dec]
     order:            [:day, :month, :year]
 
   time:
