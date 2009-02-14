@@ -59,6 +59,14 @@ ja:
       format:
         delimiter: ""
         precision: 1
+      storage_units:
+        format: "%n%u"
+        units:
+          byte: "バイト"
+          kb: "キロバイト"
+          mb: "メガバイト"
+          gb: "ギガバイト"
+          tb: "テラバイト"
 
   datetime:
     distance_in_words:
