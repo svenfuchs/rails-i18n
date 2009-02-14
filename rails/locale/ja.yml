@@ -27,8 +27,11 @@ ja:
 
   support:
     array:
-      sentence_connector: "及び"
+      sentence_connector: "と"
       skip_last_comma: true
+      words_connector: "と"
+      two_words_connector: "と"
+      last_word_connector: "と"
 
   number:
     format:
