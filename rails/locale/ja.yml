@@ -93,6 +93,8 @@ ja:
 
   activerecord:
     errors:
+      format:
+        separator: ""
       template:
         header:
           one:   "{{model}}にエラーが発生しました。"
