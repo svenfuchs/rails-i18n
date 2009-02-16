@@ -47,6 +47,19 @@ es:
         # separator: 
         delimiter: "" 
         precision: 1
+      # Rails <= v2.2.2
+      # storage_units: [Bytes, KB, MB, GB, TB]
+      # Rails >= v2.3
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
@@ -128,7 +141,7 @@ es:
       # Use the strftime parameters for formats.
       # When no format has been given, it uses default.
       # You can provide other formats here if you like!
-      default: "%Y-%m-%d" 
+      default: "%e/%m/%Y"
       short: "%d de %b" 
       long: "%d de %B de %Y" 
 
@@ -152,4 +165,9 @@ es:
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "y"
+      # Rails <= v.2.2.2
+      # sentence_connector: "y"
+      # Rails >= v.2.3
+      words_connector: ", "
+      two_words_connector: " y "
+      last_word_connector: " y "
