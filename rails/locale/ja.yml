@@ -72,14 +72,14 @@ ja:
     distance_in_words:
       half_a_minute: "30秒前後"
       less_than_x_seconds:
-        one:   "1秒以下"
-        other: "{{count}}秒以下"
+        one:   "1秒以内"
+        other: "{{count}}秒以内"
       x_seconds:
         one:   "1秒"
         other: "{{count}}秒"
       less_than_x_minutes:
-        one:   "1分以下"
-        other: "{{count}}分以下"
+        one:   "1分以内"
+        other: "{{count}}分以内"
       x_minutes:
         one:   "1分"
         other: "{{count}}分"
@@ -96,8 +96,8 @@ ja:
         one:   "1ヶ月"
         other: "{{count}}ヶ月"
       about_x_years:
-        one:   "約{{count}}年以上"
-        other: "約{{count}}年以上"
+        one:   "約{{count}}年"
+        other: "約{{count}}年"
       over_x_years:
         one:   "{{count}}年以上"
         other: "{{count}}年以上"
