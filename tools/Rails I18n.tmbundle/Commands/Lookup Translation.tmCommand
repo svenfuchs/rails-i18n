@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/ruby 
+	<string>#!/usr/bin/env ruby -w
 require 'rubygems'
 require 'i18n'
 I18n.locale = :en

@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/ruby 
+	<string>#!/usr/bin/env ruby -w
 
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
 require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_i18n.rb'
@@ -46,7 +46,15 @@ data = data.deep_merge YAML.load(File.open(path, 'r') { |f| f.read }) if File.ex
 
 File.open(path, 'w+') { |f| f.write YAML.dump(data) }
 
-print "t(:'#{key}')"
+type = TextMate::UI.request_string :title =&gt; 'Type', :prompt =&gt; 'html, string, or ruby'
+case type
+when 'html'
+  print "&lt;%=t '#{key}' %&gt;"
+when 'string'
+  print "\#{t('#{key}')}"
+else
+  print "t(:'#{key}')"
+end
 </string>
 	<key>fallbackInput</key>
 	<string>none</string>
