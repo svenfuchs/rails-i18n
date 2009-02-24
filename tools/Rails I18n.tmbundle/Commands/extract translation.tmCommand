@@ -6,40 +6,8 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -w
-
-require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
 require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_i18n.rb'
-
-project_dir = ENV['TM_PROJECT_DIRECTORY']
-path = File.join(project_dir, 'log', 'translations')
-
-translation = ENV['TM_SELECTED_TEXT'].gsub(/^\s*("|')|("|')\s*$/, '')
-key = TextMate::UI.request_string :title =&gt; 'Key', :prompt =&gt; 'Key'
-keys = ['en'] + key.split('.')
-
-log_file = File.open(path, 'a+')
-log_file.puts "#{key}: #{translation}"
-
-data = { 'en' =&gt; {} }
-data.set keys, translation
-
-path = File.join(project_dir, 'log', 'translations.yml')
-data = data.deep_merge YAML.load(File.open(path, 'r') { |f| f.read }) if File.exists?(path)
-
-File.open(path, 'w+') { |f| f.write YAML.dump(data) }
-
-current_file = ENV['TM_FILEPATH'].gsub(project_dir, '')
-translate_cmd = (current_file =~ /^\/app\/(controllers|helpers|views)\//) ? 't' : 'I18n.t'
-
-type = TextMate::UI.request_string :title =&gt; 'Type', :prompt =&gt; 'html, string, or ruby'
-case type
-when 'html'
-  print "&lt;%=#{translate_cmd} '#{key}' %&gt;"
-when 'string'
-  print "\#{#{translate_cmd}('#{key}')}"
-else
-  print "#{translate_cmd}('#{key}')"
-end
+Translate.execute
 </string>
 	<key>fallbackInput</key>
 	<string>none</string>
