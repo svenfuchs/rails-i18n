@@ -10,24 +10,6 @@
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
 require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_i18n.rb'
 
-class Hash
-  def deep_merge(other)
-    # deep_merge by Stefan Rusterholz, see http://www.ruby-forum.com/topic/142809
-    merger = proc { |key, v1, v2| Hash === v1 &amp;&amp; Hash === v2 ? v1.merge(v2, &amp;merger) : v2 }
-    merge(other, &amp;merger)
-  end
-
-  def set(keys, value)
-    key = keys.shift
-    if keys.empty?
-      self[key] = value
-    else
-      self[key] ||= {}
-      self[key].set keys, value
-    end
-  end
-end
-
 project_dir = ENV['TM_PROJECT_DIRECTORY']
 path = File.join(project_dir, 'log', 'translations')
 
@@ -46,14 +28,17 @@ data = data.deep_merge YAML.load(File.open(path, 'r') { |f| f.read }) if File.ex
 
 File.open(path, 'w+') { |f| f.write YAML.dump(data) }
 
+current_file = ENV['TM_FILEPATH'].gsub(project_dir, '')
+translate_cmd = (current_file =~ /^\/app\/(controllers|helpers|views)\//) ? 't' : 'I18n.t'
+
 type = TextMate::UI.request_string :title =&gt; 'Type', :prompt =&gt; 'html, string, or ruby'
 case type
 when 'html'
-  print "&lt;%=t '#{key}' %&gt;"
+  print "&lt;%=#{translate_cmd} '#{key}' %&gt;"
 when 'string'
-  print "\#{t('#{key}')}"
+  print "\#{#{translate_cmd}('#{key}')}"
 else
-  print "t(:'#{key}')"
+  print "#{translate_cmd}('#{key}')"
 end
 </string>
 	<key>fallbackInput</key>
