@@ -3,8 +3,10 @@
 require "yaml"
 
 class String
-  def is_binary_data?
-    false
+  if !defined?('is_binary_data')
+    def is_binary_data?
+      false
+    end
   end
 end
 
