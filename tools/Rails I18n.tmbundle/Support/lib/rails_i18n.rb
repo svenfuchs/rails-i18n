@@ -1,6 +1,7 @@
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
 require File.join(File.dirname(__FILE__), 'dictionary')
 require File.join(File.dirname(__FILE__), 'yaml_waml')
+require 'pstore'
 
 class Hash
   def deep_merge(other)
@@ -20,8 +21,11 @@ class Hash
   end
 end
 
+PREFS_FILE = "~/Library/Preferences/com.macromates.textmate.rails_i18n.pstore"
+
 class Translate
 
+  @@prefs = PStore.new(File.expand_path(PREFS_FILE))
   @@project_dir = ENV['TM_PROJECT_DIRECTORY']
   @@t_path_plain = File.join(@@project_dir, 'log', 'translations')
   @@t_path_yaml = File.join(@@project_dir, 'log', 'translations.yml')
@@ -51,7 +55,9 @@ class Translate
   end
 
   def self.get_key
-    TextMate::UI.request_string :title => 'Key', :prompt => 'Key'
+    key = TextMate::UI.request_string :title => 'Key', :prompt => 'Key', :default => self.get_pref('last_used_key')
+    self.set_pref('last_used_key', key)
+    key
   end
 
   def self.get_type
@@ -74,6 +80,15 @@ class Translate
   def self.translation_method
     current_file = ENV['TM_FILEPATH'].gsub(@@project_dir, '')
     translate_cmd = (current_file =~ /^\/app\/(controllers|helpers|views)\//) ? 't' : 'I18n.t'
+  end
+
+  def self.get_pref(key)
+    pref = @@prefs.transaction { @@prefs[key] }
+    (pref || '')
+  end
+
+  def self.set_pref(key, value)
+    @@prefs.transaction { @@prefs[key] = value }
   end
 
 end
