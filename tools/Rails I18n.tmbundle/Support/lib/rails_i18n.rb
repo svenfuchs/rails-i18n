@@ -21,6 +21,12 @@ class Hash
   end
 end
 
+class Object
+  def blank?
+    self.nil? || self.gsub(/\s/, '').empty? || self == false
+  end
+end
+
 PREFS_FILE = "~/Library/Preferences/com.macromates.textmate.rails_i18n.pstore"
 
 class Translate
@@ -35,33 +41,46 @@ class Translate
     return if @@original_text.nil?
 
     key = self.get_key
-    if key.nil? || key.gsub(/\s/, '').empty?
+    if key.blank?
       print @@original_text
       return
+    end
+
+    type = self.get_type
+    if type.blank?
+      print @@original_text
+      return
+    end
+
+    case type
+    when 'html'
+      replacement = "<%=#{self.translation_method} '#{key}' %>"
+    when 'string'
+      replacement = "\#{#{self.translation_method}('#{key}')}"
+    else
+      replacement = "#{self.translation_method}('#{key}')"
     end
 
     translation = ENV['TM_SELECTED_TEXT'].gsub(/^\s*("|')|("|')\s*$/, '')
     self.add_plain_translation(key, translation)
     self.add_yaml_translation(key, translation)
-
-    case self.get_type
-    when 'html'
-      print "<%=#{self.translation_method} '#{key}' %>"
-    when 'string'
-      print "\#{#{self.translation_method}('#{key}')}"
-    else
-      print "#{self.translation_method}('#{key}')"
-    end
+    print replacement
   end
 
   def self.get_key
-    key = TextMate::UI.request_string :title => 'Key', :prompt => 'Key', :default => self.get_pref('last_used_key')
-    self.set_pref('last_used_key', key)
+    key = TextMate::UI.request_string :title => 'Key',
+                                      :prompt => 'Key',
+                                      :default => self.get_pref('last_used_key')
+    self.set_pref('last_used_key', key) unless key.blank?
     key
   end
 
   def self.get_type
-    TextMate::UI.request_string :title => 'Type', :prompt => 'html, string, or ruby'
+    type = TextMate::UI.request_string :title => 'Type',
+                                       :prompt => 'html, string, or ruby',
+                                       :default => self.get_pref('last_used_type')
+    self.set_pref('last_used_type', type) unless type.blank?
+    type
   end
 
   def self.add_plain_translation(key, text)
@@ -73,7 +92,10 @@ class Translate
     keys = ['en'] + key.split('.')
     data = { 'en' => {} }
     data.set keys, text
-    data = data.deep_merge YAML.load(File.open(@@t_path_yaml, 'r') { |f| f.read }) if File.exists?(@@t_path_yaml)
+    if File.exists?(@@t_path_yaml)
+      file_content = File.open(@@t_path_yaml, 'r') { |f| f.read }
+      data = data.deep_merge(YAML.load(file_content)) unless file_content.blank?
+    end
     File.open(@@t_path_yaml, 'w+') { |f| f.write YAML.dump(data) }
   end
 
