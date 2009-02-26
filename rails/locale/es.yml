@@ -142,8 +142,8 @@ es:
       # When no format has been given, it uses default.
       # You can provide other formats here if you like!
       default: "%e/%m/%Y"
-      short: "%d de %b" 
-      long: "%d de %B de %Y" 
+      short: "%e de %b" 
+      long: "%e de %B de %Y" 
 
     day_names: [Domingo, Lunes, Martes, Miércoles, Jueves, Viernes, Sábado]
     abbr_day_names: [Dom, Lun, Mar, Mie, Jue, Vie, Sab]
@@ -152,13 +152,13 @@ es:
     month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Setiembre, Octubre, Noviembre, Diciembre]
     abbr_month_names: [~, Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Set, Oct, Nov, Dic]
     # Used in date_select and datime_select.
-    order: [ :year, :month, :day ]
+    order: [ :day, :month, :year ]
 
   time:
     formats:
-      default: "%A, %d de %B de %Y %H:%M:%S %z"
-      short: "%d de %b %H:%M" 
-      long: "%d de %B de %Y %H:%M" 
+      default: "%A, %e de %B de %Y %H:%M:%S %z"
+      short: "%e de %b %H:%M" 
+      long: "%e de %B de %Y %H:%M" 
     am: "am" 
     pm: "pm" 
 
