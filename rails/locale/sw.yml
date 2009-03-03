@@ -25,41 +25,41 @@ sw:
   #   am: "vormittags"
   #   pm: "nachmittags"
   #     
-  # datetime:
-  #   distance_in_words:
-  #     half_a_minute: 'eine halbe Minute'
-  #     less_than_x_seconds:
-  #       zero: 'weniger als 1 Sekunde'
-  #       one: 'weniger als 1 Sekunde'
-  #       other: 'weniger als {{count}} Sekunden'
-  #     x_seconds:
-  #       one: '1 Sekunde'
-  #       other: '{{count}} Sekunden'
-  #     less_than_x_minutes:
-  #       zero: 'weniger als 1 Minute'
-  #       one: 'weniger als eine Minute'
-  #       other: 'weniger als {{count}} Minuten'
-  #     x_minutes:
-  #       one: '1 Minute'
-  #       other: '{{count}} Minuten'
-  #     about_x_hours:
-  #       one: 'etwa 1 Stunde'
-  #       other: 'etwa {{count}} Stunden'
-  #     x_days:
-  #       one: '1 Tag'
-  #       other: '{{count}} Tage'
-  #     about_x_months:
-  #       one: 'etwa 1 Monat'
-  #       other: 'etwa {{count}} Monate'
-  #     x_months:
-  #       one: '1 Monat'
-  #       other: '{{count}} Monate'
-  #     about_x_years:
-  #       one: 'etwa 1 Jahr'
-  #       other: 'etwa {{count}} Jahre'
-  #     over_x_years:
-  #       one: 'mehr als 1 Jahr'
-  #       other: 'mehr als {{count}} Jahre'
+  datetime:
+    distance_in_words:
+      half_a_minute: 'nusu dakika'
+      less_than_x_seconds:
+        zero: 'chini ya sekunde 1'
+        one: 'chini ya sekunde 1'
+        other: 'chini ya sekunde {{count}}'
+      x_seconds:
+        one: 'sekunde 1'
+        other: 'sekunde {{count}}'
+      less_than_x_minutes:
+        zero: 'chini ya dakika 1'
+        one: 'chini ya dakika 1'
+        other: 'chini ya dakika {{count}}'
+      x_minutes:
+        one: 'dakika 1'
+        other: 'dakika {{count}}'
+      about_x_hours:
+        one: 'kama saa 1'
+        other: 'kama masaa {{count}}'
+      x_days:
+        one: 'siku 1'
+        other: 'siku {{count}}'
+      about_x_months:
+        one: 'kama mwezi 1'
+        other: 'kama miezi {{count}}'
+      x_months:
+        one: 'mwezi 1'
+        other: 'miezi {{count}}'
+      about_x_years:
+        one: 'kama mwaka 1'
+        other: 'kama miaka {{count}}'
+      over_x_years:
+        one: 'zaidi ya mwaka 1'
+        other: 'zaidi ya miaka {{count}}'
   #     
   # number:
   #   format:
