@@ -1,6 +1,10 @@
 # Italian translations for Ruby on Rails 
 # by Claudio Poli (masterkain@gmail.com)
-# updated by Simone Carletti (weppos@weppos.net)
+# maintained by Simone Carletti (weppos@weppos.net)
+#
+# This localization file targets Rails 2.3.2.
+# If you need a previous version go to http://github.com/weppos/rails-i18n/
+# and choose between available tags.
 
 it:
   number:
