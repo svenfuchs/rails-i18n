@@ -60,8 +60,17 @@ fi:
       format:
         delimiter: ""
         precision: 1
-      storage_units: [Tavua, KB, MB, GB, TB]
- 
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "tavu"
+            other: "tavua"
+          kb: "kB" 
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
   datetime:
     distance_in_words:
       half_a_minute: "puoli minuuttia"
