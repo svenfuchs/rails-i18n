@@ -89,7 +89,7 @@ bg:
       less_than_x_minutes:
         one: "по-малко от {{count}} минута"
         few: "по-малко от {{count}} минути"
-        many: "по-малко от {{count}} минути
+        many: "по-малко от {{count}} минути"
         other: "по-малко от {{count}} минути"
       x_minutes:
         one: "{{count}} минута"
