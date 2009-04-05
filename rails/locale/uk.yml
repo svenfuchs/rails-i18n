@@ -1,5 +1,7 @@
 # Ukrainian translations for Ruby on Rails
 # by Andrii Ponomarov (http://github.com/andrii)
+# improved (I hope) by Iwakura Taro
+# it is recomended to use russian rubygem to make i18n of your app
 
 uk:
   number:
@@ -17,8 +19,8 @@ uk:
     currency:
       format:
         # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
-        format: "%n%u"
-        unit: "₴"
+        format: "%n %u"
+        unit: "грн."
         # These three are to override number.format and are optional
         separator: ","
         delimiter: " "
@@ -54,7 +56,9 @@ uk:
         units:
           byte:
             one:   "байт"
-            other: "байтів"
+            few:   "байти"
+            many:  "байтів"
+            other: "байту"
           kb: "кБ"
           mb: "МБ"
           gb: "ГБ"
@@ -65,51 +69,73 @@ uk:
     distance_in_words:
       half_a_minute: "півхвилини"
       less_than_x_seconds:
-        one:   "менш ніж 1 секунду"
-        other: "менш ніж {{count}} секунд"
+        one:   "менше {{count}} секунди"
+        few:   "менше {{count}} секунд"
+        many:  "менше {{count}} секунд"
+        other: "менше {{count}} секунди"
       x_seconds:
-        one:   "1 секунда"
-        other: "{{count}} секунд"
+        one:   "{{count}} секунда"
+        few:   "{{count}} секунди" 
+        many:  "{{count}} секунд"
+        other: "{{count}} секунди"
       less_than_x_minutes:
-        one:   "менш ніж хвилину"
-        other: "менш ніж {{count}} хвилин"
+        one:   "менше {{count}} хвилини"
+        few:   "менше {{count}} хвилин"
+        many:  "менше {{count}} хвилин"
+        other: "менше {{count}} хвилини"
       x_minutes:
-        one:   "1 хвилина"
-        other: "{{count}} хвилин"
+        one:   "{{count}} хвилина"
+        few:   "{{count}} хвилини"
+        many:  "{{count}} хвилин"
+        other: "{{count}} хвилини"
       about_x_hours:
-        one:   "близько 1 години"
-        other: "близько {{count}} годин"
+        one:   "близько {{count}} година"
+        few:   "близько {{count}} години"
+        many:  "близько {{count}} годин"
+        other: "близько {{count}} години"
       x_days:
-        one:   "1 день"
-        other: "{{count}} днів"
+        one:   "{{count}} день"
+        few:   "{{count}} дні"
+        many:  "{{count}} днів"
+        other: "{{count}} дня"
       about_x_months:
-        one:   "близько 1 місяця"
-        other: "близько {{count}} місяців"
+        one:   "близько {{count}} місяця"
+        few:   "близько {{count}} місяців"
+        many:  "близько {{count}} місяців"
+        other: "близько {{count}} місяця"
       x_months:
-        one:   "1 місяць"
-        other: "{{count}} місяців"
+        one:   "{{count}} місяць"
+        few:   "{{count}} місяці"
+        many:  "{{count}} місяців"
+        other: "{{count}} місяця"
       about_x_years:
-        one:   "близько 1 року"
-        other: "близько {{count}} років"
+        one:   "близько {{count}} року"
+        few:   "близько {{count}} років"
+        many:  "близько {{count}} років"
+        other: "близько {{count}} року"
       over_x_years:
-        one:   "понад 1 рік"
-        other: "понад {{count}} років"
+        one:   "більше {{count}} року"
+        few:   "більше {{count}} років"
+        many:  "більше {{count}} років"
+        other: "більше {{count}} року"
     prompts:
       year:   "Рік"
       month:  "Місяць"
       day:    "День"
       hour:   "Година"
       minute: "Хвилина"
-      second: "Секунди"
+      second: "Секунда"
 
   activerecord:
     errors:
       template:
         header:
-          one:    "{{model}} не було збережено через 1 помилку"
-          other:  "{{model}} не було збережено через {{count}} помилок"
+          one:    "{{model}} не збережено через {{count}} помилку"
+          few:    "{{model}} не збережено через {{count}} помилки"
+          many:   "{{model}} не збережено через {{count}} помилок"
+          other:  "{{model}} не збережено через {{count}} помилки"
         # The variable :count is also available
-        body: "Виникли проблеми з наступними полями:"
+        body: "Помилки виявлено в таких полях:"
 
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
@@ -121,9 +147,21 @@ uk:
         accepted: "має бути прийнятий"
         empty: "не може бути порожнім"
         blank: "не може бути пустим"
-        too_long: "занадто довгий (максимум {{count}} знаків)"
-        too_short: "занадто короткий (мінімум {{count}} знаків)"
-        wrong_length: "неправильна довжина (має бути {{count}} знаків)"
+        too_long: 
+          one:    "занадто довгий (максимум {{count}} знак)"
+          few:    "занадто довгий (максимум {{count}} знаки)"
+          many:   "занадто довгий (максимум {{count}} знаків)"
+          other:  "занадто довгий (максимум {{count}} знаку)"
+        too_short:
+          one:    "занадто короткий (мінімум {{count}} знак)"
+          few:    "занадто короткий (мінімум {{count}} знаки)"
+          many:   "занадто короткий (мінімум {{count}} знаків)"
+          other:  "занадто короткий (мінімум {{count}} знаку)"
+        wrong_length:
+          one:    "неправильна довжина (має бути {{count}} знак)"
+          few:    "неправильна довжина (має бути {{count}} знаки)"
+          many:   "неправильна довжина (має бути {{count}} знаків)"
+          other:  "неправильна довжина (має бути {{count}} знаку)"
         taken: "вже зайнятий"
         not_a_number: "не число"
         greater_than: "має бути більше ніж {{count}}"
@@ -171,7 +209,7 @@ uk:
       short: "%d %b"
       long: "%d %B %Y"
       
-    day_names: [неділя, понеділок, вівторок, середа, четвер, п’ятниця, субота]
+    day_names: [неділя, понеділок, вівторок, середа, четвер, "п'ятниця", субота]
     abbr_day_names: [нд., пн., вт., ср., чт., пт., сб.]
       
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
@@ -186,12 +224,14 @@ uk:
       short: "%d %b, %H:%M"
       long: "%d %B %Y, %H:%M"
     am: "до полудня"
-    pm: "пополудні"
+    pm: "по полудні"
       
   # Used in array.to_sentence.
   support:
     array:
+      sentence_connector: "і"
+      skip_last_comma: true
       words_connector: ", "
       two_words_connector: " і "
-      last_word_connector: ", та "
+      last_word_connector: " та "
       
