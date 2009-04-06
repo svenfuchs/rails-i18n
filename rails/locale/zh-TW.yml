@@ -25,14 +25,14 @@
     distance_in_words:
       half_a_minute: "半分鐘"
       less_than_x_seconds:
-        one: "一秒内"
-        other: "少於 {{count}} 秒"
+        one: "不到一秒"
+        other: "不到 {{count}} 秒"
       x_seconds:
         one: "一秒"
         other: "{{count}} 秒"
       less_than_x_minutes:
-        one: "一分鐘内"
-        other: "少於 {{count}} 分鐘"
+        one: "不到一分鐘"
+        other: "不到 {{count}} 分鐘"
       x_minutes:
         one: "一分鐘"
         other: "{{count}} 分鐘"
@@ -52,8 +52,8 @@
         one: "大約一年"
         other: "大約 {{count}} 年"
       over_x_years:
-        one: "一年以上"
-        other: "{{count}} 年以上"
+        one: "一年多"
+        other: "{{count}} 年多"
     prompts:
       year:   "年"
       month:  "月"
