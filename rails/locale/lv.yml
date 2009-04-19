@@ -2,12 +2,12 @@
 # by Kaspars Bankovskis (kaspars@kei.lv)
 
 lv:
-
   date:
     formats:
       default: "%d.%m.%Y."
       short: "%d.%B"
       long: "%Y.gada %d.%B"
+
     day_names: [svētdiena, pirmdiena, otrdiena, trešdiena, ceturtdiena, piektdiena, sestdiena]
     abbr_day_names: [Sv., P., O., T., C., Pk., S.]
     month_names: [~, janvārī, februārī, martā, aprīlī, maijā, jūnijā, jūlijā, augustā, septembrī, oktobrī, novembrī, decembrī]
@@ -19,8 +19,50 @@ lv:
       default: "%Y.gada %d.%B, %H:%M"
       short: "%d.%m.%Y., %H:%M"
       long: "%Y.gada %d.%B, %H:%M:%S"
+
     am: "priekšpusdiena"
     pm: "pēcpusdiena"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "pusminūte"
+      less_than_x_seconds:
+        one: "mazāk par vienu sekundi"
+        other: "mazāk par {{count}} sekundēm"
+      x_seconds:
+        one: "1 sekunde"
+        other: "{{count}} sekundes"
+      less_than_x_minutes:
+        one: "mazāk par vienu minūti"
+        other: "mazāk par {{count}} minūtēm"
+      x_minutes:
+        one: "1 minūte"
+        other: "{{count}} minūtes"
+      about_x_hours:
+        one: "apmēram 1 stunda"
+        other: "apmēram {{count}} stundas"
+      x_days:
+        one: "1 diena"
+        other: "{{count}} dienas"
+      about_x_months:
+        one: "apmēram 1 mēnesis"
+        other: "apmēram {{count}} mēneši"
+      x_months:
+        one: "1 mēnesis"
+        other: "{{count}} mēneši"
+      about_x_years:
+        one: "apmēram 1 gads"
+        other: "apmēram {{count}} gadi"
+      over_x_years:
+        one: "vairāk kā gads"
+        other: "vairāk kā {{count}} gadi"
+    prompts:
+      second: "sekunde"
+      minute: "minūte"
+      hour: "stunda"
+      day: "diena"
+      month: "mēnesis"
+      year: "gads"
 
   support:
     array:
