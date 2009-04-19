@@ -64,6 +64,39 @@ lv:
       month: "mēnesis"
       year: "gads"
 
+  number:
+    format:
+      precision: 2
+      separator: ','
+      delimiter: '.'
+    currency:
+      format:
+        unit: 'LVL'
+        format: '%u %n'
+        separator: ","
+        delimiter: "."
+        precision: 2
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Baits"
+            other: "Baiti"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
   support:
     array:
       words_connector: ", "
