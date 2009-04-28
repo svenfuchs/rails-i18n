@@ -17,9 +17,9 @@ de:
   
   time:
     formats:
-      default: "%A, %e. %B %Y, %H:%M Uhr"
-      short: "%e. %B, %H:%M Uhr"
-      long: "%A, %e. %B %Y, %H:%M Uhr"
+      default: "%A, %d. %B %Y, %H:%M Uhr"
+      short: "%d. %B, %H:%M Uhr"
+      long: "%A, %d. %B %Y, %H:%M Uhr"
       time: "%H:%M"
 
     am: "vormittags"

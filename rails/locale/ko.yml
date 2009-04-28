@@ -125,8 +125,8 @@ ko:
     errors:
       template:
         header:
-          one:    "한개의 오류가 발생해 {{model}}를 저장 안았했습니다"
-          other:  "{{count}}개의 오류가 발생해 {{model}}를 저장 안았했습니다"
+          one:    "한개의 오류가 발생해 {{model}}를 저장 할 수 없습니다"
+          other:  "{{count}}개의 오류가 발생해 {{model}}를 저장 할 수 없습니다"
         # The variable :count is also available
         body: "다음 항목에 문제가 발견했습니다:"
 
