@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -w
-require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_i18n.rb'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails-i18n.rb'
 Translate.execute
 </string>
 	<key>fallbackInput</key>
