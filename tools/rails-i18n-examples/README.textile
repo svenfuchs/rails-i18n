@@ -3,6 +3,6 @@ h1. Rails Locale Data Comparsion Chart
 Simple Rails engine for generating a comparsion chart. There's an app template 
 to help you get started:
 
-rails rails-i18n-examples -m http://github.com/svenfuchs/rails-i18n/blob/master/tools/rails-i18n-examples/config/app_template.rb
+rails rails-i18n-examples -m http://github.com/svenfuchs/rails-i18n/raw/master/tools/rails-i18n-examples/config/app_template.rb
 
 http://localhost:3000/rails-i18n/examples should point to the comparsion chart.
