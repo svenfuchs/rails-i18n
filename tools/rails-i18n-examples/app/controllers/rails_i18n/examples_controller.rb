@@ -3,7 +3,7 @@ class RailsI18n::ExamplesController < ActionController::Base
 
   def index
     @groups = RailsI18n.example_groups
-    @locales = ['en', 'de'] #I18n.available_locales.map(&:to_s).sort
+    @locales = I18n.available_locales.map(&:to_s).sort
     @filter = { :locales => %w(en) }
   end
 end
