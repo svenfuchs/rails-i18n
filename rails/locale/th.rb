@@ -70,6 +70,22 @@
           :format => '%n %u'
         }
       },
+      :human => {
+        :format => {
+          :precision => 1,
+          :delimiter => ''
+        },
+       :storage_units => {
+         :format => "%n %u",
+         :units => {
+           :byte => "B",
+           :kb   => "KB",
+           :mb   => "MB",
+           :gb   => "GB",
+           :tb   => "TB",
+         }
+       }
+      },
     },
 
     # Active Record
