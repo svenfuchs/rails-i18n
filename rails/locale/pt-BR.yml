@@ -5,7 +5,6 @@ pt-BR:
       default: "%d/%m/%Y"
       short: "%d de %B"
       long: "%d de %B de %Y"
-      only_day: "%d"
     
     day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
     abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
@@ -16,13 +15,8 @@ pt-BR:
   time:
     formats:
       default: "%A, %d de %B de %Y, %H:%M hs"
-      time: "%H:%M hs"
       short: "%d/%m, %H:%M hs"
       long: "%A, %d de %B de %Y, %H:%M hs"
-      only_second: "%S"
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
     am: ''
     pm: ''
   
@@ -69,7 +63,14 @@ pt-BR:
       over_x_years:
         one: 'mais de 1 ano'
         other: 'mais de {{count}} anos'
-  
+    prompts:
+      year:   "Ano"
+      month:  "Mês"
+      day:    "Dia"
+      hour:   "Hora"
+      minute: "Minuto"
+      second: "Segundos"
+
   # numeros
   number:
     format:
@@ -103,36 +104,39 @@ pt-BR:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+
+# Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "e"
-      skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " e "
+      last_word_connector: " e "
     
   # Active Record
   activerecord:
     errors:
       template:
         header:
-          one: "{{model}} não pôde ser salvo: 1 erro"
-          other: "{{model}} não pôde ser salvo: {{count}} erros."
-        body: "Por favor, cheque os seguintes campos:"
+          one: "Não foi possível gravar {{model}}: 1 erro"
+          other: "Não foi possível gravar {{model}}: {{count}} erros."
+        body: "Por favor, verifique o(s) seguinte(s) campo(s):"
       messages:
-        inclusion: "não está incluso na lista"
+        inclusion: "não está incluído na lista"
         exclusion: "não está disponível"
         invalid: "não é válido"
-        confirmation: "não bate com a confirmação"
-        accepted: "precisa ser aceito"
-        empty: "não pode ser vazio"
-        blank: "não pode ser vazio"
-        too_long: "é muito longo (não mais do que {{count}} caracteres)"
-        too_short: "é muito curto (não menos do que {{count}} caracteres)"
-        wrong_length: "não é do tamanho correto (precisa ter {{count}} caracteres)"
-        taken: "não está disponível"
+        confirmation: "não está de acordo com a confirmação"
+        accepted: "deve ser aceito"
+        empty: "não pode ficar vazio"
+        blank: "não pode ficar em branco"
+        too_long: "é muito longo (máximo: {{count}} caracteres)"
+        too_short: "é muito curto (mínimo: {{count}} caracteres)"
+        wrong_length: "não possui o tamanho esperado ({{count}} caracteres)"
+        taken: "já está em uso"
         not_a_number: "não é um número"
-        greater_than: "precisa ser maior do que {{count}}"
-        greater_than_or_equal_to: "precisa ser maior ou igual a {{count}}"
-        equal_to: "precisa ser igual a {{count}}"
-        less_than: "precisa ser menor do que {{count}}"
-        less_than_or_equal_to: "precisa ser menor ou igual a {{count}}"
-        odd: "precisa ser ímpar"
-        even: "precisa ser par"
+        greater_than: "deve ser maior do que {{count}}"
+        greater_than_or_equal_to: "deve ser maior ou igual a {{count}}"
+        equal_to: "deve ser igual a {{count}}"
+        less_than: "deve ser menor do que {{count}}"
+        less_than_or_equal_to: "deve ser menor ou igual a {{count}}"
+        odd: "deve ser ímpar"
+        even: "deve ser par"
