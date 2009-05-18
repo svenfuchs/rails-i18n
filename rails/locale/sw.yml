@@ -2,29 +2,29 @@
 # by Joachim Mangilima (joachimm3@gmail.com) and Matthew Todd (http://matthewtodd.org)
 
 sw:
-  # date:
-  #   formats:
-  #     default: "%d.%m.%Y"
-  #     short: "%e. %b"
-  #     long: "%e. %B %Y"
-  #     only_day: "%e"
-  # 
-  #   day_names: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
-  #   abbr_day_names: [So, Mo, Di, Mi, Do, Fr, Sa]
-  #   month_names: [~, Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
-  #   abbr_month_names: [~, Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
-  #   order: [ :day, :month, :year ]
-  # 
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      # the short and long date formats are temporary until I can talk with someone...
+      short: "%e ya %b"
+      long: "%e ya %B, %Y"
+
+    day_names: [Jumpili, Jumatatu, Jumanne, Jumatano, Alhamisi, Ijumaa, Jumamosi]
+    abbr_day_names: [J2, J3, J4, J5, Al, Ij, J1]
+    month_names: [~, Januari, Februari, Machi, Aprili, Mei, Juni, Julai, Agosti, Septemba, Oktoba, Novemba, Desemba]
+    # these abbreviated month names are temporary until I can talk with someone...
+    abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    order: [ :year, :month, :day ]
+
   # time:
   #   formats:
   #     default: "%A, %e. %B %Y, %H:%M Uhr"
   #     short: "%e. %B, %H:%M Uhr"
   #     long: "%A, %e. %B %Y, %H:%M Uhr"
-  #     time: "%H:%M"
-  # 
+  #
   #   am: "vormittags"
   #   pm: "nachmittags"
-  #     
+
   datetime:
     distance_in_words:
       half_a_minute: 'nusu dakika'
@@ -60,7 +60,7 @@ sw:
       over_x_years:
         one: 'zaidi ya mwaka 1'
         other: 'zaidi ya miaka {{count}}'
-  #     
+  #
   # number:
   #   format:
   #     precision: 2
@@ -70,9 +70,9 @@ sw:
   #     format:
   #       unit: '€'
   #       format: '%n%u'
-  #       separator: 
-  #       delimiter: 
-  #       precision: 
+  #       separator:
+  #       delimiter:
+  #       precision:
   #   percentage:
   #     format:
   #       delimiter: ""
@@ -83,13 +83,13 @@ sw:
   #     format:
   #       delimiter: ""
   #       precision: 1
-  # 
+  #
   support:
     array:
       words_connector: ", "
       two_words_connector: " na "
       last_word_connector: ", na "
-        
+
   activerecord:
     errors:
       # template:
@@ -97,7 +97,7 @@ sw:
       #     one:    "Konnte dieses {{model}} Objekt nicht speichern: 1 Fehler."
       #     other:  "Konnte dieses {{model}} Objekt nicht speichern: {{count}} Fehler."
       #   body: "Bitte überprüfen Sie die folgenden Felder:"
-  
+
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
