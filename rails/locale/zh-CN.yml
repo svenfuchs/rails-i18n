@@ -117,7 +117,7 @@
         empty: "不能留空"
         blank: "不能为空字符"
         too_long: "过长（最长为 {{count}} 个字符）"
-        too_short: "過短（最短为 {{count}} 个字符）"
+        too_short: "过短（最短为 {{count}} 个字符）"
         wrong_length: "长度非法（必须为 {{count}} 个字符）"
         taken: "已经被使用"
         not_a_number: "不是数字"
