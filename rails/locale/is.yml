@@ -5,6 +5,9 @@ is:
     array:
       sentence_connector: "og"
       skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " og "
+      last_word_connector: " og "
 
   date:
     formats:
