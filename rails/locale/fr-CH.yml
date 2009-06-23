@@ -32,7 +32,7 @@ fr-CH:
 
   datetime:
     distance_in_words:
-      half_a_minute: "une demi-minute"
+      half_a_minute: "30 secondes"
       less_than_x_seconds:
         one:   "moins d'une seconde"
         other: "moins de {{count}} secondes"
