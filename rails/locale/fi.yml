@@ -1,5 +1,7 @@
 # Finnish translations for Ruby on Rails 
 # by Marko Seppä (marko.seppa@gmail.com)
+#
+# corrected by Petri Kivikangas (pkivik@gmail.com)
 
 fi:
   date:
@@ -8,10 +10,10 @@ fi:
       long: "%A%e. %Bta %Y"
       short: "%e.%m.%Y"
  
-    day_names: [Sunnuntai, Maanantai, Tiistai, Keskiviikko, Torstai, Perjantai, Lauantai]
-    abbr_day_names: [Su, Ma, Ti, Ke, To, Pe, La]
-    month_names: [~, Tammikuu, Helmikuu, Maaliskuu, Huhtikuu, Toukokuu, Kesäkuu, Heinäkuu, Elokuu, Syyskuu, Lokakuu, Marraskuu, Joulukuu]
-    abbr_month_names: [~, Tammi, Helmi, Maalis, Huhti, Touko, Kesä, Heinä, Elo, Syys, Loka, Marras, Joulu]
+    day_names: [sunnuntai, maanantai, tiistai, keskiviikko, torstai, perjantai, lauantai]
+    abbr_day_names: [su, ma, ti, ke, to, pe, la]
+    month_names: [~, tammikuu, helmikuu, maaliskuu, huhtikuu, toukokuu, kesäkuu, heinäkuu, elokuu, syyskuu, lokakuu, marraskuu, joulukuu]
+    abbr_month_names: [~, tammi, helmi, maalis, huhti, touko, kesä, heinä, elo, syys, loka, marras, joulu]
     order: [:day, :month, :year]
 
   time:
@@ -75,14 +77,14 @@ fi:
     distance_in_words:
       half_a_minute: "puoli minuuttia"
       less_than_x_seconds:
-        one:   "aiemmin kuin sekunti"
-        other: "aiemmin kuin {{count}} sekuntia"
+        one:   "alle sekunti"
+        other: "alle {{count}} sekuntia"
       x_seconds:
         one:   "sekunti"
         other: "{{count}} sekuntia"
       less_than_x_minutes:
-        one:   "aiemmin kuin minuutti"
-        other: "aiemmin kuin {{count}} minuuttia"
+        one:   "alle minuutti"
+        other: "alle {{count}} minuuttia"
       x_minutes:
         one:   "minuutti"
         other: "{{count}} minuuttia"
@@ -116,19 +118,19 @@ fi:
     errors:
       template:
         header:
-          one:    "1 virhe esti tämän {{model}} mallinteen tallentamisen"
-          other:  "{{count}} virhettä esti tämän {{model}} mallinteen tallentamisen"
+          one:    "1 virhe esti tämän {{model}} mallin tallentamisen"
+          other:  "{{count}} virhettä esti tämän {{model}} mallin tallentamisen"
         body: "Seuraavat kentät aiheuttivat ongelmia:"
       messages:
-        inclusion: "ei löydy listauksesta"
-        exclusion: "on jo varattu"
+        inclusion: "ei löydy listasta"
+        exclusion: "on varattu"
         invalid: "on kelvoton"
         confirmation: "ei vastaa varmennusta"
         accepted: "täytyy olla hyväksytty"
         empty: "ei voi olla tyhjä"
         blank: "ei voi olla sisällötön"
-        too_long: "on liian pitkä (maksimi on {{count}} merkkiä)"
-        too_short: "on liian lyhyt (minimi on {{count}} merkkiä)"
+        too_long: "on liian pitkä (enintään {{count}} merkkiä)"
+        too_short: "on liian lyhyt (vähintään {{count}} merkkiä)"
         wrong_length: "on väärän pituinen (täytyy olla täsmälleen {{count}} merkkiä)"
         taken: "on jo käytössä"
         not_a_number: "ei ole numero"
