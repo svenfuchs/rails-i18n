@@ -14,9 +14,9 @@ pt-BR:
   
   time:
     formats:
-      default: "%A, %d de %B de %Y, %H:%M hs"
-      short: "%d/%m, %H:%M hs"
-      long: "%A, %d de %B de %Y, %H:%M hs"
+      default: "%A, %d de %B de %Y, %H:%M h"
+      short: "%d/%m, %H:%M h"
+      long: "%A, %d de %B de %Y, %H:%M h"
     am: ''
     pm: ''
   
