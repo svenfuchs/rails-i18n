@@ -169,9 +169,9 @@ th:
       # Use the strftime parameters for formats.
       # When no format has been given, it uses default.
       # You can provide other formats here if you like!
-      default: lambda { |date| "%d-%m-#{date.year+543}" }
+      default: "%d-%m-%Y"
       short: "%e %b"
-      long: lambda { |date| "%e %B #{date.year+543}" }
+      long: "%e %B %Y"
       
     day_names: ["อาทิตย์", "จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ศุกร์", "เสาร์"]
     abbr_day_names: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"]
@@ -184,9 +184,9 @@ th:
 
   time:
     formats:
-      default: lambda { |time| "%a %d %b #{time.year+543} %H:%M:%S %z" }
+      default: "%a %d %b %Y %H:%M:%S %z"
       short: "%d %b %H:%M น."
-      long: lambda { |time| "%d %B #{time.year+543} %H:%M น." }
+      long: "%d %B %Y %H:%M น."
     am: ""
     pm: ""
       
