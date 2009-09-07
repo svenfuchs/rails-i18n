@@ -95,6 +95,13 @@ es:
       over_x_years:
         one:  "más de 1 año" 
         other: "más de {{count}} años" 
+    prompts:
+      year:   "Año"
+      month:  "Mes"
+      day:    "Día"
+      hour:   "Hora"
+      minute: "Minutos"
+      second: "Segundos"
 
   activerecord:
     errors:
@@ -127,7 +134,7 @@ es:
         less_than_or_equal_to: "debe ser menor que o igual a {{count}}"
         odd: "debe ser impar"
         even: "debe ser par"
-
+        record_invalid: "La validación falló: {{errors}}"
         # Append your own errors here or at the model/attributes scope.
 
       models:
@@ -164,6 +171,9 @@ es:
 
 # Used in array.to_sentence.
   support:
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Por favor seleccione"
     array:
       # Rails <= v.2.2.2
       # sentence_connector: "y"
