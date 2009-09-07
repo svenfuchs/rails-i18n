@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby -w
+	<string>#!/usr/bin/env ruby
 require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails-i18n.rb'
 Translate.execute
 </string>
