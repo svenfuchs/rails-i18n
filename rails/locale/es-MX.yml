@@ -2,7 +2,8 @@
 # by Edgar J. Suárez (edgar.js@gmail.com)
 # Fixed currency format (Can't convert string to symbol)
 # by Ivan Torres (mexpolk@gmail.com)
-
+# Added datetime / prompts for time_select helper
+# by Daniel Roux ( daniel.roux@gmail.com)
 es-MX:
   number:
     percentage:
@@ -75,6 +76,10 @@ es-MX:
       over_x_years:
         one: "más de 1 año"
         other: "más de {{count}} años"
+    prompts:
+      hour: 'Hora'
+      minute: 'Minuto'
+      second: 'Segundo'        
 
   activerecord:
     errors:
