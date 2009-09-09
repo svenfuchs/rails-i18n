@@ -1,4 +1,4 @@
-# Greek translations for Ruby on Rails
+﻿# Greek translations for Ruby on Rails
 # by Nick Kokkos (nkokkos@gmail.com)
 
 el:
@@ -187,5 +187,5 @@ el:
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "και"
+      sentence_connector: " και "
       skip_last_comma: false
