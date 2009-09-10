@@ -176,8 +176,8 @@ el:
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
       only_second: "%S"
-    am: "am"
-    pm: "pm"
+    am: "πμ"
+    pm: "μμ"
 
   datetime:
     formats:
