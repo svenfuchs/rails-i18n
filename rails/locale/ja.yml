@@ -33,6 +33,9 @@ ja:
       two_words_connector: "と"
       last_word_connector: "と"
 
+    select:
+      prompt: "選択してください。"
+
   number:
     format:
       separator: "."
