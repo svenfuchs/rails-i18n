@@ -1,5 +1,6 @@
 # Swedish translation, by Johan Lundström (johanlunds@gmail.com), with parts taken
 # from http://github.com/daniel/swe_rails
+# updated by Sven Dahlstrand (sven.dahlstrand@gmail.com)
 
 "sv-SE":
   number:
@@ -9,7 +10,7 @@
       # Sets the separator between the units, for more precision (e.g. 1.0 / 2.0 == 0.5)
       separator: ","
       # Delimets thousands (e.g. 1,000,000 is a million) (always in groups of three)
-      delimiter: "."
+      delimiter: " "
       # Number of decimals, behind the separator (the number 1 with a precision of 2 gives: 1.00)
       precision: 2
       
@@ -29,7 +30,7 @@
       format:
         # These three are to override number.format and are optional
         # separator: 
-        delimiter: ""
+        # delimiter: ""
         # precision: 
         
     # Used in number_to_precision()
@@ -37,7 +38,7 @@
       format:
         # These three are to override number.format and are optional
         # separator:
-        delimiter: ""
+        # delimiter: ""
         # precision:
         
     # Used in number_to_human_size()
@@ -45,8 +46,8 @@
       format:
         # These three are to override number.format and are optional
         # separator: 
-        delimiter: ""
-        # precision: 1
+        # delimiter: ""
+        precision: 1
       storage_units:
         # Storage units output formatting.
         # %u is the storage unit, %n is the number (default: 2 MB)
@@ -94,6 +95,9 @@
       over_x_years:
         one:   "mer än ett år"
         other: "mer än {{count}} år"
+      almost_x_years:
+        one:   "nästan ett år"
+        other: "nästan {{count}} år"
     prompts:
       year:   "År"
       month:  "Månad"
@@ -132,6 +136,7 @@
         less_than_or_equal_to: "måste vara mindre än eller lika med {{count}}"
         odd: "måste vara udda"
         even: "måste vara jämnt"
+        record_invalid: "Ett fel uppstod: {{errors}}"
         # Append your own errors here or at the model/attributes scope.
 
       # You can define own errors for models or model attributes.
@@ -193,3 +198,6 @@
       words_connector: ", "
       two_words_connector: " och "
       last_word_connector: " och "
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Välj"
