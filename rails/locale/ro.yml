@@ -64,6 +64,9 @@ ro:
       over_x_years:
         one:  "mai mult de un an"
         other: "mai mult de {{count}} ani"
+      almost_x_years:
+        one:   "aproape 1 an"
+        other: "aproape {{count}} ani"
     prompts:
       year:   "Anul"
       month:  "Luna"
@@ -99,8 +102,17 @@ ro:
 #        separator: "."
         delimiter: ","
         precision: 1
-      storage_units: [Bytes, KB, MB, GB, TB]
-        
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+       
   activerecord:
     errors:
       template:
@@ -128,9 +140,13 @@ ro:
         less_than_or_equal_to: "trebuie să fie mai mic sau egal cu {{count}}"
         odd: "trebuie să fie par"
         even: "trebuie să fie impar"
+        record_invalid: "Validare nereuşită {{errors}}"
   support:
-      array:
+    array:
 #        sentence_connector: "și"
-        words_connector: ", "
-        two_words_connector: " şi "
-        last_word_connector: " şi "
+      words_connector: ", "
+      two_words_connector: " şi "
+      last_word_connector: " şi "
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Alegeţi"
