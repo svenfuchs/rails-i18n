@@ -1,6 +1,7 @@
-# Japanese translations for Ruby on Rails 
+# Japanese translations for Ruby on Rails
 # by Akira Matsuda (ronnie@dio.jp)
 # AR error messages are basically taken from Ruby-GetText-Package. Thanks to Masao Mutoh.
+# updated for Rails 2.3.4 by Tsutomu Kuroda <t-kuroda@oiax.jp>
 
 ja:
   date:
@@ -107,8 +108,6 @@ ja:
 
   activerecord:
     errors:
-      format:
-        separator: ""
       template:
         header:
           one:   "{{model}}にエラーが発生しました。"
@@ -135,4 +134,7 @@ ja:
         less_than_or_equal_to: "は{{count}}以下の値にしてください。"
         odd: "は奇数にしてください。"
         even: "は偶数にしてください。"
+
+      full_messages:
+        format: "{{attribute}}{{message}}"
 
