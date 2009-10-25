@@ -19,20 +19,6 @@ class Hash
       self[key].set keys, value
     end
   end
-  
-  def self.text_search(h, text)
-    return nil if h.nil? || text.nil?
-    return h.index(text) if h.has_value?(text)
-    
-    h.each do |key, value|
-      if value.class == Hash
-        sub_key = text_search(value, text)
-        return "#{key}.#{sub_key}" unless sub_key.nil?
-      end
-    end
-    
-    return nil
-  end
 
   # copy of ruby's to_yaml method, prepending sort.
   # before each so we get an ordered yaml file
@@ -62,14 +48,11 @@ class Translate
   @@t_path_plain = File.join(@@project_dir, 'log', 'translations')
   @@t_path_yaml = File.join(@@project_dir, 'log', 'translations.yml')
   @@original_text = ENV['TM_SELECTED_TEXT']
-  @@existing_key = false
 
   def self.execute
     return if @@original_text.nil?
 
-    translation = ENV['TM_SELECTED_TEXT'].gsub(/^\s*("|')|("|')\s*$/, '')
-
-    key = self.get_key(translation)
+    key = self.get_key
     if key.blank?
       print @@original_text
       return
@@ -82,17 +65,16 @@ class Translate
     end
 
     case type
-    when 'html', 'h'
+    when 'html'
       replacement = "<%=#{self.translation_method} '#{key}' %>"
-    when 'string', 's'
+    when 'string'
       replacement = "\#{#{self.translation_method}('#{key}')}"
     else
       replacement = "#{self.translation_method}('#{key}')"
     end
 
-    if @@existing_key
-      print replacement
-    elsif self.add_yaml_translation(key, translation)
+    translation = ENV['TM_SELECTED_TEXT'].gsub(/^\s*("|')|("|')\s*$/, '')
+    if self.add_yaml_translation(key, translation)
       self.add_plain_translation(key, translation)
       print replacement
     else
@@ -100,27 +82,17 @@ class Translate
     end
   end
 
-  def self.search_for_old_key(translation)
-    es_yaml = YAML.load(File.open("#{@@project_dir}/config/locales/es.yml").read)
-    tmp_en_yaml = YAML.load(File.open(@@t_path_yaml))
-    Hash.text_search(es_yaml["es"], translation) || Hash.text_search(tmp_en_yaml["en"], translation)
-  end
-
-  def self.get_key(translation)
-    old_key = self.search_for_old_key(translation)
-    prompt = old_key.nil? ? 'Key' : 'FOUND Key!'
-    
+  def self.get_key
     key = TextMate::UI.request_string :title => 'Key',
-                                      :prompt => prompt,
-                                      :default => old_key || self.get_pref('last_used_key')
-    self.set_pref('last_used_key', key) if !key.blank? && key != old_key
-    @@existing_key = (key == old_key && !key.blank?)
+                                      :prompt => 'Key',
+                                      :default => self.get_pref('last_used_key')
+    self.set_pref('last_used_key', key) unless key.blank?
     key
   end
 
   def self.get_type
     type = TextMate::UI.request_string :title => 'Type',
-                                       :prompt => 'html (or h), string (or s), or ruby (or r)',
+                                       :prompt => 'html, string, or ruby',
                                        :default => self.get_pref('last_used_type')
     self.set_pref('last_used_type', type) unless type.blank?
     type
@@ -168,7 +140,7 @@ class Translate
 
   def self.translation_method
     current_file = ENV['TM_FILEPATH'].gsub(@@project_dir, '')
-    translate_cmd = (current_file =~ /^\/app\/views\//) ? 't' : 'I18n.t'
+    translate_cmd = (current_file =~ /^\/app\/(controllers|helpers|views)\//) ? 't' : 'I18n.t'
   end
 
   def self.get_pref(key)
