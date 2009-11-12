@@ -5,6 +5,22 @@
 # If you need a previous version go to http://github.com/weppos/rails-i18n/
 # and choose between available tags.
 pt-PT:
+  # nutritionawards-specifc
+  ui:
+    login:
+      title: "Iniciar Sessão"
+      email: "email"
+      password: "password"
+      submit: "iniciar sessão"
+    user: 
+      session:
+          register: "registar"
+          edit_profile: "editar perfil"
+  flash:
+    login: "Sessão iniciada."
+    logout: "Sessão terminada."
+
+
 # Used in array.to_sentence.
   support:
     # default value for :prompt => true in FormOptionsHelper
@@ -151,6 +167,12 @@ pt-PT:
 
   activerecord:
     errors:
+      template:
+        header:
+          one:    "Não foi possível guardar {{model}}: 1 erro"
+          other:  "Não foi possível guardar {{model}}: {{count}} erros"
+        # The variable :count is also available
+        body: "Por favor, verifique os seguintes campos:"
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
