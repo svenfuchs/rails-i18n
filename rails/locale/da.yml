@@ -4,6 +4,9 @@
 da:
   # active_support
   date:
+    # See http://www.dsn.dk/oss_faq.htm#datoer and http://en.wikipedia.org/wiki/Date_formats
+    # either use traditional (2.10.03, 2. oktober 2003): "%e.%m.%y", "%e. %B %Y"
+    # or international ISO 8601 format (2003-10-20): "%Y-%m-%d"
     formats:
       default: "%d.%m.%Y"
       short: "%e. %b %Y"
@@ -32,6 +35,9 @@ da:
       words_connector: ", "
       two_words_connector: " og "
       last_word_connector: " og "
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Vælg..."
 
   datetime:
     distance_in_words:
@@ -66,6 +72,9 @@ da:
       over_x_years:
         one:  "mere end et år"
         other: "mere end {{count}} år"
+      almost_x_years:
+        one:   "næsten et år"
+        other: "næsten {{count}} years"
     prompts:
       second: "Sekund"
       minute: "Minut"
@@ -141,7 +150,16 @@ da:
         less_than_or_equal_to: "skal være mindre end eller lig med {{count}}"
         odd: "skal være ulige"
         even: "skal være lige"
+        record_invalid: "Validering fejlede: {{errors}}"
 
+      template:
+        header:
+          one:   "En fejl forhindrede {{model}} i at blive gemt"
+          other:  "{{count}} fejl forhindrede denne {{model}} i at blive gemt"
+        body: "Der var problemer med følgende felter:"
+
+  activemodel:
+    errors:
       template:
         header:
           one:   "En fejl forhindrede {{model}} i at blive gemt"
