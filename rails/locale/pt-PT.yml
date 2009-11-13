@@ -5,22 +5,6 @@
 # If you need a previous version go to http://github.com/weppos/rails-i18n/
 # and choose between available tags.
 pt-PT:
-  # nutritionawards-specifc
-  ui:
-    login:
-      title: "Iniciar Sessão"
-      email: "email"
-      password: "password"
-      submit: "iniciar sessão"
-    user: 
-      session:
-          register: "registar"
-          edit_profile: "editar perfil"
-  flash:
-    login: "Sessão iniciada."
-    logout: "Sessão terminada."
-
-
 # Used in array.to_sentence.
   support:
     # default value for :prompt => true in FormOptionsHelper
