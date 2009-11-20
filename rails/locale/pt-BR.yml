@@ -140,3 +140,4 @@ pt-BR:
         less_than_or_equal_to: "deve ser menor ou igual a {{count}}"
         odd: "deve ser ímpar"
         even: "deve ser par"
+        record_invalid: "A validação falhou: {{errors}}"
