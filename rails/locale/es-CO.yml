@@ -7,7 +7,7 @@ es-CO:
       format:
         delimiter: ","
     currency:
-      format:
+      format: # Pesos Colombianos
         format: "%u%n"
         unit: "Col $"
     format:
@@ -78,6 +78,8 @@ es-CO:
       minute: 'Minuto'
       second: 'Segundo'        
 
+  # Active Record
+
   activerecord:
     errors:
       template:
@@ -86,11 +88,13 @@ es-CO:
           other: "{{model}} no pudo guardarse debido a {{count}} errores"
         body: "Revise que los siguientes campos sean válidos:"
       messages:
+        record_invalid:"Falla de validación: {{errors}}"
         inclusion: "no está incluído en la lista"
         exclusion: "está reservado"
         invalid: "es inválido"
         invalid_date: "es una fecha inválida"
         confirmation: "no coincide con la confirmación"
+        accepted: "debe ser aceptado"
         blank: "no puede estar en blanco"
         empty: "no puede estar vacío"
         not_a_number: "no es un número"
@@ -109,6 +113,5 @@ es-CO:
         wrong_length:
           one: "longitud errónea (debe ser de 1 caracter)"
           other: "longitud errónea (debe ser de {{count}} caracteres)"
-        accepted: "debe ser aceptado"
         even: "debe ser un número par"
         odd: "debe ser un número non"
