@@ -1,4 +1,5 @@
 # stolen from Kakutani Shintaro http://github.com/kakutani/yaml_waml
+# fixing output result of 'to_yaml' method which otherwise treats multibyte UTF-8 strings as binary
 
 require "yaml"
 
