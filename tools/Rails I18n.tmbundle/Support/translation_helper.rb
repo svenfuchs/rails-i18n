@@ -33,11 +33,13 @@ class TranslationHelper
       begin
         self.store[key] = translation
         log_translation(key, translation) if CONFIG[:log_changes]
-        print replacement and return
+        print replacement
+        return
       rescue Exceptions::DuplicateKey
         if (prompt_for_overwrite(self.store[key], translation))
           self.store.send(:[]=, key, translation, true)
-          print replacement and return
+          print replacement
+          return
         end
       end
     end
