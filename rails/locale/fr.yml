@@ -136,3 +136,5 @@ fr:
         less_than_or_equal_to: "doit être inférieur ou égal à {{count}}"
         odd: "doit être impair"
         even: "doit être pair"
+        record_invalid: "La validation a échoué : {{errors}}"
+        
