@@ -10,7 +10,7 @@ pt-BR:
     abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
     abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
-    order: [ :day, :month, :year ]
+    order: [:day, :month, :year]
   
   time:
     formats:
@@ -20,7 +20,7 @@ pt-BR:
     am: ''
     pm: ''
   
-  # date helper distanci em palavras
+  # distancia do tempo em palavras
   datetime:
     distance_in_words:
       half_a_minute: 'meio minuto'
@@ -63,6 +63,7 @@ pt-BR:
       over_x_years:
         one: 'mais de 1 ano'
         other: 'mais de {{count}} anos'
+    
     prompts:
       year:   "Ano"
       month:  "Mês"
@@ -105,14 +106,14 @@ pt-BR:
           gb: "GB"
           tb: "TB"
 
-# Used in array.to_sentence.
+  # Usado no Array.to_sentence
   support:
     array:
       words_connector: ", "
       two_words_connector: " e "
       last_word_connector: " e "
     
-  # Active Record
+  # ActiveRecord
   activerecord:
     errors:
       template:
