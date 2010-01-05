@@ -19,7 +19,7 @@ th:
       format:
         # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
         format: "%n %u"
-        unit: "Baht"
+        unit: "บาท"
         # These three are to override number.format and are optional
         separator: "."
         delimiter: ","
@@ -95,6 +95,9 @@ th:
       over_x_years:
         one:   "มากกว่า 1 ปี"
         other: "มากกว่า {{count}} ปี"
+      almost_x_years:
+        one:   "เกือบ 1 ปี"
+        other: "เกือบ {{count}} ปี"
     prompts:
       year:   "ปี"
       month:  "เดือน"
@@ -103,7 +106,7 @@ th:
       minute: "นาที"
       second: "วินาที"
 
-  activerecord:
+  activemodel:
     errors:
       template:
         header:
@@ -112,6 +115,8 @@ th:
         # The variable :count is also available
         body: "โปรดตรวจสอบข้อมูลในช่องต่อไปนี้:"
         
+  activerecord:
+    errors:
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
