@@ -63,6 +63,10 @@ pt-BR:
       over_x_years:
         one: 'mais de 1 ano'
         other: 'mais de {{count}} anos'
+
+      almost_x_years:
+        one: 'quase 1 ano'
+        other: 'quase {{count}} anos'
     
     prompts:
       year:   "Ano"
