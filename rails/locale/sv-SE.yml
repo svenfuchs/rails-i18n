@@ -1,6 +1,7 @@
 # Swedish translation, by Johan Lundström (johanlunds@gmail.com), with parts taken
 # from http://github.com/daniel/swe_rails
 # updated by Sven Dahlstrand (sven.dahlstrand@gmail.com)
+# updated by Henrik Nyh (henrik@nyh.se)
 
 "sv-SE":
   number:
@@ -127,7 +128,7 @@
         exclusion: "är reserverat"
         invalid: "är ogiltigt"
         confirmation: "stämmer inte överens"
-        accepted : "måste vara accepterad"
+        accepted: "måste vara accepterad"
         empty: "får ej vara tom"
         blank: "måste anges"
         too_long: "är för lång (maximum är {{count}} tecken)"
