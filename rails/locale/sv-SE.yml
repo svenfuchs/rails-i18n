@@ -180,7 +180,7 @@
       # You can provide other formats here if you like!
       default: "%Y-%m-%d"
       short: "%e %b"
-      long: "%e %B, %Y"
+      long: "%e %B %Y"
 
     day_names: [söndag, måndag, tisdag, onsdag, torsdag, fredag, lördag]
     abbr_day_names: [sön, mån, tis, ons, tor, fre, lör]
@@ -193,9 +193,9 @@
 
   time:
     formats:
-      default: "%a, %d %b %Y %H:%M:%S %z"
-      short: "%d %b %H:%M"
-      long: "%d %B, %Y %H:%M"
+      default: "%a, %e %b %Y %H:%M:%S %z"
+      short: "%e %b %H:%M"
+      long: "%e %B %Y %H:%M"
     am: ""
     pm: ""
 
