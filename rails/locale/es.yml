@@ -95,6 +95,9 @@ es:
       over_x_years:
         one:  "más de 1 año" 
         other: "más de {{count}} años" 
+      almost_x_years:
+        one: "casi 1 año"
+        other: "casi {{count}} años"
     prompts:
       year:   "Año"
       month:  "Mes"
