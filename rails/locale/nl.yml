@@ -27,7 +27,7 @@ nl:
         unit: !binary |
           4oKs
 
-        separator: .
+        separator: ","
         precision: 2
         delimiter: .
   activerecord: 
@@ -39,6 +39,7 @@ nl:
         blank: moet opgegeven zijn
         exclusion: is niet beschikbaar
         invalid: is ongeldig
+        record_invalid: is ongeldig
         odd: moet oneven zijn
         too_short: is te kort (niet minder dan {{count}} tekens)
         wrong_length: heeft niet de juiste lengte (moet {{count}} tekens lang zijn)
