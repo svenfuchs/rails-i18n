@@ -110,7 +110,7 @@ tr:
         inclusion: "kabul edilen bir kelime değil"
         exclusion: "kullanılamaz"
         invalid: "geçersiz"
-        confirmation: "teyidi uyuşmamakta"
+        confirmation: "teyidiyle uyuşmamakta"
         accepted: "kabul edilmeli"
         empty: "doldurulmalı"
         blank: "doldurulmalı"
