@@ -65,6 +65,9 @@ tr:
       over_x_years:
         one: '1 yıldan fazla'
         other: '{{count}} yıldan fazla'
+      almost_x_years:
+        one:   "neredeyse 1 yıl"
+        other: "neredeyse {{count}} yıl"
       
   number:
     format:
@@ -94,9 +97,15 @@ tr:
         precision: 2
 
   support:
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Lütfen seçiniz"
     array:
       sentence_connector: "ve"
       skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " ve "
+      last_word_connector: " ve "
         
   activerecord:
     errors:
@@ -126,4 +135,5 @@ tr:
         less_than_or_equal_to: "{{count}} sayısına eşit veya küçük olmalı"
         odd: "tek olmalı"
         even: "çift olmalı"
+        record_invalid: "Doğrulama başarısız oldu: {{errors}}"
       models:
