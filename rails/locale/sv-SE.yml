@@ -101,7 +101,13 @@
     errors:
       # model.errors.full_messages format.
       format: "{{attribute}} {{message}}"
-
+      
+      template:
+        header:
+          one:    "Ett fel förhindrade denna {{model}} från att sparas"
+          other:  "{{count}} fel förhindrade denna {{model}} från att sparas"
+        body: "Det var problem med följande fält:"
+      
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
