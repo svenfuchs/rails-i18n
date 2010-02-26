@@ -1,7 +1,10 @@
-# Bahasa Indonesia translations for Ruby on Rails 
+# Indonesian translations for Ruby on Rails 
 # by wynst (wynst.uei@gmail.com)
 
 id:
+  locale:
+    native_name: Bahasa Indonesia
+    address_separator: " "
   date:
     formats:
       default: "%d %B %Y"
@@ -17,8 +20,11 @@ id:
   time:
     formats:
       default: "%a, %d %b %Y %H.%M.%S %z"
+      numeric: "%d-%b-%y %H:%M"
       short: "%d %b %H.%M"
       long: "%d %B %Y %H.%M"
+      time: "%H:%M"
+      
     am: "am"
     pm: "pm"
 
@@ -29,9 +35,9 @@ id:
 
   number:
     format:
-      separator: ","
       delimiter: "."
-      precision: 3
+      separator: ","
+      precision: 2
     
     currency:
       format:
@@ -43,32 +49,34 @@ id:
         
     percentage:
       format:
-        # separator:
-        delimiter: ""
-        # precision: 
+      delimiter: "."
+      separator: ","
+      precision: 2
 
     precision:
       format:
-        # separator:
-        delimiter: ""
-        # precision:
+      delimiter: "."
+      separator: ","
         
     human:
       format:
-        delimiter: ""
-        precision: 1
+      delimiter: "."
+      separator: ","
+      precision: 1
       storage_units: [Byte, KB, MB, GB, TB]
  
   datetime:
     distance_in_words:
       half_a_minute: "setengah menit"
       less_than_x_seconds:
+        zero:  "kurang dari 1 detik"
         one:   "kurang dari 1 detik"
         other: "kurang dari {{count}} detik"
       x_seconds:
         one:   "1 detik"
         other: "{{count}} detik"
       less_than_x_minutes:
+        zero:  "kurang dari 1 menit"
         one:   "kurang dari 1 menit"
         other: "kurang dari  {{count}} menit"
       x_minutes:
