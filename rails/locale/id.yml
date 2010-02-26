@@ -29,9 +29,14 @@ id:
     pm: "pm"
 
   support:
+    select:
+      prompt: "Silahkan pilih"
     array:
       sentence_connector: "dan"
       skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: ", "
+      last_word_connector: " dan "
 
   number:
     format:
@@ -100,6 +105,9 @@ id:
       over_x_years:
         one:   "lebih dari setahun"
         other: "lebih dari {{count}} tahun"
+      almost_x_years:
+        one:   "hampir setahun"
+        other: "hampir {{count}} tahun"
  
   activerecord:
     errors:
@@ -128,3 +136,4 @@ id:
         less_than_or_equal_to: "harus sama atau lebih kecil dari {{count}}"
         odd: "harus ganjil"
         even: "harus genap"
+        record_invalid: "Verifikasi gagal: {{errors}}"
