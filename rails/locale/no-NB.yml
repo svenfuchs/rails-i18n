@@ -3,6 +3,9 @@
   support:
     array:
       sentence_connector: "og"
+      words_connector: ", "
+      two_words_connector: " og "
+      last_word_connector: " og "
   date:
     formats:
       default: "%d.%m.%Y"
