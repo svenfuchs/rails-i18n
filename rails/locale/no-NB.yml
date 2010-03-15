@@ -6,6 +6,8 @@
       words_connector: ", "
       two_words_connector: " og "
       last_word_connector: " og "
+    select:
+      prompt: "Velg"
   date:
     formats:
       default: "%d.%m.%Y"
