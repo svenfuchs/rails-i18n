@@ -58,6 +58,9 @@
       over_x_years:
         one: "over 1 år"
         other: "over {{count}} år"
+      almost_x_years:
+        one: "nesten 1 år"
+        other: "nesten {{count}} år"
     prompts:
       year:   "År"
       month:  "Måned"
