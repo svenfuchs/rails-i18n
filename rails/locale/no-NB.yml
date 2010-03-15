@@ -75,6 +75,9 @@
       delimiter: ","
     currency:
       format:
+        separator: "."
+        delimiter: ","
+        precision: 2
         unit: "kr"
         format: "%n %u"
     precision:
