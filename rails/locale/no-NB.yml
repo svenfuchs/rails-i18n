@@ -83,7 +83,6 @@
     precision:
       format:
         delimiter: ""
-        precision: 4
   activerecord:
     errors:
       template:
