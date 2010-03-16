@@ -54,6 +54,9 @@ de-AT:
       x_months:
         one: 'ein Monat'
         other: '{{count}} Monate'
+      almost_x_years:
+        one: 'fast ein Jahr'
+        other: 'fast {{count}} Jahre'
       about_x_years:
         one: 'etwa ein Jahr'
         other: 'etwa {{count}} Jahre'
