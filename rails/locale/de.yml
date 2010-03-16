@@ -116,16 +116,16 @@ de:
     errors:
       template:
         header:
-          one:    "Konnte dieses {{model}} Objekt nicht speichern: 1 Fehler."
-          other:  "Konnte dieses {{model}} Objekt nicht speichern: {{count}} Fehler."
+          one:    "Konnte {{model}} nicht speichern: 1 Fehler."
+          other:  "Konnte {{model}} nicht speichern: {{count}} Fehler."
         body: "Bitte überprüfen Sie die folgenden Felder:"
 
   activerecord:
     errors:
       template:
         header:
-          one:    "Konnte dieses {{model}} Objekt nicht speichern: 1 Fehler."
-          other:  "Konnte dieses {{model}} Objekt nicht speichern: {{count}} Fehler."
+          one:    "Konnte {{model}} nicht speichern: 1 Fehler."
+          other:  "Konnte {{model}} nicht speichern: {{count}} Fehler."
         body: "Bitte überprüfen Sie die folgenden Felder:"
 
       messages:
