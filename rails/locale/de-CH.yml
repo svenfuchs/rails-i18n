@@ -116,7 +116,7 @@ de-CH:
     errors:
       template:
         header:
-          one:    "Konnte {{model}} nicht speichern: 1 Fehler."
+          one:    "Konnte {{model}} nicht speichern: ein Fehler."
           other:  "Konnte {{model}} nicht speichern: {{count}} Fehler."
         body: "Bitte überprüfen Sie die folgenden Felder:"
 
@@ -124,7 +124,7 @@ de-CH:
     errors:
       template:
         header:
-          one:    "Konnte {{model}} nicht speichern: 1 Fehler."
+          one:    "Konnte {{model}} nicht speichern: ein Fehler."
           other:  "Konnte {{model}} nicht speichern: {{count}} Fehler."
         body: "Bitte überprüfen Sie die folgenden Felder:"
 
