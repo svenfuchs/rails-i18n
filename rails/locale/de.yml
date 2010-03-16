@@ -111,6 +111,8 @@ de:
       words_connector: ", "
       two_words_connector: " und "
       last_word_connector: " und "
+    select:
+      prompt: "Bitte wählen:"
 
   activerecord:
     errors:
