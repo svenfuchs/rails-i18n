@@ -29,14 +29,12 @@ de-AT:
     distance_in_words:
       half_a_minute: 'eine halbe Minute'
       less_than_x_seconds:
-        zero: 'weniger als eine Sekunde'
         one: 'weniger als eine Sekunde'
         other: 'weniger als {{count}} Sekunden'
       x_seconds:
         one: 'eine Sekunde'
         other: '{{count}} Sekunden'
       less_than_x_minutes:
-        zero: 'weniger als eine Minute'
         one: 'weniger als eine Minute'
         other: 'weniger als {{count}} Minuten'
       x_minutes:
