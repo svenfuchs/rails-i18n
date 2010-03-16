@@ -29,36 +29,36 @@ de-AT:
     distance_in_words:
       half_a_minute: 'eine halbe Minute'
       less_than_x_seconds:
-        zero: 'weniger als 1 Sekunde'
-        one: 'weniger als 1 Sekunde'
+        zero: 'weniger als eine Sekunde'
+        one: 'weniger als eine Sekunde'
         other: 'weniger als {{count}} Sekunden'
       x_seconds:
-        one: '1 Sekunde'
+        one: 'eine Sekunde'
         other: '{{count}} Sekunden'
       less_than_x_minutes:
-        zero: 'weniger als 1 Minute'
+        zero: 'weniger als eine Minute'
         one: 'weniger als eine Minute'
         other: 'weniger als {{count}} Minuten'
       x_minutes:
-        one: '1 Minute'
+        one: 'eine Minute'
         other: '{{count}} Minuten'
       about_x_hours:
-        one: 'etwa 1 Stunde'
+        one: 'etwa eine Stunde'
         other: 'etwa {{count}} Stunden'
       x_days:
-        one: '1 Tag'
+        one: 'ein Tag'
         other: '{{count}} Tage'
       about_x_months:
-        one: 'etwa 1 Monat'
+        one: 'etwa ein Monat'
         other: 'etwa {{count}} Monate'
       x_months:
-        one: '1 Monat'
+        one: 'ein Monat'
         other: '{{count}} Monate'
       about_x_years:
-        one: 'etwa 1 Jahr'
+        one: 'etwa ein Jahr'
         other: 'etwa {{count}} Jahre'
       over_x_years:
-        one: 'mehr als 1 Jahr'
+        one: 'mehr als ein Jahr'
         other: 'mehr als {{count}} Jahre'
     prompts:
       second: "Sekunden"
