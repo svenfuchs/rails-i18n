@@ -82,11 +82,17 @@
     precision:
       format:
         delimiter: ""
-  activerecord:
+        
+  activemodel:
     errors:
       template:
-        header: "kunne ikke lagre {{model}} på grunn av {{count}} feil."
+        header:
+          one:   "Kunne ikke lagre {{model}} på grunn av én feil."
+          other: "Kunne ikke lagre {{model}} på grunn av {{count}} feil."
         body: "det oppstod problemer i følgende felt:"
+                      
+  activerecord:
+    errors:
       messages:
         inclusion: "er ikke inkludert i listen"
         exclusion: "er reservert"
