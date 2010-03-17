@@ -89,7 +89,7 @@
         header:
           one:   "Kunne ikke lagre {{model}} på grunn av én feil."
           other: "Kunne ikke lagre {{model}} på grunn av {{count}} feil."
-        body: "det oppstod problemer i følgende felt:"
+        body: "Det oppstod problemer i følgende felt:"
                       
   activerecord:
     errors:
@@ -113,5 +113,6 @@
         less_than_or_equal_to: "må være mindre enn eller lik {{count}}"
         odd: "må være oddetall"
         even: "må være partall"
+        record_invalid: "Det oppstod feil: {{errors}}"
       # models:
       # attributes:
