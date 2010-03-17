@@ -97,7 +97,10 @@
           mb: "MB"
           gb: "GB"
           tb: "TB"
-        
+    percentage:
+      format:
+        delimiter: ""        
+
   activemodel:
     errors:
       template:
