@@ -54,6 +54,9 @@
       over_x_years:
         one: "一年多"
         other: "{{count}} 年多"
+      almost_x_years:
+        one:   "接近一年"
+        other: "接近 {{count}} 年"
     prompts:
       year:   "年"
       month:  "月"
@@ -100,16 +103,17 @@
       words_connector: ", "
       two_words_connector: " 和 "
       last_word_connector: ", 和 "
+    select:
+      prompt: "请选择"
   
   activerecord:
     errors:
-      template:
-        header: 
+      template: # ~ 2.3.5 backward compatible
+        header:
           one: "有 1 个错误发生导致「{{model}}」无法被保存。"
           other: "有 {{count}} 个错误发生导致「{{model}}」无法被保存。"
         body: "如下字段出现错误："
       messages:
-        record_invalid: "校验失败: {{errors}}"
         inclusion: "不包含于列表中"
         exclusion: "是保留关键字"
         invalid: "是无效的"
@@ -129,3 +133,14 @@
         less_than_or_equal_to: "必须小于或等于 {{count}}"
         odd: "必须为单数"
         even: "必须为双数"
+        record_invalid: "校验失败: {{errors}}"
+  
+  activemodel:
+    errors:
+      template:
+        header:
+          one: "有 1 个错误发生导致「{{model}}」无法被保存。"
+          other: "有 {{count}} 个错误发生导致「{{model}}」无法被保存。"
+        body: "如下字段出现错误："
+  
+
