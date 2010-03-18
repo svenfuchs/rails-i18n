@@ -1,5 +1,5 @@
 # Norwegian, norsk bokmål, by irb.no
-"no-NB":
+nb:
   support:
     array:
       sentence_connector: "og"
