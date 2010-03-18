@@ -1,7 +1,7 @@
 # Lower Sorbian translations for Ruby on Rails
 # by Michael Wolf (preklady@wolfmicha.de)
 
-hsb:
+dsb:
   # ActiveSupport
   support:
     array:
