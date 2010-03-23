@@ -97,8 +97,11 @@ pt-BR:
         delimiter: '.'
     human:
       format:
-        precision: 1
+        precision: 2
         delimiter: '.'
+        significant: true
+        strip_unsignificant_zeros: true
+      # number_to_human_size()
       storage_units:
         format: "%n %u"
         units:
@@ -109,6 +112,25 @@ pt-BR:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      # number_to_human()
+      # new in rails 3: please add to other locales
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""     
+          thousand: "mil"
+          million:
+            one: milhão
+            other: milhões
+          billion:
+            one: bilhão
+            other: bilhões
+          trillion:
+            one: trilhão
+            other: trilhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
 
   # Usado no Array.to_sentence
   support:
