@@ -117,7 +117,7 @@ ro:
     errors:
       template:
         header: 
-          one: "Nu am putut salva acest model {{model}}: 1 eroare"
+          one: "Nu am putut salva acest {{model}}: o eroare"
           other: "Nu am putut salva acest {{model}}: {{count}} erori."
         body: "Încearcă să corectezi urmatoarele câmpuri:"
       messages:
