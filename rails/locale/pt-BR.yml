@@ -138,6 +138,7 @@ pt-BR:
         wrong_length: "não possui o tamanho esperado ({{count}} caracteres)"
         taken: "já está em uso"
         not_a_number: "não é um número"
+        not_an_integer: "não é um número inteiro"
         greater_than: "deve ser maior do que {{count}}"
         greater_than_or_equal_to: "deve ser maior ou igual a {{count}}"
         equal_to: "deve ser igual a {{count}}"
