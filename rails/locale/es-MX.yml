@@ -1,29 +1,30 @@
 # Spanish as spoken in Mexico (es-MX) translations for Rails
 # by Edgar J. Suárez (edgar.js@gmail.com)
+# Fixed currency format (Can't convert string to symbol)
+# by Ivan Torres (mexpolk@gmail.com)
+# Added datetime / prompts for time_select helper
+# by Daniel Roux ( daniel.roux@gmail.com)
 
 es-MX:
   number:
     percentage:
       format:
-        delimiter: ""
+        delimiter: ","
     currency:
-      format: "%u%n"
-      delimiter: ","
-      unit: "$"
-      precision: 2
-      separator: "."
+      format:
+        format: "%u%n"
+        unit: "$"
     format:
       delimiter: ","
-      precision: 3
+      precision: 2
       separator: "."
     human:
       format:
-        delimiter: ""
-        precision: 1
+        delimiter: ","
       storage_units: [Bytes, KB, MB, GB, TB]
     precision:
       format:
-        delimiter: ""
+        delimiter: ","
 
   date:
     order: [:day, :month, :year]
@@ -76,6 +77,10 @@ es-MX:
       over_x_years:
         one: "más de 1 año"
         other: "más de {{count}} años"
+    prompts:
+      hour: 'Hora'
+      minute: 'Minuto'
+      second: 'Segundo'        
 
   activerecord:
     errors:

@@ -1,7 +1,7 @@
 # Estonian localization for Ruby on Rails 2.2+
 # by Zahhar Kirillov <zahhar@gmail.com>
 
-ee:
+et:
   date:
     formats:
       default: "%d.%m.%Y"

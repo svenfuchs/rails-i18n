@@ -24,17 +24,27 @@ Assuming that there is a file rails/locale/[your-locale].{rb,yml} you will get a
 
 h2. Rails I18n Textmate bundle
 
-Still in a very experimental state but already helpful for me.
+h3. The bundle adds the following commands: 
 
-The bundle adds a single command: extract translation (shift-cmd-e)
+h4. Extract Translation (cmd-shift-e):
+* prompts you for a dot-separated key
+* adds the translation (mapping the dot-separated key to nested yaml keys)
+* replaces the selected string in your source-code with the dot-separated key wrapped into a call to t(your.key), if interpolations are detected within translation, the replacement text will prompt for them.
 
-# expects you to have a string selected (including single or double quotes)
-# prompts you for a dot-separated key
-# opens the file /log/translations.yml (creating it when not available)
-# adds the translation (mapping the dot-separated key to nested yaml keys)
-# replaces the selected string in your source-code with the dot-separated key wrapped into a call to t(your.key)
+h4. Look up Translation (cmd-shift-i): 
+* Looks up the currently selected key if text is selected
+* If nothing is selected, it will look up all the keys in the currently selected file.
 
-It currently expects that you're working with English views, so it uses :en as a locale in translation.yml.
+h3. The bundle adds the following tab triggers:
+
+h4. tr: 
+* Inserts I18n.translate("") or translate("") based on your context
+
+h4. The following properties are editable:
+* default locale
+* translation file path
+* whether extract inserts the long syntax (I18n.translate) or short syntax (I18n.t)
+* where and if translation changes are logged
 
 Note that Textmate, while active, won't reload the translations.yml for you if it's already open. When you give the focus to another application and then go back to Textmate (e.g. with cmd-tab, cmd-tab) it will reload the file. I found it useful to have translations.yml open on a second monitor while extracting translations from my application.
 
@@ -44,4 +54,3 @@ I still have to figure out how to automatically select the next string after thi
 # hit return and it will select the next string
 # use shift-cmd-e to extract that string
 # hit cmd-g to select the next string
-

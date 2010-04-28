@@ -13,8 +13,8 @@ fr-CH:
       long_ordinal: "%e %B %Y"
       only_day: "%e"
 
-    day_names: [dimanche, lundi, mardi, mercredi, jeudi, vendredi, samedi]
-    abbr_day_names: [dim, lun, mar, mer, jeu, ven, sam]
+    day_names: [lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche]
+    abbr_day_names: [lun, mar, mer, jeu, ven, sam, dim]
     month_names: [~, janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
     abbr_month_names: [~, jan., fév., mar., avr., mai, juin, juil., août, sept., oct., nov., déc.]
     order: [ :day, :month, :year ]
@@ -32,7 +32,7 @@ fr-CH:
 
   datetime:
     distance_in_words:
-      half_a_minute: "une demi-minute"
+      half_a_minute: "30 secondes"
       less_than_x_seconds:
         one:   "moins d'une seconde"
         other: "moins de {{count}} secondes"

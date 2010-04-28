@@ -27,7 +27,7 @@ nl:
         unit: !binary |
           4oKs
 
-        separator: .
+        separator: ","
         precision: 2
         delimiter: .
   activerecord: 
@@ -39,6 +39,7 @@ nl:
         blank: moet opgegeven zijn
         exclusion: is niet beschikbaar
         invalid: is ongeldig
+        record_invalid: is ongeldig
         odd: moet oneven zijn
         too_short: is te kort (niet minder dan {{count}} tekens)
         wrong_length: heeft niet de juiste lengte (moet {{count}} tekens lang zijn)
@@ -68,30 +69,30 @@ nl:
         formats: 
           default: "%d-%m-%YT%H:%M:%S%Z"
       long: "%d %B %Y %H:%M"
-    pm: "'s middages"
+    pm: "'s middags"
   date: 
     month_names: 
     - 
-    - Januari
-    - Februari
-    - Maart
-    - April
-    - Mei
-    - Juni
-    - Juli
-    - Augustus
-    - September
-    - Oktober
-    - November
-    - December
+    - januari
+    - februari
+    - maart
+    - april
+    - mei
+    - juni
+    - juli
+    - augustus
+    - september
+    - oktober
+    - november
+    - december
     abbr_day_names: 
-    - Zon
-    - Maa
-    - Din
-    - Woe
-    - Don
-    - Vri
-    - Zat
+    - zon
+    - maa
+    - din
+    - woe
+    - don
+    - vri
+    - zat
     order: 
     - :day
     - :month
@@ -102,27 +103,27 @@ nl:
       short: "%e %b"
       long: "%e %B %Y"
     day_names: 
-    - Zondag
-    - Maandag
-    - Dinsdag
-    - Woensdag
-    - Donderdag
-    - Vrijdag
-    - Zaterdag
+    - zondag
+    - maandag
+    - dinsdag
+    - woensdag
+    - donderdag
+    - vrijdag
+    - zaterdag
     abbr_month_names: 
     - 
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - Mei
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Okt
-    - Nov
-    - Dec
+    - jan
+    - feb
+    - mar
+    - apr
+    - mei
+    - jun
+    - jul
+    - aug
+    - sep
+    - okt
+    - nov
+    - dec
   support: 
     array: 
       words_connector: ","
@@ -132,12 +133,12 @@ nl:
     format: 
       default: "%Y-%m-%dT%H:%M:%S%Z"
     prompts: 
-      minute: Minuut
-      second: Seconden
-      month: Maand
-      hour: Uur
-      day: Dag
-      year: Jaar
+      minute: minuut
+      second: seconden
+      month: maand
+      hour: uur
+      day: dag
+      year: jaar
     distance_in_words: 
       less_than_x_minutes: 
         one: "minder dan \xC3\xA9\xC3\xA9n minuut"

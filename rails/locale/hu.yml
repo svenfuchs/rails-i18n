@@ -42,23 +42,26 @@
         one: '1 perc'
         other: '{{count}} perc'
       about_x_hours:
-        one: 'majdnem 1 óra'
-        other: 'majdnem {{count}} óra'
+        one: 'kb 1 óra'
+        other: 'kb {{count}} óra'
       x_days:
         one: '1 nap'
         other: '{{count}} nap'
       about_x_months:
-        one: 'majdnem 1 hónap'
-        other: 'majdnem {{count}} hónap'
+        one: 'kb 1 hónap'
+        other: 'kb {{count}} hónap'
       x_months:
         one: '1 hónap'
         other: '{{count}} hónap'
       about_x_years:
-        one: 'majdnem 1 év'
-        other: 'majdnem {{count}} év'
+        one: 'kb 1 év'
+        other: 'kb {{count}} év'
       over_x_years:
         one: 'több, mint 1 év'
         other: 'több, mint {{count}} év'
+      almost_x_years:
+        one:   "majdnem 1 év"
+        other: "majdnem {{count}} év"
     prompts:
       year:   "Év"
       month:  "Hónap"
@@ -89,15 +92,17 @@
       format:
         delimiter: ""
         precision: 1
-      storage_units: [bájt, KB, MB, GB, TB]
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "bájt"
+            other: "bájt"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
 
-  support:
-    array:
-#      sentence_connector: "és"
-#      skip_last_comma: true
-      words_connector: ", "
-      two_words_connector: " és "
-      last_word_connector: " és "
   activerecord:
     errors:
       template:
@@ -125,3 +130,15 @@
         less_than_or_equal_to: "legfeljebb {{count}} lehet"
         odd: "páratlan kell legyen"
         even: "páros kell legyen"
+        record_invalid: "Sikertelen validálás {{errors}}"
+
+  support:
+    array:
+#      sentence_connector: "és"
+#      skip_last_comma: true
+      words_connector: ", "
+      two_words_connector: " és "
+      last_word_connector: " és "
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Válasszon"

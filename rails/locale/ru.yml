@@ -144,6 +144,11 @@ ru:
       minute: "Минут"
       second: "Секунд"
 
+  support:
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Выберите: "
+
   activerecord:
     errors:
       template:
@@ -187,6 +192,11 @@ ru:
         less_than_or_equal_to: "может иметь значение меньшее или равное {{count}}"
         odd: "может иметь лишь четное значение"
         even: "может иметь лишь нечетное значение"
+        record_invalid: "Возникли ошибки: {{errors}}"
+        
+      full_messages:
+        format: "{{attribute}} {{message}}"
+        
 
   support:
     array:

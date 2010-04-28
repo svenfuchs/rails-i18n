@@ -21,7 +21,16 @@ pl:
       format:
         delimiter: ""
         precision: 1
-      storage_units: [B, KB, MB, GB, TB]
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "bajt"
+            other: "bajty"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
 
   date:
     formats:
@@ -107,7 +116,7 @@ pl:
         greater_than: "musi być większe niż {{count}}"
         greater_than_or_equal_to: "musi być większe lub równe {{count}}"
         equal_to: "musi być równe {{count}}"
-        less_than: "musie być mniejsze niż {{count}}"
+        less_than: "musi być mniejsze niż {{count}}"
         less_than_or_equal_to: "musi być mniejsze lub równe {{count}}"
         odd: "musi być nieparzyste"
         even: "musi być parzyste"

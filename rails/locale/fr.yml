@@ -83,9 +83,24 @@ fr:
         format: '%n %u'
     human:
       format:
+        # These three are to override number.format and are optional
+        # separator: 
+        delimiter: "" 
         precision: 2
-      storage_units: [ Octet, ko, Mo, Go, To ]
-  
+      # Rails <= v2.2.2
+      # storage_units: [octet, kb, Mb, Gb, Tb]
+      # Rails >= v2.3
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "octet"
+            other: "octets"
+          kb: "ko"
+          mb: "Mo"
+          gb: "Go"
+          tb: "To"
+
   support:
     array:
       sentence_connector: 'et'
@@ -121,3 +136,5 @@ fr:
         less_than_or_equal_to: "doit être inférieur ou égal à {{count}}"
         odd: "doit être impair"
         even: "doit être pair"
+        record_invalid: "La validation a échoué : {{errors}}"
+        

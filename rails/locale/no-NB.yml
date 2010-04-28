@@ -54,6 +54,13 @@
       over_x_years:
         one: "over 1 år"
         other: "over {{count}} år"
+    prompts:
+      year:   "År"
+      month:  "Måned"
+      day:    "Dag"
+      hour:   "Time"
+      minute: "Minutt"
+      second: "Sekund"
   number:
     format:
       precision: 2

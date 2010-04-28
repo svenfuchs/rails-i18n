@@ -6,8 +6,9 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -w
-require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_i18n.rb'
-Translate.execute
+require ENV['TM_BUNDLE_SUPPORT'] + '/translation_helper.rb'
+t_helper = TranslationHelper.new
+t_helper.add_translation
 </string>
 	<key>fallbackInput</key>
 	<string>none</string>
@@ -16,9 +17,9 @@ Translate.execute
 	<key>keyEquivalent</key>
 	<string>@E</string>
 	<key>name</key>
-	<string>extract translation</string>
+	<string>Extract Translation</string>
 	<key>output</key>
-	<string>replaceSelectedText</string>
+	<string>insertAsSnippet</string>
 	<key>uuid</key>
 	<string>914BB49A-6809-425F-812E-7C3C5321D403</string>
 </dict>

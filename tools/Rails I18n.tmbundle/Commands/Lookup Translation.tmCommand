@@ -6,36 +6,9 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -w
-require 'rubygems'
-require 'i18n'
-I18n.locale = :en
-I18n.load_path &lt;&lt; File.join(ENV['TM_PROJECT_DIRECTORY'], 'config', 'locales', 'en.yml')
-
-class &lt;&lt; Object
-  def const_missing(const)
-    nil
-  end
-end
-
-def method_missing(method, *args)
-  "**#{method}**"
-end
-
-def t(*args)
-  I18n.t(*args)
-end
-
-def args_to_array(*args)
-  args
-end
-
-args = eval('args_to_array(' + ENV['TM_SELECTED_TEXT'] + ')')
-
-if args.last.is_a?(Hash)
-  args.last.each { |k, v| args.last[k] = "**#{k}**" if v.nil? }
-end
-
-print I18n.t(*args)
+require ENV['TM_BUNDLE_SUPPORT'] + '/translation_helper.rb'
+t_helper = TranslationHelper.new
+t_helper.check
 </string>
 	<key>fallbackInput</key>
 	<string>none</string>
