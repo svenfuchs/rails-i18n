@@ -2,7 +2,11 @@
 nb:
   support:
     array:
-      sentence_connector: "og"
+      words_connector: ", "
+      two_words_connector: " og "
+      last_word_connector: " og "
+    select:
+      prompt: "Velg"
   date:
     formats:
       default: "%d.%m.%Y"
@@ -16,7 +20,6 @@ nb:
   time:
     formats:
       default: "%A, %e. %B %Y, %H:%M"
-      time: "%H:%M"
       short: "%e. %B, %H:%M"
       long: "%A, %e. %B %Y, %H:%M"
     am: ""
@@ -54,6 +57,9 @@ nb:
       over_x_years:
         one: "over 1 år"
         other: "over {{count}} år"
+      almost_x_years:
+        one: "nesten 1 år"
+        other: "nesten {{count}} år"
     prompts:
       year:   "År"
       month:  "Måned"
@@ -68,17 +74,44 @@ nb:
       delimiter: ","
     currency:
       format:
+        separator: "."
+        delimiter: ","
+        precision: 2
         unit: "kr"
         format: "%n %u"
     precision:
       format:
         delimiter: ""
-        precision: 4
-  activerecord:
+    human:
+      format:
+        precision: 1
+        delimiter: ","
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+    percentage:
+      format:
+        delimiter: ""        
+
+  activemodel:
     errors:
       template:
-        header: "kunne ikke lagre {{model}} på grunn av {{count}} feil."
-        body: "det oppstod problemer i følgende felt:"
+        header:
+          one:   "Kunne ikke lagre {{model}} på grunn av én feil."
+          other: "Kunne ikke lagre {{model}} på grunn av {{count}} feil."
+        body: "Det oppstod problemer i følgende felt:"
+                      
+  activerecord:
+    errors:
       messages:
         inclusion: "er ikke inkludert i listen"
         exclusion: "er reservert"
@@ -99,5 +132,6 @@ nb:
         less_than_or_equal_to: "må være mindre enn eller lik {{count}}"
         odd: "må være oddetall"
         even: "må være partall"
+        record_invalid: "Det oppstod feil: {{errors}}"
       # models:
       # attributes:
