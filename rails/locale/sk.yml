@@ -11,8 +11,6 @@ sk:
             words_connector: ', '
             two_words_connector: ' a '
             last_word_connector: ' a '
-        select:
-            prompt: 'Prosím vyberte si.'    
                 
     # Date
     date:
@@ -110,9 +108,6 @@ sk:
             over_x_years:
                 one: 'pred viac ako rokom'
                 other: 'viac ako {{count}} rokmi'
-            almost_x_years:
-                one:   "takmer rokom"
-                other: "takmer {{count}} rokmi"                
 
     # ActiveRecord validation messages
     activerecord:                  
@@ -137,9 +132,6 @@ sk:
                 less_than_or_equal_to: "musí byť menšie ako {{count}}"
                 odd: "musí byť nepárne číslo"
                 even: "musí byť párne číslo"
-                record_invalid: "Validácia neuspešná: {{errors}}"
-    activemodel:
-        errors:
             template:
                 header:
                     one: "Pri ukladaní objektu {{model}} došlo k chybám a nebolo možné objekt uložiť"

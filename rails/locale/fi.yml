@@ -30,6 +30,8 @@ fi:
       words_connector: ", "
       two_words_connector: " ja "
       last_word_connector: " ja "
+    select:
+      prompt: "Valitse"
 
   number:
     format:
@@ -115,10 +117,6 @@ fi:
       hour:   "Tunti"
       minute: "Minuutti"
       second: "Sekunti"
-
-  support:
-    select:
-      prompt: "Valitse"
 
   # which one should it be
   #activemodel:

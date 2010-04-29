@@ -1,5 +1,5 @@
 # Norwegian, nynorsk, by irb.no
-"no-NN":
+nn:
   support:
     array:
       sentence_connector: "og"
