@@ -1,7 +1,7 @@
-# German translations for Ruby on Rails 
+# German (Switzerland) translations for Ruby on Rails 
 # by Clemens Kofler (clemens@railway.at)
 
-de:
+de-CH:
   date:
     formats:
       default: "%d.%m.%Y"
@@ -72,12 +72,12 @@ de:
   number:
     format:
       precision: 2
-      separator: ','
-      delimiter: '.'
+      separator: '.'
+      delimiter: "'"
     currency:
       format:
-        unit: '€'
-        format: '%n%u'
+        unit: 'CHF'
+        format: '%u %n'
         separator: 
         delimiter: 
         precision: 
@@ -141,8 +141,8 @@ de:
         wrong_length: "hat die falsche Länge (muss genau {{count}} Zeichen haben)"
         taken: "ist bereits vergeben"
         not_a_number: "ist keine Zahl"
-        greater_than: "muss größer als {{count}} sein"
-        greater_than_or_equal_to: "muss größer oder gleich {{count}} sein"
+        greater_than: "muss grösser als {{count}} sein"
+        greater_than_or_equal_to: "muss grösser oder gleich {{count}} sein"
         equal_to: "muss genau {{count}} sein"
         less_than: "muss kleiner als {{count}} sein"
         less_than_or_equal_to: "muss kleiner oder gleich {{count}} sein"
