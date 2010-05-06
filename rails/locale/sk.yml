@@ -17,7 +17,7 @@ sk:
     # Date
     date:
         formats:
-            default: "%d. %m. %Y"
+            default: "%d.%m.%Y"
             short: "%d %b"
             long: "%d. %B %Y"
         day_names: [Nedeľa, Pondelok, Utorok, Streda, Štvrtok, Piatok, Sobota]
@@ -30,7 +30,7 @@ sk:
     time:
         formats:
             default: "%a %d. %B %Y %H:%M %z"
-            short: "%d. %m. %H:%M"
+            short: "%d.%m. %H:%M"
             long: "%A %d. %B %Y %H:%M"
         am: 'dopoludnia'
         pm: 'popoludní'
