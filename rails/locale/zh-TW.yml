@@ -126,6 +126,7 @@
         wrong_length: "字數錯誤（必須是 {{count}} 個字）"
         taken: "已經被使用"
         not_a_number: "不是數字"
+        not_an_integer: "必須是整數"
         greater_than: "必須大於 {{count}}"
         greater_than_or_equal_to: "必須大於或等於 {{count}}"
         equal_to: "必須等於 {{count}}"
