@@ -112,10 +112,10 @@
         header:
           one: "有 1 個錯誤發生使得「%{model}」無法被儲存。"
           other: "有 %{count} 個錯誤發生使得「%{model}」無法被儲存。"
-        body: "下面欄位有問題："
+        body: "以下欄位發生問題："
       messages:
         inclusion: "沒有包含在列表中"
-        exclusion: "是被保留的"
+        exclusion: "是被保留的關鍵字"
         invalid: "是無效的"
         confirmation: "不符合確認值"
         accepted: "必須是可被接受的"
@@ -142,6 +142,6 @@
         header:
           one: "有 1 個錯誤發生使得「%{model}」無法被儲存。"
           other: "有 %{count} 個錯誤發生使得「%{model}」無法被儲存。"
-        body: "下面欄位有問題："
+        body: "以下欄位發生問題："
   
 
