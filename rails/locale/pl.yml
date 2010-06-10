@@ -88,6 +88,10 @@ pl:
       about_x_years:
         one:   "około roku"
         other: "około {{count}} lat"
+      almost_x_years:
+        one:   "prawie rok"
+        few:   "prawie %{count} lata"
+        other: "prawie %{count} lat"
       over_x_years:
         one:   "ponad rok"
         few:   "ponad {{count}} lata"
