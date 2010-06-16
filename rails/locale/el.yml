@@ -68,7 +68,7 @@ el:
         other: "{{count}} λεπτά"
       about_x_hours:
         one:   "1 ώρα περίπου"
-        other: "{{count}} hours περίπου"
+        other: "{{count}} ώρες περίπου"
       x_days:
         one:   "1 μέρα"
         other: "{{count}} μέρες"
