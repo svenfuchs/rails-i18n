@@ -126,6 +126,7 @@ ja:
         wrong_length: "は{{count}}文字で入力してください。"
         taken: "はすでに存在します。"
         not_a_number: "は数値で入力してください。"
+        not_an_integer: "は整数で入力してください。"
         greater_than: "は{{count}}より大きい値にしてください。"
         greater_than_or_equal_to: "は{{count}}以上の値にしてください。"
         equal_to: "は{{count}}にしてください。"
