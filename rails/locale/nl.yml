@@ -30,34 +30,40 @@ nl:
         separator: ","
         precision: 2
         delimiter: .
-  activerecord: 
-    errors: 
-      messages: 
-        greater_than_or_equal_to: moet groter of gelijk zijn aan {{count}}
-        less_than_or_equal_to: moet minder of gelijk zijn aan {{count}}
-        confirmation: komt niet met de bevestiging overeen
-        blank: moet opgegeven zijn
-        exclusion: is niet beschikbaar
-        invalid: is ongeldig
-        record_invalid: is ongeldig
-        odd: moet oneven zijn
-        too_short: is te kort (niet minder dan {{count}} tekens)
-        wrong_length: heeft niet de juiste lengte (moet {{count}} tekens lang zijn)
-        empty: moet opgegeven zijn
-        even: moet even zijn
-        less_than: moet minder zijn dan {{count}}
-        equal_to: moet gelijk zijn aan {{count}}
-        greater_than: moet groter zijn dan {{count}}
-        accepted: moet worden geaccepteerd
-        too_long: is te lang (niet meer dan {{count}} tekens)
-        taken: is niet beschikbaar
-        inclusion: is niet in de lijst opgenomen
-        not_a_number: is geen getal
-      template: 
-        body: "Controleer alstublieft de volgende velden:"
-        header: 
-          one: "Kon dit {{model}} object niet opslaan: 1 fout."
-          other: "Kon dit {{model}} niet opslaan: {{count}} fouten."
+  attributes:
+    created_at: "Aangemaakt op"
+    updated_at: "Aangepast op"
+  helpers:
+    submit:
+      create: "Maak {{model}}"
+      update: "Bewaar {{model}}"
+  errors: 
+    messages: 
+      greater_than_or_equal_to: moet groter of gelijk zijn aan {{count}}
+      less_than_or_equal_to: moet minder of gelijk zijn aan {{count}}
+      confirmation: komt niet met de bevestiging overeen
+      blank: moet opgegeven zijn
+      exclusion: is niet beschikbaar
+      invalid: is ongeldig
+      record_invalid: is ongeldig
+      odd: moet oneven zijn
+      too_short: is te kort (niet minder dan {{count}} tekens)
+      wrong_length: heeft niet de juiste lengte (moet {{count}} tekens lang zijn)
+      empty: moet opgegeven zijn
+      even: moet even zijn
+      less_than: moet minder zijn dan {{count}}
+      equal_to: moet gelijk zijn aan {{count}}
+      greater_than: moet groter zijn dan {{count}}
+      accepted: moet worden geaccepteerd
+      too_long: is te lang (niet meer dan {{count}} tekens)
+      taken: is niet beschikbaar
+      inclusion: is niet in de lijst opgenomen
+      not_a_number: is geen getal
+    template: 
+      body: "Controleer alstublieft de volgende velden:"
+      header: 
+        one: "Kon dit {{model}} object niet opslaan: 1 fout."
+        other: "Kon dit {{model}} niet opslaan: {{count}} fouten."
   time: 
     am: "'s ochtends"
     formats: 
