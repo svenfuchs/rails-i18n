@@ -160,14 +160,14 @@ pt-PT:
             one: milhão
             other: milhões
           billion:
-            one: bilhão
-            other: bilhões
+            one: mil milhões
+            other: mil milhões
           trillion:
-            one: trilhão
-            other: trilhões
+            one: bilião
+            other: biliões
           quadrillion:
-            one: quatrilhão
-            other: quatrilhões
+            one: mil biliões
+            other:  mil biliões
 
   activerecord:
     errors:
