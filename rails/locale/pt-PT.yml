@@ -192,6 +192,7 @@ pt-PT:
         wrong_length: "não é do tamanho correcto (necessita de ter %{count} caracteres)"
         taken: "não está disponível"
         not_a_number: "não é um número"
+        not_an_integer: "tem de ser um inteiro"
         greater_than: "tem de ser maior do que %{count}"
         greater_than_or_equal_to: "tem de ser maior ou igual a %{count}"
         equal_to: "tem de ser igual a %{count}"
