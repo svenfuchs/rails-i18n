@@ -2,7 +2,7 @@
 # By justin maccarthy justin.maccarthy@gmail.com with help from Lao language experts...
 # 
 
-th:
+lo:
   number:
     # Used in number_with_delimiter()
     # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
@@ -64,53 +64,53 @@ th:
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:
-      half_a_minute: "ครึ่งนาที"
+      half_a_minute: "ເຄິ່ງນາທີ "
       less_than_x_seconds:
-        one:   "น้อยกว่า 1 วินาที"
-        other: "น้อยกว่า {{count}} วินาที"
+        one:   "ນ້ອຍກວ່າ 1 ວິນາທີ "
+        other: "ນ້ອຍກວ່າ {{count}} ວິນາທີ "
       x_seconds:
-        one:   "1 วินาที"
-        other: "{{count}} วินาที"
+        one:   "1 ວິນາທີ "
+        other: "{{count}} ວິນາທີ "
       less_than_x_minutes:
-        one:   "น้อยกว่า 1 นาที"
-        other: "น้อยกว่า {{count}} นาที"
+        one:   "ນ້ອຍກວ່າ 1 ນາທີ "
+        other: "ນ້ອຍກວ່າ {{count}} ນາທີ "
       x_minutes:
-        one:   "1 นาที"
-        other: "{{count}} นาที"
+        one:   "1 ນາທີ "
+        other: "{{count}} ນາທີ "
       about_x_hours:
-        one:   "ประมาณ 1 ชั่วโมง"
-        other: "ประมาณ {{count}} ชั่วโมง"
+        one:   "ປະມານ 1 ຊົ່ວໂມງ"
+        other: "ປະມານ {{count}} ຊົ່ວໂມງ"
       x_days:
-        one:   "1 วัน"
-        other: "{{count}} วัน"
+        one:   "1 ມື້ "
+        other: "{{count}} ມື້ "
       about_x_months:
-        one:   "ประมาณ 1 เดือน"
-        other: "ประมาณ {{count}} เดือน"
+        one:   "ປະມານ 1 ເດືອນ"
+        other: "ປະມານ {{count}} ເດືອນ"
       x_months:
-        one:   "1 เดือน"
-        other: "{{count}} เดือน"
+        one:   "1 ເດືອນ"
+        other: "{{count}} ເດືອນ"
       about_x_years:
-        one:   "ประมาณ 1 ปี"
-        other: "ประมาณ {{count}} ปี"
+        one:   "ປະມານ 1 ປີ "
+        other: "ປະມານ {{count}} ປີ "
       over_x_years:
-        one:   "มากกว่า 1 ปี"
-        other: "มากกว่า {{count}} ปี"
+        one:   "ຫຼາຍກວ່າ 1 ປີ "
+        other: "ຫຼາຍກວ່າ {{count}} ປີ "
     prompts:
-      year:   "ปี"
-      month:  "เดือน"
-      day:    "วัน"
-      hour:   "ชั่วโมง"
-      minute: "นาที"
-      second: "วินาที"
+      year:   "ປີ"
+      month:  "ເດືອນ"
+      day:    "ວັນ"
+      hour:   "ຊົ່ວໂມງ"
+      minute: "ນາທີ"
+      second: "ວິນາທີ"
 
   activerecord:
     errors:
       template:
         header:
-          one:    "ไม่สามารถบันทึก {{model}} ได้เนื่องจากเกิดข้อผิดพลาด"
-          other:  "ไม่สามารถบันทึก {{model}} ได้เนื่องจากเกิด {{count}} ข้อผิดพลาด"
+          one:    "ບໍ່ສາມາດບັນທຶກ {{model}} ໄດ້ເນື່ອງຈາກເກີດຂໍ້ຜິດພາດ"
+          other:  "ບໍ່ສາມາດບັນທຶກ {{model}} ໄດ້ເນື່ອງຈາກ ເກີດ {{count}} ຂໍ້ຜິດພາດ"
         # The variable :count is also available
-        body: "โปรดตรวจสอบข้อมูลในช่องต่อไปนี้:"
+        body: "ກະລຸນາກວດສອບຂໍ້ມູນໃນຫ້ອງຕໍ່ໄປນີ້ :"
         
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
@@ -173,11 +173,11 @@ th:
       short: "%e %b"
       long: "%e %B %Y"
       
-    day_names: ["ວັນຈັນ", "ວັນອັງຄານ", "ວັນພຸດ", "ວັນພະຫັດ", "ວັນສຸກ", "ວັນເສົາ", "ວັນອາທິດ"]
-    abbr_day_names: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"]
+    day_names: ["ອາທິດ", "ຈັນ", "ອັງຄານ", "ພຸດ", "ພະຫັດ", "ສຸກ", "ເສົາ"]
+    abbr_day_names: ["", "", "", "", "", "", ""]
       
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
-    month_names: [~, "ມັງກອນ", "กุมภาพันธ์", "", "เมษายน", "ເດືອນພຶດສະພາ", "ມີຖຸນາ", "ເດືອນກໍລະກົດ", "ເດືອນສິງຫາ", "ກັນຍາ", "ຕຸລາ", "ພະຈິກ", "ທັນວາ"]
+    month_names: [~, "ມັງກອນ", "ກຸມພາ", "ມີນາ", "ເມສາ", "ພຶດສະພາ", "ມິຖຸນາ", "ກໍລະກົດ", "ສິງຫາ", "ກັນຍາ", "ຕຸລາ", "ພະຈິກ", "ທັນວາ"]
     abbr_month_names: [~, "ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."]
     # Used in date_select and datime_select.
     order: [ :day, :month, :year ]
