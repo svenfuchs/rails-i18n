@@ -134,7 +134,7 @@ lo:
         less_than_or_equal_to: "ຕ້ອງຕຳ່ກວ່າ ຫຼື ເທົ່າກັບ %{count}"
         odd: "ຕ້ອງເປັນເລກຄີກ"
         even: "ຕ້ອງເປັນເລກຄູ່"
-        record_invalid: "ການຢືນຢັນບໍ່ສຳເລັດ : {{errors}}"
+        record_invalid: "ການຢືນຢັນບໍ່ສຳເລັດ : %{errors}"
         # Append your own errors here or at the model/attributes scope.
 
       # You can define own errors for models or model attributes.
