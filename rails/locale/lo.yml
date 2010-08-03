@@ -67,34 +67,34 @@ lo:
       half_a_minute: "ເຄິ່ງນາທີ "
       less_than_x_seconds:
         one:   "ນ້ອຍກວ່າ 1 ວິນາທີ "
-        other: "ນ້ອຍກວ່າ {{count}} ວິນາທີ "
+        other: "ນ້ອຍກວ່າ %{count} ວິນາທີ "
       x_seconds:
         one:   "1 ວິນາທີ "
-        other: "{{count}} ວິນາທີ "
+        other: "%{count} ວິນາທີ "
       less_than_x_minutes:
         one:   "ນ້ອຍກວ່າ 1 ນາທີ "
-        other: "ນ້ອຍກວ່າ {{count}} ນາທີ "
+        other: "ນ້ອຍກວ່າ %{count} ນາທີ "
       x_minutes:
         one:   "1 ນາທີ "
-        other: "{{count}} ນາທີ "
+        other: "%{count} ນາທີ "
       about_x_hours:
         one:   "ປະມານ 1 ຊົ່ວໂມງ"
-        other: "ປະມານ {{count}} ຊົ່ວໂມງ"
+        other: "ປະມານ %{count} ຊົ່ວໂມງ"
       x_days:
         one:   "1 ມື້ "
-        other: "{{count}} ມື້ "
+        other: "%{count} ມື້ "
       about_x_months:
         one:   "ປະມານ 1 ເດືອນ"
-        other: "ປະມານ {{count}} ເດືອນ"
+        other: "ປະມານ %{count} ເດືອນ"
       x_months:
         one:   "1 ເດືອນ"
-        other: "{{count}} ເດືອນ"
+        other: "%{count} ເດືອນ"
       about_x_years:
         one:   "ປະມານ 1 ປີ "
-        other: "ປະມານ {{count}} ປີ "
+        other: "ປະມານ %{count} ປີ "
       over_x_years:
         one:   "ຫຼາຍກວ່າ 1 ປີ "
-        other: "ຫຼາຍກວ່າ {{count}} ປີ "
+        other: "ຫຼາຍກວ່າ %{count} ປີ "
     prompts:
       year:   "ປີ"
       month:  "ເດືອນ"
@@ -107,8 +107,8 @@ lo:
     errors:
       template:
         header:
-          one:    "ບໍ່ສາມາດບັນທຶກ {{model}} ໄດ້ເນື່ອງຈາກເກີດຂໍ້ຜິດພາດ"
-          other:  "ບໍ່ສາມາດບັນທຶກ {{model}} ໄດ້ເນື່ອງຈາກ ເກີດ {{count}} ຂໍ້ຜິດພາດ"
+          one:    "ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກເກີດຂໍ້ຜິດພາດ"
+          other:  "ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ"
         # The variable :count is also available
         body: "ກະລຸນາກວດສອບຂໍ້ມູນໃນຫ້ອງຕໍ່ໄປນີ້ :"
         
@@ -122,16 +122,16 @@ lo:
         accepted: "ຕ້ອງຍອມຮັບ"
         empty: "ວ່າງໄວ້ບໍ່ໄດ້"
         blank: "ເປົ່າບໍ່ໄດ້"
-        too_long: "ຍາວໂພດ (ສູງສຸດຄື {{count}} ຕົວອັກສອນ"
-        too_short: "ສັ້ນໂພດ (ຕຳ່ສຸດຄື {{count}} ຕົວອັກສອນ"
-        wrong_length: "ຄວາມຍາວຜິດ (ຄວນຈະເປັນ {{count}} ຕົວອັກສອນ"
+        too_long: "ຍາວໂພດ (ສູງສຸດຄື %{count} ຕົວອັກສອນ"
+        too_short: "ສັ້ນໂພດ (ຕຳ່ສຸດຄື %{count} ຕົວອັກສອນ"
+        wrong_length: "ຄວາມຍາວຜິດ (ຄວນຈະເປັນ %{count} ຕົວອັກສອນ"
         taken: "ຮັບເອົາໄປແລ້ວ"
         not_a_number: "ບໍ່ແມ່ນຕົວເລກ"
-        greater_than: "ຕ້ອງສູງກວ່າ {{count}}"
-        greater_than_or_equal_to: "ຕ້ອງສູງກວ່າ ຫຼື ເທົ່າກັບ {{count}}"
-        equal_to: "ຕ້ອງເທົ່າກັບ {{count}}"
-        less_than: "ຕ້ອງຕຳ່ກວ່າ {{count}}"
-        less_than_or_equal_to: "ຕ້ອງຕຳ່ກວ່າ ຫຼື ເທົ່າກັບ {{count}}"
+        greater_than: "ຕ້ອງສູງກວ່າ %{count}"
+        greater_than_or_equal_to: "ຕ້ອງສູງກວ່າ ຫຼື ເທົ່າກັບ %{count}"
+        equal_to: "ຕ້ອງເທົ່າກັບ %{count}"
+        less_than: "ຕ້ອງຕຳ່ກວ່າ %{count}"
+        less_than_or_equal_to: "ຕ້ອງຕຳ່ກວ່າ ຫຼື ເທົ່າກັບ %{count}"
         odd: "ຕ້ອງເປັນເລກຄີກ"
         even: "ຕ້ອງເປັນເລກຄູ່"
         record_invalid: "ການຢືນຢັນບໍ່ສຳເລັດ : {{errors}}"
@@ -143,7 +143,7 @@ lo:
       # For example,
       #   models:
       #     user:
-      #       blank: "This is a custom blank message for {{model}}: {{attribute}}"
+      #       blank: "This is a custom blank message for %{model}: {{attribute}}"
       #       attributes:
       #         login:
       #           blank: "This is a custom blank message for User login"
@@ -178,7 +178,7 @@ lo:
       
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
     month_names: [~, "ມັງກອນ", "ກຸມພາ", "ມີນາ", "ເມສາ", "ພຶດສະພາ", "ມິຖຸນາ", "ກໍລະກົດ", "ສິງຫາ", "ກັນຍາ", "ຕຸລາ", "ພະຈິກ", "ທັນວາ"]
-    abbr_month_names: [~, "ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."]
+    abbr_month_names: [~,"", "", "", "", "", "", "", "", "", "", "", ""]
     # Used in date_select and datime_select.
     order: [ :day, :month, :year ]
 
