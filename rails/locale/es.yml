@@ -1,7 +1,8 @@
 # Spanish translations for Rails
 # by Francisco Fernando García Nieto (ffgarcianieto@gmail.com)
 
-es:
+"es":
+  # Action View
   number:
     # Used in number_with_delimiter()
     # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
@@ -12,6 +13,11 @@ es:
       delimiter: "."
       # Number of decimals, behind the separator (1 with a precision of 2 gives: 1.00)
       precision: 3
+      # If set to true, precision will mean the number of significant digits instead
+      # of the number of decimal digits (1234 with precision 2 becomes 1200, 1.23543 becomes 1.2)
+      significant: false
+      # If set, the zeros after the decimal separator will always be stripped (eg.: 1.200 will be 1.2)
+      strip_insignificant_zeros: false
 
     # Used in number_to_currency()
     currency:
@@ -23,6 +29,8 @@ es:
         separator: ","
         delimiter: "."
         precision: 2
+        significant: false
+        strip_insignificant_zeros: false
 
     # Used in number_to_percentage()
     percentage:
@@ -39,6 +47,8 @@ es:
         # separator:
         delimiter: ""
         # precision:
+        # significant: false
+        # strip_insignificant_zeros: false
 
     # Used in number_to_human_size()
     human:
@@ -47,9 +57,9 @@ es:
         # separator:
         delimiter: ""
         precision: 1
-      # Rails <= v2.2.2
-      # storage_units: [Bytes, KB, MB, GB, TB]
-      # Rails >= v2.3
+        significant: true
+        strip_insignificant_zeros: true
+      # Used in number_to_human_size()
       storage_units:
         format: "%n %u"
         units:
@@ -60,6 +70,31 @@ es:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      # Used in number_to_human()
+      decimal_units:
+        format: "%n %u"
+        # Decimal units output formatting
+        # By default we will only quantify some of the exponents
+        # but the commented ones might be defined or overridden
+        # by the user.
+        units:
+          # femto: Quadrillionth
+          # pico: Trillionth
+          # nano: Billionth
+          # micro: Millionth
+          # mili: Thousandth
+          # centi: Hundredth
+          # deci: Tenth
+          unit: ""
+          # ten:
+          #   one: Ten
+          #   other: Tens
+          # hundred: Hundred
+          thousand: "Mil"
+          million: "Millón"
+          billion: "Mil millones"
+          trillion: "Trillón"
+          quadrillion: "Cuatrillón"
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
@@ -67,37 +102,37 @@ es:
       half_a_minute: "medio minuto"
       less_than_x_seconds:
         one:  "menos de 1 segundo"
-        other: "menos de {{count}} segundos"
+        other: "menos de %{count} segundos"
       x_seconds:
         one:  "1 segundo"
-        other: "{{count}} segundos"
+        other: "%{count} segundos"
       less_than_x_minutes:
         one:  "menos de 1 minuto"
-        other: "menos de {{count}} minutos"
+        other: "menos de %{count} minutos"
       x_minutes:
         one:  "1 minuto"
-        other: "{{count}} minutos"
+        other: "%{count} minutos"
       about_x_hours:
         one:  "alrededor de 1 hora"
-        other: "alrededor de {{count}} horas"
+        other: "alrededor de %{count} horas"
       x_days:
         one:  "1 día"
-        other: "{{count}} días"
+        other: "%{count} días"
       about_x_months:
         one:  "alrededor de 1 mes"
-        other: "alrededor de {{count}} meses"
+        other: "alrededor de %{count} meses"
       x_months:
         one:  "1 mes"
-        other: "{{count}} meses"
+        other: "%{count} meses"
       about_x_years:
         one:  "alrededor de 1 año"
-        other: "alrededor de {{count}} años"
+        other: "alrededor de %{count} años"
       over_x_years:
         one:  "más de 1 año"
-        other: "más de {{count}} años"
+        other: "más de %{count} años"
       almost_x_years:
         one: "casi 1 año"
-        other: "casi {{count}} años"
+        other: "casi %{count} años"
     prompts:
       year:   "Año"
       month:  "Mes"
@@ -106,49 +141,92 @@ es:
       minute: "Minutos"
       second: "Segundos"
 
+  helpers:
+    select:
+      # Default value for :prompt => true in FormOptionsHelper
+      prompt: "Por favor seleccione"
+
+    # Default translation keys for submit FormHelper
+    submit:
+      create: 'Guardar %{model}'
+      update: 'Actualizar %{model}'
+      submit: 'Guardar %{model}'
+
+  # Attributes names common to most models
+  #attributes:
+    #created_at: "Created at"
+    #updated_at: "Updated at"
+
+  # Active Record models configuration
   activerecord:
     errors:
-      template:
-        header:
-          one:   "No se pudo guardar este/a {{model}} porque se encontró 1 error"
-          other:  "No se pudo guardar este/a {{model}} porque se encontraron {{count}} errores"
-        # The variable :count is also available
-        body: "Se encontraron problemas con los siguientes campos:"
-
-      # The values :model, :attribute and :value are always available for interpolation
-      # The value :count is available when applicable. Can be used for pluralization.
       messages:
-        inclusion: "no está incluido en la lista"
-        exclusion: "está reservado"
-        invalid: "no es válido"
-        confirmation: "no coincide con la confirmación"
-        accepted: "debe ser aceptado"
-        empty: "no puede estar vacío"
-        blank: "no puede estar en blanco"
-        too_long: "es demasiado largo ({{count}} caracteres máximo)"
-        too_short: "es demasiado corto ({{count}} caracteres mínimo)"
-        wrong_length: "no tiene la longitud correcta ({{count}} caracteres exactos)"
         taken: "ya está en uso"
-        not_a_number: "no es un número"
-        greater_than: "debe ser mayor que {{count}}"
-        greater_than_or_equal_to: "debe ser mayor que o igual a {{count}}"
-        equal_to: "debe ser igual a {{count}}"
-        less_than: "debe ser menor que {{count}}"
-        less_than_or_equal_to: "debe ser menor que o igual a {{count}}"
-        odd: "debe ser impar"
-        even: "debe ser par"
-        record_invalid: "La validación falló: {{errors}}"
+        record_invalid: "La validación falló: %{errors}"
         # Append your own errors here or at the model/attributes scope.
 
-      full_messages:
-        format: "{{attribute}} {{message}}"
+      # You can define own errors for models or model attributes.
+      # The values :model, :attribute and :value are always available for interpolation.
+      #
+      # For example,
+      #   models:
+      #     user:
+      #       blank: "This is a custom blank message for %{model}: %{attribute}"
+      #       attributes:
+      #         login:
+      #           blank: "This is a custom blank message for User login"
+      # Will define custom blank validation message for User model and 
+      # custom blank validation message for login attribute of User model.
+      #models:
 
-      models:
-        # Overrides default messages
+    # Translate model names. Used in Model.human_name().
+    #models:
+      # For example,
+      #   user: "Dude"
+      # will translate User model name to "Dude"
 
-      attributes:
-        # Overrides model and default messages.
+    # Translate model attribute names. Used in Model.human_attribute_name(attribute).
+    #attributes:
+      # For example,
+      #   user:
+      #     login: "Handle"
+      # will translate User attribute "login" as "Handle"
 
+  # Active Model
+  errors:
+    # The default format to use in full error messages.
+    format: "%{attribute} %{message}"
+
+    template:
+      header:
+        one:   "No se pudo guardar este/a %{model} porque se encontró 1 error"
+        other:  "No se pudo guardar este/a %{model} porque se encontraron %{count} errores"
+      # The variable :count is also available
+      body: "Se encontraron problemas con los siguientes campos:"
+
+    # The values :model, :attribute and :value are always available for interpolation
+    # The value :count is available when applicable. Can be used for pluralization.
+    messages:
+      inclusion: "no está incluido en la lista"
+      exclusion: "está reservado"
+      invalid: "no es válido"
+      confirmation: "no coincide con la confirmación"
+      accepted: "debe ser aceptado"
+      empty: "no puede estar vacío"
+      blank: "no puede estar en blanco"
+      too_long: "es demasiado largo (%{count} caracteres máximo)"
+      too_short: "es demasiado corto (%{count} caracteres mínimo)"
+      wrong_length: "no tiene la longitud correcta (%{count} caracteres exactos)"
+      not_a_number: "no es un número"
+      greater_than: "debe ser mayor que %{count}"
+      greater_than_or_equal_to: "debe ser mayor que o igual a %{count}"
+      equal_to: "debe ser igual a %{count}"
+      less_than: "debe ser menor que %{count}"
+      less_than_or_equal_to: "debe ser menor que o igual a %{count}"
+      odd: "debe ser impar"
+      even: "debe ser par"
+
+  # Active Support
   date:
     formats:
       # Use the strftime parameters for formats.
@@ -165,7 +243,10 @@ es:
     month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
     abbr_month_names: [~, Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic]
     # Used in date_select and datime_select.
-    order: [ :day, :month, :year ]
+    order:
+      - :day
+      - :month
+      - :year
 
   time:
     formats:
@@ -175,15 +256,9 @@ es:
     am: "am"
     pm: "pm"
 
-# Used in array.to_sentence.
+  # Used in array.to_sentence.
   support:
-    select:
-      # default value for :prompt => true in FormOptionsHelper
-      prompt: "Por favor seleccione"
     array:
-      # Rails <= v.2.2.2
-      # sentence_connector: "y"
-      # Rails >= v.2.3
       words_connector: ", "
       two_words_connector: " y "
-      last_word_connector: " y "
+      last_word_connector: ", y "
