@@ -1,5 +1,3 @@
-$KCODE = 'u'
-
 require 'rubygems'
 require 'i18n'
 

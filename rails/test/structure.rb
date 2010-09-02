@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/lib/key_structure.rb'
+require File.expand_path('../lib/key_structure.rb', __FILE__)
 
 locale = ARGV.first || raise("must give a locale as a command line argument")
 
