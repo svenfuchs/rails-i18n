@@ -80,6 +80,7 @@ class KeyStructure
     def init_backend
       I18n.load_path = %W(
         rails/rails/action_view.yml
+        rails/rails/active_model.yml
         rails/rails/active_record.yml
         rails/rails/active_support.yml
       )
