@@ -36,8 +36,8 @@ module TextMate
         command << ' --modal'          if options[:modal]
         command << ' --quiet'          if options[:quiet]
         command << ' --async-window'   if !options[:modal]
-        command << " --parameters #{e_sh parameters.to_plist}}" if parameters
-        command << " --defaults #{e_sh defaults.to_plist}}" if defaults
+        command << " --parameters #{e_sh parameters.to_plist}" if parameters
+        command << " --defaults #{e_sh defaults.to_plist}" if defaults
         command << " #{e_sh nib_path}"
 
         @results = OSX::PropertyList::load `#{command}`

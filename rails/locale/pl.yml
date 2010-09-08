@@ -61,44 +61,44 @@ pl:
       half_a_minute: "pół minuty"
       less_than_x_seconds:
         one:   "mniej niż sekundę"
-        few:   "mniej niż {{count}} sekundy"
-        other: "mniej niż {{count}} sekund"
+        few:   "mniej niż %{count} sekundy"
+        other: "mniej niż %{count} sekund"
       x_seconds:
         one:   "sekundę"
-        few:   "{{count}} sekundy"
-        other: "{{count}} sekund"
+        few:   "%{count} sekundy"
+        other: "%{count} sekund"
       less_than_x_minutes:
         one:   "mniej niż minutę"
-        few:   "mniej niż {{count}} minuty"
-        other: "mniej niż {{count}} minut"
+        few:   "mniej niż %{count} minuty"
+        other: "mniej niż %{count} minut"
       x_minutes:
         one:   "minutę"
-        few:   "{{count}} minuty"
-        other: "{{count}} minut"
+        few:   "%{count} minuty"
+        other: "%{count} minut"
       about_x_hours:
         one:   "około godziny"
-        other: "około {{count}} godzin"
+        other: "około %{count} godzin"
       x_days:
         one:   "1 dzień"
-        other: "{{count}} dni"
+        other: "%{count} dni"
       about_x_months:
         one:   "około miesiąca"
-        other: "około {{count}} miesięcy"
+        other: "około %{count} miesięcy"
       x_months:
         one:   "1 miesiąc"
-        few:   "{{count}} miesiące"
-        other: "{{count}} miesięcy"
+        few:   "%{count} miesiące"
+        other: "%{count} miesięcy"
       about_x_years:
         one:   "około roku"
-        other: "około {{count}} lat"
+        other: "około %{count} lat"
       almost_x_years:
         one:   "prawie rok"
-        few:   "prawie {{count}} lata"
-        other: "prawie {{count}} lat"
+        few:   "prawie %{count} lata"
+        other: "prawie %{count} lat"
       over_x_years:
         one:   "ponad rok"
-        few:   "ponad {{count}} lata"
-        other: "ponad {{count}} lat"
+        few:   "ponad %{count} lata"
+        other: "ponad %{count} lat"
     prompts:
       second: "sekundy"
       minute: "minuty"
@@ -111,16 +111,16 @@ pl:
     errors:
       template:
         header:
-          one:    "{{model}} nie został zachowany z powodu jednego błędu"
-          other:  "{{model}} nie został zachowany z powodu {{count}} błędów"
+          one:    "%{model} nie został zachowany z powodu jednego błędu"
+          other:  "%{model} nie został zachowany z powodu %{count} błędów"
         body: "Błędy dotyczą następujących pól:"
 
   activerecord:
     errors:
       template:
         header:
-          one:    "{{model}} nie został zachowany z powodu jednego błędu"
-          other:  "{{model}} nie został zachowany z powodu {{count}} błędów"
+          one:    "%{model} nie został zachowany z powodu jednego błędu"
+          other:  "%{model} nie został zachowany z powodu %{count} błędów"
         body: "Błędy dotyczą następujących pól:"
       messages:
         inclusion: "nie znajduje się na liście dopuszczalnych wartości"
@@ -130,20 +130,20 @@ pl:
         accepted: "musi być zaakceptowane"
         empty: "nie może być puste"
         blank: "nie może być puste"
-        too_long: "jest za długie (maksymalnie {{count}} znaków)"
-        too_short: "jest za krótkie (minimalnie {{count}} znaków)"
-        wrong_length: "jest nieprawidłowej długości (powinna wynosić {{count}} znaków)"
+        too_long: "jest za długie (maksymalnie %{count} znaków)"
+        too_short: "jest za krótkie (minimalnie %{count} znaków)"
+        wrong_length: "jest nieprawidłowej długości (powinna wynosić %{count} znaków)"
         taken: "zostało już zajęte"
         not_a_number: "nie jest liczbą"
         not_an_integer: "nie jest liczbą całkowitą"
-        greater_than: "musi być większe niż {{count}}"
-        greater_than_or_equal_to: "musi być większe lub równe {{count}}"
-        equal_to: "musi być równe {{count}}"
-        less_than: "musi być mniejsze niż {{count}}"
-        less_than_or_equal_to: "musi być mniejsze lub równe {{count}}"
+        greater_than: "musi być większe niż %{count}"
+        greater_than_or_equal_to: "musi być większe lub równe %{count}"
+        equal_to: "musi być równe %{count}"
+        less_than: "musi być mniejsze niż %{count}"
+        less_than_or_equal_to: "musi być mniejsze lub równe %{count}"
         odd: "musi być nieparzyste"
         even: "musi być parzyste"
-        record_invalid: "Negatywne sprawdzenie poprawności: {{errors}}"
+        record_invalid: "Negatywne sprawdzenie poprawności: %{errors}"
 
   support:
     array:

@@ -75,34 +75,34 @@ it:
       half_a_minute: "mezzo minuto"
       less_than_x_seconds:
         one:  "meno di un secondo"
-        other: "meno di {{count}} secondi"
+        other: "meno di %{count} secondi"
       x_seconds:
         one:  "1 secondo"
-        other: "{{count}} secondi"
+        other: "%{count} secondi"
       less_than_x_minutes:
         one:  "meno di un minuto"
-        other: "meno di {{count}} minuti"
+        other: "meno di %{count} minuti"
       x_minutes:
         one:  "1 minuto"
-        other: "{{count}} minuti"
+        other: "%{count} minuti"
       about_x_hours:
         one:  "circa un'ora"
-        other: "circa {{count}} ore"
+        other: "circa %{count} ore"
       x_days:
         one:  "1 giorno"
-        other: "{{count}} giorni"
+        other: "%{count} giorni"
       about_x_months:
         one:  "circa un mese"
-        other: "circa {{count}} mesi"
+        other: "circa %{count} mesi"
       x_months:
         one:  "1 mese"
-        other: "{{count}} mesi"
+        other: "%{count} mesi"
       about_x_years:
         one:  "circa un anno"
-        other: "circa {{count}} anni"
+        other: "circa %{count} anni"
       over_x_years:
         one:  "oltre un anno"
-        other: "oltre {{count}} anni"
+        other: "oltre %{count} anni"
     prompts:
       year:   "Anno"
       month:  "Mese"
@@ -121,8 +121,8 @@ it:
     errors:
       template:
         header: 
-          one: "Non posso salvare questo {{model}}: 1 errore"
-          other: "Non posso salvare questo {{model}}: {{count}} errori."
+          one: "Non posso salvare questo %{model}: 1 errore"
+          other: "Non posso salvare questo %{model}: %{count} errori."
         body: "Per favore ricontrolla i seguenti campi:"
       messages:
         inclusion: "non è incluso nella lista"
@@ -132,15 +132,15 @@ it:
         accepted: "deve essere accettata"
         empty: "non può essere vuoto"
         blank: "non può essere lasciato in bianco"
-        too_long: "è troppo lungo (il massimo è {{count}} lettere)"
-        too_short: "è troppo corto (il minimo è {{count}} lettere)"
-        wrong_length: "è della lunghezza sbagliata (deve essere di {{count}} lettere)"
+        too_long: "è troppo lungo (il massimo è %{count} lettere)"
+        too_short: "è troppo corto (il minimo è %{count} lettere)"
+        wrong_length: "è della lunghezza sbagliata (deve essere di %{count} lettere)"
         taken: "è già in uso"
         not_a_number: "non è un numero"
-        greater_than: "deve essere superiore a {{count}}"
-        greater_than_or_equal_to: "deve essere superiore o uguale a {{count}}"
-        equal_to: "deve essere uguale a {{count}}"
-        less_than: "deve essere meno di {{count}}"
-        less_than_or_equal_to: "deve essere meno o uguale a {{count}}"
+        greater_than: "deve essere superiore a %{count}"
+        greater_than_or_equal_to: "deve essere superiore o uguale a %{count}"
+        equal_to: "deve essere uguale a %{count}"
+        less_than: "deve essere meno di %{count}"
+        less_than_or_equal_to: "deve essere meno o uguale a %{count}"
         odd: "deve essere dispari"
         even: "deve essere pari"

@@ -70,34 +70,34 @@ fur:
       half_a_minute: "mieç minût"
       less_than_x_seconds:
         one:  "mancul di un secont"
-        other: "mancul di {{count}} seconts"
+        other: "mancul di %{count} seconts"
       x_seconds:
         one:  "1 secont"
-        other: "{{count}} seconts"
+        other: "%{count} seconts"
       less_than_x_minutes:
         one:  "mancul di un minût"
-        other: "mancul di {{count}} minûts"
+        other: "mancul di %{count} minûts"
       x_minutes:
         one:  "1 minût"
-        other: "{{count}} minûts"
+        other: "%{count} minûts"
       about_x_hours:
         one:  "cirche une ore"
-        other: "cirche {{count}} oris"
+        other: "cirche %{count} oris"
       x_days:
         one:  "1 zornade"
-        other: "{{count}} zornadis"
+        other: "%{count} zornadis"
       about_x_months:
         one:  "cirche un mês"
-        other: "cirche {{count}} mês"
+        other: "cirche %{count} mês"
       x_months:
         one:  "1 mês"
-        other: "{{count}} mês"
+        other: "%{count} mês"
       about_x_years:
         one:  "cirche un an"
-        other: "cirche {{count}} agns"
+        other: "cirche %{count} agns"
       over_x_years:
         one:  "plui di un an"
-        other: "plui di {{count}} agns"
+        other: "plui di %{count} agns"
     prompts:
       year:   "An"
       month:  "Mês"
@@ -116,8 +116,8 @@ fur:
     errors:
       template:
         header: 
-          one: "No si pues salvâ chest {{model}}: 1 erôr"
-          other: "No si pues salvâ chest {{model}}: {{count}} erôrs."
+          one: "No si pues salvâ chest %{model}: 1 erôr"
+          other: "No si pues salvâ chest %{model}: %{count} erôrs."
         body: "Torne par plasê a controlâ i cjamps ca sot:"
       messages:
         inclusion: "non è includût te liste"
@@ -127,15 +127,15 @@ fur:
         accepted: "al à di jessi acetât"
         empty: "nol pues jessi vueit"
         blank: "nol pues jessi lassât in blanc"
-        too_long: "al è masse lunc (il massim al è {{count}} letaris)"
-        too_short: "al è masse curt (il minim al è {{count}} letaris)"
-        wrong_length: "nol à la lungjece juste (al ò di jessi di {{count}} letaris)"
+        too_long: "al è masse lunc (il massim al è %{count} letaris)"
+        too_short: "al è masse curt (il minim al è %{count} letaris)"
+        wrong_length: "nol à la lungjece juste (al ò di jessi di %{count} letaris)"
         taken: "al è za doprât"
         not_a_number: "nol è un numar"
-        greater_than: "al à di jessi plui grant di {{count}}"
-        greater_than_or_equal_to: "al à di jessi plui grant o compagn di {{count}}"
-        equal_to: "al à di jessi compagn di {{count}}"
-        less_than: "al à di jessi mancul di {{count}}"
-        less_than_or_equal_to: "al à di jessi mancul o compagn di {{count}}"
+        greater_than: "al à di jessi plui grant di %{count}"
+        greater_than_or_equal_to: "al à di jessi plui grant o compagn di %{count}"
+        equal_to: "al à di jessi compagn di %{count}"
+        less_than: "al à di jessi mancul di %{count}"
+        less_than_or_equal_to: "al à di jessi mancul o compagn di %{count}"
         odd: "al à di jessi dispar"
         even: "al à di jessi pâr"

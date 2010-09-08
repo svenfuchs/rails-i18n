@@ -43,16 +43,16 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute       => 'a halfish minute',
-        :less_than_x_seconds => {:zero => 'less than 1 second', :one => ' less than 1 secondish', :other => 'less than{{count}}ish seconds'},
-        :x_seconds           => {:one => '1 secondish', :other => '{{count}}ish seconds'},
-        :less_than_x_minutes => {:zero => 'less than a minuteish', :one => 'less than 1 minuteish', :other => 'less than {{count}}ish minutes'},
-        :x_minutes           => {:one => "1ish minute", :other => "{{count}}ish minutes"},
-        :about_x_hours       => {:one => 'about 1 hourish', :other => 'about {{count}}ish hours'},
-        :x_days              => {:one => '1ish day', :other => '{{count}}ish days'},
-        :about_x_months      => {:one => 'about 1ish month', :other => 'about {{count}}ish months'},
-        :x_months            => {:one => '1ish month', :other => '{{count}}ish months'},
-        :about_x_years       => {:one => 'about 1ish year', :other => 'about {{count}}ish years'},
-        :over_x_years        => {:one => 'over 1ish year', :other => 'over {{count}}ish years'}
+        :less_than_x_seconds => {:zero => 'less than 1 second', :one => ' less than 1 secondish', :other => 'less than%{count}ish seconds'},
+        :x_seconds           => {:one => '1 secondish', :other => '%{count}ish seconds'},
+        :less_than_x_minutes => {:zero => 'less than a minuteish', :one => 'less than 1 minuteish', :other => 'less than %{count}ish minutes'},
+        :x_minutes           => {:one => "1ish minute", :other => "%{count}ish minutes"},
+        :about_x_hours       => {:one => 'about 1 hourish', :other => 'about %{count}ish hours'},
+        :x_days              => {:one => '1ish day', :other => '%{count}ish days'},
+        :about_x_months      => {:one => 'about 1ish month', :other => 'about %{count}ish months'},
+        :x_months            => {:one => '1ish month', :other => '%{count}ish months'},
+        :about_x_years       => {:one => 'about 1ish year', :other => 'about %{count}ish years'},
+        :over_x_years        => {:one => 'over 1ish year', :other => 'over %{count}ish years'}
       }
     },
 
@@ -77,8 +77,8 @@
       :errors => {
         :template => {
           :header => {
-            :one => "Couldn't save this {{model}}: 1 error", 
-            :other => "Couldn't save this {{model}}: {{count}} errors."
+            :one => "Couldn't save this %{model}: 1 error", 
+            :other => "Couldn't save this %{model}: %{count} errors."
           },
           :body => "Please check the following fields, dude:"
         },
@@ -90,16 +90,16 @@
           :accepted  => "gotta be accepted",
           :empty => "gotta be given",
           :blank => "gotta be given",
-          :too_long => "is too long-ish (no more than {{count}} characters)",
-          :too_short => "is too short-ish (no less than {{count}} characters)",
-          :wrong_length => "ain't got the right length (gotta be {{count}} characters)",
+          :too_long => "is too long-ish (no more than %{count} characters)",
+          :too_short => "is too short-ish (no less than %{count} characters)",
+          :wrong_length => "ain't got the right length (gotta be %{count} characters)",
           :taken => "ain't available",
           :not_a_number => "ain't a number",
-          :greater_than => "gotta be greater than {{count}}",
-          :greater_than_or_equal_to => "gotta be greater than or equal to {{count}}",
-          :equal_to => "gotta be equal to {{count}}",
-          :less_than => "gotta be less than {{count}}",
-          :less_than_or_equal_to => "gotta be less than or equal to {{count}}",
+          :greater_than => "gotta be greater than %{count}",
+          :greater_than_or_equal_to => "gotta be greater than or equal to %{count}",
+          :equal_to => "gotta be equal to %{count}",
+          :less_than => "gotta be less than %{count}",
+          :less_than_or_equal_to => "gotta be less than or equal to %{count}",
           :odd => "gotta be odd",
           :even => "gotta be even"
         }

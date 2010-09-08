@@ -31,35 +31,35 @@ sw:
       less_than_x_seconds:
         zero: 'chini ya sekunde 1'
         one: 'chini ya sekunde 1'
-        other: 'chini ya sekunde {{count}}'
+        other: 'chini ya sekunde %{count}'
       x_seconds:
         one: 'sekunde 1'
-        other: 'sekunde {{count}}'
+        other: 'sekunde %{count}'
       less_than_x_minutes:
         zero: 'chini ya dakika 1'
         one: 'chini ya dakika 1'
-        other: 'chini ya dakika {{count}}'
+        other: 'chini ya dakika %{count}'
       x_minutes:
         one: 'dakika 1'
-        other: 'dakika {{count}}'
+        other: 'dakika %{count}'
       about_x_hours:
         one: 'kama saa 1'
-        other: 'kama masaa {{count}}'
+        other: 'kama masaa %{count}'
       x_days:
         one: 'siku 1'
-        other: 'siku {{count}}'
+        other: 'siku %{count}'
       about_x_months:
         one: 'kama mwezi 1'
-        other: 'kama miezi {{count}}'
+        other: 'kama miezi %{count}'
       x_months:
         one: 'mwezi 1'
-        other: 'miezi {{count}}'
+        other: 'miezi %{count}'
       about_x_years:
         one: 'kama mwaka 1'
-        other: 'kama miaka {{count}}'
+        other: 'kama miaka %{count}'
       over_x_years:
         one: 'zaidi ya mwaka 1'
-        other: 'zaidi ya miaka {{count}}'
+        other: 'zaidi ya miaka %{count}'
   #
   # number:
   #   format:
@@ -95,8 +95,8 @@ sw:
       # TODO this error message template could use some work
       template:
         header:
-          one:    "Tumeshindwa kuhifadhi {{model}} hii kwa sababu ya jambo limoja."
-          other:  "Tumeshindwa kuhifadhi {{model}} hii kwa sababu ya mambo {{count}}."
+          one:    "Tumeshindwa kuhifadhi %{model} hii kwa sababu ya jambo limoja."
+          other:  "Tumeshindwa kuhifadhi %{model} hii kwa sababu ya mambo %{count}."
         body: ""
 
       # The values :model, :attribute and :value are always available for interpolation
@@ -109,15 +109,15 @@ sw:
         # accepted: "must be accepted"
         empty: "haitakiwi kuwa wazi"
         blank: "haitakiwi kuwa wazi"
-        too_long: "ndefu sana (isizidi herufi {{count}})"
-        too_short: "fupi mno (isipungue herufi {{count}})"
-        # wrong_length: "is the wrong length (should be {{count}} characters)"
+        too_long: "ndefu sana (isizidi herufi %{count})"
+        too_short: "fupi mno (isipungue herufi %{count})"
+        # wrong_length: "is the wrong length (should be %{count} characters)"
         taken: "imeshachukuliwa"
         not_a_number: "inaruhusiwa namba tu"
-        # greater_than: "must be greater than {{count}}"
-        # greater_than_or_equal_to: "must be greater than or equal to {{count}}"
-        # equal_to: "must be equal to {{count}}"
-        # less_than: "must be less than {{count}}"
-        # less_than_or_equal_to: "must be less than or equal to {{count}}"
+        # greater_than: "must be greater than %{count}"
+        # greater_than_or_equal_to: "must be greater than or equal to %{count}"
+        # equal_to: "must be equal to %{count}"
+        # less_than: "must be less than %{count}"
+        # less_than_or_equal_to: "must be less than or equal to %{count}"
         # odd: "must be odd"
         # even: "must be even"

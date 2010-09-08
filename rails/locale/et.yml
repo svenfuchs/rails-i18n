@@ -60,35 +60,35 @@ et:
     distance_in_words:
       half_a_minute: "pool minutit"
       less_than_x_seconds:
-        one:   "vähem kui {{count}} sekund"
-        other: "vähem kui {{count}} sekundit"
+        one:   "vähem kui %{count} sekund"
+        other: "vähem kui %{count} sekundit"
       x_seconds:
-        one:   "{{count}} sekund"
-        other: "{{count}} sekundit"
+        one:   "%{count} sekund"
+        other: "%{count} sekundit"
       less_than_x_minutes:
-        one:   "vähem kui {{count}} minut"
-        other: "vähem kui {{count}} minutit"
+        one:   "vähem kui %{count} minut"
+        other: "vähem kui %{count} minutit"
       x_minutes:
-        one:   "{{count}} minut"
-        other: "{{count}} minutit"
+        one:   "%{count} minut"
+        other: "%{count} minutit"
       about_x_hours:
-        one:   "umbes {{count}} tund"
-        other: "umbes {{count}} tundi"
+        one:   "umbes %{count} tund"
+        other: "umbes %{count} tundi"
       x_days:
-        one:   "{{count}} päev"
-        other: "{{count}} päeva"
+        one:   "%{count} päev"
+        other: "%{count} päeva"
       about_x_months:
-        one:   "umbes {{count}} kuu"
-        other: "umbes {{count}} kuud"
+        one:   "umbes %{count} kuu"
+        other: "umbes %{count} kuud"
       x_months:
-        one:   "{{count}} kuu"
-        other: "{{count}} kuud"
+        one:   "%{count} kuu"
+        other: "%{count} kuud"
       about_x_years:
-        one:   "umbes {{count}} aasta"
-        other: "umbes {{count}} aastat"
+        one:   "umbes %{count} aasta"
+        other: "umbes %{count} aastat"
       over_x_years:
-        one:   "üle {{count}} aasta"
-        other: "üle {{count}} aastat"
+        one:   "üle %{count} aasta"
+        other: "üle %{count} aastat"
     prompts:
       year: "Aasta"
       month: "Kuu"
