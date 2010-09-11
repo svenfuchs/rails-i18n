@@ -78,9 +78,9 @@ de:
       format:
         unit: '€'
         format: '%n%u'
-        separator: 
-        delimiter: 
-        precision: 
+        separator: ","
+        delimiter: ""
+        precision: 2
     percentage:
       format:
         delimiter: ""
