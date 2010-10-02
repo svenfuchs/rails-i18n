@@ -126,6 +126,10 @@ ja:
       minute: "分"
       second: "秒"
 
+  helpers:
+    select:
+      prompt: "選択してください。"
+
   activemodel:
     errors:
       template:
