@@ -114,6 +114,9 @@ ja:
       over_x_years:
         one:   "1年以上"
         other: "%{count}年以上"
+      almost_x_years:
+        one:   "1年弱"
+        other: "%{count}年弱"
 
   activemodel:
     errors:
