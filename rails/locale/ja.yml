@@ -135,13 +135,29 @@ ja:
       update: "更新する"
       submit: "保存する"
 
-  activemodel:
-    errors:
-      template:
-        header:
-          one:    "%{model}にエラーが発生しました。"
-          other:  "%{model}に%{count}つのエラーが発生しました。"
-        body: "次の項目を確認してください。"
+  errors:
+    format: "%{attribute}%{message}"
+
+    messages: &errors_messages
+      inclusion: "は一覧にありません。"
+      exclusion: "は予約されています。"
+      invalid: "は不正な値です。"
+      confirmation: "が一致しません。"
+      accepted: "を受諾してください。"
+      empty: "を入力してください。"
+      blank: "を入力してください。"
+      too_long: "は%{count}文字以内で入力してください。"
+      too_short: "は%{count}文字以上で入力してください。"
+      wrong_length: "は%{count}文字で入力してください。"
+      not_a_number: "は数値で入力してください。"
+      not_an_integer: "は整数で入力してください。"
+      greater_than: "は%{count}より大きい値にしてください。"
+      greater_than_or_equal_to: "は%{count}以上の値にしてください。"
+      equal_to: "は%{count}にしてください。"
+      less_than: "は%{count}より小さい値にしてください。"
+      less_than_or_equal_to: "は%{count}以下の値にしてください。"
+      odd: "は奇数にしてください。"
+      even: "は偶数にしてください。"
 
   activerecord:
     errors:
@@ -152,27 +168,9 @@ ja:
         body: "次の項目を確認してください。"
 
       messages:
-        inclusion: "は一覧にありません。"
-        exclusion: "は予約されています。"
-        invalid: "は不正な値です。"
-        confirmation: "が一致しません。"
-        accepted: "を受諾してください。"
-        empty: "を入力してください。"
-        blank: "を入力してください。"
-        too_long: "は%{count}文字以内で入力してください。"
-        too_short: "は%{count}文字以上で入力してください。"
-        wrong_length: "は%{count}文字で入力してください。"
         taken: "はすでに存在します。"
-        not_a_number: "は数値で入力してください。"
-        not_an_integer: "は整数で入力してください。"
-        greater_than: "は%{count}より大きい値にしてください。"
-        greater_than_or_equal_to: "は%{count}以上の値にしてください。"
-        equal_to: "は%{count}にしてください。"
-        less_than: "は%{count}より小さい値にしてください。"
-        less_than_or_equal_to: "は%{count}以下の値にしてください。"
-        odd: "は奇数にしてください。"
-        even: "は偶数にしてください。"
         record_invalid: "バリデーションに失敗しました。 %{errors}"
+        <<:       *errors_messages
 
       full_messages:
         format: "%{attribute}%{message}"
