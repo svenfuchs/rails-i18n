@@ -109,10 +109,10 @@ ja:
         one:   "1ヶ月"
         other: "%{count}ヶ月"
       about_x_years:
-        one:   "約%{count}年"
+        one:   "約1年"
         other: "約%{count}年"
       over_x_years:
-        one:   "%{count}年以上"
+        one:   "1年以上"
         other: "%{count}年以上"
 
   activemodel:
