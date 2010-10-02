@@ -44,6 +44,8 @@ ja:
       separator: "."
       delimiter: ","
       precision: 3
+      significant: false
+      strip_insignificant_zeros: false
 
     currency:
       format:
@@ -51,7 +53,9 @@ ja:
         unit: "円"
         separator: "."
         delimiter: ","
-        precision: 0
+        precision: 3
+        significant: false
+        strip_insignificant_zeros: false
 
     percentage:
       format:
@@ -64,7 +68,10 @@ ja:
     human:
       format:
         delimiter: ""
-        precision: 1
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+
       storage_units:
         format: "%n%u"
         units:
