@@ -41,16 +41,16 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute       => 'half a minute',
-        :less_than_x_seconds => {:zero => 'less than a second', :one => 'less than a second', :other => 'less than {{count}} seconds'},
-        :x_seconds           => {:one => '1 second', :other => '{{count}} seconds'},
-        :less_than_x_minutes => {:zero => 'less than a minute', :one => 'less than a minute', :other => 'less than {{count}} minutes'},
-        :x_minutes           => {:one => "1 minute", :other => "{{count}} minutes"},
-        :about_x_hours       => {:one => 'about 1 hour', :other => 'about {{count}} hours'},
-        :x_days              => {:one => '1 day', :other => '{{count}} days'},
-        :about_x_months      => {:one => 'about 1 month', :other => 'about {{count}} months'},
-        :x_months            => {:one => '1 month', :other => '{{count}} months'},
-        :about_x_years       => {:one => 'about 1 year', :other => 'about {{count}} years'},
-        :over_x_years        => {:one => 'over 1 year', :other => 'over {{count}} years'}
+        :less_than_x_seconds => {:zero => 'less than a second', :one => 'less than a second', :other => 'less than %{count} seconds'},
+        :x_seconds           => {:one => '1 second', :other => '%{count} seconds'},
+        :less_than_x_minutes => {:zero => 'less than a minute', :one => 'less than a minute', :other => 'less than %{count} minutes'},
+        :x_minutes           => {:one => "1 minute", :other => "%{count} minutes"},
+        :about_x_hours       => {:one => 'about 1 hour', :other => 'about %{count} hours'},
+        :x_days              => {:one => '1 day', :other => '%{count} days'},
+        :about_x_months      => {:one => 'about 1 month', :other => 'about %{count} months'},
+        :x_months            => {:one => '1 month', :other => '%{count} months'},
+        :about_x_years       => {:one => 'about 1 year', :other => 'about %{count} years'},
+        :over_x_years        => {:one => 'over 1 year', :other => 'over %{count} years'}
       }
     },
     :number => {
@@ -73,8 +73,8 @@
       :errors => {
         :template => {
           :header => {
-            :one => "Couldn't save this {{model}}: 1 error",
-            :other => "Couldn't save this {{model}}: {{count}} errors."
+            :one => "Couldn't save this %{model}: 1 error",
+            :other => "Couldn't save this %{model}: %{count} errors."
           },
           :body => "Please check the following fields, dude:"
         },
@@ -86,16 +86,16 @@
           :accepted  => "gotta be accepted",
           :empty => "gotta be given",
           :blank => "gotta be given",
-          :too_long => "is too long-ish (no more than {{count}} characters)",
-          :too_short => "is too short-ish (no less than {{count}} characters)",
-          :wrong_length => "ain't got the right length (gotta be {{count}} characters)",
+          :too_long => "is too long-ish (no more than %{count} characters)",
+          :too_short => "is too short-ish (no less than %{count} characters)",
+          :wrong_length => "ain't got the right length (gotta be %{count} characters)",
           :taken => "ain't available",
           :not_a_number => "ain't a number",
-          :greater_than => "gotta be greater than {{count}}",
-          :greater_than_or_equal_to => "gotta be greater than or equal to {{count}}",
-          :equal_to => "gotta be equal to {{count}}",
-          :less_than => "gotta be less than {{count}}",
-          :less_than_or_equal_to => "gotta be less than or equal to {{count}}",
+          :greater_than => "gotta be greater than %{count}",
+          :greater_than_or_equal_to => "gotta be greater than or equal to %{count}",
+          :equal_to => "gotta be equal to %{count}",
+          :less_than => "gotta be less than %{count}",
+          :less_than_or_equal_to => "gotta be less than or equal to %{count}",
           :odd => "gotta be odd",
           :even => "gotta be even"
         }
