@@ -27,34 +27,34 @@ rm:
       half_a_minute: "ina mesa minuta"
       less_than_x_seconds:
         one: "main ch’ina secunda"
-        other: "main che {{count}} secundas"
+        other: "main che %{count} secundas"
       x_seconds:
         one: "ina secunda"
-        other: "{{count}} secundas"
+        other: "%{count} secundas"
       less_than_x_minutes:
         one: "main ch’ina minuta"
-        other: "main che {{count}} minutas"
+        other: "main che %{count} minutas"
       x_minutes:
         one: "1 minuta"
-        other: "{{count}} minutas"
+        other: "%{count} minutas"
       about_x_hours:
         one: "circa in'ura"
-        other: "circa {{count}} uras"
+        other: "circa %{count} uras"
       x_days:
         one: "in di"
-        other: "{{count}} dis"
+        other: "%{count} dis"
       about_x_months:
         one: "circa in mais"
-        other: "circa {{count}} mais"
+        other: "circa %{count} mais"
       x_months:
         one: "in mais"
-        other: "{{count}} mais"
+        other: "%{count} mais"
       about_x_years:
         one: "circa in onn"
-        other: "circa {{count}} onns"
+        other: "circa %{count} onns"
       over_x_years:
         one: "dapli ch'in onn"
-        other: "dapli che {{count}} onns"
+        other: "dapli che %{count} onns"
     prompts:
       second: "secundas"
       minute: "minutas"
@@ -108,8 +108,8 @@ rm:
     errors:
       template:
         header:
-          one:    "Betg pussaivel da memorisar quest {{model}}: 1 errur."
-          other:  "Betg pussaivel da memorisar quest {{model}}: {{count}} errurs."
+          one:    "Betg pussaivel da memorisar quest %{model}: 1 errur."
+          other:  "Betg pussaivel da memorisar quest %{model}: %{count} errurs."
         body: "Faschai uschè bain e controllai ils suandants champs:"
 
       messages:
@@ -120,15 +120,15 @@ rm:
         accepted: "sto vegnir acceptà"
         empty: "sto vegnir emplenì ora"
         blank: "sto vegnir emplenì ora"
-        too_long: "è memia lung (betg dapli che {{count}} caracters)"
-        too_short: "è memia curt (betg pli pauc che {{count}} caracters)"
-        wrong_length: "ha la fallida lunghezza (sto avair {{count}} caracters)"
+        too_long: "è memia lung (betg dapli che %{count} caracters)"
+        too_short: "è memia curt (betg pli pauc che %{count} caracters)"
+        wrong_length: "ha la fallida lunghezza (sto avair %{count} caracters)"
         taken: "è gia occupà"
         not_a_number: "è betg in dumber"
-        greater_than: "sto esser pli grond che {{count}}"
-        greater_than_or_equal_to: "sto esser pli grond u medem sco {{count}}"
-        equal_to: "sto esser exact {{count}}"
-        less_than: "sto esser pli pitschen che {{count}}"
-        less_than_or_equal_to: "sto esser pli pitschen u medem sco {{count}}"
+        greater_than: "sto esser pli grond che %{count}"
+        greater_than_or_equal_to: "sto esser pli grond u medem sco %{count}"
+        equal_to: "sto esser exact %{count}"
+        less_than: "sto esser pli pitschen che %{count}"
+        less_than_or_equal_to: "sto esser pli pitschen u medem sco %{count}"
         odd: "sto esser spèr"
         even: "sto esser pèr"

@@ -164,7 +164,7 @@ class Dictionary
     # Alternate to #new which auto-creates sub-dictionaries as needed.
     #
     #   d = Dictionary.auto
-    #   d["a"]["b"]["c"] = "abc"  #=> { "a"=>{"b"=>{"c"=>"abc"}}}
+    #   d["a"]["b"]["c"] = "abc"  #=> { "a"=>{"b"=>{"c"=>"abc"}}
     #
     def auto(*args)
       #AutoDictionary.new(*args)

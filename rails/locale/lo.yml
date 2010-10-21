@@ -143,7 +143,7 @@ lo:
       # For example,
       #   models:
       #     user:
-      #       blank: "This is a custom blank message for %{model}: {{attribute}}"
+      #       blank: "This is a custom blank message for %{model}: %{attribute}"
       #       attributes:
       #         login:
       #           blank: "This is a custom blank message for User login"

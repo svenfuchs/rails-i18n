@@ -65,35 +65,35 @@
       less_than_x_seconds:
         zero: menos de 1 segundo
         one: menos de 1 segundo
-        other: menos de {{count}} segundos
+        other: menos de %{count} segundos
       x_seconds:
         one: 1 second
-        other: "{{count}} seconds"
+        other: "%{count} seconds"
       less_than_x_minutes:
         zero: menos de 1 minuto
         one: menos de 1 minuto
-        other: menos de {{count}} minutos
+        other: menos de %{count} minutos
       x_minutes:
         one: 1 minuto
-        other: "{{count}} minutos"
+        other: "%{count} minutos"
       about_x_hours:
         one: aproximadamente 1 hora
-        other: aproximadamente {{count}} horas
+        other: aproximadamente %{count} horas
       x_days:
         one: "1 día"
-        other: "{{count}} días"
+        other: "%{count} días"
       about_x_months:
         one: aproximandamente 1 mes
-        other: aproximadamente {{count}} mes
+        other: aproximadamente %{count} mes
       x_months:
         one: 1 month
-        other: "{{count}} mes"
+        other: "%{count} mes"
       about_x_years:
         one: "aproximadamente 1 año"
-        other: "aproximadamente {{count}} años"
+        other: "aproximadamente %{count} años"
       over_x_years:
         one: "más de 1 año"
-        other: "más de {{count}} años"
+        other: "más de %{count} años"
     prompts:
       year:   "Año"
       month:  "Mes"
@@ -139,7 +139,7 @@
       template:
         header:
           one: "Un error ocurrió al guardar tus datos."
-          other: "{{count}} errores ocurrieron al guardar tus datos."
+          other: "%{count} errores ocurrieron al guardar tus datos."
         body: "Los siguientes campos presentan problemas:"
       messages:
         inclusion: "no está incluido en la lista"
@@ -149,16 +149,16 @@
         accepted: debe ser aceptado
         empty: "no puede estar vacío"
         blank: no puede estar en blanco
-        too_long: "es demasiado largo (el máximo es de {{count}} caracteres)"
-        too_short: "es demasiado corto (el mínimo es de {{count}} caracteres)"
-        wrong_length: "no posee el largo correcto (debería ser de {{count}} caracteres)"
+        too_long: "es demasiado largo (el máximo es de %{count} caracteres)"
+        too_short: "es demasiado corto (el mínimo es de %{count} caracteres)"
+        wrong_length: "no posee el largo correcto (debería ser de %{count} caracteres)"
         taken: "no está disponible"
         not_a_number: "no es un número"
-        greater_than: debe ser mayor a {{count}}
-        greater_than_or_equal_to: debe ser mayor o igual a {{count}}
-        equal_to: debe ser igual a {{count}}
-        less_than: debe ser menor que {{count}}
-        less_than_or_equal_to: debe ser menor o igual que {{count}}
+        greater_than: debe ser mayor a %{count}
+        greater_than_or_equal_to: debe ser mayor o igual a %{count}
+        equal_to: debe ser igual a %{count}
+        less_than: debe ser menor que %{count}
+        less_than_or_equal_to: debe ser menor o igual que %{count}
         odd: debe ser par
         even: debe ser impar
   support:

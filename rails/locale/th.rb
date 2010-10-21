@@ -83,17 +83,17 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute => "ครึ่งนาที",
-        :less_than_x_seconds => "น้อยกว่า {{count}} วินาที",
-        :x_seconds => "{{count}} วินาที",
-        :less_than_x_minutes => "น้อยกว่า {{count}} นาที",
-        :x_minutes => "{{count}} นาที",
-        :about_x_hours => "ประมาณ {{count}} ชั่วโมง",
-        :x_days => "{{count}} วัน",
-        :about_x_months => "ประมาณ {{count}} เดือน",
-        :x_months => "{{count}} เดือน",
-        :about_x_years => "ประมาณ {{count}} ปี",
-        :over_x_years => "มากกว่า {{count}} ปี",
-        :almost_x_years => "เกือบ {{count}} ปี",
+        :less_than_x_seconds => "น้อยกว่า %{count} วินาที",
+        :x_seconds => "%{count} วินาที",
+        :less_than_x_minutes => "น้อยกว่า %{count} นาที",
+        :x_minutes => "%{count} นาที",
+        :about_x_hours => "ประมาณ %{count} ชั่วโมง",
+        :x_days => "%{count} วัน",
+        :about_x_months => "ประมาณ %{count} เดือน",
+        :x_months => "%{count} เดือน",
+        :about_x_years => "ประมาณ %{count} ปี",
+        :over_x_years => "มากกว่า %{count} ปี",
+        :almost_x_years => "เกือบ %{count} ปี",
       },
       :prompts => {
         :year =>   "ปี",
@@ -108,7 +108,7 @@
     :activemodel => {
       :errors => {
         :template => {
-          :header => "พบข้อผิดพลาด {{count}} ประการ ทำให้ไม่สามารถบันทึก{{model}}ได้",
+          :header => "พบข้อผิดพลาด %{count} ประการ ทำให้ไม่สามารถบันทึก%{model}ได้",
           # The variable :count is also available
           :body => "โปรดตรวจสอบข้อมูลต่อไปนี้:"
         }
@@ -127,19 +127,19 @@
           :accepted => "ต้องถูกยอมรับ",
           :empty => "ต้องไม่เว้นว่างเอาไว้",
           :blank => "ต้องไม่เว้นว่างเอาไว้",
-          :too_long => "ยาวเกินไป (ต้องไม่เกิน {{count}} ตัวอักษร)",
-          :too_short => "สั้นเกินไป (ต้องยาวกว่า {{count}} ตัวอักษร)",
-          :wrong_length => "มีความยาวไม่ถูกต้อง (ต้องมีความยาว {{count}} ตัวอักษร)",
+          :too_long => "ยาวเกินไป (ต้องไม่เกิน %{count} ตัวอักษร)",
+          :too_short => "สั้นเกินไป (ต้องยาวกว่า %{count} ตัวอักษร)",
+          :wrong_length => "มีความยาวไม่ถูกต้อง (ต้องมีความยาว %{count} ตัวอักษร)",
           :taken => "ถูกใช้ไปแล้ว",
           :not_a_number => "ไม่ใช่ตัวเลข",
-          :greater_than => "ต้องมากกว่า {{count}}",
-          :greater_than_or_equal_to => "ต้องมากกว่าหรือเท่ากับ {{count}}",
-          :equal_to => "ต้องมีค่าเท่ากับ {{count}}",
-          :less_than => "ต้องมีค่าน้อยกว่า {{count}}",
-          :less_than_or_equal_to => "ต้องมีค่าน้อยกว่าหรือเท่ากับ {{count}}",
+          :greater_than => "ต้องมากกว่า %{count}",
+          :greater_than_or_equal_to => "ต้องมากกว่าหรือเท่ากับ %{count}",
+          :equal_to => "ต้องมีค่าเท่ากับ %{count}",
+          :less_than => "ต้องมีค่าน้อยกว่า %{count}",
+          :less_than_or_equal_to => "ต้องมีค่าน้อยกว่าหรือเท่ากับ %{count}",
           :odd => "ต้องเป็นจำนวนคี่",
           :even => "ต้องเป็นจำนวนคู่",
-          :record_invalid => "ไม่ผ่านการตรวจสอบ: {{errors}}"
+          :record_invalid => "ไม่ผ่านการตรวจสอบ: %{errors}"
           # Append your own errors here or at the model/attributes scope.
         },
 
@@ -149,7 +149,7 @@
         # For example,
         #   :models =>
         #     :user =>
-        #       :blank => "This is a custom blank message for :{{model}} => {{attribute}}"
+        #       :blank => "This is a custom blank message for :%{model} => %{attribute}"
         #       :attributes =>
         #         :login =>
         #           :blank => "This is a custom blank message for User login"

@@ -41,7 +41,7 @@
 			<object class="NSWindowTemplate" id="520598624">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 274}, {513, 236}}</string>
+				<string key="NSWindowRect">%{196, 274}, {513, 236}</string>
 				<int key="NSWTFlags">544735232</int>
 				<string key="NSWindowTitle">Define Translation</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -55,7 +55,7 @@
 						<object class="NSTextField" id="519866958">
 							<reference key="NSNextResponder" ref="266354839"/>
 							<int key="NSvFlags">278</int>
-							<string key="NSFrame">{{7, 91}, {499, 117}}</string>
+							<string key="NSFrame">%{7, 91}, {499, 117}</string>
 							<reference key="NSSuperview" ref="266354839"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="452713127">
@@ -92,7 +92,7 @@
 						<object class="NSTextField" id="210159949">
 							<reference key="NSNextResponder" ref="266354839"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{7, 212}, {76, 17}}</string>
+							<string key="NSFrame">%{7, 212}, {76, 17}</string>
 							<reference key="NSSuperview" ref="266354839"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="481708405">
@@ -121,7 +121,7 @@
 						<object class="NSTextField" id="412219649">
 							<reference key="NSNextResponder" ref="266354839"/>
 							<int key="NSvFlags">292</int>
-							<string key="NSFrame">{{7, 66}, {76, 17}}</string>
+							<string key="NSFrame">%{7, 66}, {76, 17}</string>
 							<reference key="NSSuperview" ref="266354839"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="1013221036">
@@ -137,7 +137,7 @@
 						<object class="NSTextField" id="407589625">
 							<reference key="NSNextResponder" ref="266354839"/>
 							<int key="NSvFlags">262</int>
-							<string key="NSFrame">{{7, 38}, {499, 22}}</string>
+							<string key="NSFrame">%{7, 38}, {499, 22}</string>
 							<reference key="NSSuperview" ref="266354839"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="916883861">
@@ -154,7 +154,7 @@
 						<object class="NSButton" id="312963351">
 							<reference key="NSNextResponder" ref="266354839"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{431, 2}, {79, 32}}</string>
+							<string key="NSFrame">%{431, 2}, {79, 32}</string>
 							<reference key="NSSuperview" ref="266354839"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
@@ -176,7 +176,7 @@
 						<object class="NSButton" id="837954819">
 							<reference key="NSNextResponder" ref="266354839"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{349, 2}, {82, 32}}</string>
+							<string key="NSFrame">%{349, 2}, {82, 32}</string>
 							<reference key="NSSuperview" ref="266354839"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="69792601">
@@ -197,7 +197,7 @@
 					<string key="NSFrameSize">{513, 236}</string>
 					<reference key="NSSuperview"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">%{0, 0}, {1440, 878}</string>
 				<string key="NSMaxSize">{513, 258}</string>
 			</object>
 			<object class="NSUserDefaultsController" id="68059352">
@@ -495,12 +495,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
 					</object>
-					<string>{{377, 412}, {513, 236}}</string>
+					<string>%{377, 412}, {513, 236}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{377, 412}, {513, 236}}</string>
+					<string>%{377, 412}, {513, 236}</string>
 					<integer value="1"/>
 					<string>{196, 240}</string>
-					<string>{{357, 418}, {480, 270}}</string>
+					<string>%{357, 418}, {480, 270}</string>
 					<boolean value="YES"/>
 					<string>{513, 236}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
