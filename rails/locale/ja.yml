@@ -1,6 +1,8 @@
 # Japanese translations for Ruby on Rails
 # by Akira Matsuda (ronnie@dio.jp)
 # AR error messages are basically taken from Ruby-GetText-Package. Thanks to Masao Mutoh.
+# contributors:
+#  - Tsutomu Kuroda (t-kuroda@oiax.jp)
 
 ja:
   date:
@@ -80,6 +82,16 @@ ja:
           mb: "メガバイト"
           gb: "ギガバイト"
           tb: "テラバイト"
+
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "千"
+          million: "百万"
+          billion: "十億"
+          trillion: "兆"
+          quadrillion: "千兆"
 
   datetime:
     distance_in_words:
@@ -170,7 +182,7 @@ ja:
       messages:
         taken: "はすでに存在します。"
         record_invalid: "バリデーションに失敗しました。 %{errors}"
-        <<:       *errors_messages
+        <<: *errors_messages
 
       full_messages:
         format: "%{attribute}%{message}"
