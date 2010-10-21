@@ -3,6 +3,7 @@
 # contributors:
 #  - Sebastien Grosjean - ZenCocoon.com
 #  - Bruno Michel - http://github.com/nono
+#  - Tsutomu Kuroda - http://github.com/kuroda (t-kuroda@oiax.jp)
 
 fr:
   date:
@@ -123,6 +124,8 @@ fr:
       words_connector: ", "
       two_words_connector: " et "
       last_word_connector: " et "
+    select:
+      prompt: "Veuillez sélectionner"
 
   helpers:
     select:
@@ -133,7 +136,7 @@ fr:
       submit: "Enregistrer ce %{model}"
 
   errors:
-    template:
+    template: &errors_template
       header:
         one:   "Impossible d'enregistrer ce %{model} : 1 erreur"
         other: "Impossible d'enregistrer ce %{model} : %{count} erreurs"
@@ -143,15 +146,9 @@ fr:
     created_at: "Créé le"
     updated_at: "Modifié le"
 
-  activerecord:
-    errors:
-      messages:
-        taken: "n'est pas disponible"
-        record_invalid: "La validation a échoué : %{errors}"
-
   errors:
     format: "Le %{attribute} %{message}"
-    messages:
+    messages: &errors_messages
       inclusion: "n'est pas inclus(e) dans la liste"
       exclusion: "n'est pas disponible"
       invalid: "n'est pas valide"
@@ -171,3 +168,14 @@ fr:
       less_than_or_equal_to: "doit être inférieur ou égal à %{count}"
       odd: "doit être impair"
       even: "doit être pair"
+
+  activerecord:
+    errors:
+      messages:
+        taken: "n'est pas disponible"
+        record_invalid: "La validation a échoué : %{errors}"
+        <<: *errors_messages
+      template:
+        <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"
