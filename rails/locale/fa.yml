@@ -24,15 +24,22 @@ fa:
       format:
         delimiter: ""
         precision: 1
-      storage_units: [بایت, کیلوبایت, مگابایت, گیگابایت, ترابایت]
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "بایت"
+            other: "بایت"
+          kb: "کیلوبایت"
+          mb: "مگابایت"
+          gb: "گیگابایت"
+          tb: "ترابایت"
 
   date:
     formats:
       default: "%Y/%m/%d"
       short: "%m/%d"
       long: "%e %B %Y"
-      only_day: "%e"
-
     day_names: [یکشنبه, دوشنبه, سه‌شنبه, چهارشنبه, پنج‌شنبه, جمعه, شنبه]
     abbr_day_names: [ی, د, س, چ, پ, ج, ش]
     month_names: [~, ژانویه, فوریه, مارس, آوریل, مه, ژوئن, ژوئیه, اوت, سپتامبر, اکتبر, نوامبر, دسامبر]
@@ -44,20 +51,21 @@ fa:
       default: "%A، %e %B %Y، ساعت %H:%M:%S (%Z)"
       short: "%e %B، ساعت %H:%M"
       long: "%e %B %Y، ساعت %H:%M"
-      time: "%H:%M"
     am: "قبل از ظهر"
     pm: "بعد از ظهر"
 
   support:
     array:
-      sentence_connector: "و"
-      skip_last_comma: true
+      words_connector: "، "
+      two_words_connector: " و "
+      last_word_connector: "، و "
+    select:
+      prompt: "لطفا انتخاب کنید"
 
   datetime:
     distance_in_words:
       half_a_minute: "نیم دقیقه"
       less_than_x_seconds:
-        zero:  "کمتر از ۱ ثانیه"
         one: "۱ ثانیه"
         other: "کمتر  از %{count} ثانیه"
       x_seconds:
@@ -87,14 +95,27 @@ fa:
       over_x_years:
         one:  "بیش از ۱ سال"
         other: "بیش از %{count} سال"
+      almost_x_years:
+        one:   "حدود ۱ سال"
+        other: "حدود %{count} سال"
+    prompts:
+      year:   "سال"
+      month:  "ماه"
+      day:    "روز"
+      hour:   "ساعت"
+      minute: "دقیقه"
+      second: "ثانیه"
 
-  activerecord:
+  activemodel:
     errors:
       template:
         header: 
           one: "1 خطا جلوی ذخیره این %{model} را گرفت"
           other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
         body: "موارد زیر مشکل داشت:"
+
+  activerecord:
+    errors:
       messages:
         inclusion: "در لیست موجود نیست" 
         exclusion: "رزرو است" 
@@ -108,6 +129,7 @@ fa:
         wrong_length: "نااندازه است (باید %{count} کاراکتر باشد)"
         taken: "پیشتر گرفته شده"
         not_a_number: "عدد نیست"
+        not_an_integer: "عدد صحیح نیست"
         greater_than: "باید بزرگتر از %{count} باشد"
         greater_than_or_equal_to: "باید بزرگتر یا برابر %{count} باشد"
         equal_to: "باید برابر %{count} باشد"
@@ -115,5 +137,4 @@ fa:
         less_than_or_equal_to: "باید کمتر یا برابر %{count} باشد"
         odd: "باید فرد باشد"
         even: "باید زوج باشد"
-        presence: "را فراموش کرده‌اید"
-        format: "فرمت مشکل دارد"
+        record_invalid: "رکورد نامعتبر است %{errors}"
