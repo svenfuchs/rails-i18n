@@ -1,7 +1,7 @@
 # Basque translations for Rails
 # by Esti Alvarez (esti@efaber.net)
 
-"es":
+"eu":
   # Action View
   number:
     # Used in number_with_delimiter()
