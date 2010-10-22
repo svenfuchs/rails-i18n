@@ -2,7 +2,7 @@ h1. Rails Locale Data Repository
 
 Central point to collect locale data for use in Ruby on Rails.
 
-To contribute just send me a pull request, patch or plain text file. 
+To contribute just send us a pull request, patch or plain text file. 
 
 Please include a comment with the language/locale name and your name and email address (or other contact information like your github profile) to the locale file so people can come contact you and ask questions etc.
 
@@ -10,17 +10,41 @@ Also, please pay attention to save your files as UTF-8.
 
 h2. Rails translations
 
-Simple tool for testing the integrity of your key structure:
+To begin with, have a look in rails/locale/en.yml, which can be used as the base of your translation.
+
+This file is a compound of all translation files in the Rails 2 and 3 packages.
+Note that we use <code>&errors_messages</code> and <code><<: *errors_messages</code> to anchor and merge a part of translation data.
+
+h2. Testing your translation file
+
+Use structure.rb, a simple tool for testing the integrity of your key structure.
 
 Make sure you have the Ruby I18n gem installed. If you haven't already you can try: 
 
+<pre>
 sudo gem install svenfuchs-i18n -s http://gems.github.com
+</pre>
 
 Then, standing in the root directory of this repository, do:
 
-ruby rails/test/structure.rb [your-locale]
+<pre>
+ruby rails/test/structure.rb [your-local]
+</pre>
 
-Assuming that there is a file rails/locale/[your-locale].{rb,yml} you will get a summary of missing and bogus keys as well as extra pluralization keys in your locale data.
+Assuming that there is a file rails/locale/[your-locale].yml you will get a list of missing keys in your locale data.
+
+If you want to test all locale files, run:
+
+<pre>
+rake
+</pre>
+
+to invoke <code>test</code> task.
+
+The <code>test</code> task will print many missing keys because few translation files are ready for Rails 3.
+
+We are working to address this situation.
+
 
 h2. Rails I18n Textmate bundle
 
