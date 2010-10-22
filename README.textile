@@ -12,8 +12,7 @@ h2. Rails translations
 
 To begin with, have a look in rails/locale/en.yml, which can be used as the base of your translation.
 
-This file is a compound of all translation files in the Rails 2 and 3 packages.
-Note that we use <code>&errors_messages</code> and <code><<: *errors_messages</code> to anchor and merge a part of translation data.
+This file is a compound of all translation files in the Rails 2 and 3 packages. Note that we use <code>&errors_messages</code> and <code><<: *errors_messages</code> to anchor and merge a part of translation data.
 
 h2. Testing your translation file
 
@@ -22,7 +21,7 @@ Use structure.rb, a simple tool for testing the integrity of your key structure.
 Make sure you have the Ruby I18n gem installed. If you haven't already you can try: 
 
 <pre>
-sudo gem install svenfuchs-i18n -s http://gems.github.com
+sudo gem install i18n
 </pre>
 
 Then, standing in the root directory of this repository, do:
