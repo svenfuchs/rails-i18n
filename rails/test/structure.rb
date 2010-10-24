@@ -4,8 +4,8 @@ if ARGV.first
   locales = [ARGV.first]
 else
   locales = []
-  Dir.glob(File.dirname(__FILE__) + '/../locale/*.yml') do |filename|
-    if md = filename.match(/([\w\-]+)\.yml$/)
+  Dir.glob(File.dirname(__FILE__) + '/../locale/*.{rb,yml}') do |filename|
+    if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
       locales << md[1]
     end
   end

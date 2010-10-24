@@ -62,7 +62,11 @@ class KeyStructure
           I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails3/*.yml"]
         end
 
-        path = File.dirname(__FILE__) + "/../../locale/#{locale}.yml"
+        path = File.dirname(__FILE__) + "/../../locale/#{locale}.rb"
+
+        unless File.exist?(path)
+          path = File.dirname(__FILE__) + "/../../locale/#{locale}.yml"
+        end
 
         unless File.exist?(path)
           raise "No locale file exist for :#{locale}."
