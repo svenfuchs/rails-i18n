@@ -14,7 +14,7 @@ h3. How to contribute
 
 h4. How to create/edit your locale file
 
-To begin with, you must have a github account and Git program. See "Help.Github"http://help.github.com/ for instructions.
+To begin with, you must have a github account and Git program. See "Help.Github":http://help.github.com/ for instructions.
 
 Then, fork svenfuchs/rails-i18n repository and clone it into your PC.
 
