@@ -52,6 +52,9 @@ class KeyStructure
       end
 
       def init_backend(locale, version)
+        I18n.load_path = []
+        I18n.reload!
+
         case version
         when 2
           I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails/*.yml"]
