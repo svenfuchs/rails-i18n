@@ -11,18 +11,18 @@ else
   end
 end
 
-locales.each do |locale|
+locales.sort.each do |locale|
   missing_keys = {}
   [2, 3].each do |version|
     missing_keys[version] = KeyStructure.check(locale, version)
   end
   if missing_keys[2].empty? && missing_keys[3].empty?
-    puts "[#{locale}] The structure is good for Rails 2 and 3."
+    puts "The structure is good for Rails 2 and 3." if ARGV.first
   else
     [2, 3].each do |version|
       unless missing_keys[version].empty?
         if ARGV.first
-          puts "[#{locale}] The following keys are missing for Rails #{version}."
+          puts "The following keys are missing for Rails #{version}."
           missing_keys[version].each do |key|
             puts "  " + key
           end
