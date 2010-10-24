@@ -2,21 +2,36 @@ h1. Rails Locale Data Repository
 
 Central point to collect locale data for use in Ruby on Rails.
 
-To contribute just send us a pull request, patch or plain text file. 
+h2. Rails translations
+
+h3. How to use them
+
+Download the locale files that are found in the directory "rails/locale":http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/ and put them into config/locales of your Rails application.
+
+Note that all locale files are not yet ready for Rails 3. We always welcome your contributions.
+
+h3. How to contribute
+
+h4. How to create/edit your locale file
+
+To begin with, you must have a github account and Git program. See "Help.Github"http://help.github.com/ for instructions.
+
+Then, fork svenfuchs/rails-i18n repository and clone it into your PC.
+
+If you've got the repo, have a look in rails/locale/en.yml, which can be used as the base of your translation.
+
+This file is a compound of all translation files in the Rails 2 and 3 packages.
+Note that we use <code>&errors_messages</code> and <code><<: *errors_messages</code> to anchor and merge a part of translation data.
+
+Create or edit your translation file.
 
 Please include a comment with the language/locale name and your name and email address (or other contact information like your github profile) to the locale file so people can come contact you and ask questions etc.
 
 Also, please pay attention to save your files as UTF-8.
 
-h2. Rails translations
+h4. Testing your translation file
 
-To begin with, have a look in rails/locale/en.yml, which can be used as the base of your translation.
-
-This file is a compound of all translation files in the Rails 2 and 3 packages. Note that we use <code>&errors_messages</code> and <code><<: *errors_messages</code> to anchor and merge a part of translation data.
-
-h2. Testing your translation file
-
-Use structure.rb, a simple tool for testing the integrity of your key structure.
+Before commit and push your change, use structure.rb, a simple tool for testing the integrity of your key structure.
 
 Make sure you have the Ruby I18n gem installed. If you haven't already you can try: 
 
@@ -30,7 +45,7 @@ Then, standing in the root directory of this repository, do:
 ruby rails/test/structure.rb [your-local]
 </pre>
 
-Assuming that there is a file rails/locale/[your-locale].yml you will get a list of missing keys in your locale data.
+Assuming that there is a file <code>rails/locale/[your-locale].{rb,yml}</code> you will get a list of missing keys in your locale data.
 
 If you want to test all locale files, run:
 
@@ -42,8 +57,11 @@ to invoke <code>test</code> task.
 
 The <code>test</code> task will print many missing keys because few translation files are ready for Rails 3.
 
-We are working to address this situation.
+h4. Sending pull request
 
+I you are ready, push the repository into the Github and send us a pull request.
+
+We will do the formality check and publish it as quick as we can.
 
 h2. Rails I18n Textmate bundle
 
