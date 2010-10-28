@@ -4,6 +4,8 @@
 # by Ivan Torres (mexpolk@gmail.com)
 # Added datetime / prompts for time_select helper
 # by Daniel Roux ( daniel.roux@gmail.com)
+# Added missing translations for Rails 2 and 3
+# by Carlos González ( carlosdavid.gonzalez@gmail.com)
 
 es-MX:
   number:
@@ -14,14 +16,42 @@ es-MX:
       format:
         format: "%u%n"
         unit: "$"
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
     format:
       delimiter: ","
       precision: 2
+      significant: false
+      strip_insignificant_zeros: false
       separator: "."
     human:
       format:
         delimiter: ","
-      storage_units: [Bytes, KB, MB, GB, TB]
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "Mil"
+          million: "Millón"
+          billion: "Mil millones"
+          trillion: "Trillón"
+          quadrillion: "Cuatrillón"
     precision:
       format:
         delimiter: ","
@@ -43,6 +73,15 @@ es-MX:
       long: "%A, %d de %B de %Y a las %I:%M %p"
     am: "am"
     pm: "pm"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " y "
+      last_word_connector: " y "
+
+    select:
+      prompt: "Por favor selecciona"
 
   datetime:
     distance_in_words:
@@ -77,28 +116,38 @@ es-MX:
       over_x_years:
         one: "más de 1 año"
         other: "más de %{count} años"
+      almost_x_years:
+        one:   "casi 1 año"
+        other: "casi %{count} años"
     prompts:
+      year: 'Año'
+      month: 'Mes'
+      day: 'Día'
       hour: 'Hora'
       minute: 'Minuto'
-      second: 'Segundo'        
+      second: 'Segundos'
 
-  activerecord:
-    errors:
-      template:
-        header:
-          one: "%{model} no pudo guardarse debido a 1 error"
-          other: "%{model} no pudo guardarse debido a %{count} errores"
-        body: "Revise que los siguientes campos sean válidos:"
-      messages:
+  helpers:
+    select:
+      prompt: "Por favor selecciona"
+
+    submit:
+      create: 'Crear %{model}'
+      update: 'Actualizar %{model}'
+      submit: 'Guardar %{model}'
+
+  errors:
+      format: "%{attribute} %{message}"
+
+      messages: &errors_messages
         inclusion: "no está incluído en la lista"
         exclusion: "está reservado"
         invalid: "es inválido"
-        invalid_date: "es una fecha inválida"
         confirmation: "no coincide con la confirmación"
         blank: "no puede estar en blanco"
         empty: "no puede estar vacío"
         not_a_number: "no es un número"
-        taken: "ya ha sido tomado"
+        not_an_integer: "debe ser un entero"
         less_than: "debe ser menor que %{count}"
         less_than_or_equal_to: "debe ser menor o igual que %{count}"
         greater_than: "debe ser mayor que %{count}"
@@ -116,3 +165,19 @@ es-MX:
         accepted: "debe ser aceptado"
         even: "debe ser un número par"
         odd: "debe ser un número non"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "%{model} no pudo guardarse debido a 1 error"
+          other: "%{model} no pudo guardarse debido a %{count} errores"
+        body: "Revise que los siguientes campos sean válidos:"
+
+      messages:
+        taken: "ya ha sido tomado"
+        record_invalid: "La validación falló: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute}%{message}"
