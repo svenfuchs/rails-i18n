@@ -42,7 +42,7 @@ sudo gem install i18n
 Then, standing in the root directory of this repository, do:
 
 <pre>
-ruby rails/test/structure.rb [your-local]
+ruby rails/test/structure.rb [your-locale]
 </pre>
 
 Assuming that there is a file <code>rails/locale/[your-locale].{rb,yml}</code> you will get a list of missing keys in your locale data.
