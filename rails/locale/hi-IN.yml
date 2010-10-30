@@ -81,11 +81,11 @@ hi-IN:
         format: "%n %u"
         units:
           unit: ""
-          thousand: Thousand
-          million: Million
-          billion: Billion
-          trillion: Trillion
-          quadrillion: Quadrillion
+          thousand: "हज़ार"
+          million: "मिल्लिओंन"
+          billion: "अरब"
+          trillion: "खरब"
+          quadrillion: "करोड़ शंख"
 
   datetime:
     distance_in_words:
@@ -161,14 +161,14 @@ hi-IN:
       equal_to: "%{count} के लिए बराबर होना चाहिए"
       less_than: "%{count} से कम होना चाहिए"
       less_than_or_equal_to: "%{count} से कम या बराबर होना आवश्यक है"
-      odd: "must be odd"
-      even: "must be even"
+      odd: "औड होना चाहिए"
+      even: "ईवन होना चाहिए"
 
   activerecord:
     errors:
       template:
         header:
-          one:    "1 error prohibited this %{model} from being saved"
+          one:    "एक त्रुटि सहेजे जाने से इस %{model} को निषिद्ध"
           other:  "%{count} त्रुटियों को सहेजे जाने से इस %{model} निषिद्ध"
         body: "वहाँ निम्नलिखित क्षेत्रों के साथ समस्याओं रहे थे:"
 
