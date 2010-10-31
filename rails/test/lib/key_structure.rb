@@ -55,7 +55,7 @@ class KeyStructure
         I18n.load_path = []
         I18n.reload!
 
-        case version
+        case version.to_i
         when 2
           I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails/*.yml"]
         when 3

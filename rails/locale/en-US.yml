@@ -1,6 +1,8 @@
-# US English translations for Ruby on Rails (for reference)
+# US English translations for Ruby on Rails
+#
+# Use this as the base for the locale file of your language.
 
-en:
+"en-US":
   date:
     formats:
       default: "%Y-%m-%d"
