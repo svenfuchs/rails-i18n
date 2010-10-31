@@ -22,7 +22,11 @@ class KeyStructure
       translations = flatten_hash(I18n.backend.translations[:'en'])
       translations.keys.sort.each do |key|
         begin
-          I18n.t key, :raise => true
+          unless key =~ /^(date|time)/
+            I18n.t key, :raise => true
+          else
+            I18n.l Time.now, :raise => true
+          end
         rescue
           missing_keys << key
         end
