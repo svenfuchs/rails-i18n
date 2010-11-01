@@ -8,7 +8,7 @@ Rails translations
 
 ### How to use them
 
-Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into config/locales of your Rails application.
+Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into the `config/locales` directory of your Rails application.
 
 If any translation doesn't suit well to the requirements of your application, edit them.
 
@@ -42,9 +42,9 @@ If you are not,
 
 #### Creating or editing your locale file
 
-* Have a look in rails/locale/en-US.yml, which can be used as the base of your translation.
+* Have a look in `rails/locale/en-US.yml`, which can be used as the base of your translation.
   This file is a compound of all translation files in the Rails 2 and 3 packages.
-  Note that we use <code>&errors_messages</code> and <code><<: *errors_messages</code> to anchor and merge a part of translation data.
+  Note that we use `&errors_messages` and `<<: *errors_messages` to anchor and merge a part of translation data.
 * Create or edit your locale file.
   Please include a comment with the language/locale name and your name and email address (or other contact information like your github profile) to the locale file so people can come contact you and ask questions etc.
   Also, please pay attention to save your files as UTF-8.
