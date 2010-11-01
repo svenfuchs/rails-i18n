@@ -26,18 +26,30 @@ We always welcome your contributions!
 
 ### How to contribute
 
-#### Creating or editing your locale file
+#### Quick contribution
+
+If you are familiar with GitHub operations, follow the procedures described in the subsequent sections.
+
+If you are not,
+
+* Save your locale data on the [Gist](http://gist.github.com).
+* Open an issue with reference to the the Gist you created.
+
+#### Fetching the `rails-18n` repository
 
 * Get a github account and Git program if you haven't. See [Help.Github](http://help.github.com/) for instructions.
-* Fork svenfuchs/rails-i18n repository and clone it into your PC.
+* Fork `svenfuchs/rails-i18n` repository and clone it into your PC.
+
+#### Creating or editing your locale file
+
 * Have a look in rails/locale/en-US.yml, which can be used as the base of your translation.
   This file is a compound of all translation files in the Rails 2 and 3 packages.
   Note that we use <code>&errors_messages</code> and <code><<: *errors_messages</code> to anchor and merge a part of translation data.
-* Create or edit your translation file.
+* Create or edit your locale file.
   Please include a comment with the language/locale name and your name and email address (or other contact information like your github profile) to the locale file so people can come contact you and ask questions etc.
   Also, please pay attention to save your files as UTF-8.
 
-#### Testing your translation file
+#### Testing your locale file
 
 Before commit and push your changes, test the integrity of your locale file.
 
