@@ -6,10 +6,16 @@ class Locales < Thor
     Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
       if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
         locale = md[1]
+        broken_keys = []
         [2, 3].each do |version|
-          unless KeyStructure.check(locale, version).empty?
+          missing_keys, keys = KeyStructure.check(locale, version)
+          broken_keys += keys
+          unless missing_keys.empty?
             puts "[#{locale}] Some keys are missing for Rails #{version}."
           end
+        end
+        unless broken_keys.empty?
+          puts "[#{locale}] Some keys have broken data."
         end
       end
     end
@@ -18,8 +24,11 @@ class Locales < Thor
   desc 'test LOCALE', 'Check formality of a locale file.'
   def test(locale)
     good = true
+    broken_keys = []
+    
     [2, 3].each do |version|
-      missing_keys = KeyStructure.check(locale, version)
+      missing_keys, keys = KeyStructure.check(locale, version)
+      broken_keys += keys
       unless missing_keys.empty?
         puts "The following keys are missing for Rails #{version}."
         missing_keys.each do |key|
@@ -27,6 +36,14 @@ class Locales < Thor
         end
         good = false
       end
+    end
+
+    unless broken_keys.empty?
+      puts "The following keys have broken data."
+      broken_keys.uniq.each do |key|
+        puts "  " + key
+      end
+      good = false
     end
 
     puts "The structure is good for Rails 2 and 3." if good
@@ -49,7 +66,9 @@ class Locales < Thor
     Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
       if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
         locale = md[1]
-        if [2, 3].all? { |version| KeyStructure.check(locale, version).empty? }
+        if [2, 3].all? { |version|
+            missing_keys, broken_keys = KeyStructure.check(locale, version)
+            missing_keys.empty? && broken_keys.empty? }
           locales << locale
         end
       end
@@ -63,7 +82,8 @@ class Locales < Thor
     Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
       if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
         locale = md[1]
-        if KeyStructure.check(locale, version).empty?
+        missing_keys, broken_keys = KeyStructure.check(locale, version)
+        if missing_keys.empty? && broken_keys.empty?
           locales << locale
         end
       end

@@ -20,7 +20,7 @@ Available locales are:
 > zh-CN, zh-TW
 
 Note that all locale files are not yet ready for Rails 3. Currently, following locales are ready for Rails 2 and 3:
-> en-US, es-MX, fr, gsw-CH, hi-IN, ja
+> en-US, es-MX, fr, gsw-CH, hi-IN, ja, th
 
 We always welcome your contributions!
 

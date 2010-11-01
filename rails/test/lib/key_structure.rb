@@ -15,6 +15,7 @@ class KeyStructure
   class << self
     def check(locale, version)
       missing_keys = []
+      broken_keys = []
 
       init_backend(locale, version)
 
@@ -22,17 +23,22 @@ class KeyStructure
       translations = flatten_hash(I18n.backend.translations[:'en'])
       translations.keys.sort.each do |key|
         begin
-          unless key =~ /^(date|time)/
-            I18n.t key, :raise => true
+          case key
+          when /^date\.formats\.(\w+)/
+            I18n.l Date.today, :format => $1.to_sym, :raise => true
+          when /^time\.formats\.(\w+)/
+            I18n.l Time.now, :format => $1.to_sym, :raise => true
           else
-            I18n.l Time.now, :raise => true
+            I18n.t key, :raise => true
           end
-        rescue
+        rescue I18n::MissingTranslationData
           missing_keys << key
+        rescue Exception
+          broken_keys << key
         end
       end
 
-      missing_keys
+      return missing_keys, broken_keys
     end
 
     private
