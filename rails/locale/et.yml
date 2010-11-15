@@ -147,9 +147,9 @@ et:
   errors:
     format: "%{attribute} %{message}"
     messages: &errors_messages
-      inclusion: "ei leidu nimekirjast"
+      inclusion: "ei leidu nimekirjas"
       exclusion: "on reserveeritud"
-      invalid: "ei ole kõlbulik"
+      invalid: "ei ole korrektne"
       confirmation: "ei vasta kinnitusele"
       accepted: "peab olema heaks kiidetud"
       empty: "on tühi"
