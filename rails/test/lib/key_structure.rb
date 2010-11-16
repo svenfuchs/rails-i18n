@@ -1,5 +1,3 @@
-$KCODE = 'u'
-
 require 'rubygems'
 require 'i18n'
 
@@ -12,78 +10,80 @@ module I18n
 end
 
 class KeyStructure
-  attr_reader :result
-  
-  def initialize(locale)
-    @locale = locale.to_sym
-    init_backend
+  PLURALIZATION_KEYS = ['zero', 'one', 'two', 'few', 'many', 'other']
 
-    @reference = I18n.backend.translations[:'en']
-    @data = I18n.backend.translations[@locale]
-    
-    @result = {:bogus => [], :missing => [], :pluralization => []}
-    @key_stack = []
-  end
-  
-  def run
-    compare :missing, @reference, @data
-    compare :bogus, @data, @reference
-  end
-  
-  def output
-    [:missing, :bogus, :pluralization].each do |direction|
-      next unless result[direction].size > 0
-      case direction
-      when :pluralization
-        puts "\nThe following pluralization keys seem to differ:"
-      else
-        puts "\nThe following keys seem to be #{direction} for #{@locale.inspect}:"
-      end
-      puts '   ' + result[direction].join("\n   ")
-    end
-    if result.map{|k, v| v.size == 0}.uniq == [true]
-      puts "No inconsistencies found."
-    end
-    puts "\n"
-  end
-  
-  protected
-  
-    def compare(direction, reference, data)
-      reference.each do |key, value|
-        if data.has_key?(key)
-          @key_stack << key
-          if namespace?(value)
-            compare direction, value, (namespace?(data[key]) ? data[key] : {})
-          elsif pluralization?(value)
-            compare :pluralization, value, (pluralization?(data[key]) ? data[key] : {})
+  class << self
+    def check(locale, version)
+      missing_keys = []
+      broken_keys = []
+
+      init_backend(locale, version)
+
+      I18n.locale = locale.to_sym
+      translations = flatten_hash(I18n.backend.translations[:'en'])
+      translations.keys.sort.each do |key|
+        begin
+          case key
+          when /^date\.formats\.(\w+)/
+            I18n.l Date.today, :format => $1.to_sym, :raise => true
+          when /^time\.formats\.(\w+)/
+            I18n.l Time.now, :format => $1.to_sym, :raise => true
+          else
+            I18n.t key, :raise => true
           end
-          @key_stack.pop
-        else
-          @result[direction] << current_key(key)
+        rescue I18n::MissingTranslationData
+          missing_keys << key
+        rescue Exception
+          broken_keys << key
         end
       end
+
+      return missing_keys, broken_keys
     end
-  
-    def current_key(key)
-      (@key_stack.dup << key).join('.')
-    end
-    
-    def namespace?(hash)
-      Hash === hash and !pluralization?(hash)
-    end
-    
-    def pluralization?(hash)
-      Hash === hash and hash.has_key?(:one) and hash.has_key?(:other)
-    end
-  
-    def init_backend
-      I18n.load_path = %W(
-        rails/rails/action_view.yml
-        rails/rails/active_record.yml
-        rails/rails/active_support.yml
-      )
-      I18n.load_path += Dir["rails/locale/#{@locale}.{rb,yml}"]
-      I18n.backend.init_translations
-    end
+
+    private
+      def flatten_hash(data, prefix = '', result = {})
+        data.each do |key, value|
+          current_prefix = prefix.empty? ? key.to_s : "#{prefix}.#{key}"
+
+          if !value.is_a?(Hash) || pluralization_data?(value)
+            result[current_prefix] = value
+          else
+            flatten_hash(value, current_prefix, result)
+          end
+        end
+
+        result
+      end
+
+      def pluralization_data?(data)
+        keys = data.keys.map(&:to_s)
+        keys.all? {|k| PLURALIZATION_KEYS.include?(k) }
+      end
+
+      def init_backend(locale, version)
+        I18n.load_path = []
+        I18n.reload!
+
+        case version.to_i
+        when 2
+          I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails/*.yml"]
+        when 3
+          I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails3/*.yml"]
+        end
+
+        path = File.dirname(__FILE__) + "/../../locale/#{locale}.rb"
+
+        unless File.exist?(path)
+          path = File.dirname(__FILE__) + "/../../locale/#{locale}.yml"
+        end
+
+        unless File.exist?(path)
+          raise "No locale file exist for :#{locale}."
+        end
+
+        I18n.load_path += [path]
+        I18n.backend.init_translations
+      end
+  end
 end

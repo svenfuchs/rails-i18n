@@ -31,34 +31,34 @@ ko:
       half_a_minute: "30초"
       less_than_x_seconds:
         one:   "일초 이하"
-        other: "{{count}}초 이하"
+        other: "%{count}초 이하"
       x_seconds:
         one:   "일초"
-        other: "{{count}}초"
+        other: "%{count}초"
       less_than_x_minutes:
         one:   "일분 이하"
-        other: "{{count}}분 이하"
+        other: "%{count}분 이하"
       x_minutes:
         one:   "일분"
-        other: "{{count}}분"
+        other: "%{count}분"
       about_x_hours:
         one:   "약 한시간"
-        other: "약 {{count}}시간"
+        other: "약 %{count}시간"
       x_days:
         one:   "하루"
-        other: "{{count}}일"
+        other: "%{count}일"
       about_x_months:
         one:   "약 한달"
-        other: "약 {{count}}달"
+        other: "약 %{count}달"
       x_months:
         one:   "한달"
-        other: "{{count}}달"
+        other: "%{count}달"
       about_x_years:
         one:   "약 일년"
-        other: "약 {{count}}년"
+        other: "약 %{count}년"
       over_x_years:
         one:   "일년 이상"
-        other: "{{count}}년 이상"
+        other: "%{count}년 이상"
     prompts:
       year:   "년"
       month:  "월"
@@ -125,8 +125,8 @@ ko:
     errors:
       template:
         header:
-          one:    "한개의 오류가 발생해 {{model}}를 저장 할 수 없습니다"
-          other:  "{{count}}개의 오류가 발생해 {{model}}를 저장 할 수 없습니다"
+          one:    "한개의 오류가 발생해 %{model}를 저장 할 수 없습니다"
+          other:  "%{count}개의 오류가 발생해 %{model}를 저장 할 수 없습니다"
         # The variable :count is also available
         body: "다음 항목에 문제가 발견되었습니다:"
 
@@ -138,16 +138,16 @@ ko:
         accepted: "은 확인되었습니다"
         empty: "은 비어두면 안 됩니다"
         blank: "은 비어두면 안 됩니다"
-        too_long: "은 너무 깁니다 (최대 {{count}}자 까지)"
-        too_short: "은 너무 짧습니다 (최소 {{count}}자 까지)"
-        wrong_length: "은 길이가 틀렸습니다 ({{count}}자를 필요합니다)"
+        too_long: "은 너무 깁니다 (최대 %{count}자 까지)"
+        too_short: "은 너무 짧습니다 (최소 %{count}자 까지)"
+        wrong_length: "은 길이가 틀렸습니다 (%{count}자를 필요합니다)"
         taken: "은 이미 선택되었습니다"
         not_a_number: "은 숫자가 아닙니다"
-        greater_than: "은 {{count}}이상을 요구합니다"
-        greater_than_or_equal_to: "은 {{count}}과 같거나 이상을 요구합니다"
-        equal_to: "은 {{count}}과 같아야 합니다"
-        less_than: "은 {{count}}이하를 요구합니다"
-        less_than_or_equal_to: "은 {{count}}과 같거나 이하을 요구합니다"
+        greater_than: "은 %{count}이상을 요구합니다"
+        greater_than_or_equal_to: "은 %{count}과 같거나 이상을 요구합니다"
+        equal_to: "은 %{count}과 같아야 합니다"
+        less_than: "은 %{count}이하를 요구합니다"
+        less_than_or_equal_to: "은 %{count}과 같거나 이하을 요구합니다"
         odd: "은 홀수을 요구합니다"
         even: "은 짝수을 요구합니다"
         # Append your own errors here or at the model/attributes scope.

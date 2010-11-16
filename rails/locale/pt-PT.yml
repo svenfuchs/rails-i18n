@@ -1,9 +1,3 @@
-# Portuguese localization for Ruby on Rails
-# by Ricardo Otero <oterosantos@gmail.com>
-#
-# This localization file targets Rails 2.3.2.
-# If you need a previous version go to http://github.com/weppos/rails-i18n/
-# and choose between available tags.
 pt-PT:
 # Used in array.to_sentence.
   support:
@@ -18,7 +12,7 @@ pt-PT:
       words_connector: ","
       two_words_connector: "e"
       last_word_connector: ", e"
-    
+
   date:
     formats:
       # Use the strftime parameters for formats.
@@ -36,52 +30,52 @@ pt-PT:
     abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
     # Used in date_select and datime_select.
     order: [:day, :month, :year]
-    
+
   time:
-    formats:        
+    formats:
       default: "%A, %d de %B de %Y, %H:%Mh"
       short: "%d/%m, %H:%M hs"
       long: "%A, %d de %B de %Y, %H:%Mh"
     am: ''
     pm: ''
- 
+
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:
       half_a_minute: "meio minuto"
       less_than_x_seconds:
         one: "menos de 1 segundo"
-        other: "menos de {{count}} segundos"
+        other: "menos de %{count} segundos"
       x_seconds:
         one: "1 segundo"
-        other: "{{count}} segundos"
-      less_than_x_minutes: 
+        other: "%{count} segundos"
+      less_than_x_minutes:
         one: "menos de um minuto"
-        other: "menos de {{count}} minutos"
+        other: "menos de %{count} minutos"
       x_minutes:
         one: "1 minuto"
-        other: "{{count}} minutos"
+        other: "%{count} minutos"
       about_x_hours:
         one: "aproximadamente 1 hora"
-        other: "aproximadamente {{count}} horas"
+        other: "aproximadamente %{count} horas"
       x_days:
         one: "1 dia"
-        other: "{{count}} dias"
+        other: "%{count} dias"
       about_x_months:
         one: "aproximadamente 1 mês"
-        other: "aproximadamente {{count}} meses"
+        other: "aproximadamente %{count} meses"
       x_months:
         one: "1 mês"
-        other: "{{count}} meses"
+        other: "%{count} meses"
       about_x_years:
         one: "aproximadamente 1 ano"
-        other: "aproximadamente {{count}} anos"
+        other: "aproximadamente %{count} anos"
       over_x_years:
         one: "mais de 1 ano"
-        other: "mais de {{count}} anos"
+        other: "mais de %{count} anos"
       almost_x_years:
         one:   "quase 1 ano"
-        other: "quase {{count}} years"
+        other: "quase %{count} years"
     prompts:
       year: "Ano"
       month: "Mês"
@@ -89,7 +83,7 @@ pt-PT:
       hour: "Hora"
       minute: "Minuto"
       second: "Segundo"
-        
+
   number:
     # Used in number_with_delimiter()
     # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
@@ -116,7 +110,7 @@ pt-PT:
     percentage:
       format:
         # These three are to override number.format and are optional
-        # separator: 
+        # separator:
         delimiter: ''
         # precision:
 
@@ -124,11 +118,11 @@ pt-PT:
     precision:
       format:
         # These three are to override number.format and are optional
-        # separator: 
+        # separator:
         delimiter: ''
         # precision:
 
-    # Used in number_to_human_size()
+    # Used in number_to_human_size() and number_to_human()
     human:
       format:
         # These three are to override number.format and are optional
@@ -138,6 +132,7 @@ pt-PT:
       # Rails <= v2.2.2
       # storage_units: [Bytes, KB, MB, GB, TB]
       # Rails >= v2.3
+      # number_to_human_size()
       storage_units:
         format: "%n %u"
         units:
@@ -148,13 +143,32 @@ pt-PT:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      # number_to_human()
+      # new in rails 3: please add to other locales
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "mil"
+          million:
+            one: milhão
+            other: milhões
+          billion:
+            one: mil milhões
+            other: mil milhões
+          trillion:
+            one: bilião
+            other: biliões
+          quadrillion:
+            one: mil biliões
+            other:  mil biliões
 
   activerecord:
     errors:
       template:
         header:
-          one:    "Não foi possível guardar {{model}}: 1 erro"
-          other:  "Não foi possível guardar {{model}}: {{count}} erros"
+          one:    "Não foi possível guardar %{model}: 1 erro"
+          other:  "Não foi possível guardar %{model}: %{count} erros"
         # The variable :count is also available
         body: "Por favor, verifique os seguintes campos:"
       # The values :model, :attribute and :value are always available for interpolation
@@ -167,19 +181,20 @@ pt-PT:
         accepted:  "precisa de ser aceite"
         empty: "não pode estar em branco"
         blank: "não pode estar em branco"
-        too_long: "tem demasiados caracteres (máximo: {{count}} caracteres)"
-        too_short: "tem poucos caracteres (mínimo: {{count}} caracteres)"
-        wrong_length: "não é do tamanho correcto (necessita de ter {{count}} caracteres)"
+        too_long: "tem demasiados caracteres (máximo: %{count} caracteres)"
+        too_short: "tem poucos caracteres (mínimo: %{count} caracteres)"
+        wrong_length: "não é do tamanho correcto (necessita de ter %{count} caracteres)"
         taken: "não está disponível"
         not_a_number: "não é um número"
-        greater_than: "tem de ser maior do que {{count}}"
-        greater_than_or_equal_to: "tem de ser maior ou igual a {{count}}"
-        equal_to: "tem de ser igual a {{count}}"
-        less_than: "tem de ser menor do que {{count}}"
-        less_than_or_equal_to: "tem de ser menor ou igual a {{count}}"
+        not_an_integer: "tem de ser um inteiro"
+        greater_than: "tem de ser maior do que %{count}"
+        greater_than_or_equal_to: "tem de ser maior ou igual a %{count}"
+        equal_to: "tem de ser igual a %{count}"
+        less_than: "tem de ser menor do que %{count}"
+        less_than_or_equal_to: "tem de ser menor ou igual a %{count}"
         odd: "tem de ser ímpar"
         even: "tem de ser par"
-        record_invalid: "A validação falhou: {{errors}}"
+        record_invalid: "A validação falhou: %{errors}"
         # Append your own errors here or at the model/attributes scope.
 
       # You can define own errors for models or model attributes.
@@ -188,11 +203,11 @@ pt-PT:
       # For example,
       #   models:
       #     user:
-      #       blank: "This is a custom blank message for {{model}}: {{attribute}}"
+      #       blank: "This is a custom blank message for %{model}: %{attribute}"
       #       attributes:
       #         login:
       #           blank: "This is a custom blank message for User login"
-      # Will define custom blank validation message for User model and 
+      # Will define custom blank validation message for User model and
       # custom blank validation message for login attribute of User model.
       #models:
 
@@ -209,12 +224,12 @@ pt-PT:
       #     login: "Handle"
       # will translate User attribute "login" as "Handle"
 
-        
+
   activemodel:
     errors:
       template:
         header:
-          one:    "Não foi possível guardar {{model}}: 1 erro"
-          other:  "Não foi possível guardar {{model}}: {{count}} erros"
+          one:    "Não foi possível guardar %{model}: 1 erro"
+          other:  "Não foi possível guardar %{model}: %{count} erros"
         # The variable :count is also available
         body: "Por favor, verifique os seguintes campos:"

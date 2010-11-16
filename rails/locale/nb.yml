@@ -1,8 +1,12 @@
 # Norwegian, norsk bokmål, by irb.no
-"no-NB":
+nb:
   support:
     array:
-      sentence_connector: "og"
+      words_connector: ", "
+      two_words_connector: " og "
+      last_word_connector: " og "
+    select:
+      prompt: "Velg"
   date:
     formats:
       default: "%d.%m.%Y"
@@ -16,7 +20,6 @@
   time:
     formats:
       default: "%A, %e. %B %Y, %H:%M"
-      time: "%H:%M"
       short: "%e. %B, %H:%M"
       long: "%A, %e. %B %Y, %H:%M"
     am: ""
@@ -26,34 +29,37 @@
       half_a_minute: "et halvt minutt"
       less_than_x_seconds:
         one: "mindre enn 1 sekund"
-        other: "mindre enn {{count}} sekunder"
+        other: "mindre enn %{count} sekunder"
       x_seconds:
         one: "1 sekund"
-        other: "{{count}} sekunder"
+        other: "%{count} sekunder"
       less_than_x_minutes:
         one: "mindre enn 1 minutt"
-        other: "mindre enn {{count}} minutter"
+        other: "mindre enn %{count} minutter"
       x_minutes:
         one: "1 minutt"
-        other: "{{count}} minutter"
+        other: "%{count} minutter"
       about_x_hours:
         one: "rundt 1 time"
-        other: "rundt {{count}} timer"
+        other: "rundt %{count} timer"
       x_days:
         one: "1 dag"
-        other: "{{count}} dager"
+        other: "%{count} dager"
       about_x_months:
         one: "rundt 1 måned"
-        other: "rundt {{count}} måneder"
+        other: "rundt %{count} måneder"
       x_months:
         one: "1 måned"
-        other: "{{count}} måneder"
+        other: "%{count} måneder"
       about_x_years:
         one: "rundt 1 år"
-        other: "rundt {{count}} år"
+        other: "rundt %{count} år"
       over_x_years:
         one: "over 1 år"
-        other: "over {{count}} år"
+        other: "over %{count} år"
+      almost_x_years:
+        one: "nesten 1 år"
+        other: "nesten %{count} år"
     prompts:
       year:   "År"
       month:  "Måned"
@@ -68,17 +74,44 @@
       delimiter: ","
     currency:
       format:
+        separator: "."
+        delimiter: ","
+        precision: 2
         unit: "kr"
         format: "%n %u"
     precision:
       format:
         delimiter: ""
-        precision: 4
-  activerecord:
+    human:
+      format:
+        precision: 1
+        delimiter: ","
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+    percentage:
+      format:
+        delimiter: ""        
+
+  activemodel:
     errors:
       template:
-        header: "kunne ikke lagre {{model}} på grunn av {{count}} feil."
-        body: "det oppstod problemer i følgende felt:"
+        header:
+          one:   "Kunne ikke lagre %{model} på grunn av én feil."
+          other: "Kunne ikke lagre %{model} på grunn av %{count} feil."
+        body: "Det oppstod problemer i følgende felt:"
+                      
+  activerecord:
+    errors:
       messages:
         inclusion: "er ikke inkludert i listen"
         exclusion: "er reservert"
@@ -87,17 +120,18 @@
         accepted: "må være akseptert"
         empty: "kan ikke være tom"
         blank: "kan ikke være blank"
-        too_long: "er for lang (maksimum {{count}} tegn)"
-        too_short: "er for kort (minimum {{count}} tegn)"
-        wrong_length: "er av feil lengde (maksimum {{count}} tegn)"
+        too_long: "er for lang (maksimum %{count} tegn)"
+        too_short: "er for kort (minimum %{count} tegn)"
+        wrong_length: "er av feil lengde (maksimum %{count} tegn)"
         taken: "er allerede i bruk"
         not_a_number: "er ikke et tall"
-        greater_than: "må være større enn {{count}}"
-        greater_than_or_equal_to: "må være større enn eller lik {{count}}"
-        equal_to: "må være lik {{count}}"
-        less_than: "må være mindre enn {{count}}"
-        less_than_or_equal_to: "må være mindre enn eller lik {{count}}"
+        greater_than: "må være større enn %{count}"
+        greater_than_or_equal_to: "må være større enn eller lik %{count}"
+        equal_to: "må være lik %{count}"
+        less_than: "må være mindre enn %{count}"
+        less_than_or_equal_to: "må være mindre enn eller lik %{count}"
         odd: "må være oddetall"
         even: "må være partall"
+        record_invalid: "Det oppstod feil: %{errors}"
       # models:
       # attributes:
