@@ -40,7 +40,7 @@ es-AR:
           unit: ""
           thousand: "Mil"
           million: "Millón"
-          billion: "Mil millones"
+          billion: "Billón"
           trillion: "Trillón"
           quadrillion: "Cuatrillón"
     precision:
