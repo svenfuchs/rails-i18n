@@ -102,8 +102,8 @@ fr-CH:
         format: "%n %u"
         units:
           byte:
-            one:   "Octet"
-            other: "Octets"
+            one:   "octet"
+            other: "octets"
           kb: "ko"
           mb: "Mo"
           gb: "Go"
@@ -112,12 +112,12 @@ fr-CH:
         format: "%n %u"
         units:
           unit: ""
-          thousand: "Millier"
-          million: "Million"
-          billion: "Milliard"
-          trillion: "Mille milliard"
-          quadrillion: "Million de milliard"
-  
+          thousand: "millier"
+          million: "million"
+          billion: "milliard"
+          trillion: "billion"
+          quadrillion: "million de milliards"
+
   support:
     array:
       words_connector: ", "

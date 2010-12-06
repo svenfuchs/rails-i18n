@@ -117,7 +117,7 @@ fr:
           million: "million"
           billion: "milliard"
           trillion: "billion"
-          quadrillion: "million de milliard"
+          quadrillion: "million de milliards"
 
   support:
     array:
