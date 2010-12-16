@@ -4,7 +4,7 @@
 da:
   # active_support
   date:
-    # See http://www.dsn.dk/oss_faq.htm#datoer and http://en.wikipedia.org/wiki/Date_formats
+    # See http://sproget.dk/svarbase/SV00000046/ and http://en.wikipedia.org/wiki/Date_formats
     # either use traditional (2.10.03, 2. oktober 2003): "%e.%m.%y", "%e. %B %Y"
     # or international ISO 8601 format (2003-10-20): "%Y-%m-%d"
     # Note: some Windows distributions do not support %e - you may have to use %d instead
