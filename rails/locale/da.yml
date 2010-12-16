@@ -75,7 +75,7 @@ da:
         other: "mere end %{count} år"
       almost_x_years:
         one:   "næsten et år"
-        other: "næsten %{count} years"
+        other: "næsten %{count} år"
     prompts:
       second: "Sekund"
       minute: "Minut"
