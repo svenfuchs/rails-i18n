@@ -82,8 +82,8 @@ it:
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
           
-    am: 'del mattino'
-    pm: 'della sera'
+    am: 'am'
+    pm: 'pm'
       
   datetime:
     distance_in_words:
