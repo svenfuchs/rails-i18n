@@ -1,10 +1,9 @@
 # Italian translations for Ruby on Rails
 #
-# created by Claudio Poli (masterkain@gmail.com)
-#
-# This localization file targets Rails 2 and 3.
-#
-# Rails 3 version by Davide Guerri (d.guerri@caspur.it)
+# Contributors:
+# - Claudio Poli (masterkain@gmail.com)
+# - Simone Carletti (weppos@weppos.net)
+# - Davide Guerri (d.guerri@caspur.it)
 
 it:
   number:
