@@ -135,7 +135,7 @@ it:
     array:
       words_connector: ", "
       two_words_connector: " e "
-      last_word_connector: ", e "
+      last_word_connector: " e "
       
     select:
       prompt: "Per favore, seleziona"
