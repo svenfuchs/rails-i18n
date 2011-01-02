@@ -1,5 +1,7 @@
 # German translations for Ruby on Rails 
 # by Clemens Kofler (clemens@railway.at)
+# contributors:
+#  - Alexander Dreher - http://github.com/alexdreher
 
 de:
   date:
@@ -149,3 +151,6 @@ de:
         odd: "muss ungerade sein"
         even: "muss gerade sein"
         record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
+
+      full_messages:
+        format: "%{attribute}%{message}"
