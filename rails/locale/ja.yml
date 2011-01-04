@@ -1,6 +1,8 @@
 # Japanese translations for Ruby on Rails
 # by Akira Matsuda (ronnie@dio.jp)
 # AR error messages are basically taken from Ruby-GetText-Package. Thanks to Masao Mutoh.
+# contributors:
+#  - Tsutomu Kuroda (t-kuroda@oiax.jp)
 
 ja:
   date:
@@ -15,7 +17,10 @@ ja:
     month_names: [~, 1月, 2月, 3月, 4月, 5月, 6月, 7月, 8月, 9月, 10月, 11月, 12月]
     abbr_month_names: [~, 1月, 2月, 3月, 4月, 5月, 6月, 7月, 8月, 9月, 10月, 11月, 12月]
 
-    order: [:year, :month, :day]
+    order:
+      - :year
+      - :month
+      - :day
 
   time:
     formats:
@@ -41,6 +46,8 @@ ja:
       separator: "."
       delimiter: ","
       precision: 3
+      significant: false
+      strip_insignificant_zeros: false
 
     currency:
       format:
@@ -48,7 +55,9 @@ ja:
         unit: "円"
         separator: "."
         delimiter: ","
-        precision: 0
+        precision: 3
+        significant: false
+        strip_insignificant_zeros: false
 
     percentage:
       format:
@@ -61,7 +70,10 @@ ja:
     human:
       format:
         delimiter: ""
-        precision: 1
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+
       storage_units:
         format: "%n%u"
         units:
@@ -70,6 +82,16 @@ ja:
           mb: "メガバイト"
           gb: "ギガバイト"
           tb: "テラバイト"
+
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "千"
+          million: "百万"
+          billion: "十億"
+          trillion: "兆"
+          quadrillion: "千兆"
 
   datetime:
     distance_in_words:
@@ -99,19 +121,55 @@ ja:
         one:   "1ヶ月"
         other: "%{count}ヶ月"
       about_x_years:
-        one:   "約%{count}年"
+        one:   "約1年"
         other: "約%{count}年"
       over_x_years:
-        one:   "%{count}年以上"
+        one:   "1年以上"
         other: "%{count}年以上"
+      almost_x_years:
+        one:   "1年弱"
+        other: "%{count}年弱"
 
-  activemodel:
-    errors:
-      template:
-        header:
-          one:    "%{model}にエラーが発生しました。"
-          other:  "%{model}に%{count}つのエラーが発生しました。"
-        body: "次の項目を確認してください。"
+    prompts:
+      year:   "年"
+      month:  "月"
+      day:    "日"
+      hour:   "時"
+      minute: "分"
+      second: "秒"
+
+  helpers:
+    select:
+      prompt: "選択してください。"
+
+    submit:
+      create: "登録する"
+      update: "更新する"
+      submit: "保存する"
+
+  errors:
+    format: "%{attribute}%{message}"
+
+    messages: &errors_messages
+      inclusion: "は一覧にありません。"
+      exclusion: "は予約されています。"
+      invalid: "は不正な値です。"
+      confirmation: "が一致しません。"
+      accepted: "を受諾してください。"
+      empty: "を入力してください。"
+      blank: "を入力してください。"
+      too_long: "は%{count}文字以内で入力してください。"
+      too_short: "は%{count}文字以上で入力してください。"
+      wrong_length: "は%{count}文字で入力してください。"
+      not_a_number: "は数値で入力してください。"
+      not_an_integer: "は整数で入力してください。"
+      greater_than: "は%{count}より大きい値にしてください。"
+      greater_than_or_equal_to: "は%{count}以上の値にしてください。"
+      equal_to: "は%{count}にしてください。"
+      less_than: "は%{count}より小さい値にしてください。"
+      less_than_or_equal_to: "は%{count}以下の値にしてください。"
+      odd: "は奇数にしてください。"
+      even: "は偶数にしてください。"
 
   activerecord:
     errors:
@@ -122,27 +180,9 @@ ja:
         body: "次の項目を確認してください。"
 
       messages:
-        inclusion: "は一覧にありません。"
-        exclusion: "は予約されています。"
-        invalid: "は不正な値です。"
-        confirmation: "が一致しません。"
-        accepted: "を受諾してください。"
-        empty: "を入力してください。"
-        blank: "を入力してください。"
-        too_long: "は%{count}文字以内で入力してください。"
-        too_short: "は%{count}文字以上で入力してください。"
-        wrong_length: "は%{count}文字で入力してください。"
         taken: "はすでに存在します。"
-        not_a_number: "は数値で入力してください。"
-        not_an_integer: "は整数で入力してください。"
-        greater_than: "は%{count}より大きい値にしてください。"
-        greater_than_or_equal_to: "は%{count}以上の値にしてください。"
-        equal_to: "は%{count}にしてください。"
-        less_than: "は%{count}より小さい値にしてください。"
-        less_than_or_equal_to: "は%{count}以下の値にしてください。"
-        odd: "は奇数にしてください。"
-        even: "は偶数にしてください。"
         record_invalid: "バリデーションに失敗しました。 %{errors}"
+        <<: *errors_messages
 
       full_messages:
         format: "%{attribute}%{message}"

@@ -76,45 +76,45 @@ id:
       less_than_x_seconds:
         zero:  "kurang dari 1 detik"
         one:   "kurang dari 1 detik"
-        other: "kurang dari {{count}} detik"
+        other: "kurang dari %{count} detik"
       x_seconds:
         one:   "1 detik"
-        other: "{{count}} detik"
+        other: "%{count} detik"
       less_than_x_minutes:
         zero:  "kurang dari 1 menit"
         one:   "kurang dari 1 menit"
-        other: "kurang dari  {{count}} menit"
+        other: "kurang dari  %{count} menit"
       x_minutes:
         one:   "menit"
-        other: "{{count}} menit"
+        other: "%{count} menit"
       about_x_hours:
         one:   "sekitar 1 jam"
-        other: "sekitar {{count}} jam"
+        other: "sekitar %{count} jam"
       x_days:
         one:   "sehari"
-        other: "{{count}} hari"
+        other: "%{count} hari"
       about_x_months:
         one:   "sekitar sebulan"
-        other: "sekitar {{count}} bulan"
+        other: "sekitar %{count} bulan"
       x_months:
         one:   "sebulan"
-        other: "{{count}} bulan"
+        other: "%{count} bulan"
       about_x_years:
         one:   "tahun"
-        other: "noin {{count}} tahun"
+        other: "noin %{count} tahun"
       over_x_years:
         one:   "lebih dari setahun"
-        other: "lebih dari {{count}} tahun"
+        other: "lebih dari %{count} tahun"
       almost_x_years:
         one:   "hampir setahun"
-        other: "hampir {{count}} tahun"
+        other: "hampir %{count} tahun"
  
   activerecord:
     errors:
       template:
         header:
-          one:    "1 kesalahan mengakibatkan {{model}} ini tidak bisa disimpan"
-          other:  "{{count}} kesalahan mengakibatkan {{model}} ini tidak bisa disimpan"
+          one:    "1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
+          other:  "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
         body: "Ada persoalan dengan field berikut:"
       messages:
         inclusion: "tidak terikut di daftar"
@@ -124,16 +124,16 @@ id:
         accepted: "harus diterima"
         empty: "tidak bisa kosong"
         blank: "tidak bisa kosong"
-        too_long: "terlalu panjang (maksimum {{count}} karakter)"
-        too_short: "terlalu pendek (maksimum {{count}} karakter)"
-        wrong_length: "dengan panjang tidak sama (seharusnya {{count}} karakter)"
+        too_long: "terlalu panjang (maksimum %{count} karakter)"
+        too_short: "terlalu pendek (maksimum %{count} karakter)"
+        wrong_length: "dengan panjang tidak sama (seharusnya %{count} karakter)"
         taken: "sudah dipanjar"
         not_a_number: "bukan nomor"
-        greater_than: "harus lebih besar dari {{count}}"
-        greater_than_or_equal_to: "harus sama atau lebih besar dari {{count}}"
-        equal_to: "harus sama dengan {{count}}"
-        less_than: "harus lebih kecil dari {{count}}"
-        less_than_or_equal_to: "harus sama atau lebih kecil dari {{count}}"
+        greater_than: "harus lebih besar dari %{count}"
+        greater_than_or_equal_to: "harus sama atau lebih besar dari %{count}"
+        equal_to: "harus sama dengan %{count}"
+        less_than: "harus lebih kecil dari %{count}"
+        less_than_or_equal_to: "harus sama atau lebih kecil dari %{count}"
         odd: "harus ganjil"
         even: "harus genap"
-        record_invalid: "Verifikasi gagal: {{errors}}"
+        record_invalid: "Verifikasi gagal: %{errors}"

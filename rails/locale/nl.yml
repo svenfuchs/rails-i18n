@@ -30,34 +30,40 @@ nl:
         separator: ","
         precision: 2
         delimiter: .
-  activerecord: 
-    errors: 
-      messages: 
-        greater_than_or_equal_to: moet groter of gelijk zijn aan {{count}}
-        less_than_or_equal_to: moet minder of gelijk zijn aan {{count}}
-        confirmation: komt niet met de bevestiging overeen
-        blank: moet opgegeven zijn
-        exclusion: is niet beschikbaar
-        invalid: is ongeldig
-        record_invalid: is ongeldig
-        odd: moet oneven zijn
-        too_short: is te kort (niet minder dan {{count}} tekens)
-        wrong_length: heeft niet de juiste lengte (moet {{count}} tekens lang zijn)
-        empty: moet opgegeven zijn
-        even: moet even zijn
-        less_than: moet minder zijn dan {{count}}
-        equal_to: moet gelijk zijn aan {{count}}
-        greater_than: moet groter zijn dan {{count}}
-        accepted: moet worden geaccepteerd
-        too_long: is te lang (niet meer dan {{count}} tekens)
-        taken: is niet beschikbaar
-        inclusion: is niet in de lijst opgenomen
-        not_a_number: is geen getal
-      template: 
-        body: "Controleer alstublieft de volgende velden:"
-        header: 
-          one: "Kon dit {{model}} object niet opslaan: 1 fout."
-          other: "Kon dit {{model}} niet opslaan: {{count}} fouten."
+  attributes:
+    created_at: "Aangemaakt op"
+    updated_at: "Aangepast op"
+  helpers:
+    submit:
+      create: "Maak %{model}"
+      update: "Bewaar %{model}"
+  errors: 
+    messages: 
+      greater_than_or_equal_to: moet groter of gelijk zijn aan %{count}
+      less_than_or_equal_to: moet minder of gelijk zijn aan %{count}
+      confirmation: komt niet met de bevestiging overeen
+      blank: moet opgegeven zijn
+      exclusion: is niet beschikbaar
+      invalid: is ongeldig
+      record_invalid: is ongeldig
+      odd: moet oneven zijn
+      too_short: is te kort (niet minder dan %{count} tekens)
+      wrong_length: heeft niet de juiste lengte (moet %{count} tekens lang zijn)
+      empty: moet opgegeven zijn
+      even: moet even zijn
+      less_than: moet minder zijn dan %{count}
+      equal_to: moet gelijk zijn aan %{count}
+      greater_than: moet groter zijn dan %{count}
+      accepted: moet worden geaccepteerd
+      too_long: is te lang (niet meer dan %{count} tekens)
+      taken: is niet beschikbaar
+      inclusion: is niet in de lijst opgenomen
+      not_a_number: is geen getal
+    template: 
+      body: "Controleer alstublieft de volgende velden:"
+      header: 
+        one: "Kon dit %{model} object niet opslaan: 1 fout."
+        other: "Kon dit %{model} niet opslaan: %{count} fouten."
   time: 
     am: "'s ochtends"
     formats: 
@@ -142,32 +148,32 @@ nl:
     distance_in_words: 
       less_than_x_minutes: 
         one: "minder dan \xC3\xA9\xC3\xA9n minuut"
-        other: minder dan {{count}} minuten
+        other: minder dan %{count} minuten
       x_days: 
         one: 1 dag
-        other: "{{count}} dagen"
+        other: "%{count} dagen"
       x_seconds: 
         one: 1 seconde
-        other: "{{count}} seconden"
+        other: "%{count} seconden"
       about_x_hours: 
         one: "ongeveer \xC3\xA9\xC3\xA9n uur"
-        other: ongeveer {{count}} uur
+        other: ongeveer %{count} uur
       less_than_x_seconds: 
         one: "minder dan \xC3\xA9\xC3\xA9n seconde"
-        other: minder dan {{count}} seconden
+        other: minder dan %{count} seconden
       x_months: 
         one: 1 maand
-        other: "{{count}} maanden"
+        other: "%{count} maanden"
       x_minutes: 
         one: 1 minuut
-        other: "{{count}} minuten"
+        other: "%{count} minuten"
       about_x_years: 
         one: "ongeveer \xC3\xA9\xC3\xA9n jaar"
-        other: ongeveer {{count}} jaren
+        other: ongeveer %{count} jaren
       about_x_months: 
         one: "ongeveer \xC3\xA9\xC3\xA9n maand"
-        other: ongeveer {{count}} maanden
+        other: ongeveer %{count} maanden
       over_x_years: 
         one: "langer dan \xC3\xA9\xC3\xA9n jaar"
-        other: langer {{count}} jaar
+        other: langer %{count} jaar
       half_a_minute: halve minuut
