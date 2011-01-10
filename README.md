@@ -13,14 +13,14 @@ Download the locale files that are found in the directory [rails/locale](http://
 If any translation doesn't suit well to the requirements of your application, edit them.
 
 Available locales are:
-> ar, bg, bn-IN, bs, ca, cz, da, de, de-AT, de-CH, dsb, el, en-GB, en-US, eo, es,
+> ar, bg, bn-IN, bs, ca, cy, cz, da, de, de-AT, de-CH, dsb, el, en-GB, en-US, eo, es,
 > es-AR, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
 > tr, uk, vi, zh-CN, zh-TW
 
 Note that all locale files are not yet ready for Rails 3. Currently, following locales are ready for Rails 2 and 3:
-> da, de, en-US, eo, es-AR, es-MX, et, fr, fr-CA, fr-CH, gsw-CH, hi, hi-IN, it, ja, ko, pl, pt-PT sk, sw, th, zh-CN, zh-TW
+> cy, da, de, en-US, eo, es-AR, es-MX, et, fr, fr-CA, fr-CH, gsw-CH, hi, hi-IN, it, ja, ko, pl, pt-PT sk, sw, th, zh-CN, zh-TW
 
 We always welcome your contributions!
 
