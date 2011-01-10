@@ -3,14 +3,13 @@ Rails Locale Data Repository
 
 Central point to collect locale data for use in Ruby on Rails.
 
-Rails translations
-------------------
-
-### How to use them
+## Usage
 
 Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into the `config/locales` directory of your Rails application.
 
-If any translation doesn't suit well to the requirements of your application, edit them.
+If any translation doesn't suit well to the requirements of your application, edit them or add your own locale files.
+
+For more information, visit [Rails Internationalization (I18n) API](http://guides.rubyonrails.org/i18n.html) on the _RailsGuides._
 
 Available locales are:
 > ar, bg, bn-IN, bs, ca, cy, cz, da, de, de-AT, de-CH, dsb, el, en-GB, en-US, eo, es,
@@ -24,9 +23,9 @@ Note that all locale files are not yet ready for Rails 3. Currently, following l
 
 We always welcome your contributions!
 
-### How to contribute
+## How to contribute
 
-#### Quick contribution
+### Quick contribution
 
 If you are familiar with GitHub operations, follow the procedures described in the subsequent sections.
 
@@ -35,12 +34,12 @@ If you are not,
 * Save your locale data on the [Gist](http://gist.github.com).
 * Open an issue with reference to the the Gist you created.
 
-#### Fetch the `rails-18n` repository
+### Fetch the `rails-18n` repository
 
 * Get a github account and Git program if you haven't. See [Help.Github](http://help.github.com/) for instructions.
 * Fork `svenfuchs/rails-i18n` repository and clone it into your PC.
 
-#### Create or edit your locale file
+### Create or edit your locale file
 
 * Have a look in `rails/locale/en-US.yml`, which can be used as the base of your translation.
   This file is a compound of all translation files in the Rails 2 and 3 packages.
@@ -49,7 +48,7 @@ If you are not,
   Please include a comment with the language/locale name and your name and email address (or other contact information like your github profile) to the locale file so people can come contact you and ask questions etc.
   Also, please pay attention to save your files as UTF-8.
 
-#### Test your locale file
+### Test your locale file
 
 Before commit and push your changes, test the integrity of your locale file.
 
@@ -79,11 +78,11 @@ Lastly, you can list all available locales:
 
     thor locales:list
 
-#### Edit README.md
+### Edit README.md
 
 Add your locale name to the list in `README.md` if it isn't there.
 
-#### Send pull request
+### Send pull request
 
 I you are ready, push the repository into the Github and send us a pull request.
 
