@@ -56,6 +56,9 @@ lv:
       over_x_years:
         one: "vairāk kā gads"
         other: "vairāk kā %{count} gadi"
+      almost_x_years:
+        one:   "gandrīz 1 gads"
+        other: "gandrīz %{count} gadi"
     prompts:
       second: "sekunde"
       minute: "minūte"
@@ -103,6 +106,9 @@ lv:
       two_words_connector: " un "
       last_word_connector: " un "
 
+    select:
+      prompt: "Lūdzu izvēlies"
+
   activerecord:
     errors:
       template:
@@ -122,6 +128,8 @@ lv:
         too_short: "ir par īsu (minimums ir %{count} zīmes)"
         wrong_length: "ir nepareizs garums (jābūt %{count} zīmēm)"
         taken: "ir jau aizņemts"
+        record_invalid: "Pārbaude neizdevās: %{errors}"
+        <<: *errors_messages
         not_a_number: "nav skaitlis"
         greater_than: "ir jābūt lielākam par %{count}"
         greater_than_or_equal_to: "ir jābūt lielākam vai vienādam ar %{count}"
@@ -130,3 +138,5 @@ lv:
         less_than_or_equal_to: "ir jābūt mazākam vai vienādam ar %{count}"
         odd: "ir jābūt nepāra skaitlim"
         even: "ir jābūt pāra skaitlim"
+      full_messages:
+        format: "%{attribute}%{message}"
