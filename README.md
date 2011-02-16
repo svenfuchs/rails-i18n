@@ -84,7 +84,7 @@ Add your locale name to the list in `README.md` if it isn't there.
 
 ### Send pull request
 
-I you are ready, push the repository into the Github and send us a pull request.
+If you are ready, push the repository into the Github and send us a pull request.
 
 We will do the formality check and publish it as quick as we can.
 
