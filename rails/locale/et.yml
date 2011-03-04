@@ -19,7 +19,10 @@ et:
     abbr_month_names: [~, jaan., veebr., märts, apr., mai, juuni, juuli, aug., sept., okt., nov., dets.]
     standalone_abbr_month_names: [~, jaan., veebr., märts, apr., mai, juuni, juuli, aug., sept., okt., nov., dets.]
 
-    order: [ :day, :month, :year ]
+    order:
+      - :day
+      - :month
+      - :year
 
   time:
     formats:
