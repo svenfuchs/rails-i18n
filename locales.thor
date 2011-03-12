@@ -89,5 +89,20 @@ class Locales < Thor
       end
     end
     puts locales.sort.join(', ')
+    locales.sort
+  end
+
+  desc 'copy_rails3_ready_to FOLDER','Copy rails 3 ready locales to a folder'
+  def copy_rails3_ready_to(folder)
+    puts "Folder #{folder}"
+    ready_for(3).each do |locale|
+      if locale=="th"
+        cmd = "cp #{File.dirname(__FILE__) + '/rails/locale/' + locale + '.rb'} #{folder}"
+      else
+        cmd = "cp #{File.dirname(__FILE__) + '/rails/locale/' + locale + '.yml'} #{folder}"
+      end
+      puts cmd
+      system cmd
+    end
   end
 end
