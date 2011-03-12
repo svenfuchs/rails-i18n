@@ -92,6 +92,22 @@ class Locales < Thor
     locales.sort
   end
 
+  desc 'not_ready_for VERSION', 'List locales not ready for a VERSION of Rails.'
+  def not_ready_for(version)
+    locales = []
+    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
+      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
+        locale = md[1]
+        missing_keys, broken_keys = KeyStructure.check(locale, version)
+        if not missing_keys.empty? or not broken_keys.empty?
+          locales << locale
+        end
+      end
+    end
+    puts locales.sort.join(', ')
+    locales.sort
+  end
+
   desc 'copy_rails3_ready_to FOLDER','Copy rails 3 ready locales to a folder'
   def copy_rails3_ready_to(folder)
     puts "Folder #{folder}"
