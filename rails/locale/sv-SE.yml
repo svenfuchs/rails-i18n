@@ -12,7 +12,7 @@
       # Sets the separator between the units, for more precision (e.g. 1.0 / 2.0 == 0.5)
       separator: ","
       # Delimits thousands (e.g. 1,000,000 is a million) (always in groups of three)
-      delimiter: " "
+      delimiter: " " # non-breaking space
       # Number of decimals after the separator (the number 1 with a precision of 2 gives: 1.00)
       precision: 2
       significant: false
