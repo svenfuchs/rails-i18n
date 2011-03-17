@@ -153,8 +153,8 @@
         body: "Det var problem med följande fält:"
 
       messages:
-        taken: "has already been taken"
-        record_invalid: "Validation failed: %{errors}"
+        taken: "är upptaget"
+        record_invalid: "Validering misslyckades: %{errors}"
         <<: *errors_messages
 
       full_messages:
