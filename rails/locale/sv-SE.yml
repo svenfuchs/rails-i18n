@@ -68,7 +68,7 @@
           million: "Miljon"
           billion: "Miljard"
           trillion: "Biljon"
-          quadrillion: "Biljard"
+          quadrillion: "Triljon"
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
