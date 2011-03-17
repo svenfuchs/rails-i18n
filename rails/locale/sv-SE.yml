@@ -17,7 +17,6 @@
       precision: 2
       significant: false
       strip_insignificant_zeros: false
-      
 
     # Used in number_to_currency()
     currency:
@@ -30,7 +29,7 @@
         precision: 2
         significant: false
         strip_insignificant_zeros: false
-        
+
     percentage:
       format:
          delimiter: ""
@@ -38,7 +37,6 @@
     precision:
       format:
         delimiter: ""
-
 
     # Used in number_to_human_size()
     human:
@@ -49,7 +47,7 @@
         precision: 1
         significant: false
         strip_insignificant_zeros: false
-        
+
       storage_units:
         # Storage units output formatting.
         # %u is the storage unit, %n is the number (default: 2 MB)
@@ -71,7 +69,6 @@
           billion: "Miljard"
           trillion: "Biljon"
           quadrillion: "Biljard"
-
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
@@ -118,7 +115,6 @@
       minute: "Minut"
       second: "Sekund"
 
-
   helpers:
     select:
       prompt: "Välj"
@@ -154,7 +150,6 @@
       even: "måste vara jämnt"
       record_invalid: "Ett fel uppstod: %{errors}"
 
-
   activerecord:
     errors:
       # model.errors.full_messages format.
@@ -172,7 +167,6 @@
       full_messages:
         format: "%{attribute} %{message}"
 
-      
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
         # Append your own errors here or at the model/attributes scope.
@@ -233,7 +227,7 @@
     am: ""
     pm: ""
 
-# Used in array.to_sentence.
+  # Used in array.to_sentence.
   support:
     array:
       words_connector: ", "
