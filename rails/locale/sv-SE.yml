@@ -25,11 +25,6 @@
         format: "%n %u"
         negative_format: "-%n %u"
         unit: "kr"
-        separator: ","
-        delimiter: " "
-        precision: 2
-        significant: false
-        strip_insignificant_zeros: false
 
     percentage:
       format:
@@ -42,12 +37,8 @@
     # Used in number_to_human_size()
     human:
       format:
-        # These three are to override number.format and are optional
-        # separator:
         delimiter: ""
         precision: 1
-        significant: false
-        strip_insignificant_zeros: false
 
       storage_units:
         # Storage units output formatting.
@@ -55,7 +46,7 @@
         format: "%n %u"
         units:
           byte:
-            one:   "Byte"
+            one: "Byte"
             other: "Bytes"
           kb: "KB"
           mb: "MB"
@@ -108,6 +99,7 @@
       almost_x_years:
         one:   "nästan ett år"
         other: "nästan %{count} år"
+
     prompts:
       year:   "År"
       month:  "Månad"
@@ -121,9 +113,9 @@
       prompt: "Välj"
 
     submit:
-      create: 'Skapa %{model}'
-      update: 'Ändra %{model}'
-      submit: 'Spara %{model}'
+      create: "Skapa %{model}"
+      update: "Ändra %{model}"
+      submit: "Spara %{model}"
 
   errors:
     format: "%{attribute} %{message}"
