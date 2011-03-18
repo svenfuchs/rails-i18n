@@ -13,7 +13,7 @@ it:
       significant: false
       strip_insignificant_zeros: false
       separator: "."
-      
+
     currency:
       format:
         format: "%n %u"
@@ -23,18 +23,18 @@ it:
         precision: 2
         significant: false
         strip_insignificant_zeros: false
-        
+
     percentage:
       format:
         delimiter: ""
         # precision: 
-        
+
     precision:
       format:
         # separator:
         delimiter: ""
         # precision:
-        
+
     human:
       format:
         # separator: 
@@ -77,16 +77,15 @@ it:
       - :day
       - :month
       - :year
-  
+
   time:
     formats:
       default: "%a %d %b %Y, %H:%M:%S %z"
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
-          
     am: 'am'
     pm: 'pm'
-      
+
   datetime:
     distance_in_words:
       half_a_minute: "mezzo minuto"
@@ -136,7 +135,7 @@ it:
       words_connector: ", "
       two_words_connector: " e "
       last_word_connector: " e "
-      
+
     select:
       prompt: "Per favore, seleziona"
 
@@ -178,7 +177,7 @@ it:
         less_than_or_equal_to: "deve essere meno o uguale a %{count}"
         odd: "deve essere dispari"
         even: "deve essere pari"
-      
+
   activerecord:
     errors:
       template:
@@ -194,4 +193,3 @@ it:
 
       full_messages:
         format: "%{attribute}%{message}"
-        
