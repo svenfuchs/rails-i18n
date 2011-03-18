@@ -58,9 +58,9 @@ it:
           unit: ""
           thousand: "Mila"
           million: "Milioni"
-          billion: "Bilioni"
-          trillion: "Trilioni"
-          quadrillion: "Quadrilioni"
+          billion: "Miliardi"
+          trillion: "Bilioni"
+          quadrillion: "Biliardi"
 
   date:
     formats:
