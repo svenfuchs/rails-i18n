@@ -75,28 +75,25 @@ nb:
       minute: "Minutt"
       second: "Sekund"
   number:
-    format:
+    format: &number_format
       precision: 2
-      separator: "."
-      delimiter: ","
+      separator: ","
+      delimiter: " "
       significant: false
       strip_insignificant_zeros: true
     currency:
       format:
-        separator: "."
-        delimiter: ","
-        precision: 2
         unit: "kr"
         format: "%n %u"
-        significant: false
-        strip_insignificant_zeros: true
+        <<: *number_format
     precision:
       format:
         delimiter: ""
     human:
       format:
         precision: 1
-        delimiter: ","
+        separator: ","
+        delimiter: " "
         significant: false
         strip_insignificant_zeros: true
       storage_units:
@@ -107,7 +104,7 @@ nb:
           byte:
             one:   "Byte"
             other: "Bytes"
-          kb: "KB"
+          kb: "kB"
           mb: "MB"
           gb: "GB"
           tb: "TB"
