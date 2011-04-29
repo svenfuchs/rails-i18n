@@ -94,3 +94,14 @@ If you are ready, push the repository into the Github and send us a pull request
 
 We will do the formality check and publish it as quick as we can.
 
+## License
+
+[MIT](https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt)
+
+## Contributors
+
+See [https://github.com/svenfuchs/rails-i18n/contributors](https://github.com/svenfuchs/rails-i18n/contributors)
+
+## Special thanks
+
+[Tsutomu Kuroda](https://github.com/kuroda) for untiringly taking care of this repository, issues and pull requests
