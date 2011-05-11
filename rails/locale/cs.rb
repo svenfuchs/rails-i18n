@@ -143,16 +143,16 @@ end
       :distance_in_words => {
         :half_a_minute => 'půl minutou',
         :less_than_x_seconds => {
-          :one => 'asi před sekundou',
-          :other => 'asi před %{count} sekundami'
+          :one => 'asi sekundou',
+          :other => 'asi %{count} sekundami'
         },
         :x_seconds => {
           :one => 'sekundou',
           :other => '%{count} sekundami'
         },
         :less_than_x_minutes => {
-          :one => 'před necelou minutou',
-          :other => 'před ani ne %{count} minutami'
+          :one => 'necelou minutou',
+          :other => 'ani ne %{count} minutami'
         },
         :x_minutes => {
           :one => 'minutou',
@@ -179,12 +179,12 @@ end
           :other => 'asi %{count} roky'
         },
         :over_x_years => {
-          :one => 'více než před rokem',
+          :one => 'více než rokem',
           :other => 'více než %{count} roky'
         },
         :almost_x_years => {
-          :one => 'téměř před rokem',
-          :other => 'téměř před %{count} roky'
+          :one => 'téměř rokem',
+          :other => 'téměř %{count} roky'
         }
       }
     },
