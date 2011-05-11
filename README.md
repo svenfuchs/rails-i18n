@@ -13,7 +13,7 @@ For more information, visit [Rails Internationalization (I18n) API](http://guide
 
 Available locales are:
 
-> ar, bg, bn-IN, bs, ca, cy, cz, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-US, eo, es,
+> ar, bg, bn-IN, bs, ca, cs, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-US, eo, es,
 > es-AR, es-CL, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
