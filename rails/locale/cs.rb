@@ -11,10 +11,10 @@ unless defined?(CzechLocaleI18n::ERROR_MESSAGES)
       :invalid             => "není platná hodnota",
       :confirmation        => "nebylo potvrzeno",
       :accepted            => "musí být potvrzeno",
-      :empty               => "nesmí být prázdný/é",
+      :empty               => "nesmí být prázdný/á/é",
       :blank               => "je povinná položka", # alternate formulation: "is required"
-      :too_long            => "je příliš dlouhá/ý (max. %{count} znaků)",
-      :too_short           => "je příliš krátký/á (min. %{count} znaků)",
+      :too_long            => "je příliš dlouhý/á/é (max. %{count} znaků)",
+      :too_short           => "je příliš krátký/á/é (min. %{count} znaků)",
       :wrong_length        => "nemá správnou délku (očekáváno %{count} znaků)",
       :not_a_number        => "není číslo",
       :greater_than        => "musí být větší než %{count}",
