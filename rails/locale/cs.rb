@@ -143,8 +143,8 @@ end
       :distance_in_words => {
         :half_a_minute => 'půl minutou',
         :less_than_x_seconds => {
-          :one => 'asi sekundou',
-          :other => 'asi %{count} sekundami'
+          :one => 'necelou sekundou',
+          :other => 'ani ne %{count} sekundami'
         },
         :x_seconds => {
           :one => 'sekundou',
