@@ -22,12 +22,12 @@
 
   time:
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
-      short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
-      only_second: "%S"
-    am: 'صباحا'
-    pm: 'مساءا'
+      default: "الإفتراضي"
+      short: "قصير"
+      long: "طويل"
+      only_second: "ثانية"
+    am: 'ُصباحا'
+    pm: 'ُمساءا'
 
   support:
     array:
@@ -60,11 +60,11 @@
 
     percentage:
       format:
-        delimiter: ""
+        delimiter: "محدد"
 
     precision:
       format:
-        delimiter: ""
+        delimiter: "محدد"
 
     human:
       format:
@@ -76,12 +76,12 @@
         format: "%n %u"
         units:
           byte:
-            one:   "Byte"
-            other: "Bytes"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
+            one:   "بايت"
+            other: "بايت"
+          kb: "ك ب"
+          mb: "م ب"
+          gb: "ج ب"
+          tb: "ت ب"
       decimal_units:
         format: "%n %u"
         units:
@@ -160,7 +160,7 @@
       too_short: "أقصر من اللازم (الحد الأدنى هو %{count})"
       wrong_length: "بطول غير مناسب (يجب أن يكون %{count})"
       not_an_integer: "يجب أن يكون صحيحا"
-      not_a_number: "ليس رقما"
+      not_a_number: "ُليس رقما"
       greater_than: "يجب أن يكون أكبر من %{count}"
       greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي %{count}"
       equal_to: "يجب أن يساوي %{count}"
