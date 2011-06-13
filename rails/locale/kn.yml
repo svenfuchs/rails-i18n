@@ -1,7 +1,7 @@
 # Kannada translations for Ruby on Rails
 # by Sukeerthi Adiga G(sukeerthiadiga@gmail.com)
 
-ka:
+kn:
   date:
     formats:
       default: "%Y-%m-%d"
