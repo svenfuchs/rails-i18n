@@ -38,7 +38,7 @@ If you are familiar with GitHub operations, follow the procedures described in t
 If you are not,
 
 * Save your locale data on the [Gist](http://gist.github.com).
-* Open an issue with reference to the the Gist you created.
+* Open an issue with reference to the Gist you created.
 
 ### Fetch the `rails-18n` repository
 
