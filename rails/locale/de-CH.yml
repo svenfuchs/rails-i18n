@@ -119,11 +119,11 @@ de-CH:
       delimiter: "'"
     currency:
       format:
-        unit: 'CHF'
+        unit: 'SFr.'
         format: '%u %n'
-        separator:
-        delimiter:
-        precision:
+        separator: '.'
+        delimiter: "'"
+        precision: 2
     percentage:
       format:
         delimiter: ""
