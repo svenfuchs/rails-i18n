@@ -8,7 +8,6 @@ ro:
       default: "%d-%m-%Y"
       short: "%d %b"
       long: "%d %B %Y"
-#      only_day: "%e"
 
     day_names:
       - Duminică
@@ -62,18 +61,65 @@ ro:
   time:
     formats:
       default: "%a %d %b %Y, %H:%M:%S %z"
-#      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
-#      only_second: "%S"
-
-#      datetime:
-#        formats:
-#          default: "%d-%m-%YT%H:%M:%S%Z"
-
     am: ''
     pm: ''
 
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " şi "
+      last_word_connector: " şi "
+    select:
+      prompt: "Alegeţi"
+  number:
+    format:
+      precision: 3
+      separator: '.'
+      delimiter: ','
+      significant: false
+      strip_insignificant_zeros: false
+    currency:
+      format:
+        unit: 'RON'
+        precision: 2
+        separator: '.'
+        delimiter: ','
+        format: '%n %u'
+        significant: false
+        strip_insignificant_zeros: false
+    percentage:
+      format:
+        delimiter: ","
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ","
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: Mie
+          million: Milion
+          billion: Miliard
+          trillion: Trilion
+          quadrillion: Quadrilion
   datetime:
     distance_in_words:
       half_a_minute: "jumătate de minut"
@@ -118,43 +164,36 @@ ro:
       minute: "Minutul"
       second: "Secunda"
 
-  number:
-    format:
-      precision: 3
-      separator: '.'
-      delimiter: ','
-    currency:
-      format:
-        unit: 'RON'
-        precision: 2
-        separator: '.'
-        delimiter: ','
-        format: '%n %u'
-    percentage:
-      format:
-        # separator:
-        delimiter: ","
-#        precision: 2
-    precision:
-      format:
-        # separator:
-        delimiter: ""
-        # precision:
-    human:
-      format:
-#        separator: "."
-        delimiter: ","
-        precision: 1
-      storage_units:
-        format: "%n %u"
-        units:
-          byte:
-            one:   "Byte"
-            other: "Bytes"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
+  helpers:
+    select:
+      prompt: "Alegeţi"
+    submit:
+      create: 'Creare %{model}'
+      update: 'Modificare %{model}'
+      submit: 'Salvare %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+    messages: &errors_messages
+      inclusion: "nu este inclus în listă"
+      exclusion: "este rezervat"
+      invalid: "este invalid"
+      confirmation: "nu este confirmat"
+      accepted: "trebuie dat acceptul"
+      empty: "nu poate fi gol"
+      blank: "nu poate fi gol"
+      too_long: "este prea lung (se pot folosi maximum %{count} caractere)"
+      too_short: "este pre scurt (minumim de caractere este %{count})"
+      wrong_length: "nu are lungimea corectă (trebuie să aiba %{count} caractere)"
+      not_a_number: "nu este un număr"
+      not_an_integer: "trebuie să fie un mumăr întreg"
+      greater_than: "trebuie să fie mai mare decât %{count}"
+      greater_than_or_equal_to: "trebuie să fie mai mare sau egal cu %{count}"
+      equal_to: "trebuie să fie egal cu %{count}"
+      less_than: "trebuie să fie mai mic decât %{count}"
+      less_than_or_equal_to: "trebuie să fie mai mic sau egal cu %{count}"
+      odd: "trebuie să fie par"
+      even: "trebuie să fie impar"
 
   activerecord:
     errors:
@@ -164,32 +203,9 @@ ro:
           other: "Nu am putut salva acest %{model}: %{count} erori."
         body: "Încearcă să corectezi urmatoarele câmpuri:"
       messages:
-        inclusion: "nu este inclus în listă"
-        exclusion: "este rezervat"
-        invalid: "este invalid"
-        confirmation: "nu este confirmat"
-        accepted: "trebuie dat acceptul"
-        empty: "nu poate fi gol"
-        blank: "nu poate fi gol"
-        too_long: "este prea lung (se pot folosi maximum %{count} caractere)"
-        too_short: "este pre scurt (minumim de caractere este %{count})"
-        wrong_length: "nu are lungimea corectă (trebuie să aiba %{count} caractere)"
         taken: "este deja folosit"
-        not_a_number: "nu este un număr"
-        greater_than: "trebuie să fie mai mare decât %{count}"
-        greater_than_or_equal_to: "trebuie să fie mai mare sau egal cu %{count}"
-        equal_to: "trebuie să fie egal cu %{count}"
-        less_than: "trebuie să fie mai mic decât %{count}"
-        less_than_or_equal_to: "trebuie să fie mai mic sau egal cu %{count}"
-        odd: "trebuie să fie par"
-        even: "trebuie să fie impar"
         record_invalid: "Validare nereuşită %{errors}"
-  support:
-    array:
-#        sentence_connector: "și"
-      words_connector: ", "
-      two_words_connector: " şi "
-      last_word_connector: " şi "
-    select:
-      # default value for :prompt => true in FormOptionsHelper
-      prompt: "Alegeţi"
+        <<: *errors_messages
+      full_messages:
+        format: "%{attribute} %{message}"
+
