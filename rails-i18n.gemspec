@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |s|
   s.name         = "rails-i18n"
-  s.version      = '0.6'
+  s.version      = '0.1.0'
   s.authors      = ["Rails I18n Group"]
   s.email        = "rails-i18n@googlegroups.com"
   s.homepage     = "http://github.com/svenfuchs/rails-i18n"
-  s.summary      = "New wave Internationalization support for Ruby on Rails"
-  s.description  = "New wave Internationalization support for Ruby on Rails."
+  s.summary      = "Common locale data and translations for Rails i18n."
+  s.description  = "A set of common locale data and translations to internationalize and/or localize your Rails applications."
 
   s.files        = Dir.glob("rails/locale/*") + %w(README.md MIT-LICENSE.txt lib/rails-i18n.rb)
   s.platform     = Gem::Platform::RUBY
