@@ -3,7 +3,18 @@ Rails Locale Data Repository
 
 Central point to collect locale data for use in Ruby on Rails.
 
-## Usage
+## Gem installation
+
+Add to your Gemfile:
+
+    gem 'rails-i18n'
+
+or run this command:
+
+    gem install rails-i18n
+
+
+## Manual installation
 
 Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into the `config/locales` directory of your Rails application.
 
