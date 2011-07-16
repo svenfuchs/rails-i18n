@@ -17,7 +17,7 @@ id:
       - Selasa
       - Rabu
       - Kamis
-      - Jum'at
+      - "Jum'at"
       - Sabtu
     abbr_day_names:
       - Min
@@ -126,17 +126,17 @@ id:
         one:   "kurang dari 1 detik"
         other: "kurang dari %{count} detik"
       x_seconds:
-        one:   "1 detik"
+        one:   "satu detik"
         other: "%{count} detik"
       less_than_x_minutes:
         zero:  "kurang dari 1 menit"
         one:   "kurang dari 1 menit"
         other: "kurang dari  %{count} menit"
       x_minutes:
-        one:   "menit"
+        one:   "satu menit"
         other: "%{count} menit"
       about_x_hours:
-        one:   "sekitar 1 jam"
+        one:   "sekitar satu jam"
         other: "sekitar %{count} jam"
       x_days:
         one:   "sehari"
@@ -148,7 +148,7 @@ id:
         one:   "sebulan"
         other: "%{count} bulan"
       about_x_years:
-        one:   "tahun"
+        one:   "setahun"
         other: "noin %{count} tahun"
       over_x_years:
         one:   "lebih dari setahun"
@@ -163,10 +163,10 @@ id:
         header:
           one:    "1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
           other:  "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
-        body: "Ada persoalan dengan field berikut:"
+        body: "Ada masalah dengan field berikut:"
       messages:
-        inclusion: "tidak terikut di daftar"
-        exclusion: "sudah dipanjar"
+        inclusion: "tidak termasuk"
+        exclusion: "sudah digunakan"
         invalid: "tidak valid"
         confirmation: "tidak sesuai dengan konfirmasi"
         accepted: "harus diterima"
@@ -175,8 +175,8 @@ id:
         too_long: "terlalu panjang (maksimum %{count} karakter)"
         too_short: "terlalu pendek (maksimum %{count} karakter)"
         wrong_length: "dengan panjang tidak sama (seharusnya %{count} karakter)"
-        taken: "sudah dipanjar"
-        not_a_number: "bukan nomor"
+        taken: "sudah digunakan"
+        not_a_number: "bukan angka"
         greater_than: "harus lebih besar dari %{count}"
         greater_than_or_equal_to: "harus sama atau lebih besar dari %{count}"
         equal_to: "harus sama dengan %{count}"
