@@ -13,6 +13,7 @@ or run this command:
 
     gem install rails-i18n
 
+Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
 
 ## Manual installation
 
@@ -21,6 +22,8 @@ Download the locale files that are found in the directory [rails/locale](http://
 If any translation doesn't suit well to the requirements of your application, edit them or add your own locale files.
 
 For more information, visit [Rails Internationalization (I18n) API](http://guides.rubyonrails.org/i18n.html) on the _RailsGuides._
+
+## Available Locales
 
 Available locales are:
 
@@ -32,7 +35,9 @@ Available locales are:
 
 Note that all locale files are not yet ready for Rails 3. Currently, following locales are ready for Rails 2 and 3:
 
-> ar, ca, cs, cy, da, de, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et, eu, fa, fi, fr, fr-CA, fr-CH, gsw-CH, he, hi, hi-IN, hu, is, it, ja, kn, ko, lv, nb, nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
+> ar, ca, cs, cy, da, de, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
+> eu, fa, fi, fr, fr-CA, fr-CH, gsw-CH, he, hi, hi-IN, hu, is, it, ja, kn, ko, lv, nb,
+> nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
 
 Not-yet-ready locales are:
 
