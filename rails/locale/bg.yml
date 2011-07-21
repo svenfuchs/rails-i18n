@@ -132,52 +132,52 @@ bg:
         units:
           unit: ""
           thousand: хиляди
-          million: милиони
-          billion: милиарди
-          trillion: трилиони
-          quadrillion: квадрилиони
+          million: милиона
+          billion: милиарда
+          trillion: трилиона
+          quadrillion: квадрилиона
 
   datetime:
     distance_in_words:
       half_a_minute: "половин минута"
       less_than_x_seconds:
-        one: "по-малко от %{count} секунда"
+        one:   "по-малко от 1 секунда"
         other: "по-малко от %{count} секунди"
       x_seconds:
-        one: "%{count} секунда"
+        one:   "1 секунда"
         other: "%{count} секунди"
       less_than_x_minutes:
-        one: "по-малко от %{count} минута"
+        one:   "по-малко от 1 минута"
         other: "по-малко от %{count} минути"
       x_minutes:
-        one: "%{count} минута"
+        one:   "1 минута"
         other: "%{count} минути"
       about_x_hours:
-        one: "около %{count} час"
+        one:   "около 1 час"
         other: "около %{count} часа"
       x_days:
-        one: "%{count} ден"
+        one:   "1 ден"
         other: "%{count} дни"
       about_x_months:
-        one: "около %{count} месеца"
+        one:   "около 1 месец"
         other: "около %{count} месеца"
       x_months:
-        one: "%{count} месец"
+        one:   "1 месец"
         other: "%{count} месеца"
       about_x_years:
-        one: "около %{count} година"
+        one:   "около 1 година"
         other: "около %{count} години"
       over_x_years:
-        one: "над %{count} година"
+        one:   "над 1 година"
         other: "над %{count} години"
       almost_x_years:
-        one: "почти %{count} година"
+        one:   "почти 1 година"
         other: "почти %{count} години"
     prompts:
-      year: "Година"
-      month: "Месец"
-      day: "Ден"
-      hour: "Час"
+      year:   "Година"
+      month:  "Месец"
+      day:    "Ден"
+      hour:   "Час"
       minute: "Минута"
       second: "Секунда"
 
@@ -201,26 +201,26 @@ bg:
       accepted: "трябва да се потвърди"
       empty: "не може да е празно"
       blank: "не може да е без стойност"
-      too_long: "е с прекаленo дълго (не може да е повече от %{count} символ)"
-      too_short: "е с прекалено късо (не може да бъде по-малко от %{count} символ)"
+      too_long: "е прекаленo дълго (не може да е повече от %{count} символа)"
+      too_short: "е прекалено късо (не може да бъде по-малко от %{count} символа)"
       wrong_length: "е с грешна дължина (трябва да е с дължина, равна на %{count} символа)"
       not_a_number: "не е число"
       not_an_integer: "не е цяло число"
-      greater_than: "може да е със стойност, по-голяма от %{count}"
-      greater_than_or_equal_to: "може да е със стойност, по-голяма или равна на %{count}"
-      equal_to: "може да е единствено със стойност, равна на %{count}"
-      less_than: "може да е със стойност, по-малка от %{count}"
-      less_than_or_equal_to: "може да е със стойност, по-голяма или равна на %{count}"
-      odd: "може да е единствено четно"
-      even: "може да е единствено нечетно"
+      greater_than: "трябва да има стойност, по-голяма от %{count}"
+      greater_than_or_equal_to: "трябва да има стойност, по-голяма или равна на %{count}"
+      equal_to: "трябва да има стойност, равна на %{count}"
+      less_than: "трябва да има стойност, по-малка от %{count}"
+      less_than_or_equal_to: "трябва да има стойност, по-голяма или равна на %{count}"
+      odd: "трябва да е четно"
+      even: "трябва да е нечетно"
 
   activerecord:
     errors:
       template:
         header:
-          one: "%{model}: записа е неуспешен заради %{count} грешка"
-          other: "%{model}: записа е неуспешен заради %{count} грешки"
-        body: "Възникнаха проблеми при следните полета:"
+          one:    "%{model}: записа е неуспешен заради 1 грешка"
+          other:  "%{model}: записа е неуспешен заради %{count} грешки"
+        body: "Възникнаха проблеми със следните полета:"
 
       messages:
         taken: "вече съществува"
