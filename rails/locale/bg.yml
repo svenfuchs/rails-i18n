@@ -23,14 +23,6 @@ bg:
       - четвъртък
       - петък
       - събота
-    standalone_day_names:
-      - неделя
-      - понеделник
-      - вторник
-      - сряда
-      - четвъртък
-      - петък
-      - събота
     abbr_day_names:
       - нед
       - пон
@@ -69,7 +61,6 @@ bg:
       - окт.
       - ноем.
       - дек.
-
     order:
       - :day
       - :month
@@ -80,15 +71,25 @@ bg:
       default: "%a, %d %b %Y, %H:%M:%S %z"
       short: "%d %b, %H:%M"
       long: "%d %B %Y, %H:%M"
-
     am: "преди обяд"
     pm: "следобед"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " и "
+      last_word_connector: " и "
+
+    select:
+      prompt: "Моля отбележете"
 
   number:
     format:
       separator: "."
       delimiter: ""
       precision: 3
+      significant: false
+      strip_insignificant_zeros: false
 
     currency:
       format:
@@ -97,6 +98,8 @@ bg:
         separator: "."
         delimiter: ""
         precision: 2
+        significant: false
+        strip_insignificant_zeros: false
 
     percentage:
       format:
@@ -110,6 +113,8 @@ bg:
       format:
         delimiter: ""
         precision: 1
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         # Storage units output formatting.
         # %u is the storage unit, %n is the number (default: 2 MB)
@@ -122,65 +127,52 @@ bg:
           mb: "МБ"
           gb: "ГБ"
           tb: "ТБ"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: хиляди
+          million: милиони
+          billion: милиарди
+          trillion: трилиони
+          quadrillion: квадрилиони
 
   datetime:
     distance_in_words:
       half_a_minute: "половин минута"
       less_than_x_seconds:
         one: "по-малко от %{count} секунда"
-        few: "по-малко от %{count} секунди"
-        many: "по-малко от %{count} секунди"
         other: "по-малко от %{count} секунди"
       x_seconds:
         one: "%{count} секунда"
-        few: "%{count} секунди"
-        many: "%{count} секунди"
         other: "%{count} секунди"
       less_than_x_minutes:
         one: "по-малко от %{count} минута"
-        few: "по-малко от %{count} минути"
-        many: "по-малко от %{count} минути"
         other: "по-малко от %{count} минути"
       x_minutes:
         one: "%{count} минута"
-        few: "%{count} минути"
-        many: "%{count} минути"
         other: "%{count} минути"
       about_x_hours:
         one: "около %{count} час"
-        few: "около %{count} часа"
-        many: "около %{count} часа"
         other: "около %{count} часа"
       x_days:
         one: "%{count} ден"
-        few: "%{count} дни"
-        many: "%{count} дни"
         other: "%{count} дни"
       about_x_months:
         one: "около %{count} месеца"
-        few: "около %{count} месеца"
-        many: "около %{count} месеца"
         other: "около %{count} месеца"
       x_months:
         one: "%{count} месец"
-        few: "%{count} месеца"
-        many: "%{count} месеци"
         other: "%{count} месеца"
-      almost_x_years:
-        one: "почти %{count} година"
-        few: "почти %{count} години"
-        many: "почти %{count} години"
-        other: "почти %{count} години"
       about_x_years:
         one: "около %{count} година"
-        few: "около %{count} години"
-        many: "около %{count} години"
         other: "около %{count} години"
       over_x_years:
         one: "над %{count} година"
-        few: "над %{count} години"
-        many: "над %{count} години"
         other: "над %{count} години"
+      almost_x_years:
+        one: "почти %{count} година"
+        other: "почти %{count} години"
     prompts:
       year: "Година"
       month: "Месец"
@@ -189,63 +181,54 @@ bg:
       minute: "Минута"
       second: "Секунда"
 
-  activemodel:
-    errors:
-      template:
-        header:
-          one:    "%{count} грешка спряха %{model} да бъде запазен"
-          other:  "%{count} грешки спряха %{model} да бъде запазен"
-        # The variable :count is also available
-        body: "Имаше проблем с следните полета:"
-
-  support:
+  helpers:
     select:
-      # default value for :prompt => true in FormOptionsHelper
       prompt: "Моля отбележете"
+
+    submit:
+      create: 'Създай %{model}'
+      update: 'Обнови %{model}'
+      submit: 'Запази %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "съдържа непредвидена стойност"
+      exclusion: "съдържа предварително зададена стойност"
+      invalid: "съдържа невярна стойност"
+      confirmation: "не съответства на потвърждението"
+      accepted: "трябва да се потвърди"
+      empty: "не може да е празно"
+      blank: "не може да е без стойност"
+      too_long: "е с прекаленo дълго (не може да е повече от %{count} символ)"
+      too_short: "е с прекалено късо (не може да бъде по-малко от %{count} символ)"
+      wrong_length: "е с грешна дължина (трябва да е с дължина, равна на %{count} символа)"
+      not_a_number: "не е число"
+      not_an_integer: "не е цяло число"
+      greater_than: "може да е със стойност, по-голяма от %{count}"
+      greater_than_or_equal_to: "може да е със стойност, по-голяма или равна на %{count}"
+      equal_to: "може да е единствено със стойност, равна на %{count}"
+      less_than: "може да е със стойност, по-малка от %{count}"
+      less_than_or_equal_to: "може да е със стойност, по-голяма или равна на %{count}"
+      odd: "може да е единствено четно"
+      even: "може да е единствено нечетно"
 
   activerecord:
     errors:
       template:
         header:
           one: "%{model}: записа е неуспешен заради %{count} грешка"
-          few: "%{model}: записа е неуспешен заради %{count} грешки"
-          many: "%{model}: записа е неуспешен заради %{count} грешки"
           other: "%{model}: записа е неуспешен заради %{count} грешки"
         body: "Възникнаха проблеми при следните полета:"
 
       messages:
-        inclusion: "съдържа непредвидена стойност"
-        exclusion: "съдържа предварително зададена стойност"
-        invalid: "съдържа невярна стойност"
-        confirmation: "не съответства на потвърждението"
-        accepted: "трябва да се потвърди"
-        empty: "не може да е празно"
-        blank: "не може да е без стойност"
-        too_long:
-          one: "е с прекаленo дълго (не може да е повече от %{count} символ)"
-          few: "е с прекаленo дълго (не може да е повече от %{count} символа)"
-          many: "е с прекаленo дълго (не може да е повече от %{count} символи)"
-          other: "е с прекаленo дълго (не може да е повече от %{count} символа)"
-        too_short:
-          one: "е с прекалено късо (не може да бъде по-малко от %{count} символ)"
-          few: "е с прекалено късо (не може да бъде по-малко от %{count} символа)"
-          many: "е с прекалено късо (не може да бъде по-малко от %{count} символи)"
-          other: "е с прекалено късо (не може да бъде по-малко от %{count} символа)"
-        wrong_length:
-          one: "е с грешна дължина (трябва да е с дължина, равна на %{count} символа)"
-          few: "е с грешна дължина (трябва да е с дължина, равна на %{count} символа)"
-          many: "е с грешна дължина (трябва да е с дължина, равна на %{count} символа)"
-          other: "е с грешна дължина (трябва да е с дължина,  равна на %{count} символа)"
         taken: "вече съществува"
-        not_a_number: "не е число"
-        greater_than: "може да е със стойност, по-голяма от %{count}"
-        greater_than_or_equal_to: "може да е със стойност, по-голяма или равна на %{count}"
-        equal_to: "може да е единствено със стойност, равна на %{count}"
-        less_than: "може да е със стойност, по-малка от %{count}"
-        less_than_or_equal_to: "може да е със стойност, по-голяма или равна на %{count}"
-        odd: "може да е единствено четно"
-        even: "може да е единствено нечетно"
         record_invalid: "имаше грешки: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"
 
   # ===== I18n Specific ============================================================================
 
@@ -318,5 +301,3 @@ bg:
   pagination:
     previous: "&laquo; предишна"
     next: "следваща &raquo;"
-
-  # ===== Application Specific =====================================================================
