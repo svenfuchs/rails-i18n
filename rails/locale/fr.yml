@@ -174,9 +174,9 @@ fr:
     select:
       prompt: "Veuillez sélectionner"
     submit:
-      create: "Créer un %{model}"
-      update: "Modifier ce %{model}"
-      submit: "Enregistrer ce %{model}"
+      create: "Créer un(e) %{model}"
+      update: "Modifier ce(tte) %{model}"
+      submit: "Enregistrer ce(tte) %{model}"
 
   attributes:
     created_at: "Créé le"
@@ -206,8 +206,8 @@ fr:
       even: "doit être pair"
     template: &errors_template
       header:
-        one:   "Impossible d'enregistrer ce %{model} : 1 erreur"
-        other: "Impossible d'enregistrer ce %{model} : %{count} erreurs"
+        one:   "Impossible d'enregistrer ce(tte) %{model} : 1 erreur"
+        other: "Impossible d'enregistrer ce(tte) %{model} : %{count} erreurs"
       body: "Veuillez vérifier les champs suivants : "
 
   activerecord:
