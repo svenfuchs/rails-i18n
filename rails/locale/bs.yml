@@ -1,7 +1,7 @@
 # Bosnia and Herzegovina (Bosnian) translations for rails
 # by Armin Pašalić (armin [at] pasalic [dot] com [dot] ba, http://pasalic.com.ba)
 
-# Please take a look at bs.rb for pluralization instructions
+# Please take a look at bs.pluralization.rb for pluralization instructions
 
 bs:
   date:
