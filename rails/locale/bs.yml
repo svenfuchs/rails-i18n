@@ -1,14 +1,14 @@
-# bs [Bosnian] are the same as bs_BA [Bosnian (Bosnia and Herzegovina)]
-# translations for Ruby on Rails by Dejan Dimić (dejan.dimic@gmail.com)
+# Bosnia and Herzegovina (Bosnian) translations for rails
+# by Armin Pašalić (armin [at] pasalic [dot] com [dot] ba, http://pasalic.com.ba)
 
-"bs":
+# Please take a look at bs.pluralization.rb for pluralization instructions
+
+bs:
   date:
     formats:
-      default: "%d/%m/%Y"
-      short: "%e %b"
-      long: "%B %e, %Y"
-      only_day: "%e"
-
+      default: "%d.%m.%Y."
+      short: "%e. %b. %Y."
+      long: "%e. %B %Y."
     day_names:
       - nedjelja
       - ponedjeljak
@@ -16,7 +16,6 @@
       - srijeda
       - četvrtak
       - petak
-      - subota
     abbr_day_names:
       - ned
       - pon
@@ -26,132 +25,246 @@
       - pet
       - sub
     month_names:
-      - ~
-      - Januar
-      - Februar
-      - Mart
-      - April
-      - Maj
-      - Јun
-      - Јul
-      - Аvgust
-      - Septembar
-      - Оktobar
-      - Novembar
-      - Decembar
+      - januar
+      - februar
+      - mart
+      - april
+      - maj
+      - juni
+      - juli
+      - august
+      - septembar
+      - oktobar
+      - novembar
+      - decembar
     abbr_month_names:
-      - ~
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - Мaj
-      - Jun
-      - Јul
-      - Avg
-      - Sep
-      - Okt
-      - Nov
-      - Dec
+      - jan
+      - feb
+      - mar
+      - apr
+      - maj
+      - jun
+      - jul
+      - aug
+      - sep
+      - okt
+      - nov
+      - dec
     order:
       - :day
       - :month
       - :year
-
   time:
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
-      time: "%H:%M"
-      short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
-      only_second: "%S"
-
-    am: 'АМ'
-    pm: 'PМ'
-
-  datetime:
-    formats:
-      default: "%Y-%m-%dT%H:%M:%S%Z"
-    distance_in_words:
-      half_a_minute: 'pola minute'
-      less_than_x_seconds:
-        zero: 'manje od 1 sekunde'
-        one: 'manje od 1 sekunde'
-        few: 'manje od %{count} sekunde'
-        other: 'manje od %{count} sekundi'
-      x_seconds:
-        one: '1 sekunda'
-        few: '%{count} sekunde'
-        other: '%{count} sekundi'
-      less_than_x_minutes:
-        zero: 'manje оd minuta'
-        one: 'manje od 1 minut'
-        other: 'manje od %{count} minuta'
-      x_minutes:
-        one: '1 minut'
-        other: '%{count} minuta'
-      about_x_hours:
-        one: 'oko 1 sat'
-        few: 'око %{count} sata'
-        other: 'око %{count} sati'
-      x_days:
-        one: '1 dan'
-        other: '%{count} dana'
-      about_x_months:
-        one: 'око 1 mjesec'
-        few: 'око %{count} mjeseca'
-        other: 'око %{count} mjeseci'
-      x_months:
-        one: '1 mjesec'
-        few: '%{count} mjeseca'
-        other: '%{count} mjeseci'
-      about_x_years:
-        one: 'око 1 godine'
-        other: 'око %{count} godine'
-      over_x_years:
-        one: 'preko 1 godine'
-        other: 'preko %{count} godine'
-
-  number:
-    format:
-      precision: 3
-      separator: ','
-      delimiter: '.'
-    currency:
-      format:
-        unit: 'KM'
-        precision: 2
-        format: '%n %u'
-
+      default: "%H:%M:%S"
+      short: "%d. %b %Y. %H:%M"
+      long: "%d. %B %Y. - %H:%M:%S"
+    am: ''
+    pm: ''
   support:
     array:
-      sentence_connector: "i"
+      words_connector: ", "
+      two_words_connector: " i "
+      last_word_connector: " i "
+    select:
+      prompt: "Molimo odaberite"
+  number:
+    format:
+      separator: ","
+      delimiter: "."
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: true    
+    currency:
+      format:
+        format: "%n%u"
+        unit: "KM"
+        separator: ","
+        delimiter: "."
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: true
+    percentage:
+      format:
+        delimiter: ","
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ","
+        precision: 0
+        significant: true
+        strip_insignificant_zeros: true        
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "bajt"
+            few:   "bajta"
+            many:  "bajtova"
+            other: "bajtova"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand:
+            one: "hiljada"
+            few: "hiljade"
+            many: "hiljada"
+            other: 'hiljada'
+          million:
+            one: "milion"
+            few: "miliona"
+            many: "miliona"
+            other: "miliona"
+          billion:
+            one: "milijarda"
+            few: "milijarde"
+            many: "milijardi"
+            other: "milijardi"
+          trillion:
+            one: "bilion"
+            few: "biliona"
+            many: "biliona"
+            other: "biliona"
+          quadrillion:
+            one: "bilijarda"
+            few: "bilijarde"
+            many: "bilijardi"
+            other: "bilijardi"
+  datetime:
+    distance_in_words:
+      half_a_minute: "pola minute"
+      less_than_x_seconds:
+        one: "manje od sekunde"
+        few: "manje od %{count} sekunde"
+        many: "manje od %{count} sekundi"
+        many: "manje od %{count} sekundi"
+      x_seconds:
+        one: "1 sekund"
+        few: "%{count} sekunde"
+        many: "%{count} sekundi"
+        other: "%{count} sekundi"
+      less_than_x_minutes:
+        one: "manje od minute"
+        few: "manje od %{count} minute"
+        many: "manje od %{count} minuta"
+        other: "manje od %{count} minuta"
+      x_minutes:
+        one: "1 minut"
+        few: "%{count} minute"
+        many: "%{count} minuta"
+        other: "%{count} minuta"
+      about_x_hours:
+        one: "oko sat"
+        few: "oko %{count} sata"
+        many: "oko %{count} sati"
+        other: "oko %{count} sati"
+      x_days:
+        one: "1 dan"
+        few: "%{count} dana"
+        many: "%{count} dana"
+        other: "%{count} dana"
+      about_x_days:
+        one: "oko dan"
+        few: "oko %{count} dana"
+        many: "oko %{count} dana"
+        other: "oko %{count} dana"
+      x_months:
+        one: "1 mjesec"
+        few: "%{count} mjeseca"
+        many: "%{count} mjeseci"
+        other: "%{count} mjeseci"
+      about_x_months:
+        one: "oko mjesec"
+        few: "oko %{count} mjeseca"
+        many: "oko %{count} mjeseci"
+        other: "oko %{count} mjeseci"
+      x_years:
+        one: "1 godina"
+        few: "%{count} godine"
+        many: "%{count} godina"
+        other: "%{count} godina"
+      about_x_years:
+        one: "oko godine"
+        few: "oko %{count} godine"
+        many: "oko %{count} godina"
+        other: "oko %{count} godina"
+      over_x_years:
+        one: "preko godine"
+        few: "preko %{count} godine"
+        many: "preko %{count} godina"
+        other: "preko %{count} godina"
+      almost_x_years:
+        one: "skoro 1 godina"
+        few: "skoro %{count} godine"
+        many: "skoro %{count} godina"
+        other: "skoro %{count} godina"
+    prompts:
+      year:   "godina"
+      month:  "mjesec"
+      day:    "dan"
+      hour:   "sat"
+      minute: "minut"
+      second: "sekundi"
+  helpers:
+    select:
+      prompt: "Molimo odaberite"
+    submit:
+      create: "Kreiraj %{model}"
+      update: "Osviježi %{model}"
+      submit: "Sačuvaj %{model}"
+  errors:
+    format: "%{attribute} %{message}"
+    messages: &errors_messages
+      inclusion: "nije uključeno u listu"
+      exclusion: "je rezervisano"
+      invalid: "nije validno"
+      confirmation: "se ne poklapa sa potvrdom"
+      accepted: "mora biti prihvaćeno"
+      empty: "ne smije biti prazno"
+      blank: "ne smije biti prazno"
+      too_long: "je predugo (maksimalno je dozvoljeno %{count} karaktera)"
+      too_short: "je prekratko (predviđeno je minimalno %{count} karaktera)"
+      wrong_length: "je pogrešne dužine (trebalo bi biti tačno %{count} karaktera)"
+      not_a_number: "nije broj"
+      not_an_integer: "mora biti cijeli broj"
+      greater_than: "mora biti veće od %{count}"
+      greater_than_or_equal_to: "mora biti veće ili jednako %{count}"
+      equal_to: "mora biti %{count}"
+      less_than: "mora biti manje od %{count}"
+      less_than_or_equal_to: "mora biti manje ili jednako %{count}"
+      odd: "mora biti neparno"
+      even: "mora biti parno"
 
   activerecord:
     errors:
       template:
         header:
-          one: 'nisam uspio sačuvati %{model}: 1 greška.'
-          few: 'nisam uspio sačuvati %{model}: %{count} greške.'
-          other: 'nisam uspio sačuvati %{model}: %{count} greški.'
-        body: "Molim Vas da provjerite slijedeća polja:"
+          one:    "1 greška je spriječila da se ovaj %{model} snimi"
+          few:    "%{count} greške su spriječile da se ovaj %{model} snimi"
+          many:   "%{count} grešaka je spriječilo da se ovaj %{model} snimi"
+          other:  "%{count} grešaka je spriječilo da se ovaj %{model} snimi"
+        body: "Desili su se problemi sa slijedećim poljima:"
+
       messages:
-        inclusion: "nije u listi"
-        exclusion: "nije dostupno"
-        invalid: "nije ispravan"
-        confirmation: "se ne slaže sa svojom potvrdom"
-        accepted: "mora biti prihvaćeno"
-        empty: "mora biti dat"
-        blank: "mora biti dat"
-        too_long: "je predugačak (ne više od %{count} karaktera)"
-        too_short: "је prekratak (ne manje od %{count} karaktera)"
-        wrong_length: "nije odgovarajuće dužine (mora biti %{count} karaktera)"
-        taken: "је zauzeto"
-        not_a_number: "nije broj"
-        greater_than: "mora biti veće od %{count}"
-        greater_than_or_equal_to: "mora biti veće ili jednako %{count}"
-        equal_to: "mora biti jednako %{count}"
-        less_than: "mora biti manje od %{count}"
-        less_than_or_equal_to: "mora biti manje ili jednako %{count}"
-        odd: "mora biti neparno"
-        even: "mora biti parno"
+        taken: "je već zauzet"
+        record_invalid: "Validacija nije uspjela: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"
+
+# Custom common model tranlations
+      
+    models:
+      user: "korisnik"
+
+    attributes:
+      user:
+        login: "prijava"
