@@ -1,3 +1,7 @@
+# Greek translations for Ruby on Rails
+# contributors:
+#  - Tsutomu Kuroda - t-kuroda@oiax.jp - Rails 3 update
+
 el:
   date:
     formats:
@@ -100,6 +104,9 @@ el:
       over_x_years:
         one: "πάνω από ένα χρόνο"
         other: "πάνω από %{count} χρόνια"
+      almost_x_years:
+        one:   "σχεδόν ένα χρόνο"
+        other: "σχεδόν %{count} χρόνια"
     prompts:
       year: "Έτος"
       month: "Μήνας"
@@ -113,17 +120,33 @@ el:
       precision: 3
       separator: ','
       delimiter: '.'
+      significant: false
+      strip_insignificant_zeros: false
+
     currency:
       format:
-        unit: '€'
-        precision: 2
         format: '%n %u'
+        unit: '€'
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
     human:
       format:
-        # These three are to override number.format and are optional
-        # separator:
         delimiter: ""
         precision: 1
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
@@ -134,6 +157,15 @@ el:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "χίλια"
+          million: "εκατομμύριο"
+          billion: "δισεκατομμύριο"
+          trillion: "τρισεκατομμύριο"
+          quadrillion: "τετρακις εκατομμύριο"
 
   support:
     array:
@@ -143,6 +175,42 @@ el:
       two_words_connector: " και "
       last_word_connector: " και "
 
+    select:
+      prompt: "Παρακαλώ επιλέξτε"
+
+  helpers:
+    select:
+      prompt: "Παρακαλώ επιλέξτε"
+
+    submit:
+      create: 'Δημιουργήστε %{model}'
+      update: 'Ενημερώστε %{model}'
+      submit: 'Αποθηκεύστε %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "δεν συμπεριλαμβάνεται στη λίστα"
+      exclusion: "είναι δεσμευμένο"
+      invalid: "είναι άκυρο"
+      confirmation: "δεν ταιριάζει με την επικύρωση"
+      accepted: "πρέπει να είναι αποδεκτό"
+      empty: "δεν πρέπει να είναι άδειο"
+      blank: "δεν πρέπει να είναι κενό"
+      too_long: "είναι πολύ μεγάλο (το μέγιστο μήκος είναι %{count} χαρακτήρες)"
+      too_short: "είναι πολύ μικρό (το μικρότερο μήκος είναι %{count} χαρακτήρες)"
+      wrong_length: "έχει λανθασμένο μήκος (πρέπει να είναι %{count} χαρακτήρες)"
+      not_a_number: "δεν είναι ένας αριθμός"
+      not_an_integer: "πρέπει να είναι ακέραιος αριθμός"
+      greater_than: "πρέπει να είναι μεγαλύτερο από %{count}"
+      greater_than_or_equal_to: "πρέπει να είναι μεγαλύτερο ή ίσο με %{count}"
+      equal_to: "πρέπει να είναι ίσο με %{count}"
+      less_than: "πρέπει να είναι λιγότερο από %{count}"
+      less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσο με %{count}"
+      odd: "πρέπει να είναι περιττός"
+      even: "πρέπει να είναι άρτιος"
+
   activerecord:
     errors:
       template:
@@ -151,23 +219,9 @@ el:
           other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευθεί."
         body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία:"
       messages:
-        inclusion: "δεν συμπεριλαμβάνεται στη λίστα"
-        exclusion: "είναι δεσμευμένο"
-        invalid: "είναι άκυρο"
-        confirmation: "δεν ταιριάζει με την επικύρωση"
-        accepted: "πρέπει να είναι αποδεκτό"
-        empty: "δεν πρέπει να είναι άδειο"
-        blank: "δεν πρέπει να είναι κενό"
-        too_long: "είναι πολύ μεγάλο (το μέγιστο μήκος είναι %{count} χαρακτήρες)"
-        too_short: "είναι πολύ μικρό (το μικρότερο μήκος είναι %{count} χαρακτήρες)"
-        wrong_length: "έχει λανθασμένο μήκος (πρέπει να είναι %{count} χαρακτήρες)"
         taken: "το έχουν ήδη χρησιμοποιήσει"
-        not_a_number: "δεν είναι ένας αριθμός"
-        greater_than: "πρέπει να είναι μεγαλύτερο από %{count}"
-        greater_than_or_equal_to: "πρέπει να είναι μεγαλύτερο ή ίσο με %{count}"
-        equal_to: "πρέπει να είναι ίσο με %{count}"
-        less_than: "πρέπει να είναι λιγότερο από %{count}"
-        less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσο με %{count}"
-        odd: "πρέπει να είναι περιττός"
-        even: "πρέπει να είναι άρτιος"
+        record_invalid: "Επικύρωση απέτυχε: %{errors}"
+        <<: *errors_messages
 
+      full_messages:
+        format: "%{attribute} %{message}"
