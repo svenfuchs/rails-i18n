@@ -4,6 +4,7 @@
 #   * Sven Dahlstrand (sven.dahlstrand@gmail.com)
 #   * Henrik Nyh (henrik@nyh.se)
 #   * Magnus Bergmark (magnus.bergmark@gmail.com)
+#   * Carl Åkerlindh (carl.akerlindh@gmail.com)
 
 "sv-SE":
   number:
@@ -61,7 +62,7 @@
           million: "Miljon"
           billion: "Miljard"
           trillion: "Biljon"
-          quadrillion: "Triljon"
+          quadrillion: "Biljard"
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
