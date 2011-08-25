@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name         = "rails-i18n"
-  s.version      = '0.1.5'
+  s.version      = '0.1.6'
   s.authors      = ["Rails I18n Group"]
   s.email        = "rails-i18n@googlegroups.com"
   s.homepage     = "http://github.com/svenfuchs/rails-i18n"
@@ -15,6 +15,5 @@ Gem::Specification.new do |s|
   s.rubyforge_project = '[none]'
   s.required_rubygems_version = '>= 1.3.5'
 
-  s.add_dependency('i18n', '~> 0.6')
-  s.add_dependency('activesupport',  '~> 3')
+  s.add_dependency('i18n', '~> 0.5')
 end
