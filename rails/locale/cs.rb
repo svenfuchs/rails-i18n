@@ -82,6 +82,7 @@ end
           :unit => 'Kč',
           :precision => 2,
           :format    => '%n %u',
+          :negative_format => '-%n %u',
           :separator => ",",
           :delimiter => " ",
           :significant => false,
