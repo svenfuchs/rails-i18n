@@ -113,7 +113,7 @@ mn:
 
   datetime:
     distance_in_words:
-      half_a_minute: "хагас минут"	
+      half_a_minute: "хагас минут"
       less_than_x_seconds:
         one: "%{count} секундээс бага"
         other: "%{count} секундээс бага"
