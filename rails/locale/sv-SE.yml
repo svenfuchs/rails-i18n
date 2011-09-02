@@ -125,7 +125,7 @@
     messages: &errors_messages
       inclusion: "finns inte i listan"
       exclusion: "är reserverat"
-      invalid: "är ogiltigt"
+      invalid: "har fel format"
       confirmation: "stämmer inte överens"
       accepted: "måste vara accepterad"
       empty: "får ej vara tom"
