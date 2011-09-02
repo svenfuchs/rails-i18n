@@ -1,6 +1,7 @@
 # Greek translations for Ruby on Rails
 # contributors:
 #  - Tsutomu Kuroda - t-kuroda@oiax.jp - Rails 3 update
+#  - Diamantopoulos Nikos - nolamesa@yahoo.gr
 
 el:
   date:
@@ -90,8 +91,8 @@ el:
         one: "περίπου μία ώρα"
         other: "περίπου %{count} ώρες"
       x_days:
-        one: "1 ώρα"
-        other: "%{count} ώρες"
+        one: "1 μέρα"
+        other: "%{count} μέρες"
       about_x_months:
         one: "περίπου ένα μήνα"
         other: "περίπου %{count} μήνες"
@@ -215,7 +216,7 @@ el:
     errors:
       template:
         header:
-          one: "1 λάθος παρεμπόδισε αυτό το %{model} να αποθηκευθεί."
+          one: "1 λάθος εμπόδισε αυτό το %{model} να αποθηκευθεί."
           other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευθεί."
         body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία:"
       messages:
