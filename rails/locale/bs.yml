@@ -1,7 +1,7 @@
 # Bosnia and Herzegovina (Bosnian) translations for rails
 # by Armin Pašalić (armin [at] pasalic [dot] com [dot] ba, http://pasalic.com.ba)
 
-# Please take a look at bs.pluralization.rb for pluralization instructions
+# Please take a look at /rails/pluralization/bs.rb for pluralization instructions.
 
 bs:
   date:
@@ -74,7 +74,7 @@ bs:
       delimiter: "."
       precision: 3
       significant: false
-      strip_insignificant_zeros: true    
+      strip_insignificant_zeros: true
     currency:
       format:
         format: "%n%u"
@@ -95,7 +95,7 @@ bs:
         delimiter: ","
         precision: 0
         significant: true
-        strip_insignificant_zeros: true        
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
@@ -261,7 +261,7 @@ bs:
         format: "%{attribute} %{message}"
 
 # Custom common model tranlations
-      
+
     models:
       user: "korisnik"
 
