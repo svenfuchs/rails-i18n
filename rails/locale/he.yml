@@ -1,6 +1,7 @@
 # Hebrew translations for Ruby on Rails
 # by Dotan Nahum (dipidi@gmail.com)
 # Rails 3 update by rbjarnason
+# Grammer updates and completion of missing translations by Meron Bareket (mrnbrkt)
 
 "he":
   date:
@@ -44,7 +45,7 @@
     abbr_month_names:
       - ~
       - יאנ
-      - פב
+      - פבר
       - מרץ
       - אפר
       - מאי
@@ -54,7 +55,7 @@
       - ספט
       - אוק
       - נוב
-      - דצ
+      - דצמ
     order:
       - :day
       - :month
@@ -89,7 +90,7 @@
 
     currency:
       format:
-        unit: 'שח'
+        unit: '₪'
         precision: 2
         format: '%u %n'
         separator: "."
@@ -115,12 +116,12 @@
         format: "%n %u"
         units:
           byte:
-            one:   "בתים"
+            one:   "בייט"
             other: "בתים"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
+          kb: "קילו-בייט"
+          mb: "מגה-בייט"
+          gb: "ג'יגה-בייט"
+          tb: "טרה-בייט"
       decimal_units:
         format: "%n %u"
         units:
@@ -192,16 +193,16 @@
     messages: &errors_messages
       inclusion: "לא נכלל ברשימה"
       exclusion: "לא זמין"
-      invalid: "לא ולידי"
+      invalid: "לא תקין"
       confirmation: "לא תואם לאישורו"
       accepted: "חייב באישור"
-      empty: "חייב להכלל"
-      blank: "חייב להכלל"
+      empty: "לא יכול להיות ריק"
+      blank: "לא יכול להיות ריק"
       too_long: "יותר מדי ארוך (לא יותר מ- %{count} תוים)"
       too_short: "יותר מדי קצר (לא יותר מ- %{count} תוים)"
       wrong_length: "לא באורך הנכון (חייב להיות %{count} תוים)"
-      not_a_number: "הוא לא מספר"
-      not_an_integer: "must be an integer"
+      not_a_number: "חייב להיות מספר"
+      not_an_integer: "חייב להיות מספר שלם"
       greater_than: "חייב להיות גדול מ- %{count}"
       greater_than_or_equal_to: "חייב להיות גדול או שווה ל- %{count}"
       equal_to: "חייב להיות שווה ל- %{count}"
@@ -214,13 +215,13 @@
     errors:
       template:
         header:
-          one: "לא ניתן לשמור %{model}: שגיאה אחת"
-          other: "לא ניתן לשמור %{model}: %{count} שגיאות."
+          one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
+          other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
         body: "אנא בדוק את השדות הבאים:"
 
       messages:
-        taken: "לא זמין"
-        record_invalid: "אימות נכשל: %{errors}"
+        taken: "כבר בשימוש"
+        record_invalid: "האימות נכשל: %{errors}"
         <<: *errors_messages
 
       full_messages:
