@@ -67,7 +67,6 @@ id:
       short: "%d %b %H.%M"
       long: "%d %B %Y %H.%M"
       time: "%H:%M"
-
     am: "am"
     pm: "pm"
 
@@ -156,6 +155,46 @@ id:
       almost_x_years:
         one:   "hampir setahun"
         other: "hampir %{count} tahun"
+    prompts:
+      year:   "Tahun"
+      month:  "Bulan"
+      day:    "Hari"
+      hour:   "Jam"
+      minute: "Menit"
+      second: "Detik"
+
+  helpers:
+    select:
+      prompt: "Silahkan pilih"
+
+    submit:
+      create: 'Buat %{model}'
+      update: 'Update %{model}'
+      submit: 'Simpan %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "tak termasuk dalam daftar"
+      exclusion: "dipakai"
+      invalid: "tidak valid"
+      confirmation: "tidak sesuai dengan konfirmasi"
+      accepted: "harus diterima"
+      empty: "tidak boleh kosong"
+      blank: "tidak boleh kosong"
+      too_long: "terlalu panjang (maksimum adalah %{count} karakter)"
+      too_short: "terlalu pendek (minimum adalah %{count} karakter)"
+      wrong_length: "tidak sesuai dengan jumlah karakter yg di butuhkan (seharusnya %{count} karakter)"
+      not_a_number: "bukan angka"
+      not_an_integer: "harus angka"
+      greater_than: "harus lebih besar dari %{count}"
+      greater_than_or_equal_to: "harus lebih besar atau sama dengan %{count}"
+      equal_to: "harus sama dengan %{count}"
+      less_than: "harus kurang dari %{count}"
+      less_than_or_equal_to: "harus kurang atau sama dengan %{count}"
+      odd: "harus ganjil"
+      even: "harus genap"
 
   activerecord:
     errors:
@@ -173,8 +212,8 @@ id:
         empty: "tidak bisa kosong"
         blank: "tidak bisa kosong"
         too_long: "terlalu panjang (maksimum %{count} karakter)"
-        too_short: "terlalu pendek (maksimum %{count} karakter)"
-        wrong_length: "dengan panjang tidak sama (seharusnya %{count} karakter)"
+        too_short: "terlalu pendek (minimum %{count} karakter)"
+        wrong_length: "jumlah karakter salah (seharusnya %{count} karakter)"
         taken: "sudah digunakan"
         not_a_number: "bukan angka"
         greater_than: "harus lebih besar dari %{count}"
@@ -185,3 +224,58 @@ id:
         odd: "harus ganjil"
         even: "harus genap"
         record_invalid: "Verifikasi gagal: %{errors}"
+
+      full_messages:
+        format: "%{attribute} %{message}"
+
+  number:
+    format:
+      separator: ","
+      delimiter: "."
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%u%n"
+        unit: "Rp"
+        separator: ","
+        delimiter: "."
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Byte"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: Ribu
+          million: Juta
+          billion: Miliar
+          trillion: Triliun
+          quadrillion: Quadriliun

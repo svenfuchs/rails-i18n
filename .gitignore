@@ -4,3 +4,4 @@ Icon?
 .project
 rails-i18n-*.gem
 *~
+*.sw[pno]
