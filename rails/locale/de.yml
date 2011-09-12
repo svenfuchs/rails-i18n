@@ -215,6 +215,9 @@ de:
       odd: "muss ungerade sein"
       even: "muss gerade sein"
       not_an_integer: "muss ganzzahlig sein"
+      not_saved: 
+        one:    "Speichern nicht möglich: ein Fehler."
+        other:  "Speichern nicht möglich: %{count} Fehler."
 
   activerecord:
     errors:
