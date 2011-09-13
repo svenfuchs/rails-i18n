@@ -136,37 +136,37 @@ nl:
     distance_in_words:
       half_a_minute: "een halve minuut"
       less_than_x_seconds:
-        one:   "minder dan \xC3\xA9\xC3\xA9n seconde"
+        one:   "minder dan een seconde"
         other: "minder dan %{count} seconden"
       x_seconds:
         one:   "1 seconde"
         other: "%{count} seconden"
       less_than_x_minutes:
-        one:   "minder dan \xC3\xA9\xC3\xA9n minuut"
+        one:   "minder dan een minuut"
         other: "minder dan %{count} minuten"
       x_minutes:
         one:   "1 minuut"
         other: "%{count} minuten"
       about_x_hours:
-        one:   "ongeveer \xC3\xA9\xC3\xA9n uur"
+        one:   "ongeveer een uur"
         other: "ongeveer %{count} uur"
       x_days:
         one:   "1 dag"
         other: "%{count} dagen"
       about_x_months:
-        one: "ongeveer \xC3\xA9\xC3\xA9n maand"
+        one: "ongeveer een maand"
         other: "ongeveer %{count} maanden"
       x_months:
         one:   "1 maand"
         other: "%{count} maanden"
       about_x_years:
-        one: "ongeveer \xC3\xA9\xC3\xA9n jaar"
+        one: "ongeveer een jaar"
         other: "ongeveer %{count} jaar"
       over_x_years:
-        one: "meer dan \xC3\xA9\xC3\xA9n jaar"
+        one: "meer dan een jaar"
         other: "meer dan %{count} jaar"
       almost_x_years:
-        one:   "bijna \xC3\xA9\xC3\xA9n jaar"
+        one:   "bijna een jaar"
         other: "bijna %{count} jaar"
     prompts:
       year:   "jaar"
