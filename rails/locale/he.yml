@@ -6,9 +6,9 @@
 "he":
   date:
     formats:
-      default: "%Y-%m-%d"
+      default: "%d-%m-%Y"
       short: "%e %b"
-      long: "%B %e, %Y"
+      long: "%e ב%B, %Y"
       only_day: "%e"
 
     day_names:
@@ -63,10 +63,10 @@
 
   time:
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
+      default: "%a %d %b %H:%M:%S %Z %Y"
       time: "%H:%M"
       short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
+      long: "%d ב%B, %Y %H:%M"
       only_second: "%S"
     am: "am"
     pm: "pm"
