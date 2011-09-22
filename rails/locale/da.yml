@@ -1,5 +1,9 @@
 # Danish translation file for standard Ruby on Rails internationalization
 # by Lars Hoeg (larshoeg@gmail.com, http://www.lenio.dk/)
+# redigeret af sprogekvilibrist og grammatisk facist Rasmus Malver (rasmus@malver.dk, http://malver.dk)
+
+# Danish translation file for standard Ruby on Rails internationalization
+# by Lars Hoeg (larshoeg@gmail.com, http://www.lenio.dk/)
 
 da:
   # active_support
@@ -22,13 +26,13 @@ da:
       - fredag
       - lørdag
     abbr_day_names:
-      - sø
-      - ma
-      - ti
-      - 'on' # Note: unescaped 'on' is parsed as true
-      - to
-      - fr
-      - lø
+      - søn
+      - man
+      - tir
+      - ons
+      - tor
+      - fre
+      - lør
     month_names:
       - ~
       - januar
@@ -64,9 +68,9 @@ da:
 
   time:
     formats:
-      default: "%e. %B %Y, %H:%M"
-      short: "%e. %b %Y, %H:%M"
-      long: "%A, %e. %B %Y, %H:%M"
+      default: "%e. %B %Y, %H.%M"
+      short: "%e. %b %Y, %H.%M"
+      long: "%A d. %e. %B %Y, %H.%M"
     am: ""
     pm: ""
 
@@ -198,25 +202,25 @@ da:
     format: "%{attribute} %{message}"
 
     messages: &errors_messages
-      inclusion: "er ikke i listen"
+      inclusion: "er ikke på listen"
       exclusion: "er reserveret"
       invalid: "er ikke gyldig"
       confirmation: "stemmer ikke overens med bekræftelse"
       accepted: "skal accepteres"
       empty: "må ikke udelades"
       blank: "skal udfyldes"
-      too_long: "er for lang (maksimum %{count} tegn)"
-      too_short: "er for kort (minimum %{count} tegn)"
+      too_long: "er for lang (højest %{count} tegn)"
+      too_short: "er for kort (mindst %{count} tegn)"
       wrong_length: "har forkert længde (skulle være %{count} tegn)"
       not_a_number: "er ikke et tal"
       not_an_integer: "er ikke et heltal"
       greater_than: "skal være større end %{count}"
-      greater_than_or_equal_to: "skal være større end eller lig med %{count}"
-      equal_to: "skal være lig med %{count}"
+      greater_than_or_equal_to: "skal være større end, eller lig med, %{count}"
+      equal_to: "skal være %{count}"
       less_than: "skal være mindre end %{count}"
-      less_than_or_equal_to: "skal være mindre end eller lig med %{count}"
-      odd: "skal være ulige"
-      even: "skal være lige"
+      less_than_or_equal_to: "skal være mindre end, eller lig med, %{count}"
+      odd: "skal være et ulige tal"
+      even: "skal være et lige tal"
 
   activerecord:
     errors:
@@ -228,7 +232,7 @@ da:
 
       messages:
         taken: "er allerede brugt"
-        record_invalid: "Validering fejlede: %{errors}"
+        record_invalid: "Godkendelse gik galt: %{errors}"
         <<: *errors_messages
 
       full_messages:
