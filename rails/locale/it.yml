@@ -217,6 +217,8 @@ it:
         less_than_or_equal_to: "deve essere meno o uguale a %{count}"
         odd: "deve essere dispari"
         even: "deve essere pari"
+        taken: "è già in uso"
+        record_invalid: "Validazione fallita: %{errors}"
 
   activerecord:
     errors:
@@ -227,8 +229,6 @@ it:
         body: "Per favore ricontrolla i seguenti campi:"
 
       messages:
-        taken: "è già in uso"
-        record_invalid: "Validazione fallita: %{errors}"
         <<: *errors_messages
 
       full_messages:
