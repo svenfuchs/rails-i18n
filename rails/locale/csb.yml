@@ -1,0 +1,232 @@
+# Kashubian translations for Ruby on Rails
+# by Michôł Òstrowsczi (ostrowski.michal@gmail.com, http://github.com/espresse)
+
+csb:
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      short: "%d %b"
+      long: "%B %d, %Y"
+
+    day_names:
+      - niedzela
+      - pòniedzôłk
+      - wtórk
+      - strzoda
+      - czwiôrtk
+      - piątk
+      - sobòta
+    abbr_day_names:
+      - nie
+      - pòn
+      - wtó
+      - str
+      - czw
+      - pią
+      - sob
+
+    month_names:
+      - ~
+      - stëcznik
+      - gromicznik
+      - strëmiannik
+      - łżëkwiôt
+      - môj
+      - czerwińc
+      - lëpińc
+      - zélnik
+      - séwnik
+      - rujan
+      - lëstopadnik
+      - gòdnik
+    abbr_month_names:
+      - ~
+      - stë
+      - gro
+      - str
+      - łżë
+      - môj
+      - cze
+      - lëp
+      - zél
+      - séw
+      - ruj
+      - lës
+      - gòd
+    order:
+      - :day
+      - :month
+      - :year
+
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%B %d, %Y %H:%M"
+    am: "przed pôłnim"
+    pm: "pò pôłnim"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " ë "
+      last_word_connector: " a téż "
+
+    select:
+      prompt: "Proszã wëbrac"
+
+  number:
+    format:
+      separator: ","
+      delimiter: " "
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%u %n"
+        unit: "PLN"
+        separator: ","
+        delimiter: " "
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: true
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "bajt"
+            other: "bajtë"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: Tësąc
+          million: Milión
+          billion: Miliard
+          trillion: Bilión
+          quadrillion: Biliard
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "pół minutë"
+      less_than_x_seconds:
+        one:   "mni jak sekùnda"
+        few:   "mni jak %{count} sekùndë"
+        other: "mni jak %{count} sekùndów"
+      x_seconds:
+        one:   "1 sekùnda"
+        few:   "%{count} sekùndë"
+        other: "%{count} sekùndów"
+      less_than_x_minutes:
+        one:   "mni jak minuta"
+        few:   "mni jak %{count} minutë"
+        other: "mni jak %{count} minutów"
+      x_minutes:
+        one:   "1 minuta"
+        few:   "%{count} minutë"
+        other: "%{count} minutów"
+      about_x_hours:
+        one:   "kòle gòdzënë"
+        few:   "kòle %{count} gòdzën"
+        other: "kòle %{count} gòdzën"
+      x_days:
+        one:   "1 dzéń"
+        few:   "%{count} dni"
+        other: "%{count} dniów"
+      about_x_months:
+        one:   "kòle miesąca"
+        few:   "kòle %{count} miesąców"
+        other: "kòle %{count} miesąców"
+      x_months:
+        one:   "1 miesąc"
+        few:   "%{count} miesiące"
+        other: "%{count} miesięców"
+      about_x_years:
+        one:   "kòle rokù"
+        few:   "kòle %{count} lat"
+        other: "kòle %{count} lat"
+      over_x_years:
+        one:   "wicy jak rok"
+        few:   "wicy jak %{count} lata"
+        other: "wicy jak %{count} lat"
+      almost_x_years:
+        one:   "wnet rok"
+        few:   "wnet %{count} lata"
+        other: "wnet %{count} lat"
+    prompts:
+      year:   "Rok"
+      month:  "Miesiąc"
+      day:    "Dzéń"
+      hour:   "Gòdzëna"
+      minute: "Minuta"
+      second: "Sekunda"
+
+  helpers:
+    select:
+      prompt: "Proszã wëbrac"
+
+    submit:
+      create: 'Ùsôdzë %{model}'
+      update: 'Aktualizëjë %{model}'
+      submit: 'Zapiszë %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "ni ma na lësce dopùszczalnëch wôrtnotów"
+      exclusion: "je zarezerwowóné"
+      invalid: "je zmiłkòwé"
+      confirmation: "nie zgòdzô sã z pòcwierdzenim"
+      accepted: "mùszi bëc zaakceptowóné"
+      empty: "ni mòżé bëc pùsté"
+      blank: "ni mòże bëc pùsté"
+      too_long: "je za dłëdżé (maksymalno %{count} znaków)"
+      too_short: "je za krótczé (przënômni %{count} znaków)"
+      wrong_length: "mô lëchą długòtã (bë mùsza miec %{count} znaków)"
+      not_a_number: "nie je lëczbą"
+      not_an_integer: "muszi bëc całowną lëczbą"
+      greater_than: "mùszi bëc wikszé òd %{count}"
+      greater_than_or_equal_to: "mùszi bëc wikszé abò równé %{count}"
+      equal_to: "mùszi bëc równe %{count}"
+      less_than: "mùszi bëc mniszé òd %{count}"
+      less_than_or_equal_to: "mùszi bëc mniszé abò równé %{count}"
+      odd: "mùszi bëc nieparzësté"
+      even: "mùszé bëc parzësté"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "%{model} nie òstôł zachòwóny przez jedną felã"
+          other:  "%{model} nie òstôł zachòwóny przez %{count} felów"
+        body: "Fele tikają sã nëch pól:"
+
+      messages:
+        taken: "je ju zajãté"
+        record_invalid: "Negatiwné sprôwdzenié pòprawnoscë: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"
