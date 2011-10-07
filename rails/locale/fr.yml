@@ -192,9 +192,15 @@ fr:
       accepted: "doit être accepté(e)"
       empty: "doit être rempli(e)"
       blank: "doit être rempli(e)"
-      too_long: "est trop long (pas plus de %{count} caractères)"
-      too_short: "est trop court (au moins %{count} caractères)"
-      wrong_length: "ne fait pas la bonne longueur (doit comporter %{count} caractères)"
+      too_long:
+        one: "est trop long (pas plus d'un caractère)"
+        other: "est trop long (pas plus de %{count} caractères)"
+      too_short:
+        one: "est trop court (au moins un caractère)"
+        other: "est trop court (au moins %{count} caractères)"
+      wrong_length:
+        one: "ne fait pas la bonne longueur (doit comporter un seul caractère)"
+        other: "ne fait pas la bonne longueur (doit comporter %{count} caractères)"
       not_a_number: "n'est pas un nombre"
       not_an_integer: "doit être un nombre entier"
       greater_than: "doit être supérieur à %{count}"
