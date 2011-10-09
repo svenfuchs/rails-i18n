@@ -162,11 +162,11 @@ de:
           million: Millionen
           billion:
             one: Milliarde
-            others: Milliarden
+            other: Milliarden
           trillion: Billionen
           quadrillion:
             one: Billiarde
-            others: Billiarden
+            other: Billiarden
 
   support:
     array:
