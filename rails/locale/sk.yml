@@ -209,28 +209,21 @@
             less_than_or_equal_to: "musí byť menšie alebo rovné %{count}"
             odd: "musí byť nepárne číslo"
             even: "musí byť párne číslo"
+        template: &errors_template
+            header:
+                one: "Pri ukladaní objektu %{model} došlo k chybám a nebolo ho možné uložiť"
+                other: "Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné uložiť"
+            body: "Nasledujúce polia obsahujú chybne vyplnené údaje:"
 
     # ActiveRecord validation messages
     activerecord:
         errors:
-            template:
-               header:
-                  one:    "Objekt %{model} nebol uložený. Vyskytla sa 1 chyba"
-                  other:  "Objekt %{model} nebol uložený. Vyskytlo sa %{count} chýb"
-               body: "Nasledujúce polia obsahujú chybne vyplnené údaje:"
-
             messages:
                taken: "ste už použili"
                record_invalid: "Validácia neúspešná: %{errors}"
                <<: *errors_messages
+            template:
+                <<: *errors_template
 
             full_messages:
                format: "%{attribute} %{message}"
-
-    activemodel:
-        errors:
-            template:
-                header:
-                    one: "Pri ukladaní objektu %{model} došlo k chybám a nebolo ho možné uložiť"
-                    other: "Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné uložiť"
-                body: "Nasledujúce polia obsahujú chybne vyplnené údaje:"

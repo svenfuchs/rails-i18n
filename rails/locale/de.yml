@@ -176,13 +176,6 @@ de:
     select:
       prompt: "Bitte wählen:"
 
-  activemodel:
-    errors:
-      template:
-        header:
-          one:    "Konnte %{model} nicht speichern: ein Fehler."
-          other:  "Konnte %{model} nicht speichern: %{count} Fehler."
-        body: "Bitte überprüfen Sie die folgenden Felder:"
   helpers:
     select:
       prompt: "Bitte wählen"
@@ -218,19 +211,20 @@ de:
       not_saved: 
         one:    "Speichern nicht möglich: ein Fehler."
         other:  "Speichern nicht möglich: %{count} Fehler."
+    template: &errors_template
+      header:
+        one:    "Konnte %{model} nicht speichern: ein Fehler."
+        other:  "Konnte %{model} nicht speichern: %{count} Fehler."
+      body: "Bitte überprüfen Sie die folgenden Felder:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Konnte %{model} nicht speichern: ein Fehler."
-          other:  "Konnte %{model} nicht speichern: %{count} Fehler."
-        body: "Bitte überprüfen Sie die folgenden Felder:"
-
       messages:
         taken: "ist bereits vergeben"
         record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

@@ -178,49 +178,9 @@ zh-TW:
     select:
       prompt: "請選擇"
 
-  activerecord:
-    errors:
-      template: # ~ 2.3.5 backward compatible
-        header:
-          one: "有 1 個錯誤發生使得「%{model}」無法被儲存。"
-          other: "有 %{count} 個錯誤發生使得「%{model}」無法被儲存。"
-        body: "以下欄位發生問題："
-      full_messages:
-        format: "%{attribute} %{message}"
-      messages:
-        inclusion: "沒有包含在列表中"
-        exclusion: "是被保留的關鍵字"
-        invalid: "是無效的"
-        confirmation: "不符合確認值"
-        accepted: "必須是可被接受的"
-        empty: "不能留空"
-        blank: "不能是空白字元"
-        too_long: "過長（最長是 %{count} 個字）"
-        too_short: "過短（最短是 %{count} 個字）"
-        wrong_length: "字數錯誤（必須是 %{count} 個字）"
-        not_a_number: "不是數字"
-        not_an_integer: "必須是整數"
-        greater_than: "必須大於 %{count}"
-        greater_than_or_equal_to: "必須大於或等於 %{count}"
-        equal_to: "必須等於 %{count}"
-        less_than: "必須小於 %{count}"
-        less_than_or_equal_to: "必須小於或等於 %{count}"
-        odd: "必須是奇數"
-        even: "必須是偶數"
-        taken: "已經被使用"
-        record_invalid: "校驗失敗: %{errors}"
-
-  activemodel:
-    errors:
-      template:
-        header:
-          one: "有 1 個錯誤發生使得「%{model}」無法被儲存。"
-          other: "有 %{count} 個錯誤發生使得「%{model}」無法被儲存。"
-        body: "以下欄位發生問題："
-
   errors:
     format: "%{attribute} %{message}"
-    messages:
+    messages: &errors_messages
       inclusion: "沒有包含在列表中"
       exclusion: "是被保留的關鍵字"
       invalid: "是無效的"
@@ -240,6 +200,22 @@ zh-TW:
       less_than_or_equal_to: "必須小於或等於 %{count}"
       odd: "必須是奇數"
       even: "必須是偶數"
+      taken: "已經被使用"
+      record_invalid: "校驗失敗: %{errors}"
+    template: &errors_template
+      header:
+        one: "有 1 個錯誤發生使得「%{model}」無法被儲存。"
+        other: "有 %{count} 個錯誤發生使得「%{model}」無法被儲存。"
+      body: "以下欄位發生問題："
+  
+  activerecord:
+    errors:
+      messages:
+        <<: *errors_messages
+      template:
+        <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"
 
   helpers:
     select:
