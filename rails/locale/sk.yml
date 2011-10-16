@@ -187,8 +187,8 @@
           submit: 'Uložiť %{model}'
 
     errors:
-       format: "%{attribute} %{message}"
-       messages: &errors_messages
+        format: "%{attribute} %{message}"
+        messages: &errors_messages
             inclusion: "nie je v zozname povolených hodnôt"
             exclusion: "je vyhradené pre iný účel"
             invalid: "nie je platná hodnota"
