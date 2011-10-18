@@ -223,7 +223,7 @@ da:
       even: "skal være et lige tal"
       taken: "er allerede brugt"
       record_invalid: "Godkendelse gik galt: %{errors}"
-    template:
+    template: &errors_template
       header:
         one: "En fejl forhindrede %{model} i at blive gemt"
         other: "%{count} fejl forhindrede %{model} i at blive gemt"
