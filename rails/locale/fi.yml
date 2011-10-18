@@ -209,17 +209,18 @@ fi:
       even: "täytyy olla parillinen"
       taken: "on jo käytössä"
       record_invalid: "Validointi epäonnistui: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Virhe syötteessä esti mallin %{model} tallentamisen"
+        other:  "%{count} virhettä esti mallin %{model} tallentamisen"
+      body: "Seuraavat kentät aiheuttivat ongelmia:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Virhe syötteessä esti mallin %{model} tallentamisen"
-          other:  "%{count} virhettä esti mallin %{model} tallentamisen"
-        body: "Seuraavat kentät aiheuttivat ongelmia:"
-
       messages:
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"
