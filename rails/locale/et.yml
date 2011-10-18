@@ -18,14 +18,6 @@ et:
       - neljapäev
       - reede
       - laupäev
-    standalone_day_names:
-      - Pühapäev
-      - Esmaspäev
-      - Teisipäev
-      - Kolmapäev
-      - Neljapäev
-      - Reede
-      - Laupäev
     abbr_day_names:
       - P
       - E
@@ -49,20 +41,6 @@ et:
       - oktoober
       - november
       - detsember
-    standalone_month_names:
-      - ~
-      - Jaanuar
-      - Veebruar
-      - Märts
-      - Aprill
-      - Mai
-      - Juuni
-      - Juuli
-      - August
-      - September
-      - Oktoober
-      - November
-      - Detsember
     abbr_month_names:
       - ~
       - jaan.
@@ -77,21 +55,6 @@ et:
       - okt.
       - nov.
       - dets.
-    standalone_abbr_month_names:
-      - ~
-      - jaan.
-      - veebr.
-      - märts
-      - apr.
-      - mai
-      - juuni
-      - juuli
-      - aug.
-      - sept.
-      - okt.
-      - nov.
-      - dets.
-
     order:
       - :day
       - :month
