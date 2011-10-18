@@ -6,8 +6,7 @@
         :default      => "%Y-%m-%d (ish)",
         :short        => "%e %b (ish)",
         :long         => "%B %e, %Y (ish)",
-        :long_ordinal => lambda { |date| "%B #{date.day}ish, %Y" },
-        :only_day     => lambda { |date| "#{date.day}ish"}
+        :long_ordinal => lambda { |date| "%B #{date.day}ish, %Y" }
       },
       :day_names => %w(Sunday-ish Monday-ish Tuesday-ish Wednesday-ish Thursday-ish Friday-ish Saturday-ish),
       :abbr_day_names => %w(Sun-i Mon-i Tue-i Wed-i Thu-i Fri-i Sat-i),

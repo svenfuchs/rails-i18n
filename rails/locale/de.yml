@@ -9,8 +9,6 @@ de:
       default: "%d.%m.%Y"
       short: "%e. %b"
       long: "%e. %B %Y"
-      only_day: "%e"
-
     day_names:
       - Sonntag
       - Montag

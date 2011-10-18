@@ -11,8 +11,6 @@ tr:
       numeric: "%d.%m.%Y"
       short: "%e %b"
       long: "%e %B %Y, %A"
-      only_day: "%e"
-
     day_names:
       - Pazar
       - Pazartesi

@@ -10,8 +10,6 @@ el:
       short: "%d %b"
       long: "%e %B %Y"
       long_ordinal: "%e %B %Y"
-      only_day: "%e"
-
     day_names:
       - Κυριακή
       - Δευτέρα
