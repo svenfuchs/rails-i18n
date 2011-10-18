@@ -9,7 +9,6 @@ el:
       default: "%d/%m/%Y"
       short: "%d %b"
       long: "%e %B %Y"
-      long_ordinal: "%e %B %Y"
     day_names:
       - Κυριακή
       - Δευτέρα
@@ -64,7 +63,6 @@ el:
       default: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
       long: "%A %d %B %Y %H:%M:%S %Z"
-      long_ordinal: "%A %d %B %Y %H:%M:%S %Z"
     am: 'πμ'
     pm: 'μμ'
 

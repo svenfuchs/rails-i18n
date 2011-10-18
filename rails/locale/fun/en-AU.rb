@@ -6,8 +6,7 @@
       :formats => {
         :default      => "%d/%m/%Y",
         :short        => "%e %b",
-        :long         => "%e %B, %Y",
-        :long_ordinal => lambda { |date| "#{date.day.ordinalize} %B, %Y" }
+        :long         => "%e %B, %Y"
       },
       :day_names => Date::DAYNAMES,
       :abbr_day_names => Date::ABBR_DAYNAMES,
@@ -20,8 +19,7 @@
         :default      => "%a %b %d %H:%M:%S %Z %Y",
         :time         => "%H:%M",
         :short        => "%d %b %H:%M",
-        :long         => "%d %B, %Y %H:%M",
-        :long_ordinal => lambda { |time| "#{time.day.ordinalize} %B, %Y %H:%M" }
+        :long         => "%d %B, %Y %H:%M"
       },
       :datetime => {
         :formats => {
