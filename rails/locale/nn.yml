@@ -108,7 +108,6 @@ nn:
     precision:
       format:
         delimiter: ""
-        precision: 4
   errors:
     template: &errors_template
       header: "kunne ikkje lagra %{model} grunna %{count} feil."
