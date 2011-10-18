@@ -21,8 +21,7 @@
         :time         => "%H:%M",
         :short        => "%d %b %H:%M",
         :long         => "%d %B, %Y %H:%M",
-        :long_ordinal => lambda { |time| "#{time.day.ordinalize} %B, %Y %H:%M" },
-        :only_second  => "%S"
+        :long_ordinal => lambda { |time| "#{time.day.ordinalize} %B, %Y %H:%M" }
       },
       :datetime => {
         :formats => {

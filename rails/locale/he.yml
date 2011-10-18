@@ -64,7 +64,6 @@
       default: "%a %d %b %H:%M:%S %Z %Y"
       short: "%d %b %H:%M"
       long: "%d ב%B, %Y %H:%M"
-      only_second: "%S"
     am: "am"
     pm: "pm"
 

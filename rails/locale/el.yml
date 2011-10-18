@@ -65,7 +65,6 @@ el:
       short: "%d %b %H:%M"
       long: "%A %d %B %Y %H:%M:%S %Z"
       long_ordinal: "%A %d %B %Y %H:%M:%S %Z"
-      only_second: "%S"
     am: 'πμ'
     pm: 'μμ'
 
