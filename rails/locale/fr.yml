@@ -178,10 +178,6 @@ fr:
       update: "Modifier ce(tte) %{model}"
       submit: "Enregistrer ce(tte) %{model}"
 
-  attributes:
-    created_at: "Créé le"
-    updated_at: "Modifié le"
-
   errors:
     format: "Le %{attribute} %{message}"
     messages: &errors_messages
