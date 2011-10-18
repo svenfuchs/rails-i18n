@@ -164,7 +164,6 @@ el:
 
   support:
     array:
-      skip_last_comma: true
       words_connector: ", "
       two_words_connector: " και "
       last_word_connector: " και "

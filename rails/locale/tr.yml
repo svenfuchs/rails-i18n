@@ -141,7 +141,6 @@ tr:
       # default value for :prompt => true in FormOptionsHelper
       prompt: "Lütfen seçiniz"
     array:
-      skip_last_comma: true
       words_connector: ", "
       two_words_connector: " ve "
       last_word_connector: " ve "

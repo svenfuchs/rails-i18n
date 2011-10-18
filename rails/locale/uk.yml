@@ -343,7 +343,6 @@ uk:
     select:
       prompt: "Оберіть:"
     array:
-      skip_last_comma: true
       words_connector: ", "
       two_words_connector: " і "
       last_word_connector: " та "

@@ -8,7 +8,6 @@ dsb:
       words_connector: ", "
       two_words_connector: " a "
       last_word_connector: " a "
-      skip_last_comma: true
 
   # Date
   date:

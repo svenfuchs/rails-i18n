@@ -73,7 +73,6 @@
       words_connector: ", "
       two_words_connector: " و "
       last_word_connector: ", و "
-      skip_last_comma: false
 
     select:
       prompt: "الرجاء اختيار"
