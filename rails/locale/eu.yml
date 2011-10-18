@@ -207,17 +207,18 @@
       even: "bikoitia izan behar du"
       taken: "hartuta dago"
       record_invalid: "Balioztatze arazoa: %{errors}"
+    template: &errors_template
+      header:
+        one:   "Errore batek ezinezkoa egin du {{model}} hau gordetzea"
+        other:  "{{count}} errorek ezinezkoa egiten dute {{model}} hau gordetzea"
+      body: "Arazoak egon dira ondoko eremuekin:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:   "Errore batek ezinezkoa egin du {{model}} hau gordetzea"
-          other:  "{{count}} errorek ezinezkoa egiten dute {{model}} hau gordetzea"
-        body: "Arazoak egon dira ondoko eremuekin:"
-
       messages:
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"
