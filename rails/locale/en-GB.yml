@@ -208,19 +208,20 @@
       less_than_or_equal_to: "must be less than or equal to %{count}"
       odd: "must be odd"
       even: "must be even"
+    template: &errors_template
+      header:
+        one: "1 error prohibited this %{model} from being saved"
+        other: "%{count} errors prohibited this %{model} from being saved"
+      body: "There were problems with the following fields:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "1 error prohibited this %{model} from being saved"
-          other:  "%{count} errors prohibited this %{model} from being saved"
-        body: "There were problems with the following fields:"
-
       messages:
         taken: "has already been taken"
         record_invalid: "Validation failed: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"
