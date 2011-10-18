@@ -205,6 +205,8 @@
       less_than_or_equal_to: "%{count} baino txikiago edo berdin izan behar da"
       odd: "bakoitia izan behar du"
       even: "bikoitia izan behar du"
+      taken: "hartuta dago"
+      record_invalid: "Balioztatze arazoa: %{errors}"
 
   activerecord:
     errors:
@@ -215,8 +217,6 @@
         body: "Arazoak egon dira ondoko eremuekin:"
 
       messages:
-        taken: "hartuta dago"
-        record_invalid: "Balioztatze arazoa: %{errors}"
         <<: *errors_messages
 
       full_messages:

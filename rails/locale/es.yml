@@ -206,6 +206,8 @@
       less_than_or_equal_to: "debe ser menor que o igual a %{count}"
       odd: "debe ser impar"
       even: "debe ser par"
+      taken: "ya está en uso"
+      record_invalid: "La validación falló: %{errors}"
     template: &errors_template
       header:
         one:   "No se pudo guardar este/a %{model} porque se encontró 1 error"
@@ -215,8 +217,6 @@
   activerecord:
     errors:
       messages:
-        taken: "ya está en uso"
-        record_invalid: "La validación falló: %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

@@ -221,6 +221,8 @@ da:
       less_than_or_equal_to: "skal være mindre end, eller lig med, %{count}"
       odd: "skal være et ulige tal"
       even: "skal være et lige tal"
+      taken: "er allerede brugt"
+      record_invalid: "Godkendelse gik galt: %{errors}"
 
   activerecord:
     errors:
@@ -231,8 +233,6 @@ da:
         body: "Der var problemer med følgende felter:"
 
       messages:
-        taken: "er allerede brugt"
-        record_invalid: "Godkendelse gik galt: %{errors}"
         <<: *errors_messages
 
       full_messages:

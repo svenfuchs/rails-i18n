@@ -205,6 +205,8 @@ es-CL:
       less_than_or_equal_to: "debe ser menor que o igual a %{count}"
       odd: "debe ser impar"
       even: "debe ser par"
+      taken: "ya está en uso"
+      record_invalid: "La validación falló: %{errors}"
 
   activerecord:
     errors:
@@ -216,8 +218,6 @@ es-CL:
         body: "Se encontraron problemas con los siguientes campos:"
 
       messages:
-        taken: "ya está en uso"
-        record_invalid: "La validación falló: %{errors}"
         <<: *errors_messages
 
       full_messages:

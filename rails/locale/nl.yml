@@ -204,6 +204,8 @@ nl:
       less_than_or_equal_to: "moet minder dan of gelijk zijn aan %{count}"
       odd: "moet oneven zijn"
       even: "moet even zijn"
+      taken: "is al in gebruik"
+      record_invalid: "Validatie mislukt: %{errors}"
     template: &errors_template
       header:
         one:    "%{model} niet opgeslagen: 1 fout gevonden"
@@ -213,8 +215,6 @@ nl:
   activerecord:
     errors:
       messages:
-        taken: "is al in gebruik"
-        record_invalid: "Validatie mislukt: %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

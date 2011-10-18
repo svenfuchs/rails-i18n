@@ -207,6 +207,8 @@
       less_than_or_equal_to: "يجب أن يكون أصغر من أو يساوي %{count}"
       odd: "يجب أن يكون فردي"
       even: "يجب أن يكون زوجي"
+      taken: "غير متوفر (مستخدم)"
+      record_invalid: "%{errors} فشل التحقق من صحة"
 
   activerecord:
     errors:
@@ -217,8 +219,6 @@
         body: "يرجى التحقق من الحقول التالية:"
 
       messages:
-        taken: "غير متوفر (مستخدم)"
-        record_invalid: "%{errors} فشل التحقق من صحة"
         <<: *errors_messages
 
       full_messages:

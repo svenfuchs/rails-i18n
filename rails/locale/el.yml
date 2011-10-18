@@ -207,6 +207,8 @@ el:
       less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσο με %{count}"
       odd: "πρέπει να είναι περιττός"
       even: "πρέπει να είναι άρτιος"
+      taken: "το έχουν ήδη χρησιμοποιήσει"
+      record_invalid: "Επικύρωση απέτυχε: %{errors}"
 
   activerecord:
     errors:
@@ -216,8 +218,6 @@ el:
           other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευθεί."
         body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία:"
       messages:
-        taken: "το έχουν ήδη χρησιμοποιήσει"
-        record_invalid: "Επικύρωση απέτυχε: %{errors}"
         <<: *errors_messages
 
       full_messages:

@@ -204,6 +204,8 @@ de:
       odd: "muss ungerade sein"
       even: "muss gerade sein"
       not_an_integer: "muss ganzzahlig sein"
+      taken: "ist bereits vergeben"
+      record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
     template: &errors_template
       header:
         one:    "Konnte %{model} nicht speichern: ein Fehler."
@@ -213,8 +215,6 @@ de:
   activerecord:
     errors:
       messages:
-        taken: "ist bereits vergeben"
-        record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

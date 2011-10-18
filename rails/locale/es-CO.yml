@@ -202,6 +202,8 @@ es-CO:
         accepted: "debe ser aceptado"
         even: "debe ser un número par"
         odd: "debe ser un número impar"
+        taken: "ya ha sido tomado"
+        record_invalid: "La validación falló: %{errors}"
 
   activerecord:
     errors:
@@ -212,8 +214,6 @@ es-CO:
         body: "Revise que los siguientes campos sean válidos:"
 
       messages:
-        taken: "ya ha sido tomado"
-        record_invalid: "La validación falló: %{errors}"
         <<: *errors_messages
 
       full_messages:

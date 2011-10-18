@@ -200,6 +200,8 @@ gsw-CH:
       less_than_or_equal_to: "mues chliiner oder gliich %{count} sii"
       odd: "mues ungraad sii"
       even: "mues graad sii"
+      taken: "isch bereits vergää"
+      record_invalid: "Gültigkeitsprüefig hät fehlgschlage: %{errors}"
 
   activerecord:
     errors:
@@ -210,8 +212,6 @@ gsw-CH:
         body: "Bitte überprüefed Si die Felder:"
 
       messages:
-        taken: "isch bereits vergää"
-        record_invalid: "Gültigkeitsprüefig hät fehlgschlage: %{errors}"
         <<: *errors_messages
 
       full_messages:

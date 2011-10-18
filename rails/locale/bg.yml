@@ -214,6 +214,8 @@ bg:
       less_than_or_equal_to: "трябва да има стойност, по-голяма или равна на %{count}"
       odd: "трябва да е четно"
       even: "трябва да е нечетно"
+      taken: "вече съществува"
+      record_invalid: "имаше грешки: %{errors}"
 
   activerecord:
     errors:
@@ -224,8 +226,6 @@ bg:
         body: "Възникнаха проблеми със следните полета:"
 
       messages:
-        taken: "вече съществува"
-        record_invalid: "имаше грешки: %{errors}"
         <<: *errors_messages
 
       full_messages:

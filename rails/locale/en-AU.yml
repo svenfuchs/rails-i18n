@@ -208,6 +208,8 @@
       less_than_or_equal_to: "must be less than or equal to %{count}"
       odd: "must be odd"
       even: "must be even"
+      taken: "has already been taken"
+      record_invalid: "Validation failed: %{errors}"
     template: &errors_template
       header:
         one: "1 error prohibited this %{model} from being saved"
@@ -217,8 +219,6 @@
   activerecord:
     errors:
       messages:
-        taken: "has already been taken"
-        record_invalid: "Validation failed: %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

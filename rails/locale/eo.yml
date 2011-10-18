@@ -209,12 +209,12 @@ eo:
       less_than_or_equal_to: "devas malsuperi aŭ egali %{count}"
       odd: "devas esti nepara"
       even: "devas esti para"
+      taken: "ne estas disponebla"
+      record_invalid: "Validado malsukcesis: %{errors}"
 
   activerecord:
     errors:
       messages:
-        taken: "ne estas disponebla"
-        record_invalid: "Validado malsukcesis: %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

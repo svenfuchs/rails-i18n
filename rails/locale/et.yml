@@ -242,6 +242,8 @@ et:
       less_than_or_equal_to: "peab olema vähem või võrdne arvuga %{count}"
       odd: "peab olema paaritu arv"
       even: "peab olema paarisarv"
+      taken: "on juba võetud"
+      record_invalid: "Valideerimine ebaõnnestus: %{errors}"
 
   activerecord:
     errors:
@@ -252,8 +254,6 @@ et:
         body: "Probleeme ilmnes järgmiste väljadega:"
 
       messages:
-        taken: "on juba võetud"
-        record_invalid: "Valideerimine ebaõnnestus: %{errors}"
         <<: *errors_messages
 
       full_messages:

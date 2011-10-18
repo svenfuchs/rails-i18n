@@ -241,6 +241,8 @@ bs:
       less_than_or_equal_to: "mora biti manje ili jednako %{count}"
       odd: "mora biti neparno"
       even: "mora biti parno"
+      taken: "je već zauzet"
+      record_invalid: "Validacija nije uspjela: %{errors}"
 
   activerecord:
     errors:
@@ -253,8 +255,6 @@ bs:
         body: "Desili su se problemi sa slijedećim poljima:"
 
       messages:
-        taken: "je već zauzet"
-        record_invalid: "Validacija nije uspjela: %{errors}"
         <<: *errors_messages
 
       full_messages:

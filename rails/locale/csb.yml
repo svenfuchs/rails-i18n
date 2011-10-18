@@ -214,6 +214,8 @@ csb:
       less_than_or_equal_to: "mùszi bëc mniszé abò równé %{count}"
       odd: "mùszi bëc nieparzësté"
       even: "mùszé bëc parzësté"
+      taken: "je ju zajãté"
+      record_invalid: "Negatiwné sprôwdzenié pòprawnoscë: %{errors}"
 
   activerecord:
     errors:
@@ -224,8 +226,6 @@ csb:
         body: "Fele tikają sã nëch pól:"
 
       messages:
-        taken: "je ju zajãté"
-        record_invalid: "Negatiwné sprôwdzenié pòprawnoscë: %{errors}"
         <<: *errors_messages
 
       full_messages:

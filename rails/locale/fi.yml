@@ -207,6 +207,8 @@ fi:
       less_than_or_equal_to: "täytyy olla pienempi tai yhtä suuri kuin %{count}"
       odd: "täytyy olla pariton"
       even: "täytyy olla parillinen"
+      taken: "on jo käytössä"
+      record_invalid: "Validointi epäonnistui: %{errors}"
 
   activerecord:
     errors:
@@ -217,8 +219,6 @@ fi:
         body: "Seuraavat kentät aiheuttivat ongelmia:"
 
       messages:
-        taken: "on jo käytössä"
-        record_invalid: "Validointi epäonnistui: %{errors}"
         <<: *errors_messages
 
       full_messages:
