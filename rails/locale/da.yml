@@ -223,17 +223,18 @@ da:
       even: "skal være et lige tal"
       taken: "er allerede brugt"
       record_invalid: "Godkendelse gik galt: %{errors}"
+    template:
+      header:
+        one: "En fejl forhindrede %{model} i at blive gemt"
+        other: "%{count} fejl forhindrede %{model} i at blive gemt"
+      body: "Der var problemer med følgende felter:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:   "En fejl forhindrede %{model} i at blive gemt"
-          other: "%{count} fejl forhindrede %{model} i at blive gemt"
-        body: "Der var problemer med følgende felter:"
-
       messages:
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"
