@@ -1,0 +1,221 @@
+# Azerbaijani translations for Ruby on Rails
+# by Nihad Abbasov (mail@narkoz.me)
+
+az:
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+
+    day_names:
+      - Bazar
+      - Bazar ertəsi
+      - Çərşənbə axşamı
+      - Çərşənbə
+      - Cümə axşamı
+      - Cümə
+      - Şənbə
+    abbr_day_names:
+      - B.
+      - B.E.
+      - Ç.A.
+      - Ç.
+      - C.A.
+      - C.
+      - Ş.
+
+    month_names:
+      - ~
+      - Yanvar
+      - Fevral
+      - Mart
+      - Aprel
+      - May
+      - İyun
+      - İyul
+      - Avqust
+      - Sentyabr
+      - Oktyabr
+      - Noyabr
+      - Dekabr
+    abbr_month_names:
+      - ~
+      - Yan
+      - Fev
+      - Mar
+      - Apr
+      - May
+      - İyn
+      - İyl
+      - Avq
+      - Sen
+      - Okt
+      - Noy
+      - Dek
+    order:
+      - :day
+      - :month
+      - :year
+
+  time:
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      short: "%d %b, %H:%M"
+      long: "%d %B %Y, %H:%M"
+    am: "günortaya qədər"
+    pm: "günortadan sonra"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " və "
+      last_word_connector: " və "
+
+    select:
+      prompt: "Seçin"
+
+  number:
+    format:
+      separator: "."
+      delimiter: " "
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%n %u"
+        unit: "AZN"
+        separator: "."
+        delimiter: " "
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Bayt"
+            other: "Bayt"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: Min
+          million: Milyon
+          billion: Milyard
+          trillion: Trilyon
+          quadrillion: Katrilyon
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "yarım dəqiqə"
+      less_than_x_seconds:
+        one:   "1 saniyədən az"
+        other: "%{count} saniyədən az"
+      x_seconds:
+        one:   "1 saniyə"
+        other: "%{count} saniyə"
+      less_than_x_minutes:
+        one:   "1 dəqiqədən az"
+        other: "%{count} dəqiqədən az"
+      x_minutes:
+        one:   "1 dəqiqə"
+        other: "%{count} dəqiqə"
+      about_x_hours:
+        one:   "təxminən 1 saat"
+        other: "təxminən %{count} saat"
+      x_days:
+        one:   "1 gün"
+        other: "%{count} gün"
+      about_x_months:
+        one:   "təxminən 1 ay"
+        other: "təxminən %{count} ay"
+      x_months:
+        one:   "1 ay"
+        other: "%{count} ay"
+      about_x_years:
+        one:   "təxminən 1 il"
+        other: "təxminən %{count} il"
+      over_x_years:
+        one:   "1 ildən çox"
+        other: "%{count} ildən çox"
+      almost_x_years:
+        one:   "təqribən 1 il"
+        other: "təqribən %{count} il"
+    prompts:
+      year:   "İl"
+      month:  "Ay"
+      day:    "Gün"
+      hour:   "Saat"
+      minute: "Dəqiqə"
+      second: "Saniyə"
+
+  helpers:
+    select:
+      prompt: "Seçin"
+
+    submit:
+      create: '%{model} yarat'
+      update: '%{model} yenilə'
+      submit: '%{model} saxla'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "siyahiyə daxil deyil"
+      exclusion: "qorunur"
+      invalid: "yalnışdır"
+      confirmation: "təsdiqə uygun deyil"
+      accepted: "qəbul olunmalıdır"
+      empty: "boş ola bilməz"
+      blank: "boş ola bilməz"
+      too_long: "çox uzundur (%{count} simvoldan çox olmalı deyil)"
+      too_short: "çox qısadır (%{count} simvoldan az olmalı deyil)"
+      wrong_length: "uzunluqu səhvdir (%{count} simvol olmalıdır)"
+      not_a_number: "rəqəm deyil"
+      not_an_integer: "tam rəqəm olmalıdır"
+      greater_than: "%{count}-dən böyük olmalıdır"
+      greater_than_or_equal_to: "böyük və ya %{count}-ə bərabər olmalıdır"
+      equal_to: "%{count}-ə bərabər olmalıdır"
+      less_than: "%{count}-dən kiçik olmalıdır"
+      less_than_or_equal_to: "kiçik və ya %{count}-ə bərabər olmalıdır"
+      odd: "tək olmalıdır"
+      even: "cüt olmalıdır"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "%{model} saxlanmadı: 1 səhv"
+          other:  "%{model} saxlanmadı: %{count} səhv"
+        body: "Aşağıdaki səhvlər üzə çıxdı:"
+
+      messages:
+        taken: "artıq mövcuddur"
+        record_invalid: "Yoxlama uğursuz oldu: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"
