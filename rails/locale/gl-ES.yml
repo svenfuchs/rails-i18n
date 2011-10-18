@@ -117,7 +117,6 @@ gl-ES:
   time:
     formats:
       default:    "%A, %e de %B de %Y ás %H:%M"
-      time:       "%H:%M"
       short:      "%e/%m, %H:%M"
       long:       "%A %e de %B de %Y ás %H:%M"
       # Podes engadir máis formatos nesta lista ou cambiar os aquí definidos

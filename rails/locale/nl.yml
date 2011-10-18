@@ -66,7 +66,6 @@ nl:
       default: "%a %d %b %Y %H:%M:%S %Z"
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
-      time: "%H:%M"
       only_second: "%S"
     am: "'s ochtends"
     pm: "'s middags"

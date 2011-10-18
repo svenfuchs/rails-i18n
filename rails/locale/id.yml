@@ -66,7 +66,6 @@ id:
       numeric: "%d-%b-%y %H:%M"
       short: "%d %b %H.%M"
       long: "%d %B %Y %H.%M"
-      time: "%H:%M"
     am: "am"
     pm: "pm"
 

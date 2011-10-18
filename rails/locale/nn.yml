@@ -59,7 +59,6 @@ nn:
   time:
     formats:
       default: "%A, %e. %B %Y, %H:%M"
-      time: "%H:%M"
       short: "%e. %B, %H:%M"
       long: "%A, %e. %B %Y, %H:%M"
     am: ""

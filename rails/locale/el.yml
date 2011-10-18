@@ -64,7 +64,6 @@ el:
   time:
     formats:
       default: "%d %B %Y %H:%M"
-      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%A %d %B %Y %H:%M:%S %Z"
       long_ordinal: "%A %d %B %Y %H:%M:%S %Z"

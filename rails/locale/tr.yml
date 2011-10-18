@@ -68,7 +68,6 @@ tr:
       numeric: "%d.%b.%y %H:%M"
       short: "%e %B, %H:%M"
       long: "%e %B %Y, %A, %H:%M"
-      time: "%H:%M"
 
     am: "öğleden önce"
     pm: "öğleden sonra"

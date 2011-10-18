@@ -65,8 +65,6 @@ gsw-CH:
       default: "%A, %d. %B %Y, %H:%M"
       short: "%d. %B, %H:%M"
       long: "%A, %d. %B %Y, %H:%M"
-      time: "%H:%M"
-
     am: "am Vormittaag"
     pm: "am Namitaag"
 
