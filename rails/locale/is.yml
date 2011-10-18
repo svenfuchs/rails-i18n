@@ -211,19 +211,20 @@
       less_than_or_equal_to: "þarf að vera minna en eða jafngilt %{count}"
       odd: "þarf að vera oddatala"
       even: "þarf að vera slétt tala"
+      taken: "er þegar í notkun"
+      record_invalid: "Villur: %{errors}"
+    template: &errors_template
+      header:
+        one: "Ekki var hægt að vista %{model} vegna einnar villu."
+        other: "Ekki var hægt að vista %{model} vegna %{count} villna."
+      body: "Upp kom vandamál í eftirfarandi dálkum:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Ekki var hægt að vista %{model} vegna einnar villu."
-          other:  "Ekki var hægt að vista %{model} vegna %{count} villna."
-        body: "Upp kom vandamál í eftirfarandi dálkum:"
-
       messages:
-        taken: "er þegar í notkun"
-        record_invalid: "Villur: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"
