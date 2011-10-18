@@ -216,18 +216,18 @@ bg:
       even: "трябва да е нечетно"
       taken: "вече съществува"
       record_invalid: "имаше грешки: %{errors}"
+    template: &errors_template
+      header:
+        one:    "%{model}: записа е неуспешен заради 1 грешка"
+        other:  "%{model}: записа е неуспешен заради %{count} грешки"
+      body: "Възникнаха проблеми със следните полета:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "%{model}: записа е неуспешен заради 1 грешка"
-          other:  "%{model}: записа е неуспешен заради %{count} грешки"
-        body: "Възникнаха проблеми със следните полета:"
-
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
 
