@@ -76,10 +76,6 @@ da:
 
   support:
     array:
-      # Rails 2.2
-      #sentence_connector: "og"
-      #skip_last_comma: true
-      # Rails 2.3
       words_connector: ", "
       two_words_connector: " og "
       last_word_connector: " og "

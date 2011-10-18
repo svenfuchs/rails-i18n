@@ -74,7 +74,6 @@ ca:
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "i"
       words_connector: ", "
       two_words_connector: " i "
       last_word_connector: ", i "

@@ -73,7 +73,6 @@ id:
     select:
       prompt: "Silahkan pilih"
     array:
-      sentence_connector: "dan"
       skip_last_comma: true
       words_connector: ", "
       two_words_connector: ", "

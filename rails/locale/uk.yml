@@ -343,7 +343,6 @@ uk:
     select:
       prompt: "Оберіть:"
     array:
-      sentence_connector: "і"
       skip_last_comma: true
       words_connector: ", "
       two_words_connector: " і "

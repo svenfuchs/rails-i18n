@@ -72,7 +72,6 @@ ko:
 
   support:
     array:
-      sentence_connector: ", "
       skip_last_comma: true
       words_connector: ", "
       two_words_connector: "와(과) "

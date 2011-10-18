@@ -118,10 +118,6 @@
         precision: 2
         format: '%n %u'
 
-  support:
-    array:
-      sentence_connector: "и"
-
   activerecord:
     errors:
       template:

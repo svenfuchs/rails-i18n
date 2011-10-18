@@ -1,8 +1,5 @@
 # Norwegian, nynorsk, by irb.no
 nn:
-  support:
-    array:
-      sentence_connector: "og"
   date:
     formats:
       default: "%d.%m.%Y"

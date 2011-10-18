@@ -215,9 +215,6 @@ bn-IN:
 # Used in array.to_sentence.
   support:
     array:
-      # Rails <= v.2.2.2
-      # sentence_connector: "y"
-      # Rails >= v.2.3
       words_connector: ", "
       two_words_connector: " এবং "
       last_word_connector: ", এবং "

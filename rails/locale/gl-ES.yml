@@ -170,9 +170,6 @@ gl-ES:
 
   support:
     array:
-      # Se estás a usar Rails <= 2.2.2
-      # sentence_connector: e
-      # Se estás a usar Rails >= 2.3
       words_connector: ", "
       two_words_connector: " e "
       last_word_connector: " e "
