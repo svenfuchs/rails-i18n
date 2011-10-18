@@ -209,16 +209,17 @@ el:
       even: "πρέπει να είναι άρτιος"
       taken: "το έχουν ήδη χρησιμοποιήσει"
       record_invalid: "Επικύρωση απέτυχε: %{errors}"
+    template: &errors_template
+      header:
+        one: "1 λάθος εμπόδισε αυτό το %{model} να αποθηκευθεί."
+        other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευθεί."
+      body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "1 λάθος εμπόδισε αυτό το %{model} να αποθηκευθεί."
-          other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευθεί."
-        body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία:"
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
