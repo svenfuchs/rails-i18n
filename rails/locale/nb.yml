@@ -132,7 +132,6 @@ nb:
     human:
       format:
         precision: 1
-        separator: ","
         delimiter: " "
         significant: false
         strip_insignificant_zeros: true
