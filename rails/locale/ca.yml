@@ -235,7 +235,7 @@ ca:
       odd: "ha de ser imparell"
       even: "ha de ser parell"
       record_invalid: "La validació ha fallat: %{errors}"
-    template: &error_template
+    template: &errors_template
       header:
         one: "No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error"
         other: "No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors"
