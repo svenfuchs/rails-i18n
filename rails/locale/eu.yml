@@ -209,8 +209,8 @@
       record_invalid: "Balioztatze arazoa: %{errors}"
     template: &errors_template
       header:
-        one:   "Errore batek ezinezkoa egin du {{model}} hau gordetzea"
-        other:  "{{count}} errorek ezinezkoa egiten dute {{model}} hau gordetzea"
+        one:   "Errore batek ezinezkoa egin du %{model} hau gordetzea"
+        other:  "%{count} errorek ezinezkoa egiten dute %{model} hau gordetzea"
       body: "Arazoak egon dira ondoko eremuekin:"
 
   activerecord:
