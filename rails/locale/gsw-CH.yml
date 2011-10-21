@@ -202,17 +202,17 @@ gsw-CH:
       even: "mues graad sii"
       taken: "isch bereits vergää"
       record_invalid: "Gültigkeitsprüefig hät fehlgschlage: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Han's %{model} nöd schpeichere chönne: än Fehler."
+        other:  "Han's %{model} näd schpeichere chönne: %{count} Fehler."
+      body: "Bitte überprüefed Si die Felder:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Han's %{model} nöd schpeichere chönne: än Fehler."
-          other:  "Han's %{model} näd schpeichere chönne: %{count} Fehler."
-        body: "Bitte überprüefed Si die Felder:"
-
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

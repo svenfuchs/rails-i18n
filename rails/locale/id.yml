@@ -173,55 +173,38 @@ id:
     format: "%{attribute} %{message}"
 
     messages: &errors_messages
-      inclusion: "tak termasuk dalam daftar"
-      exclusion: "dipakai"
+      inclusion: "tidak termasuk"
+      exclusion: "sudah digunakan"
       invalid: "tidak valid"
       confirmation: "tidak sesuai dengan konfirmasi"
       accepted: "harus diterima"
-      empty: "tidak boleh kosong"
-      blank: "tidak boleh kosong"
-      too_long: "terlalu panjang (maksimum adalah %{count} karakter)"
-      too_short: "terlalu pendek (minimum adalah %{count} karakter)"
-      wrong_length: "tidak sesuai dengan jumlah karakter yg di butuhkan (seharusnya %{count} karakter)"
+      empty: "tidak bisa kosong"
+      blank: "tidak bisa kosong"
+      too_long: "terlalu panjang (maksimum %{count} karakter)"
+      too_short: "terlalu pendek (minimum %{count} karakter)"
+      wrong_length: "jumlah karakter salah (seharusnya %{count} karakter)"
+      taken: "sudah digunakan"
       not_a_number: "bukan angka"
-      not_an_integer: "harus angka"
       greater_than: "harus lebih besar dari %{count}"
-      greater_than_or_equal_to: "harus lebih besar atau sama dengan %{count}"
+      greater_than_or_equal_to: "harus sama atau lebih besar dari %{count}"
       equal_to: "harus sama dengan %{count}"
-      less_than: "harus kurang dari %{count}"
-      less_than_or_equal_to: "harus kurang atau sama dengan %{count}"
+      less_than: "harus lebih kecil dari %{count}"
+      less_than_or_equal_to: "harus sama atau lebih kecil dari %{count}"
       odd: "harus ganjil"
       even: "harus genap"
+      record_invalid: "Verifikasi gagal: %{errors}"
+    template: &errors_template
+      header:
+        one: "1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
+        other: "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
+      body: "Ada masalah dengan field berikut:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
-          other:  "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
-        body: "Ada masalah dengan field berikut:"
       messages:
-        inclusion: "tidak termasuk"
-        exclusion: "sudah digunakan"
-        invalid: "tidak valid"
-        confirmation: "tidak sesuai dengan konfirmasi"
-        accepted: "harus diterima"
-        empty: "tidak bisa kosong"
-        blank: "tidak bisa kosong"
-        too_long: "terlalu panjang (maksimum %{count} karakter)"
-        too_short: "terlalu pendek (minimum %{count} karakter)"
-        wrong_length: "jumlah karakter salah (seharusnya %{count} karakter)"
-        taken: "sudah digunakan"
-        not_a_number: "bukan angka"
-        greater_than: "harus lebih besar dari %{count}"
-        greater_than_or_equal_to: "harus sama atau lebih besar dari %{count}"
-        equal_to: "harus sama dengan %{count}"
-        less_than: "harus lebih kecil dari %{count}"
-        less_than_or_equal_to: "harus sama atau lebih kecil dari %{count}"
-        odd: "harus ganjil"
-        even: "harus genap"
-        record_invalid: "Verifikasi gagal: %{errors}"
-
+        <<: *errors_messages
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
 

@@ -145,32 +145,37 @@ tr:
       two_words_connector: " ve "
       last_word_connector: " ve "
 
+  errors:
+    messages: &errors_messages
+      inclusion: "kabul edilen bir kelime değil"
+      exclusion: "kullanılamaz"
+      invalid: "geçersiz"
+      confirmation: "teyidiyle uyuşmamakta"
+      accepted: "kabul edilmeli"
+      empty: "doldurulmalı"
+      blank: "doldurulmalı"
+      too_long: "çok uzun (en fazla %{count} karakter)"
+      too_short: "çok kısa (en az %{count} karakter)"
+      wrong_length: "yanlış uzunlukta (tam olarak %{count} karakter olmalı)"
+      taken: "hali hazırda kullanılmakta"
+      not_a_number: "geçerli bir sayı değil"
+      greater_than: "%{count} sayısından büyük olmalı"
+      greater_than_or_equal_to: "%{count} sayısına eşit veya büyük olmalı"
+      equal_to: "tam olarak %{count} olmalı"
+      less_than: "%{count} sayısından küçük olmalı"
+      less_than_or_equal_to: "%{count} sayısına eşit veya küçük olmalı"
+      odd: "tek olmalı"
+      even: "çift olmalı"
+      record_invalid: "Doğrulama başarısız oldu: %{errors}"
+    template: &errors_template
+      header:
+        one:    "%{model} girişi kaydedilemedi: 1 hata."
+        other:  "%{model} girişi kadedilemedi: %{count} hata."
+      body: "Lütfen aşağıdaki hataları düzeltiniz:"
+
   activerecord:
     errors:
-      template:
-        header:
-          one:    "%{model} girişi kaydedilemedi: 1 hata."
-          other:  "%{model} girişi kadedilemedi: %{count} hata."
-        body: "Lütfen aşağıdaki hataları düzeltiniz:"
-
       messages:
-        inclusion: "kabul edilen bir kelime değil"
-        exclusion: "kullanılamaz"
-        invalid: "geçersiz"
-        confirmation: "teyidiyle uyuşmamakta"
-        accepted: "kabul edilmeli"
-        empty: "doldurulmalı"
-        blank: "doldurulmalı"
-        too_long: "çok uzun (en fazla %{count} karakter)"
-        too_short: "çok kısa (en az %{count} karakter)"
-        wrong_length: "yanlış uzunlukta (tam olarak %{count} karakter olmalı)"
-        taken: "hali hazırda kullanılmakta"
-        not_a_number: "geçerli bir sayı değil"
-        greater_than: "%{count} sayısından büyük olmalı"
-        greater_than_or_equal_to: "%{count} sayısına eşit veya büyük olmalı"
-        equal_to: "tam olarak %{count} olmalı"
-        less_than: "%{count} sayısından küçük olmalı"
-        less_than_or_equal_to: "%{count} sayısına eşit veya küçük olmalı"
-        odd: "tek olmalı"
-        even: "çift olmalı"
-        record_invalid: "Doğrulama başarısız oldu: %{errors}"
+        <<: *errors_messages
+      template:
+        <<: *errors_template

@@ -216,17 +216,18 @@ csb:
       even: "mùszé bëc parzësté"
       taken: "je ju zajãté"
       record_invalid: "Negatiwné sprôwdzenié pòprawnoscë: %{errors}"
+    template: &errors_template
+      header:
+        one:    "%{model} nie òstôł zachòwóny przez jedną felã"
+        other:  "%{model} nie òstôł zachòwóny przez %{count} felów"
+      body: "Fele tikają sã nëch pól:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "%{model} nie òstôł zachòwóny przez jedną felã"
-          other:  "%{model} nie òstôł zachòwóny przez %{count} felów"
-        body: "Fele tikają sã nëch pól:"
-
       messages:
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

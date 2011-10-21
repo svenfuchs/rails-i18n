@@ -82,36 +82,39 @@ lt:
       minute: "Minutė"
       second: "Sekundės"
 
+  errors:
+    template: &errors_template
+      header:
+        one:    "Išsaugant objektą %{model} rasta klaida"
+        other:  "Išsaugant objektą %{model} rastos %{count} klaidos"
+      body: "Šiuose laukuose yra klaidų:"
+    messages: &errors_messages
+      inclusion: "nenumatyta reikšmė"
+      exclusion: "užimtas"
+      invalid: "neteisingas"
+      confirmation: "neteisingai pakartotas"
+      accepted: "turi būti patvirtintas"
+      empty: "negali būti tuščias"
+      blank: "negali būti tuščias"
+      too_long: "per ilgas (daugiausiai %{count} simboliai)"
+      too_short: "per trumpas (mažiausiai %{count} simboliai)"
+      wrong_length: "neteisingo ilgio (turi būti %{count} simboliai)"
+      taken: "jau užimtas"
+      not_a_number: "ne skaičius"
+      greater_than: "turi būti didesnis už %{count}"
+      greater_than_or_equal_to: "turi būti didesnis arba lygus %{count}"
+      equal_to: "turi būti lygus %{count}"
+      less_than: "turi būti mažesnis už %{count}"
+      less_than_or_equal_to: "turi būti mažesnis arba lygus %{count}"
+      odd: "turi būti nelyginis"
+      even: "turi būti lyginis"
+
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Išsaugant objektą %{model} rasta klaida"
-          other:  "Išsaugant objektą %{model} rastos %{count} klaidos"
-        body: "Šiuose laukuose yra klaidų:"
-
       messages:
-        inclusion: "nenumatyta reikšmė"
-        exclusion: "užimtas"
-        invalid: "neteisingas"
-        confirmation: "neteisingai pakartotas"
-        accepted: "turi būti patvirtintas"
-        empty: "negali būti tuščias"
-        blank: "negali būti tuščias"
-        too_long: "per ilgas (daugiausiai %{count} simboliai)"
-        too_short: "per trumpas (mažiausiai %{count} simboliai)"
-        wrong_length: "neteisingo ilgio (turi būti %{count} simboliai)"
-        taken: "jau užimtas"
-        not_a_number: "ne skaičius"
-        greater_than: "turi būti didesnis už %{count}"
-        greater_than_or_equal_to: "turi būti didesnis arba lygus %{count}"
-        equal_to: "turi būti lygus %{count}"
-        less_than: "turi būti mažesnis už %{count}"
-        less_than_or_equal_to: "turi būti mažesnis arba lygus %{count}"
-        odd: "turi būti nelyginis"
-        even: "turi būti lyginis"
-
-      models:
+        <<: *errors_messages
+      template:
+        <<: *errors_template
 
   date:
     formats:

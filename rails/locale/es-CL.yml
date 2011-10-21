@@ -207,18 +207,17 @@ es-CL:
       even: "debe ser par"
       taken: "ya está en uso"
       record_invalid: "La validación falló: %{errors}"
+    template: &errors_template
+      header:
+        one:   "No se pudo guardar este/a %{model} porque se encontró 1 error"
+        other:  "No se pudo guardar este/a %{model} porque se encontraron %{count} errores"
+      body: "Se encontraron problemas con los siguientes campos:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:   "No se pudo guardar este/a %{model} porque se encontró 1 error"
-          other:  "No se pudo guardar este/a %{model} porque se encontraron %{count} errores"
-        # The variable :count is also available
-        body: "Se encontraron problemas con los siguientes campos:"
-
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

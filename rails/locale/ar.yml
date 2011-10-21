@@ -207,17 +207,18 @@
       even: "يجب أن يكون زوجي"
       taken: "غير متوفر (مستخدم)"
       record_invalid: "%{errors} فشل التحقق من صحة"
+    template: &errors_template
+      header:
+        one: "ليس بالامكان حفظ %{model}: خطأ واحد."
+        other: "ليس بالامكان حفظ %{model}: %{count} أخطاء."
+      body: "يرجى التحقق من الحقول التالية:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "ليس بالامكان حفظ %{model}: خطأ واحد."
-          other: "ليس بالامكان حفظ %{model}: %{count} أخطاء."
-        body: "يرجى التحقق من الحقول التالية:"
-
       messages:
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

@@ -205,17 +205,17 @@ cy:
       even: "rhaid bod yn eilrif"
       taken: "wedi'i gymryd yn barod"
       record_invalid: "Gwirio wedi methu: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Atalwyd y %{model} hwn rhag ei gadw gan 1 nam"
+        other:  "Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam"
+      body: "Cafwyd broblemau gyda'r meysydd canlynol:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Atalwyd y %{model} hwn rhag ei gadw gan 1 nam"
-          other:  "Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam"
-        body: "Cafwyd broblemau gyda'r meysydd canlynol:"
-
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

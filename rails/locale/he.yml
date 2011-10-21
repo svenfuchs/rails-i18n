@@ -206,19 +206,19 @@
       less_than_or_equal_to: "חייב להיות קטן או שווה ל- %{count}"
       odd: "חייב להיות אי זוגי"
       even: "חייב להיות זוגי"
+      taken: "כבר בשימוש"
+      record_invalid: "האימות נכשל: %{errors}"
+    template: &errors_template
+      header:
+        one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
+        other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
+      body: "אנא בדוק את השדות הבאים:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
-          other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
-        body: "אנא בדוק את השדות הבאים:"
-
       messages:
-        taken: "כבר בשימוש"
-        record_invalid: "האימות נכשל: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

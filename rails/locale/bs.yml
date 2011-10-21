@@ -243,20 +243,20 @@ bs:
       even: "mora biti parno"
       taken: "je već zauzet"
       record_invalid: "Validacija nije uspjela: %{errors}"
+    template: &errors_template
+      header:
+        one:    "1 greška je spriječila da se ovaj %{model} snimi"
+        few:    "%{count} greške su spriječile da se ovaj %{model} snimi"
+        many:   "%{count} grešaka je spriječilo da se ovaj %{model} snimi"
+        other:  "%{count} grešaka je spriječilo da se ovaj %{model} snimi"
+      body: "Desili su se problemi sa slijedećim poljima:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "1 greška je spriječila da se ovaj %{model} snimi"
-          few:    "%{count} greške su spriječile da se ovaj %{model} snimi"
-          many:   "%{count} grešaka je spriječilo da se ovaj %{model} snimi"
-          other:  "%{count} grešaka je spriječilo da se ovaj %{model} snimi"
-        body: "Desili su se problemi sa slijedećim poljima:"
-
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
 

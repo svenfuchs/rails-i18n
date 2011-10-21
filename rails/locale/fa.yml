@@ -206,17 +206,17 @@
       even: "باید زوج باشد"
       taken: "پیشتر گرفته شده"
       record_invalid: "رکورد نامعتبر است %{errors}"
+    template: &errors_template
+      header:
+        one: "1 خطا جلوی ذخیره این %{model} را گرفت"
+        other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
+      body: "موارد زیر مشکل داشت:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "1 خطا جلوی ذخیره این %{model} را گرفت"
-          other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
-        body: "موارد زیر مشکل داشت:"
-
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

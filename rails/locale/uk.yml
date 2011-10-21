@@ -185,7 +185,7 @@ uk:
     format: "%{attribute} %{message}"
     # The values :model, :attribute and :value are always available for interpolation
     # The value :count is available when applicable. Can be used for pluralization.
-    messages:
+    messages: &errors_messages
       inclusion: "не включено до переліку"
       exclusion: "зарезервовано"
       invalid: "недійсний"
@@ -219,55 +219,22 @@ uk:
       odd: "має бути непарним"
       even: "має бути парним"
       record_invalid: "Виникли помилки: %{errors}"
-
-  activerecord:
-    errors:
-      template:
+    template: &errors_template
         header:
           one:    "%{model} не збережено через %{count} помилку"
           few:    "%{model} не збережено через %{count} помилки"
           many:   "%{model} не збережено через %{count} помилок"
           other:  "%{model} не збережено через %{count} помилки"
-        # The variable :count is also available
         body: "Помилки виявлено в таких полях:"
 
+  activerecord:
+    errors:
       full_messages:
         format: "%{attribute} %{message}"
-      # The values :model, :attribute and :value are always available for interpolation
-      # The value :count is available when applicable. Can be used for pluralization.
       messages:
-        inclusion: "не включено до переліку"
-        exclusion: "зарезервовано"
-        invalid: "недійсний"
-        confirmation: "не збігається з підтвердженням"
-        accepted: "має бути прийнятий"
-        empty: "не може бути порожнім"
-        blank: "не може бути пустим"
-        too_long:
-          one:    "занадто довгий (максимум %{count} знак)"
-          few:    "занадто довгий (максимум %{count} знаки)"
-          many:   "занадто довгий (максимум %{count} знаків)"
-          other:  "занадто довгий (максимум %{count} знаку)"
-        too_short:
-          one:    "занадто короткий (мінімум %{count} знак)"
-          few:    "занадто короткий (мінімум %{count} знаки)"
-          many:   "занадто короткий (мінімум %{count} знаків)"
-          other:  "занадто короткий (мінімум %{count} знаку)"
-        wrong_length:
-          one:    "неправильна довжина (має бути %{count} знак)"
-          few:    "неправильна довжина (має бути %{count} знаки)"
-          many:   "неправильна довжина (має бути %{count} знаків)"
-          other:  "неправильна довжина (має бути %{count} знаку)"
-        taken: "вже зайнятий"
-        not_a_number: "не число"
-        greater_than: "має бути більше ніж %{count}"
-        greater_than_or_equal_to: "має бути більше ніж або дорівнювати %{count}"
-        equal_to: "має дорівнювати %{count}"
-        less_than: "має бути менше ніж %{count}"
-        less_than_or_equal_to: "має бути менше ніж або дорівнювати %{count}"
-        odd: "має бути непарним"
-        even: "має бути парним"
-        record_invalid: "Виникли помилки: %{errors}"
+        <<: *errors_messages
+      template:
+        <<: *errors_template
 
   date:
     formats:

@@ -120,31 +120,37 @@
         precision: 2
         format: '%n %u'
 
-  activerecord:
-    errors:
-      template:
-        header:
-          one: 'Nisam uspio spremiti %{model}: 1 greška'
-          few: 'Nisam uspio spremiti %{model}: %{count} greške.'
-          other: 'Nisam uspio spremiti %{model}: %{count} greški.'
-        body: "Molim Vas provjerite slijedeća polja:"
-      messages:
-        inclusion: "nije u listi"
-        exclusion: "nije dostupno"
-        invalid: "nije ispravan"
-        confirmation: "se ne slaže sa svojom potvrdom"
-        accepted: "mora biti prihvaćen"
-        empty: "mora biti ispunjen"
-        blank: "mora biti ispunjen"
-        too_long: "je predugačak (ne više od %{count} karaktera)"
-        too_short: "je prekratak (ne manje od %{count} karaktera)"
-        wrong_length: "nije odgovarajuće dužine (mora imati %{count} karaktera)"
-        taken: "je zauzeto"
-        not_a_number: "nije broj"
-        greater_than: "mora biti veće od %{count}"
-        greater_than_or_equal_to: "mora biti veće ili jednako %{count}"
-        equal_to: "mora biti jednako %{count}"
-        less_than: "mora biti manje od %{count}"
-        less_than_or_equal_to: "mora biti manje ili jednako %{count}"
-        odd: "mora biti neparno"
-        even: "mora biti parno"
+  errors:
+    template: &errors_template
+      header:
+        one: 'Nisam uspio spremiti %{model}: 1 greška'
+        few: 'Nisam uspio spremiti %{model}: %{count} greške.'
+        other: 'Nisam uspio spremiti %{model}: %{count} greški.'
+      body: "Molim Vas provjerite slijedeća polja:"
+    messages: &errors_messages
+      inclusion: "nije u listi"
+      exclusion: "nije dostupno"
+      invalid: "nije ispravan"
+      confirmation: "se ne slaže sa svojom potvrdom"
+      accepted: "mora biti prihvaćen"
+      empty: "mora biti ispunjen"
+      blank: "mora biti ispunjen"
+      too_long: "je predugačak (ne više od %{count} karaktera)"
+      too_short: "je prekratak (ne manje od %{count} karaktera)"
+      wrong_length: "nije odgovarajuće dužine (mora imati %{count} karaktera)"
+      taken: "je zauzeto"
+      not_a_number: "nije broj"
+      greater_than: "mora biti veće od %{count}"
+      greater_than_or_equal_to: "mora biti veće ili jednako %{count}"
+      equal_to: "mora biti jednako %{count}"
+      less_than: "mora biti manje od %{count}"
+      less_than_or_equal_to: "mora biti manje ili jednako %{count}"
+      odd: "mora biti neparno"
+      even: "mora biti parno"
+
+    activerecord:
+      errors:
+        messages:
+          <<: *errors_messages
+        template:
+          <<: *errors_template

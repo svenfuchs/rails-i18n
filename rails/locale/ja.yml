@@ -208,19 +208,19 @@ ja:
       less_than_or_equal_to: "は%{count}以下の値にしてください。"
       odd: "は奇数にしてください。"
       even: "は偶数にしてください。"
+      taken: "はすでに存在します。"
+      record_invalid: "バリデーションに失敗しました。 %{errors}"
+    template: &errors_template
+      header:
+        one:   "%{model}にエラーが発生しました。"
+        other: "%{model}に%{count}つのエラーが発生しました。"
+      body: "次の項目を確認してください。"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:   "%{model}にエラーが発生しました。"
-          other: "%{model}に%{count}つのエラーが発生しました。"
-        body: "次の項目を確認してください。"
-
       messages:
-        taken: "はすでに存在します。"
-        record_invalid: "バリデーションに失敗しました。 %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute}%{message}"

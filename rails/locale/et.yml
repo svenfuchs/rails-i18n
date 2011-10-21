@@ -207,17 +207,17 @@ et:
       even: "peab olema paarisarv"
       taken: "on juba võetud"
       record_invalid: "Valideerimine ebaõnnestus: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Üks viga takistas objekti %{model} salvestamist"
+        other:  "%{count} viga takistasid objekti %{model} salvestamist"
+      body: "Probleeme ilmnes järgmiste väljadega:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Üks viga takistas objekti %{model} salvestamist"
-          other:  "%{count} viga takistasid objekti %{model} salvestamist"
-        body: "Probleeme ilmnes järgmiste väljadega:"
-
       messages:
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

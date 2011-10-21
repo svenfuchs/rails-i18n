@@ -174,59 +174,35 @@ gl-ES:
       two_words_connector: " e "
       last_word_connector: " e "
 
-  # active_record
+  errors:
+    template: &errors_template
+      header:
+        one: "1 erro evitou que se poidese gardar o %{model}"
+        other: "%{count} erros evitaron que se poidese gardar o %{model}"
+      body: "Atopáronse os seguintes problemas:"
+    messages: &errors_messages
+      inclusion: "non está incluido na lista"
+      exclusion: "xa existe"
+      invalid: "non é válido"
+      confirmation: "non coincide coa confirmación"
+      accepted: "debe ser aceptado"
+      empty: "non pode estar valeiro"
+      blank: "non pode estar en blanco"
+      too_long: "é demasiado longo (non máis de %{count} carácteres)"
+      too_short: "é demasiado curto (non menos de %{count} carácteres)"
+      wrong_length: "non ten a lonxitude correcta (debe ser de %{count} carácteres)"
+      taken: "non está dispoñible"
+      not_a_number: "non é un número"
+      greater_than: "debe ser maior que %{count}"
+      greater_than_or_equal_to: "debe ser maior ou igual que %{count}"
+      equal_to: "debe ser igual a %{count}"
+      less_than: "debe ser menor que %{count}"
+      less_than_or_equal_to: "debe ser menor ou igual que %{count}"
+      odd: "debe ser par"
+      even: "debe ser impar"
+
   activerecord:
-    models:
-    # Traduce nomes de modelos. Usado en Model.human_name()
-    # Por exemplo
-    # model:
-    #   user: "Nota"
-    #   traducirá o modelo User como "Nota"
-
-    attributes:
-    # Traduce nomes de atributos de modelos. Usado en Model.human_attribute_name(attribute)
-    # Por exemplo
-    # attributes:
-    #   user:
-    #     login: "Aceso"
-    #     traducirá o atribute login do modelo User como "Aceso"
-
-    errors:
-      template:
-        header:
-          one: "1 erro evitou que se poidese gardar o %{model}"
-          other: "%{count} erros evitaron que se poidese gardar o %{model}"
-        # A variable :count tamén está dispoñible aquí
-        body: "Atopáronse os seguintes problemas:"
-      messages:
-        inclusion: "non está incluido na lista"
-        exclusion: "xa existe"
-        invalid: "non é válido"
-        confirmation: "non coincide coa confirmación"
-        accepted: "debe ser aceptado"
-        empty: "non pode estar valeiro"
-        blank: "non pode estar en blanco"
-        too_long: "é demasiado longo (non máis de %{count} carácteres)"
-        too_short: "é demasiado curto (non menos de %{count} carácteres)"
-        wrong_length: "non ten a lonxitude correcta (debe ser de %{count} carácteres)"
-        taken: "non está dispoñible"
-        not_a_number: "non é un número"
-        greater_than: "debe ser maior que %{count}"
-        greater_than_or_equal_to: "debe ser maior ou igual que %{count}"
-        equal_to: "debe ser igual a %{count}"
-        less_than: "debe ser menor que %{count}"
-        less_than_or_equal_to: "debe ser menor ou igual que %{count}"
-        odd: "debe ser par"
-        even: "debe ser impar"
-        # Engade aquí os teus propios mensaxes de erro ou no ámbito modelo/atributo
-
-        # Podes definir os teus propios erros para modelos ou para os atributos dun modelo
-        # Os valores :model, :attribute e :value están sempre dispoñibles para a interpolación
-        #
-        # Exemplos avanzados
-        # models:
-        #   user:
-        #     blank: "Esta é unha mensaxe personalizada para o modelo %{model}: %{attribute}"
-        #     attributes:
-        #       login:
-        #         blank: "Esta é unha mensaxe personalidaza para o modelo Usuario: login"
+    messages:
+      <<: *errors_messages
+    template:
+      <<: *errors_template

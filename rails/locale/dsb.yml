@@ -176,48 +176,51 @@ dsb:
         minute: "Minuta"
         second: "Sekunda"
 
-  # ActiveRecord validation messages
+  errors:
+    messages: &errors_messages
+      inclusion:           "njejo płaśiwa gódnota"
+      exclusion:           "njestoj k dispoziciji"
+      invalid:             "njejo płaśiwy"
+      confirmation:        "njejo se wobkšuśiło"
+      accepted:            "musy se wobkšuśiś"
+      empty:               "njesmějo prozny byś"
+      blank:               "jo trěbny"
+      too_long:
+        one:               "jo pśedłujki (maks. 1 znamješko)"
+        two:               "jo pśedłujki (maks. %{count} znamješce)"
+        few:               "jo pśedłujki (maks. %{count} znamješka)"
+        other:             "jo pśedłujki (maks. %{count} znamješkow)"
+      too_short:
+        one:               "jo překrotki (min. 1 znamješko)"
+        two:               "jo překrotki (min. %{count} znamješće)"
+        few:               "jo překrotki (min. %{count} znamješka)"
+        other:             "jo překrotki (min. %{count} znamješkow)"
+      wrong_length:
+        one:               "njama pšawu dłujkosć (1 znamješko wócakane)"
+        two:               "njama pšawu dłujkosć (%{count} znamješce wócakanej)"
+        few:               "njama pšawu dłujkosć (%{count} znamješka wócakane)"
+        other:             "njama pšawu dłujkosć (%{count} znamješkow wócakanych)"
+      taken:                "jo južo w datowej bance"
+      not_a_number:         "njejo licba"
+      greater_than:         "musy wětšy ako %{count} byś"
+      greater_than_or_equal_to: "musy wětšy abo jadnak %{count} być"
+      equal_to:                 "musy jadnak %{count} byś"
+      less_than:                "musy mjeńšy ako %{count} byś"
+      less_than_or_equal_to:    "musy mjeńšy abo jadnak %{count} byś"
+      odd:                      "musy njerowna licba byś"
+      even:                     "musy rowna licba byś"
+
+    template: &errors_template
+      header:
+        one:   "Pśi składowanju objekta %{model} jo k zmólce dojšło a njejo było móžno składowaś"
+        two:   "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś"
+        few:   "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś"
+        other: "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś"
+      body:  "Pšosym pśeglědaj slědujuce póla:"
+
   activerecord:
     errors:
       messages:
-        inclusion:           "njejo płaśiwa gódnota"
-        exclusion:           "njestoj k dispoziciji"
-        invalid:             "njejo płaśiwy"
-        confirmation:        "njejo se wobkšuśiło"
-        accepted:            "musy se wobkšuśiś"
-        empty:               "njesmějo prozny byś"
-        blank:               "jo trěbny"
-        too_long:
-          one:               "jo pśedłujki (maks. 1 znamješko)"
-          two:               "jo pśedłujki (maks. %{count} znamješce)"
-          few:               "jo pśedłujki (maks. %{count} znamješka)"
-          other:             "jo pśedłujki (maks. %{count} znamješkow)"
-        too_short:
-          one:               "jo překrotki (min. 1 znamješko)"
-          two:               "jo překrotki (min. %{count} znamješće)"
-          few:               "jo překrotki (min. %{count} znamješka)"
-          other:             "jo překrotki (min. %{count} znamješkow)"
-        wrong_length:
-          one:               "njama pšawu dłujkosć (1 znamješko wócakane)"
-          two:               "njama pšawu dłujkosć (%{count} znamješce wócakanej)"
-          few:               "njama pšawu dłujkosć (%{count} znamješka wócakane)"
-          other:             "njama pšawu dłujkosć (%{count} znamješkow wócakanych)"
-        taken:                "jo južo w datowej bance"
-        not_a_number:         "njejo licba"
-        greater_than:         "musy wětšy ako %{count} byś"
-        greater_than_or_equal_to: "musy wětšy abo jadnak %{count} być"
-        equal_to:                 "musy jadnak %{count} byś"
-        less_than:                "musy mjeńšy ako %{count} byś"
-        less_than_or_equal_to:    "musy mjeńšy abo jadnak %{count} byś"
-        odd:                      "musy njerowna licba byś"
-        even:                     "musy rowna licba byś"
-
+        <<: *errors_messages
       template:
-        header:
-          one:   "Pśi składowanju objekta %{model} jo k zmólce dojšło a njejo było móžno składowaś"
-          two:   "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś"
-          few:   "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś"
-          other: "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś"
-        body:  "Pšosym pśeglědaj slědujuce póla:"
-
-      models:
+        <<: *errors_template
