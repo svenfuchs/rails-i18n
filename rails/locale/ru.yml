@@ -1,4 +1,4 @@
-# Russian localization for Ruby on Rails 2.2+
+# Russian localization for Ruby on Rails 2.2+ and 3+
 # by Yaroslav Markin <yaroslav@markin.net>
 #
 # Be sure to check out "russian" gem (http://github.com/yaroslav/russian) for
@@ -6,7 +6,7 @@
 # The following is an excerpt from that gem.
 #
 # Для полноценной поддержки русского языка (варианты названий месяцев,
-# плюрализация и так далее) в Rails 2.2 нужно использовать gem "russian"
+# плюрализация и так далее) в Rails 2.2+ и Rails 3 нужно использовать gem "russian"
 # (http://github.com/yaroslav/russian). Следующие данные -- выдержка их него, чтобы
 # была возможность минимальной локализации приложения на русский язык.
 
@@ -172,30 +172,30 @@ ru:
         units:
           unit: ""
           thousand:
-            one: "Тысяча"
-            few: "Тысяч"
-            many: "Тысяч"
-            other: "Тысяч"
+            one: "тысяча"
+            few: "тысяч"
+            many: "тысяч"
+            other: "тысяч"
           million:
-            one: "Миллион"
-            few: "Миллионов"
-            many: "Миллионов"
-            other: "Миллионов"
+            one: "миллион"
+            few: "миллионов"
+            many: "миллионов"
+            other: "миллионов"
           billion:
-            one: "Миллиард"
-            few: "Миллиардов"
-            many: "Миллиардов"
-            other: "Миллиардов"
+            one: "миллиард"
+            few: "миллиардов"
+            many: "миллиардов"
+            other: "миллиардов"
           trillion:
-            one: "Триллион"
-            few: "Триллионов"
-            many: "Триллионов"
-            other: "Триллионов"
+            one: "триллион"
+            few: "триллионов"
+            many: "триллионов"
+            other: "триллионов"
           quadrillion:
-            one: "Квадриллион"
-            few: "Квадриллионов"
-            many: "Квадриллионов"
-            other: "Квадриллионов"
+            one: "квадриллион"
+            few: "квадриллионов"
+            many: "квадриллионов"
+            other: "квадриллионов"
 
   datetime:
     distance_in_words:
