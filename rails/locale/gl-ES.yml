@@ -148,9 +148,6 @@ gl-ES:
       x_days:
         one: '1 día'
         other: '%{count} días'
-      x_weeks:
-        one: '1 semana'
-        other: '%{count} semanas'
       about_x_months:
         one: 'aproximadamente 1 mes'
         other: '%{count} meses'
@@ -163,10 +160,6 @@ gl-ES:
       over_x_years:
         one: 'máis dun ano'
         other: '%{count} anos'
-      now: 'agora'
-      today: 'hoxe'
-      tomorrow: 'mañá'
-      in: 'dentro de'
 
   support:
     array:
@@ -202,7 +195,8 @@ gl-ES:
       even: "debe ser impar"
 
   activerecord:
-    messages:
-      <<: *errors_messages
-    template:
-      <<: *errors_template
+    errors:
+      messages:
+        <<: *errors_messages
+      template:
+        <<: *errors_template
