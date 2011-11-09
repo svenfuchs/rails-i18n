@@ -200,6 +200,8 @@ zh-CN:
       less_than_or_equal_to: "必须小于或等于 %{count}"
       odd: "必须为单数"
       even: "必须为双数"
+      taken: "已经被使用"
+      record_invalid: "验证失败: %{errors}"
     template: &errors_template
       header:
         one: "有 1 个错误发生导致「%{model}」无法被保存。"
