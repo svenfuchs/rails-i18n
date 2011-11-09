@@ -202,7 +202,8 @@ gl-ES:
       even: "debe ser impar"
 
   activerecord:
-    messages:
-      <<: *errors_messages
-    template:
-      <<: *errors_template
+    errors:
+      messages:
+        <<: *errors_messages
+      template:
+        <<: *errors_template
