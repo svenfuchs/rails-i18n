@@ -212,19 +212,20 @@
       less_than_or_equal_to: "tem de ser menor ou igual a %{count}"
       odd: "tem de ser ímpar"
       even: "tem de ser par"
+      taken: "não está disponível"
+      record_invalid: "A validação falhou: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Não foi possível guardar %{model}: 1 erro"
+        other:  "Não foi possível guardar %{model}: %{count} erros"
+      body: "Por favor, verifique os seguintes campos:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Não foi possível guardar %{model}: 1 erro"
-          other:  "Não foi possível guardar %{model}: %{count} erros"
-        body: "Por favor, verifique os seguintes campos:"
-
       messages:
-        taken: "não está disponível"
-        record_invalid: "A validação falhou: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

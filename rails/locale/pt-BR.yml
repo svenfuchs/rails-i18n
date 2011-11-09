@@ -194,13 +194,6 @@
 
   errors:
     format: "%{attribute} %{message}"
-
-    template:
-      header:
-        one: "Não foi possível gravar %{model}: 1 erro"
-        other: "Não foi possível gravar %{model}: %{count} erros."
-      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
-
     messages: &errors_messages
       inclusion: "não está incluído na lista"
       exclusion: "não está disponível"
@@ -221,19 +214,20 @@
       less_than_or_equal_to: "deve ser menor ou igual a %{count}"
       odd: "deve ser ímpar"
       even: "deve ser par"
+      taken: "já está em uso"
+      record_invalid: "A validação falhou: %{errors}"
+    template: &errors_template
+      header:
+        one: "Não foi possível gravar %{model}: 1 erro"
+        other: "Não foi possível gravar %{model}: %{count} erros."
+      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "Não foi possível gravar %{model}: 1 erro"
-          other: "Não foi possível gravar %{model}: %{count} erros."
-        body: "Por favor, verifique o(s) seguinte(s) campo(s):"
-
       messages:
-        taken: "já está em uso"
-        record_invalid: "A validação falhou: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

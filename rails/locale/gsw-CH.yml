@@ -9,8 +9,6 @@ gsw-CH:
       default: "%d.%m.%Y"
       short: "%e. %b"
       long: "%e. %B %Y"
-      only_day: "%e"
-
     day_names:
       - Sunntig
       - Mäntig
@@ -65,8 +63,6 @@ gsw-CH:
       default: "%A, %d. %B %Y, %H:%M"
       short: "%d. %B, %H:%M"
       long: "%A, %d. %B %Y, %H:%M"
-      time: "%H:%M"
-
     am: "am Vormittaag"
     pm: "am Namitaag"
 
@@ -204,19 +200,19 @@ gsw-CH:
       less_than_or_equal_to: "mues chliiner oder gliich %{count} sii"
       odd: "mues ungraad sii"
       even: "mues graad sii"
+      taken: "isch bereits vergää"
+      record_invalid: "Gültigkeitsprüefig hät fehlgschlage: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Han's %{model} nöd schpeichere chönne: än Fehler."
+        other:  "Han's %{model} näd schpeichere chönne: %{count} Fehler."
+      body: "Bitte überprüefed Si die Felder:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Han's %{model} nöd schpeichere chönne: än Fehler."
-          other:  "Han's %{model} näd schpeichere chönne: %{count} Fehler."
-        body: "Bitte überprüefed Si die Felder:"
-
       messages:
-        taken: "isch bereits vergää"
-        record_invalid: "Gültigkeitsprüefig hät fehlgschlage: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

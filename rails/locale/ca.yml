@@ -74,7 +74,6 @@ ca:
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "i"
       words_connector: ", "
       two_words_connector: " i "
       last_word_connector: ", i "
@@ -235,19 +234,19 @@ ca:
       less_than_or_equal_to: "ha de ser menor o igual a %{count}"
       odd: "ha de ser imparell"
       even: "ha de ser parell"
+      record_invalid: "La validació ha fallat: %{errors}"
+    template: &errors_template
+      header:
+        one: "No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error"
+        other: "No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors"
+      body: "Hi ha hagut problemes amb els següents camps:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:   "No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error"
-          other:  "No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors"
-        body: "Hi ha hagut problemes amb els següents camps:"
-
       messages:
-        taken: "ja està fet servir"
-        record_invalid: "La validació ha fallat: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

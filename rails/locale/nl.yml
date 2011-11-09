@@ -9,8 +9,6 @@ nl:
       default: "%d/%m/%Y"
       short: "%e %b"
       long: "%e %B %Y"
-      only_day: "%e"
-
     day_names:
       - zondag
       - maandag
@@ -66,8 +64,6 @@ nl:
       default: "%a %d %b %Y %H:%M:%S %Z"
       short: "%d %b %H:%M"
       long: "%d %B %Y %H:%M"
-      time: "%H:%M"
-      only_second: "%S"
     am: "'s ochtends"
     pm: "'s middags"
 
@@ -208,19 +204,20 @@ nl:
       less_than_or_equal_to: "moet minder dan of gelijk zijn aan %{count}"
       odd: "moet oneven zijn"
       even: "moet even zijn"
+      taken: "is al in gebruik"
+      record_invalid: "Validatie mislukt: %{errors}"
+    template: &errors_template
+      header:
+        one:    "%{model} niet opgeslagen: 1 fout gevonden"
+        other:  "%{model} niet opgeslagen: %{count} fouten gevonden"
+      body: "Controleer de volgende velden:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "%{model} niet opgeslagen: 1 fout gevonden"
-          other:  "%{model} niet opgeslagen: %{count} fouten gevonden"
-        body: "Controleer de volgende velden:"
-
       messages:
-        taken: "is al in gebruik"
-        record_invalid: "Validatie mislukt: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

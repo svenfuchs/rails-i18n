@@ -204,19 +204,19 @@ kn:
       less_than_or_equal_to: "%{count} ಕಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾಗಿರ ಇರಬೇಕು"
       odd: "ಬೆಸ ಆಗಿರಬೇಕು"
       even: "ಸಮ ಆಗಿರಬೇಕು"
+      taken: "ತೆಗೆದುಕೊಂಡಾಗಿದೆ"
+      record_invalid: "ತಪ್ಪು ಆಧಾರ: %{errors}"
+    template: &errors_template
+      header:
+        one:    "1 ಧೋಷದ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+        other:  "%{count} ಧೋಷಗಳ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+      body: "ಸಮಸ್ಯೆಗಳಿರುವ ಜಾಗಗಳು:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "1 ಧೋಷದ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
-          other:  "%{count} ಧೋಷಗಳ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
-        body: "ಸಮಸ್ಯೆಗಳಿರುವ ಜಾಗಗಳು:"
-
       messages:
-        taken: "ತೆಗೆದುಕೊಂಡಾಗಿದೆ"
-        record_invalid: "ತಪ್ಪು ಆಧಾರ: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
