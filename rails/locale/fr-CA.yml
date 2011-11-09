@@ -182,17 +182,6 @@ fr-CA:
       submit: "Enregistrer ce %{model}"
 
   errors:
-    template: &errors_template
-      header:
-        one:   "Impossible d'enregistrer ce %{model} : 1 erreur"
-        other: "Impossible d'enregistrer ce %{model} : %{count} erreurs"
-      body: "Veuillez vérifier les champs suivants : "
-
-  attributes:
-    created_at: "Créé le"
-    updated_at: "Modifié le"
-
-  errors:
     format: "Le %{attribute} %{message}"
     messages: &errors_messages
       inclusion: "n'est pas inclus(e) dans la liste"
@@ -222,6 +211,11 @@ fr-CA:
       even: "doit être pair"
       taken: "n'est pas disponible"
       record_invalid: "La validation a échoué : %{errors}"
+    template: &errors_template
+      header:
+        one:   "Impossible d'enregistrer ce %{model} : 1 erreur"
+        other: "Impossible d'enregistrer ce %{model} : %{count} erreurs"
+      body: "Veuillez vérifier les champs suivants : "
 
   activerecord:
     errors:
