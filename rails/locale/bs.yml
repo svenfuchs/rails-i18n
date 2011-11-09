@@ -144,7 +144,6 @@ bs:
         one: "manje od sekunde"
         few: "manje od %{count} sekunde"
         many: "manje od %{count} sekundi"
-        many: "manje od %{count} sekundi"
       x_seconds:
         one: "1 sekund"
         few: "%{count} sekunde"
@@ -170,11 +169,6 @@ bs:
         few: "%{count} dana"
         many: "%{count} dana"
         other: "%{count} dana"
-      about_x_days:
-        one: "oko dan"
-        few: "oko %{count} dana"
-        many: "oko %{count} dana"
-        other: "oko %{count} dana"
       x_months:
         one: "1 mjesec"
         few: "%{count} mjeseca"
@@ -185,11 +179,6 @@ bs:
         few: "oko %{count} mjeseca"
         many: "oko %{count} mjeseci"
         other: "oko %{count} mjeseci"
-      x_years:
-        one: "1 godina"
-        few: "%{count} godine"
-        many: "%{count} godina"
-        other: "%{count} godina"
       about_x_years:
         one: "oko godine"
         few: "oko %{count} godine"
@@ -259,12 +248,3 @@ bs:
         <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
-
-# Custom common model tranlations
-
-    models:
-      user: "korisnik"
-
-    attributes:
-      user:
-        login: "prijava"
