@@ -214,7 +214,7 @@ ca:
     format: "%{attribute} %{message}"
 
     messages: &errors_messages
-      inclusion: "no està incluós a la llista"
+      inclusion: "no està inclós a la llista"
       exclusion: "està reservat"
       invalid: "no és vàlid"
       confirmation: "no coincideix"
