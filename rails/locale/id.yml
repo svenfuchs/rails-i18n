@@ -2,9 +2,6 @@
 # by wynst (wynst.uei@gmail.com)
 
 id:
-  locale:
-    native_name: Bahasa Indonesia
-    address_separator: " "
   date:
     formats:
       default: "%d %B %Y"
@@ -63,7 +60,6 @@ id:
   time:
     formats:
       default: "%a, %d %b %Y %H.%M.%S %z"
-      numeric: "%d-%b-%y %H:%M"
       short: "%d %b %H.%M"
       long: "%d %B %Y %H.%M"
     am: "am"
