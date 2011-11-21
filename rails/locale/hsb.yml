@@ -174,14 +174,6 @@ hsb:
         two:    "přez %{count} lětomaj"
         few:    "přez %{count} lětami"
         other:  "přez %{count} lětami"
-      prompts:
-        year:   "Lěto"
-        month:  "Měsac"
-        day:    "Dźeń"
-        hour:   "Hodźina"
-        minute: "Mjeńšina"
-        second: "Sekunda"
-
   errors:
     messages: &errors_messages
       inclusion:    "njeje płaćiwa hódnota"
