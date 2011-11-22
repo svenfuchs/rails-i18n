@@ -2,13 +2,9 @@
 # by Ozgun Ataman (ozataman@gmail.com)
 
 tr:
-  locale:
-    native_name: Türkçe
-    address_separator: " "
   date:
     formats:
       default: "%d.%m.%Y"
-      numeric: "%d.%m.%Y"
       short: "%e %b"
       long: "%e %B %Y, %A"
     day_names:
@@ -63,7 +59,6 @@ tr:
   time:
     formats:
       default: "%a %d.%b.%y %H:%M"
-      numeric: "%d.%b.%y %H:%M"
       short: "%e %B, %H:%M"
       long: "%e %B %Y, %A, %H:%M"
 
@@ -124,16 +119,12 @@ tr:
     percentage:
       format:
         delimiter: '.'
-        separator: ','
-        precision: 2
     precision:
       format:
         delimiter: '.'
-        separator: ','
     human:
       format:
         delimiter: '.'
-        separator: ','
         precision: 2
 
   support:
