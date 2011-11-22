@@ -6,7 +6,6 @@ sl:
       default: "%d.%m.%Y"
       short: "%d. %b"
       long: "%d. %b %Y"
-      simple: "%d. %b %Y"
 
     day_names:
       - nedelja
@@ -63,7 +62,6 @@ sl:
       default: "%A, %d %b %Y ob %H:%M:%S"
       short: "%d. %b ob %H:%M"
       long: "%d. %B, %Y ob %H:%M"
-      simple: "%d. %B %Y ob %H:%M"
 
     am: "dopoldan"
     pm: "popoldan"
@@ -105,12 +103,12 @@ sl:
         other:  "%{count} napak preprečuje, da bi shranili %{model}"
       body: "Napačno izpolnjena polja:"
 
-    activerecord:
-      errors:
-        messages:
-          <<: *errors_messages
-        template:
-          <<: *errors_template
+  activerecord:
+    errors:
+      messages:
+        <<: *errors_messages
+      template:
+        <<: *errors_template
 
 
   number:
