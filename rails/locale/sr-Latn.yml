@@ -61,12 +61,8 @@
       default: "%a %b %d %H:%M:%S %Z %Y"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
-
-      am: 'AM'
-      pm: 'PM'
+    am: 'AM'
+    pm: 'PM'
 
   datetime:
     distance_in_words:
