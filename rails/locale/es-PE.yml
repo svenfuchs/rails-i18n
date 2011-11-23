@@ -79,15 +79,12 @@ es-PE:
       - noviembre
       - diciembre
     formats:
-      month_and_year: "%B %Y"
-      date_and_day: "%A %d"
       short: "%d de %b"
       default: "%d/%m/%Y"
       long: "%A, %d de %B del %Y"
   time:
     formats:
       short: "%d de %b a las %H:%M hrs"
-      short_with_year: "%d %b %Y"
       default: "%a, %d de %b del %Y a las %H:%M:%S %Z"
       long: "%A, %d de %B del %Y a las %I:%M %p"
     am: "am"
@@ -142,7 +139,6 @@ es-PE:
       inclusion: "no está incluído en la lista"
       exclusion: "está reservado"
       invalid: "es inválido"
-      invalid_date: "es una fecha inválida"
       confirmation: "no coincide con la confirmación"
       accepted: "debe ser aceptado"
       blank: "no puede estar en blanco"
