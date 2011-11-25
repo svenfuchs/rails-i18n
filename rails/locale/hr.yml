@@ -7,8 +7,6 @@
       default: "%d/%m/%Y"
       short: "%e %b"
       long: "%B %e, %Y"
-      only_day: "%e"
-
     day_names:
       - Nedjelja
       - Ponedjeljak
@@ -61,17 +59,10 @@
   time:
     formats:
       default: "%a %b %d %H:%M:%S %Z %Y"
-      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
-      only_second: "%S"
-
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
-
-      am: 'AM'
-      pm: 'PM'
+    am: 'AM'
+    pm: 'PM'
 
   datetime:
     distance_in_words:
@@ -125,35 +116,37 @@
         precision: 2
         format: '%n %u'
 
-  support:
-    array:
-      sentence_connector: "i"
+  errors:
+    template: &errors_template
+      header:
+        one: 'Nisam uspio spremiti %{model}: 1 greška'
+        few: 'Nisam uspio spremiti %{model}: %{count} greške.'
+        other: 'Nisam uspio spremiti %{model}: %{count} greški.'
+      body: "Molim Vas provjerite slijedeća polja:"
+    messages: &errors_messages
+      inclusion: "nije u listi"
+      exclusion: "nije dostupno"
+      invalid: "nije ispravan"
+      confirmation: "se ne slaže sa svojom potvrdom"
+      accepted: "mora biti prihvaćen"
+      empty: "mora biti ispunjen"
+      blank: "mora biti ispunjen"
+      too_long: "je predugačak (ne više od %{count} karaktera)"
+      too_short: "je prekratak (ne manje od %{count} karaktera)"
+      wrong_length: "nije odgovarajuće dužine (mora imati %{count} karaktera)"
+      taken: "je zauzeto"
+      not_a_number: "nije broj"
+      greater_than: "mora biti veće od %{count}"
+      greater_than_or_equal_to: "mora biti veće ili jednako %{count}"
+      equal_to: "mora biti jednako %{count}"
+      less_than: "mora biti manje od %{count}"
+      less_than_or_equal_to: "mora biti manje ili jednako %{count}"
+      odd: "mora biti neparno"
+      even: "mora biti parno"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: 'Nisam uspio spremiti %{model}: 1 greška'
-          few: 'Nisam uspio spremiti %{model}: %{count} greške.'
-          other: 'Nisam uspio spremiti %{model}: %{count} greški.'
-        body: "Molim Vas provjerite slijedeća polja:"
       messages:
-        inclusion: "nije u listi"
-        exclusion: "nije dostupno"
-        invalid: "nije ispravan"
-        confirmation: "se ne slaže sa svojom potvrdom"
-        accepted: "mora biti prihvaćen"
-        empty: "mora biti ispunjen"
-        blank: "mora biti ispunjen"
-        too_long: "je predugačak (ne više od %{count} karaktera)"
-        too_short: "je prekratak (ne manje od %{count} karaktera)"
-        wrong_length: "nije odgovarajuće dužine (mora imati %{count} karaktera)"
-        taken: "je zauzeto"
-        not_a_number: "nije broj"
-        greater_than: "mora biti veće od %{count}"
-        greater_than_or_equal_to: "mora biti veće ili jednako %{count}"
-        equal_to: "mora biti jednako %{count}"
-        less_than: "mora biti manje od %{count}"
-        less_than_or_equal_to: "mora biti manje ili jednako %{count}"
-        odd: "mora biti neparno"
-        even: "mora biti parno"
+        <<: *errors_messages
+      template:
+        <<: *errors_template

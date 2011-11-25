@@ -214,85 +214,19 @@ bg:
       less_than_or_equal_to: "трябва да има стойност, по-голяма или равна на %{count}"
       odd: "трябва да е четно"
       even: "трябва да е нечетно"
+      taken: "вече съществува"
+      record_invalid: "имаше грешки: %{errors}"
+    template: &errors_template
+      header:
+        one:    "%{model}: записа е неуспешен заради 1 грешка"
+        other:  "%{model}: записа е неуспешен заради %{count} грешки"
+      body: "Възникнаха проблеми със следните полета:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "%{model}: записа е неуспешен заради 1 грешка"
-          other:  "%{model}: записа е неуспешен заради %{count} грешки"
-        body: "Възникнаха проблеми със следните полета:"
-
       messages:
-        taken: "вече съществува"
-        record_invalid: "имаше грешки: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
-
-  # ===== I18n Specific ============================================================================
-
-  i18n:
-    transliterate:
-      rule:
-        а: "a"
-        А: "A"
-        б: "b"
-        Б: "B"
-        в: "v"
-        В: "V"
-        г: "g"
-        Г: "G"
-        д: "d"
-        Д: "D"
-        е: "e"
-        Е: "E"
-        ж: "zh"
-        Ж: "Zh"
-        з: "z"
-        З: "Z"
-        и: "i"
-        И: "I"
-        й: "y"
-        Й: "Y"
-        к: "k"
-        К: "K"
-        л: "l"
-        Л: "L"
-        м: "m"
-        М: "M"
-        н: "n"
-        Н: "N"
-        о: "o"
-        О: "O"
-        п: "p"
-        П: "P"
-        р: "r"
-        Р: "R"
-        с: "s"
-        С: "S"
-        т: "t"
-        Т: "T"
-        у: "u"
-        У: "U"
-        ф: "f"
-        Ф: "F"
-        х: "h"
-        Х: "H"
-        ц: "ts"
-        Ц: "Ts"
-        ч: "ch"
-        Ч: "Ch"
-        ш: "sh"
-        Ш: "Sh"
-        щ: "sht"
-        Щ: "Sht"
-        ъ: "a"
-        Ъ: "A"
-        ь: "y"
-        Ь: "Y"
-        ю: "yu"
-        Ю: "Yu"
-        я: "ya"
-        Я: "Ya"

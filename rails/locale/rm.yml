@@ -147,31 +147,36 @@ rm:
       two_words_connector: " e "
       last_word_connector: " e "
 
+  errors:
+    messages: &errors_messages
+      inclusion: "n'è betg sin la glista"
+      exclusion: "na stat betg a disposiziun"
+      invalid: "n'è betg valid"
+      confirmation: "na correspunda betg al champ da conferma"
+      accepted: "sto vegnir acceptà"
+      empty: "sto vegnir emplenì ora"
+      blank: "sto vegnir emplenì ora"
+      too_long: "è memia lung (betg dapli che %{count} caracters)"
+      too_short: "è memia curt (betg pli pauc che %{count} caracters)"
+      wrong_length: "ha la fallida lunghezza (sto avair %{count} caracters)"
+      taken: "è gia occupà"
+      not_a_number: "è betg in dumber"
+      greater_than: "sto esser pli grond che %{count}"
+      greater_than_or_equal_to: "sto esser pli grond u medem sco %{count}"
+      equal_to: "sto esser exact %{count}"
+      less_than: "sto esser pli pitschen che %{count}"
+      less_than_or_equal_to: "sto esser pli pitschen u medem sco %{count}"
+      odd: "sto esser spèr"
+      even: "sto esser pèr"
+    template: &errors_template
+      header:
+        one:    "Betg pussaivel da memorisar quest %{model}: 1 errur."
+        other:  "Betg pussaivel da memorisar quest %{model}: %{count} errurs."
+      body: "Faschai uschè bain e controllai ils suandants champs:"
+
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Betg pussaivel da memorisar quest %{model}: 1 errur."
-          other:  "Betg pussaivel da memorisar quest %{model}: %{count} errurs."
-        body: "Faschai uschè bain e controllai ils suandants champs:"
-
       messages:
-        inclusion: "n'è betg sin la glista"
-        exclusion: "na stat betg a disposiziun"
-        invalid: "n'è betg valid"
-        confirmation: "na correspunda betg al champ da conferma"
-        accepted: "sto vegnir acceptà"
-        empty: "sto vegnir emplenì ora"
-        blank: "sto vegnir emplenì ora"
-        too_long: "è memia lung (betg dapli che %{count} caracters)"
-        too_short: "è memia curt (betg pli pauc che %{count} caracters)"
-        wrong_length: "ha la fallida lunghezza (sto avair %{count} caracters)"
-        taken: "è gia occupà"
-        not_a_number: "è betg in dumber"
-        greater_than: "sto esser pli grond che %{count}"
-        greater_than_or_equal_to: "sto esser pli grond u medem sco %{count}"
-        equal_to: "sto esser exact %{count}"
-        less_than: "sto esser pli pitschen che %{count}"
-        less_than_or_equal_to: "sto esser pli pitschen u medem sco %{count}"
-        odd: "sto esser spèr"
-        even: "sto esser pèr"
+        <<: *errors_messages
+      template:
+        <<: *errors_template

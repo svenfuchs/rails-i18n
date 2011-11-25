@@ -177,17 +177,6 @@ eo:
       submit: "Registri tiun %{model}"
 
   errors:
-    template: &errors_template
-      header:
-        one: "Ne eblas registri tiun %{model}: 1 eraro"
-        other: "Ne eblas registri tiun %{model}: %{count} eraroj"
-      body: "Kontrolu la jenajn kampojn: "
-
-  attributes:
-    created_at: "Kreita la"
-    updated_at: "Modifita la"
-
-  errors:
     format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "ne estas inkluzivita de la listo"
@@ -209,12 +198,17 @@ eo:
       less_than_or_equal_to: "devas malsuperi aŭ egali %{count}"
       odd: "devas esti nepara"
       even: "devas esti para"
+      taken: "ne estas disponebla"
+      record_invalid: "Validado malsukcesis: %{errors}"
+    template: &errors_template
+      header:
+        one: "Ne eblas registri tiun %{model}: 1 eraro"
+        other: "Ne eblas registri tiun %{model}: %{count} eraroj"
+      body: "Kontrolu la jenajn kampojn: "
 
   activerecord:
     errors:
       messages:
-        taken: "ne estas disponebla"
-        record_invalid: "Validado malsukcesis: %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

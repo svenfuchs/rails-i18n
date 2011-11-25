@@ -204,19 +204,20 @@ sw:
       less_than_or_equal_to: 'z/iwe sawa na, ama chini ya {{count}}'
       odd: 'z/iwe witiri'
       even: 'z/iwe shufwa'
+      taken: 'imesajiliwa'
+      record_invalid: "Uhalalishaji umeshindikana: %{errors}"
+    template: &errors_template
+      header:
+        one: '%{model} haikuhifadhiwa kwa sababu moja.'
+        other: '%{model} haikuhifadhiwa kwa sababu %{count}.'
+      body: 'Tafadhali kagua sehemu zifuatazo:'
 
   activerecord:
     errors:
-      template:
-        header:
-          one: '%{model} haikuhifadhiwa kwa sababu moja.'
-          other: '%{model} haikuhifadhiwa kwa sababu %{count}.'
-        body: 'Tafadhali kagua sehemu zifuatazo:'
-
       messages:
-        taken: 'imesajiliwa'
-        record_invalid: "Uhalalishaji umeshindikana: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: '%{attribute}%{message}'

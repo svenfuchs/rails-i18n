@@ -9,9 +9,6 @@ el:
       default: "%d/%m/%Y"
       short: "%d %b"
       long: "%e %B %Y"
-      long_ordinal: "%e %B %Y"
-      only_day: "%e"
-
     day_names:
       - Κυριακή
       - Δευτέρα
@@ -64,11 +61,8 @@ el:
   time:
     formats:
       default: "%d %B %Y %H:%M"
-      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%A %d %B %Y %H:%M:%S %Z"
-      long_ordinal: "%A %d %B %Y %H:%M:%S %Z"
-      only_second: "%S"
     am: 'πμ'
     pm: 'μμ'
 
@@ -170,8 +164,6 @@ el:
 
   support:
     array:
-      sentence_connector: ' και '
-      skip_last_comma: true
       words_connector: ", "
       two_words_connector: " και "
       last_word_connector: " και "
@@ -211,18 +203,19 @@ el:
       less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσο με %{count}"
       odd: "πρέπει να είναι περιττός"
       even: "πρέπει να είναι άρτιος"
+      taken: "το έχουν ήδη χρησιμοποιήσει"
+      record_invalid: "Επικύρωση απέτυχε: %{errors}"
+    template: &errors_template
+      header:
+        one: "1 λάθος εμπόδισε αυτό το %{model} να αποθηκευθεί."
+        other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευθεί."
+      body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "1 λάθος εμπόδισε αυτό το %{model} να αποθηκευθεί."
-          other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευθεί."
-        body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία:"
       messages:
-        taken: "το έχουν ήδη χρησιμοποιήσει"
-        record_invalid: "Επικύρωση απέτυχε: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

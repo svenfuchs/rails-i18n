@@ -103,37 +103,43 @@ bn-IN:
       minute: "মিনিট"
       second: "সেকেন্ড"
 
+  errors:
+    messages: &errors_messages
+      inclusion: "লিস্টে অন্তর্ভুক্ত নয়"
+      exclusion: "রিসার্ভ করা অাছে"
+      invalid: "সঠিক নয়"
+      confirmation: "অনুমোদনের সঙ্গে মিলছে না"
+      accepted: "গ্রাহ্য করতে হবে"
+      empty: "খালি রাখা যাবে না"
+      blank: "ফাঁকা রাখা যাবে না"
+      too_long: "খুব বড়ো (সর্বোচ্চ %{count} অক্ষর)"
+      too_short: "খুব ছোটো (সর্বনিম্ন %{count} অক্ষর)"
+      wrong_length: "দৈর্ঘ্যটি সঠিক নয় (%{count} অক্ষর হতে হবে)"
+      taken: "অাগেই নিয়ে নেওয়া হয়েছে"
+      not_a_number: "নম্বর নয়"
+      greater_than: "%{count} থেকে বড়ো হতে হবে"
+      greater_than_or_equal_to: "%{count} থেকে বড়ো অথবা তার সমান হতে হবে"
+      equal_to: "%{count} এর সঙ্গে সমান হতে হবে"
+      less_than: "%{count} থেকে ছোটো হতে হবে"
+      less_than_or_equal_to: "%{count} থেকে ছোটো অথবা তার সমান হতে হবে"
+      odd: "বেজোড় হতে হবে"
+      even: "জোড় হতে হবে"
+    template: &errors_template
+      header:
+        one:   "১ টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
+        other:  "%{count} টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
+      body: "এই ফিল্ডগুলোতে কিছু সমস্যা দেখা দিয়েছে:"
+  
   activerecord:
     errors:
+      messages:
+        <<: *errors_messages
       template:
-        header:
-          one:   "১ টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
-          other:  "%{count} টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
-        # The variable :count is also available
-        body: "এই ফিল্ডগুলোতে কিছু সমস্যা দেখা দিয়েছে:"
+        <<: *errors_template
 
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
-      messages:
-        inclusion: "লিস্টে অন্তর্ভুক্ত নয়"
-        exclusion: "রিসার্ভ করা অাছে"
-        invalid: "সঠিক নয়"
-        confirmation: "অনুমোদনের সঙ্গে মিলছে না"
-        accepted: "গ্রাহ্য করতে হবে"
-        empty: "খালি রাখা যাবে না"
-        blank: "ফাঁকা রাখা যাবে না"
-        too_long: "খুব বড়ো (সর্বোচ্চ %{count} অক্ষর)"
-        too_short: "খুব ছোটো (সর্বনিম্ন %{count} অক্ষর)"
-        wrong_length: "দৈর্ঘ্যটি সঠিক নয় (%{count} অক্ষর হতে হবে)"
-        taken: "অাগেই নিয়ে নেওয়া হয়েছে"
-        not_a_number: "নম্বর নয়"
-        greater_than: "%{count} থেকে বড়ো হতে হবে"
-        greater_than_or_equal_to: "%{count} থেকে বড়ো অথবা তার সমান হতে হবে"
-        equal_to: "%{count} এর সঙ্গে সমান হতে হবে"
-        less_than: "%{count} থেকে ছোটো হতে হবে"
-        less_than_or_equal_to: "%{count} থেকে ছোটো অথবা তার সমান হতে হবে"
-        odd: "বেজোড় হতে হবে"
-        even: "জোড় হতে হবে"
+      
 
         # Append your own errors here or at the model/attributes scope.
 
@@ -215,9 +221,6 @@ bn-IN:
 # Used in array.to_sentence.
   support:
     array:
-      # Rails <= v.2.2.2
-      # sentence_connector: "y"
-      # Rails >= v.2.3
       words_connector: ", "
       two_words_connector: " এবং "
       last_word_connector: ", এবং "

@@ -9,10 +9,6 @@ hsb:
       words_connector: ", "
       two_words_connector: " a "
       last_word_connector: " a "
-      sentence_connector: "a"
-      skip_last_comma: true
-
-
 
   # Date
   date:
@@ -178,56 +174,50 @@ hsb:
         two:    "přez %{count} lětomaj"
         few:    "přez %{count} lětami"
         other:  "přez %{count} lětami"
-      prompts:
-        year:   "Lěto"
-        month:  "Měsac"
-        day:    "Dźeń"
-        hour:   "Hodźina"
-        minute: "Mjeńšina"
-        second: "Sekunda"
+  errors:
+    messages: &errors_messages
+      inclusion:    "njeje płaćiwa hódnota"
+      exclusion:    "njesteji k dispoziciji"
+      invalid:      "njeje płaćiwy"
+      confirmation: "njebu wobkrućene"
+      accepted:     "dyrbi so wobkrućić"
+      empty:        "njesmě prózdny być"
+      blank:        "je trěbny"
+      too_long:
+        one:        "je předołhi (maks. 1 znamješko)"
+        two:        "je předołhi (maks. %{count} znamješce)"
+        few:        "je předołhi (maks. %{count} znamješka)"
+        other:      "je předołhi (maks. %{count} znamješkow)"
+      too_short:
+        one:        "je překrótki (min. 1 znamješko)"
+        two:        "je překrótki (min. %{count} znamješće)"
+        few:        "je překrótki (min. %{count} znamješka)"
+        other:      "je překrótki (min. %{count} znamješkow)"
+      wrong_length:
+        one:        "nima prawu dołhosć (1 znamješko wočakowane)"
+        two:        "nima prawu dołhosć (%{count} znamješce wočakowanej)"
+        few:        "nima prawu dołhosć (%{count} znamješka wočakowane)"
+        other:      "nima prawu dołhosć (%{count} znamješkow wočakowanych)"
+      taken:        "je hižo w datowej bance"
+      not_a_number: "njeje ličba"
+      greater_than: "dyrbi wjetši hač %{count} być"
+      greater_than_or_equal_to: "dyrbi wjetši abo runja %{count} być"
+      equal_to:                 "dyrbi runja %{count} być"
+      less_than:                "dyrbi mjenje hač %{count} być"
+      less_than_or_equal_to:    "dyrbi mjenje abo runja %{count} być"
+      odd:                      "dyrbi njeruna ličby być"
+      even:                     "dyrbi runa ličba być"
+    template: &errors_template
+      header:
+        one:   "Při składowanju objekta %{model} je k zmylkej dóšło a njebě móžno składować"
+        two:   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
+        few:   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
+        other: "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
+      body:  "Prošu přepruwuj slědowace pola:"
 
-  # ActiveRecord validation messages
   activerecord:
     errors:
       messages:
-        inclusion:    "njeje płaćiwa hódnota"
-        exclusion:    "njesteji k dispoziciji"
-        invalid:      "njeje płaćiwy"
-        confirmation: "njebu wobkrućene"
-        accepted:     "dyrbi so wobkrućić"
-        empty:        "njesmě prózdny być"
-        blank:        "je trěbny"
-        too_long:
-          one:        "je předołhi (maks. 1 znamješko)"
-          two:        "je předołhi (maks. %{count} znamješce)"
-          few:        "je předołhi (maks. %{count} znamješka)"
-          other:      "je předołhi (maks. %{count} znamješkow)"
-        too_short:
-          one:        "je překrótki (min. 1 znamješko)"
-          two:        "je překrótki (min. %{count} znamješće)"
-          few:        "je překrótki (min. %{count} znamješka)"
-          other:      "je překrótki (min. %{count} znamješkow)"
-        wrong_length:
-          one:        "nima prawu dołhosć (1 znamješko wočakowane)"
-          two:        "nima prawu dołhosć (%{count} znamješce wočakowanej)"
-          few:        "nima prawu dołhosć (%{count} znamješka wočakowane)"
-          other:      "nima prawu dołhosć (%{count} znamješkow wočakowanych)"
-        taken:        "je hižo w datowej bance"
-        not_a_number: "njeje ličba"
-        greater_than: "dyrbi wjetši hač %{count} być"
-        greater_than_or_equal_to: "dyrbi wjetši abo runja %{count} być"
-        equal_to:                 "dyrbi runja %{count} być"
-        less_than:                "dyrbi mjenje hač %{count} być"
-        less_than_or_equal_to:    "dyrbi mjenje abo runja %{count} być"
-        odd:                      "dyrbi njeruna ličby być"
-        even:                     "dyrbi runa ličba być"
-
+        <<: *errors_messages
       template:
-        header:
-          one:   "Při składowanju objekta %{model} je k zmylkej dóšło a njebě móžno składować"
-          two:   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
-          few:   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
-          other: "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
-          body:  "Prošu přepruwuj slědowace pola:"
-
-      models:
+        <<: *errors_template

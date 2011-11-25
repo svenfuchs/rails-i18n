@@ -7,8 +7,6 @@
       default: "%d/%m/%Y"
       short: "%e %b"
       long: "%B %e, %Y"
-      only_day: "%e"
-
     day_names:
       - Недеља
       - Понедељак
@@ -61,17 +59,10 @@
   time:
     formats:
       default: "%a %b %d %H:%M:%S %Z %Y"
-      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
-      only_second: "%S"
-
-      datetime:
-        formats:
-          default: "%Y-%m-%dT%H:%M:%S%Z"
-
-      am: 'АМ'
-      pm: 'ПМ'
+    am: 'АМ'
+    pm: 'ПМ'
 
   datetime:
     distance_in_words:
@@ -125,35 +116,37 @@
         precision: 2
         format: '%n %u'
 
-  support:
-    array:
-      sentence_connector: "и"
+  errors:
+    messages: &errors_messages
+      inclusion: "није у листи"
+      exclusion: "није доступно"
+      invalid: "није исправан"
+      confirmation: "се не слаже са својом потврдом"
+      accepted: "мора бити прихваћено"
+      empty: "мора бити дат"
+      blank: "мора бити дат"
+      too_long: "је предугачак (не више од %{count} карактера)"
+      too_short: "је прекратак (не мање од %{count} карактера)"
+      wrong_length: "није одговарајуће дужине (мора имати %{count} карактера)"
+      taken: "је заузето"
+      not_a_number: "није број"
+      greater_than: "мора бити веће од %{count}"
+      greater_than_or_equal_to: "мора бити веће или једнако %{count}"
+      equal_to: "мора бити једнако %{count}"
+      less_than: "мора бити мање од %{count}"
+      less_than_or_equal_to: "мора бити мање или једнако %{count}"
+      odd: "мора бити непарно"
+      even: "мора бити парно"
+    template: &errors_template
+      header:
+        one: 'Нисам успео сачувати %{model}: 1 грешка.'
+        few: 'Нисам успео сачувати %{model}: %{count} грешке.'
+        other: 'Нисам успео сачувати %{model}: %{count} грешки.'
+      body: "Молим Вас да проверите следећа поља:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: 'Нисам успео сачувати %{model}: 1 грешка.'
-          few: 'Нисам успео сачувати %{model}: %{count} грешке.'
-          other: 'Нисам успео сачувати %{model}: %{count} грешки.'
-        body: "Молим Вас да проверите следећа поља:"
       messages:
-        inclusion: "није у листи"
-        exclusion: "није доступно"
-        invalid: "није исправан"
-        confirmation: "се не слаже са својом потврдом"
-        accepted: "мора бити прихваћено"
-        empty: "мора бити дат"
-        blank: "мора бити дат"
-        too_long: "је предугачак (не више од %{count} карактера)"
-        too_short: "је прекратак (не мање од %{count} карактера)"
-        wrong_length: "није одговарајуће дужине (мора имати %{count} карактера)"
-        taken: "је заузето"
-        not_a_number: "није број"
-        greater_than: "мора бити веће од %{count}"
-        greater_than_or_equal_to: "мора бити веће или једнако %{count}"
-        equal_to: "мора бити једнако %{count}"
-        less_than: "мора бити мање од %{count}"
-        less_than_or_equal_to: "мора бити мање или једнако %{count}"
-        odd: "мора бити непарно"
-        even: "мора бити парно"
+        <<: *errors_messages
+      template:
+        <<: *errors_template

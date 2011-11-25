@@ -216,19 +216,20 @@ pl:
       less_than_or_equal_to: "musi być mniejsze lub równe %{count}"
       odd: "musi być nieparzyste"
       even: "musi być parzyste"
+      taken: "zostało już zajęte"
+      record_invalid: "Negatywne sprawdzenie poprawności: %{errors}"
+    template: &errors_template
+      header:
+        one: "%{model} nie został zachowany z powodu jednego błędu"
+        other: "%{model} nie został zachowany z powodu %{count} błędów"
+      body: "Błędy dotyczą następujących pól:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "%{model} nie został zachowany z powodu jednego błędu"
-          other:  "%{model} nie został zachowany z powodu %{count} błędów"
-        body: "Błędy dotyczą następujących pól:"
-
       messages:
-        taken: "zostało już zajęte"
-        record_invalid: "Negatywne sprawdzenie poprawności: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

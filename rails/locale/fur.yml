@@ -155,30 +155,36 @@ fur:
       two_words_connector: " e "
       last_word_connector: ", e "
 
+  errors:
+    template: &errors_template
+      header:
+        one: "No si pues salvâ chest %{model}: 1 erôr"
+        other: "No si pues salvâ chest %{model}: %{count} erôrs."
+      body: "Torne par plasê a controlâ i cjamps ca sot:"
+    messages: &errors_messages
+      inclusion: "non è includût te liste"
+      exclusion: "al è riservât"
+      invalid: "nol è valit"
+      confirmation: "nol è compagn de conferme"
+      accepted: "al à di jessi acetât"
+      empty: "nol pues jessi vueit"
+      blank: "nol pues jessi lassât in blanc"
+      too_long: "al è masse lunc (il massim al è %{count} letaris)"
+      too_short: "al è masse curt (il minim al è %{count} letaris)"
+      wrong_length: "nol à la lungjece juste (al ò di jessi di %{count} letaris)"
+      taken: "al è za doprât"
+      not_a_number: "nol è un numar"
+      greater_than: "al à di jessi plui grant di %{count}"
+      greater_than_or_equal_to: "al à di jessi plui grant o compagn di %{count}"
+      equal_to: "al à di jessi compagn di %{count}"
+      less_than: "al à di jessi mancul di %{count}"
+      less_than_or_equal_to: "al à di jessi mancul o compagn di %{count}"
+      odd: "al à di jessi dispar"
+      even: "al à di jessi pâr"
+
   activerecord:
     errors:
-      template:
-        header:
-          one: "No si pues salvâ chest %{model}: 1 erôr"
-          other: "No si pues salvâ chest %{model}: %{count} erôrs."
-        body: "Torne par plasê a controlâ i cjamps ca sot:"
       messages:
-        inclusion: "non è includût te liste"
-        exclusion: "al è riservât"
-        invalid: "nol è valit"
-        confirmation: "nol è compagn de conferme"
-        accepted: "al à di jessi acetât"
-        empty: "nol pues jessi vueit"
-        blank: "nol pues jessi lassât in blanc"
-        too_long: "al è masse lunc (il massim al è %{count} letaris)"
-        too_short: "al è masse curt (il minim al è %{count} letaris)"
-        wrong_length: "nol à la lungjece juste (al ò di jessi di %{count} letaris)"
-        taken: "al è za doprât"
-        not_a_number: "nol è un numar"
-        greater_than: "al à di jessi plui grant di %{count}"
-        greater_than_or_equal_to: "al à di jessi plui grant o compagn di %{count}"
-        equal_to: "al à di jessi compagn di %{count}"
-        less_than: "al à di jessi mancul di %{count}"
-        less_than_or_equal_to: "al à di jessi mancul o compagn di %{count}"
-        odd: "al à di jessi dispar"
-        even: "al à di jessi pâr"
+        <<: *errors_messages
+      template:
+        <<: *errors_template

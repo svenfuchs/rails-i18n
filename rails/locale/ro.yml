@@ -194,18 +194,19 @@ ro:
       less_than_or_equal_to: "trebuie să fie mai mic sau egal cu %{count}"
       odd: "trebuie să fie par"
       even: "trebuie să fie impar"
+      taken: "este deja folosit"
+      record_invalid: "Validare nereuşită %{errors}"
+    template: &errors_template
+      header:
+        one: "Nu am putut salva acest %{model}: o eroare"
+        other: "Nu am putut salva acest %{model}: %{count} erori."
+      body: "Încearcă să corectezi urmatoarele câmpuri:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "Nu am putut salva acest %{model}: o eroare"
-          other: "Nu am putut salva acest %{model}: %{count} erori."
-        body: "Încearcă să corectezi urmatoarele câmpuri:"
       messages:
-        taken: "este deja folosit"
-        record_invalid: "Validare nereuşită %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
-

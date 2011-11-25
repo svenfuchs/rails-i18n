@@ -199,17 +199,19 @@
       less_than_or_equal_to: "legfeljebb %{count} lehet"
       odd: "páratlan kell legyen"
       even: "páros kell legyen"
+      taken: "már foglalt"
+      record_invalid: "Sikertelen validálás %{errors}"
+    template: &errors_template
+      header:
+        one: "1 hiba miatt nem menthető a következő: %{model}"
+        other: "%{count} hiba miatt nem menthető a következő: %{model}"
+      body: "Problémás mezők:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "1 hiba miatt nem menthető a következő: %{model}"
-          other: "%{count} hiba miatt nem menthető a következő: %{model}"
-        body: "Problémás mezők:"
       messages:
-        taken: "már foglalt"
-        record_invalid: "Sikertelen validálás %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

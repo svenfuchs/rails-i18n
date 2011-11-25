@@ -203,19 +203,19 @@ hi:
       less_than_or_equal_to: "%{count} से कम या बराबर होना आवश्यक है"
       odd: "विसम होना चाहिए"
       even: "सम होना चाहिए"
+      taken: "पहले ही ले लिया गया है"
+      record_invalid: "सत्यापन विफल: %{errors}"
+    template: &errors_template
+      header:
+        one:    "इस %{model} को सहेजे जाना एक त्रुटि के कारण नहीं हुआ"
+        other:  "इस %{model} को सहेजे जाना %{count} त्रुटि के कारण नहीं हुआ"
+      body: "निम्नलिखित क्षेत्रों के साथ समस्या थी:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "इस %{model} को सहेजे जाना एक त्रुटि के कारण नहीं हुआ"
-          other:  "इस %{model} को सहेजे जाना %{count} त्रुटि के कारण नहीं हुआ"
-        body: "निम्नलिखित क्षेत्रों के साथ समस्या थी:"
-
       messages:
-        taken: "पहले ही ले लिया गया है"
-        record_invalid: "सत्यापन विफल: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"
