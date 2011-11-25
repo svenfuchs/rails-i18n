@@ -213,7 +213,7 @@ hsb:
         two:   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
         few:   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
         other: "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"
-        body:  "Prošu přepruwuj slědowace pola:"
+      body:  "Prošu přepruwuj slědowace pola:"
 
   activerecord:
     errors:
