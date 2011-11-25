@@ -152,7 +152,7 @@
         not_a_number: "није број"
         greater_than: "мора бити веће од %{count}"
         greater_than_or_equal_to: "мора бити веће или једнако %{count}"
-        equal_to: "кора бити једнако %{count}"
+        equal_to: "мора бити једнако %{count}"
         less_than: "мора бити мање од %{count}"
         less_than_or_equal_to: "мора бити мање или једнако %{count}"
         odd: "мора бити непарно"
