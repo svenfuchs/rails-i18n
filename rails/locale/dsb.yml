@@ -123,7 +123,7 @@ dsb:
         two:   "mjenjej ako %{count} sekundoma"
         few:   "mjenjej ako %{count} sekundami"
         other: "mjenjej ako %{count} sekundami"
-        x_seconds:
+      x_seconds:
         one:   "1 sekundu"
         two:   "%{count} sekundoma"
         few:   "%{count} sekundami"
