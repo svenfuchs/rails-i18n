@@ -205,7 +205,7 @@ es-CO:
       taken: "ya ha sido tomado"
       record_invalid: "La validación falló: %{errors}"
 
-    template:
+    template: &errors_template
       header:
         one: "%{model} no pudo guardarse debido a 1 error"
         other: "%{model} no pudo guardarse debido a %{count} errores"
