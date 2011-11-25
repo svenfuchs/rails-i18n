@@ -168,14 +168,6 @@ dsb:
         two:    "wěcej ako %{count} lětoma"
         few:    "wěcej ako %{count} lětami"
         other:  "wěcej ako %{count} lětami"
-      prompts:
-        year:   "Lěto"
-        month:  "Mjasec"
-        day:    "Źeń"
-        hour:   "Góźina"
-        minute: "Minuta"
-        second: "Sekunda"
-
   errors:
     messages: &errors_messages
       inclusion:           "njejo płaśiwa gódnota"
