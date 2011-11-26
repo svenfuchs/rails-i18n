@@ -48,10 +48,10 @@ it:
           byte:
             one:   "Byte"
             other: "Byte"
-          kb: "Kb"
-          mb: "Mb"
-          gb: "Gb"
-          tb: "Tb"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
       decimal_units:
         format: "%n %u"
         units:
