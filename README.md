@@ -48,12 +48,12 @@ We always welcome your contributions!
 ## Gem translations
 
 Gems that are often used with Rails may have their own
-translations. These translations are kept in [gems](http://github.com/svenfuchs/rails-i18n/tree/master/gems/).
+translations. These translations are kept in the [project root](http://github.com/svenfuchs/rails-i18n/tree/master/).
 
 If you need one of these, simply copy the appropriate translation files
-to `config/locaes`.
+to `config/locales`.
 
-    cp gems/will_paginate/nl.yml /my_app/config/locales/will_paginate.yml
+    cp rails-i18n/will_paginate/nl.yml my_app/config/locales/will_paginate.yml
 
 ## How to contribute
 
