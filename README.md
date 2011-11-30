@@ -53,8 +53,7 @@ translations. These translations are kept in [gems](http://github.com/svenfuchs/
 If you need one of these, simply copy the appropriate translation files
 to `config/locaes`.
 
-    cp gems/will_paginate/nl.yml
-/my_app/config/locales/will_paginate.yml
+    cp gems/will_paginate/nl.yml /my_app/config/locales/will_paginate.yml
 
 ## How to contribute
 
