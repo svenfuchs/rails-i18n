@@ -45,6 +45,16 @@ Not-yet-ready locales are:
 
 We always welcome your contributions!
 
+## Gem translations
+
+Gems that are often used with Rails may have their own
+translations. These translations are kept in [gems](http://github.com/svenfuchs/rails-i18n/tree/master/gems/).
+
+If you need one of these, simply copy the appropriate translation files
+to `config/locaes`.
+
+    cp gems/will_paginate/nl.yml /my_app/config/locales/will_paginate.yml
+
 ## How to contribute
 
 ### Quick contribution
