@@ -65,17 +65,14 @@
       default: "%a %b %d %H:%M:%S %Z %Y"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
-      only_second: "%S"
     am: 'صباحا'
     pm: 'مساءا'
 
   support:
     array:
-      sentence_connector: "و"
       words_connector: ", "
       two_words_connector: " و "
       last_word_connector: ", و "
-      skip_last_comma: false
 
     select:
       prompt: "الرجاء اختيار"
@@ -208,19 +205,20 @@
       less_than_or_equal_to: "يجب أن يكون أصغر من أو يساوي %{count}"
       odd: "يجب أن يكون فردي"
       even: "يجب أن يكون زوجي"
+      taken: "غير متوفر (مستخدم)"
+      record_invalid: "%{errors} فشل التحقق من صحة"
+    template: &errors_template
+      header:
+        one: "ليس بالامكان حفظ %{model}: خطأ واحد."
+        other: "ليس بالامكان حفظ %{model}: %{count} أخطاء."
+      body: "يرجى التحقق من الحقول التالية:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "ليس بالامكان حفظ %{model}: خطأ واحد."
-          other: "ليس بالامكان حفظ %{model}: %{count} أخطاء."
-        body: "يرجى التحقق من الحقول التالية:"
-
       messages:
-        taken: "غير متوفر (مستخدم)"
-        record_invalid: "%{errors} فشل التحقق من صحة"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

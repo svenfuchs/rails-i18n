@@ -203,19 +203,19 @@ cy:
       less_than_or_equal_to: "angen bod yr un maint neu lai na %{count}"
       odd: "rhaid bod yn odrif"
       even: "rhaid bod yn eilrif"
+      taken: "wedi'i gymryd yn barod"
+      record_invalid: "Gwirio wedi methu: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Atalwyd y %{model} hwn rhag ei gadw gan 1 nam"
+        other:  "Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam"
+      body: "Cafwyd broblemau gyda'r meysydd canlynol:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Atalwyd y %{model} hwn rhag ei gadw gan 1 nam"
-          other:  "Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam"
-        body: "Cafwyd broblemau gyda'r meysydd canlynol:"
-
       messages:
-        taken: "wedi'i gymryd yn barod"
-        record_invalid: "Gwirio wedi methu: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

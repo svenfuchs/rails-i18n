@@ -207,19 +207,20 @@ fi:
       less_than_or_equal_to: "täytyy olla pienempi tai yhtä suuri kuin %{count}"
       odd: "täytyy olla pariton"
       even: "täytyy olla parillinen"
+      taken: "on jo käytössä"
+      record_invalid: "Validointi epäonnistui: %{errors}"
+    template: &errors_template
+      header:
+        one:    "Virhe syötteessä esti mallin %{model} tallentamisen"
+        other:  "%{count} virhettä esti mallin %{model} tallentamisen"
+      body: "Seuraavat kentät aiheuttivat ongelmia:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Virhe syötteessä esti mallin %{model} tallentamisen"
-          other:  "%{count} virhettä esti mallin %{model} tallentamisen"
-        body: "Seuraavat kentät aiheuttivat ongelmia:"
-
       messages:
-        taken: "on jo käytössä"
-        record_invalid: "Validointi epäonnistui: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

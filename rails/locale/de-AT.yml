@@ -7,8 +7,6 @@ de-AT:
       default: "%d.%m.%Y"
       short: "%e. %b"
       long: "%e. %B %Y"
-      only_day: "%e"
-
     day_names:
       - Sonntag
       - Montag
@@ -63,8 +61,6 @@ de-AT:
       default: "%A, %d. %B %Y, %H:%M Uhr"
       short: "%d. %B, %H:%M Uhr"
       long: "%A, %d. %B %Y, %H:%M Uhr"
-      time: "%H:%M"
-
     am: "vormittags"
     pm: "nachmittags"
 
@@ -206,6 +202,8 @@ de-AT:
       odd: "muss ungerade sein"
       even: "muss gerade sein"
       not_an_integer: "muss ganzzahlig sein"
+      taken: "ist bereits vergeben"
+      record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
     template: &errors_template
       header:
         one:    "Konnte %{model} nicht speichern: ein Fehler."
@@ -215,8 +213,6 @@ de-AT:
   activerecord:
     errors:
       messages:
-        taken: "ist bereits vergeben"
-        record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

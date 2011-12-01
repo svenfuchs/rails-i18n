@@ -7,8 +7,6 @@
       default: "%d/%m/%Y"
       short: "%e %b"
       long: "%B %e, %Y"
-      only_day: "%e"
-
     day_names:
       - Недела
       - Понеделник
@@ -61,17 +59,12 @@
   time:
     formats:
       default: "%a %b %d %H:%M:%S %Z %Y"
-      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%B %d, %Y %H:%M"
-      only_second: "%S"
-
     am: 'АМ'
     pm: 'ПМ'
 
   datetime:
-    formats:
-      default: "%Y-%m-%dT%H:%M:%S%Z"
     distance_in_words:
       half_a_minute: 'пола минута'
       less_than_x_seconds:
@@ -123,36 +116,37 @@
         precision: 2
         format: '%n %u'
 
-  support:
-    array:
-      sentence_connector: "и"
+  errors:
+    template: &errors_template
+      header:
+        one: 'Не успеав да го зачувам %{model}: 1 грешка.'
+        few: 'Не успеав да го зачувам %{model}: %{count} грешки.'
+        other: 'Не успеав да го зачувам %{model}: %{count} грешки.'
+      body: "Ве молиме проверете ги следните полиња:"
+    messages: &errors_messages
+      inclusion: "не е во листата"
+      exclusion: "не е достапно"
+      invalid: "не е исправен"
+      confirmation: "не се совпаѓа со својата потврда"
+      accepted: "мора да биде прифатен"
+      empty: "мора да биде зададен"
+      blank: "мора да биде зададен"
+      too_long: "е предолг (не повеќе од %{count} карактери)"
+      too_short: "е прекраток (не помалку од %{count} карактери)"
+      wrong_length: "несоодветна должина (мора да имате %{count} карактери)"
+      taken: "е зафатено"
+      not_a_number: "не е број "
+      greater_than: "мора да биде поголемо од %{count}"
+      greater_than_or_equal_to: "мора да биде поголемо или еднакво на %{count}"
+      equal_to: "мора да биде еднакво на %{count}"
+      less_than: "мора да биде помало од %{count}"
+      less_than_or_equal_to: "мора да биде помало или еднакво на %{count}"
+      odd: "мора да биде непарно"
+      even: "мора да биде парно"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: 'Не успеав да го зачувам %{model}: 1 грешка.'
-          few: 'Не успеав да го зачувам %{model}: %{count} грешки.'
-          other: 'Не успеав да го зачувам %{model}: %{count} грешки.'
-        body: "Ве молиме проверете ги следните полиња:"
       messages:
-        inclusion: "не е во листата"
-        exclusion: "не е достапно"
-        invalid: "не е исправен"
-        confirmation: "не се совпаѓа со својата потврда"
-        accepted: "мора да биде прифатен"
-        empty: "мора да биде зададен"
-        blank: "мора да биде зададен"
-        too_long: "е предолг (не повеќе од %{count} карактери)"
-        too_short: "е прекраток (не помалку од %{count} карактери)"
-        wrong_length: "несоодветна должина (мора да имате %{count} карактери)"
-        taken: "е зафатено"
-        not_a_number: "не е број "
-        greater_than: "мора да биде поголемо од %{count}"
-        greater_than_or_equal_to: "мора да биде поголемо или еднакво на %{count}"
-        equal_to: "мора да биде еднакво на %{count}"
-        less_than: "мора да биде помало од %{count}"
-        less_than_or_equal_to: "мора да биде помало или еднакво на %{count}"
-        odd: "мора да биде непарно"
-        even: "мора да биде парно"
-
+        <<: *errors_messages
+      template:
+        <<: *errors_template

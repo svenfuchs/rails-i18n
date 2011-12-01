@@ -76,10 +76,6 @@ da:
 
   support:
     array:
-      # Rails 2.2
-      #sentence_connector: "og"
-      #skip_last_comma: true
-      # Rails 2.3
       words_connector: ", "
       two_words_connector: " og "
       last_word_connector: " og "
@@ -221,19 +217,20 @@ da:
       less_than_or_equal_to: "skal være mindre end, eller lig med, %{count}"
       odd: "skal være et ulige tal"
       even: "skal være et lige tal"
+      taken: "er allerede brugt"
+      record_invalid: "Godkendelse gik galt: %{errors}"
+    template: &errors_template
+      header:
+        one: "En fejl forhindrede %{model} i at blive gemt"
+        other: "%{count} fejl forhindrede %{model} i at blive gemt"
+      body: "Der var problemer med følgende felter:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:   "En fejl forhindrede %{model} i at blive gemt"
-          other: "%{count} fejl forhindrede %{model} i at blive gemt"
-        body: "Der var problemer med følgende felter:"
-
       messages:
-        taken: "er allerede brugt"
-        record_invalid: "Godkendelse gik galt: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"
