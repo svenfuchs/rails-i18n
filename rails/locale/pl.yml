@@ -218,6 +218,9 @@ pl:
       even: "musi być parzyste"
 
   activerecord:
+    attributes:
+      created_at: "Stworzony"
+      updated_at: "Zaktualizowany"
     errors:
       template:
         header:
