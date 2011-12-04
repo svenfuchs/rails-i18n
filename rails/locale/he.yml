@@ -9,8 +9,6 @@
       default: "%d-%m-%Y"
       short: "%e %b"
       long: "%e ב%B, %Y"
-      only_day: "%e"
-
     day_names:
       - ראשון
       - שני
@@ -64,10 +62,8 @@
   time:
     formats:
       default: "%a %d %b %H:%M:%S %Z %Y"
-      time: "%H:%M"
       short: "%d %b %H:%M"
       long: "%d ב%B, %Y %H:%M"
-      only_second: "%S"
     am: "am"
     pm: "pm"
 
@@ -210,19 +206,19 @@
       less_than_or_equal_to: "חייב להיות קטן או שווה ל- %{count}"
       odd: "חייב להיות אי זוגי"
       even: "חייב להיות זוגי"
+      taken: "כבר בשימוש"
+      record_invalid: "האימות נכשל: %{errors}"
+    template: &errors_template
+      header:
+        one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
+        other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
+      body: "אנא בדוק את השדות הבאים:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
-          other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
-        body: "אנא בדוק את השדות הבאים:"
-
       messages:
-        taken: "כבר בשימוש"
-        record_invalid: "האימות נכשל: %{errors}"
         <<: *errors_messages
-
+      template:
+        <<: *errors_template
       full_messages:
         format: "%{attribute} %{message}"

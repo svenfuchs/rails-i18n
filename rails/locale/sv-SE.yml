@@ -25,7 +25,6 @@
       format:
         # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
         format: "%n %u"
-        negative_format: "-%n %u"
         unit: "kr"
 
     percentage:
@@ -144,21 +143,18 @@
       odd: "måste vara udda"
       even: "måste vara jämnt"
       record_invalid: "Ett fel uppstod: %{errors}"
-      not_saved: "Kunde inte sparas"
+    template: &errors_template
+      header:
+        one:    "Ett fel förhindrade denna %{model} från att sparas"
+        other:  "%{count} fel förhindrade denna %{model} från att sparas"
+      body: "Det var problem med följande fält:"
 
   activerecord:
     errors:
-      # model.errors.full_messages format.
-      template:
-        header:
-          one:    "Ett fel förhindrade denna %{model} från att sparas"
-          other:  "%{count} fel förhindrade denna %{model} från att sparas"
-        body: "Det var problem med följande fält:"
-
       messages:
-        taken: "är upptaget"
-        record_invalid: "Validering misslyckades: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

@@ -104,65 +104,39 @@ vi:
       minute: "Phút"
       second: "Giây"
 
+  errors:
+    messages: &errors_messages
+      inclusion: "không có trong danh sách"
+      exclusion: "đã được giành trước"
+      invalid: "không hợp lệ"
+      confirmation: "không khớp với xác nhận"
+      accepted: "phải được đồng ý"
+      empty: "không thể rỗng"
+      blank: "không thể để trắng"
+      too_long: "quá dài (tối đa %{count} ký tự)"
+      too_short: "quá ngắn (tối thiểu %{count} ký tự)"
+      wrong_length: "độ dài không đúng (phải là %{count} ký tự)"
+      taken: "đã có"
+      not_a_number: "không phải là số"
+      greater_than: "phải lớn hơn %{count}"
+      greater_than_or_equal_to: "phải lớn hơn hoặc bằng %{count}"
+      equal_to: "phải bằng %{count}"
+      less_than: "phải nhỏ hơn %{count}"
+      less_than_or_equal_to: "phải nhỏ hơn hoặc bằng %{count}"
+      odd: "phải là số chẵn"
+      even: "phải là số lẻ"
+    template: &errors_template
+      header:
+        one:   "1 lỗi ngăn không cho lưu %{model} này"
+        other: "%{count} lỗi ngăn không cho lưu %{model} này"
+      body: "Có lỗi với các mục sau:"
+
   activerecord:
     errors:
-      template:
-        header:
-          one:   "1 lỗi ngăn không cho lưu %{model} này"
-          other: "%{count} lỗi ngăn không cho lưu %{model} này"
-        # The variable :count is also available
-        body: "Có lỗi với các mục sau:"
-
-      # The values :model, :attribute and :value are always available for interpolation
-      # The value :count is available when applicable. Can be used for pluralization.
       messages:
-        inclusion: "không có trong danh sách"
-        exclusion: "đã được giành trước"
-        invalid: "không hợp lệ"
-        confirmation: "không khớp với xác nhận"
-        accepted: "phải được đồng ý"
-        empty: "không thể rỗng"
-        blank: "không thể để trắng"
-        too_long: "quá dài (tối đa %{count} ký tự)"
-        too_short: "quá ngắn (tối thiểu %{count} ký tự)"
-        wrong_length: "độ dài không đúng (phải là %{count} ký tự)"
-        taken: "đã có"
-        not_a_number: "không phải là số"
-        greater_than: "phải lớn hơn %{count}"
-        greater_than_or_equal_to: "phải lớn hơn hoặc bằng %{count}"
-        equal_to: "phải bằng %{count}"
-        less_than: "phải nhỏ hơn %{count}"
-        less_than_or_equal_to: "phải nhỏ hơn hoặc bằng %{count}"
-        odd: "phải là số chẵn"
-        even: "phải là số lẻ"
-        # Append your own errors here or at the model/attributes scope.
-
-      # You can define own errors for models or model attributes.
-      # The values :model, :attribute and :value are always available for interpolation.
-      #
-      # For example,
-      #   models:
-      #     user:
-      #       blank: "This is a custom blank message for %{model}: %{attribute}"
-      #       attributes:
-      #         login:
-      #           blank: "This is a custom blank message for User login"
-      # Will define custom blank validation message for User model and
-      # custom blank validation message for login attribute of User model.
-      # models:
-
-    # Translate model names. Used in Model.human_name().
-    #models:
-      # For example,
-      #   user: "Dude"
-      # will translate User model name to "Dude"
-
-    # Translate model attribute names. Used in Model.human_attribute_name(attribute).
-    #attributes:
-      # For example,
-      #   user:
-      #     login: "Handle"
-      # will translate User attribute "login" as "Handle"
+        <<: *errors_messages
+      template:
+        <<: *errors_template
 
   date:
     formats:

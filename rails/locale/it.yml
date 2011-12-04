@@ -219,17 +219,18 @@ it:
         even: "deve essere pari"
         taken: "è già in uso"
         record_invalid: "Validazione fallita: %{errors}"
-
-  activerecord:
-    errors:
-      template:
+      template: &errors_template
         header:
           one: "Non posso salvare questo %{model}: 1 errore"
           other: "Non posso salvare questo %{model}: %{count} errori."
         body: "Per favore ricontrolla i seguenti campi:"
 
+  activerecord:
+    errors:
       messages:
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

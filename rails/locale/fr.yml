@@ -178,10 +178,6 @@ fr:
       update: "Modifier ce(tte) %{model}"
       submit: "Enregistrer ce(tte) %{model}"
 
-  attributes:
-    created_at: "Créé le"
-    updated_at: "Modifié le"
-
   errors:
     format: "Le %{attribute} %{message}"
     messages: &errors_messages
@@ -210,6 +206,8 @@ fr:
       less_than_or_equal_to: "doit être inférieur ou égal à %{count}"
       odd: "doit être impair"
       even: "doit être pair"
+      taken: "n'est pas disponible"
+      record_invalid: "La validation a échoué : %{errors}"
     template: &errors_template
       header:
         one:   "Impossible d'enregistrer ce(tte) %{model} : 1 erreur"
@@ -219,8 +217,6 @@ fr:
   activerecord:
     errors:
       messages:
-        taken: "n'est pas disponible"
-        record_invalid: "La validation a échoué : %{errors}"
         <<: *errors_messages
       template:
         <<: *errors_template

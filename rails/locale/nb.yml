@@ -132,7 +132,6 @@ nb:
     human:
       format:
         precision: 1
-        separator: ","
         delimiter: " "
         significant: false
         strip_insignificant_zeros: true
@@ -202,19 +201,20 @@ nb:
       less_than_or_equal_to: "må være mindre enn eller lik %{count}"
       odd: "må være oddetall"
       even: "må være partall"
+      taken: "er allerede i bruk"
+      record_invalid: "Det oppstod feil: %{errors}"
+    template: &errors_template
+      header:
+        one:   "Kunne ikke lagre %{model} på grunn av én feil."
+        other: "Kunne ikke lagre %{model} på grunn av %{count} feil."
+      body: "Det oppstod problemer i følgende felt:"
 
   activerecord:
     errors:
-      template:
-        header:
-          one:   "Kunne ikke lagre %{model} på grunn av én feil."
-          other: "Kunne ikke lagre %{model} på grunn av %{count} feil."
-        body: "Det oppstod problemer i følgende felt:"
-
       messages:
-        taken: "er allerede i bruk"
-        record_invalid: "Det oppstod feil: %{errors}"
         <<: *errors_messages
+      template:
+        <<: *errors_template
 
       full_messages:
         format: "%{attribute} %{message}"

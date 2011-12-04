@@ -103,66 +103,39 @@ lo:
       minute: "ນາທີ"
       second: "ວິນາທີ"
 
+  errors:
+    template: &errors_template
+      header:
+        one:    "ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກເກີດຂໍ້ຜິດພາດ"
+        other:  "ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ"
+      body: "ກະລຸນາກວດສອບຂໍ້ມູນໃນຫ້ອງຕໍ່ໄປນີ້ :"
+    messages: &errors_messages
+      inclusion: "ບໍ່ໄດ້ຮວມຢູ່ໃນບັນຊີລາຍການ"
+      exclusion: "ມີການຈອງໄວ້ແລ້ວ"
+      invalid: "ບໍ່ຖືກ"
+      confirmation: "ບໍ່ຖືກກັບການຢືນຢັນ"
+      accepted: "ຕ້ອງຍອມຮັບ"
+      empty: "ວ່າງໄວ້ບໍ່ໄດ້"
+      blank: "ເປົ່າບໍ່ໄດ້"
+      too_long: "ຍາວໂພດ (ສູງສຸດຄື %{count} ຕົວອັກສອນ)"
+      too_short: "ສັ້ນໂພດ (ຕຳ່ສຸດຄື %{count} ຕົວອັກສອນ)"
+      wrong_length: "ຄວາມຍາວຜິດ (ຄວນຈະເປັນ %{count} ຕົວອັກສອນ)"
+      taken: "ຮັບເອົາໄປແລ້ວ"
+      not_a_number: "ບໍ່ແມ່ນຕົວເລກ"
+      greater_than: "ຕ້ອງສູງກວ່າ %{count}"
+      greater_than_or_equal_to: "ຕ້ອງສູງກວ່າ ຫຼື ເທົ່າກັບ %{count}"
+      equal_to: "ຕ້ອງເທົ່າກັບ %{count}"
+      less_than: "ຕ້ອງຕຳ່ກວ່າ %{count}"
+      less_than_or_equal_to: "ຕ້ອງຕຳ່ກວ່າ ຫຼື ເທົ່າກັບ %{count}"
+      odd: "ຕ້ອງເປັນເລກຄີກ"
+      even: "ຕ້ອງເປັນເລກຄູ່"
+      record_invalid: "ການຢືນຢັນບໍ່ສຳເລັດ : %{errors}"
   activerecord:
     errors:
-      template:
-        header:
-          one:    "ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກເກີດຂໍ້ຜິດພາດ"
-          other:  "ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ"
-        # The variable :count is also available
-        body: "ກະລຸນາກວດສອບຂໍ້ມູນໃນຫ້ອງຕໍ່ໄປນີ້ :"
-
-      # The values :model, :attribute and :value are always available for interpolation
-      # The value :count is available when applicable. Can be used for pluralization.
       messages:
-        inclusion: "ບໍ່ໄດ້ຮວມຢູ່ໃນບັນຊີລາຍການ"
-        exclusion: "ມີການຈອງໄວ້ແລ້ວ"
-        invalid: "ບໍ່ຖືກ"
-        confirmation: "ບໍ່ຖືກກັບການຢືນຢັນ"
-        accepted: "ຕ້ອງຍອມຮັບ"
-        empty: "ວ່າງໄວ້ບໍ່ໄດ້"
-        blank: "ເປົ່າບໍ່ໄດ້"
-        too_long: "ຍາວໂພດ (ສູງສຸດຄື %{count} ຕົວອັກສອນ)"
-        too_short: "ສັ້ນໂພດ (ຕຳ່ສຸດຄື %{count} ຕົວອັກສອນ)"
-        wrong_length: "ຄວາມຍາວຜິດ (ຄວນຈະເປັນ %{count} ຕົວອັກສອນ)"
-        taken: "ຮັບເອົາໄປແລ້ວ"
-        not_a_number: "ບໍ່ແມ່ນຕົວເລກ"
-        greater_than: "ຕ້ອງສູງກວ່າ %{count}"
-        greater_than_or_equal_to: "ຕ້ອງສູງກວ່າ ຫຼື ເທົ່າກັບ %{count}"
-        equal_to: "ຕ້ອງເທົ່າກັບ %{count}"
-        less_than: "ຕ້ອງຕຳ່ກວ່າ %{count}"
-        less_than_or_equal_to: "ຕ້ອງຕຳ່ກວ່າ ຫຼື ເທົ່າກັບ %{count}"
-        odd: "ຕ້ອງເປັນເລກຄີກ"
-        even: "ຕ້ອງເປັນເລກຄູ່"
-        record_invalid: "ການຢືນຢັນບໍ່ສຳເລັດ : %{errors}"
-        # Append your own errors here or at the model/attributes scope.
-
-      # You can define own errors for models or model attributes.
-      # The values :model, :attribute and :value are always available for interpolation.
-      #
-      # For example,
-      #   models:
-      #     user:
-      #       blank: "This is a custom blank message for %{model}: %{attribute}"
-      #       attributes:
-      #         login:
-      #           blank: "This is a custom blank message for User login"
-      # Will define custom blank validation message for User model and
-      # custom blank validation message for login attribute of User model.
-      #models:
-
-    # Translate model names. Used in Model.human_name().
-    #models:
-      # For example,
-      #   user: "Dude"
-      # will translate User model name to "Dude"
-
-    # Translate model attribute names. Used in Model.human_attribute_name(attribute).
-    #attributes:
-      # For example,
-      #   user:
-      #     login: "Handle"
-      # will translate User attribute "login" as "Handle"
+        <<: *errors_messages
+      template:
+        <<: *errors_template
 
   date:
     formats:

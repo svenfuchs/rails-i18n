@@ -1,3 +1,4 @@
+
 # Chinese (Taiwan) translations for Ruby on Rails
 # by tsechingho (http://github.com/tsechingho)
 
@@ -149,20 +150,7 @@ zh-TW:
       decimal_units:
         format: "%n %u"
         units:
-          # 10^-21 zepto, 10^-24 yocto
-          atto: "渺"  # 10^-18
-          femto: "飛" # 10^-15 毫微微
-          pico: "漠"  # 10^-12 微微
-          nano: "奈"  # 10^-9 毫微
-          micro: "微" # 10^-6
-          mili: "毫"  # 10^-3 milli
-          centi: "厘" # 10^-2
-          deci: "分"  # 10^-1
           unit: ""
-          ten:
-            one: "十"
-            other: "十"  # 10^1
-          hundred: "百"  # 10^2
           thousand: "千" # 10^3 kilo
           million: "百萬" # 10^6 mega
           billion: "十億" # 10^9 giga
