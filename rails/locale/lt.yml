@@ -7,7 +7,8 @@ lt:
       separator: ","
       delimiter: " "
       precision: 3
-
+      significant: false
+      strip_insignificant_zeros: false
     currency:
       format:
         format: "%n %u"
@@ -15,7 +16,8 @@ lt:
         separator: ","
         delimiter: " "
         precision: 2
-
+        significant: false
+        strip_insignificant_zeros: false
     percentage:
       format:
         delimiter: ""
@@ -28,6 +30,8 @@ lt:
       format:
         delimiter: ""
         precision: 1
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         # Storage units output formatting.
         # %u is the storage unit, %n is the number (default: 2 MB)
@@ -40,6 +44,10 @@ lt:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
   datetime:
     distance_in_words:
@@ -83,6 +91,7 @@ lt:
       second: "Sekundės"
 
   errors:
+    format: "%{attribute} %{message}"
     template: &errors_template
       header:
         one:    "Išsaugant objektą %{model} rasta klaida"
@@ -115,6 +124,8 @@ lt:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"
 
   date:
     formats:

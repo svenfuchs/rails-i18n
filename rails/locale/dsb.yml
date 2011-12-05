@@ -80,6 +80,8 @@ dsb:
       precision: 3
       separator: ","
       delimiter: "."
+      significant: false
+      strip_insignificant_zeros: false
     currency:
       format:
         unit: "€"
@@ -87,10 +89,14 @@ dsb:
         format: "%n %u"
         separator: ","
         delimiter: " "
+        significant: false
+        strip_insignificant_zeros: false
     human:
       format:
         precision: 1
         delimiter: ""
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
@@ -103,6 +109,10 @@ dsb:
           mb:   "MB"
           gb:   "GB"
           tb:   "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
     percentage:
       format:
@@ -169,6 +179,7 @@ dsb:
         few:    "wěcej ako %{count} lětami"
         other:  "wěcej ako %{count} lětami"
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion:           "njejo płaśiwa gódnota"
       exclusion:           "njestoj k dispoziciji"
@@ -216,3 +227,5 @@ dsb:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"

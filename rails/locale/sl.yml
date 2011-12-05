@@ -74,6 +74,7 @@ sl:
       last_word_connector: " in "
 
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "ni vključeno v seznam"
       exclusion: "je rezervirano"
@@ -109,6 +110,8 @@ sl:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+          format: "%{attribute} %{message}"
 
 
   number:
@@ -121,6 +124,8 @@ sl:
        delimiter: "."
        # Number of decimals, behind the separator (the number 1 with a precision of 2 gives: 1.00)
        precision: 2
+       significant: false
+       strip_insignificant_zeros: false
 
      # Used in number_to_currency()
      currency:
@@ -132,6 +137,8 @@ sl:
          separator: ","
          delimiter: "."
          precision: 2
+         significant: false
+         strip_insignificant_zeros: false
 
      # Used in number_to_percentage()
      percentage:
@@ -156,6 +163,8 @@ sl:
          # separator:
          delimiter: ""
          precision: 1
+         significant: true
+         strip_insignificant_zeros: true
        storage_units:
          # Storage units output formatting.
          # %u is the storage unit, %n is the number (default: 2 MB)
@@ -168,6 +177,10 @@ sl:
            mb: "MB"
            gb: "GB"
            tb: "TB"
+       decimal_units:
+         format: "%n %u"
+         units:
+           unit: ""
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
