@@ -110,13 +110,38 @@
       precision: 3
       separator: ','
       delimiter: '.'
+      significant: false
+      strip_insignificant_zeros: false
     currency:
       format:
         unit: 'ДИН'
         precision: 2
         format: '%n %u'
+        separator: "."
+        delimiter: ","
+        significant: false
+        strip_insignificant_zeros: false
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "није у листи"
       exclusion: "није доступно"
@@ -150,3 +175,5 @@
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"

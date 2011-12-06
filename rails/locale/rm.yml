@@ -111,6 +111,8 @@ rm:
       precision: 2
       separator: "."
       delimiter: "'"
+      significant: false
+      strip_insignificant_zeros: false
     currency:
       format:
         precision: 2
@@ -118,6 +120,8 @@ rm:
         delimiter: "'"
         unit: "CHF"
         format: "%n %u"
+        significant: false
+        strip_insignificant_zeros: false
     percentage:
       format:
         delimiter: ""
@@ -128,6 +132,8 @@ rm:
       format:
         delimiter: ""
         precision: 1
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         # Storage units output formatting.
         # %u is the storage unit, %n is the number (default: 2 MB)
@@ -140,6 +146,10 @@ rm:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
   support:
     array:
@@ -148,6 +158,7 @@ rm:
       last_word_connector: " e "
 
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "n'è betg sin la glista"
       exclusion: "na stat betg a disposiziun"
@@ -180,3 +191,5 @@ rm:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"

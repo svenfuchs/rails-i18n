@@ -12,6 +12,8 @@ bn-IN:
       delimiter: ","
       # Number of decimals, behind the separator (1 with a precision of 2 gives: 1.00)
       precision: 2
+      significant: false
+      strip_insignificant_zeros: false
 
     # Used in number_to_currency()
     currency:
@@ -23,6 +25,8 @@ bn-IN:
         separator: "."
         delimiter: ","
         precision: 2
+        significant: false
+        strip_insignificant_zeros: false
 
     # Used in number_to_percentage()
     percentage:
@@ -47,6 +51,8 @@ bn-IN:
         # separator:
         delimiter: ""
         precision: 1
+        significant: true
+        strip_insignificant_zeros: true
       # Rails <= v2.2.2
       # storage_units: [Bytes, KB, MB, GB, TB]
       # Rails >= v2.3
@@ -60,6 +66,10 @@ bn-IN:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
@@ -104,6 +114,7 @@ bn-IN:
       second: "সেকেন্ড"
 
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "লিস্টে অন্তর্ভুক্ত নয়"
       exclusion: "রিসার্ভ করা অাছে"
@@ -136,6 +147,8 @@ bn-IN:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"
 
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.

@@ -73,7 +73,8 @@ mn:
       separator: "."
       delimiter: " "
       precision: 3
-
+      significant: false
+      strip_insignificant_zeros: false
     currency:
       format:
         format: "%n %u"
@@ -81,6 +82,8 @@ mn:
         separator: "."
         delimiter: " "
         precision: 2
+        significant: false
+        strip_insignificant_zeros: false
 
     percentage:
       format:
@@ -93,7 +96,9 @@ mn:
     human:
       format:
         delimiter: ""
-        precision: 1
+        precision: 
+        significant: true
+        strip_insignificant_zeros: true
       # Rails 2.2
       # storage_units: [байт, КБ, МБ, ГБ, ТБ]
 
@@ -110,6 +115,10 @@ mn:
           mb: "МБ"
           gb: "ГБ"
           tb: "ТБ"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
   datetime:
     distance_in_words:
@@ -156,6 +165,7 @@ mn:
       second: "Секунд"
 
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "жагсаалтад алга байна"
       exclusion: "бол ашиглахад хориотой"
@@ -191,6 +201,8 @@ mn:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"
 
   support:
     array:

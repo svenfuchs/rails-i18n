@@ -109,6 +109,8 @@ tr:
       precision: 2
       separator: ','
       delimiter: '.'
+      significant: false
+      strip_insignificant_zeros: false
     currency:
       format:
         unit: 'TL'
@@ -116,6 +118,8 @@ tr:
         separator: ','
         delimiter: '.'
         precision: 2
+        significant: false
+        strip_insignificant_zeros: false
     percentage:
       format:
         delimiter: '.'
@@ -126,6 +130,14 @@ tr:
       format:
         delimiter: '.'
         precision: 2
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
   support:
     select:
@@ -137,6 +149,7 @@ tr:
       last_word_connector: " ve "
 
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "kabul edilen bir kelime değil"
       exclusion: "kullanılamaz"
@@ -170,3 +183,5 @@ tr:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"

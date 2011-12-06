@@ -9,6 +9,8 @@ gl-ES:
       separator: ","
       delimiter: "."
       precision: 2
+      significant: false
+      strip_insignificant_zeros: false
 
     # Usado en number_to_currency()
     currency:
@@ -20,6 +22,8 @@ gl-ES:
         separator: ","
         delimiter: "."
         precision: 2
+        significant: false
+        strip_insignificant_zeros: false
 
     # Usado en number_to_percentage()
     percentage:
@@ -41,6 +45,8 @@ gl-ES:
         # separator:
         delimiter: ""
         precision: 1
+        significant: true
+        strip_insignificant_zeros: true
       # Se estás a usar Rails <= 2.2.2
       # storage_units: [Bytes, KB, MB, GB, TB]
       # Se estás a usar Rails >= 2.3
@@ -57,6 +63,10 @@ gl-ES:
           mb: "MB"
           gb: "GB"
           tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
   # active_support
   date:
@@ -168,6 +178,7 @@ gl-ES:
       last_word_connector: " e "
 
   errors:
+    format: "%{attribute} %{message}"
     template: &errors_template
       header:
         one: "1 erro evitou que se poidese gardar o %{model}"
@@ -200,3 +211,5 @@ gl-ES:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"

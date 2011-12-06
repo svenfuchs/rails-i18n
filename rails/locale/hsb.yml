@@ -83,6 +83,8 @@ hsb:
       precision: 3
       separator: ","
       delimiter: "."
+      significant: false
+      strip_insignificant_zeros: false
 
     currency:
       format:
@@ -91,12 +93,15 @@ hsb:
         format: "%n %u"
         separator: ","
         delimiter: " "
+        significant: false
+        strip_insignificant_zeros: false
 
     human:
       format:
         precision: 1
         delimiter: ""
-
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
@@ -109,6 +114,10 @@ hsb:
           mb:   "MB"
           gb:   "GB"
           tb:   "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
 
     percentage:
       format:
@@ -175,6 +184,7 @@ hsb:
         few:    "přez %{count} lětami"
         other:  "přez %{count} lětami"
   errors:
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion:    "njeje płaćiwa hódnota"
       exclusion:    "njesteji k dispoziciji"
@@ -221,3 +231,5 @@ hsb:
         <<: *errors_messages
       template:
         <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"
