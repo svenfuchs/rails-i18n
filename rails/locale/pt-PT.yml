@@ -172,6 +172,7 @@
       less_than_or_equal_to: "tem de ser menor ou igual a %{count}"
       odd: "tem de ser ímpar"
       even: "tem de ser par"
+      not_saved: "Não foi possível gravar"
 
   activerecord:
     errors:
