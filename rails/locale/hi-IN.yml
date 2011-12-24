@@ -86,7 +86,7 @@ hi-IN:
     currency:
       format:
         format: "%u%n"
-        unit: "$"
+        unit: "&#x20B9;"
         separator: "."
         delimiter: ","
         precision: 2
