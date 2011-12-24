@@ -20,7 +20,7 @@ bn-IN:
       format:
         # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
         format: "%u %n"
-        unit: "Rs."
+        unit: "&#x20B9;"
         # These three are to override number.format and are optional
         separator: "."
         delimiter: ","
@@ -88,20 +88,20 @@ bn-IN:
         one:  "১ মিনিট"
         other: "%{count} মিনিট"
       about_x_hours:
-        one:  "প্রায় ১ ঘন্টা"
-        other: "প্রায় %{count} ঘন্টা"
+        one:  "প্রায় ১ ঘন্টা"
+        other: "প্রায় %{count} ঘন্টা"
       x_days:
         one:  "১ দিন"
         other: "%{count} দিন"
       about_x_months:
-        one:  "প্রায় ১ মাস"
-        other: "প্রায় %{count} মাস"
+        one:  "প্রায় ১ মাস"
+        other: "প্রায় %{count} মাস"
       x_months:
         one:  "১ মাস"
         other: "%{count} মাস"
       about_x_years:
-        one:  "প্রায় ১ বছর"
-        other: "প্রায় %{count} বছর"
+        one:  "প্রায় ১ বছর"
+        other: "প্রায় %{count} বছর"
       over_x_years:
         one:  "১ বছরের বেশি"
         other: "%{count} বছরের বেশি"
@@ -116,30 +116,30 @@ bn-IN:
   errors:
     format: "%{attribute} %{message}"
     messages: &errors_messages
-      inclusion: "লিস্টে অন্তর্ভুক্ত নয়"
+      inclusion: "লিস্টে অন্তর্ভুক্ত নয়"
       exclusion: "রিসার্ভ করা অাছে"
-      invalid: "সঠিক নয়"
+      invalid: "সঠিক নয়"
       confirmation: "অনুমোদনের সঙ্গে মিলছে না"
       accepted: "গ্রাহ্য করতে হবে"
       empty: "খালি রাখা যাবে না"
       blank: "ফাঁকা রাখা যাবে না"
-      too_long: "খুব বড়ো (সর্বোচ্চ %{count} অক্ষর)"
+      too_long: "খুব বড়ো (সর্বোচ্চ %{count} অক্ষর)"
       too_short: "খুব ছোটো (সর্বনিম্ন %{count} অক্ষর)"
-      wrong_length: "দৈর্ঘ্যটি সঠিক নয় (%{count} অক্ষর হতে হবে)"
-      taken: "অাগেই নিয়ে নেওয়া হয়েছে"
-      not_a_number: "নম্বর নয়"
-      greater_than: "%{count} থেকে বড়ো হতে হবে"
-      greater_than_or_equal_to: "%{count} থেকে বড়ো অথবা তার সমান হতে হবে"
+      wrong_length: "দৈর্ঘ্যটি সঠিক নয় (%{count} অক্ষর হতে হবে)"
+      taken: "অাগেই নিয়ে নেওয়া হয়েছে"
+      not_a_number: "নম্বর নয়"
+      greater_than: "%{count} থেকে বড়ো হতে হবে"
+      greater_than_or_equal_to: "%{count} থেকে বড়ো অথবা তার সমান হতে হবে"
       equal_to: "%{count} এর সঙ্গে সমান হতে হবে"
       less_than: "%{count} থেকে ছোটো হতে হবে"
       less_than_or_equal_to: "%{count} থেকে ছোটো অথবা তার সমান হতে হবে"
-      odd: "বেজোড় হতে হবে"
-      even: "জোড় হতে হবে"
+      odd: "বেজোড় হতে হবে"
+      even: "জোড় হতে হবে"
     template: &errors_template
       header:
-        one:   "১ টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
-        other:  "%{count} টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
-      body: "এই ফিল্ডগুলোতে কিছু সমস্যা দেখা দিয়েছে:"
+        one:   "১ টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
+        other:  "%{count} টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
+      body: "এই ফিল্ডগুলোতে কিছু সমস্যা দেখা দিয়েছে:"
   
   activerecord:
     errors:
@@ -191,8 +191,8 @@ bn-IN:
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
     month_names:
       - ~
-      - জানুয়ারি
-      - ফেব্রুয়ারি
+      - জানুয়ারি
+      - ফেব্রুয়ারি
       - মার্চ
       - এপ্রিল
       - মে
@@ -205,8 +205,8 @@ bn-IN:
       - ডিসেম্বার
     abbr_month_names:
       - ~
-      - জানুয়ারি
-      - ফেব্রুয়ারি
+      - জানুয়ারি
+      - ফেব্রুয়ারি
       - মার্চ
       - এপ্রিল
       - মে
