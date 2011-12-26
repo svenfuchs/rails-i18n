@@ -1,7 +1,7 @@
 # Indian translations for Ruby on Rails
 # by Saurabh Bhatia
 
-id:
+"en-IN":
   date:
     formats:
       default: "%d %B %Y"
@@ -49,7 +49,7 @@ id:
       - Jul
       - Aug
       - Sep
-      - Oct
+      - Okt
       - Nov
       - Dec
     order:
@@ -59,6 +59,9 @@ id:
 
   time:
     formats:
+      default: "%a, %d %b %Y %H.%M.%S %z"
+      short: "%d %b %H.%M"
+      long: "%d %B %Y %H.%M"
     am: "am"
     pm: "pm"
 
@@ -99,6 +102,100 @@ id:
         - GB
         - TB
 
+  datetime:
+    distance_in_words:
+      half_a_minute: "setengah menit"
+      less_than_x_seconds:
+        zero:  "kurang dari 1 detik"
+        one:   "kurang dari 1 detik"
+        other: "kurang dari %{count} detik"
+      x_seconds:
+        one:   "satu detik"
+        other: "%{count} detik"
+      less_than_x_minutes:
+        zero:  "kurang dari 1 menit"
+        one:   "kurang dari 1 menit"
+        other: "kurang dari  %{count} menit"
+      x_minutes:
+        one:   "satu menit"
+        other: "%{count} menit"
+      about_x_hours:
+        one:   "sekitar satu jam"
+        other: "sekitar %{count} jam"
+      x_days:
+        one:   "sehari"
+        other: "%{count} hari"
+      about_x_months:
+        one:   "sekitar sebulan"
+        other: "sekitar %{count} bulan"
+      x_months:
+        one:   "sebulan"
+        other: "%{count} bulan"
+      about_x_years:
+        one:   "setahun"
+        other: "noin %{count} tahun"
+      over_x_years:
+        one:   "lebih dari setahun"
+        other: "lebih dari %{count} tahun"
+      almost_x_years:
+        one:   "hampir setahun"
+        other: "hampir %{count} tahun"
+    prompts:
+      year:   "Tahun"
+      month:  "Bulan"
+      day:    "Hari"
+      hour:   "Jam"
+      minute: "Menit"
+      second: "Detik"
+
+  helpers:
+    select:
+      prompt: "Silahkan pilih"
+
+    submit:
+      create: 'Buat %{model}'
+      update: 'Update %{model}'
+      submit: 'Simpan %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "tidak termasuk"
+      exclusion: "sudah digunakan"
+      invalid: "tidak valid"
+      confirmation: "tidak sesuai dengan konfirmasi"
+      accepted: "harus diterima"
+      empty: "tidak bisa kosong"
+      blank: "tidak bisa kosong"
+      too_long: "terlalu panjang (maksimum %{count} karakter)"
+      too_short: "terlalu pendek (minimum %{count} karakter)"
+      wrong_length: "jumlah karakter salah (seharusnya %{count} karakter)"
+      taken: "sudah digunakan"
+      not_a_number: "bukan angka"
+      greater_than: "harus lebih besar dari %{count}"
+      greater_than_or_equal_to: "harus sama atau lebih besar dari %{count}"
+      equal_to: "harus sama dengan %{count}"
+      less_than: "harus lebih kecil dari %{count}"
+      less_than_or_equal_to: "harus sama atau lebih kecil dari %{count}"
+      odd: "harus ganjil"
+      even: "harus genap"
+      record_invalid: "Verifikasi gagal: %{errors}"
+    template: &errors_template
+      header:
+        one: "1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
+        other: "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
+      body: "Ada masalah dengan field berikut:"
+
+  activerecord:
+    errors:
+      messages:
+        <<: *errors_messages
+      template:
+        <<: *errors_template
+      full_messages:
+        format: "%{attribute} %{message}"
+
   number:
     format:
       separator: ","
@@ -110,7 +207,7 @@ id:
     currency:
       format:
         format: "%u%n"
-        unit: "₹"
+        unit: "Rp"
         separator: ","
         delimiter: "."
         precision: 2
@@ -145,6 +242,8 @@ id:
         format: "%n %u"
         units:
           unit: ""
-          thousand: thousand
-          million: ten lakhs
-          billion: hundred crores
+          thousand: Ribu
+          million: Juta
+          billion: Miliar
+          trillion: Triliun
+          quadrillion: Quadriliun
