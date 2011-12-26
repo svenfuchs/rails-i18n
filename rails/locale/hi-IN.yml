@@ -86,7 +86,7 @@ hi-IN:
     currency:
       format:
         format: "%u%n"
-        unit: "&#x20B9;"
+        unit: "₹"
         separator: "."
         delimiter: ","
         precision: 2

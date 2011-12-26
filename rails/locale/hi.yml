@@ -86,7 +86,7 @@ hi:
     currency:
       format:
         format: "%u%n"
-        unit: "$"
+        unit: "₹"
         separator: "."
         delimiter: ","
         precision: 2
