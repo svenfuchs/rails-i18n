@@ -1,4 +1,10 @@
-## 0.2.0
+## 0.2.1 (2011-12-27)
+
+- fill in missing formatting/punctuation translations with their en-US versions
+- added en-IN locale
+- changed `time.formats.long` for Japanese (ja)
+
+## 0.2.0 (2011-12-04)
 
 - moved :'activerecord.errors.messages.taken' to :'errors.messages.taken'
 - moved :'activerecord.errors.messages.record_invalid'  to :'errors.messages.record_invalid'
