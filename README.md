@@ -27,7 +27,7 @@ For more information, visit [Rails Internationalization (I18n) API](http://guide
 
 Available locales are:
 
-> ar, az, bg, bn-IN, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-US, eo, es,
+> ar, az, bg, bn-IN, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-IN, en-US, eo, es,
 > es-AR, es-CL, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
@@ -36,12 +36,12 @@ Available locales are:
 Note that all locale files are not yet ready for Rails 3. Currently, following locales are ready for Rails 2 and 3:
 
 > ar, az, bg, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, el, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
-> eu, fa, fi, fr, fr-CA, fr-CH, gsw-CH, he, hi, hi-IN, hu, id, is, it, ja, kn, ko, lv, nb,
+> eu, fa, fi, fr, fr-CA, fr-CH, gsw-CH, he, hi, hi-IN, hu, is, it, ja, kn, ko, lv, nb,
 > nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
 
 Not-yet-ready locales are:
 
-> bn-IN, dsb, es-PE, fur, gl-ES, hr, hsb, lo, lt, mk, mn, nn, rm, sl, sr, sr-Latn, tr, vi
+> bn-IN, dsb, en-IN, es-PE, fur, gl-ES, hr, hsb, id, lo, lt, mk, mn, nn, rm, sl, sr, sr-Latn, tr, vi
 
 We always welcome your contributions!
 
