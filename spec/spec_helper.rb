@@ -3,8 +3,8 @@ ENV["RAILS_ENV"] = "test"
 
 require "action_controller/railtie"
 require "rspec/rails"
+require "will_paginate"
 require "rails_i18n"
-
 require "fake_app"
 
 # Configure RSpec
