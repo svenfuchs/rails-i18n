@@ -16,4 +16,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = '>= 1.3.5'
 
   s.add_dependency('i18n', '~> 0.5')
+  s.add_development_dependency "rails", ">= 3.0.0"
+  s.add_development_dependency "rspec-rails", ">= 2.7.0"
+  s.add_development_dependency "will_paginate", ">= 3.0.0"
 end
