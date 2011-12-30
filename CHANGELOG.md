@@ -1,6 +1,11 @@
+## 0.3.0 (Unreleased)
+
+- loads will_paginate/*.yml if the constant WillPaginate is defined
+- filled in missing will_paginate translations for en-US/en-GB/ja
+
 ## 0.2.1 (2011-12-27)
 
-- fill in missing formatting/punctuation translations with their en-US versions
+- filled in missing formatting/punctuation translations with their en-US versions
 - added en-IN locale
 - changed `time.formats.long` for Japanese (ja)
 
@@ -18,5 +23,3 @@
 - converted the Thai (th) localization file to yml
 - removed the hard coded Buddhist era from the Thai (th) localization file
 - fixed obvious indentation/scoping errors
-
-## 0.1.11
