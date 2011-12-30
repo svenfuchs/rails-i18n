@@ -1,5 +1,18 @@
 ja:
   will_paginate:
-    previous_label: "← 前へ"
-    next_label: "次へ →"
+    previous_label: "&#8592; 前へ"
+    next_label: "次へ &#8594;"
+    page_gap: "&hellip;"
 
+    page_entries_info:
+      single_page:
+        zero:  "%{model}が見つかりません"
+        one:   "1件の%{model}を表示しています"
+        other: "%{count}件の%{model}をすべて表示しています"
+      single_page_html:
+        zero:  "%{model}が見つかりません"
+        one:   "<b>1</b>件の%{model}を表示しています"
+        other: "<b>%{count}</b>件の%{model}をすべて表示しています"
+
+      multi_page: "%{from}番目から%{to}番目までの%{model}を表示しています（全%{count}件中）"
+      multi_page_html: "<b>%{from}</b>番目から<b>%{to}</b>番目までの%{model}を表示しています（全<b>%{count}</b>件中）"
