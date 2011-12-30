@@ -2,14 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name         = "rails-i18n"
-  s.version      = '0.3.0.beta'
+  s.version      = '0.3.0.beta2'
   s.authors      = ["Rails I18n Group"]
   s.email        = "rails-i18n@googlegroups.com"
   s.homepage     = "http://github.com/svenfuchs/rails-i18n"
   s.summary      = "Common locale data and translations for Rails i18n."
   s.description  = "A set of common locale data and translations to internationalize and/or localize your Rails applications."
 
-  s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") + %w(README.md MIT-LICENSE.txt)
+  s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") + Dir.glob("will_paginate/*") + %w(README.md MIT-LICENSE.txt)
   s.platform     = Gem::Platform::RUBY
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
