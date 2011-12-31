@@ -1,6 +1,8 @@
 Rails Locale Data Repository
 ============================
 
+[![Build Status](https://secure.travis-ci.org/svenfuchs/rails-i18n.png)](http://travis-ci.org/svenfuchs/rails-i18n)
+
 Central point to collect locale data for use in Ruby on Rails.
 
 ## Gem installation
@@ -82,21 +84,9 @@ If you are not,
 
 ### Test your locale file
 
-Before commit and push your changes, test the integrity of your locale file.
+Before committing and pushing your changes, test the integrity of your locale file.
 
-Make sure you have the <code>i18n</code> and <code>thor</code> installed. If you haven't, install them:
-
-    sudo gem install i18n thor
-
-You can test your locale by running following command on the root directory of this repository:
-
-    thor locales:test [your-locale]
-
-Assuming that there is a file <code>rails/locale/[your-locale].{rb,yml}</code> you will get a list of keys missing from your locale data.
-
-Invoke following command to test all locale files:
-
-    thor locales:test_all
+	rake spec 
 
 You can list all locales that are ready both for Rails version 2 and 3:
 
