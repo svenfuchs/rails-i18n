@@ -14,8 +14,8 @@ fur:
       format:
         format: "%n %u"
         unit: "€"
-        separator: "."
-        delimiter: ","
+        separator: ","
+        delimiter: "."
         precision: 2
         significant: false
         strip_insignificant_zeros: false
@@ -52,6 +52,11 @@ fur:
         format: "%n %u"
         units:
           unit: ""
+          thousand: miâr
+          million: milion
+          billion: bilion
+          trillion: trilion
+          quadrillion: cuadrilion
 
   date:
     formats:
@@ -113,7 +118,7 @@ fur:
     formats:
       default: "%a %d di %b dal %Y, %H:%M:%S %z"
       short: "%d di %b %H:%M"
-      long: "%d di %B %Y %H:%M"
+      long: "%d di %B dal %Y %H:%M"
 
     am: 'am'
     pm: 'pm'
@@ -151,19 +156,34 @@ fur:
       over_x_years:
         one:  "plui di un an"
         other: "plui di %{count} agns"
+      almost_x_years:
+        one:   "cuasi un an"
+        other: "cuasi %{count} agns"
     prompts:
       year:   "An"
       month:  "Mês"
-      day:    "Dì"
+      day:    "Zornade"
       hour:   "Ore"
       minute: "Minût"
-      second: "Seconts"
+      second: "Secont"
+
+  helpers:
+    select:
+      prompt: "Sielç par plasê"
+
+    submit:
+      create: 'Cree %{model}'
+      update: 'Inzorne %{model}'
+      submit: 'Salve %{model}'
 
   support:
     array:
       words_connector: ", "
       two_words_connector: " e "
-      last_word_connector: ", e "
+      last_word_connector: " e "
+
+    select:
+      prompt: "Sielç par plasê"
 
   errors:
     format: "%{attribute} %{message}"
@@ -173,7 +193,7 @@ fur:
         other: "No si pues salvâ chest %{model}: %{count} erôrs."
       body: "Torne par plasê a controlâ i cjamps ca sot:"
     messages: &errors_messages
-      inclusion: "non è includût te liste"
+      inclusion: "nol è includût te liste"
       exclusion: "al è riservât"
       invalid: "nol è valit"
       confirmation: "nol è compagn de conferme"
@@ -182,9 +202,10 @@ fur:
       blank: "nol pues jessi lassât in blanc"
       too_long: "al è masse lunc (il massim al è %{count} letaris)"
       too_short: "al è masse curt (il minim al è %{count} letaris)"
-      wrong_length: "nol à la lungjece juste (al ò di jessi di %{count} letaris)"
+      wrong_length: "nol à la lungjece juste (al à di jessi di %{count} letaris)"
       taken: "al è za doprât"
       not_a_number: "nol è un numar"
+      not_an_integer: "al à di jessi un numar intîr"
       greater_than: "al à di jessi plui grant di %{count}"
       greater_than_or_equal_to: "al à di jessi plui grant o compagn di %{count}"
       equal_to: "al à di jessi compagn di %{count}"
@@ -192,6 +213,7 @@ fur:
       less_than_or_equal_to: "al à di jessi mancul o compagn di %{count}"
       odd: "al à di jessi dispar"
       even: "al à di jessi pâr"
+      record_invalid: "Convalide falide: %{errors}"
 
   activerecord:
     errors:
