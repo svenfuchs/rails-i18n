@@ -1,0 +1,19 @@
+"sk":
+  will_paginate:
+    previous_label: "&#8592; Predošlá"
+    next_label: "Ďalšia &#8594;"
+    page_gap: "&hellip;"
+
+    page_entries_info:
+      single_page:
+        zero:  "Nenájdený žiadny %{model}"
+        one:   "Zobrazujem 1 %{model}"
+        other: "Zobrazujem všetkých %{count} %{model}"
+      single_page_html:
+        zero:  "Nenájdený žiadny %{model}"
+        one:   "Zobrazujem <b>1</b> %{model}"
+        other: "Zobrazujem <b>všetkých&nbsp;%{count}</b> %{model}"
+
+      multi_page: "Zobrazujem %{model} %{from} - %{to} z celkovo %{count}"
+      multi_page_html: "Zobrazujem %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> z celkovo <b>%{count}</b>"
+      
