@@ -6,6 +6,7 @@ require "rspec/rails"
 require "will_paginate"
 require "rails_i18n"
 require "fake_app"
+require "i18n-spec"
 
 # Configure RSpec
 RSpec.configure do |config|
