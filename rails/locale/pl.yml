@@ -225,9 +225,6 @@ pl:
       body: "Błędy dotyczą następujących pól:"
 
   activerecord:
-    attributes:
-      created_at: "Stworzony"
-      updated_at: "Zaktualizowany"
     errors:
       messages:
         <<: *errors_messages
