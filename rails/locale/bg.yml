@@ -95,7 +95,6 @@ bg:
     currency:
       format:
         format: "%n %u"
-        negative_format: "-%n %u"
         unit: "лв."
         separator: ","
         delimiter: " "
