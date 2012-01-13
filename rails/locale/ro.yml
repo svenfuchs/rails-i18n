@@ -183,7 +183,7 @@ ro:
       empty: "nu poate fi gol"
       blank: "nu poate fi gol"
       too_long: "este prea lung (se pot folosi maximum %{count} caractere)"
-      too_short: "este pre scurt (minumim de caractere este %{count})"
+      too_short: "este prea scurt (minimum de caractere este %{count})"
       wrong_length: "nu are lungimea corectă (trebuie să aiba %{count} caractere)"
       not_a_number: "nu este un număr"
       not_an_integer: "trebuie să fie un mumăr întreg"

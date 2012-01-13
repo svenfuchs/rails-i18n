@@ -1,0 +1,4 @@
+ro:
+ will_paginate:
+    previous_label: "← anterior"
+    next_label: "următor →"

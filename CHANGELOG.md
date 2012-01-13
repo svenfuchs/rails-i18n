@@ -1,7 +1,10 @@
-## 0.3.0 (Unreleased)
+## 0.3.0 (2012-01-10)
 
 - loads will_paginate/*.yml if the constant WillPaginate is defined
-- filled in missing will_paginate translations for en-US/en-GB/ja
+- filled in missing will_paginate translations for en-US/en-GB/ja/sk
+- Friulian(fur) is ready for Rails 2 and 3
+- corrected translation for 'too_short' (ro)
+- added will_paginate translation (ro)
 
 ## 0.2.1 (2011-12-27)
 
