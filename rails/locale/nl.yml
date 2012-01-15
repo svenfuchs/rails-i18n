@@ -1,223 +1,194 @@
-# Dutch translations for Ruby on Rails, based on US English template
-# Original version by Ariejan de Vroom <ariejan@ariejan.net>
-#  - Sponsored by Kabisa ICT - http://kabisa.nl
-# Rails 3 update by Floris Huetink <floris@avocado.nl> (github: florish)
-
 nl:
   date:
-    formats:
-      default: "%d/%m/%Y"
-      short: "%e %b"
-      long: "%e %B %Y"
-    day_names:
-      - zondag
-      - maandag
-      - dinsdag
-      - woensdag
-      - donderdag
-      - vrijdag
-      - zaterdag
     abbr_day_names:
-      - zon
-      - maa
-      - din
-      - woe
-      - don
-      - vri
-      - zat
-
-    month_names:
-      - ~
-      - januari
-      - februari
-      - maart
-      - april
-      - mei
-      - juni
-      - juli
-      - augustus
-      - september
-      - oktober
-      - november
-      - december
+    - zon
+    - maa
+    - din
+    - woe
+    - don
+    - vri
+    - zat
     abbr_month_names:
-      - ~
-      - jan
-      - feb
-      - mar
-      - apr
-      - mei
-      - jun
-      - jul
-      - aug
-      - sep
-      - okt
-      - nov
-      - dec
-    order:
-      - :day
-      - :month
-      - :year
-
-  time:
+    - 
+    - jan
+    - feb
+    - mar
+    - apr
+    - mei
+    - jun
+    - jul
+    - aug
+    - sep
+    - okt
+    - nov
+    - dec
+    day_names:
+    - zondag
+    - maandag
+    - dinsdag
+    - woensdag
+    - donderdag
+    - vrijdag
+    - zaterdag
     formats:
-      default: "%a %d %b %Y %H:%M:%S %Z"
-      short: "%d %b %H:%M"
-      long: "%d %B %Y %H:%M"
-    am: "'s ochtends"
-    pm: "'s middags"
-
-  support:
-    array:
-      words_connector: ", "
-      two_words_connector: " en "
-      last_word_connector: " en "
-
+      default: ! '%d/%m/%Y'
+      long: ! '%e %B %Y'
+      short: ! '%e %b'
+    month_names:
+    - 
+    - januari
+    - februari
+    - maart
+    - april
+    - mei
+    - juni
+    - juli
+    - augustus
+    - september
+    - oktober
+    - november
+    - december
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: ongeveer een uur
+        other: ongeveer %{count} uur
+      about_x_months:
+        one: ongeveer een maand
+        other: ongeveer %{count} maanden
+      about_x_years:
+        one: ongeveer een jaar
+        other: ongeveer %{count} jaar
+      almost_x_years:
+        one: bijna een jaar
+        other: bijna %{count} jaar
+      half_a_minute: een halve minuut
+      less_than_x_minutes:
+        one: minder dan een minuut
+        other: minder dan %{count} minuten
+      less_than_x_seconds:
+        one: minder dan een seconde
+        other: minder dan %{count} seconden
+      over_x_years:
+        one: meer dan een jaar
+        other: meer dan %{count} jaar
+      x_days:
+        one: 1 dag
+        other: ! '%{count} dagen'
+      x_minutes:
+        one: 1 minuut
+        other: ! '%{count} minuten'
+      x_months:
+        one: 1 maand
+        other: ! '%{count} maanden'
+      x_seconds:
+        one: 1 seconde
+        other: ! '%{count} seconden'
+    prompts:
+      day: dag
+      hour: uur
+      minute: minuut
+      month: maand
+      second: seconde
+      year: jaar
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: moet worden geaccepteerd
+      blank: moet opgegeven zijn
+      confirmation: komt niet met de bevestiging overeen
+      empty: moet opgegeven zijn
+      equal_to: moet gelijk zijn aan %{count}
+      even: moet even zijn
+      exclusion: is niet beschikbaar
+      greater_than: moet groter zijn dan %{count}
+      greater_than_or_equal_to: moet groter dan of gelijk zijn aan %{count}
+      inclusion: is niet in de lijst opgenomen
+      invalid: is ongeldig
+      less_than: moet minder zijn dan %{count}
+      less_than_or_equal_to: moet minder dan of gelijk zijn aan %{count}
+      not_a_number: is geen getal
+      not_an_integer: moet een geheel getal zijn
+      odd: moet oneven zijn
+      record_invalid: ! 'Validatie mislukt: %{errors}'
+      taken: is al in gebruik
+      too_long: is te lang (maximaal %{count} tekens)
+      too_short: is te kort (minimaal %{count} tekens)
+      wrong_length: heeft onjuiste lengte (moet %{count} tekens lang zijn)
+    template:
+      body: ! 'Controleer de volgende velden:'
+      header:
+        one: ! '%{model} niet opgeslagen: 1 fout gevonden'
+        other: ! '%{model} niet opgeslagen: %{count} fouten gevonden'
+  helpers:
     select:
-      prompt: "Selecteer"
-
+      prompt: Selecteer
+    submit:
+      create: ! '%{model} toevoegen'
+      submit: ! '%{model} opslaan'
+      update: ! '%{model} bewaren'
   number:
-    format:
-      separator: ","
-      delimiter: "."
-      precision: 2
-      significant: false
-      strip_insignificant_zeros: false
-
     currency:
       format:
-        format: "%u%n"
-        unit: "€"
-        separator: ","
-        delimiter: "."
+        delimiter: .
+        format: ! '%u%n'
         precision: 2
+        separator: ! ','
         significant: false
         strip_insignificant_zeros: false
-
-    percentage:
-      format:
-        delimiter: ""
-
-    precision:
-      format:
-        delimiter: ""
-
+        unit: €
+    format:
+      delimiter: .
+      precision: 2
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: miljard
+          million: miljoen
+          quadrillion: biljard
+          thousand: duizend
+          trillion: biljoen
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one:   "Byte"
-            other: "Bytes"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-          thousand: "duizend"
-          million: "miljoen"
-          billion: "miljard"
-          trillion: "biljoen"
-          quadrillion: "biljard"
-
-  datetime:
-    distance_in_words:
-      half_a_minute: "een halve minuut"
-      less_than_x_seconds:
-        one:   "minder dan een seconde"
-        other: "minder dan %{count} seconden"
-      x_seconds:
-        one:   "1 seconde"
-        other: "%{count} seconden"
-      less_than_x_minutes:
-        one:   "minder dan een minuut"
-        other: "minder dan %{count} minuten"
-      x_minutes:
-        one:   "1 minuut"
-        other: "%{count} minuten"
-      about_x_hours:
-        one:   "ongeveer een uur"
-        other: "ongeveer %{count} uur"
-      x_days:
-        one:   "1 dag"
-        other: "%{count} dagen"
-      about_x_months:
-        one: "ongeveer een maand"
-        other: "ongeveer %{count} maanden"
-      x_months:
-        one:   "1 maand"
-        other: "%{count} maanden"
-      about_x_years:
-        one: "ongeveer een jaar"
-        other: "ongeveer %{count} jaar"
-      over_x_years:
-        one: "meer dan een jaar"
-        other: "meer dan %{count} jaar"
-      almost_x_years:
-        one:   "bijna een jaar"
-        other: "bijna %{count} jaar"
-    prompts:
-      year:   "jaar"
-      month:  "maand"
-      day:    "dag"
-      hour:   "uur"
-      minute: "minuut"
-      second: "seconde"
-
-  helpers:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' en '
+      two_words_connector: ! ' en '
+      words_connector: ! ', '
     select:
-      prompt: "Selecteer"
-
-    submit:
-      create: '%{model} toevoegen'
-      update: '%{model} bewaren'
-      submit: '%{model} opslaan'
-
-  errors:
-    format: "%{attribute} %{message}"
-
-    messages: &errors_messages
-      inclusion: "is niet in de lijst opgenomen"
-      exclusion: "is niet beschikbaar"
-      invalid: "is ongeldig"
-      confirmation: "komt niet met de bevestiging overeen"
-      accepted: "moet worden geaccepteerd"
-      empty: "moet opgegeven zijn"
-      blank: "moet opgegeven zijn"
-      too_long: "is te lang (maximaal %{count} tekens)"
-      too_short: "is te kort (minimaal %{count} tekens)"
-      wrong_length: "heeft onjuiste lengte (moet %{count} tekens lang zijn)"
-      not_a_number: "is geen getal"
-      not_an_integer: "moet een geheel getal zijn"
-      greater_than: "moet groter zijn dan %{count}"
-      greater_than_or_equal_to: "moet groter dan of gelijk zijn aan %{count}"
-      equal_to: "moet gelijk zijn aan %{count}"
-      less_than: "moet minder zijn dan %{count}"
-      less_than_or_equal_to: "moet minder dan of gelijk zijn aan %{count}"
-      odd: "moet oneven zijn"
-      even: "moet even zijn"
-      taken: "is al in gebruik"
-      record_invalid: "Validatie mislukt: %{errors}"
-    template: &errors_template
-      header:
-        one:    "%{model} niet opgeslagen: 1 fout gevonden"
-        other:  "%{model} niet opgeslagen: %{count} fouten gevonden"
-      body: "Controleer de volgende velden:"
-
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-
-      full_messages:
-        format: "%{attribute} %{message}"
+      prompt: Selecteer
+  time:
+    am: ! '''s ochtends'
+    formats:
+      default: ! '%a %d %b %Y %H:%M:%S %Z'
+      long: ! '%d %B %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: ! '''s middags'

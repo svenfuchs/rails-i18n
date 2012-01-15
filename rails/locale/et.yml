@@ -1,223 +1,194 @@
-# Estonian localization for Ruby on Rails 2 and 3
-# by Zahhar Kirillov <zahhar@gmail.com>
-# contributors:
-#  - Mart Karu - http://github.com/martkaru <karu@metal.ee>
-
 et:
   date:
-    formats:
-      default: "%d.%m.%Y"
-      short: "%d.%m.%y"
-      long: "%d. %B %Y"
-
-    day_names:
-      - pühapäev
-      - esmaspäev
-      - teisipäev
-      - kolmapäev
-      - neljapäev
-      - reede
-      - laupäev
     abbr_day_names:
-      - P
-      - E
-      - T
-      - K
-      - N
-      - R
-      - L
-
-    month_names:
-      - ~
-      - jaanuar
-      - veebruar
-      - märts
-      - aprill
-      - mai
-      - juuni
-      - juuli
-      - august
-      - september
-      - oktoober
-      - november
-      - detsember
+    - P
+    - E
+    - T
+    - K
+    - N
+    - R
+    - L
     abbr_month_names:
-      - ~
-      - jaan.
-      - veebr.
-      - märts
-      - apr.
-      - mai
-      - juuni
-      - juuli
-      - aug.
-      - sept.
-      - okt.
-      - nov.
-      - dets.
-    order:
-      - :day
-      - :month
-      - :year
-
-  time:
+    - 
+    - jaan.
+    - veebr.
+    - märts
+    - apr.
+    - mai
+    - juuni
+    - juuli
+    - aug.
+    - sept.
+    - okt.
+    - nov.
+    - dets.
+    day_names:
+    - pühapäev
+    - esmaspäev
+    - teisipäev
+    - kolmapäev
+    - neljapäev
+    - reede
+    - laupäev
     formats:
-      default: "%d. %B %Y, %H:%M"
-      short: "%d.%m.%y, %H:%M"
-      long: "%a, %d. %b %Y, %H:%M:%S %z"
-
-    am: "enne lõunat"
-    pm: "pärast lõunat"
-
-  support:
-    array:
-      words_connector: ", "
-      two_words_connector: " ja "
-      last_word_connector: " ja "
-
+      default: ! '%d.%m.%Y'
+      long: ! '%d. %B %Y'
+      short: ! '%d.%m.%y'
+    month_names:
+    - 
+    - jaanuar
+    - veebruar
+    - märts
+    - aprill
+    - mai
+    - juuni
+    - juuli
+    - august
+    - september
+    - oktoober
+    - november
+    - detsember
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: umbes %{count} tund
+        other: umbes %{count} tundi
+      about_x_months:
+        one: umbes %{count} kuu
+        other: umbes %{count} kuud
+      about_x_years:
+        one: umbes %{count} aasta
+        other: umbes %{count} aastat
+      almost_x_years:
+        one: peaaegu üks aasta
+        other: peaaegu %{count} aastat
+      half_a_minute: pool minutit
+      less_than_x_minutes:
+        one: vähem kui %{count} minut
+        other: vähem kui %{count} minutit
+      less_than_x_seconds:
+        one: vähem kui %{count} sekund
+        other: vähem kui %{count} sekundit
+      over_x_years:
+        one: üle %{count} aasta
+        other: üle %{count} aastat
+      x_days:
+        one: ! '%{count} päev'
+        other: ! '%{count} päeva'
+      x_minutes:
+        one: ! '%{count} minut'
+        other: ! '%{count} minutit'
+      x_months:
+        one: ! '%{count} kuu'
+        other: ! '%{count} kuud'
+      x_seconds:
+        one: ! '%{count} sekund'
+        other: ! '%{count} sekundit'
+    prompts:
+      day: Päev
+      hour: Tunde
+      minute: Minutit
+      month: Kuu
+      second: Sekundit
+      year: Aasta
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: peab olema heaks kiidetud
+      blank: on täitmata
+      confirmation: ei vasta kinnitusele
+      empty: on tühi
+      equal_to: peab võrdne arvuga %{count}
+      even: peab olema paarisarv
+      exclusion: on reserveeritud
+      greater_than: ei tohi olla suurem kui %{count}
+      greater_than_or_equal_to: peab olema suurem või võrdne arvuga %{count}
+      inclusion: ei leidu nimekirjas
+      invalid: ei ole korrektne
+      less_than: peab olema vähem kui %{count}
+      less_than_or_equal_to: peab olema vähem või võrdne arvuga %{count}
+      not_a_number: ei ole number
+      not_an_integer: peab olema täisarv
+      odd: peab olema paaritu arv
+      record_invalid: ! 'Valideerimine ebaõnnestus: %{errors}'
+      taken: on juba võetud
+      too_long: on liiga pikk (maksimum on %{count} tähemärki)
+      too_short: on liiga lühike (miinimum on %{count} tähemärki)
+      wrong_length: on vale pikkusega (peab olema %{count} tähemärki)
+    template:
+      body: ! 'Probleeme ilmnes järgmiste väljadega:'
+      header:
+        one: Üks viga takistas objekti %{model} salvestamist
+        other: ! '%{count} viga takistasid objekti %{model} salvestamist'
+  helpers:
     select:
-      prompt: "Palun vali"
-
+      prompt: Palun vali
+    submit:
+      create: Loo uus %{model}
+      submit: Salvesta %{model}
+      update: Uuenda objekti %{model}
   number:
-    format:
-      separator: ","
-      delimiter: " "
-      precision: 2
-      significant: false
-      strip_insignificant_zeros: false
-
     currency:
       format:
-        format: "%n %u"
-        unit: "€"
-        separator: ","
-        delimiter: " "
+        delimiter: ! ' '
+        format: ! '%n %u'
         precision: 2
+        separator: ! ','
         significant: false
         strip_insignificant_zeros: false
-
-    percentage:
-      format:
-        delimiter: ""
-
-    precision:
-      format:
-        delimiter: ""
-
+        unit: €
+    format:
+      delimiter: ! ' '
+      precision: 2
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: miljard
+          million: miljon
+          quadrillion: kvadriljon
+          thousand: tuhat
+          trillion: triljon
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 1
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one: "bait"
-            other: "baiti"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-          thousand: tuhat
-          million: miljon
-          billion: miljard
-          trillion: triljon
-          quadrillion: kvadriljon
-
-  datetime:
-    distance_in_words:
-      half_a_minute: "pool minutit"
-      less_than_x_seconds:
-        one:   "vähem kui %{count} sekund"
-        other: "vähem kui %{count} sekundit"
-      x_seconds:
-        one:   "%{count} sekund"
-        other: "%{count} sekundit"
-      less_than_x_minutes:
-        one:   "vähem kui %{count} minut"
-        other: "vähem kui %{count} minutit"
-      x_minutes:
-        one:   "%{count} minut"
-        other: "%{count} minutit"
-      about_x_hours:
-        one:   "umbes %{count} tund"
-        other: "umbes %{count} tundi"
-      x_days:
-        one:   "%{count} päev"
-        other: "%{count} päeva"
-      about_x_months:
-        one:   "umbes %{count} kuu"
-        other: "umbes %{count} kuud"
-      x_months:
-        one:   "%{count} kuu"
-        other: "%{count} kuud"
-      about_x_years:
-        one:   "umbes %{count} aasta"
-        other: "umbes %{count} aastat"
-      over_x_years:
-        one:   "üle %{count} aasta"
-        other: "üle %{count} aastat"
-      almost_x_years:
-        one:   "peaaegu üks aasta"
-        other: "peaaegu %{count} aastat"
-    prompts:
-      year: "Aasta"
-      month: "Kuu"
-      day: "Päev"
-      hour: "Tunde"
-      minute: "Minutit"
-      second: "Sekundit"
-
-  helpers:
+            one: bait
+            other: baiti
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' ja '
+      two_words_connector: ! ' ja '
+      words_connector: ! ', '
     select:
-      prompt: "Palun vali"
-
-    submit:
-      create: 'Loo uus %{model}'
-      update: 'Uuenda objekti %{model}'
-      submit: 'Salvesta %{model}'
-
-  errors:
-    format: "%{attribute} %{message}"
-    messages: &errors_messages
-      inclusion: "ei leidu nimekirjas"
-      exclusion: "on reserveeritud"
-      invalid: "ei ole korrektne"
-      confirmation: "ei vasta kinnitusele"
-      accepted: "peab olema heaks kiidetud"
-      empty: "on tühi"
-      blank: "on täitmata"
-      too_long: "on liiga pikk (maksimum on %{count} tähemärki)"
-      too_short: "on liiga lühike (miinimum on %{count} tähemärki)"
-      wrong_length: "on vale pikkusega (peab olema %{count} tähemärki)"
-      not_a_number: "ei ole number"
-      not_an_integer: "peab olema täisarv"
-      greater_than: "ei tohi olla suurem kui %{count}"
-      greater_than_or_equal_to: "peab olema suurem või võrdne arvuga %{count}"
-      equal_to: "peab võrdne arvuga %{count}"
-      less_than: "peab olema vähem kui %{count}"
-      less_than_or_equal_to: "peab olema vähem või võrdne arvuga %{count}"
-      odd: "peab olema paaritu arv"
-      even: "peab olema paarisarv"
-      taken: "on juba võetud"
-      record_invalid: "Valideerimine ebaõnnestus: %{errors}"
-    template: &errors_template
-      header:
-        one:    "Üks viga takistas objekti %{model} salvestamist"
-        other:  "%{count} viga takistasid objekti %{model} salvestamist"
-      body: "Probleeme ilmnes järgmiste väljadega:"
-
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
+      prompt: Palun vali
+  time:
+    am: enne lõunat
+    formats:
+      default: ! '%d. %B %Y, %H:%M'
+      long: ! '%a, %d. %b %Y, %H:%M:%S %z'
+      short: ! '%d.%m.%y, %H:%M'
+    pm: pärast lõunat

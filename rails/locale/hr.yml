@@ -1,179 +1,163 @@
-# Croatian translation for Ruby on Rails
-# by Marjan Vrban (mvrban@gmail.com)
-
-"hr":
+hr:
   date:
-    formats:
-      default: "%d/%m/%Y"
-      short: "%e %b"
-      long: "%B %e, %Y"
-    day_names:
-      - Nedjelja
-      - Ponedjeljak
-      - Utorak
-      - Srijeda
-      - Četvrtak
-      - Petak
-      - Subota
     abbr_day_names:
-      - Ned
-      - Pon
-      - Uto
-      - Sre
-      - Čet
-      - Pet
-      - Sub
-    month_names:
-      - ~
-      - Siječanj
-      - Veljača
-      - Ožujak
-      - Travanj
-      - Svibanj
-      - Lipanj
-      - Srpanj
-      - Kolovoz
-      - Rujan
-      - Listopad
-      - Studeni
-      - Prosinac
+    - Ned
+    - Pon
+    - Uto
+    - Sre
+    - Čet
+    - Pet
+    - Sub
     abbr_month_names:
-      - ~
-      - Sij
-      - Vel
-      - Ožu
-      - Tra
-      - Svi
-      - Lip
-      - Srp
-      - Kol
-      - Ruj
-      - Lis
-      - Stu
-      - Pro
-    order:
-      - :day
-      - :month
-      - :year
-
-  time:
+    - 
+    - Sij
+    - Vel
+    - Ožu
+    - Tra
+    - Svi
+    - Lip
+    - Srp
+    - Kol
+    - Ruj
+    - Lis
+    - Stu
+    - Pro
+    day_names:
+    - Nedjelja
+    - Ponedjeljak
+    - Utorak
+    - Srijeda
+    - Četvrtak
+    - Petak
+    - Subota
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
-      short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
-    am: 'AM'
-    pm: 'PM'
-
+      default: ! '%d/%m/%Y'
+      long: ! '%B %e, %Y'
+      short: ! '%e %b'
+    month_names:
+    - 
+    - Siječanj
+    - Veljača
+    - Ožujak
+    - Travanj
+    - Svibanj
+    - Lipanj
+    - Srpanj
+    - Kolovoz
+    - Rujan
+    - Listopad
+    - Studeni
+    - Prosinac
+    order:
+    - :day
+    - :month
+    - :year
   datetime:
     distance_in_words:
-      half_a_minute: 'pola minute'
-      less_than_x_seconds:
-        zero: 'manje od 1 sekunde'
-        one: 'manje od 1 sekunde'
-        few: 'manje od %{count} sekunde'
-        other: 'manje od %{count} sekundi'
-      x_seconds:
-        one: '1 sekunda'
-        few: '%{count} sekunde'
-        other: '%{count} sekundi'
-      less_than_x_minutes:
-        zero: 'manje od minute'
-        one: 'manje od 1 minute'
-        other: 'manje od %{count} minuta'
-      x_minutes:
-        one: '1 minuta'
-        other: '%{count} minuta-e'
       about_x_hours:
-        one: 'oko 1 sat'
-        few: 'oko %{count} sata'
-        other: 'oko %{count} sati'
-      x_days:
-        one: '1 dan'
-        other: '%{count} dana'
+        few: oko %{count} sata
+        one: oko 1 sat
+        other: oko %{count} sati
       about_x_months:
-        one: 'oko 1 mjesec'
-        few: 'oko %{count} mjeseca'
-        other: 'oko %{count} mjeseci'
-      x_months:
-        one: '1 mjesec'
-        few: '%{count} mjeseca'
-        other: '%{count} mjeseci'
+        few: oko %{count} mjeseca
+        one: oko 1 mjesec
+        other: oko %{count} mjeseci
       about_x_years:
-        one: 'oko 1 godine'
-        other: 'oko %{count} godine'
+        one: oko 1 godine
+        other: oko %{count} godine
+      half_a_minute: pola minute
+      less_than_x_minutes:
+        one: manje od 1 minute
+        other: manje od %{count} minuta
+        zero: manje od minute
+      less_than_x_seconds:
+        few: manje od %{count} sekunde
+        one: manje od 1 sekunde
+        other: manje od %{count} sekundi
+        zero: manje od 1 sekunde
       over_x_years:
-        one: 'preko 1 godine'
-        other: 'preko %{count} godine'
-
+        one: preko 1 godine
+        other: preko %{count} godine
+      x_days:
+        one: 1 dan
+        other: ! '%{count} dana'
+      x_minutes:
+        one: 1 minuta
+        other: ! '%{count} minuta-e'
+      x_months:
+        few: ! '%{count} mjeseca'
+        one: 1 mjesec
+        other: ! '%{count} mjeseci'
+      x_seconds:
+        few: ! '%{count} sekunde'
+        one: 1 sekunda
+        other: ! '%{count} sekundi'
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: mora biti prihvaćen
+      blank: mora biti ispunjen
+      confirmation: se ne slaže sa svojom potvrdom
+      empty: mora biti ispunjen
+      equal_to: mora biti jednako %{count}
+      even: mora biti parno
+      exclusion: nije dostupno
+      greater_than: mora biti veće od %{count}
+      greater_than_or_equal_to: mora biti veće ili jednako %{count}
+      inclusion: nije u listi
+      invalid: nije ispravan
+      less_than: mora biti manje od %{count}
+      less_than_or_equal_to: mora biti manje ili jednako %{count}
+      not_a_number: nije broj
+      odd: mora biti neparno
+      taken: je zauzeto
+      too_long: je predugačak (ne više od %{count} karaktera)
+      too_short: je prekratak (ne manje od %{count} karaktera)
+      wrong_length: nije odgovarajuće dužine (mora imati %{count} karaktera)
+    template:
+      body: ! 'Molim Vas provjerite slijedeća polja:'
+      header:
+        few: ! 'Nisam uspio spremiti %{model}: %{count} greške.'
+        one: ! 'Nisam uspio spremiti %{model}: 1 greška'
+        other: ! 'Nisam uspio spremiti %{model}: %{count} greški.'
   number:
-    format:
-      precision: 3
-      separator: ','
-      delimiter: '.'
-      significant: false
-      strip_insignificant_zeros: false
     currency:
       format:
-        unit: 'Kn'
+        delimiter: ! ','
+        format: ! '%n %u'
         precision: 2
-        format: '%n %u'
-        separator: "."
-        delimiter: ","
+        separator: .
         significant: false
         strip_insignificant_zeros: false
-    percentage:
-      format:
-        delimiter: ""
-    precision:
-      format:
-        delimiter: ""
+        unit: Kn
+    format:
+      delimiter: .
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-
-  errors:
-    format: "%{attribute} %{message}"
-    template: &errors_template
-      header:
-        one: 'Nisam uspio spremiti %{model}: 1 greška'
-        few: 'Nisam uspio spremiti %{model}: %{count} greške.'
-        other: 'Nisam uspio spremiti %{model}: %{count} greški.'
-      body: "Molim Vas provjerite slijedeća polja:"
-    messages: &errors_messages
-      inclusion: "nije u listi"
-      exclusion: "nije dostupno"
-      invalid: "nije ispravan"
-      confirmation: "se ne slaže sa svojom potvrdom"
-      accepted: "mora biti prihvaćen"
-      empty: "mora biti ispunjen"
-      blank: "mora biti ispunjen"
-      too_long: "je predugačak (ne više od %{count} karaktera)"
-      too_short: "je prekratak (ne manje od %{count} karaktera)"
-      wrong_length: "nije odgovarajuće dužine (mora imati %{count} karaktera)"
-      taken: "je zauzeto"
-      not_a_number: "nije broj"
-      greater_than: "mora biti veće od %{count}"
-      greater_than_or_equal_to: "mora biti veće ili jednako %{count}"
-      equal_to: "mora biti jednako %{count}"
-      less_than: "mora biti manje od %{count}"
-      less_than_or_equal_to: "mora biti manje ili jednako %{count}"
-      odd: "mora biti neparno"
-      even: "mora biti parno"
-
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
+        format: ! '%n %u'
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  time:
+    am: AM
+    formats:
+      default: ! '%a %b %d %H:%M:%S %Z %Y'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: PM
