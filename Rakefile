@@ -1,6 +1,5 @@
 require 'rake'
 require 'rake/testtask'
-
 require 'rbconfig'
 
 task :test => 'test:all'
@@ -23,5 +22,7 @@ RSpec::Core::RakeTask.new(:rcov) do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
   spec.rcov = true
 end
+
+require 'i18n-spec/tasks' # needs to be loaded after rspec
 
 task :default => :spec
