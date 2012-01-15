@@ -1,224 +1,194 @@
-# Arabic translations for Ruby on Rails
-# by Rida Al Barazi (me@rida.me)
-# updated by Ahmed Hazem (nardgo@gmail.com)
-# Rails 3 edit by rbjarnason
-
-"ar":
+ar:
   date:
-    formats:
-      default: "%Y-%m-%d"
-      short: "%e %b"
-      long: "%B %e, %Y"
-
-    day_names:
-      - الأحد
-      - الإثنين
-      - الثلاثاء
-      - الأربعاء
-      - الخميس
-      - الجمعة
-      - السبت
     abbr_day_names:
-      - الأحد
-      - الإثنين
-      - الثلاثاء
-      - الأربعاء
-      - الخميس
-      - الجمعة
-      - السبت
-
-    month_names:
-      - ~
-      - يناير
-      - فبراير
-      - مارس
-      - ابريل
-      - مايو
-      - يونيو
-      - يوليو
-      - اغسطس
-      - سبتمبر
-      - اكتوبر
-      - نوفمبر
-      - ديسمبر
+    - الأحد
+    - الإثنين
+    - الثلاثاء
+    - الأربعاء
+    - الخميس
+    - الجمعة
+    - السبت
     abbr_month_names:
-      - ~
-      - يناير
-      - فبراير
-      - مارس
-      - ابريل
-      - مايو
-      - يونيو
-      - يوليو
-      - اغسطس
-      - سبتمبر
-      - اكتوبر
-      - نوفمبر
-      - ديسمبر
-    order:
-      - :day
-      - :month
-      - :year
-
-  time:
+    - 
+    - يناير
+    - فبراير
+    - مارس
+    - ابريل
+    - مايو
+    - يونيو
+    - يوليو
+    - اغسطس
+    - سبتمبر
+    - اكتوبر
+    - نوفمبر
+    - ديسمبر
+    day_names:
+    - الأحد
+    - الإثنين
+    - الثلاثاء
+    - الأربعاء
+    - الخميس
+    - الجمعة
+    - السبت
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
-      short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
-    am: 'صباحا'
-    pm: 'مساءا'
-
-  support:
-    array:
-      words_connector: ", "
-      two_words_connector: " و "
-      last_word_connector: ", و "
-
+      default: ! '%Y-%m-%d'
+      long: ! '%B %e, %Y'
+      short: ! '%e %b'
+    month_names:
+    - 
+    - يناير
+    - فبراير
+    - مارس
+    - ابريل
+    - مايو
+    - يونيو
+    - يوليو
+    - اغسطس
+    - سبتمبر
+    - اكتوبر
+    - نوفمبر
+    - ديسمبر
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: حوالي ساعة واحدة
+        other: ! '%{count} ساعات'
+      about_x_months:
+        one: حوالي شهر واحد
+        other: ! '%{count} أشهر'
+      about_x_years:
+        one: حوالي سنة
+        other: ! '%{count} سنوات'
+      almost_x_years:
+        one: تقريبا سنة واحدة
+        other: ما يقرب من %{count} سنة
+      half_a_minute: نصف دقيقة
+      less_than_x_minutes:
+        one: أقل من دقيقة
+        other: ! '%{count} دقائق'
+      less_than_x_seconds:
+        one: أقل من ثانية
+        other: ! '%{count} ثوان'
+      over_x_years:
+        one: أكثر من سنة
+        other: ! '%{count} سنوات'
+      x_days:
+        one: يوم واحد
+        other: ! '%{count} أيام'
+      x_minutes:
+        one: دقيقة واحدة
+        other: ! '%{count} دقائق'
+      x_months:
+        one: شهر واحد
+        other: ! '%{count} أشهر'
+      x_seconds:
+        one: ثانية واحدة
+        other: ! '%{count} ثوان'
+    prompts:
+      day: اليوم
+      hour: ساعة
+      minute: دقيقة
+      month: الشهر
+      second: ثانية
+      year: السنة
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: يجب أن تقبل
+      blank: فارغ، يرجى ملء الحقل
+      confirmation: لا تتوافق مع التأكيد
+      empty: فارغ، يرجى ملء الحقل
+      equal_to: يجب أن يساوي %{count}
+      even: يجب أن يكون زوجي
+      exclusion: محجوز
+      greater_than: يجب أن يكون أكبر من %{count}
+      greater_than_or_equal_to: يجب أن يكون أكبر من أو يساوي %{count}
+      inclusion: ليس خيارا مقبولا
+      invalid: غير معرف أو محدد
+      less_than: يجب أن يكون أصغر من %{count}
+      less_than_or_equal_to: يجب أن يكون أصغر من أو يساوي %{count}
+      not_a_number: ليس رقما
+      not_an_integer: يجب أن يكون صحيحا
+      odd: يجب أن يكون فردي
+      record_invalid: ! '%{errors} فشل التحقق من صحة'
+      taken: غير متوفر (مستخدم)
+      too_long: أطول من اللازم (الحد الأقصى هو %{count})
+      too_short: أقصر من اللازم (الحد الأدنى هو %{count})
+      wrong_length: بطول غير مناسب (يجب أن يكون %{count})
+    template:
+      body: ! 'يرجى التحقق من الحقول التالية:'
+      header:
+        one: ! 'ليس بالامكان حفظ %{model}: خطأ واحد.'
+        other: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
+  helpers:
     select:
-      prompt: "الرجاء اختيار"
-
+      prompt: الرجاء اختيار
+    submit:
+      create: ! '%{model} إنشاء'
+      submit: ! '%{model} حفظ'
+      update: ! '%{model} نموذج'
   number:
-    format:
-      separator: "."
-      delimiter: ","
-      precision: 3
-      significant: false
-      strip_insignificant_zeros: false
-
     currency:
       format:
-        format: "%u%n"
-        unit: "$"
-        separator: "."
-        delimiter: ","
+        delimiter: ! ','
+        format: ! '%u%n'
         precision: 2
+        separator: .
         significant: false
         strip_insignificant_zeros: false
-
-    percentage:
-      format:
-        delimiter: ""
-
-    precision:
-      format:
-        delimiter: ""
-
+        unit: $
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: مليار
+          million: مليون
+          quadrillion: الكدريليون رقم
+          thousand: ألف
+          trillion: تريليون
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one:   "Byte"
-            other: "Bytes"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-          thousand: ألف
-          million: مليون
-          billion: مليار
-          trillion: تريليون
-          quadrillion: الكدريليون رقم
-
-  datetime:
-    distance_in_words:
-      half_a_minute: 'نصف دقيقة'
-      less_than_x_seconds:
-        one: 'أقل من ثانية'
-        other: '%{count} ثوان'
-      x_seconds:
-        one: 'ثانية واحدة'
-        other: '%{count} ثوان'
-      less_than_x_minutes:
-        one: 'أقل من دقيقة'
-        other: '%{count} دقائق'
-      x_minutes:
-        one: 'دقيقة واحدة'
-        other: '%{count} دقائق'
-      about_x_hours:
-        one: 'حوالي ساعة واحدة'
-        other: '%{count} ساعات'
-      x_days:
-        one: 'يوم واحد'
-        other: '%{count} أيام'
-      about_x_months:
-        one: 'حوالي شهر واحد'
-        other: '%{count} أشهر'
-      x_months:
-        one: 'شهر واحد'
-        other: '%{count} أشهر'
-      about_x_years:
-        one: 'حوالي سنة'
-        other: '%{count} سنوات'
-      over_x_years:
-        one: 'أكثر من سنة'
-        other: '%{count} سنوات'
-      almost_x_years:
-        one:   "تقريبا سنة واحدة"
-        other: "ما يقرب من %{count} سنة"
-    prompts:
-      year:   "السنة"
-      month:  "الشهر"
-      day:    "اليوم"
-      hour:   "ساعة"
-      minute: "دقيقة"
-      second: "ثانية"
-
-  helpers:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', و '
+      two_words_connector: ! ' و '
+      words_connector: ! ', '
     select:
-      prompt: "الرجاء اختيار"
-
-    submit:
-      create: "%{model} إنشاء"
-      update: "%{model} نموذج"
-      submit: "%{model} حفظ"
-
-  errors:
-    format: "%{attribute} %{message}"
-
-    messages: &errors_messages
-      inclusion: "ليس خيارا مقبولا"
-      exclusion: "محجوز"
-      invalid: "غير معرف أو محدد"
-      confirmation: "لا تتوافق مع التأكيد"
-      accepted: "يجب أن تقبل"
-      empty: "فارغ، يرجى ملء الحقل"
-      blank: "فارغ، يرجى ملء الحقل"
-      too_long: "أطول من اللازم (الحد الأقصى هو %{count})"
-      too_short: "أقصر من اللازم (الحد الأدنى هو %{count})"
-      wrong_length: "بطول غير مناسب (يجب أن يكون %{count})"
-      not_an_integer: "يجب أن يكون صحيحا"
-      not_a_number: "ليس رقما"
-      greater_than: "يجب أن يكون أكبر من %{count}"
-      greater_than_or_equal_to: "يجب أن يكون أكبر من أو يساوي %{count}"
-      equal_to: "يجب أن يساوي %{count}"
-      less_than: "يجب أن يكون أصغر من %{count}"
-      less_than_or_equal_to: "يجب أن يكون أصغر من أو يساوي %{count}"
-      odd: "يجب أن يكون فردي"
-      even: "يجب أن يكون زوجي"
-      taken: "غير متوفر (مستخدم)"
-      record_invalid: "%{errors} فشل التحقق من صحة"
-    template: &errors_template
-      header:
-        one: "ليس بالامكان حفظ %{model}: خطأ واحد."
-        other: "ليس بالامكان حفظ %{model}: %{count} أخطاء."
-      body: "يرجى التحقق من الحقول التالية:"
-
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-
-      full_messages:
-        format: "%{attribute} %{message}"
+      prompt: الرجاء اختيار
+  time:
+    am: صباحا
+    formats:
+      default: ! '%a %b %d %H:%M:%S %Z %Y'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: مساءا

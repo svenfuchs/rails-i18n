@@ -1,179 +1,163 @@
-# Macedonian translations for Ruby on Rails
-# by Dejan Dimić (dejan.dimic@gmail.com)
-
-"mk":
+mk:
   date:
-    formats:
-      default: "%d/%m/%Y"
-      short: "%e %b"
-      long: "%B %e, %Y"
-    day_names:
-      - Недела
-      - Понеделник
-      - Вторник
-      - Среда
-      - Четврток
-      - Петок
-      - Сабота
     abbr_day_names:
-      - Нед
-      - Пон
-      - Вто
-      - Сре
-      - Чет
-      - Пет
-      - Саб
-    month_names:
-      - ~
-      - Јануари
-      - Февруари
-      - Март
-      - Април
-      - Мај
-      - Јуни
-      - Јули
-      - Август
-      - Септември
-      - Октомври
-      - Ноември
-      - Декември
+    - Нед
+    - Пон
+    - Вто
+    - Сре
+    - Чет
+    - Пет
+    - Саб
     abbr_month_names:
-      - ~
-      - Јан
-      - Фев
-      - Мар
-      - Апр
-      - Мај
-      - Јун
-      - Јул
-      - Авг
-      - Сеп
-      - Окт
-      - Ное
-      - Дек
-    order:
-      - :day
-      - :month
-      - :year
-
-  time:
+    - 
+    - Јан
+    - Фев
+    - Мар
+    - Апр
+    - Мај
+    - Јун
+    - Јул
+    - Авг
+    - Сеп
+    - Окт
+    - Ное
+    - Дек
+    day_names:
+    - Недела
+    - Понеделник
+    - Вторник
+    - Среда
+    - Четврток
+    - Петок
+    - Сабота
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
-      short: "%d %b %H:%M"
-      long: "%B %d, %Y %H:%M"
-    am: 'АМ'
-    pm: 'ПМ'
-
+      default: ! '%d/%m/%Y'
+      long: ! '%B %e, %Y'
+      short: ! '%e %b'
+    month_names:
+    - 
+    - Јануари
+    - Февруари
+    - Март
+    - Април
+    - Мај
+    - Јуни
+    - Јули
+    - Август
+    - Септември
+    - Октомври
+    - Ноември
+    - Декември
+    order:
+    - :day
+    - :month
+    - :year
   datetime:
     distance_in_words:
-      half_a_minute: 'пола минута'
-      less_than_x_seconds:
-        zero: 'помалку од секунда'
-        one: 'помалку од 1 секунда'
-        few: 'помалку од %{count} секунди'
-        other: 'помалку од %{count} секунди'
-      x_seconds:
-        one: '1 секунда'
-        few: '%{count} секунди'
-        other: '%{count} секунди'
-      less_than_x_minutes:
-        zero: 'помалку од минута'
-        one: 'помалку од 1 минута'
-        other: 'помалку од %{count} минути'
-      x_minutes:
-        one: '1 минута'
-        other: '%{count} минути'
       about_x_hours:
-        one: 'околу 1 час'
-        few: 'околу %{count} часа'
-        other: 'околу %{count} часа'
-      x_days:
-        one: '1 ден'
-        other: '%{count} денови'
+        few: околу %{count} часа
+        one: околу 1 час
+        other: околу %{count} часа
       about_x_months:
-        one: 'околу 1 месец'
-        few: 'околу %{count} месеци'
-        other: 'околу %{count} месеци'
-      x_months:
-        one: '1 месец'
-        few: '%{count} месеци'
-        other: '%{count} месеци'
+        few: околу %{count} месеци
+        one: околу 1 месец
+        other: околу %{count} месеци
       about_x_years:
-        one: 'околу 1 година'
-        other: 'околу %{count} години'
+        one: околу 1 година
+        other: околу %{count} години
+      half_a_minute: пола минута
+      less_than_x_minutes:
+        one: помалку од 1 минута
+        other: помалку од %{count} минути
+        zero: помалку од минута
+      less_than_x_seconds:
+        few: помалку од %{count} секунди
+        one: помалку од 1 секунда
+        other: помалку од %{count} секунди
+        zero: помалку од секунда
       over_x_years:
-        one: 'над 1 година'
-        other: 'над %{count} години'
-
+        one: над 1 година
+        other: над %{count} години
+      x_days:
+        one: 1 ден
+        other: ! '%{count} денови'
+      x_minutes:
+        one: 1 минута
+        other: ! '%{count} минути'
+      x_months:
+        few: ! '%{count} месеци'
+        one: 1 месец
+        other: ! '%{count} месеци'
+      x_seconds:
+        few: ! '%{count} секунди'
+        one: 1 секунда
+        other: ! '%{count} секунди'
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: мора да биде прифатен
+      blank: мора да биде зададен
+      confirmation: не се совпаѓа со својата потврда
+      empty: мора да биде зададен
+      equal_to: мора да биде еднакво на %{count}
+      even: мора да биде парно
+      exclusion: не е достапно
+      greater_than: мора да биде поголемо од %{count}
+      greater_than_or_equal_to: мора да биде поголемо или еднакво на %{count}
+      inclusion: не е во листата
+      invalid: не е исправен
+      less_than: мора да биде помало од %{count}
+      less_than_or_equal_to: мора да биде помало или еднакво на %{count}
+      not_a_number: ! 'не е број '
+      odd: мора да биде непарно
+      taken: е зафатено
+      too_long: е предолг (не повеќе од %{count} карактери)
+      too_short: е прекраток (не помалку од %{count} карактери)
+      wrong_length: несоодветна должина (мора да имате %{count} карактери)
+    template:
+      body: ! 'Ве молиме проверете ги следните полиња:'
+      header:
+        few: ! 'Не успеав да го зачувам %{model}: %{count} грешки.'
+        one: ! 'Не успеав да го зачувам %{model}: 1 грешка.'
+        other: ! 'Не успеав да го зачувам %{model}: %{count} грешки.'
   number:
-    format:
-      precision: 3
-      separator: ','
-      delimiter: '.'
-      significant: false
-      strip_insignificant_zeros: false
     currency:
       format:
-        unit: 'MKD'
+        delimiter: ! ','
+        format: ! '%n %u'
         precision: 2
-        format: '%n %u'
-        separator: "."
-        delimiter: ","
+        separator: .
         significant: false
         strip_insignificant_zeros: false
-    percentage:
-      format:
-        delimiter: ""
-    precision:
-      format:
-        delimiter: ""
+        unit: MKD
+    format:
+      delimiter: .
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-
-  errors:
-    format: "%{attribute} %{message}"
-    template: &errors_template
-      header:
-        one: 'Не успеав да го зачувам %{model}: 1 грешка.'
-        few: 'Не успеав да го зачувам %{model}: %{count} грешки.'
-        other: 'Не успеав да го зачувам %{model}: %{count} грешки.'
-      body: "Ве молиме проверете ги следните полиња:"
-    messages: &errors_messages
-      inclusion: "не е во листата"
-      exclusion: "не е достапно"
-      invalid: "не е исправен"
-      confirmation: "не се совпаѓа со својата потврда"
-      accepted: "мора да биде прифатен"
-      empty: "мора да биде зададен"
-      blank: "мора да биде зададен"
-      too_long: "е предолг (не повеќе од %{count} карактери)"
-      too_short: "е прекраток (не помалку од %{count} карактери)"
-      wrong_length: "несоодветна должина (мора да имате %{count} карактери)"
-      taken: "е зафатено"
-      not_a_number: "не е број "
-      greater_than: "мора да биде поголемо од %{count}"
-      greater_than_or_equal_to: "мора да биде поголемо или еднакво на %{count}"
-      equal_to: "мора да биде еднакво на %{count}"
-      less_than: "мора да биде помало од %{count}"
-      less_than_or_equal_to: "мора да биде помало или еднакво на %{count}"
-      odd: "мора да биде непарно"
-      even: "мора да биде парно"
-
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
+        format: ! '%n %u'
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  time:
+    am: АМ
+    formats:
+      default: ! '%a %b %d %H:%M:%S %Z %Y'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: ПМ
