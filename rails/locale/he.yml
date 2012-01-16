@@ -1,224 +1,196 @@
-# Hebrew translations for Ruby on Rails
-# by Dotan Nahum (dipidi@gmail.com)
-# Rails 3 update by rbjarnason
-# Grammer updates and completion of missing translations by Meron Bareket (mrnbrkt)
-
-"he":
+he:
   date:
-    formats:
-      default: "%d-%m-%Y"
-      short: "%e %b"
-      long: "%e ב%B, %Y"
-    day_names:
-      - ראשון
-      - שני
-      - שלישי
-      - רביעי
-      - חמישי
-      - שישי
-      - שבת
     abbr_day_names:
-      - א
-      - ב
-      - ג
-      - ד
-      - ה
-      - ו
-      - ש
-
-    month_names:
-      - ~
-      - ינואר
-      - פברואר
-      - מרץ
-      - אפריל
-      - מאי
-      - יוני
-      - יולי
-      - אוגוסט
-      - ספטמבר
-      - אוקטובר
-      - נובמבר
-      - דצמבר
+    - א
+    - ב
+    - ג
+    - ד
+    - ה
+    - ו
+    - ש
     abbr_month_names:
-      - ~
-      - יאנ
-      - פבר
-      - מרץ
-      - אפר
-      - מאי
-      - יונ
-      - יול
-      - אוג
-      - ספט
-      - אוק
-      - נוב
-      - דצמ
-    order:
-      - :day
-      - :month
-      - :year
-
-  time:
+    - 
+    - יאנ
+    - פבר
+    - מרץ
+    - אפר
+    - מאי
+    - יונ
+    - יול
+    - אוג
+    - ספט
+    - אוק
+    - נוב
+    - דצמ
+    day_names:
+    - ראשון
+    - שני
+    - שלישי
+    - רביעי
+    - חמישי
+    - שישי
+    - שבת
     formats:
-      default: "%a %d %b %H:%M:%S %Z %Y"
-      short: "%d %b %H:%M"
-      long: "%d ב%B, %Y %H:%M"
-    am: "am"
-    pm: "pm"
-
-  support:
-    array:
-      words_connector: ", "
-      two_words_connector: " את "
-      last_word_connector: ", את "
-
+      default: ! '%d-%m-%Y'
+      long: ! '%e ב%B, %Y'
+      short: ! '%e %b'
+    month_names:
+    - 
+    - ינואר
+    - פברואר
+    - מרץ
+    - אפריל
+    - מאי
+    - יוני
+    - יולי
+    - אוגוסט
+    - ספטמבר
+    - אוקטובר
+    - נובמבר
+    - דצמבר
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: בערך שעה אחת
+        other: בערך %{count} שעות
+      about_x_months:
+        one: בערך חודש אחד
+        other: בערך %{count} חודשים
+      about_x_years:
+        one: בערך שנה אחת
+        other: בערך %{count} שנים
+      almost_x_years:
+        one: כמעט שנה
+        other: כמעט %{count} שנים
+      half_a_minute: חצי דקה
+      less_than_x_minutes:
+        one: פחות מדקה אחת
+        other: פחות מ- %{count} דקות
+        zero: פחות מדקה אחת
+      less_than_x_seconds:
+        one: פחות משניה אחת
+        other: פחות מ- %{count} שניות
+        zero: פחות משניה אחת
+      over_x_years:
+        one: מעל שנה אחת
+        other: מעל %{count} שנים
+      x_days:
+        one: יום אחד
+        other: ! '%{count} ימים'
+      x_minutes:
+        one: דקה אחת
+        other: ! '%{count} דקות'
+      x_months:
+        one: חודש אחד
+        other: ! '%{count} חודשים'
+      x_seconds:
+        one: שניה אחת
+        other: ! '%{count} שניות'
+    prompts:
+      day: יום
+      hour: שעה
+      minute: דקה
+      month: חודש
+      second: שניות
+      year: שנה
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: חייב באישור
+      blank: לא יכול להיות ריק
+      confirmation: לא תואם לאישורו
+      empty: לא יכול להיות ריק
+      equal_to: חייב להיות שווה ל- %{count}
+      even: חייב להיות זוגי
+      exclusion: לא זמין
+      greater_than: חייב להיות גדול מ- %{count}
+      greater_than_or_equal_to: חייב להיות גדול או שווה ל- %{count}
+      inclusion: לא נכלל ברשימה
+      invalid: לא תקין
+      less_than: חייב להיות קטן מ- %{count}
+      less_than_or_equal_to: חייב להיות קטן או שווה ל- %{count}
+      not_a_number: חייב להיות מספר
+      not_an_integer: חייב להיות מספר שלם
+      odd: חייב להיות אי זוגי
+      record_invalid: ! 'האימות נכשל: %{errors}'
+      taken: כבר בשימוש
+      too_long: יותר מדי ארוך (לא יותר מ- %{count} תוים)
+      too_short: יותר מדי קצר (לא יותר מ- %{count} תוים)
+      wrong_length: לא באורך הנכון (חייב להיות %{count} תוים)
+    template:
+      body: ! 'אנא בדוק את השדות הבאים:'
+      header:
+        one: ! 'לא ניתן לשמור את ה%{model}: שגיאה אחת'
+        other: ! 'לא ניתן לשמור את ה%{model}: %{count} שגיאות.'
+  helpers:
     select:
-      prompt: "נא לבחור"
-
+      prompt: נא לבחור
+    submit:
+      create: ! '%{model} יצירת'
+      submit: ! '%{model} שמור'
+      update: ! '%{model} עדכון'
   number:
-    format:
-      precision: 3
-      separator: '.'
-      delimiter: ','
-      significant: false
-      strip_insignificant_zeros: false
-
     currency:
       format:
-        unit: '₪'
+        delimiter: ! ','
+        format: ! '%u %n'
         precision: 2
-        format: '%u %n'
-        separator: "."
-        delimiter: ","
+        separator: .
         significant: false
         strip_insignificant_zeros: false
-
-    percentage:
-      format:
-        delimiter: ""
-
-    precision:
-      format:
-        delimiter: ""
-
+        unit: ₪
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: מיליארד
+          million: מיליון
+          quadrillion: קודריליון
+          thousand: אלף
+          trillion: טריליון
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one:   "בייט"
-            other: "בתים"
-          kb: "קילו-בייט"
-          mb: "מגה-בייט"
-          gb: "ג'יגה-בייט"
-          tb: "טרה-בייט"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-          thousand: אלף
-          million: מיליון
-          billion: מיליארד
-          trillion: טריליון
-          quadrillion: קודריליון
-
-  datetime:
-    distance_in_words:
-      half_a_minute: 'חצי דקה'
-      less_than_x_seconds:
-        zero: 'פחות משניה אחת'
-        one: 'פחות משניה אחת'
-        other: 'פחות מ- %{count} שניות'
-      x_seconds:
-        one: 'שניה אחת'
-        other: '%{count} שניות'
-      less_than_x_minutes:
-        zero: 'פחות מדקה אחת'
-        one: 'פחות מדקה אחת'
-        other: 'פחות מ- %{count} דקות'
-      x_minutes:
-        one: 'דקה אחת'
-        other: '%{count} דקות'
-      about_x_hours:
-        one: 'בערך שעה אחת'
-        other: 'בערך %{count} שעות'
-      x_days:
-        one: 'יום אחד'
-        other: '%{count} ימים'
-      about_x_months:
-        one: 'בערך חודש אחד'
-        other: 'בערך %{count} חודשים'
-      x_months:
-        one: 'חודש אחד'
-        other: '%{count} חודשים'
-      about_x_years:
-        one: 'בערך שנה אחת'
-        other: 'בערך %{count} שנים'
-      over_x_years:
-        one: 'מעל שנה אחת'
-        other: 'מעל %{count} שנים'
-      almost_x_years:
-        one:   "כמעט שנה"
-        other: "כמעט %{count} שנים"
-    prompts:
-      year:   "שנה"
-      month:  "חודש"
-      day:    "יום"
-      hour:   "שעה"
-      minute: "דקה"
-      second: "שניות"
-
-  helpers:
+            one: בייט
+            other: בתים
+          gb: ג'יגה-בייט
+          kb: קילו-בייט
+          mb: מגה-בייט
+          tb: טרה-בייט
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', את '
+      two_words_connector: ! ' את '
+      words_connector: ! ', '
     select:
-      prompt: "נא לבחור"
-
-    submit:
-      create: '%{model} יצירת'
-      update: '%{model} עדכון'
-      submit: '%{model} שמור'
-
-  errors:
-    format: "%{attribute} %{message}"
-
-    messages: &errors_messages
-      inclusion: "לא נכלל ברשימה"
-      exclusion: "לא זמין"
-      invalid: "לא תקין"
-      confirmation: "לא תואם לאישורו"
-      accepted: "חייב באישור"
-      empty: "לא יכול להיות ריק"
-      blank: "לא יכול להיות ריק"
-      too_long: "יותר מדי ארוך (לא יותר מ- %{count} תוים)"
-      too_short: "יותר מדי קצר (לא יותר מ- %{count} תוים)"
-      wrong_length: "לא באורך הנכון (חייב להיות %{count} תוים)"
-      not_a_number: "חייב להיות מספר"
-      not_an_integer: "חייב להיות מספר שלם"
-      greater_than: "חייב להיות גדול מ- %{count}"
-      greater_than_or_equal_to: "חייב להיות גדול או שווה ל- %{count}"
-      equal_to: "חייב להיות שווה ל- %{count}"
-      less_than: "חייב להיות קטן מ- %{count}"
-      less_than_or_equal_to: "חייב להיות קטן או שווה ל- %{count}"
-      odd: "חייב להיות אי זוגי"
-      even: "חייב להיות זוגי"
-      taken: "כבר בשימוש"
-      record_invalid: "האימות נכשל: %{errors}"
-    template: &errors_template
-      header:
-        one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
-        other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
-      body: "אנא בדוק את השדות הבאים:"
-
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
+      prompt: נא לבחור
+  time:
+    am: am
+    formats:
+      default: ! '%a %d %b %H:%M:%S %Z %Y'
+      long: ! '%d ב%B, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: pm

@@ -1,215 +1,171 @@
-# Galician (Spain) for Ruby on Rails
-# by Marcos Arias Pena (markus@agil-e.com)
-
 gl-ES:
-  # action_view
+  date:
+    abbr_day_names:
+    - Dom
+    - Lun
+    - Mar
+    - Mer
+    - Xov
+    - Ven
+    - Sab
+    abbr_month_names:
+    - 
+    - Xan
+    - Feb
+    - Mar
+    - Abr
+    - Mai
+    - Xuñ
+    - Xul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dec
+    day_names:
+    - Domingo
+    - Luns
+    - Martes
+    - Mércores
+    - Xoves
+    - Venres
+    - Sábado
+    formats:
+      default: ! '%e/%m/%Y'
+      long: ! '%A %e de %B de %Y'
+      short: ! '%e %b'
+    month_names:
+    - 
+    - Xaneiro
+    - Febreiro
+    - Marzo
+    - Abril
+    - Maio
+    - Xuño
+    - Xullo
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Decembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente unha hora
+        other: ! '%{count} horas'
+      about_x_months:
+        one: aproximadamente 1 mes
+        other: ! '%{count} meses'
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: ! '%{count} anos'
+      half_a_minute: medio minuto
+      less_than_x_minutes:
+        one: 1 minuto
+        other: ! '%{count} minutos'
+        zero: menos dun minuto
+      less_than_x_seconds:
+        few: poucos segundos
+        one: 1 segundo
+        other: ! '%{count} segundos'
+        zero: menos dun segundo
+      over_x_years:
+        one: máis dun ano
+        other: ! '%{count} anos'
+      x_days:
+        one: 1 día
+        other: ! '%{count} días'
+      x_minutes:
+        one: 1 minuto
+        other: ! '%{count} minuto'
+      x_months:
+        one: 1 mes
+        other: ! '%{count} meses'
+      x_seconds:
+        one: 1 segundo
+        other: ! '%{count} segundos'
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: debe ser aceptado
+      blank: non pode estar en blanco
+      confirmation: non coincide coa confirmación
+      empty: non pode estar valeiro
+      equal_to: debe ser igual a %{count}
+      even: debe ser impar
+      exclusion: xa existe
+      greater_than: debe ser maior que %{count}
+      greater_than_or_equal_to: debe ser maior ou igual que %{count}
+      inclusion: non está incluido na lista
+      invalid: non é válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor ou igual que %{count}
+      not_a_number: non é un número
+      odd: debe ser par
+      taken: non está dispoñible
+      too_long: é demasiado longo (non máis de %{count} carácteres)
+      too_short: é demasiado curto (non menos de %{count} carácteres)
+      wrong_length: non ten a lonxitude correcta (debe ser de %{count} carácteres)
+    template:
+      body: ! 'Atopáronse os seguintes problemas:'
+      header:
+        one: 1 erro evitou que se poidese gardar o %{model}
+        other: ! '%{count} erros evitaron que se poidese gardar o %{model}'
   number:
-    # Usado en number_with_delimiter()
-    format:
-      separator: ","
-      delimiter: "."
-      precision: 2
-      significant: false
-      strip_insignificant_zeros: false
-
-    # Usado en number_to_currency()
     currency:
       format:
-        # %u é a unidade monetaria, %n o número
-        # 1 euro sería 1.00 €
-        format: "%n %u"
-        unit: "€"
-        separator: ","
-        delimiter: "."
+        delimiter: .
+        format: ! '%n %u'
         precision: 2
+        separator: ! ','
         significant: false
         strip_insignificant_zeros: false
-
-    # Usado en number_to_percentage()
-    percentage:
-      format:
-        # separator:
-        delimiter: ""
-        # precision:
-
-    # Usado en number_to_precision()
-    precision:
-      format:
-        # separator:
-        delimiter: ""
-        # precision:
-
-    # Usado en number_to_human_size()
+        unit: €
+    format:
+      delimiter: .
+      precision: 2
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          unit: ''
       format:
-        # separator:
-        delimiter: ""
+        delimiter: ''
         precision: 1
         significant: true
         strip_insignificant_zeros: true
-      # Se estás a usar Rails <= 2.2.2
-      # storage_units: [Bytes, KB, MB, GB, TB]
-      # Se estás a usar Rails >= 2.3
       storage_units:
-        # Formato de saida de unidades de almacenamento
-        # %u é a unidade de almacenamento
-        # %n é o número (por defecto: 2 MB)
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one:   "Byte"
-            other: "Bytes"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-
-  # active_support
-  date:
-    formats:
-      default:  "%e/%m/%Y"
-      short:    "%e %b"
-      long:     "%A %e de %B de %Y"
-      # Podes engadir máis formatos nesta lista ou cambiar os aquí definidos
-    day_names:
-      - Domingo
-      - Luns
-      - Martes
-      - Mércores
-      - Xoves
-      - Venres
-      - Sábado
-    abbr_day_names:
-      - Dom
-      - Lun
-      - Mar
-      - Mer
-      - Xov
-      - Ven
-      - Sab
-    month_names:
-      - ~
-      - Xaneiro
-      - Febreiro
-      - Marzo
-      - Abril
-      - Maio
-      - Xuño
-      - Xullo
-      - Agosto
-      - Setembro
-      - Outubro
-      - Novembro
-      - Decembro
-    abbr_month_names:
-      - ~
-      - Xan
-      - Feb
-      - Mar
-      - Abr
-      - Mai
-      - Xuñ
-      - Xul
-      - Ago
-      - Set
-      - Out
-      - Nov
-      - Dec
-    order:
-      - :day
-      - :month
-      - :year
-
-  time:
-    formats:
-      default:    "%A, %e de %B de %Y ás %H:%M"
-      short:      "%e/%m, %H:%M"
-      long:       "%A %e de %B de %Y ás %H:%M"
-      # Podes engadir máis formatos nesta lista ou cambiar os aquí definidos
-    am: ''
-    pm: ''
-
-  # Usados en distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
-  datetime:
-    distance_in_words:
-      half_a_minute: 'medio minuto'
-      less_than_x_seconds:
-        zero: 'menos dun segundo'
-        one: '1 segundo'
-        few: 'poucos segundos'
-        other: '%{count} segundos'
-      x_seconds:
-        one: '1 segundo'
-        other: '%{count} segundos'
-      less_than_x_minutes:
-        zero: 'menos dun minuto'
-        one: '1 minuto'
-        other: '%{count} minutos'
-      x_minutes:
-        one: '1 minuto'
-        other: '%{count} minuto'
-      about_x_hours:
-        one: 'aproximadamente unha hora'
-        other: '%{count} horas'
-      x_days:
-        one: '1 día'
-        other: '%{count} días'
-      about_x_months:
-        one: 'aproximadamente 1 mes'
-        other: '%{count} meses'
-      x_months:
-        one: '1 mes'
-        other: '%{count} meses'
-      about_x_years:
-        one: 'aproximadamente 1 ano'
-        other: '%{count} anos'
-      over_x_years:
-        one: 'máis dun ano'
-        other: '%{count} anos'
-
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
   support:
     array:
-      words_connector: ", "
-      two_words_connector: " e "
-      last_word_connector: " e "
-
-  errors:
-    format: "%{attribute} %{message}"
-    template: &errors_template
-      header:
-        one: "1 erro evitou que se poidese gardar o %{model}"
-        other: "%{count} erros evitaron que se poidese gardar o %{model}"
-      body: "Atopáronse os seguintes problemas:"
-    messages: &errors_messages
-      inclusion: "non está incluido na lista"
-      exclusion: "xa existe"
-      invalid: "non é válido"
-      confirmation: "non coincide coa confirmación"
-      accepted: "debe ser aceptado"
-      empty: "non pode estar valeiro"
-      blank: "non pode estar en blanco"
-      too_long: "é demasiado longo (non máis de %{count} carácteres)"
-      too_short: "é demasiado curto (non menos de %{count} carácteres)"
-      wrong_length: "non ten a lonxitude correcta (debe ser de %{count} carácteres)"
-      taken: "non está dispoñible"
-      not_a_number: "non é un número"
-      greater_than: "debe ser maior que %{count}"
-      greater_than_or_equal_to: "debe ser maior ou igual que %{count}"
-      equal_to: "debe ser igual a %{count}"
-      less_than: "debe ser menor que %{count}"
-      less_than_or_equal_to: "debe ser menor ou igual que %{count}"
-      odd: "debe ser par"
-      even: "debe ser impar"
-
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
+      last_word_connector: ! ' e '
+      two_words_connector: ! ' e '
+      words_connector: ! ', '
+  time:
+    am: ''
+    formats:
+      default: ! '%A, %e de %B de %Y ás %H:%M'
+      long: ! '%A %e de %B de %Y ás %H:%M'
+      short: ! '%e/%m, %H:%M'
+    pm: ''

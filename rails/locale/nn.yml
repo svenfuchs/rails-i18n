@@ -1,162 +1,153 @@
-# Norwegian, nynorsk, by irb.no
 nn:
   date:
-    formats:
-      default: "%d.%m.%Y"
-      short: "%e. %b"
-      long: "%e. %B %Y"
-    day_names:
-      - sundag
-      - måndag
-      - tysdag
-      - onsdag
-      - torsdag
-      - fredag
-      - laurdag
     abbr_day_names:
-      - sun
-      - mån
-      - tys
-      - ons
-      - tor
-      - fre
-      - lau
-    month_names:
-      - ~
-      - januar
-      - februar
-      - mars
-      - april
-      - mai
-      - juni
-      - juli
-      - august
-      - september
-      - oktober
-      - november
-      - desember
+    - sun
+    - mån
+    - tys
+    - ons
+    - tor
+    - fre
+    - lau
     abbr_month_names:
-      - ~
-      - jan
-      - feb
-      - mar
-      - apr
-      - mai
-      - jun
-      - jul
-      - aug
-      - sep
-      - okt
-      - nov
-      - des
-    order:
-      - :day
-      - :month
-      - :year
-  time:
+    - 
+    - jan
+    - feb
+    - mar
+    - apr
+    - mai
+    - jun
+    - jul
+    - aug
+    - sep
+    - okt
+    - nov
+    - des
+    day_names:
+    - sundag
+    - måndag
+    - tysdag
+    - onsdag
+    - torsdag
+    - fredag
+    - laurdag
     formats:
-      default: "%A, %e. %B %Y, %H:%M"
-      short: "%e. %B, %H:%M"
-      long: "%A, %e. %B %Y, %H:%M"
-    am: ""
-    pm: ""
+      default: ! '%d.%m.%Y'
+      long: ! '%e. %B %Y'
+      short: ! '%e. %b'
+    month_names:
+    - 
+    - januar
+    - februar
+    - mars
+    - april
+    - mai
+    - juni
+    - juli
+    - august
+    - september
+    - oktober
+    - november
+    - desember
+    order:
+    - :day
+    - :month
+    - :year
   datetime:
     distance_in_words:
-      half_a_minute: "eit halvt minutt"
-      less_than_x_seconds:
-        one: "mindre enn 1 sekund"
-        other: "mindre enn %{count} sekund"
-      x_seconds:
-        one: "1 sekund"
-        other: "%{count} sekund"
-      less_than_x_minutes:
-        one: "mindre enn 1 minutt"
-        other: "mindre enn %{count} minutt"
-      x_minutes:
-        one: "1 minutt"
-        other: "%{count} minutt"
       about_x_hours:
-        one: "rundt 1 time"
-        other: "rundt %{count} timar"
-      x_days:
-        one: "1 dag"
-        other: "%{count} dagar"
+        one: rundt 1 time
+        other: rundt %{count} timar
       about_x_months:
-        one: "rundt 1 månad"
-        other: "rundt %{count} månader"
-      x_months:
-        one: "1 månad"
-        other: "%{count} månader"
+        one: rundt 1 månad
+        other: rundt %{count} månader
       about_x_years:
-        one: "rundt 1 år"
-        other: "rundt %{count} år"
+        one: rundt 1 år
+        other: rundt %{count} år
+      half_a_minute: eit halvt minutt
+      less_than_x_minutes:
+        one: mindre enn 1 minutt
+        other: mindre enn %{count} minutt
+      less_than_x_seconds:
+        one: mindre enn 1 sekund
+        other: mindre enn %{count} sekund
       over_x_years:
-        one: "over 1 år"
-        other: "over %{count} år"
+        one: over 1 år
+        other: over %{count} år
+      x_days:
+        one: 1 dag
+        other: ! '%{count} dagar'
+      x_minutes:
+        one: 1 minutt
+        other: ! '%{count} minutt'
+      x_months:
+        one: 1 månad
+        other: ! '%{count} månader'
+      x_seconds:
+        one: 1 sekund
+        other: ! '%{count} sekund'
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: må vera akseptert
+      blank: kan ikkje vera blank
+      confirmation: er ikkje stadfesta
+      empty: kan ikkje vera tom
+      equal_to: må vera lik %{count}
+      even: må vera partal
+      exclusion: er reservert
+      greater_than: må vera større enn %{count}
+      greater_than_or_equal_to: må vera større enn eller lik %{count}
+      inclusion: er ikkje inkludert i lista
+      invalid: er ugyldig
+      less_than: må vera mindre enn %{count}
+      less_than_or_equal_to: må vera mindre enn eller lik %{count}
+      not_a_number: er ikkje eit tal
+      odd: må vera oddetal
+      taken: er allerie i bruk
+      too_long: er for lang (maksimum %{count} teikn)
+      too_short: er for kort (minimum %{count} teikn)
+      wrong_length: har feil lengde (maksimum %{count} teikn)
+    template:
+      body: ! 'det oppstod problem i følgjande felt:'
+      header: kunne ikkje lagra %{model} grunna %{count} feil.
   number:
-    format:
-      precision: 2
-      separator: "."
-      delimiter: ","
-      significant: false
-      strip_insignificant_zeros: false
     currency:
       format:
-        unit: "kr"
-        format: "%n %u"
-        separator: "."
-        delimiter: ","
+        delimiter: ! ','
+        format: ! '%n %u'
         precision: 2
+        separator: .
         significant: false
         strip_insignificant_zeros: false
-    percentage:
-      format:
-        delimiter: ""
-    precision:
-      format:
-        delimiter: ""
+        unit: kr
+    format:
+      delimiter: ! ','
+      precision: 2
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-  errors:
-    format: "%{attribute} %{message}"
-    template: &errors_template
-      header: "kunne ikkje lagra %{model} grunna %{count} feil."
-      body: "det oppstod problem i følgjande felt:"
-    messages: &errors_messages
-      inclusion: "er ikkje inkludert i lista"
-      exclusion: "er reservert"
-      invalid: "er ugyldig"
-      confirmation: "er ikkje stadfesta"
-      accepted: "må vera akseptert"
-      empty: "kan ikkje vera tom"
-      blank: "kan ikkje vera blank"
-      too_long: "er for lang (maksimum %{count} teikn)"
-      too_short: "er for kort (minimum %{count} teikn)"
-      wrong_length: "har feil lengde (maksimum %{count} teikn)"
-      taken: "er allerie i bruk"
-      not_a_number: "er ikkje eit tal"
-      greater_than: "må vera større enn %{count}"
-      greater_than_or_equal_to: "må vera større enn eller lik %{count}"
-      equal_to: "må vera lik %{count}"
-      less_than: "må vera mindre enn %{count}"
-      less_than_or_equal_to: "må vera mindre enn eller lik %{count}"
-      odd: "må vera oddetal"
-      even: "må vera partal"
-  activerecord:
-    errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
+        format: ! '%n %u'
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  time:
+    am: ''
+    formats:
+      default: ! '%A, %e. %B %Y, %H:%M'
+      long: ! '%A, %e. %B %Y, %H:%M'
+      short: ! '%e. %B, %H:%M'
+    pm: ''
