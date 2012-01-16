@@ -183,8 +183,6 @@ hi-IN:
       last_word_connector: ! ', और '
       two_words_connector: ! ' और '
       words_connector: ! ', '
-    select:
-      prompt: कृपया चुनें
   time:
     am: am
     formats:

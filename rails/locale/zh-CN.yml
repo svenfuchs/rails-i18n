@@ -183,8 +183,6 @@ zh-CN:
       last_word_connector: ! ', 和 '
       two_words_connector: ! ' 和 '
       words_connector: ! ', '
-    select:
-      prompt: 请选择
   time:
     am: 上午
     formats:

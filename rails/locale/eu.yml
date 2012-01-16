@@ -183,8 +183,6 @@ eu:
       last_word_connector: ! ' eta '
       two_words_connector: ! ' eta '
       words_connector: ! ', '
-    select:
-      prompt: Aukeratu mesedez
   time:
     am: am
     formats:

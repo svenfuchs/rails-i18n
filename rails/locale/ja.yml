@@ -181,8 +181,6 @@ ja:
       last_word_connector: と
       two_words_connector: と
       words_connector: と
-    select:
-      prompt: 選択してください。
   time:
     am: 午前
     formats:

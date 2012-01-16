@@ -183,8 +183,6 @@ hu:
       last_word_connector: ! ' és '
       two_words_connector: ! ' és '
       words_connector: ! ', '
-    select:
-      prompt: Válasszon
   time:
     am: de.
     formats:

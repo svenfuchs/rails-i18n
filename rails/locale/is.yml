@@ -191,8 +191,6 @@ is:
       last_word_connector: ! ' og '
       two_words_connector: ! ' og '
       words_connector: ! ', '
-    select:
-      prompt: Veldu
   time:
     am: ''
     formats:

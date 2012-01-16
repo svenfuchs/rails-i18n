@@ -157,8 +157,6 @@ th:
       last_word_connector: ! ', และ '
       two_words_connector: ! ' และ '
       words_connector: ! ', '
-    select:
-      prompt: โปรดเลือก
   time:
     am: ก่อนเที่ยง
     formats:

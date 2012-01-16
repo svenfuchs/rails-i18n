@@ -185,8 +185,6 @@ eo:
       last_word_connector: ! ' kaj '
       two_words_connector: ! ' kaj '
       words_connector: ! ', '
-    select:
-      prompt: Bonvolu elekti
   time:
     am: am
     formats:

@@ -183,8 +183,6 @@ es-CL:
       last_word_connector: ! ', y '
       two_words_connector: ! ' y '
       words_connector: ! ', '
-    select:
-      prompt: Por favor seleccione
   time:
     am: am
     formats:
