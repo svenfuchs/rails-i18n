@@ -25,6 +25,10 @@ If any translation doesn't suit well to the requirements of your application, ed
 
 For more information, visit [Rails Internationalization (I18n) API](http://guides.rubyonrails.org/i18n.html) on the _RailsGuides._
 
+## Usage on Rails 2.3
+
+Locale data whose structure is compatible with Rails 2.3 are available on the separate branch [rails-2-3](https://github.com/svenfuchs/rails-i18n/tree/rails-2-3). 
+
 ## Available Locales
 
 Available locales are:
