@@ -182,8 +182,6 @@ cs:
       last_word_connector: ! ' a '
       two_words_connector: ! ' a '
       words_connector: ! ', '
-    select:
-      prompt: Prosím vyberte si
   time:
     am: am
     formats:

@@ -191,8 +191,6 @@ pt-BR:
       last_word_connector: ! ' e '
       two_words_connector: ! ' e '
       words_connector: ! ', '
-    select:
-      prompt: Por favor selecione
   time:
     am: ''
     formats:

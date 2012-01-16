@@ -241,8 +241,6 @@ uk:
       last_word_connector: ! ' та '
       two_words_connector: ! ' і '
       words_connector: ! ', '
-    select:
-      prompt: ! 'Оберіть:'
   time:
     am: до полудня
     formats:

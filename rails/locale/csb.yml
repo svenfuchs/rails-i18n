@@ -194,8 +194,6 @@ csb:
       last_word_connector: ! ' a téż '
       two_words_connector: ! ' ë '
       words_connector: ! ', '
-    select:
-      prompt: Proszã wëbrac
   time:
     am: przed pôłnim
     formats:

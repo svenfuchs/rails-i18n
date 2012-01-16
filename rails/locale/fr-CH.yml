@@ -191,8 +191,6 @@ fr-CH:
       last_word_connector: ! ' et '
       two_words_connector: ! ' et '
       words_connector: ! ', '
-    select:
-      prompt: Veuillez sélectionner
   time:
     am: am
     formats:

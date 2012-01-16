@@ -183,8 +183,6 @@ bg:
       last_word_connector: ! ' и '
       two_words_connector: ! ' и '
       words_connector: ! ', '
-    select:
-      prompt: Моля отбележете
   time:
     am: преди обяд
     formats:

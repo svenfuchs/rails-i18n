@@ -124,6 +124,9 @@ mn:
       header:
         one: 1 алдаа гарсан тул %{model} хадгалагдахгүй байна
         other: ! '%{count} алдаа гарсан тул %{model} хадгалагдахгүй байна'
+  helpers:
+    select:
+      prompt: Сонгоно уу
   number:
     currency:
       format:
@@ -170,8 +173,6 @@ mn:
       last_word_connector: ! ' болон '
       two_words_connector: ! ' болон '
       words_connector: ! ', '
-    select:
-      prompt: Сонгоно уу
   time:
     am: өглөө
     formats:

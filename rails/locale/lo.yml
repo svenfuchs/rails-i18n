@@ -120,6 +120,9 @@ lo:
       header:
         one: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກເກີດຂໍ້ຜິດພາດ
         other: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ
+  helpers:
+    select:
+      prompt: โปรดเลือก
   number:
     currency:
       format:
@@ -167,8 +170,6 @@ lo:
       last_word_connector: ! ', ແລະ '
       two_words_connector: ! 'ແລະ '
       words_connector: ! ', '
-    select:
-      prompt: โปรดเลือก
   time:
     am: ''
     formats:

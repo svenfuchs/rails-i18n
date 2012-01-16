@@ -183,8 +183,6 @@ fa:
       last_word_connector: ! '، و '
       two_words_connector: ! ' و '
       words_connector: ! '، '
-    select:
-      prompt: لطفا انتخاب کنید
   time:
     am: قبل از ظهر
     formats:

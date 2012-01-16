@@ -183,8 +183,6 @@ nl:
       last_word_connector: ! ' en '
       two_words_connector: ! ' en '
       words_connector: ! ', '
-    select:
-      prompt: Selecteer
   time:
     am: ! '''s ochtends'
     formats:

@@ -183,8 +183,6 @@ el:
       last_word_connector: ! ' και '
       two_words_connector: ! ' και '
       words_connector: ! ', '
-    select:
-      prompt: Παρακαλώ επιλέξτε
   time:
     am: πμ
     formats:

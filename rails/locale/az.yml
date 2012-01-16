@@ -183,8 +183,6 @@ az:
       last_word_connector: ! ' və '
       two_words_connector: ! ' və '
       words_connector: ! ', '
-    select:
-      prompt: Seçin
   time:
     am: günortaya qədər
     formats:

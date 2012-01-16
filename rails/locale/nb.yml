@@ -191,8 +191,6 @@ nb:
       last_word_connector: ! ' og '
       two_words_connector: ! ' og '
       words_connector: ! ', '
-    select:
-      prompt: Velg
   time:
     am: ''
     formats:

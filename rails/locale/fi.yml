@@ -183,8 +183,6 @@ fi:
       last_word_connector: ! ' ja '
       two_words_connector: ! ' ja '
       words_connector: ! ', '
-    select:
-      prompt: Valitse
   time:
     am: aamupäivä
     formats:

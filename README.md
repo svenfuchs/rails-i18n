@@ -86,7 +86,11 @@ If you are not,
 
 Before committing and pushing your changes, test the integrity of your locale file.
 
-	rake spec 
+    rake spec
+	
+Make sure you have included all translations with:
+
+    rake i18n-spec:completeness rails/locale/en-US.yml rails/locale/YOUR_NEW_LOCALE.yml
 
 You can list all locales that are ready both for Rails version 2 and 3:
 
