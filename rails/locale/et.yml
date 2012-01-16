@@ -183,8 +183,6 @@ et:
       last_word_connector: ! ' ja '
       two_words_connector: ! ' ja '
       words_connector: ! ', '
-    select:
-      prompt: Palun vali
   time:
     am: enne lõunat
     formats:

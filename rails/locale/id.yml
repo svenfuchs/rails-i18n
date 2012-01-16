@@ -184,8 +184,6 @@ id:
       last_word_connector: ! ' dan '
       two_words_connector: ! ', '
       words_connector: ! ', '
-    select:
-      prompt: Silahkan pilih
   time:
     am: am
     formats:

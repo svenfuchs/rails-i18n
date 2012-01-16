@@ -183,8 +183,6 @@ kn:
       last_word_connector: ! ', ಮತ್ತು  '
       two_words_connector: ! ' ಮತ್ತು  '
       words_connector: ! ', '
-    select:
-      prompt: ದಯವಿಟ್ಟು ಆರಿಸಿ
   time:
     am: ಪ್ರಾತಃಕಾಲ
     formats:

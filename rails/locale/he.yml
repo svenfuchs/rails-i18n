@@ -185,8 +185,6 @@ he:
       last_word_connector: ! ', את '
       two_words_connector: ! ' את '
       words_connector: ! ', '
-    select:
-      prompt: נא לבחור
   time:
     am: am
     formats:

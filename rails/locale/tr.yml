@@ -118,6 +118,9 @@ tr:
       header:
         one: ! '%{model} girişi kaydedilemedi: 1 hata.'
         other: ! '%{model} girişi kadedilemedi: %{count} hata.'
+  helpers:
+    select:
+      prompt: Lütfen seçiniz
   number:
     currency:
       format:
@@ -157,8 +160,6 @@ tr:
       last_word_connector: ! ' ve '
       two_words_connector: ! ' ve '
       words_connector: ! ', '
-    select:
-      prompt: Lütfen seçiniz
   time:
     am: öğleden önce
     formats:

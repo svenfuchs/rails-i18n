@@ -194,8 +194,6 @@ pl:
       last_word_connector: ! ' oraz '
       two_words_connector: ! ' i '
       words_connector: ! ', '
-    select:
-      prompt: Proszę wybrać
   time:
     am: przed południem
     formats:

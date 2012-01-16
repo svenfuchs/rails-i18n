@@ -183,8 +183,6 @@ lv:
       last_word_connector: ! ' un '
       two_words_connector: ! ' un '
       words_connector: ! ', '
-    select:
-      prompt: Lūdzu izvēlies
   time:
     am: priekšpusdiena
     formats:

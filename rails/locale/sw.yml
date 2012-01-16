@@ -183,8 +183,6 @@ sw:
       last_word_connector: ! ', na '
       two_words_connector: ! ' na '
       words_connector: ! ', '
-    select:
-      prompt: Tafadhali teua
   time:
     am: am
     formats:

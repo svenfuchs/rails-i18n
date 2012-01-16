@@ -191,8 +191,6 @@ pt-PT:
       last_word_connector: ! ', e'
       two_words_connector: ! ' e '
       words_connector: ! ', '
-    select:
-      prompt: Por favor seleccione
   time:
     am: am
     formats:

@@ -183,8 +183,6 @@ da:
       last_word_connector: ! ' og '
       two_words_connector: ! ' og '
       words_connector: ! ', '
-    select:
-      prompt: Vælg...
   time:
     am: ''
     formats:

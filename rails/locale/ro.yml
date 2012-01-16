@@ -183,8 +183,6 @@ ro:
       last_word_connector: ! ' şi '
       two_words_connector: ! ' şi '
       words_connector: ! ', '
-    select:
-      prompt: Alegeţi
   time:
     am: ''
     formats:

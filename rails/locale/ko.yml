@@ -181,8 +181,6 @@ ko:
       last_word_connector: ! ', '
       two_words_connector: ! '와(과) '
       words_connector: ! ', '
-    select:
-      prompt: 선택해 주세요
   time:
     am: 오전
     formats:

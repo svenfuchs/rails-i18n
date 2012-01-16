@@ -183,8 +183,6 @@ cy:
       last_word_connector: ! ', a '
       two_words_connector: ! ' a '
       words_connector: ! ', '
-    select:
-      prompt: Dewiswch
   time:
     am: yb
     formats:
