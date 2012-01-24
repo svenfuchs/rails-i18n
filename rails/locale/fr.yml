@@ -55,40 +55,40 @@ fr:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: environ une heure
+        one: environ %{count} heure
         other: environ %{count} heures
       about_x_months:
-        one: environ un mois
+        one: environ %{count} mois
         other: environ %{count} mois
       about_x_years:
-        one: environ un an
+        one: environ %{count} an
         other: environ %{count} ans
       almost_x_years:
-        one: presqu'un an
+        one: presque %{count} an
         other: presque %{count} ans
       half_a_minute: une demi-minute
       less_than_x_minutes:
-        one: moins d'une minute
+        one: moins de %{count} minute
         other: moins de %{count} minutes
         zero: moins d'une minute
       less_than_x_seconds:
-        one: moins d'une seconde
+        one: moins de %{count} seconde
         other: moins de %{count} secondes
         zero: moins d'une seconde
       over_x_years:
-        one: plus d'un an
+        one: plus de %{count} an
         other: plus de %{count} ans
       x_days:
-        one: 1 jour
+        one: ! '%{count} jour'
         other: ! '%{count} jours'
       x_minutes:
-        one: 1 minute
+        one: ! '%{count} minute'
         other: ! '%{count} minutes'
       x_months:
-        one: 1 mois
+        one: ! '%{count} mois'
         other: ! '%{count} mois'
       x_seconds:
-        one: 1 seconde
+        one: ! '%{count} seconde'
         other: ! '%{count} secondes'
     prompts:
       day: Jour
@@ -119,18 +119,18 @@ fr:
       record_invalid: ! 'La validation a échoué : %{errors}'
       taken: n'est pas disponible
       too_long:
-        one: est trop long (pas plus d'un caractère)
+        one: est trop long (pas plus de %{count} caractère)
         other: est trop long (pas plus de %{count} caractères)
       too_short:
-        one: est trop court (au moins un caractère)
+        one: est trop court (au moins %{count} caractère)
         other: est trop court (au moins %{count} caractères)
       wrong_length:
-        one: ne fait pas la bonne longueur (doit comporter un seul caractère)
+        one: ne fait pas la bonne longueur (doit comporter %{count} caractère)
         other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
     template:
       body: ! 'Veuillez vérifier les champs suivants : '
       header:
-        one: ! 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
+        one: ! 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreur'
         other: ! 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   helpers:
     select:
