@@ -18,6 +18,14 @@ RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
 end
 
+RSpec::Core::RakeTask.new("spec:unit") do |spec|
+  spec.pattern = 'spec/unit/**/*_spec.rb'
+end
+
+RSpec::Core::RakeTask.new("spec:integration") do |spec|
+  spec.pattern = 'spec/integration/**/*_spec.rb'
+end
+
 RSpec::Core::RakeTask.new(:rcov) do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
   spec.rcov = true

@@ -9,7 +9,9 @@ Gem::Specification.new do |s|
   s.summary      = "Common locale data and translations for Rails i18n."
   s.description  = "A set of common locale data and translations to internationalize and/or localize your Rails applications."
 
-  s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") + Dir.glob("will_paginate/*") + %w(README.md MIT-LICENSE.txt)
+  s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") +
+                   Dir.glob("rails/pluralization/*") + Dir.glob("rails/transliteration/*") +
+                   Dir.glob("will_paginate/*") + %w(README.md MIT-LICENSE.txt)
   s.platform     = Gem::Platform::RUBY
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
@@ -20,4 +22,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-rails", ">= 2.7.0"
   s.add_development_dependency "i18n-spec", ">= 0.1.1"
   s.add_development_dependency "will_paginate", ">= 3.0.0"
+  s.add_development_dependency "spork", "~> 1.0rc"
 end
