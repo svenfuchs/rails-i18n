@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name         = "rails-i18n"
-  s.version      = '0.3.0'
+  s.version      = '0.4.0'
   s.authors      = ["Rails I18n Group"]
   s.email        = "rails-i18n@googlegroups.com"
   s.homepage     = "http://github.com/svenfuchs/rails-i18n"
