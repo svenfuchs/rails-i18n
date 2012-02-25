@@ -1,4 +1,4 @@
-shared_examples 'an ordinary rule' do
+shared_examples 'an ordinary pluralization rule' do
   it 'returns a hash' do
     file.content.should be_a Hash
   end

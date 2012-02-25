@@ -6,6 +6,7 @@ module RailsI18n
       RailsI18n::Railtie.instance_eval do
         add('rails/locale/*.yml')
         add('rails/pluralization/*.rb')
+        add('rails/transliteration/*.{rb,yml}')
         if defined? ::WillPaginate
           add('will_paginate/*.yml')
         end

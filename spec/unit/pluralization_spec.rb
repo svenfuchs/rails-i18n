@@ -7,14 +7,14 @@
 require 'spec_helper'
 require 'support/pluralization_file'
 
-require 'unit/pluralization/shared/ordinary'
-require 'unit/pluralization/shared/other'
-require 'unit/pluralization/shared/one_with_zero_other'
-require 'unit/pluralization/shared/one_upto_two_other'
-require 'unit/pluralization/shared/one_two_other'
-require 'unit/pluralization/shared/east_slavic'
-require 'unit/pluralization/shared/west_slavic'
-require 'unit/pluralization/shared/romanian'
+require 'unit/pluralization/ordinary'
+require 'unit/pluralization/other'
+require 'unit/pluralization/one_with_zero_other'
+require 'unit/pluralization/one_upto_two_other'
+require 'unit/pluralization/one_two_other'
+require 'unit/pluralization/east_slavic'
+require 'unit/pluralization/west_slavic'
+require 'unit/pluralization/romanian'
 
 describe 'Pluralization rule for' do
 
@@ -26,25 +26,25 @@ describe 'Pluralization rule for' do
   end
 
   let(:rule) do
-    file.traverse_path(:keys => [example.metadata[:locale], :i18n, :plural, :rule])
+    file.traverse_path(example.metadata[:locale], :i18n, :plural, :rule)
   end
 
   let(:plural_keys) do
-    file.traverse_path(:keys => [example.metadata[:locale], :i18n, :plural, :keys])
+    file.traverse_path(example.metadata[:locale], :i18n, :plural, :keys)
   end
 
   describe 'Akan', :locale => :ak do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Amharic', :locale => :am do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Arabic', :locale => :ar do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "zero", "one", "two", "few", "many" and "other" plural keys' do
       plural_keys.size.should == 6
@@ -83,32 +83,32 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Azerbaijani', :locale => :az do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Bambara', :locale => :bm do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Belarusian', :locale => :be do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
 
   describe 'Bihari', :locale => :bh do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Bosnian', :locale => :bs do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
 
   describe 'Breton', :locale => :br do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", "two", "few", "many" and "other" plural keys' do
       plural_keys.size.should == 5
@@ -148,12 +148,12 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Burmese', :locale => :my do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Central Morocco Tamazight', :locale => :tzm do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one" and "other" plural keys' do
       plural_keys.size.should == 2
@@ -174,12 +174,12 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Chinese', :locale => :zh do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Colognian', :locale => :ksh do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "zero", "one" and "other" plural keys' do
       plural_keys.size.should == 3
@@ -202,82 +202,82 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Cornish', :locale => :kw do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Croatian', :locale => :hr do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
 
   describe 'Czech', :locale => :cs do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'West Slavic'
   end
 
   describe 'Dzongkha', :locale => :dz do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Filipino', :locale => :fil do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'French', :locale => :fr do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(upto 2)-other forms language'
   end
 
   describe 'Fulah', :locale => :ff do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(upto 2)-other forms language'
   end
 
   describe 'Georgian', :locale => :ka do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'guw', :locale => :guw do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Hindi', :locale => :hi do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Hungarian', :locale => :hu do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Igbo', :locale => :ig do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Inari Sami', :locale => :smn do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Indonesian', :locale => :id do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Inuktitut', :locale => :iu do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Irish', :locale => :ga do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", "two", "few", "many" and "other" plural keys' do
       plural_keys.size.should == 5
@@ -312,47 +312,47 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Japanese', :locale => :ja do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Javanese', :locale => :jv do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Kabuverdianu', :locale => :kea do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Kabyle', :locale => :kab do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(upto 2)-other forms language'
   end
 
   describe 'Kannada', :locale => :kn do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Khmer', :locale => :km do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Korean', :locale => :ko do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Koyraboro Senni', :locale => :ses do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Langi', :locale => :lag do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "zero", "one" and "other" plural keys' do
       plural_keys.size.should == 3
@@ -377,12 +377,12 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Lao', :locale => :lo do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Latvian', :locale => :lv do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "zero", "one" and "other" plural keys' do
       plural_keys.size.should == 3
@@ -407,12 +407,12 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Lingala', :locale => :ln do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Lithuanian', :locale => :lt do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", "few" and "other" plural keys' do
       plural_keys.size.should == 3
@@ -439,13 +439,13 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Lule Sami', :locale => :smj do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   # TODO http://unicode.org/cldr/trac/ticket/3426
   describe 'Macedonian', :locale => :mk do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one" and "other" plural keys' do
       plural_keys.size.should == 2
@@ -466,23 +466,23 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Makonde', :locale => :kde do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Malagasy', :locale => :mg do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Malay', :locale => :ms do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   # TODO http://unicode.org/cldr/trac/ticket/3426
   describe 'Maltese', :locale => :mt do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", "few", "many" and "other" plural keys' do
       plural_keys.size.should == 4
@@ -513,7 +513,7 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Manx', :locale => :gv do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", and "other" plural keys' do
       plural_keys.size.should == 2
@@ -534,32 +534,32 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Moldavian', :locale => :mo do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'Romanian language'
   end
 
   describe 'Nama', :locale => :naq do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Northern Sami', :locale => :se do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Northen Sotho', :locale => :nso do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Persian', :locale => :fa do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Polish', :locale => :pl do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", "few", "many" and "other" plural keys' do
       plural_keys.size.should == 4
@@ -590,37 +590,37 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Romanian', :locale => :ro do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'Romanian language'
   end
 
   describe 'Root', :locale => :root do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Russian', :locale => :ru do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
 
   describe 'Sakha', :locale => :sah do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Sami Language', :locale => :smi do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Sango', :locale => :sg do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Scottish Gaelic', :locale => :gd do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", "two", "few", and "other" plural keys' do
       plural_keys.size.should == 4
@@ -653,32 +653,32 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Serbian', :locale => :sr do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
 
   describe 'Serbo-Croatian', :locale => :sh do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
 
   describe 'Sichuan Yi', :locale => :ii do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Skolt Sami', :locale => :sms do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Slovak', :locale => :sk do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'West Slavic'
   end
 
   describe 'Slovenian', :locale => :sl do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "one", "two", "few", and "other" plural keys' do
       plural_keys.size.should == 4
@@ -711,62 +711,62 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Southern Sami', :locale => :sma do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-two-other forms language'
   end
 
   describe 'Tachelhit', :locale => :shi do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Tagalog', :locale => :tl do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Thai', :locale => :th do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Tibetan', :locale => :bo do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Tigrinya', :locale => :ti do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Tongan', :locale => :to do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Turkish', :locale => :tr do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Ukrainian', :locale => :uk do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
 
   describe 'Vietnamese', :locale => :vi do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Walloon', :locale => :wa do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
   end
 
   describe 'Welsh', :locale => :cy do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
 
     it 'has "zero", "one", "two", "few", "many" and "other" plural keys' do
       plural_keys.size.should == 6
@@ -801,12 +801,12 @@ describe 'Pluralization rule for' do
   end
 
   describe 'Wolof', :locale => :wo do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 
   describe 'Yoruba', :locale => :yo do
-    it_behaves_like 'an ordinary rule'
+    it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
   end
 end
