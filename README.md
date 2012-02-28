@@ -118,6 +118,11 @@ If you are ready, push the repository into the Github and send us a pull request
 
 We will do the formality check and publish it as quick as we can.
 
+## See also
+
+* [devise-i18n](https://github.com/tigrish/devise-i18n)
+* [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
+
 ## License
 
 [MIT](https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt)

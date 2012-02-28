@@ -1,5 +1,0 @@
-nl:
-  will_paginate:
-    previous_label: "← vorige"
-    next_label: "volgende →"
-
