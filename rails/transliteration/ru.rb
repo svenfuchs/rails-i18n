@@ -69,4 +69,4 @@ end
 { :ru => {
     :i18n => {
       :transliterate => {
-        :rule => ::RailsI18n::Transliteration::Russian.rule }}}}
+        :rule => RailsI18n::Transliteration::Russian.rule }}}}

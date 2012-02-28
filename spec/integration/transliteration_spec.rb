@@ -10,13 +10,13 @@ describe "Transliteration" do
 
   context "when default locale contains non-ASCII symbols" do
     let(:transliteration) do
-      app.run ->{ I18n.transliterate 'съществуват' } do |config|
-        config.i18n.default_locale = :bg
+      app.run ->{ I18n.transliterate 'Руби!' } do |config|
+        config.i18n.default_locale = :ru
       end
     end
 
     it "works" do
-      transliteration.should == "sashtestvuvat"
+      transliteration.should == "Rubi!"
     end
   end
 end
