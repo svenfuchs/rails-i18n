@@ -95,7 +95,7 @@ hi-IN:
       month: माह
       second: सेकंड
       year: वर्ष
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: होना स्वीकार किया जाना आवश्यक
@@ -190,3 +190,10 @@ hi-IN:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

@@ -95,7 +95,7 @@ cy:
       month: Mis
       second: Eiliad
       year: Blwyddyn
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: angen ei dderbyn
@@ -190,3 +190,10 @@ cy:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: yh
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

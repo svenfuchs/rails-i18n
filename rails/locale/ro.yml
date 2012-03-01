@@ -95,7 +95,7 @@ ro:
       month: Luna
       second: Secunda
       year: Anul
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: trebuie dat acceptul
@@ -190,3 +190,10 @@ ro:
       long: ! '%d %B %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ''
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

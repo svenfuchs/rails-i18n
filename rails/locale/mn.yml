@@ -95,7 +95,7 @@ mn:
       month: Сар
       second: Секунд
       year: Жил
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: хүлээн зөвшөөрөгдсөн байх ёстой
@@ -180,3 +180,10 @@ mn:
       long: ! '%Y %B %d, %H:%M:%S'
       short: ! '%y-%m-%d'
     pm: орой
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

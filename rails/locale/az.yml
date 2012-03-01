@@ -95,7 +95,7 @@ az:
       month: Ay
       second: Saniyə
       year: İl
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: qəbul olunmalıdır
@@ -190,3 +190,10 @@ az:
       long: ! '%d %B %Y, %H:%M'
       short: ! '%d %b, %H:%M'
     pm: günortadan sonra
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

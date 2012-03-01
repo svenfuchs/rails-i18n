@@ -105,7 +105,7 @@ dsb:
         one: 1 sekundu
         other: ! '%{count} sekundami'
         two: ! '%{count} sekundoma'
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: musy se wobkšuśiś
@@ -206,3 +206,10 @@ dsb:
       long: ! '%A, %d. %B %Y, %H:%M hodź.'
       short: ! '%d. %B, %H:%M hodź.'
     pm: wótpołdnja
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
