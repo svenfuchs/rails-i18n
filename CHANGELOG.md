@@ -1,7 +1,8 @@
-## 0.5.0 (unreleased)
+## 0.5.1 (2012-03-01)
 
 - Add pluralization and transliteration rules for non-English-like locales
 - Remove translations for will_paginate gem
+- bring activemodel and activerecord namespaces back which was removed in 21c8006
 
 ## 0.4.0 (2012-02-10)
 
