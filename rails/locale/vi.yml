@@ -92,7 +92,7 @@ vi:
       month: Tháng
       second: Giây
       year: Năm
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: phải được đồng ý
@@ -173,3 +173,10 @@ vi:
       long: ! '%d %B, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: chiều
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

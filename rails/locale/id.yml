@@ -97,7 +97,7 @@ id:
       month: Bulan
       second: Detik
       year: Tahun
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: harus diterima
@@ -191,3 +191,10 @@ id:
       long: ! '%d %B %Y %H.%M'
       short: ! '%d %b %H.%M'
     pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

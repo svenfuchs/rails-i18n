@@ -92,7 +92,7 @@ bn-IN:
       month: মাস
       second: সেকেন্ড
       year: বছর
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: গ্রাহ্য করতে হবে
@@ -173,3 +173,10 @@ bn-IN:
       long: ! '%e de %B de %Y %H:%M'
       short: ! '%e de %b %H:%M'
     pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

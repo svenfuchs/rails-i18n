@@ -92,7 +92,7 @@ sr:
         few: ! '%{count} секунде'
         one: 1 секунда
         other: ! '%{count} секунди'
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: мора бити прихваћено
@@ -161,3 +161,10 @@ sr:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ПМ
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

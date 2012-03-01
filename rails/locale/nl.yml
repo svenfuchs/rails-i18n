@@ -95,7 +95,7 @@ nl:
       month: maand
       second: seconde
       year: jaar
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: moet worden geaccepteerd
@@ -190,3 +190,10 @@ nl:
       long: ! '%d %B %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ! '''s middags'
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

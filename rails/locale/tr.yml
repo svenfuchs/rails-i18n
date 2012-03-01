@@ -90,7 +90,7 @@ tr:
       x_seconds:
         one: 1 saniye
         other: ! '%{count} saniye'
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: kabul edilmeli
@@ -167,3 +167,10 @@ tr:
       long: ! '%e %B %Y, %A, %H:%M'
       short: ! '%e %B, %H:%M'
     pm: öğleden sonra
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
