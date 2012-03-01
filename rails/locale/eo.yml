@@ -97,7 +97,7 @@ eo:
       month: Monato
       second: Sekundo
       year: Jaro
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: devas esti akceptita
@@ -192,3 +192,10 @@ eo:
       long: ! '%A %d %B %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

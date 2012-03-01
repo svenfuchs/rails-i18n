@@ -95,7 +95,7 @@ sk:
       month: Mesiac
       second: Sekunda
       year: Rok
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: musí byť potvrdené
@@ -191,3 +191,10 @@ sk:
       long: ! '%A %d. %B %Y %H:%M'
       short: ! '%d.%m. %H:%M'
     pm: popoludní
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

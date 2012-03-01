@@ -95,7 +95,7 @@ fi:
       month: Kuukausi
       second: Sekunti
       year: Vuosi
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: täytyy olla hyväksytty
@@ -190,3 +190,10 @@ fi:
       long: ! '%e. %Bta %Y %H.%M'
       short: ! '%e.%m. %H.%M'
     pm: iltapäivä
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

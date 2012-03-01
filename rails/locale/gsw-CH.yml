@@ -95,7 +95,7 @@ gsw-CH:
       month: Monät
       second: Sekundä
       year: Jaar
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mues akzeptiert werdä
@@ -190,3 +190,10 @@ gsw-CH:
       long: ! '%A, %d. %B %Y, %H:%M'
       short: ! '%d. %B, %H:%M'
     pm: am Namitaag
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

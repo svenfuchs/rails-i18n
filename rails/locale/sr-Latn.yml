@@ -92,7 +92,7 @@ sr-Latn:
         few: ! '%{count} sekunde'
         one: 1 sekunda
         other: ! '%{count} sekundi'
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mora biti prihvaćen
@@ -161,3 +161,10 @@ sr-Latn:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: PM
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

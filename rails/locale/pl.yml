@@ -106,7 +106,7 @@ pl:
       month: Miesiąc
       second: Sekundy
       year: Rok
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: musi zostać zaakceptowane
@@ -201,3 +201,10 @@ pl:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: po południu
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

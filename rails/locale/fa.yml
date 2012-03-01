@@ -95,7 +95,7 @@ fa:
       month: ماه
       second: ثانیه
       year: سال
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: باید پذیرفته شود
@@ -190,3 +190,10 @@ fa:
       long: ! '%e %B %Y، ساعت %H:%M'
       short: ! '%e %B، ساعت %H:%M'
     pm: بعد از ظهر
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

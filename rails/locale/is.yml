@@ -95,7 +95,7 @@ is:
       month: Mánuður
       second: Sekúnda
       year: Ár
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: þarf að vera tekið gilt
@@ -198,3 +198,10 @@ is:
       long: ! '%A %e. %B %Y kl. %H:%M'
       short: ! '%e. %B kl. %H:%M'
     pm: ''
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

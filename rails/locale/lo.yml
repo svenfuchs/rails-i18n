@@ -92,7 +92,7 @@ lo:
       month: ເດືອນ
       second: ວິນາທີ
       year: ປີ
-  errors:
+  errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: ຕ້ອງຍອມຮັບ
@@ -177,3 +177,10 @@ lo:
       long: ! '%d %B %Y %H:%M น.'
       short: ! '%d %b %H:%M น.'
     pm: ''
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
