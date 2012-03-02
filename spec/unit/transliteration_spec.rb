@@ -4,6 +4,7 @@ require 'spec_helper'
 require 'support/transliteration_file'
 
 require 'unit/transliteration/ordinary'
+require 'unit/transliteration/ukrainian'
 
 describe "Transliteration rule for" do
   transliterations_dir = File.join('rails', 'transliteration')
@@ -62,5 +63,11 @@ describe "Transliteration rule for" do
       t("Алябьев").should == "Alyabiev"
       t("АЛЯБЬЕВ").should == "ALYABIEV"
     end
+  end
+
+  describe "Ukrainian", :locale => :uk do
+    it_behaves_like "an ordinary transliteration rule"
+
+    include_examples "Ukrainian transliteration"
   end
 end

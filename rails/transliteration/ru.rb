@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # (c) Yaroslav Markin, Julian "julik" Tarkhanov and Co
 # https://github.com/yaroslav/russian/blob/master/lib/russian/transliteration.rb
 
