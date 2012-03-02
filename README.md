@@ -17,6 +17,19 @@ or run this command:
 
 Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
 
+## Configuration
+
+By default `rails-i18n` loads all locale files, pluralization and
+transliteration rules available in the gem. This behaviour can be changed, if you
+specify in `config/environments/*` the locales which have to be loaded via
+`I18n.available_locales` option:
+
+    config.i18n.available_locales = ['es-CO', :de]
+
+or
+
+    config.i18n.available_locales = :nl
+
 ## Manual installation
 
 Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into the `config/locales` directory of your Rails application.
