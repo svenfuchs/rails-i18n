@@ -3,16 +3,6 @@
 module RailsI18n
   module Transliteration
     module Ukrainian
-      STRAIGHT = {
-        'а'=>'a','б'=>'b','в'=>'v','ґ'=>'g','д'=>'d','е'=>'e','ж'=>'zh',
-        'з'=>'z','и'=>'y','і'=>'i','к'=>'k','л'=>'l','м'=>'m','н'=>'n','о'=>'o',
-        'п'=>'p','р'=>'r','с'=>'s','т'=>'t','у'=>'u','ф'=>'f','х'=>'kh','ц'=>'ts',
-        'ч'=>'ch','ш'=>'sh','щ'=>'shch','ь'=>'','’'=>'',
-        'А'=>'A','Б'=>'B','В'=>'V','Ґ'=>'G','Д'=>'D','Е'=>'E',
-        'З'=>'Z','И'=>'Y','І'=>'I','К'=>'K','Л'=>'L','М'=>'M','Н'=>'N','О'=>'O',
-        'П'=>'P','Р'=>'R','С'=>'S','Т'=>'T','У'=>'U','Ф'=>'F','Ь'=>''
-      }
-
       class << self
         def rule
           lambda do |string|
@@ -62,7 +52,7 @@ module RailsI18n
                 # remove apostrophe inside a word
                 letter?(behind) && letter?(ahead) ? '' : "'"
               else
-                STRAIGHT[char] || char
+                straight_lookup[char] || char
               end
             end
           end
@@ -90,6 +80,18 @@ module RailsI18n
 
         def lookahead_upcase(word)
           downcased?(ahead) ? word.capitalize : word.upcase
+        end
+
+        def straight_lookup
+          @straight_lookup ||= {
+            'а'=>'a','б'=>'b','в'=>'v','ґ'=>'g','д'=>'d','е'=>'e','ж'=>'zh',
+            'з'=>'z','и'=>'y','і'=>'i','к'=>'k','л'=>'l','м'=>'m','н'=>'n','о'=>'o',
+            'п'=>'p','р'=>'r','с'=>'s','т'=>'t','у'=>'u','ф'=>'f','х'=>'kh','ц'=>'ts',
+            'ч'=>'ch','ш'=>'sh','щ'=>'shch','ь'=>'','’'=>'',
+            'А'=>'A','Б'=>'B','В'=>'V','Ґ'=>'G','Д'=>'D','Е'=>'E',
+            'З'=>'Z','И'=>'Y','І'=>'I','К'=>'K','Л'=>'L','М'=>'M','Н'=>'N','О'=>'O',
+            'П'=>'P','Р'=>'R','С'=>'S','Т'=>'T','У'=>'U','Ф'=>'F','Ь'=>''
+          }
         end
       end
     end
