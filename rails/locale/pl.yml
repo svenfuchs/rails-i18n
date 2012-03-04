@@ -58,47 +58,58 @@ pl:
         few: około %{count} godziny
         one: około godziny
         other: około %{count} godzin
+        many: około %{count} godzin
       about_x_months:
         few: około %{count} miesiące
         one: około miesiąca
         other: około %{count} miesięcy
+        many: około %{count} miesięcy
       about_x_years:
         few: około %{count} lata
         one: około rok
         other: około %{count} lat
+        many: około %{count} lat
       almost_x_years:
         few: prawie %{count} lata
         one: prawie rok
         other: prawie %{count} lat
+        many: prawie %{count} lat
       half_a_minute: pół minuty
       less_than_x_minutes:
         few: mniej niż %{count} minuty
         one: mniej niż minutę
         other: mniej niż %{count} minut
+        many: mniej niż %{count} minut
       less_than_x_seconds:
         few: mniej niż %{count} sekundy
         one: mniej niż sekundę
         other: mniej niż %{count} sekund
+        many: mniej niż %{count} sekund
       over_x_years:
         few: ponad %{count} lata
         one: ponad rok
         other: ponad %{count} lat
+        many: ponad %{count} lat
       x_days:
         few: ! '%{count} dni'
         one: 1 dzień
         other: ! '%{count} dni'
+        many: ! '%{count} dni'
       x_minutes:
         few: ! '%{count} minuty'
         one: 1 minuta
         other: ! '%{count} minut'
+        many: ! '%{count} minut'
       x_months:
         few: ! '%{count} miesiące'
         one: 1 miesiąc
         other: ! '%{count} miesięcy'
+        many: ! '%{count} miesięcy'
       x_seconds:
         few: ! '%{count} sekundy'
         one: 1 sekunda
         other: ! '%{count} sekund'
+        many: ! '%{count} sekund'
     prompts:
       day: Dzień
       hour: Godzina
