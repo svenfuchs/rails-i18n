@@ -10,7 +10,7 @@ module RailsI18n
         { locale => {
             :'i18n' => {
               :plural => {
-                :keys => [:other],
+                :keys => [:one],
                 :rule => rule }}}}
       end
     end
