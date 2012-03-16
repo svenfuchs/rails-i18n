@@ -55,29 +55,36 @@ hr:
   datetime:
     distance_in_words:
       about_x_hours:
-        few: oko %{count} sata
         one: oko 1 sat
+        few: oko %{count} sata
         other: oko %{count} sati
       about_x_months:
-        few: oko %{count} mjeseca
         one: oko 1 mjesec
+        few: oko %{count} mjeseca
         other: oko %{count} mjeseci
       about_x_years:
         one: oko 1 godine
-        other: oko %{count} godine
+        few: oko %{count} godine
+        other: oko %{count} godina
+      almost_x_years:
+        one: skoro 1 godina
+        few: skoro %{count} godine
+        other: skoro %{count} godina
       half_a_minute: pola minute
       less_than_x_minutes:
-        one: manje od 1 minute
-        other: manje od %{count} minuta
         zero: manje od minute
+        one: manje od 1 minute
+        few: manje od %{count} minute
+        other: manje od %{count} minuta
       less_than_x_seconds:
-        few: manje od %{count} sekunde
+        zero: manje od sekunde
         one: manje od 1 sekunde
+        few: manje od %{count} sekunde
         other: manje od %{count} sekundi
-        zero: manje od 1 sekunde
       over_x_years:
         one: preko 1 godine
-        other: preko %{count} godine
+        few: preko %{count} godine
+        other: preko %{count} godina
       x_days:
         one: 1 dan
         other: ! '%{count} dana'
@@ -92,34 +99,59 @@ hr:
         few: ! '%{count} sekunde'
         one: 1 sekunda
         other: ! '%{count} sekundi'
+    prompts:
+      day: Dan
+      hour: Sat
+      minute: Minuta
+      month: Mjesec
+      second: Sekunde
+      year: Godina
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mora biti prihvaćen
-      blank: mora biti ispunjen
+      blank: ne smije biti prazan
       confirmation: se ne slaže sa svojom potvrdom
-      empty: mora biti ispunjen
-      equal_to: mora biti jednako %{count}
-      even: mora biti parno
-      exclusion: nije dostupno
-      greater_than: mora biti veće od %{count}
-      greater_than_or_equal_to: mora biti veće ili jednako %{count}
+      empty: ne smije biti prazan
+      equal_to: mora biti jednak %{count}
+      even: mora biti paran
+      exclusion: je rezerviran
+      greater_than: mora biti veći od %{count}
+      greater_than_or_equal_to: mora biti veći ili jednak %{count}
       inclusion: nije u listi
       invalid: nije ispravan
-      less_than: mora biti manje od %{count}
-      less_than_or_equal_to: mora biti manje ili jednako %{count}
+      less_than: mora biti manji od %{count}
+      less_than_or_equal_to: mora biti manji ili jednak %{count}
       not_a_number: nije broj
-      odd: mora biti neparno
-      taken: je zauzeto
-      too_long: je predugačak (ne više od %{count} karaktera)
-      too_short: je prekratak (ne manje od %{count} karaktera)
-      wrong_length: nije odgovarajuće dužine (mora imati %{count} karaktera)
+      not_an_integer: nije cijeli broj
+      odd: mora biti neparan
+      record_invalid: ! 'Validacija nije uspjela: %{errors}'
+      taken: je već zauzet
+      too_long:
+        one: je predugačak (maksimum je 1 znak)
+        few: je predugačak (maksimum je %{count} znaka)
+        other: je predugačak (maksimum je %{count} znakova)
+      too_short:
+        one: je prekratak (minimum je 1 znak)
+        few: je prekratak (minimum je %{count} znaka)
+        other: je prekratak (minimum je %{count} znakova)
+      wrong_length:
+        one: nije odgovarajuće duljine (treba biti 1 znak)
+        few: nije odgovarajuće duljine (treba biti %{count} znaka)
+        other: nije odgovarajuće duljine (treba biti %{count} znakova)
     template:
-      body: ! 'Molim Vas provjerite slijedeća polja:'
+      body: ! 'Sljedeća polja su neispravno popunjena:'
       header:
-        few: ! 'Nisam uspio spremiti %{model}: %{count} greške.'
-        one: ! 'Nisam uspio spremiti %{model}: 1 greška'
-        other: ! 'Nisam uspio spremiti %{model}: %{count} greški.'
+        one: 1 greška je spriječila %{model} da se spremi
+        few: ! '%{count} greške su spriječile %{model} da se spremi'
+        other: ! '%{count} grešaka je spriječilo %{model} da se spremi'
+  helpers:
+    select:
+      prompt: Izaberite
+    submit:
+      create: Stvori %{model}
+      submit: Spremi %{model}
+      update: Izmjeni %{model}
   number:
     currency:
       format:
@@ -140,6 +172,11 @@ hr:
       decimal_units:
         format: ! '%n %u'
         units:
+          thousand: Tisuća
+          million: Milijun
+          billion: Milijarda
+          trillion: Trilijun
+          quadrillion: Kvadrilijun
           unit: ''
       format:
         delimiter: ''
@@ -148,12 +185,26 @@ hr:
         strip_insignificant_zeros: true
       storage_units:
         format: ! '%n %u'
+        units:
+          byte:
+            one: bajt
+            few: bajta
+            other: bajtova
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
     precision:
       format:
         delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', i '
+      two_words_connector: ! ' i '
+      words_connector: ! ', '
   time:
     am: AM
     formats:
