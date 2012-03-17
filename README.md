@@ -39,13 +39,13 @@ Available locales are:
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
 > tr, uk, vi, zh-CN, zh-TW
 
-Note that all locale files are not yet ready for Rails 3. Currently, following locales are ready for Rails 2 and 3:
+Following locales are complete:
 
 > ar, az, bg, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, el, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
 > eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, nb,
 > nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
 
-Not-yet-ready locales are:
+Following locales have some missing translations:
 
 > bn-IN, dsb, en-IN, es-PE, gl-ES, hsb, id, lo, lt, mk, mn, nn, rm, sl, sr, sr-Latn, tr, vi
 
