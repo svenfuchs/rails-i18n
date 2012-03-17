@@ -1,15 +1,22 @@
+## 0.6.0 (unreleased)
+
+- uses I18n.available_locales to load selected locales
+- added transliteration rule for Ukrainian
+
 ## 0.5.2 (2012-03-17)
 
-- Fix Polish pluralization
-- Fix Hungarian pluralization
-- Fix Belarus pluralization
-- Complete Croatian translations
+- fixed Polish pluralization
+- fixed Hungarian pluralization
+- fixed Belarus pluralization
+- completed Croatian translations
 
 ## 0.5.1 (2012-03-01)
 
-- Add pluralization and transliteration rules for non-English-like locales
-- Remove translations for will_paginate gem
-- bring activemodel and activerecord namespaces back which was removed in 21c8006
+- pluralization and transliteration work out of the box
+- added pluralization rules for non-English-like locales
+- added transliteration rule for Russian
+- removed translations for will_paginate gem
+- brought activemodel and activerecord namespaces back which was removed in 21c8006
 
 ## 0.4.0 (2012-02-10)
 
