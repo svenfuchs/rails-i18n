@@ -70,11 +70,9 @@ If you are not,
 ### Create or edit your locale file
 
 * Have a look in `rails/locale/en-US.yml`, which can be used as the base of your translation.
-  This file is a compound of all translation files in the Rails 2 and 3 packages.
   Note that we use `&errors_messages` and `<<: *errors_messages` to anchor and merge a part of translation data.
 * Create or edit your locale file.
-  Please include a comment with the language/locale name and your name and email address (or other contact information like your github profile) to the locale file so people can come contact you and ask questions etc.
-  Also, please pay attention to save your files as UTF-8.
+  Please pay attention to save your files as UTF-8.
 
 ### Test your locale file
 
@@ -86,15 +84,11 @@ Make sure you have included all translations with:
 
     rake i18n-spec:completeness rails/locale/en-US.yml rails/locale/YOUR_NEW_LOCALE.yml
 
-You can list all locales that are ready both for Rails version 2 and 3:
+You can list all complete locales:
 
-    thor locales:ready
+    thor locales:complete
 
-You can also list the locales ready for a specific version of Rails. For example:
-
-    thor locales:ready_for 3
-
-Lastly, you can list all available locales:
+Also, you can list all available locales:
 
     thor locales:list
 
