@@ -1,3 +1,10 @@
+## 0.5.2 (2012-03-17)
+
+- Fix Polish pluralization
+- Fix Hungarian pluralization
+- Fix Belarus pluralization
+- Complete Croatian translations
+
 ## 0.5.1 (2012-03-01)
 
 - Add pluralization and transliteration rules for non-English-like locales
