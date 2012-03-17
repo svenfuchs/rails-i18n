@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") +
                    Dir.glob("rails/pluralization/*") + Dir.glob("rails/transliteration/*") +
-                   Dir.glob("will_paginate/*") + %w(README.md MIT-LICENSE.txt)
+                   %w(README.md MIT-LICENSE.txt)
   s.platform     = Gem::Platform::RUBY
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
