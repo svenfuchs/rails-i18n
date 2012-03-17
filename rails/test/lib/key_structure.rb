@@ -13,11 +13,11 @@ class KeyStructure
   PLURALIZATION_KEYS = ['zero', 'one', 'two', 'few', 'many', 'other']
 
   class << self
-    def check(locale, version)
+    def check(locale)
       missing_keys = []
       broken_keys = []
 
-      init_backend(locale, version)
+      init_backend(locale)
 
       I18n.locale = locale.to_sym
       translations = flatten_hash(I18n.backend.translations[:'en'])
@@ -61,16 +61,11 @@ class KeyStructure
         keys.all? {|k| PLURALIZATION_KEYS.include?(k) }
       end
 
-      def init_backend(locale, version)
+      def init_backend(locale)
         I18n.load_path = []
         I18n.reload!
 
-        case version.to_i
-        when 2
-          I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails/*.yml"]
-        when 3
-          I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails3/*.yml"]
-        end
+        I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails3/*.yml"]
 
         path = File.dirname(__FILE__) + "/../../locale/#{locale}.rb"
 
