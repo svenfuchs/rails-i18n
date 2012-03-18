@@ -90,14 +90,15 @@ hr:
         other: ! '%{count} dana'
       x_minutes:
         one: 1 minuta
-        other: ! '%{count} minuta-e'
+        few: ! '%{count} minute'
+        other: ! '%{count} minuta'
       x_months:
-        few: ! '%{count} mjeseca'
         one: 1 mjesec
+        few: ! '%{count} mjeseca'
         other: ! '%{count} mjeseci'
       x_seconds:
-        few: ! '%{count} sekunde'
         one: 1 sekunda
+        few: ! '%{count} sekunde'
         other: ! '%{count} sekundi'
     prompts:
       day: Dan
