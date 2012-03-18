@@ -190,7 +190,7 @@ es:
       long: ! '%d de %B de %Y %H:%M'
       short: ! '%d de %b %H:%M'
     pm: pm
-  timezones:
+  time_zones:
     "International Date Line West": "Línea de fecha internacional del oeste"
     "Midway Island": "Isla de Midway"
     "Samoa": "Samoa"
