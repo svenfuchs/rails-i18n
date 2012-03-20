@@ -66,6 +66,11 @@ We always welcome your contributions!
 
 ## How to contribute
 
+### We need additional country translations
+You can easily start adding country translations to the locales with help from this script: https://gist.github.com/2128684
+It will generate a new yml file that contains the country translations for the locale specified. Take the contents of this file and move it into the correct locale file.
+So far only en-US.yml and es.yml have them added.
+
 ### Quick contribution
 
 If you are familiar with GitHub operations, follow the procedures described in the subsequent sections.
