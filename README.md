@@ -40,7 +40,7 @@ For more information, visit [Rails Internationalization (I18n) API](http://guide
 
 ## Usage on Rails 2.3
 
-Locale data whose structure is compatible with Rails 2.3 are available on the separate branch [rails-2-3](https://github.com/svenfuchs/rails-i18n/tree/rails-2-3). 
+Locale data whose structure is compatible with Rails 2.3 are available on the separate branch [rails-2-3](https://github.com/svenfuchs/rails-i18n/tree/rails-2-3).
 
 ## Available Locales
 
@@ -55,12 +55,12 @@ Available locales are:
 Following locales are complete:
 
 > ar, az, bg, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, el, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
-> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, nb,
+> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb,
 > nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
 
 Following locales have some missing translations:
 
-> bn-IN, dsb, en-IN, es-PE, gl-ES, hsb, id, lo, lt, mk, mn, nn, rm, sl, sr, sr-Latn, tr, vi
+> bn-IN, dsb, en-IN, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, rm, sl, sr, sr-Latn, tr, vi
 
 We always welcome your contributions!
 
@@ -92,7 +92,7 @@ If you are not,
 Before committing and pushing your changes, test the integrity of your locale file.
 
     rake spec
-	
+
 Make sure you have included all translations with:
 
     rake i18n-spec:completeness rails/locale/en-US.yml rails/locale/YOUR_NEW_LOCALE.yml
