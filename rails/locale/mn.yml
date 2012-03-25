@@ -134,9 +134,9 @@ mn:
     select:
       prompt: Сонгоно уу
     submit:
-      create: %{model}-г үүсгэх
-      submit: %{model}-г хадгалах
-      update: %{model}-г шинэчлэх
+      create: ! '%{model}-г үүсгэх'
+      submit: ! '%{model}-г хадгалах'
+      update: ! '%{model}-г шинэчлэх'
   number:
     currency:
       format:
