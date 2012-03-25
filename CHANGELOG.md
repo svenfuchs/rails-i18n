@@ -1,7 +1,8 @@
-## 0.6.0 (unreleased)
+## 0.6.0 (2012-03-25)
 
 - uses I18n.available_locales to load selected locales
 - added transliteration rule for Ukrainian
+- completed translations for Mongolian (mn)
 
 ## 0.5.2 (2012-03-17)
 
