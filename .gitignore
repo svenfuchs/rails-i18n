@@ -8,4 +8,7 @@ rails-i18n-*.gem
 *.sw[pno]
 doc
 log
+bin
+.idea
+.bundle
 
