@@ -119,6 +119,7 @@ We will do the formality check and publish it as quick as we can.
 
 * [devise-i18n](https://github.com/tigrish/devise-i18n)
 * [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
+* [i18n-country-translation](https://github.com/onomojo/i18n-country-translations) for translations of country names
 
 ## License
 
