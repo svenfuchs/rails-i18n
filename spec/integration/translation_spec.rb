@@ -10,7 +10,7 @@ describe "Translation" do
 
   context "when default locale is not English" do
     let(:translation) do
-      app.run ->{ I18n.t("helpers.select.prompt") } do |config|
+      app.run lambda { I18n.t("helpers.select.prompt") } do |config|
         config.i18n.default_locale = :de
       end
     end

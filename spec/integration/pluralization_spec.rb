@@ -10,7 +10,7 @@ describe "Pluralization" do
 
   context "when default locale has special pluralization rule" do
     let(:translation) do
-      app.run ->{ I18n.t(:grandmother, :count => 6) } do |config|
+      app.run lambda { I18n.t(:grandmother, :count => 6) } do |config|
         config.i18n.default_locale = :ru
         config.i18n.load_path << 'spec/fixtures/ru.yml'
       end
@@ -23,7 +23,7 @@ describe "Pluralization" do
 
   context "when default locale has 'one-other' pluralization rule" do
     let(:translation) do
-      app.run ->{ I18n.t(:retiree, :count => 3) } do |config|
+      app.run lambda { I18n.t(:retiree, :count => 3) } do |config|
         config.i18n.default_locale = :nl
         config.i18n.load_path << 'spec/fixtures/nl.yml'
       end

@@ -25,9 +25,9 @@ module RailsI18n
               when 'Щ'
                 lookahead_upcase 'SHCH'
               when 'г'
-                behind =~ /з/i ? 'gh' : 'h'
+                behind =~ /[зЗ]/ ? 'gh' : 'h'
               when 'Г'
-                behind =~ /з/i ? lookahead_upcase('GH') : 'H'
+                behind =~ /[зЗ]/ ? lookahead_upcase('GH') : 'H'
               when 'є'
                 letter?(behind) ? 'ie' : 'ye'
               when 'Є'
@@ -61,21 +61,23 @@ module RailsI18n
         private
 
         def behind
-          @pre_match && @pre_match[-1]
+          @pre_match && @pre_match.split(//).last
         end
 
         def ahead
-          @post_match && @post_match[0]
+          @post_match && @post_match.split(//).first
         end
 
         def downcased?(symbol)
-          symbol =~ /\p{Ll}/
+          symbol =~ /[гєїйюя]/ ||
+            straight_lookup[symbol] =~ /[a-z]/
         end
         
         # apostrophe can be inside a word
         # TODO what about hyphen?
         def letter?(symbol)
-          symbol =~ /[\p{L}'’]/
+          symbol =~ /[ЖХЦЧШЩгГєЄїЇйЙюЮяЯЬ'’]/ ||
+            straight_lookup[symbol] =~ /[a-z]/i
         end
 
         def lookahead_upcase(word)

@@ -5,7 +5,7 @@ module RailsI18n
         lambda do |n|
           if n == 0
             :zero
-          elsif (0...2).cover?(n)
+          elsif n > 0 && n < 2
             :one
           else
             :other

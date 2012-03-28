@@ -2,6 +2,8 @@ require 'support/traverse_path'
 require 'support/ruby_content'
 require 'yaml'
 
+$KCODE = "U"
+
 module RailsI18n
   module Spec
     class TransliterationFile
@@ -21,7 +23,8 @@ module RailsI18n
 
       def rule
         @rule ||= begin
-          locale = @filepath.match(/([\w-]+)\.[^\.]+$/) { |md| md[1] }
+          md = @filepath.match(/([\w-]+)\.[^\.]+$/)
+          locale = md[1]
           traverse_path(locale.to_sym, :i18n, :transliterate, :rule)
         end
       end

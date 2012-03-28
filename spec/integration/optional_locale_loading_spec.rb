@@ -9,10 +9,10 @@ describe "Rails-i18n" do
 
   context "when i18n.available_locales are specified in config" do
     let(:i18n_results) do
-      de_translate = ->{ I18n.t "helpers.select.prompt", :locale => :de }
-      ru_translate = ->{ I18n.t "helpers.select.prompt", :locale => :ru }
-      uk_transliterate = ->{ I18n.transliterate 'Рубі!', :locale => :uk }
-      bg_transliterate = ->{ I18n.transliterate 'Рубі!', :locale => :bg }
+      de_translate = lambda { I18n.t "helpers.select.prompt", :locale => :de }
+      ru_translate = lambda { I18n.t "helpers.select.prompt", :locale => :ru }
+      uk_transliterate = lambda { I18n.transliterate 'Рубі!', :locale => :uk }
+      bg_transliterate = lambda { I18n.transliterate 'Рубі!', :locale => :bg }
 
       app.run(de_translate, ru_translate, uk_transliterate, bg_transliterate)  do |config|
         config.i18n.available_locales = [:ru, :uk]
@@ -31,8 +31,8 @@ describe "Rails-i18n" do
 
   context "when single locale is assigned to i18n.available_locales" do
     let(:translations) do
-      fr = ->{ I18n.t "helpers.select.prompt" }
-      it = ->{ I18n.t "helpers.select.prompt", :locale => :it }
+      fr = lambda { I18n.t "helpers.select.prompt" }
+      it = lambda { I18n.t "helpers.select.prompt", :locale => :it }
 
       app.run(fr, it)  do |config|
         config.i18n.default_locale = 'fr'
