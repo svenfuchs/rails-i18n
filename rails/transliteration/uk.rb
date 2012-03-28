@@ -60,24 +60,45 @@ module RailsI18n
 
         private
 
-        def behind
-          @pre_match && @pre_match.split(//).last
-        end
+        if RUBY_VERSION < '1.9'
+          # two bytes will be enough for Cyrillic
+          class_eval <<-END, __FILE__, __LINE__ + 1
+            def behind
+              tail = @pre_match && @pre_match[-2..-1]
+              tail && tail.split(//).last
+            end
 
-        def ahead
-          @post_match && @post_match.split(//).first
+            def ahead
+              @post_match && @post_match[0..1].split(//).first
+            end
+          END
+        else
+          class_eval <<-END, __FILE__, __LINE__ + 1
+            def behind
+              @pre_match && @pre_match[-1]
+            end
+
+            def ahead
+              @post_match && @post_match[0]
+            end
+          END
         end
 
         def downcased?(symbol)
-          symbol =~ /[гєїйюя]/ ||
-            straight_lookup[symbol] =~ /[a-z]/
+          symbol =~ downcased_regexp
+        end
+
+        def downcased_regexp
+          @downcased_regexp ||= /[а-яґєії]/
         end
         
         # apostrophe can be inside a word
-        # TODO what about hyphen?
         def letter?(symbol)
-          symbol =~ /[ЖХЦЧШЩгГєЄїЇйЙюЮяЯЬ'’]/ ||
-            straight_lookup[symbol] =~ /[a-z]/i
+          symbol =~ letter_regexp
+        end
+
+        def letter_regexp
+          @letter_regexp ||= /[а-яґєіїА-ЯҐЄІЇ'’]/
         end
 
         def lookahead_upcase(word)
