@@ -1,4 +1,8 @@
-## 0.6.0 (2012-03-25)
+## 0.6.2 (2012-03-28)
+
+- added a patch for Ruby 1.8.7 support
+
+## 0.6.1 (2012-03-25)
 
 - uses I18n.available_locales to load selected locales
 - added transliteration rule for Ukrainian
