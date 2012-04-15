@@ -1,4 +1,4 @@
-# Implementation of http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html
+# Implementation of http://unicode.org/cldr/trac/browser/trunk/common/supplemental/plurals.xml
 # with additional specs for I18n pluralization data format.
 #
 # Locales that behave like English are omitted, because I18n applies English plural rule
@@ -245,6 +245,35 @@ describe 'Pluralization rule for' do
   describe 'guw', :locale => :guw do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'
+  end
+
+  describe 'Hebrew', :locale => :he do
+    it_behaves_like 'an ordinary pluralization rule'
+
+    it 'has "one", "two", "many" and "other" plural keys' do
+      plural_keys.size.should == 4
+      plural_keys.should include(:one, :two, :many, :other)
+    end
+
+    it "detects that 1 in category 'one'" do
+      rule.call(1).should == :one
+    end
+
+    it "detects that 2 in category 'two'" do
+      rule.call(2).should == :two
+    end
+
+    [10, 30, 70, 100, 130].each do |count|
+      it "detects that #{count} in category 'many'" do
+        rule.call(count).should == :many
+      end
+    end
+
+    [0, 1.2, 3.94, 8.2, 11, 12, 15, 19, 25, 27, 31, 52, 84, 99].each do |count|
+      it "detects that #{count} in category 'other'" do
+        rule.call(count).should == :other
+      end
+    end
   end
 
   describe 'Hindi', :locale => :hi do
@@ -554,6 +583,7 @@ describe 'Pluralization rule for' do
     it_behaves_like 'one(with zero)-other forms language'
   end
 
+  # http://unicode.org/cldr/trac/ticket/4187
   describe 'Persian', :locale => :fa do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
