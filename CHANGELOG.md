@@ -1,3 +1,8 @@
+## 0.6.3 (2012-04-15)
+
+- fixed English (India) translations
+- fixed Hebrew pluralization
+
 ## 0.6.2 (2012-03-28)
 
 - added a patch for Ruby 1.8.7 support
