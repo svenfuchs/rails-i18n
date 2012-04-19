@@ -57,48 +57,58 @@ hr:
       about_x_hours:
         one: oko 1 sat
         few: oko %{count} sata
+        many: oko %{count} sati
         other: oko %{count} sati
       about_x_months:
         one: oko 1 mjesec
         few: oko %{count} mjeseca
+        many: oko %{count} mjeseci
         other: oko %{count} mjeseci
       about_x_years:
         one: oko 1 godine
         few: oko %{count} godine
+        many: oko %{count} godina
         other: oko %{count} godina
       almost_x_years:
         one: skoro 1 godina
         few: skoro %{count} godine
+        many: skoro %{count} godina
         other: skoro %{count} godina
       half_a_minute: pola minute
       less_than_x_minutes:
-        zero: manje od minute
         one: manje od 1 minute
         few: manje od %{count} minute
+        many: manje od %{count} minuta
         other: manje od %{count} minuta
       less_than_x_seconds:
-        zero: manje od sekunde
         one: manje od 1 sekunde
         few: manje od %{count} sekunde
+        many: manje od %{count} sekundi
         other: manje od %{count} sekundi
       over_x_years:
         one: preko 1 godine
         few: preko %{count} godine
+        many: preko %{count} godina
         other: preko %{count} godina
       x_days:
         one: 1 dan
+        few: ! '%{count} dana'
+        many: ! '%{count} dana'
         other: ! '%{count} dana'
       x_minutes:
         one: 1 minuta
         few: ! '%{count} minute'
+        many: ! '%{count} minuta'
         other: ! '%{count} minuta'
       x_months:
         one: 1 mjesec
         few: ! '%{count} mjeseca'
+        many: ! '%{count} mjeseci'
         other: ! '%{count} mjeseci'
       x_seconds:
         one: 1 sekunda
         few: ! '%{count} sekunde'
+        many: ! '%{count} sekundi'
         other: ! '%{count} sekundi'
     prompts:
       day: Dan
@@ -131,20 +141,24 @@ hr:
       too_long:
         one: je predugačak (maksimum je 1 znak)
         few: je predugačak (maksimum je %{count} znaka)
+        many: je predugačak (maksimum je %{count} znakova)
         other: je predugačak (maksimum je %{count} znakova)
       too_short:
         one: je prekratak (minimum je 1 znak)
         few: je prekratak (minimum je %{count} znaka)
+        many: je prekratak (minimum je %{count} znakova)
         other: je prekratak (minimum je %{count} znakova)
       wrong_length:
         one: nije odgovarajuće duljine (treba biti 1 znak)
         few: nije odgovarajuće duljine (treba biti %{count} znaka)
+        many: nije odgovarajuće duljine (treba biti %{count} znakova)
         other: nije odgovarajuće duljine (treba biti %{count} znakova)
     template:
       body: ! 'Sljedeća polja su neispravno popunjena:'
       header:
         one: 1 greška je spriječila %{model} da se spremi
         few: ! '%{count} greške su spriječile %{model} da se spremi'
+        many: ! '%{count} grešaka je spriječilo %{model} da se spremi'
         other: ! '%{count} grešaka je spriječilo %{model} da se spremi'
   helpers:
     select:
@@ -190,6 +204,7 @@ hr:
           byte:
             one: bajt
             few: bajta
+            many: bajtova
             other: bajtova
           gb: GB
           kb: KB
