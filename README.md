@@ -50,7 +50,7 @@ Available locales are:
 > es-AR, es-CL, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
-> tr, uk, vi, zh-CN, zh-TW
+> tr, uk, vi, wo, zh-CN, zh-TW
 
 Following locales are complete:
 
@@ -60,7 +60,7 @@ Following locales are complete:
 
 Following locales have some missing translations:
 
-> bn-IN, dsb, en-IN, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, rm, sl, sr, sr-Latn, tr, vi
+> bn-IN, dsb, en-IN, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, rm, sl, sr, sr-Latn, tr, vi, wo
 
 We always welcome your contributions!
 
