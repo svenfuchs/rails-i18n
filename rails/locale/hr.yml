@@ -31,7 +31,7 @@ hr:
     - Petak
     - Subota
     formats:
-      default: ! '%d/%m/%Y'
+      default: ! '%d.%m.%Y.'
       long: ! '%B %e, %Y'
       short: ! '%e %b'
     month_names:
