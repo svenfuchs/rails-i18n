@@ -260,12 +260,12 @@ describe 'Pluralization rule for' do
     end
 
     it "detects that 2 in category 'two'" do
-      rule.call(2).should == :two
+      rule.call(2).should == :other
     end
 
     [10, 30, 70, 100, 130].each do |count|
       it "detects that #{count} in category 'many'" do
-        rule.call(count).should == :many
+        rule.call(count).should == :other
       end
     end
 
