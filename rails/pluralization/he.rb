@@ -5,6 +5,10 @@ module RailsI18n
         lambda do |n|
           if n == 1
             :one
+          elsif n == 2
+            :two
+          elsif n != 0 && n % 10 == 0
+            :many
           else
             :other
           end
