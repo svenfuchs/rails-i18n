@@ -81,6 +81,7 @@ bs:
         few: manje od %{count} sekunde
         many: manje od %{count} sekundi
         one: manje od sekunde
+        other: manje od %{count} sekundi
       over_x_years:
         few: preko %{count} godine
         many: preko %{count} godina
