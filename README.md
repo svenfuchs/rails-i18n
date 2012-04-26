@@ -48,19 +48,19 @@ Available locales are:
 
 > ar, az, bg, bn-IN, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-IN, en-US, eo, es,
 > es-AR, es-CL, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
-> gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
+> gsw-CH, he, hi, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
 > tl, tr, uk, vi, wo, zh-CN, zh-TW
 
 Following locales are complete:
 
-> ar, az, bg, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, el, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
-> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb,
-> nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, tl, uk, zh-CN, zh-TW
+> az, bg, bs, ca, csb, da, de, de-AT, de-CH, el, en-AU, en-GB, en-IN, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
+> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb,
+> nl, pt-BR, pt-PT, ru, sv-SE, sw, th, tl, uk, wo, zh-CN, zh-TW
 
-Following locales have some missing translations:
+Following locales have some missing translations or pluralizations:
 
-> bn-IN, dsb, en-IN, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, rm, sl, sr, sr-Latn, tr, vi, wo
+> ar, bn-IN, cs, cy, dsb, es-PE, gl-ES, he, hsb, id, lo, lt, mk, nn, pl, rm, ro, sk, sl, sr, sr-Latn, tr, vi
 
 We always welcome your contributions!
 
