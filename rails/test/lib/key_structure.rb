@@ -16,11 +16,13 @@ class KeyStructure
     def check(locale)
       missing_keys = []
       broken_keys = []
+      missing_pluralizations = []
 
       init_backend(locale)
 
       I18n.locale = locale.to_sym
       translations = flatten_hash(I18n.backend.translations[:'en'])
+      pluralizations = find_pluralizations(I18n.backend.translations[:'en'])
       translations.keys.sort.each do |key|
         begin
           case key
@@ -31,6 +33,24 @@ class KeyStructure
           else
             I18n.t key, :raise => true
           end
+
+          begin
+            if pluralizations.has_key?(key)
+              I18n.t key, :count => 0, :raise => true
+              I18n.t key, :count => 1, :raise => true
+              I18n.t key, :count => 2, :raise => true
+              I18n.t key, :count => 3, :raise => true
+              I18n.t key, :count => 5, :raise => true
+              I18n.t key, :count => 6, :raise => true
+              I18n.t key, :count => 10, :raise => true
+              I18n.t key, :count => 11, :raise => true
+              I18n.t key, :count => 100, :raise => true
+              I18n.t key, :count => 1000000, :raise => true
+              I18n.t key, :count => 10.2, :raise => true
+            end
+          rescue Exception
+            missing_pluralizations << key
+          end
         rescue I18n::MissingTranslationData
           missing_keys << key
         rescue Exception
@@ -38,7 +58,7 @@ class KeyStructure
         end
       end
 
-      return missing_keys, broken_keys
+      return missing_keys, broken_keys, missing_pluralizations
     end
 
     private
@@ -50,6 +70,22 @@ class KeyStructure
             result[current_prefix] = value
           else
             flatten_hash(value, current_prefix, result)
+          end
+        end
+
+        result
+      end
+
+      def find_pluralizations(data, prefix = '', result = {})
+        data.each do |key, value|
+          current_prefix = prefix.empty? ? key.to_s : "#{prefix}.#{key}"
+
+          if value.is_a?(Hash)
+            if pluralization_data?(value)
+              result[current_prefix] = value
+            else
+              find_pluralizations(value, current_prefix, result)
+            end
           end
         end
 
@@ -78,6 +114,11 @@ class KeyStructure
         end
 
         I18n.load_path += [path]
+
+        pluralization = File.dirname(__FILE__) + "/../../pluralization/#{locale}.rb"
+        I18n.load_path += [pluralization] if File.exist?(pluralization)
+        I18n.backend.class.send(:include, I18n::Backend::Pluralization)
+
         I18n.backend.init_translations
       end
   end
