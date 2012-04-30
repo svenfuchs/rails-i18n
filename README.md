@@ -50,13 +50,13 @@ Available locales are:
 > es-AR, es-CL, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
-> tr, uk, vi, wo, zh-CN, zh-TW
+> tl, tr, uk, vi, wo, zh-CN, zh-TW
 
 Following locales are complete:
 
 > ar, az, bg, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, el, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
 > eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb,
-> nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
+> nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, tl, uk, zh-CN, zh-TW
 
 Following locales have some missing translations:
 
