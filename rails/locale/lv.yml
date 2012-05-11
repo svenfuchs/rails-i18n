@@ -55,38 +55,38 @@ lv:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: apmēram 1 stunda
+        one: apmēram %{count} stunda
         other: apmēram %{count} stundas
       about_x_months:
-        one: apmēram 1 mēnesis
+        one: apmēram %{count} mēnesis
         other: apmēram %{count} mēneši
       about_x_years:
-        one: apmēram 1 gads
+        one: apmēram %{count} gads
         other: apmēram %{count} gadi
       almost_x_years:
-        one: gandrīz 1 gads
+        one: gandrīz %{count} gads
         other: gandrīz %{count} gadi
       half_a_minute: pusminūte
       less_than_x_minutes:
-        one: mazāk par vienu minūti
+        one: mazāk par %{count} minūti
         other: mazāk par %{count} minūtēm
       less_than_x_seconds:
-        one: mazāk par vienu sekundi
+        one: mazāk par %{count} sekundi
         other: mazāk par %{count} sekundēm
       over_x_years:
-        one: vairāk kā gads
+        one: vairāk kā %{count} gads
         other: vairāk kā %{count} gadi
       x_days:
-        one: 1 diena
+        one: ! '%{count} diena'
         other: ! '%{count} dienas'
       x_minutes:
-        one: 1 minūte
+        one: ! '%{count} minūte'
         other: ! '%{count} minūtes'
       x_months:
-        one: 1 mēnesis
+        one: ! '%{count} mēnesis'
         other: ! '%{count} mēneši'
       x_seconds:
-        one: 1 sekunde
+        one: ! '%{count} sekunde'
         other: ! '%{count} sekundes'
     prompts:
       day: diena
@@ -116,13 +116,19 @@ lv:
       odd: ir jābūt nepāra skaitlim
       record_invalid: ! 'Pārbaude neizdevās: %{errors}'
       taken: ir jau aizņemts
-      too_long: ir par garu (maksimums ir %{count} zīmes)
-      too_short: ir par īsu (minimums ir %{count} zīmes)
-      wrong_length: ir nepareizs garums (jābūt %{count} zīmēm)
+      too_long:
+        one: ir par garu (maksimums ir %{count} simbols)
+        other: ir par garu (maksimums ir %{count} simboli)
+      too_short:
+        one: ir par īsu (minimums ir %{count} simbols)
+        other: ir par īsu (minimums ir %{count} simboli)
+      wrong_length:
+        one: ir nepareizs garums (jābūt %{count} simbolam)
+        other: ir nepareizs garums (jābūt %{count} simboliem)
     template:
       body: ! 'Problēmas ir šajos ievades laukos:'
       header:
-        one: Dēļ 1 kļūdas šis %{model} netika saglabāts
+        one: Dēļ %{count} kļūdas šis %{model} netika saglabāts
         other: Dēļ %{count} kļūdām šis %{model} netika saglabāts
   helpers:
     select:
@@ -151,11 +157,21 @@ lv:
       decimal_units:
         format: ! '%n %u'
         units:
-          billion: Biljons
-          million: Miljons
-          quadrillion: Kvadriljons
-          thousand: Tūkstotis
-          trillion: Triljons
+          billion:
+            one: miljards
+            other: miljardi
+          million:
+            one: miljons
+            other: miljoni
+          quadrillion:
+            one: kvadriljons
+            other: kvadriljoni
+          thousand:
+            one: tūkstotis
+            other: tūkstoši
+          trillion:
+            one: triljons
+            other: triljoni
           unit: ''
       format:
         delimiter: ''
@@ -166,8 +182,8 @@ lv:
         format: ! '%n %u'
         units:
           byte:
-            one: Baits
-            other: Baiti
+            one: baits
+            other: baiti
           gb: GB
           kb: KB
           mb: MB
