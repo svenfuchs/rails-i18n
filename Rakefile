@@ -1,6 +1,7 @@
 require 'rake'
 require 'rake/testtask'
 require 'rbconfig'
+require 'yaml'
 
 task :test => 'test:all'
 
