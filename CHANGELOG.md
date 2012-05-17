@@ -1,3 +1,11 @@
+## 0.6.4 (2012-05-17)
+- fixed Croatian translation and pluralization
+- added Wolof translation
+- fixed Hebrew pluralization
+- added Tagalog translation
+- fixed Bosinan pluralization
+- fixed Lativian pluralization
+
 ## 0.6.3 (2012-04-15)
 
 - fixed English (India) translations
