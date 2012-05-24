@@ -99,7 +99,7 @@ is:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: þarf að vera tekið gilt
-      blank: má ekki innihalda auða stafi
+      blank: má ekki vera autt
       confirmation: er ekki jafngilt staðfestingunni
       empty: má ekki vera tómt
       equal_to: þarf að vera jafngilt %{count}
@@ -112,15 +112,21 @@ is:
       less_than: þarf að vera minna en %{count}
       less_than_or_equal_to: þarf að vera minna en eða jafngilt %{count}
       not_a_number: er ekki tala
-      not_an_integer: verður að vera heiltala
+      not_an_integer: þarf að vera heiltala
       odd: þarf að vera oddatala
       record_invalid: ! 'Villur: %{errors}'
       taken: er þegar í notkun
-      too_long: er of langt (má mest vera %{count} stafir)
-      too_short: er of stutt (má minnst vera %{count} stafir)
-      wrong_length: er af rangri lengd (má mest vera %{count} stafir)
+      too_long:
+        one: er of langt (má mest vera 1 stafur)
+        other: er of langt (má mest vera %{count} stafir)
+      too_short:
+        one: er of stutt (má minnst vera 1 stafur)
+        other: er of stutt (má minnst vera %{count} stafir)
+      wrong_length:
+        one: er af rangri lengd (má mest vera 1 stafur)
+        other: er af rangri lengd (má mest vera %{count} stafir)
     template:
-      body: ! 'Upp kom vandamál í eftirfarandi dálkum:'
+      body: ! 'Villur fundust í eftirfarandi dálkum:'
       header:
         one: Ekki var hægt að vista %{model} vegna einnar villu.
         other: Ekki var hægt að vista %{model} vegna %{count} villna.
@@ -129,7 +135,7 @@ is:
       prompt: Veldu
     submit:
       create: Búa til %{model}
-      submit: Geyma %{model}
+      submit: Vista %{model}
       update: Uppfæra %{model}
   number:
     currency:
@@ -152,8 +158,8 @@ is:
         format: ! '%n %u'
         units:
           billion:
-            one: milliarður
-            other: milliarðar
+            one: milljarður
+            other: milljarðar
           million:
             one: milljón
             other: milljónir
