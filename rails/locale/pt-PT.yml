@@ -65,7 +65,7 @@ pt-PT:
         other: aproximadamente %{count} anos
       almost_x_years:
         one: quase 1 ano
-        other: quase %{count} years
+        other: quase %{count} anos
       half_a_minute: meio minuto
       less_than_x_minutes:
         one: menos de um minuto
