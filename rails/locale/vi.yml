@@ -63,6 +63,9 @@ vi:
       about_x_years:
         one: khoảng 1 năm
         other: khoảng %{count} năm
+      almost_x_years:
+        one: gần 1 năm
+        other: gần %{count} năm
       half_a_minute: 30 giây
       less_than_x_minutes:
         one: chưa tới 1 phút
@@ -109,6 +112,7 @@ vi:
       less_than: phải nhỏ hơn %{count}
       less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}
       not_a_number: không phải là số
+      not_an_integer: phải là một số nguyên 
       odd: phải là số chẵn
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
@@ -119,6 +123,13 @@ vi:
       header:
         one: 1 lỗi ngăn không cho lưu %{model} này
         other: ! '%{count} lỗi ngăn không cho lưu %{model} này'
+  helpers:
+    select:
+      prompt: Vui lòng chọn
+    submit:
+      create: Tạo %{model}
+      submit: Lưu %{model}
+      update: Cập nhật %{model}
   number:
     currency:
       format:
@@ -140,6 +151,11 @@ vi:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: Tỷ
+          million: Triệu
+          quadrillion: Triệu tỷ
+          thousand: Nghìn
+          trillion: Nghìn tỷ
       format:
         delimiter: ''
         precision: 1
@@ -180,3 +196,6 @@ vi:
   activerecord:
     errors:
       <<: *errors
+      messages:
+        record_invalid: "Lỗi xác nhận: %{errors}"
+        taken: "đã có"
