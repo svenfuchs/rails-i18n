@@ -81,8 +81,8 @@
 
   number:
     format:
-      separator: ","
-      delimiter: .
+      separator: "."
+      delimiter: ","
       precision: 3
       significant: FALSE
       strip_insignificant_zeros: FALSE
@@ -91,8 +91,8 @@
       format:
         format: "%n %u"
         unit: "₱"
-        separator: ","
-        delimiter: "."
+        separator: "."
+        delimiter: ","
         precision: 2
         significant: FALSE
         strip_insignificant_zeros: FALSE
