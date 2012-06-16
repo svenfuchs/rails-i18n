@@ -103,7 +103,7 @@ vi:
       confirmation: không khớp với xác nhận
       empty: không thể rỗng
       equal_to: phải bằng %{count}
-      even: phải là số lẻ
+      even: phải là số chẵn
       exclusion: đã được giành trước
       greater_than: phải lớn hơn %{count}
       greater_than_or_equal_to: phải lớn hơn hoặc bằng %{count}
@@ -113,7 +113,7 @@ vi:
       less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}
       not_a_number: không phải là số
       not_an_integer: phải là một số nguyên 
-      odd: phải là số chẵn
+      odd: phải là số lẻ
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)
