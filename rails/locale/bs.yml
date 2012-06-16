@@ -135,23 +135,23 @@ bs:
       odd: mora biti neparno
       record_invalid: ! 'Validacija nije uspjela: %{errors}'
       taken: je već zauzet
-      too_long: je predugo (maksimalno je dozvoljeno %{count} karaktera)
-      too_short: je prekratko (predviđeno je minimalno %{count} karaktera)
-      wrong_length: je pogrešne dužine (trebalo bi biti tačno %{count} karaktera)
+      too_long: je predugo (maksimalno je dozvoljeno %{count} znakova)
+      too_short: je prekratko (predviđeno je minimalno %{count} znakova)
+      wrong_length: je pogrešne dužine (trebalo bi biti tačno %{count} znakova)
     template:
       body: ! 'Desili su se problemi sa slijedećim poljima:'
       header:
-        few: ! '%{count} greške su spriječile da se ovaj %{model} snimi'
-        many: ! '%{count} grešaka je spriječilo da se ovaj %{model} snimi'
-        one: 1 greška je spriječila da se ovaj %{model} snimi
-        other: ! '%{count} grešaka je spriječilo da se ovaj %{model} snimi'
+        few: ! '%{count} greške su spriječile da se ovaj %{model} spremi'
+        many: ! '%{count} grešaka je spriječilo da se ovaj %{model} spremi'
+        one: 1 greška je spriječila da se ovaj %{model} spremi
+        other: ! '%{count} grešaka je spriječilo da se ovaj %{model} spremi'
   helpers:
     select:
       prompt: Molimo odaberite
     submit:
       create: Kreiraj %{model}
       submit: Sačuvaj %{model}
-      update: Osviježi %{model}
+      update: Osvježi %{model}
   number:
     currency:
       format:
