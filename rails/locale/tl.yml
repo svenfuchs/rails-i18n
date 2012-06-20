@@ -3,7 +3,7 @@
 # contributors:
 #  - Patrick CHEW - https://github.com/pchew-change (pchew@change.org)
 #  - Jose BUSTAMANTE - (josebust@cisco.com)
-# Corrected by [name] : [references]
+# Corrected by Christine Roque : christine@change.org
 
 "tl":
   date:
@@ -136,37 +136,37 @@
       half_a_minute: "kalahating isang minuto"
       less_than_x_seconds:
         one: mas mababa sa isang segundo
-        other: "mas mababa sa %{count}ng segundo"
+        other: "mas mababa sa %{count} segundo"
       x_seconds:
         one: isang segundo
-        other: "%{count}ng segundo"
+        other: "%{count} segundo"
       less_than_x_minutes:
          one: mas mababa sa isang minuto
          other: "mas mababa sa %{count} minuto"
       x_minutes:
          one: isang minuto
-         other: "%{count}ng minuto"
+         other: "%{count} minuto"
       about_x_hours:
          one: humigit-kumulang isang oras
-         other: "humigit-kumulang %{count}ng oras"
+         other: "humigit-kumulang %{count} oras"
       x_days:
          one: isang araw
-         other: "%{count}ng araw"
+         other: "%{count} araw"
       about_x_months:
          one: humigit-kumulang isang buwan
-         other: "humigit-kumulang %{count}ng buwan"
+         other: "humigit-kumulang %{count} buwan"
       x_months:
          one: isang buwan
-         other: "%{count}ng buwang"
+         other: "%{count} buwang"
       about_x_years:
          one: humigit-kumulang isang taon
-         other: "humigit-kumulang %{count}ng taon"
+         other: "humigit-kumulang %{count} taon"
       over_x_years:
          one: higit sa isang taon
-         other: "higit %{count}ng taon"
+         other: "higit %{count} taon"
       almost_x_years:
          one: halos isang taon
-         other: "halos %{count}ng taon"
+         other: "halos %{count} taon"
     prompts:
       year: taon
       month: buwan
@@ -196,21 +196,21 @@
       empty: ito ay hindi maaaring walang laman
       blank: ito ay hindi maaaring maging katutubo
       too_long:
-        one: "ito ay masyadong mahaba (maximum ay %{count}ng character)"
+        one: "ito ay masyadong mahaba (maximum ay %{count} character)"
         other:
       too_short:
-        one: "ito ay masyadong maikli (minimum ay %{count}ng character)"
+        one: "ito ay masyadong maikli (minimum ay %{count} character)"
         other:
       wrong_length:
-        one: ito ay ang maling haba (ito ay dapat %{count}ng character eksaktong)
+        one: ito ay ang maling haba (ito ay dapat %{count} character eksaktong)
         other:
       not_a_number: ito ay hindi isang numero
       not_an_integer: dapat na isang integer
-      greater_than: dapat na mas higit sa %{count}ng
-      greater_than_or_equal_to: dapat na mas higit sa o katumbas ng %{count}ng
-      equal_to: dapat na katumba sa %{count}ng
-      less_than: dapat na mas mababa sa %{count}ng
-      less_than_or_equal_to: dapat na mas mababa sa o katumbas ng %{count}ng
+      greater_than: dapat na mas higit sa %{count}
+      greater_than_or_equal_to: dapat na mas higit sa o katumbas ng %{count}
+      equal_to: dapat na katumba sa %{count}
+      less_than: dapat na mas mababa sa %{count}
+      less_than_or_equal_to: dapat na mas mababa sa o katumbas ng %{count}
       odd: dapat maging kakaibang
       even: dapat maging kahit
       taken: ay ginagamit
@@ -218,7 +218,7 @@
     template:
       header:
         one: "hindi maaaring i-save ang %{model} na ito dahil sa isang error"
-        other: "hindi maaaring i-save ang %{model} na ito dahil sa %{count}ng error"
+        other: "hindi maaaring i-save ang %{model} na ito dahil sa %{count} error"
       body: "May mga problema sa mga sumusunod na patlang:"
 
   activemodel:
