@@ -178,15 +178,15 @@ fr:
       submit: "Enregistrer ce(tte) %{model}"
 
   errors: &errors
-    format: "Le %{attribute} %{message}"
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "n'est pas inclus(e) dans la liste"
       exclusion: "n'est pas disponible"
       invalid: "n'est pas valide"
       confirmation: "ne concorde pas avec la confirmation"
       accepted: "doit être accepté(e)"
-      empty: "champ obligé"
-      blank: "champ obligé"
+      empty: "doit être rempli(e)"
+      blank: "doit être rempli(e)"
       too_long:
         one: "est trop long (pas plus d'un caractère)"
         other: "est trop long (pas plus de %{count} caractères)"
@@ -213,7 +213,7 @@ fr:
         one:   "Impossible d'enregistrer ce(tte) %{model} : 1 erreur"
         other: "Impossible d'enregistrer ce(tte) %{model} : %{count} erreurs"
       body: "Veuillez vérifier les champs suivants : "
-      
+
   activemodel:
     errors:
       <<: *errors
