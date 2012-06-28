@@ -98,7 +98,7 @@ fr-CA:
       second: Seconde
       year: Année
   errors: &errors
-    format: %{attribute} %{message}
+    format: '%{attribute} %{message}'
     messages:
       accepted: doit être accepté(e)
       blank: doit être rempli(e)
