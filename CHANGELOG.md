@@ -1,3 +1,15 @@
+## 0.6.5 (2012-07-02)
+ - fixed Icelandic translation
+ - fixed Portuguese translation
+ - completed Vietnamese translation and transliteration
+ - added Canadian English
+ - fixed Tagalog delimiter and separator
+ - fixed Bosinian translation
+ - fixed French translation
+ - added Engish (en) translation
+ - added Spanish (Venizuela) translation
+ - complted Turkish translation
+
 ## 0.6.4 (2012-05-17)
 - fixed Croatian translation and pluralization
 - added Wolof translation
