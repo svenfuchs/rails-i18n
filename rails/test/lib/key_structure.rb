@@ -21,8 +21,8 @@ class KeyStructure
       init_backend(locale)
 
       I18n.locale = locale.to_sym
-      translations = flatten_hash(I18n.backend.translations[:'en'])
-      pluralizations = find_pluralizations(I18n.backend.translations[:'en'])
+      translations = flatten_hash(I18n.backend.translations[:'default'])
+      pluralizations = find_pluralizations(I18n.backend.translations[:'default'])
       translations.keys.sort.each do |key|
         begin
           case key

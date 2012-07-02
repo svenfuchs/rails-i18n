@@ -1,4 +1,4 @@
-en:
+"default":
   errors:
     # The default format to use in full error messages.
     format: "%{attribute} %{message}"

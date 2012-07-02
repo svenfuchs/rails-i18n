@@ -1,4 +1,4 @@
-en:
+"default":
   # Attributes names common to most models
   #attributes:
     #created_at: "Created at"
