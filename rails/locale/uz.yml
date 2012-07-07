@@ -74,28 +74,28 @@ uz:
         few: deyarli %{count} yil
         many: deyarli %{count} yil
         other: deyarli %{count} yil
-      half_a_daqiqae: bir daqiqadan kam
-      less_than_x_daqiqaes:
-        few: %{count} daqiqadan kam
-        many: %{count} daqiqadan kam
-        one: %{count} daqiqadan kam
-        other: %{count} daqiqadan kam
+      half_a_minute: bir daqiqadan kam
+      less_than_x_minutes:
+        few: ! '%{count} daqiqadan kam'
+        many: ! '%{count} daqiqadan kam'
+        one: ! '%{count} daqiqadan kam'
+        other: ! '%{count} daqiqadan kam'
       less_than_x_seconds:
-        few: %{count} soniyadan kam
-        many: %{count} soniyadan kam
-        one: %{count} soniyadan kam
-        other: %{count} soniyadan kam
+        few: ! '%{count} soniyadan kam'
+        many: ! '%{count} soniyadan kam'
+        one: ! '%{count} soniyadan kam'
+        other: ! '%{count} soniyadan kam'
       over_x_years:
-        few: %{count} yildan ziyod
-        many: %{count} yildan ziyod
-        one: %{count} yildan ziyod
-        other: %{count} yildan ziyod
+        few: ! '%{count} yildan ziyod'
+        many: ! '%{count} yildan ziyod'
+        one: ! '%{count} yildan ziyod'
+        other: ! '%{count} yildan ziyod'
       x_days:
         few: ! '%{count} kun'
         many: ! '%{count} kun'
         one: ! '%{count} kun'
         other: ! '%{count} kun'
-      x_daqiqaes:
+      x_minutes:
         few: ! '%{count} daqiqa'
         many: ! '%{count} daqiqa'
         one: ! '%{count} daqiqa'
@@ -113,7 +113,7 @@ uz:
     prompts:
       day: kun
       hour: soat
-      daqiqae: daqiqa
+      minute: daqiqa
       month: oy
       second: soniya
       year: yil
@@ -124,15 +124,15 @@ uz:
       blank: bush bulishi mumkin emas
       confirmation: tasdiq bilan mos emas
       empty: bush bulishi mumkin emas
-      equal_to: %{count} ga teng
+      equal_to: ! '%{count} ga teng'
       even: juft sonlar mumkin
       exclusion: mumkin emas
-      greater_than: %{count} dan yuqori
-      greater_than_or_equal_to: %{count} ga teng yoki yuqori
+      greater_than: ! '%{count} dan yuqori'
+      greater_than_or_equal_to: ! '%{count} ga teng yoki yuqori'
       inclusion: kutilmagan natija
       invalid: notugri
-      less_than: %{count} dan kam
-      less_than_or_equal_to: %{count} ga teng yoki kam
+      less_than: ! '%{count} dan kam'
+      less_than_or_equal_to: ! '%{count} ga teng yoki kam'
       not_a_number: son emas
       not_an_integer: butun son emas
       odd: toq sonlar mumkin
