@@ -140,7 +140,7 @@ de-CH:
         separator: .
         significant: false
         strip_insignificant_zeros: false
-        unit: SFr.
+        unit: CHF
     format:
       delimiter: ! ''''
       precision: 2
