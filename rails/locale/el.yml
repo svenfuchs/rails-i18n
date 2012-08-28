@@ -111,7 +111,7 @@ el:
       invalid: είναι άκυρο
       less_than: πρέπει να είναι λιγότερο από %{count}
       less_than_or_equal_to: πρέπει να είναι λιγότερο ή ίσο με %{count}
-      not_a_number: δεν είναι ένας αριθμός
+      not_a_number: δεν είναι αριθμός
       not_an_integer: πρέπει να είναι ακέραιος αριθμός
       odd: πρέπει να είναι περιττός
       record_invalid: ! 'Επικύρωση απέτυχε: %{errors}'
