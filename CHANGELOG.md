@@ -1,3 +1,12 @@
+## 0.6.6 (2012-09-07)
+ - added Uzbek (uz) translation
+ - added Swiss Italian (it-CH) translation
+ - fixed Swiss German (de-CH) translation
+ - added Polish (pl) transliteration
+ - fixed Greek (el) translation
+ - added Nepali (ne) translation
+ - fixed Argentina Spanish (es-AR) translation
+
 ## 0.6.5 (2012-07-02)
  - fixed Icelandic translation
  - fixed Portuguese translation
