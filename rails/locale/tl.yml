@@ -197,13 +197,13 @@
       blank: ito ay hindi maaaring maging katutubo
       too_long:
         one: "ito ay masyadong mahaba (maximum ay %{count} character)"
-        other:
+        other: "ito ay masyadong mahaba (maximum ay %{count} character)"
       too_short:
         one: "ito ay masyadong maikli (minimum ay %{count} character)"
-        other:
+        other: "ito ay masyadong maikli (minimum ay %{count} character)"
       wrong_length:
         one: ito ay ang maling haba (ito ay dapat %{count} character eksaktong)
-        other:
+        other: ito ay ang maling haba (ito ay dapat %{count} character eksaktong)
       not_a_number: ito ay hindi isang numero
       not_an_integer: dapat na isang integer
       greater_than: dapat na mas higit sa %{count}
