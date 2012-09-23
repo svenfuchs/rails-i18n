@@ -55,42 +55,57 @@ sr:
   datetime:
     distance_in_words:
       about_x_hours:
-        few: око %{count} сата
         one: око 1 сат
+        few: око %{count} сата
+        many: око %{count} сати
         other: око %{count} сати
       about_x_months:
-        few: око %{count} месеца
         one: око 1 месец
+        few: око %{count} месеца
+        many: око %{count} месеци
         other: око %{count} месеци
       about_x_years:
         one: око 1 године
+        few: око %{count} године
+        many: око %{count} године
         other: око %{count} године
       half_a_minute: пола минуте
       less_than_x_minutes:
         one: мање од 1 минут
+        few: мање од %{count} минута
+        many: мање од %{count} минута
         other: мање од %{count} минута
         zero: мање од минута
       less_than_x_seconds:
         few: мање од %{count} секунде
         one: мање од 1 секунд
+        many: мање од %{count} секунди
         other: мање од %{count} секунди
         zero: мање од 1 секунде
       over_x_years:
         one: преко 1 године
+        few: преко %{count} године
+        many: преко %{count} године
         other: преко %{count} године
       x_days:
         one: 1 дан
+        few: ! '%{count} дана'
+        many: ! '%{count} дана'
         other: ! '%{count} дана'
       x_minutes:
         one: 1 минут
+        few: ! '%{count} минута'
+        many: ! '%{count} минута'
         other: ! '%{count} минута'
       x_months:
-        few: ! '%{count} месеца'
         one: 1 месец
+        few: ! '%{count} месеца'
+        many: ! '%{count} месеци'
         other: ! '%{count} месеци'
       x_seconds:
-        few: ! '%{count} секунде'
         one: 1 секунда
+        few: ! '%{count} секунде'
+        many: ! '%{count} секунди'
         other: ! '%{count} секунди'
   errors: &errors
     format: ! '%{attribute} %{message}'
@@ -117,8 +132,9 @@ sr:
     template:
       body: ! 'Молим Вас да проверите следећа поља:'
       header:
-        few: ! 'Нисам успео сачувати %{model}: %{count} грешке.'
         one: ! 'Нисам успео сачувати %{model}: 1 грешка.'
+        few: ! 'Нисам успео сачувати %{model}: %{count} грешке.'
+        many: ! 'Нисам успео сачувати %{model}: %{count} грешки.'
         other: ! 'Нисам успео сачувати %{model}: %{count} грешки.'
   number:
     currency:

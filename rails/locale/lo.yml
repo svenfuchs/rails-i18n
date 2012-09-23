@@ -55,35 +55,75 @@ lo:
   datetime:
     distance_in_words:
       about_x_hours:
+        zero: ປະມານ %{count} ຊົ່ວໂມງ
         one: ປະມານ 1 ຊົ່ວໂມງ
+        two: ປະມານ %{count} ຊົ່ວໂມງ
+        few: ປະມານ %{count} ຊົ່ວໂມງ
+        many: ປະມານ %{count} ຊົ່ວໂມງ
         other: ປະມານ %{count} ຊົ່ວໂມງ
       about_x_months:
+        zero: ປະມານ %{count} ເດືອນ
         one: ປະມານ 1 ເດືອນ
+        two: ປະມານ %{count} ເດືອນ
+        few: ປະມານ %{count} ເດືອນ
+        many: ປະມານ %{count} ເດືອນ
         other: ປະມານ %{count} ເດືອນ
       about_x_years:
+        zero: ! 'ປະມານ %{count} ປີ '
         one: ! 'ປະມານ 1 ປີ '
+        two: ! 'ປະມານ %{count} ປີ '
+        few: ! 'ປະມານ %{count} ປີ '
+        many: ! 'ປະມານ %{count} ປີ '
         other: ! 'ປະມານ %{count} ປີ '
       half_a_minute: ! 'ເຄິ່ງນາທີ '
       less_than_x_minutes:
+        zero: ! 'ນ້ອຍກວ່າ %{count} ນາທີ '
         one: ! 'ນ້ອຍກວ່າ 1 ນາທີ '
+        two: ! 'ນ້ອຍກວ່າ %{count} ນາທີ '
+        few: ! 'ນ້ອຍກວ່າ %{count} ນາທີ '
+        many: ! 'ນ້ອຍກວ່າ %{count} ນາທີ '
         other: ! 'ນ້ອຍກວ່າ %{count} ນາທີ '
       less_than_x_seconds:
+        zero: ! 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
         one: ! 'ນ້ອຍກວ່າ 1 ວິນາທີ '
+        two: ! 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
+        few: ! 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
+        many: ! 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
         other: ! 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
       over_x_years:
+        zero: ! 'ຫຼາຍກວ່າ %{count} ປີ '
         one: ! 'ຫຼາຍກວ່າ 1 ປີ '
+        two: ! 'ຫຼາຍກວ່າ %{count} ປີ '
+        few: ! 'ຫຼາຍກວ່າ %{count} ປີ '
+        many: ! 'ຫຼາຍກວ່າ %{count} ປີ '
         other: ! 'ຫຼາຍກວ່າ %{count} ປີ '
       x_days:
+        zero: ! '%{count} ມື້ '
         one: ! '1 ມື້ '
+        two: ! '%{count} ມື້ '
+        few: ! '%{count} ມື້ '
+        many: ! '%{count} ມື້ '
         other: ! '%{count} ມື້ '
       x_minutes:
+        zero: ! '%{count} ນາທີ '
         one: ! '1 ນາທີ '
+        two: ! '%{count} ນາທີ '
+        few: ! '%{count} ນາທີ '
+        many: ! '%{count} ນາທີ '
         other: ! '%{count} ນາທີ '
       x_months:
+        zero: ! '%{count} ເດືອນ'
         one: 1 ເດືອນ
+        two: ! '%{count} ເດືອນ'
+        few: ! '%{count} ເດືອນ'
+        many: ! '%{count} ເດືອນ'
         other: ! '%{count} ເດືອນ'
       x_seconds:
+        zero: ! '%{count} ວິນາທີ '
         one: ! '1 ວິນາທີ '
+        two: ! '%{count} ວິນາທີ '
+        few: ! '%{count} ວິນາທີ '
+        many: ! '%{count} ວິນາທີ '
         other: ! '%{count} ວິນາທີ '
     prompts:
       day: ວັນ
@@ -118,7 +158,11 @@ lo:
     template:
       body: ! 'ກະລຸນາກວດສອບຂໍ້ມູນໃນຫ້ອງຕໍ່ໄປນີ້ :'
       header:
+        zero: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ
         one: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກເກີດຂໍ້ຜິດພາດ
+        two: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ
+        few: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ
+        many: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ
         other: ບໍ່ສາມາດບັນທຶກ %{model} ໄດ້ເນື່ອງຈາກ ເກີດ %{count} ຂໍ້ຜິດພາດ
   helpers:
     select:
@@ -153,7 +197,11 @@ lo:
         format: ! '%n %u'
         units:
           byte:
+            zero: Bytes
             one: Byte
+            two: Bytes
+            few: Bytes
+            many: Bytes
             other: Bytes
           gb: GB
           kb: KB

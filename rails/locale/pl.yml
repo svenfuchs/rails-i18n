@@ -145,6 +145,7 @@ pl:
       body: ! 'Błędy dotyczą następujących pól:'
       header:
         one: ! '%{model} nie został zachowany z powodu jednego błędu'
+        few: ! '%{model} nie został zachowany z powodu %{count} błędów'
         other: ! '%{model} nie został zachowany z powodu %{count} błędów'
   helpers:
     select:
@@ -189,6 +190,8 @@ pl:
         units:
           byte:
             one: bajt
+            few: bajty
+            many: bajty
             other: bajty
           gb: GB
           kb: KB

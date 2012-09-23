@@ -56,37 +56,48 @@ cs:
     distance_in_words:
       about_x_hours:
         one: asi hodinou
+        few: asi %{count} hodinami
         other: asi %{count} hodinami
       about_x_months:
         one: asi měsícem
+        few: asi %{count} měsíci
         other: asi %{count} měsíci
       about_x_years:
         one: asi rokem
+        few: asi %{count} roky
         other: asi %{count} roky
       almost_x_years:
         one: téměř rokem
+        few: téměř %{count} roky
         other: téměř %{count} roky
       half_a_minute: půl minutou
       less_than_x_minutes:
         one: necelou minutou
+        few: ani ne %{count} minutami
         other: ani ne %{count} minutami
       less_than_x_seconds:
         one: necelou sekundou
+        few: ani ne %{count} sekundami
         other: ani ne %{count} sekundami
       over_x_years:
         one: více než rokem
+        few: více než %{count} roky
         other: více než %{count} roky
       x_days:
         one: 24 hodinami
+        few: ! '%{count} dny'
         other: ! '%{count} dny'
       x_minutes:
         one: minutou
+        few: ! '%{count} minutami'
         other: ! '%{count} minutami'
       x_months:
         one: měsícem
+        few: ! '%{count} měsíci'
         other: ! '%{count} měsíci'
       x_seconds:
         one: sekundou
+        few: ! '%{count} sekundami'
         other: ! '%{count} sekundami'
     prompts:
       day: Den
@@ -123,6 +134,8 @@ cs:
       body: ! 'Následující pole obsahují chybně vyplněné údaje: '
       header:
         one: Při ukládání objektu %{model} došlo k chybám a nebylo jej možné uložit
+        few: Při ukládání objektu %{model} došlo ke %{count} chybám a nebylo možné
+          jej uložit
         other: Při ukládání objektu %{model} došlo ke %{count} chybám a nebylo možné
           jej uložit
   helpers:

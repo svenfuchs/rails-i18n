@@ -56,34 +56,44 @@ lt:
     distance_in_words:
       about_x_hours:
         one: apie 1 valanda
+        few: apie %{count} valandų
         other: apie %{count} valandų
       about_x_months:
         one: apie 1 mėnuo
+        few: apie %{count} mėnesiai
         other: apie %{count} mėnesiai
       about_x_years:
         one: apie 1 metai
+        few: apie %{count} metų
         other: apie %{count} metų
       half_a_minute: pusė minutės
       less_than_x_minutes:
         one: mažiau nei minutė
+        few: mažiau nei %{count} minutės
         other: mažiau nei %{count} minutės
       less_than_x_seconds:
         one: mažiau nei 1 sekundė
+        few: mažiau nei %{count} sekundės
         other: mažiau nei %{count} sekundės
       over_x_years:
         one: virš 1 metų
+        few: virš %{count} metų
         other: virš %{count} metų
       x_days:
         one: 1 diena
+        few: ! '%{count} dienų'
         other: ! '%{count} dienų'
       x_minutes:
         one: 1 minutė
+        few: ! '%{count} minutės'
         other: ! '%{count} minutės'
       x_months:
         one: 1 mėnuo
+        few: ! '%{count} mėnesiai'
         other: ! '%{count} mėnesiai'
       x_seconds:
         one: 1 sekundė
+        few: ! '%{count} sekundės'
         other: ! '%{count} sekundės'
     prompts:
       day: Diena
@@ -118,6 +128,7 @@ lt:
       body: ! 'Šiuose laukuose yra klaidų:'
       header:
         one: Išsaugant objektą %{model} rasta klaida
+        few: Išsaugant objektą %{model} rastos %{count} klaidos
         other: Išsaugant objektą %{model} rastos %{count} klaidos
   number:
     currency:
@@ -150,6 +161,7 @@ lt:
         units:
           byte:
             one: Baitas
+            few: Baitai
             other: Baitai
           gb: GB
           kb: KB

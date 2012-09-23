@@ -178,6 +178,8 @@ sl:
         units:
           byte:
             one: Byte
+            two: Bytes
+            few: Bytes
             other: Bytes
           gb: GB
           kb: KB
