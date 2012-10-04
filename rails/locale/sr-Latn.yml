@@ -1,4 +1,4 @@
-scr:
+sr-Latn:
   date:
     abbr_day_names:
     - Ned
@@ -55,42 +55,57 @@ scr:
   datetime:
     distance_in_words:
       about_x_hours:
+        one: oko %{count} sat
         few: oko %{count} sata
-        one: oko 1 sat
+        many: oko %{count} sati
         other: oko %{count} sati
       about_x_months:
+        one: oko %{count} mesec
         few: oko %{count} meseca
-        one: oko 1 mesec
+        many: oko %{count} meseci
         other: oko %{count} meseci
       about_x_years:
-        one: oko 1 godine
+        one: oko %{count} godine
+        few: oko %{count} godine
+        many: oko %{count} godine
         other: oko %{count} godine
       half_a_minute: pola minute
       less_than_x_minutes:
-        one: manje od 1 minut
+        one: manje od %{count} minut
+        few: manje od %{count} minuta
+        many: manje od %{count} minuta
         other: manje od %{count} minuta
         zero: manje od minuta
       less_than_x_seconds:
         few: manje od %{count} sekunde
-        one: manje od 1 sekund
+        one: manje od %{count} sekund
+        many: manje od %{count} sekundi
         other: manje od %{count} sekundi
-        zero: manje od 1 sekunde
+        zero: manje od %{count} sekunde
       over_x_years:
-        one: preko 1 godine
+        one: preko %{count} godine
+        few: preko %{count} godine
+        many: preko %{count} godine
         other: preko %{count} godine
       x_days:
-        one: 1 dan
+        one: ! '%{count} dan'
+        few: ! '%{count} dana'
+        many: ! '%{count} dana'
         other: ! '%{count} dana'
       x_minutes:
-        one: 1 minut
+        one: ! '%{count} minut'
+        few: ! '%{count} minuta'
+        many: ! '%{count} minuta'
         other: ! '%{count} minuta'
       x_months:
+        one: ! '%{count} mesec'
         few: ! '%{count} meseca'
-        one: 1 mesec
+        many: ! '%{count} meseci'
         other: ! '%{count} meseci'
       x_seconds:
+        one: ! '%{count} sekunda'
         few: ! '%{count} sekunde'
-        one: 1 sekunda
+        many: ! '%{count} sekundi'
         other: ! '%{count} sekundi'
   errors: &errors
     format: ! '%{attribute} %{message}'
@@ -115,10 +130,11 @@ scr:
       too_short: je prekratak (ne manje od %{count} karaktera)
       wrong_length: nije odgovarajuće dužine (mora imati %{count} karaktera)
     template:
-      body: ! 'Molim Vas proverite sledeća polja:'
+      body: ! 'Molim Vas da proverite sledeća polja:'
       header:
+        one: ! 'Nisam uspeo sačuvati %{model}: %{count} greška.'
         few: ! 'Nisam uspeo sačuvati %{model}: %{count} greške.'
-        one: ! 'Nisam uspeo sačuvati %{model}: 1 greška'
+        many: ! 'Nisam uspeo sačuvati %{model}: %{count} greški.'
         other: ! 'Nisam uspeo sačuvati %{model}: %{count} greški.'
   number:
     currency:
