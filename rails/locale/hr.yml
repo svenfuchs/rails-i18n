@@ -55,58 +55,58 @@ hr:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: oko 1 sat
+        one: oko %{count} sat
         few: oko %{count} sata
         many: oko %{count} sati
         other: oko %{count} sati
       about_x_months:
-        one: oko 1 mjesec
+        one: oko %{count} mjesec
         few: oko %{count} mjeseca
         many: oko %{count} mjeseci
         other: oko %{count} mjeseci
       about_x_years:
-        one: oko 1 godine
+        one: oko %{count} godine
         few: oko %{count} godine
         many: oko %{count} godina
         other: oko %{count} godina
       almost_x_years:
-        one: skoro 1 godina
+        one: skoro %{count} godina
         few: skoro %{count} godine
         many: skoro %{count} godina
         other: skoro %{count} godina
       half_a_minute: pola minute
       less_than_x_minutes:
-        one: manje od 1 minute
+        one: manje od %{count} minute
         few: manje od %{count} minute
         many: manje od %{count} minuta
         other: manje od %{count} minuta
       less_than_x_seconds:
-        one: manje od 1 sekunde
+        one: manje od %{count} sekunde
         few: manje od %{count} sekunde
         many: manje od %{count} sekundi
         other: manje od %{count} sekundi
       over_x_years:
-        one: preko 1 godine
+        one: preko %{count} godine
         few: preko %{count} godine
         many: preko %{count} godina
         other: preko %{count} godina
       x_days:
-        one: 1 dan
+        one: ! '%{count} dan'
         few: ! '%{count} dana'
         many: ! '%{count} dana'
         other: ! '%{count} dana'
       x_minutes:
-        one: 1 minuta
+        one: ! '%{count} minuta'
         few: ! '%{count} minute'
         many: ! '%{count} minuta'
         other: ! '%{count} minuta'
       x_months:
-        one: 1 mjesec
+        one: ! '%{count} mjesec'
         few: ! '%{count} mjeseca'
         many: ! '%{count} mjeseci'
         other: ! '%{count} mjeseci'
       x_seconds:
-        one: 1 sekunda
+        one: ! '%{count} sekunda'
         few: ! '%{count} sekunde'
         many: ! '%{count} sekundi'
         other: ! '%{count} sekundi'
@@ -139,24 +139,24 @@ hr:
       record_invalid: ! 'Validacija nije uspjela: %{errors}'
       taken: je već zauzet
       too_long:
-        one: je predugačak (maksimum je 1 znak)
+        one: je predugačak (maksimum je %{count} znak)
         few: je predugačak (maksimum je %{count} znaka)
         many: je predugačak (maksimum je %{count} znakova)
         other: je predugačak (maksimum je %{count} znakova)
       too_short:
-        one: je prekratak (minimum je 1 znak)
+        one: je prekratak (minimum je %{count} znak)
         few: je prekratak (minimum je %{count} znaka)
         many: je prekratak (minimum je %{count} znakova)
         other: je prekratak (minimum je %{count} znakova)
       wrong_length:
-        one: nije odgovarajuće duljine (treba biti 1 znak)
+        one: nije odgovarajuće duljine (treba biti %{count} znak)
         few: nije odgovarajuće duljine (treba biti %{count} znaka)
         many: nije odgovarajuće duljine (treba biti %{count} znakova)
         other: nije odgovarajuće duljine (treba biti %{count} znakova)
     template:
       body: ! 'Sljedeća polja su neispravno popunjena:'
       header:
-        one: 1 greška je spriječila %{model} da se spremi
+        one: ! '%{count} greška je spriječila %{model} da se spremi'
         few: ! '%{count} greške su spriječile %{model} da se spremi'
         many: ! '%{count} grešaka je spriječilo %{model} da se spremi'
         other: ! '%{count} grešaka je spriječilo %{model} da se spremi'
