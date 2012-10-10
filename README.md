@@ -47,16 +47,16 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 Available locales are:
 
 > ar, az, bg, bn-IN, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-CA, en-GB, en-IN, en-US, eo,
-> es, es-AR, es-CL, es-CO, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
+> es, es-AR, es-CL, es-CO, es-419, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
 > ne, nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, scr, sv-SE, sw, th,
 > tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
 Following locales are complete:
 
-> az, bg, bs, ca, csb, da, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IN, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, es-VE, et,
-> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb, ne,
-> nl, pt-BR, pt-PT, ru, sk, sv-SE, sw, th, tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
+> az, bg, bs, ca, csb, da, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IN, en-US, eo, es, es-AR, es-CL, es-CO, es-419, es-MX, es-VE, et,
+> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb, ne
+> nl, pt-BR, pt-PT, ru, sk, sv-SE, sw, th, tl, uk, vi, wo, zh-CN, zh-TW
 
 Following locales have some missing translations or pluralizations:
 
