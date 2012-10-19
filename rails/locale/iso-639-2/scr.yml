@@ -67,26 +67,29 @@ scr:
       about_x_years:
         one: oko %{count} godine
         few: oko %{count} godine
-        many: oko %{count} godine
-        other: oko %{count} godine
+        many: oko %{count} godina
+        other: oko %{count} godina
+      almost_x_years:
+        one: skoro %{count} godina
+        few: skoro %{count} godine
+        many: skoro %{count} godina
+        other: skoro %{count} godina
       half_a_minute: pola minute
       less_than_x_minutes:
         one: manje od %{count} minut
         few: manje od %{count} minuta
         many: manje od %{count} minuta
         other: manje od %{count} minuta
-        zero: manje od minuta
       less_than_x_seconds:
         few: manje od %{count} sekunde
         one: manje od %{count} sekund
         many: manje od %{count} sekundi
         other: manje od %{count} sekundi
-        zero: manje od %{count} sekunde
       over_x_years:
         one: preko %{count} godine
         few: preko %{count} godine
-        many: preko %{count} godine
-        other: preko %{count} godine
+        many: preko %{count} godina
+        other: preko %{count} godina
       x_days:
         one: ! '%{count} dan'
         few: ! '%{count} dana'
@@ -107,28 +110,49 @@ scr:
         few: ! '%{count} sekunde'
         many: ! '%{count} sekundi'
         other: ! '%{count} sekundi'
+    prompts:
+      day: Dan
+      hour: Sat
+      minute: Minut
+      month: Mesec
+      second: Sekund
+      year: Godina
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mora biti prihvaćen
-      blank: mora biti dat
-      confirmation: se ne slaže sa svojom potvrdom
-      empty: mora biti dat
-      equal_to: mora biti jednako %{count}
-      even: mora biti parno
-      exclusion: nije dostupno
-      greater_than: mora biti veće od %{count}
-      greater_than_or_equal_to: mora biti veće ili jednako %{count}
+      blank: ne sme biti prazan
+      confirmation: se ne slaže sa potvrdom
+      empty: ne sme biti prazan
+      equal_to: mora biti jednak %{count}
+      even: mora biti paran
+      exclusion: je rezervisan
+      greater_than: mora biti veći od %{count}
+      greater_than_or_equal_to: mora biti veći ili jednak %{count}
       inclusion: nije u listi
       invalid: nije ispravan
-      less_than: mora biti manje od %{count}
-      less_than_or_equal_to: mora biti manje ili jednako %{count}
+      less_than: mora biti manji od %{count}
+      less_than_or_equal_to: mora biti manji ili jednak %{count}
       not_a_number: nije broj
-      odd: mora biti neparno
-      taken: je zauzeto
-      too_long: je predugačak (ne više od %{count} karaktera)
-      too_short: je prekratak (ne manje od %{count} karaktera)
-      wrong_length: nije odgovarajuće dužine (mora imati %{count} karaktera)
+      not_an_integer: nije ceo broj
+      odd: mora biti neparan
+      record_invalid: ! 'Validacija nije uspela: %{errors}'
+      taken: je već zauzet
+      too_long:
+        one: je predugačak (maksimum je %{count} znak)
+        few: je predugačak (maksimum je %{count} znaka)
+        many: je predugačak (maksimum je %{count} znakova)
+        other: je predugačak (maksimum je %{count} znakova)
+      too_short:
+        one: je prekratak (minimum je %{count} znak)
+        few: je prekratak (minimum je %{count} znaka)
+        many: je prekratak (minimum je %{count} znakova)
+        other: je prekratak (minimum je %{count} znakova)
+      wrong_length:
+        one: nije odgovarajuće dužine (treba biti %{count} znak)
+        few: nije odgovarajuće dužine (treba biti %{count} znaka)
+        many: nije odgovarajuće dužine (treba biti %{count} znakova)
+        other: nije odgovarajuće dužine (treba biti %{count} znakova)
     template:
       body: ! 'Molim Vas da proverite sledeća polja:'
       header:
@@ -136,6 +160,13 @@ scr:
         few: ! 'Nisam uspeo sačuvati %{model}: %{count} greške.'
         many: ! 'Nisam uspeo sačuvati %{model}: %{count} greški.'
         other: ! 'Nisam uspeo sačuvati %{model}: %{count} greški.'
+  helpers:
+    select:
+      prompt: Izaberite
+    submit:
+      create: Napravi %{model}
+      submit: Sačuvaj %{model}
+      update: Izmeni %{model}
   number:
     currency:
       format:
@@ -156,6 +187,11 @@ scr:
       decimal_units:
         format: ! '%n %u'
         units:
+          thousand: Hiljadu
+          million: Milion
+          billion: Milijarda
+          trillion: Trilion
+          quadrillion: Kvadrilion
           unit: ''
       format:
         delimiter: ''
@@ -164,12 +200,27 @@ scr:
         strip_insignificant_zeros: true
       storage_units:
         format: ! '%n %u'
+        units:
+          byte:
+            one: bajt
+            few: bajta
+            many: bajtova
+            other: bajtova
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
     precision:
       format:
         delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', i '
+      two_words_connector: ! ' i '
+      words_connector: ! ', '
   time:
     am: AM
     formats:
