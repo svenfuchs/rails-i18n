@@ -49,7 +49,7 @@ Available locales are:
 > ar, az, bg, bn-IN, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-CA, en-GB, en-IN, en-US, eo,
 > es, es-AR, es-CL, es-CO, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
-> ne, nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
+> ne, nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, scr, sv-SE, sw, th,
 > tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
 Following locales are complete:
@@ -60,7 +60,7 @@ Following locales are complete:
 
 Following locales have some missing translations or pluralizations:
 
-> ar, bn-IN, cs, cy, dsb, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, pl, rm, ro, sl, sr, sr-Latn
+> ar, bn-IN, cs, cy, dsb, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, pl, rm, ro, sl, sr, scr
 
 We always welcome your contributions!
 
@@ -75,7 +75,7 @@ If you are not,
 * Save your locale data on the [Gist](http://gist.github.com).
 * Open an issue with reference to the Gist you created.
 
-### Fetch the `rails-18n` repository
+### Fetch the `rails-i18n` repository
 
 * Get a github account and Git program if you haven't. See [Help.Github](http://help.github.com/) for instructions.
 * Fork `svenfuchs/rails-i18n` repository and clone it into your PC.
