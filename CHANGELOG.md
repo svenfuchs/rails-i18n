@@ -1,3 +1,12 @@
+## 0.7.0 (2012-10-23)
+ - Remove Swiss Gemarn (gsw-CH) as a duplicate of de-CH
+ - Remove en-US
+ - Remove region code from bn-IN, gl-ES, pt-PT and sv-SE
+ - Move iso-639-2 locales into their own directory
+ - Add pluralization rule for Upper Sorbian
+ - Fix grammar mistakes on Bulgarian (bg) translation
+ - Add Latin American Spanish (es-419) translation
+
 ## 0.6.6 (2012-09-07)
  - added Uzbek (uz) translation
  - added Swiss Italian (it-CH) translation
