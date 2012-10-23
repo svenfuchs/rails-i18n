@@ -95,7 +95,7 @@ Before committing and pushing your changes, test the integrity of your locale fi
 
 Make sure you have included all translations with:
 
-    rake i18n-spec:completeness rails/locale/en-US.yml rails/locale/YOUR_NEW_LOCALE.yml
+    rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
 
 You can list all complete locales:
 
@@ -120,6 +120,8 @@ We will do the formality check and publish it as quick as we can.
 * [devise-i18n](https://github.com/tigrish/devise-i18n)
 * [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
 * [i18n-country-translation](https://github.com/onomojo/i18n-country-translations) for translations of country names
+* [i18n-spec](https://github.com/tigrish/i18n-spec) for RSpec matchers to test your locale files
+* [iso](https://github.com/tigrish/iso) for the list of valid language/region codes and their translations
 
 ## License
 
