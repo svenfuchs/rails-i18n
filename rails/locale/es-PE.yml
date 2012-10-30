@@ -86,9 +86,12 @@ es-PE:
         one: 1 segundo
         other: ! '%{count} segundos'
     prompts:
+      day: Día
       hour: Hora
       minute: Minuto
-      second: Segundo
+      month: Mes
+      second: Segundos
+      year: Año
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
