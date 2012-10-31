@@ -5,15 +5,13 @@ module RailsI18n
   module Pluralization
     module OneTwoOther
       def self.rule
-        def self.rule
-          lambda do |n|
-            if n == 1
-              :one
-            elsif n == 2
-              :two
-            else
-              :other
-            end
+        lambda do |n|
+          if n == 1
+            :one
+          elsif n == 2
+            :two
+          else
+            :other
           end
         end
       end
