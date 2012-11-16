@@ -1,3 +1,3 @@
-require 'rails_i18n/common_pluralizations/only_one'
+require 'rails_i18n/common_pluralizations/other'
 
-::RailsI18n::Pluralization::OnlyOne.with_locale(:hu)
+::RailsI18n::Pluralization::Other.with_locale(:hu)
