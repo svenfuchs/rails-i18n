@@ -47,20 +47,20 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 Available locales are:
 
 > ar, az, bg, bn-IN, bs, ca, cs, csb, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-CA, en-GB, en-IN, en-US, eo,
-> es, es-AR, es-CL, es-CO, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
+> es, es-AR, es-CL, es-CO, es-419, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
 > gsw-CH, he, hi, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
-> ne, nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
+> ne, nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, scr, sv-SE, sw, th,
 > tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
 Following locales are complete:
 
-> az, bg, bs, ca, csb, da, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IN, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, es-VE, et,
-> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb, ne,
-> nl, pt-BR, pt-PT, ru, sk, sv-SE, sw, th, tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
+> az, bg, bs, ca, csb, da, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IN, en-US, eo, es, es-AR, es-CL, es-CO, es-419, es-MX, es-VE, et,
+> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb, ne
+> nl, pt-BR, pt-PT, ru, sk, sv-SE, sw, th, tl, uk, vi, wo, zh-CN, zh-TW
 
 Following locales have some missing translations or pluralizations:
 
-> ar, bn-IN, cs, cy, dsb, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, pl, rm, ro, sl, sr, sr-Latn
+> ar, bn-IN, cs, cy, dsb, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, pl, rm, ro, sl, sr, scr
 
 We always welcome your contributions!
 
@@ -75,7 +75,7 @@ If you are not,
 * Save your locale data on the [Gist](http://gist.github.com).
 * Open an issue with reference to the Gist you created.
 
-### Fetch the `rails-18n` repository
+### Fetch the `rails-i18n` repository
 
 * Get a github account and Git program if you haven't. See [Help.Github](http://help.github.com/) for instructions.
 * Fork `svenfuchs/rails-i18n` repository and clone it into your PC.
@@ -95,7 +95,7 @@ Before committing and pushing your changes, test the integrity of your locale fi
 
 Make sure you have included all translations with:
 
-    rake i18n-spec:completeness rails/locale/en-US.yml rails/locale/YOUR_NEW_LOCALE.yml
+    rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
 
 You can list all complete locales:
 
@@ -120,6 +120,8 @@ We will do the formality check and publish it as quick as we can.
 * [devise-i18n](https://github.com/tigrish/devise-i18n)
 * [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
 * [i18n-country-translation](https://github.com/onomojo/i18n-country-translations) for translations of country names
+* [i18n-spec](https://github.com/tigrish/i18n-spec) for RSpec matchers to test your locale files
+* [iso](https://github.com/tigrish/iso) for the list of valid language/region codes and their translations
 
 ## License
 

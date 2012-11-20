@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name         = "rails-i18n"
-  s.version      = '0.6.6'
+  s.version      = '0.7.0'
   s.authors      = ["Rails I18n Group"]
   s.email        = "rails-i18n@googlegroups.com"
   s.homepage     = "http://github.com/svenfuchs/rails-i18n"
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency('i18n', '~> 0.5')
   s.add_development_dependency "rails", "= 3.2.8"
-  s.add_development_dependency "rspec-rails", "= 2.11.0"
+  s.add_development_dependency "rspec-rails", "= 2.11.4"
   s.add_development_dependency "i18n-spec", "= 0.3.0"
-  s.add_development_dependency "spork", "= 1.0.0rc2"
+  s.add_development_dependency "spork", "= 1.0.0rc3"
 end
