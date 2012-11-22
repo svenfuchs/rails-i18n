@@ -55,43 +55,46 @@ mk:
   datetime:
     distance_in_words:
       about_x_hours:
-        few: околу %{count} часа
-        one: околу 1 час
+        one: околу %{count} час
         other: околу %{count} часа
       about_x_months:
-        few: околу %{count} месеци
-        one: околу 1 месец
+        one: околу %{count} месец
         other: околу %{count} месеци
       about_x_years:
-        one: околу 1 година
+        one: околу %{count} година
         other: околу %{count} години
+      almost_x_years:
+        one: скоро %{count} година
+        other: скоро %{count} години
       half_a_minute: пола минута
       less_than_x_minutes:
-        one: помалку од 1 минута
+        one: помалку од %{count} минута
         other: помалку од %{count} минути
-        zero: помалку од минута
       less_than_x_seconds:
-        few: помалку од %{count} секунди
-        one: помалку од 1 секунда
+        one: помалку од %{count} секунда
         other: помалку од %{count} секунди
-        zero: помалку од секунда
       over_x_years:
-        one: над 1 година
+        one: над %{count} година
         other: над %{count} години
       x_days:
-        one: 1 ден
+        one: ! '%{count} ден'
         other: ! '%{count} денови'
       x_minutes:
-        one: 1 минута
+        one: ! '%{count} минута'
         other: ! '%{count} минути'
       x_months:
-        few: ! '%{count} месеци'
-        one: 1 месец
+        one: ! '%{count} месец'
         other: ! '%{count} месеци'
       x_seconds:
-        few: ! '%{count} секунди'
-        one: 1 секунда
+        one: ! '%{count} секунда'
         other: ! '%{count} секунди'
+    prompts:
+      day: Ден
+      hour: Час
+      minute: Минута
+      month: Месец
+      second: Секунди
+      year: Година
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
@@ -109,17 +112,31 @@ mk:
       less_than: мора да биде помало од %{count}
       less_than_or_equal_to: мора да биде помало или еднакво на %{count}
       not_a_number: ! 'не е број '
+      not_an_integer: не е цел број
       odd: мора да биде непарно
+      record_invalid: ! 'неуспешна валидација: %{errors}'
       taken: е зафатено
-      too_long: е предолг (не повеќе од %{count} карактери)
-      too_short: е прекраток (не помалку од %{count} карактери)
-      wrong_length: несоодветна должина (мора да имате %{count} карактери)
+      too_long:
+        one: е предолг (не повеќе од %{count} карактер)
+        other: е предолг (не повеќе од %{count} карактери)
+      too_short:
+        one: е прекраток (не помалку од %{count} карактер)
+        other: е прекраток (не помалку од %{count} карактери)
+      wrong_length:
+        one: несоодветна должина (мора да имате %{count} карактер)
+        other: несоодветна должина (мора да имате %{count} карактери)
     template:
       body: ! 'Ве молиме проверете ги следните полиња:'
       header:
-        few: ! 'Не успеав да го зачувам %{model}: %{count} грешки.'
-        one: ! 'Не успеав да го зачувам %{model}: 1 грешка.'
+        one: ! 'Не успеав да го зачувам %{model}: %{count} грешка.'
         other: ! 'Не успеав да го зачувам %{model}: %{count} грешки.'
+  helpers:
+    select:
+      prompt: Одберете
+    submit:
+      create: Креира %{model}
+      submit: Зачувај %{model}
+      update: Измени %{model}
   number:
     currency:
       format:
@@ -140,6 +157,11 @@ mk:
       decimal_units:
         format: ! '%n %u'
         units:
+          billion: илјади
+          million: милјони
+          quadrillion: милјарди
+          thousand: трилјони
+          trillion: квадрилјони
           unit: ''
       format:
         delimiter: ''
@@ -148,12 +170,25 @@ mk:
         strip_insignificant_zeros: true
       storage_units:
         format: ! '%n %u'
+        units:
+          byte:
+            one: бајт
+            other: бајти
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
     precision:
       format:
         delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', и '
+      two_words_connector: ! ' и '
+      words_connector: ! ', '
   time:
     am: АМ
     formats:

@@ -55,12 +55,12 @@ Available locales are:
 Following locales are complete:
 
 > az, bg, bs, ca, csb, da, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IN, en-US, eo, es, es-AR, es-CL, es-CO, es-419, es-MX, es-VE, et,
-> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mn, nb, ne
-> nl, pt-BR, pt-PT, ru, sk, sv-SE, sw, th, tl, uk, vi, wo, zh-CN, zh-TW
+> eu, fa, fi, fr, fr-CA, fr-CH, fur, gsw-CH, he, hi, hi-IN, hr, hu, is, it, ja, kn, ko, lv, mk, mn, nb, ne
+> nl, pt-BR, pt-PT, ru, sk, sr, scr, sv-SE, sw, th, tl, uk, vi, wo, zh-CN, zh-TW
 
 Following locales have some missing translations or pluralizations:
 
-> ar, bn-IN, cs, cy, dsb, es-PE, gl-ES, hsb, id, lo, lt, mk, nn, pl, rm, ro, sl, sr, scr
+> ar, bn-IN, cs, cy, dsb, es-PE, gl-ES, hsb, id, lo, lt, nn, pl, rm, ro, sl
 
 We always welcome your contributions!
 
