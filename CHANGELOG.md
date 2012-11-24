@@ -1,5 +1,12 @@
+## 0.7.1 (2012-11-24)
+ - Update Peruvian Spanish (es-PE) translation
+ - Fix pluralization rules for OneTwoOther
+ - Fix pluralization rules for Hungarian (hu)
+ - Update Japanese (ja) translation
+ - Fix and complete translations of Macedonian (mk), Cyrillic Serbian (sr) and Serbo-Croatian (scr)
+
 ## 0.7.0 (2012-10-23)
- - Remove Swiss Gemarn (gsw-CH) as a duplicate of de-CH
+ - Remove Swiss German (gsw-CH) as a duplicate of de-CH
  - Remove en-US
  - Remove region code from bn-IN, gl-ES, pt-PT and sv-SE
  - Move iso-639-2 locales into their own directory
