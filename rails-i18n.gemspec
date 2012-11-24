@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency('i18n', '~> 0.5')
   s.add_development_dependency "rails", "= 3.2.9"
-  s.add_development_dependency "rspec-rails", "= 2.11.4"
+  s.add_development_dependency "rspec-rails", "= 2.12.0"
   s.add_development_dependency "i18n-spec", "= 0.3.0"
   s.add_development_dependency "spork", "= 1.0.0rc3"
 end
