@@ -36,18 +36,18 @@ cy:
       short: ! '%b %d'
     month_names:
     - 
-    - mis Ionawr
-    - mis Chwefror
-    - mis Mawrth
-    - mis Ebrill
-    - mis Mai
-    - mis Mehefin
-    - mis Gorffennaf
-    - mis Awst
-    - mis Medi
-    - mis Hydref
-    - mis Tachwedd
-    - mis Rhagfyr
+    - Ionawr
+    - Chwefror
+    - Mawrth
+    - Ebrill
+    - Mai
+    - Mehefin
+    - Gorffennaf
+    - Awst
+    - Medi
+    - Hydref
+    - Tachwedd
+    - Rhagfyr
     order:
     - :year
     - :month
