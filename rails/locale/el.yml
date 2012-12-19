@@ -190,12 +190,12 @@ el:
       two_words_connector: ! ' και '
       words_connector: ! ', '
   time:
-    am: πμ
+    am: π.μ.
     formats:
       default: ! '%d %B %Y %H:%M'
       long: ! '%A %d %B %Y %H:%M:%S %Z'
       short: ! '%d %b %H:%M'
-    pm: μμ
+    pm: μ.μ.
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
