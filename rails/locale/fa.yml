@@ -55,38 +55,38 @@ fa:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: حدود ۱ ساعت
+        one: حدود یک ساعت
         other: حدود %{count} ساعت
       about_x_months:
-        one: حدود ۱ ماه
+        one: حدود یک ماه
         other: حدود %{count} ماه
       about_x_years:
-        one: حدود ۱ سال
+        one: حدود یک سال
         other: حدود %{count} سال
       almost_x_years:
-        one: حدود ۱ سال
+        one: حدود یک سال
         other: حدود %{count} سال
       half_a_minute: نیم دقیقه
       less_than_x_minutes:
-        one: کمتر از ۱ دقیقه
+        one: کمتر از یک دقیقه
         other: کمتر از %{count} دقیقه
       less_than_x_seconds:
-        one: ۱ ثانیه
+        one: یک ثانیه
         other: کمتر  از %{count} ثانیه
       over_x_years:
-        one: بیش از ۱ سال
+        one: بیش از یک سال
         other: بیش از %{count} سال
       x_days:
-        one: ۱ روز
+        one: یک روز
         other: ! '%{count} روز'
       x_minutes:
-        one: ۱ دقیقه
+        one: یک دقیقه
         other: ! '%{count} دقیقه'
       x_months:
-        one: ۱ ماه
+        one: یک ماه
         other: ! '%{count} ماه'
       x_seconds:
-        one: ۱ ثانیه
+        one: یک ثانیه
         other: ! '%{count} ثانیه'
     prompts:
       day: روز
@@ -128,9 +128,9 @@ fa:
     select:
       prompt: لطفا انتخاب کنید
     submit:
-      create: ! '%{model} ایجاد'
-      submit: ! '%{model} ذخیره'
-      update: ! '%{model} بروز'
+      create: ! 'ایجاد %{model}'
+      submit: ! 'ذخیره‌ی %{model}'
+      update: ! 'بروز رسانی %{model}'
   number:
     currency:
       format:
@@ -140,7 +140,7 @@ fa:
         separator: ٫
         significant: false
         strip_insignificant_zeros: false
-        unit: ریال
+        unit: ﷼
     format:
       delimiter: ٬
       precision: 2
@@ -151,7 +151,7 @@ fa:
       decimal_units:
         format: ! '%n %u'
         units:
-          billion: بیلیون
+          billion: میلیارد
           million: میلیون
           quadrillion: کادریلیون
           thousand: هزار
@@ -180,7 +180,7 @@ fa:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! '، و '
+      last_word_connector: ! ' و '
       two_words_connector: ! ' و '
       words_connector: ! '، '
   time:
