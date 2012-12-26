@@ -100,6 +100,7 @@ en:
     messages:
       accepted: must be accepted
       blank: can't be blank
+      present: must be blank
       confirmation: doesn't match confirmation
       empty: can't be empty
       equal_to: must be equal to %{count}
