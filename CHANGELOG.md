@@ -1,3 +1,9 @@
+## 0.7.2 (2012-12-28)
+ - Remove spurious `mis` from Welsh month names
+ - Add OneOther default pluralization rule and create corresponding locale pluralization files
+ - Add pluralization files for locales with region
+ - Update Persian (fa) translation
+
 ## 0.7.1 (2012-11-24)
  - Update Peruvian Spanish (es-PE) translation
  - Fix pluralization rules for OneTwoOther
