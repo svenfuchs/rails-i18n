@@ -1,3 +1,6 @@
+## 3.0.0 (unreleased)
+ - Create separate gems for Rails 3.x in anticipation of the release of Rails 4.0
+
 ## 0.7.1 (2012-11-24)
  - Update Peruvian Spanish (es-PE) translation
  - Fix pluralization rules for OneTwoOther
