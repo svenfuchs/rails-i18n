@@ -102,7 +102,7 @@ et:
       blank: on täitmata
       confirmation: ei vasta kinnitusele
       empty: on tühi
-      equal_to: peab võrdne arvuga %{count}
+      equal_to: peab olema võrdne arvuga %{count}
       even: peab olema paarisarv
       exclusion: on reserveeritud
       greater_than: ei tohi olla suurem kui %{count}
