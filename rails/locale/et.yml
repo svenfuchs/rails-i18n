@@ -75,7 +75,7 @@ et:
         other: vähem kui %{count} sekundit
       over_x_years:
         one: üle %{count} aasta
-        other: üle %{count} aastat
+        other: üle %{count} aasta
       x_days:
         one: ! '%{count} päev'
         other: ! '%{count} päeva'
