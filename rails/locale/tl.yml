@@ -4,6 +4,7 @@
 #  - Patrick CHEW - https://github.com/pchew-change (pchew@change.org)
 #  - Jose BUSTAMANTE - (josebust@cisco.com)
 # Corrected by Christine Roque : christine@change.org
+# Additional correction by: https://github.com/Lioness8257
 
 "tl":
   date:
@@ -133,7 +134,7 @@
 
   datetime:
     distance_in_words:
-      half_a_minute: "kalahating isang minuto"
+      half_a_minute: "kalahating minuto"
       less_than_x_seconds:
         one: mas mababa sa isang segundo
         other: "mas mababa sa %{count} segundo"
