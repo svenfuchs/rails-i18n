@@ -64,8 +64,8 @@ ca:
         one: aproximadament 1 any
         other: aproximadament %{count} anys
       almost_x_years:
-        one: casi 1 any
-        other: casi %{count} anys
+        one: quasi 1 any
+        other: quasi %{count} anys
       half_a_minute: mig minut
       less_than_x_minutes:
         one: menys d'1 minut
@@ -89,12 +89,12 @@ ca:
         one: 1 segon
         other: ! '%{count} segons'
     prompts:
-      day: Dia
-      hour: Hora
-      minute: Minut
-      month: Mes
-      second: Segun
-      year: Any
+      day: dia
+      hour: hora
+      minute: minut
+      month: mes
+      second: segon
+      year: any
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
@@ -113,12 +113,12 @@ ca:
       less_than_or_equal_to: ha de ser menor o igual a %{count}
       not_a_number: no és un número
       not_an_integer: ha de ser un enter
-      odd: ha de ser imparell
+      odd: ha de ser senar
       record_invalid: ! 'La validació ha fallat: %{errors}'
       taken: no està disponible
       too_long: és massa llarg (%{count} caràcters màxim)
       too_short: és massa curt (%{count} caràcters mínim)
-      wrong_length: no té la longitud correcte (%{count} caràcters exactament)
+      wrong_length: no té la longitud correcta (%{count} caràcters exactament)
     template:
       body: ! 'Hi ha hagut problemes amb els següents camps:'
       header:
@@ -130,7 +130,7 @@ ca:
     submit:
       create: Crear %{model}
       submit: Guardar %{model}
-      update: Actualizar %{model}
+      update: Actualitzar %{model}
   number:
     currency:
       format:
@@ -151,11 +151,11 @@ ca:
       decimal_units:
         format: ! '%n %u'
         units:
-          billion: Bilió
-          million: Milió
-          quadrillion: Quatrilió
-          thousand: Mil
-          trillion: Trilió
+          billion: mil milions
+          million: milió
+          quadrillion: quadrilió
+          thousand: mil
+          trillion: trilió
           unit: ''
       format:
         delimiter: ''
