@@ -1,53 +1,53 @@
 it:
   date:
     abbr_day_names:
-    - Dom
-    - Lun
-    - Mar
-    - Mer
-    - Gio
-    - Ven
-    - Sab
+    - dom
+    - lun
+    - mar
+    - mer
+    - gio
+    - ven
+    - sab
     abbr_month_names:
     - 
-    - Gen
-    - Feb
-    - Mar
-    - Apr
-    - Mag
-    - Giu
-    - Lug
-    - Ago
-    - Set
-    - Ott
-    - Nov
-    - Dic
+    - gen
+    - feb
+    - mar
+    - apr
+    - mag
+    - giu
+    - lug
+    - ago
+    - set
+    - ott
+    - nov
+    - dic
     day_names:
-    - Domenica
-    - Lunedì
-    - Martedì
-    - Mercoledì
-    - Giovedì
-    - Venerdì
-    - Sabato
+    - domenica
+    - lunedì
+    - martedì
+    - mercoledì
+    - giovedì
+    - venerdì
+    - sabato
     formats:
       default: ! '%d-%m-%Y'
       long: ! '%d %B %Y'
       short: ! '%d %b'
     month_names:
     - 
-    - Gennaio
-    - Febbraio
-    - Marzo
-    - Aprile
-    - Maggio
-    - Giugno
-    - Luglio
-    - Agosto
-    - Settembre
-    - Ottobre
-    - Novembre
-    - Dicembre
+    - gennaio
+    - febbraio
+    - marzo
+    - aprile
+    - maggio
+    - giugno
+    - luglio
+    - agosto
+    - settembre
+    - ottobre
+    - novembre
+    - dicembre
     order:
     - :day
     - :month
