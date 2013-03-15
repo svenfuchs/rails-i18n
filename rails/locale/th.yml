@@ -31,8 +31,6 @@ th:
     - ศุกร์
     - เสาร์
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%d %B %Y'
       short: ! '%d %b'
     month_names:
     - 
@@ -160,8 +158,6 @@ th:
   time:
     am: ก่อนเที่ยง
     formats:
-      default: ! '%a %d %b %Y %H:%M:%S %z'
-      long: ! '%d %B %Y %H:%M น.'
       short: ! '%d %b %H:%M น.'
     pm: หลังเที่ยง
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
