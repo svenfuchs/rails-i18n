@@ -1,3 +1,18 @@
+## 0.7.3 (2013-03-19)
+ - Fix number delimiter and separator for Italian (it)
+ - Fix currency delimiter and separator for Romanian (ro)
+ - Fix time formats for Portuguese/Brazil (pt-BR)
+ - Fix several translations for Estonian (et)
+ - Fix several translations for Spanish/Colombia (es-CO)
+ - Fix the translation of half_a_minute for Tagalog (tl)
+ - Fix separators for Russian (ru)
+ - Add Afrikaans locale (af)
+ - Fix some spelling mistakes for Catalan (ca)
+ - Use secure Rubygems URL
+ - Change capitalization rules for Italian (it)
+ - Fix abbreviations, currency format, etc. for Greek (el)
+ - Fix the translation of submit for Portuguese (pt)
+
 ## 0.7.2 (2012-12-28)
  - Remove spurious `mis` from Welsh month names
  - Add OneOther default pluralization rule and create corresponding locale pluralization files
