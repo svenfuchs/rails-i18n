@@ -1,6 +1,27 @@
 ## 3.0.0 (unreleased)
  - Create separate gems for Rails 3.x in anticipation of the release of Rails 4.0
 
+## 0.7.3 (2013-03-19)
+ - Fix number delimiter and separator for Italian (it)
+ - Fix currency delimiter and separator for Romanian (ro)
+ - Fix time formats for Portuguese/Brazil (pt-BR)
+ - Fix several translations for Estonian (et)
+ - Fix several translations for Spanish/Colombia (es-CO)
+ - Fix the translation of half_a_minute for Tagalog (tl)
+ - Fix separators for Russian (ru)
+ - Add Afrikaans locale (af)
+ - Fix some spelling mistakes for Catalan (ca)
+ - Use secure Rubygems URL
+ - Change capitalization rules for Italian (it)
+ - Fix abbreviations, currency format, etc. for Greek (el)
+ - Fix the translation of submit for Portuguese (pt)
+
+## 0.7.2 (2012-12-28)
+ - Remove spurious `mis` from Welsh month names
+ - Add OneOther default pluralization rule and create corresponding locale pluralization files
+ - Add pluralization files for locales with region
+ - Update Persian (fa) translation
+
 ## 0.7.1 (2012-11-24)
  - Update Peruvian Spanish (es-PE) translation
  - Fix pluralization rules for OneTwoOther
