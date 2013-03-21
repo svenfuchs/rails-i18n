@@ -48,7 +48,7 @@ Available locales are:
 
 > af, ar, az, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, el, en, en-AU, en-CA, en-GB, en-IN, eo,
 > es, es-419, es-AR, es-CL, es-CO, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
-> he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, kn, ko, lo, lt, lv, mk, mn, nb,
+> he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, kn, ko, lo, lt, lv, mk, mn, nb,or
 > ne, nl, nn, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, th,
 > tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
@@ -56,7 +56,7 @@ Following locales are complete:
 
 > af, ar, az, bg, bs, ca, cs, cy, da, de, de-AT, de-CH, el, en, en-AU, en-CA, en-GB, en-IN, eo,
 > es, es-419, es-AR, es-CL, es-CO, es-MX, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, he, hi, hi-IN,
-> hr, hu, is, it, it-CH, ja, kn, ko, lv, mk, mn, nb, ne, nl, pl, pt, pt-BR, ro, ru, sk, sr, sv, sw,
+> hr, hu, is, it, it-CH, ja, kn, ko, lv, mk, mn, nb, ne, nl, or, pl, pt, pt-BR, ro, ru, sk, sr, sv, sw,
 > th, tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
 Following locales have some missing translations or pluralizations:
