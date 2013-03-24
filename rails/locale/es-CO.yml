@@ -55,14 +55,14 @@ es-CO:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: hace 1 hora
-        other: hace %{count} horas
+        one: cerca de 1 hora
+        other: cerca de %{count} horas
       about_x_months:
-        one: hace 1 mes
-        other: hace %{count} meses
+        one: cerca de 1 mes
+        other: cerca de %{count} meses
       about_x_years:
-        one: hace 1 año
-        other: hace %{count} años
+        one: cerca de 1 año
+        other: cerca de %{count} años
       almost_x_years:
         one: casi 1 año
         other: casi %{count} años
