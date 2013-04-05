@@ -1,5 +1,5 @@
-Rails Locale Data Repository
-============================
+I18n Data Repository for Rails 3.x
+==================================
 
 [![Build Status](https://secure.travis-ci.org/svenfuchs/rails-i18n.png)](http://travis-ci.org/svenfuchs/rails-i18n)
 
@@ -9,13 +9,15 @@ Central point to collect locale data for use in Ruby on Rails.
 
 Add to your Gemfile:
 
-    gem 'rails-i18n'
+    gem 'rails-i18n', '~> 3.0.0.pre'
 
 or run this command:
 
-    gem install rails-i18n
+    gem install rails-i18n --version '~> 3.0.0.pre'
 
-Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
+Note that your rails version must be 3.x if you want to install `rails-i18n` this way.
+If your Rails is version 4.0 or above, visit the [master](https://github.com/svenfuchs/rails-i18n) branch.
+Developers on Rails 2.x should go to the [rails-2-3](https://github.com/svenfuchs/rails-i18n/tree/rails-2-3) branch.
 
 ## Configuration
 
@@ -32,15 +34,11 @@ or
 
 ## Manual installation
 
-Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into the `config/locales` directory of your Rails application.
+Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/rails-3-x/rails/locale/) and put them into the `config/locales` directory of your Rails application.
 
 If any translation doesn't suit well to the requirements of your application, edit them or add your own locale files.
 
 For more information, visit [Rails Internationalization (I18n) API](http://guides.rubyonrails.org/i18n.html) on the _RailsGuides._
-
-## Usage on Rails 2.3
-
-Locale data whose structure is compatible with Rails 2.3 are available on the separate branch [rails-2-3](https://github.com/svenfuchs/rails-i18n/tree/rails-2-3).
 
 ## Available Locales
 

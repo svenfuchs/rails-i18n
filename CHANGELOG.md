@@ -1,3 +1,6 @@
+## 3.0.0 (unreleased)
+ - Create separate gems for Rails 3.x in anticipation of the release of Rails 4.0
+
 ## 0.7.3 (2013-03-19)
  - Fix number delimiter and separator for Italian (it)
  - Fix currency delimiter and separator for Romanian (ro)
