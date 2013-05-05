@@ -108,7 +108,7 @@ ru:
       x_seconds:
         few: ! '%{count} секунды'
         many: ! '%{count} секунд'
-        one: ! '%{count} секунда'
+        one: ! '%{count} секундy'
         other: ! '%{count} секунды'
     prompts:
       day: День
