@@ -9,6 +9,7 @@ bs:
     - pet
     - sub
     abbr_month_names:
+    - 
     - jan
     - feb
     - mar
@@ -33,6 +34,7 @@ bs:
       long: ! '%e. %B %Y.'
       short: ! '%e. %b. %Y.'
     month_names:
+    - 
     - januar
     - februar
     - mart
