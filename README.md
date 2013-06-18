@@ -124,6 +124,13 @@ We will do the formality check and publish it as quick as we can.
 * [i18n-spec](https://github.com/tigrish/i18n-spec) for RSpec matchers to test your locale files
 * [iso](https://github.com/tigrish/iso) for the list of valid language/region codes and their translations
 
+## External Tools ##
+There are several tools that help you managing the translation files.
+
+* [PhraseApp](http://phraseapp.com)
+* [Locale](http://www.localeapp.com)
+* [CopyCopter](https://github.com/copycopter)
+
 ## License
 
 [MIT](https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt)
