@@ -9,7 +9,7 @@ fi:
     - pe
     - la
     abbr_month_names:
-    - 
+    -
     - tammi
     - helmi
     - maalis
@@ -35,7 +35,7 @@ fi:
       long: ! '%A %e. %Bta %Y'
       short: ! '%e.%m.%Y'
     month_names:
-    - 
+    -
     - tammikuu
     - helmikuu
     - maaliskuu
@@ -89,12 +89,12 @@ fi:
         one: sekunti
         other: ! '%{count} sekuntia'
     prompts:
-      day: Päivä
-      hour: Tunti
-      minute: Minuutti
-      month: Kuukausi
-      second: Sekunti
-      year: Vuosi
+      day: päivä
+      hour: tunti
+      minute: minuutti
+      month: kuukausi
+      second: sekunti
+      year: vuosi
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
@@ -112,7 +112,7 @@ fi:
       less_than: täytyy olla pienempi kuin %{count}
       less_than_or_equal_to: täytyy olla pienempi tai yhtä suuri kuin %{count}
       not_a_number: ei ole luku
-      not_an_integer: on kokonaisluku
+      not_an_integer: ei ole kokonaisluku
       odd: täytyy olla pariton
       record_invalid: ! 'Validointi epäonnistui: %{errors}'
       taken: on jo käytössä
@@ -151,11 +151,11 @@ fi:
       decimal_units:
         format: ! '%n %u'
         units:
-          billion: Miljardia
-          million: Euroa
-          quadrillion: Kvadriljoona
-          thousand: Tuhatta
-          trillion: Biljoona
+          thousand: tuhatta
+          million: miljoonaa
+          billion: miljardia
+          trillion: biljoonaa
+          quadrillion: tuhatta biljoonaa
           unit: ''
       format:
         delimiter: ''

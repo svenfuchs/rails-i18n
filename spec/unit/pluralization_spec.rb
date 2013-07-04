@@ -285,6 +285,11 @@ describe 'Pluralization rule for' do
     it_behaves_like 'other form language'
   end
 
+  describe 'Odiya', :locale => :or do
+    it_behaves_like 'an ordinary pluralization rule'
+    it_behaves_like 'one(with zero)-other forms language'
+  end
+
   describe 'Igbo', :locale => :ig do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'

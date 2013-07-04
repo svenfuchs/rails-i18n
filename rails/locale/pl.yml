@@ -147,6 +147,7 @@ pl:
         one: ! '%{model} nie został zachowany z powodu jednego błędu'
         few: ! '%{model} nie został zachowany z powodu %{count} błędów'
         other: ! '%{model} nie został zachowany z powodu %{count} błędów'
+        many: ! '%{model} nie został zachowany z powodu %{count} błędów'
   helpers:
     select:
       prompt: Proszę wybrać
