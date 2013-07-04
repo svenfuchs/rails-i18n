@@ -1,5 +1,5 @@
-## 3.0.0 (unreleased)
- - Create separate gems for Rails 3.x in anticipation of the release of Rails 4.0
+## 3.0.0-pre (2013-07-04)
+ - Create separate gems for Rails 3.x
 
 ## 0.7.4 (2013-07-04)
  - Add Odiya language (or)
