@@ -108,7 +108,7 @@ ru:
       x_seconds:
         few: ! '%{count} секунды'
         many: ! '%{count} секунд'
-        one: ! '%{count} секунда'
+        one: ! '%{count} секундy'
         other: ! '%{count} секунды'
     prompts:
       day: День
@@ -173,14 +173,14 @@ ru:
         delimiter: ! ' '
         format: ! '%n %u'
         precision: 2
-        separator: .
+        separator: ','
         significant: false
         strip_insignificant_zeros: false
         unit: руб.
     format:
       delimiter: ! ' '
       precision: 3
-      separator: .
+      separator: ','
       significant: false
       strip_insignificant_zeros: false
     human:

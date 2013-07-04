@@ -129,7 +129,7 @@ pt:
       prompt: Por favor seleccione
     submit:
       create: Criar %{model}
-      submit: Salvar %{model}
+      submit: Gravar %{model}
       update: Actualizar %{model}
   number:
     currency:

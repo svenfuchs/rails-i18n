@@ -3,25 +3,25 @@ el:
     abbr_day_names:
     - Κυρ
     - Δευ
-    - Τρι
+    - Τρί
     - Τετ
-    - Πεμ
+    - Πέμ
     - Παρ
-    - Σαβ
+    - Σάβ
     abbr_month_names:
     - 
-    - Ιαν.
-    - Φεβ.
-    - Μαρ.
-    - Απρ.
-    - Μαι.
-    - Ιουν.
-    - Ιούλ.
-    - Αυγ.
-    - Σεπ.
-    - Οκτ.
-    - Νοε.
-    - Δεκ.
+    - Ιαν
+    - Φεβ
+    - Μαρ
+    - Απρ
+    - Μαϊ
+    - Ιουν
+    - Ιουλ
+    - Αυγ
+    - Σεπ
+    - Οκτ
+    - Νοε
+    - Δεκ
     day_names:
     - Κυριακή
     - Δευτέρα
@@ -128,7 +128,7 @@ el:
     template:
       body: ! 'Υπήρξαν προβλήματα με τα ακόλουθα πεδία:'
       header:
-        one: 1 λάθος εμπόδισε αυτό το %{model} να αποθηκευθεί.
+        one: 1 λάθος εμπόδισε αυτό το %{model} να αποθηκευτεί.
         other: ! '%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευτεί.'
   helpers:
     select:
@@ -140,10 +140,10 @@ el:
   number:
     currency:
       format:
-        delimiter: ! ','
+        delimiter: .
         format: ! '%n %u'
         precision: 2
-        separator: .
+        separator: ! ','
         significant: false
         strip_insignificant_zeros: false
         unit: €
@@ -190,12 +190,12 @@ el:
       two_words_connector: ! ' και '
       words_connector: ! ', '
   time:
-    am: πμ
+    am: π.μ.
     formats:
       default: ! '%d %B %Y %H:%M'
       long: ! '%A %d %B %Y %H:%M:%S %Z'
       short: ! '%d %b %H:%M'
-    pm: μμ
+    pm: μ.μ.
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:

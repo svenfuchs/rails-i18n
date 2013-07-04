@@ -1,0 +1,203 @@
+"gsw-CH":
+  date:
+    abbr_day_names:
+    - Su
+    - Mä
+    - Zi
+    - Mi
+    - Du
+    - Fr
+    - Sa
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mär
+    - Apr
+    - Mai
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Dez
+    day_names:
+    - Sunntig
+    - Mäntig
+    - Ziischtig
+    - Mittwuch
+    - Dunschtig
+    - Friitig
+    - Samschtig
+    formats:
+      default: ! '%d.%m.%Y'
+      long: ! '%e. %B %Y'
+      short: ! '%e. %b'
+    month_names:
+    - 
+    - Januar
+    - Februar
+    - März
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - Auguscht
+    - September
+    - Oktober
+    - November
+    - Dezember
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: öppe ei stund
+        other: öppe %{count} stundä
+      about_x_months:
+        one: öppe ein monet
+        other: öppe %{count} mönet
+      about_x_years:
+        one: öppe es johr
+        other: öppe %{count} johr
+      almost_x_years:
+        one: fascht es johr
+        other: fascht %{count} johr
+      half_a_minute: e halbi minute
+      less_than_x_minutes:
+        one: weniger als e minute
+        other: weniger als %{count} minute
+      less_than_x_seconds:
+        one: weniger als e sekunde
+        other: weniger als %{count} sekunde
+      over_x_years:
+        one: meh als es johr
+        other: meh als %{count} johr
+      x_days:
+        one: ein tag
+        other: ! '%{count} täg'
+      x_minutes:
+        one: ei minute
+        other: ! '%{count} minute'
+      x_months:
+        one: ein monet
+        other: ! '%{count} mönet'
+      x_seconds:
+        one: ei sekunde
+        other: ! '%{count} sekunde'
+    prompts:
+      day: tag
+      hour: stunde
+      minute: sinute
+      month: monet
+      second: sekunde
+      year: johr
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: muess akzeptiert werdä
+      blank: muess usgfüllt werdä
+      confirmation: stimmt nöd mit dr bestätigung überii
+      empty: muess usgfüllt werdä
+      equal_to: muess genau %{count} si
+      even: muess grad si
+      exclusion: isch nöd verfüegbar
+      greater_than: muess grösser als %{count} si
+      greater_than_or_equal_to: muess grösser oder gliich %{count} si
+      inclusion: isch kein gültige wärt
+      invalid: isch nöd gültig
+      less_than: muess chliner als %{count} si
+      less_than_or_equal_to: muess chliner oder gliich %{count} si
+      not_a_number: isch kei zahl
+      not_an_integer: muess ganzzahlig si
+      odd: muess ungrad si
+      record_invalid: ! 'D gültigkeitsprüefig hät nöd funktioniert: %{errors}'
+      taken: isch scho vergäh
+      too_long: isch z lang (nöd meh als %{count} zeichä)
+      too_short: ist z churz (nöd weniger als %{count} zeichä)
+      wrong_length: hät di falsch längi (muess genau %{count} zeichä ha)
+    template:
+      body: ! 'Bitte überprüefend si folgendi felder:'
+      header:
+        one: ! 'Han %{model} nöd chönne speicherä: ein fähler.'
+        other: ! 'Han %{model} nöd chönne speicherä: %{count} fähler.'
+  helpers:
+    select:
+      prompt: Bitte wähle
+    submit:
+      create: ! '%{model} erstellä'
+      submit: ! '%{model} speicherä'
+      update: ! '%{model} aktualisiere'
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: ! '%n %u'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: €
+    format:
+      delimiter: .
+      precision: 2
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion:
+            one: milliarde
+            other: milliarde
+          million: millione
+          quadrillion:
+            one: billiarde
+            other: billiarde
+          thousand: tuusig
+          trillion: billione
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' und '
+      two_words_connector: ! ' und '
+      words_connector: ! ', '
+  time:
+    am: vormittags
+    formats:
+      default: ! '%A, %d. %B %Y, %H:%M Uhr'
+      long: ! '%A, %d. %B %Y, %H:%M Uhr'
+      short: ! '%d. %B, %H:%M Uhr'
+    pm: nachmittags
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

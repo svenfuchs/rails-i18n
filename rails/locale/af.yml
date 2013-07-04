@@ -1,0 +1,208 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+af:
+  date:
+    abbr_day_names:
+    - Son
+    - Maan
+    - Dins
+    - Woe
+    - Don
+    - Vry
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - Mei
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Des
+    day_names:
+    - Sondag
+    - Maandag
+    - Dinsdag
+    - Woensdag
+    - Donderdag
+    - Vrydag
+    - Saterdag
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%B %d, %Y'
+      short: ! '%b %d'
+    month_names:
+    - 
+    - Januarie
+    - Februarie
+    - Maart
+    - April
+    - Mai
+    - Junie
+    - Julie
+    - Augustus
+    - September
+    - Oktober
+    - November
+    - Desember
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: ongeveer 1 uur
+        other: ongeveer %{count} ure
+      about_x_months:
+        one: ongeveer 1 maand
+        other: ongeveer %{count} maande
+      about_x_years:
+        one: ongeveer 1 jaar
+        other: ongeveer %{count} jaar
+      almost_x_years:
+        one: sowat 1 jaar
+        other: sowat %{count} jaar
+      half_a_minute: halfminuut
+      less_than_x_minutes:
+        one: minder as n minuut
+        other: minder as %{count} minute
+      less_than_x_seconds:
+        one: minder as 1 second
+        other: minder as %{count} sekondes
+      over_x_years:
+        one: meer as 1 jaar
+        other: meer as %{count} jaar
+      x_days:
+        one: 1 dag
+        other: ! '%{count} days'
+      x_minutes:
+        one: 1 minuut
+        other: ! '%{count} minute'
+      x_months:
+        one: 1 maand
+        other: ! '%{count} maande'
+      x_seconds:
+        one: 1 sekonde
+        other: ! '%{count} sekondes'
+    prompts:
+      day: Dag
+      hour: Uur
+      minute: Minuut
+      month: Maand
+      second: Sekondes
+      year: Jaar
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: moet aanvaar word
+      blank: mag nie leeg wees nie
+      confirmation: pas nie by bevestiging nie
+      empty: mag nie leeg wees nie
+      equal_to: moet gelyk wees aan %{count}
+      even: moet gelykstaande wees
+      exclusion: is bespreek
+      greater_than: moet meer wees as %{count}
+      greater_than_or_equal_to: moet meer of gelykstaande wees aan %{count}
+      inclusion: is nie by die lys ingesluit nie
+      invalid: is ongeldig
+      less_than: moet minder wees as %{count}
+      less_than_or_equal_to: moet minder of gelykstaande wees aan %{count}
+      not_a_number: is nie n getal nie
+      not_an_integer: moet n integer wees
+      odd: moet onewe wees
+      record_invalid: ! 'Validation failed: %{errors}'
+      taken: is reeds geneem
+      too_long:
+        one: is te lank (maksimum is 1 karakter)
+        other: is te lank (maksimum is %{count} karakters)
+      too_short:
+        one: is te kort (minimum is 1 karakter)
+        other: is te kort (minimum is %{count} karakters)
+      wrong_length:
+        one: is die verkeerde lengte (moet 1 karakter wees)
+        other: is die verkeerde lengte (moet %{count} karakters wees)
+    template:
+      body: ! 'There were problems with the following fields:'
+      header:
+        one: 1 fout het verhoed dat hierdie %{model} gestoor kon word
+        other: ! '%{count} foute het verhoed dat hierdie %{model} gestoor kon word'
+  helpers:
+    select:
+      prompt: Kies asseblief
+    submit:
+      create: Skep %{model}
+      submit: Stoor %{model}
+      update: Dateer %{model} op
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u%n'
+        precision: 2
+        separator: .
+        significant: vals
+        strip_insignificant_zeros: vals
+        unit: $
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: vals
+      strip_insignificant_zeros: vals
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: miljard
+          million: miljoen
+          quadrillion: kwadriljon
+          thousand: duisend
+          trillion: biljoen
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: waar
+        strip_insignificant_zeros: waar
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', en '
+      two_words_connector: ! ' en '
+      words_connector: ! ', '
+  time:
+    am: vm
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: nm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

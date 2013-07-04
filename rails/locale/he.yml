@@ -118,9 +118,9 @@ he:
       odd: חייב להיות אי זוגי
       record_invalid: ! 'האימות נכשל: %{errors}'
       taken: כבר בשימוש
-      too_long: יותר מדי ארוך (לא יותר מ- %{count} תוים)
-      too_short: יותר מדי קצר (לא יותר מ- %{count} תוים)
-      wrong_length: לא באורך הנכון (חייב להיות %{count} תוים)
+      too_long: "יותר מדי ארוך (לא יותר מ- %{count} תווים)"
+      too_short: "יותר מדי קצר (לא פחות  מ- %{count} תווים)"
+      wrong_length: "לא באורך הנכון (חייב להיות %{count} תווים)"
     template:
       body: ! 'אנא בדוק את השדות הבאים:'
       header:
