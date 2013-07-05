@@ -1,11 +1,46 @@
-"default":
+default:
+  date:
+    formats:
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+
+    day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
+    abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    # Used in date_select and datetime_select.
+    order:
+      - year
+      - month
+      - day
+
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%B %d, %Y %H:%M"
+    am: "am"
+    pm: "pm"
+
+# Used in array.to_sentence.
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " and "
+      last_word_connector: ", and "
   number:
-    # Used in number_with_delimiter()
+    # Used in NumberHelper.number_to_delimited()
     # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
     format:
       # Sets the separator between the units, for more precision (e.g. 1.0 / 2.0 == 0.5)
       separator: "."
-      # Delimets thousands (e.g. 1,000,000 is a million) (always in groups of three)
+      # Delimits thousands (e.g. 1,000,000 is a million) (always in groups of three)
       delimiter: ","
       # Number of decimals, behind the separator (the number 1 with a precision of 2 gives: 1.00)
       precision: 3
@@ -15,7 +50,7 @@
       # If set, the zeros after the decimal separator will always be stripped (eg.: 1.200 will be 1.2)
       strip_insignificant_zeros: false
 
-    # Used in number_to_currency()
+    # Used in NumberHelper.number_to_currency()
     currency:
       format:
         # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
@@ -28,7 +63,7 @@
         significant: false
         strip_insignificant_zeros: false
 
-    # Used in number_to_percentage()
+    # Used in NumberHelper.number_to_percentage()
     percentage:
       format:
         # These five are to override number.format and are optional
@@ -37,8 +72,9 @@
         # precision:
         # significant: false
         # strip_insignificant_zeros: false
+        format: "%n%"
 
-    # Used in number_to_precision()
+    # Used in NumberHelper.number_to_rounded()
     precision:
       format:
         # These five are to override number.format and are optional
@@ -48,7 +84,7 @@
         # significant: false
         # strip_insignificant_zeros: false
 
-    # Used in number_to_human_size() and number_to_human()
+    # Used in NumberHelper.number_to_human_size() and NumberHelper.number_to_human()
     human:
       format:
         # These five are to override number.format and are optional
@@ -70,7 +106,7 @@
           mb: "MB"
           gb: "GB"
           tb: "TB"
-      # Used in number_to_human()
+      # Used in NumberHelper.number_to_human()
       decimal_units:
         format: "%n %u"
         # Decimal units output formatting
@@ -95,60 +131,3 @@
           billion: Billion
           trillion: Trillion
           quadrillion: Quadrillion
-
-  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
-  datetime:
-    distance_in_words:
-      half_a_minute: "half a minute"
-      less_than_x_seconds:
-        one:   "less than 1 second"
-        other: "less than %{count} seconds"
-      x_seconds:
-        one:   "1 second"
-        other: "%{count} seconds"
-      less_than_x_minutes:
-        one:   "less than a minute"
-        other: "less than %{count} minutes"
-      x_minutes:
-        one:   "1 minute"
-        other: "%{count} minutes"
-      about_x_hours:
-        one:   "about 1 hour"
-        other: "about %{count} hours"
-      x_days:
-        one:   "1 day"
-        other: "%{count} days"
-      about_x_months:
-        one:   "about 1 month"
-        other: "about %{count} months"
-      x_months:
-        one:   "1 month"
-        other: "%{count} months"
-      about_x_years:
-        one:   "about 1 year"
-        other: "about %{count} years"
-      over_x_years:
-        one:   "over 1 year"
-        other: "over %{count} years"
-      almost_x_years:
-        one:   "almost 1 year"
-        other: "almost %{count} years"
-    prompts:
-      year:   "Year"
-      month:  "Month"
-      day:    "Day"
-      hour:   "Hour"
-      minute: "Minute"
-      second: "Seconds"
-
-  helpers:
-    select:
-      # Default value for :prompt => true in FormOptionsHelper
-      prompt: "Please select"
-
-    # Default translation keys for submit FormHelper
-    submit:
-      create: 'Create %{model}'
-      update: 'Update %{model}'
-      submit: 'Save %{model}'
-

@@ -79,4 +79,20 @@ class Locales < Thor
     end
     puts locales.sort.join(', ')
   end
+
+  desc 'incomplete', 'List incomplete locales'
+  def incomplete
+    locales = []
+    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
+      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
+        locale = md[1]
+        
+        missing_keys, broken_keys, missing_pluralizations = KeyStructure.check(locale)
+        unless missing_keys.empty? && broken_keys.empty? && missing_pluralizations.empty?
+          locales << locale
+        end
+      end
+    end
+    puts locales.sort.join(', ')
+  end
 end

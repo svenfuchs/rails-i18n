@@ -101,7 +101,7 @@ class KeyStructure
         I18n.load_path = []
         I18n.reload!
 
-        I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails3/*.yml"]
+        I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails4/*.yml"]
 
         path = File.dirname(__FILE__) + "/../../locale/#{locale}.rb"
 
