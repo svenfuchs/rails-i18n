@@ -14,6 +14,7 @@ module RailsI18n
 
           app = Class.new(Rails::Application)
           app.config.active_support.deprecation = :log
+          app.config.eager_load = false
 
           yield(app.config) if block_given?
           app.initialize!
