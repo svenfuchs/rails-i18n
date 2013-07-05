@@ -118,8 +118,7 @@ en:
       record_invalid: ! 'Validation failed: %{errors}'
       restrict_dependent_destroy:
         one: "Cannot delete record because a dependent %{record} exists"
-        many: "Cannot delete record because dependent %{record} exist"
-        other:
+        other: "Cannot delete record because dependent %{record} exist"
       taken: has already been taken
       too_long:
         one: is too long (maximum is 1 character)
@@ -130,6 +129,7 @@ en:
       wrong_length:
         one: is the wrong length (should be 1 character)
         other: is the wrong length (should be %{count} characters)
+      other_than: "must be other than %{count}"
     template:
       body: ! 'There were problems with the following fields:'
       header:
@@ -186,6 +186,7 @@ en:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''

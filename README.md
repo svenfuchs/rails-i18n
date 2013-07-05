@@ -9,11 +9,13 @@ Central point to collect locale data for use in Ruby on Rails.
 
 Add to your Gemfile:
 
-    gem 'rails-i18n'
+    gem 'rails-i18n', '~> 4.0.0.pre' # For 4.0.x
+    gem 'rails-i18n', '~> 3.0.0.pre' # For 3.x
 
 or run this command:
 
-    gem install rails-i18n
+    gem install rails-i18n -v '~> 4.0.0.pre' # For 4.0.x
+    gem install rails-i18n -v '~> 3.0.0.pre' # For 3.x
 
 Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
 
@@ -54,14 +56,15 @@ Available locales are:
 
 Following locales are complete:
 
-> af, ar, az, bg, bs, ca, cs, cy, da, de, de-AT, de-CH, el, en, en-AU, en-CA, en-GB, en-IN, en-NZ, eo,
-> es, es-419, es-AR, es-CL, es-CO, es-MX, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, he, hi, hi-IN,
-> hr, hu, is, it, it-CH, ja, kn, ko, lv, mk, mn, nb, ne, nl, or, pl, pt, pt-BR, ro, ru, sk, sr, sv, sw,
-> th, tl, tr, uk, uz, vi, wo, zh-CN, zh-HK, zh-TW
+> en, ja
 
 Following locales have some missing translations or pluralizations:
 
-> bn, es-PE, gl, id, lo, lt, nn, rm, sl
+> af, ar, az, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IN, en-NZ, eo,
+> es, es-419, es-AR, es-CL, es-CO, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
+> he, hi, hi-IN, hr, hu, id, is, it, it-CH, kn, ko, lo, lt, lv, mk, mn, nb,
+> ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, th,
+> tl, tr, uk, uz, vi, wo, zh-CN, zh-HK, zh-TW
 
 We always welcome your contributions!
 
