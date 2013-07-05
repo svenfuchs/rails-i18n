@@ -35,7 +35,9 @@ class KeyStructure
           end
 
           begin
-            if pluralizations.has_key?(key)
+            if key == 'activerecord.errors.messages.restrict_dependent_destroy'
+              I18n.t key, :record => 'dummy', :raise => true
+            elsif pluralizations.has_key?(key)
               I18n.t key, :count => 0, :raise => true
               I18n.t key, :count => 1, :raise => true
               I18n.t key, :count => 2, :raise => true
@@ -47,7 +49,7 @@ class KeyStructure
               I18n.t key, :count => 100, :raise => true
               I18n.t key, :count => 1000000, :raise => true
               I18n.t key, :count => 10.2, :raise => true
-            end
+              end
           rescue Exception
             missing_pluralizations << key
           end
