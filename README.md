@@ -101,9 +101,10 @@ Make sure you have included all translations with:
 
     rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
 
-You can list all complete locales:
+You can list all complete and incomplete locales:
 
     thor locales:complete
+    thor locales:incomplete
 
 Also, you can list all available locales:
 
