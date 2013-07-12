@@ -118,7 +118,7 @@ en:
       record_invalid: ! 'Validation failed: %{errors}'
       restrict_dependent_destroy:
         one: "Cannot delete record because a dependent %{record} exists"
-        other: "Cannot delete record because dependent %{record} exist"
+        many: "Cannot delete record because dependent %{record} exist"
       taken: has already been taken
       too_long:
         one: is too long (maximum is 1 character)

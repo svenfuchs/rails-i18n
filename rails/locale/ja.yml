@@ -119,7 +119,6 @@ ja:
       restrict_dependent_destroy:
         one: "%{record}が存在しているので削除出来ません。"
         many: "%{record}が存在しているので削除出来ません。"
-        other:
       taken: はすでに存在します。
       too_long: は%{count}文字以内で入力してください。
       too_short: は%{count}文字以上で入力してください。
