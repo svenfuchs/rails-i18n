@@ -30,29 +30,28 @@ class KeyStructure
             I18n.l Date.today, :format => $1.to_sym, :raise => true
           when /^time\.formats\.(\w+)/
             I18n.l Time.now, :format => $1.to_sym, :raise => true
+          when 'activerecord.errors.messages.restrict_dependent_destroy'
+            begin
+              I18n.t "#{key}.one", :record => 'dummy', :raise => true
+            rescue I18n::MissingTranslationData => e
+              missing_keys << e.key
+            end
+            begin
+              I18n.t "#{key}.many", :record => 'dummy', :raise => true
+            rescue I18n::MissingTranslationData => e
+              missing_keys << e.key
+            end
           else
             I18n.t key, :raise => true
           end
 
-          begin
-            if key == 'activerecord.errors.messages.restrict_dependent_destroy'
-              I18n.t key, :record => 'dummy', :raise => true
-            elsif pluralizations.has_key?(key)
-              I18n.t key, :count => 0, :raise => true
-              I18n.t key, :count => 1, :raise => true
-              I18n.t key, :count => 2, :raise => true
-              I18n.t key, :count => 3, :raise => true
-              I18n.t key, :count => 5, :raise => true
-              I18n.t key, :count => 6, :raise => true
-              I18n.t key, :count => 10, :raise => true
-              I18n.t key, :count => 11, :raise => true
-              I18n.t key, :count => 100, :raise => true
-              I18n.t key, :count => 1000000, :raise => true
-              I18n.t key, :count => 10.2, :raise => true
-              end
-          rescue Exception
-            missing_pluralizations << key
+          if key != 'activerecord.errors.messages.restrict_dependent_destroy' and pluralizations.has_key?(key)
+            [0, 1, 2, 3, 5, 6, 10, 11, 100, 1000000, 10.2].each do |count|
+              I18n.t key, :count => count, :raise => true
+            end
           end
+        rescue I18n::InvalidPluralizationData => e
+          missing_pluralizations << key
         rescue I18n::MissingTranslationData
           missing_keys << key
         rescue Exception
