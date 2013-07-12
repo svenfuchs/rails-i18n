@@ -122,6 +122,7 @@ sr:
     messages:
       accepted: мора бити прихваћено
       blank: не сме бити празан
+      present: мора бити празан
       confirmation: се не слаже са потврдом
       empty: не сме бити празан
       equal_to: мора бити једнак %{count}
@@ -137,6 +138,9 @@ sr:
       not_an_integer: није цео број
       odd: мора бити непаран
       record_invalid: ! 'Валидација није успела: %{errors}'
+      restrict_dependent_destroy:
+        one: "Није могуће обрисати запис јер постоји зависан %{record}"
+        many: "Није могуће обрисати запис јер постоје зависни %{record}"
       taken: је већ заузет
       too_long:
         one: је предугачак (максимум је %{count} знак)
@@ -153,6 +157,7 @@ sr:
         few: није одговарајуће дужине (треба бити %{count} знака)
         many: није одговарајуће дужине (треба бити %{count} знакова)
         other: није одговарајуће дужине (треба бити %{count} знакова)
+      other_than: "мора бити различит од %{count}"
     template:
       body: ! 'Молим Вас да проверите следећа поља:'
       header:
@@ -213,6 +218,7 @@ sr:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
