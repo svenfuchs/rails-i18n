@@ -209,3 +209,6 @@ pt-BR:
   activerecord:
     errors:
       <<: *errors
+  attributes:
+    created_at: Criado em
+    updated_at: Modificado em
