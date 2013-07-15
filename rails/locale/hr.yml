@@ -122,6 +122,7 @@ hr:
     messages:
       accepted: mora biti prihvaćen
       blank: ne smije biti prazan
+      present: mora biti prazan
       confirmation: se ne slaže sa svojom potvrdom
       empty: ne smije biti prazan
       equal_to: mora biti jednak %{count}
@@ -137,6 +138,9 @@ hr:
       not_an_integer: nije cijeli broj
       odd: mora biti neparan
       record_invalid: ! 'Validacija nije uspjela: %{errors}'
+      restrict_dependent_destroy:
+        one: "Nije moguće izbrisati zapis jer postoji ovisan %{record}"
+        many: "Nije moguće izbrisati zapis jer postoje ovisni %{record}"
       taken: je već zauzet
       too_long:
         one: je predugačak (maksimum je %{count} znak)
@@ -153,6 +157,7 @@ hr:
         few: nije odgovarajuće duljine (treba biti %{count} znaka)
         many: nije odgovarajuće duljine (treba biti %{count} znakova)
         other: nije odgovarajuće duljine (treba biti %{count} znakova)
+      other_than: "mora biti različit od %{count}"
     template:
       body: ! 'Sljedeća polja su neispravno popunjena:'
       header:
@@ -213,6 +218,7 @@ hr:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''

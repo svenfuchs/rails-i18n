@@ -122,6 +122,7 @@ scr:
     messages:
       accepted: mora biti prihvaćen
       blank: ne sme biti prazan
+      present: mora biti prazan
       confirmation: se ne slaže sa potvrdom
       empty: ne sme biti prazan
       equal_to: mora biti jednak %{count}
@@ -137,6 +138,9 @@ scr:
       not_an_integer: nije ceo broj
       odd: mora biti neparan
       record_invalid: ! 'Validacija nije uspela: %{errors}'
+      restrict_dependent_destroy:
+        one: "Nije moguće obrisati zapis jer postoji zavisan %{record}"
+        many: "Nije moguće obrisati zapis jer postoje zavisni %{record}"
       taken: je već zauzet
       too_long:
         one: je predugačak (maksimum je %{count} znak)
@@ -153,6 +157,7 @@ scr:
         few: nije odgovarajuće dužine (treba biti %{count} znaka)
         many: nije odgovarajuće dužine (treba biti %{count} znakova)
         other: nije odgovarajuće dužine (treba biti %{count} znakova)
+      other_than: "mora biti različit od %{count}"
     template:
       body: ! 'Molim Vas da proverite sledeća polja:'
       header:
@@ -213,6 +218,7 @@ scr:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''

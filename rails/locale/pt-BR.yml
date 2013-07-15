@@ -119,7 +119,6 @@ pt-BR:
       restrict_dependent_destroy:
         one: "Não é possível excluir o registro pois existe um %{record} dependente"
         many: "Não é possível excluir o registro pois existem %{record} dependentes"
-        other:
       taken: já está em uso
       too_long: ! 'é muito longo (máximo: %{count} caracteres)'
       too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
