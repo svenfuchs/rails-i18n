@@ -3,6 +3,7 @@ RSpec::Matchers.define :have_keys_for_restrict_dependent_destroy do
     return unless hash['errors']
     return unless hash['errors']['messages']
     return unless hash['errors']['messages']['restrict_dependent_destroy']
+    return if hash['errors']['messages']['restrict_dependent_destroy'].kind_of?(String)
     h = hash['errors']['messages']['restrict_dependent_destroy'].clone
     %w(one many).each do |key|
       unless h.delete(key)
