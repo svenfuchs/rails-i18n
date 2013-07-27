@@ -100,6 +100,7 @@ da:
     messages:
       accepted: skal accepteres
       blank: skal udfyldes
+      present: skal være tom
       confirmation: stemmer ikke overens med bekræftelse
       empty: må ikke udelades
       equal_to: skal være %{count}
@@ -115,10 +116,14 @@ da:
       not_an_integer: er ikke et heltal
       odd: skal være et ulige tal
       record_invalid: ! 'Godkendelse gik galt: %{errors}'
+      restrict_dependent_destroy:
+        one: "Kunne ikke slette posten fordi en afhængig %{record} findes"
+        many: "Kunne ikke slette posten fordi afhængige %{record} findes"
       taken: er allerede brugt
       too_long: er for lang (højest %{count} tegn)
       too_short: er for kort (mindst %{count} tegn)
       wrong_length: har forkert længde (skulle være %{count} tegn)
+      other_than: "skal være forskellig fra %{count}"
     template:
       body: ! 'Der var problemer med følgende felter:'
       header:
@@ -175,6 +180,7 @@ da:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
