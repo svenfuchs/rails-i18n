@@ -116,7 +116,7 @@ ja:
       not_an_integer: は整数で入力してください。
       odd: は奇数にしてください。
       record_invalid: バリデーションに失敗しました。 %{errors}
-      restrict_dependent_destroy: ! '%{record}が存在しているので削除出来ません。'
+      restrict_dependent_destroy: ! '%{record}が存在しているので削除できません。'
       taken: はすでに存在します。
       too_long: は%{count}文字以内で入力してください。
       too_short: は%{count}文字以上で入力してください。
