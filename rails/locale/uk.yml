@@ -32,8 +32,8 @@ uk:
     - субота
     formats:
       default: ! '%d.%m.%Y'
-      long: ! '%d %B %Y'
-      short: ! '%d %b'
+      long: ! '%-d %B %Y'
+      short: ! '%-d %b'
     month_names:
     - 
     - Січень
