@@ -125,6 +125,9 @@ fr:
       not_an_integer: "doit être un nombre entier"
       odd: "doit être impair"
       record_invalid: "La validation a échoué : %{errors}"
+      restrict_dependent_destroy:
+        one: "Suppression impossible: un autre enregistrement est lié"
+        many: "Suppression impossible: d'autres enregistrements sont liés"
       taken: "n'est pas disponible"
       too_long:
         one: "est trop long (pas plus d'un caractère)"
