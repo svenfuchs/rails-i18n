@@ -86,7 +86,7 @@ If you are not,
 
 ### Create or edit your locale file
 
-* Have a look in `rails/locale/en-US.yml`, which can be used as the base of your translation.
+* Have a look in `rails/locale/en.yml`, which should be used as the base of your translation.
   Note that we use `&errors_messages` and `<<: *errors_messages` to anchor and merge a part of translation data.
 * Create or edit your locale file.
   Please pay attention to save your files as UTF-8.
