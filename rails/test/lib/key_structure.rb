@@ -31,15 +31,19 @@ class KeyStructure
           when /^time\.formats\.(\w+)/
             I18n.l Time.now, :format => $1.to_sym, :raise => true
           when 'activerecord.errors.messages.restrict_dependent_destroy'
-            begin
-              I18n.t "#{key}.one", :record => 'dummy', :raise => true
-            rescue I18n::MissingTranslationData => e
-              missing_keys << e.key
-            end
-            begin
-              I18n.t "#{key}.many", :record => 'dummy', :raise => true
-            rescue I18n::MissingTranslationData => e
-              missing_keys << e.key
+            if translations[key].kind_of?(Array)
+              begin
+                I18n.t "#{key}.one", :record => 'dummy', :raise => true
+              rescue I18n::MissingTranslationData => e
+                missing_keys << e.key
+              end
+              begin
+                I18n.t "#{key}.many", :record => 'dummy', :raise => true
+              rescue I18n::MissingTranslationData => e
+                missing_keys << e.key
+              end
+            else
+              I18n.t key, :raise => true
             end
           else
             I18n.t key, :raise => true
