@@ -9,7 +9,7 @@ nl:
     - vri
     - zat
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -35,7 +35,7 @@ nl:
       long: ! '%e %B %Y'
       short: ! '%e %b'
     month_names:
-    - 
+    -
     - januari
     - februari
     - maart

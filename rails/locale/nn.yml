@@ -9,7 +9,7 @@ nn:
     - fre
     - lau
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -35,7 +35,7 @@ nn:
       long: ! '%e. %B %Y'
       short: ! '%e. %b'
     month_names:
-    - 
+    -
     - januar
     - februar
     - mars

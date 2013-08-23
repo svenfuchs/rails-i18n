@@ -9,7 +9,7 @@ vi:
     - Thứ sáu
     - Thứ bảy
     abbr_month_names:
-    - 
+    -
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -35,7 +35,7 @@ vi:
       long: ! '%d %B, %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -112,7 +112,7 @@ vi:
       less_than: phải nhỏ hơn %{count}
       less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}
       not_a_number: không phải là số
-      not_an_integer: phải là một số nguyên 
+      not_an_integer: phải là một số nguyên
       odd: phải là số lẻ
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)

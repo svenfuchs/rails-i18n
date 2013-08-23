@@ -10,7 +10,7 @@ sk:
     - Pi
     - So
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ sk:
       long: ! '%d. %B %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - Január
     - Február
     - Marec
