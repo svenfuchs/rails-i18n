@@ -9,7 +9,7 @@ sw:
     - Ij
     - J1
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mac
@@ -35,7 +35,7 @@ sw:
       long: ! '%e %B, %Y'
       short: ! '%e %b'
     month_names:
-    - 
+    -
     - Mwezi wa kwanza
     - Mwezi wa pili
     - Mwezi wa tatu

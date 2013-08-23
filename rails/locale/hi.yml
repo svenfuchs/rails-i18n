@@ -9,7 +9,7 @@ hi:
     - शुक्र
     - शनि
     abbr_month_names:
-    - 
+    -
     - जन
     - फर
     - मार्च
@@ -35,7 +35,7 @@ hi:
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
-    - 
+    -
     - जनवरी
     - फरवरी
     - मार्च

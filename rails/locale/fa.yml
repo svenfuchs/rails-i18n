@@ -9,7 +9,7 @@ fa:
     - ج
     - ش
     abbr_month_names:
-    - 
+    -
     - ژانویه
     - فوریه
     - مارس
@@ -35,7 +35,7 @@ fa:
       long: ! '%e %B %Y'
       short: ! '%m/%d'
     month_names:
-    - 
+    -
     - ژانویه
     - فوریه
     - مارس

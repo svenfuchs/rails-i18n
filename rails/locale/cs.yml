@@ -9,7 +9,7 @@ cs:
     - Pá
     - So
     abbr_month_names:
-    - 
+    -
     - Led
     - Úno
     - Bře
@@ -35,7 +35,7 @@ cs:
       long: ! '%d. %B %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - Leden
     - Únor
     - Březen

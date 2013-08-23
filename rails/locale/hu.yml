@@ -9,7 +9,7 @@ hu:
     - p.
     - szo.
     abbr_month_names:
-    - 
+    -
     - jan.
     - febr.
     - márc.
@@ -35,7 +35,7 @@ hu:
       long: ! '%Y. %B %e.'
       short: ! '%b %e.'
     month_names:
-    - 
+    -
     - január
     - február
     - március

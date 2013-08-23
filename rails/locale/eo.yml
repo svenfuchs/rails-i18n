@@ -9,7 +9,7 @@ eo:
     - ven
     - sam
     abbr_month_names:
-    - 
+    -
     - jan.
     - feb.
     - mar.
@@ -35,7 +35,7 @@ eo:
       long: ! '%e %B %Y'
       short: ! '%e %b'
     month_names:
-    - 
+    -
     - januaro
     - februaro
     - marto
