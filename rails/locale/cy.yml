@@ -9,7 +9,7 @@ cy:
     - Gwe
     - Sad
     abbr_month_names:
-    - 
+    -
     - Ion
     - Chw
     - Maw
@@ -35,7 +35,7 @@ cy:
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
-    - 
+    -
     - Ionawr
     - Chwefror
     - Mawrth

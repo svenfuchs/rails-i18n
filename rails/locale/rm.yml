@@ -9,7 +9,7 @@ rm:
     - ve
     - so
     abbr_month_names:
-    - 
+    -
     - schan
     - favr
     - mars
@@ -35,7 +35,7 @@ rm:
       long: ! '%e. %B %Y'
       short: ! '%e. %b'
     month_names:
-    - 
+    -
     - schaner
     - favrer
     - mars

@@ -9,7 +9,7 @@ kn:
     - ಶುಕ್ರ
     - ಶನಿ
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -35,7 +35,7 @@ kn:
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
-    - 
+    -
     - ಜನವರಿ
     - ಫೆಬ್ರವರಿ
     - ಮಾರ್ಚ್

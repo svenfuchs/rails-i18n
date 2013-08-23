@@ -9,7 +9,7 @@ lv:
     - Pk.
     - S.
     abbr_month_names:
-    - 
+    -
     - Janv
     - Febr
     - Marts
@@ -35,7 +35,7 @@ lv:
       long: ! '%Y. gada %e. %B'
       short: ! '%e. %B'
     month_names:
-    - 
+    -
     - janvārī
     - februārī
     - martā

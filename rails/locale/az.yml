@@ -9,7 +9,7 @@ az:
     - C.
     - Ş.
     abbr_month_names:
-    - 
+    -
     - Yan
     - Fev
     - Mar
@@ -35,7 +35,7 @@ az:
       long: ! '%d %B %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - Yanvar
     - Fevral
     - Mart

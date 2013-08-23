@@ -12,7 +12,7 @@ af:
     - Vry
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -38,7 +38,7 @@ af:
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
-    - 
+    -
     - Januarie
     - Februarie
     - Maart

@@ -9,7 +9,7 @@ it-CH:
     - Ven
     - Sab
     abbr_month_names:
-    - 
+    -
     - Gen
     - Feb
     - Mar
@@ -35,7 +35,7 @@ it-CH:
       long: ! '%d %B %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - Gennaio
     - Febbraio
     - Marzo

@@ -9,7 +9,7 @@ de-CH:
     - Fr
     - Sa
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mär
@@ -35,7 +35,7 @@ de-CH:
       long: ! '%e. %B %Y'
       short: ! '%e. %b'
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - März
@@ -154,14 +154,14 @@ de-CH:
           billion:
             one: Milliarde
             other: Milliarden
-          million: 
+          million:
             one: Million
             other: Millionen
           quadrillion:
             one: Billiarde
             other: Billiarden
           thousand: Tausend
-          trillion: 
+          trillion:
             one: Billion
             other: Billionen
           unit: ''
