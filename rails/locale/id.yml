@@ -9,7 +9,7 @@ id:
     - Jum
     - Sab
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -35,7 +35,7 @@ id:
       long: ! '%A, %d %B %Y'
       short: ! '%d.%m.%Y'
     month_names:
-    - 
+    -
     - Januari
     - Februari
     - Maret

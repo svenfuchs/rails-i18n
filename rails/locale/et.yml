@@ -9,7 +9,7 @@ et:
     - R
     - L
     abbr_month_names:
-    - 
+    -
     - jaan.
     - veebr.
     - märts
@@ -35,7 +35,7 @@ et:
       long: ! '%d. %B %Y'
       short: ! '%d.%m.%y'
     month_names:
-    - 
+    -
     - jaanuar
     - veebruar
     - märts

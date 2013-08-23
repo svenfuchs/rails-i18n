@@ -9,7 +9,7 @@ lt:
     - Pen
     - Šeš
     abbr_month_names:
-    - 
+    -
     - Sau
     - Vas
     - Kov
@@ -35,7 +35,7 @@ lt:
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
-    - 
+    -
     - sausio
     - vasario
     - kovo

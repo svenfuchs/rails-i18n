@@ -9,7 +9,7 @@ fr-CA:
     - ven
     - sam
     abbr_month_names:
-    - 
+    -
     - jan.
     - fév.
     - mar.
@@ -35,7 +35,7 @@ fr-CA:
       long: ! '%d %B %Y'
       short: ! '%y-%m-%d'
     month_names:
-    - 
+    -
     - janvier
     - février
     - mars

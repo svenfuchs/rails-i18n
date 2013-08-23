@@ -9,7 +9,7 @@ sr:
     - Пет
     - Суб
     abbr_month_names:
-    - 
+    -
     - Јан
     - Феб
     - Мар
@@ -35,7 +35,7 @@ sr:
       long: ! '%B %e, %Y'
       short: ! '%e %b'
     month_names:
-    - 
+    -
     - Јануар
     - Фабруар
     - Март

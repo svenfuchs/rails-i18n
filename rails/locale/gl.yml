@@ -9,7 +9,7 @@ gl:
     - Ven
     - Sab
     abbr_month_names:
-    - 
+    -
     - Xan
     - Feb
     - Mar
@@ -35,7 +35,7 @@ gl:
       long: ! '%A %e de %B de %Y'
       short: ! '%e %b'
     month_names:
-    - 
+    -
     - Xaneiro
     - Febreiro
     - Marzo
