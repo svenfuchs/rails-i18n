@@ -165,9 +165,7 @@ zh-TW:
       storage_units:
         format: ! '%n %u'
         units:
-          byte:
-            one: Byte
-            other: Bytes
+          byte: 位元組
           gb: GB
           kb: KB
           mb: MB
