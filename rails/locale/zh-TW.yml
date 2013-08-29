@@ -115,6 +115,7 @@ zh-TW:
       not_an_integer: 必須是整數
       odd: 必須是奇數
       record_invalid: ! '校驗失敗: %{errors}'
+      restrict_dependent_destroy: 因還有需要此記錄的其他記錄, 所以無法移除記錄
       taken: 已經被使用
       too_long: 過長（最長是 %{count} 個字）
       too_short: 過短（最短是 %{count} 個字）
