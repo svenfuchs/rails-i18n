@@ -15,6 +15,7 @@ fr:
       - mer
       - jeu
       - ven
+      - sam
     abbr_month_names:
       - ~
       - jan.
@@ -37,7 +38,6 @@ fr:
       - jeudi
       - vendredi
       - samedi
-      - sam
     formats:
       default: "%d/%m/%Y"
       short: "%e %b"
