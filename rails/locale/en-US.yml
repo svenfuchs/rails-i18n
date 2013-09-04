@@ -31,7 +31,7 @@ en-US:
     - Friday
     - Saturday
     formats:
-      default: ! '%m-%d-Y'
+      default: ! '%m-%d-%Y'
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
