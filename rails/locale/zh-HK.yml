@@ -116,18 +116,18 @@ zh-HK:
       odd: ! '%{attribute}要係單數'
       record_invalid: ! '%{attribute}有問題︰%{errors}'
       restrict_dependent_destroy:
-        one: "唔可以刪除，因為%{record}存在並依賴於該資料"
-        many: "唔可以刪除，因為%{record}存在並依賴於該資料"
+        one: 唔可以刪除，因為%{record}要用佢
+        many: 唔可以刪除，因為%{record}要用佢
       taken: ! '%{attribute}已經用過'
       too_long:
-        one: '太長（最多1個字母）'
-        other: '太長（最多%{count}個字母）'
+        one: 太長（最多1個字）
+        other: 太長（最多%{count}個字）
       too_short:
-        one: '太短（最少1個字母）'
-        other: '太短（最少%{count}個字母）'
+        one: 太短（最少1個字）
+        other: 太短（最少%{count}個字）
       wrong_length:
-        one: '唔啱字數 (要係1個字母)'
-        other: '唔啱字數 (要係%{count}個字母)'
+        one: 唔啱字數 (要係1個字)
+        other: 唔啱字數 (要係%{count}個字)
     template:
       body: 呢啲有問題︰
       header:
