@@ -64,7 +64,7 @@ Following locales have some missing translations or pluralizations:
 > es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH,
 > gl, he, hi, hi-IN, hu, id, it, it-CH, kn, ko, lo, lt, lv, mk, mn, ms, nb,
 > ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sv, sw, th,
-> tl, tr, uk, uz, vi, wo, zh-CN, zh-HK, zh-TW
+> tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
 We always welcome your contributions!
 
