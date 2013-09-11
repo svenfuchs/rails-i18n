@@ -56,7 +56,7 @@ Available locales are:
 
 Following locales are complete:
 
-> bs, da, en, hr, is, ja, sr
+> bs, da, en, hr, is, ja, sr, zh-HK
 
 Following locales have some missing translations or pluralizations:
 
