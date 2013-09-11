@@ -100,6 +100,7 @@ zh-HK:
     messages:
       accepted: 一定要接受%{attribute}
       blank: ! '%{attribute}唔可以空白'
+      present: ! '%{attribute}要空白'
       confirmation: ! '%{attribute}唔夾'
       empty: ! '%{attribute}唔可以漏空'
       equal_to: ! '%{attribute}要係%{count}'
@@ -128,6 +129,7 @@ zh-HK:
       wrong_length:
         one: 唔啱字數 (要係1個字)
         other: 唔啱字數 (要係%{count}個字)
+      other_than: ! '%{attribute}唔可以係%{count}'
     template:
       body: 呢啲有問題︰
       header:
@@ -184,6 +186,7 @@ zh-HK:
     percentage:
       format:
         delimiter: ''
+        format: '%n%'
     precision:
       format:
         delimiter: ''
