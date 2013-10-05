@@ -1,3 +1,33 @@
+## 4.0.0 (2013-10-05)
+ - Fix values of 'restrict_dependent_destroy' key for many languages
+ - Fix currency separator and delimiters for es-AR, fi, ro and sv
+ - Fix 'errors.messages.too_(long|short)' for German (de)
+ - Add transliteration rules for German (de)
+ - Add missing keys to Chinese/Hong Kong (zh-HK)
+ - Add English/Ireland (en-IE)
+ - Add missing keys to Icelandic (is)
+ - Add missing keys to Danish (da)
+ - Fix a grammar error for Bulgarian (bg)
+ - Order keys of French (fr) locale alphabetically
+ - Singularize Millionen, Billionen for German/Switzerland (de-CH)
+ - Fix date format for Italian (it)
+ - Add transliteration rules for French (fr)
+ - Add Spanish/Costa Rica (es-CR)
+ - Remove trailing spaces for many languages
+ - Fix abbr_month_names and month_names for Catalan (ca)
+ - Reintroduce English/US (en-US)
+ - Add transliteration rules for Romanian (ro)
+ - Fix abbr_day_names and abbr_month_names for French (fr)
+ - Fix 'storage_units.units.byte' key for Chinese/Taiwan (zh-TW)
+ - Use 12-hour clock for :en-US and :en-CA
+ - Fix 'date.formats.default' key in en-US locale
+ - Fix some translations for Chinese/Hong Kong (zh-HK)
+ - Fix translations for less_than_x_{minutes,seconds} for Japanese (ja)
+ - Fix 'errors.messages.confirmation' key for Russian (ru)
+ - Fix 'datetime.distance_in_words' keys for Hungarian (hu)
+ - Fix the currency unit for Polish (pl)
+ - Fix the currency unit for French/Switzerland (fr-CH)
+
 ## 0.7.4 (2013-07-04)
  - Add Odiya language (or)
  - Revert several translations for Spanish/Colombia (es-CO)

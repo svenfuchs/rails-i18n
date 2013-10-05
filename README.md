@@ -9,13 +9,13 @@ Central point to collect locale data for use in Ruby on Rails.
 
 Add to your Gemfile:
 
-    gem 'rails-i18n', '~> 4.0.0.pre' # For 4.0.x
-    gem 'rails-i18n', '~> 3.0.0.pre' # For 3.x
+    gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+    gem 'rails-i18n', '~> 3.0.0' # For 3.x
 
 or run this command:
 
-    gem install rails-i18n -v '~> 4.0.0.pre' # For 4.0.x
-    gem install rails-i18n -v '~> 3.0.0.pre' # For 3.x
+    gem install rails-i18n -v '~> 4.0.0' # For 4.0.x
+    gem install rails-i18n -v '~> 3.0.0' # For 3.x
 
 Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
 
