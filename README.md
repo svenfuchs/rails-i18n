@@ -9,11 +9,11 @@ Central point to collect locale data for use in Ruby on Rails.
 
 Add to your Gemfile:
 
-    gem 'rails-i18n', '~> 3.0.0.pre'
+    gem 'rails-i18n', '~> 3.0.0'
 
 or run this command:
 
-    gem install rails-i18n --version '~> 3.0.0.pre'
+    gem install rails-i18n --version '~> 3.0.0'
 
 Note that your rails version must be 3.x if you want to install `rails-i18n` this way.
 If your Rails is version 4.0 or above, visit the [master](https://github.com/svenfuchs/rails-i18n) branch.
