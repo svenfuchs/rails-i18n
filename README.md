@@ -56,14 +56,14 @@ Available locales are:
 
 Following locales are complete:
 
-> bs, da, en, hr, is, ja, sr, zh-HK
+> bs, da, en, hr, is, ja, nl, sr, zh-HK
 
 Following locales have some missing translations or pluralizations:
 
 > af, ar, az, bg, bn, ca, cs, cy, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, eo,
 > es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH,
 > gl, he, hi, hi-IN, hu, id, it, it-CH, kn, ko, lo, lt, lv, mk, mn, ms, nb,
-> ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sv, sw, th,
+> ne, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sv, sw, th,
 > tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
 We always welcome your contributions!

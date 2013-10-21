@@ -100,6 +100,7 @@ nl:
     messages:
       accepted: moet worden geaccepteerd
       blank: moet opgegeven zijn
+      present: moet leeg zijn
       confirmation: komt niet met de bevestiging overeen
       empty: moet opgegeven zijn
       equal_to: moet gelijk zijn aan %{count}
@@ -115,10 +116,20 @@ nl:
       not_an_integer: moet een geheel getal zijn
       odd: moet oneven zijn
       record_invalid: ! 'Validatie mislukt: %{errors}'
+      restrict_dependent_destroy:
+        one: "Kan item niet verwijderen omdat %{record} afhankelijk is"
+        many: "Kan item niet verwijderen omdat afhankelijke %{record} bestaan"
       taken: is al in gebruik
-      too_long: is te lang (maximaal %{count} tekens)
-      too_short: is te kort (minimaal %{count} tekens)
-      wrong_length: heeft onjuiste lengte (moet %{count} tekens lang zijn)
+      too_long:
+        one: is te lang (maximaal %{count} teken)
+        other: is te lang (maximaal %{count} tekens)
+      too_short:
+        one: is te kort (minimaal %{count} teken)
+        other: is te kort (minimaal %{count} tekens)
+      wrong_length:
+        one: heeft onjuiste lengte (moet %{count} teken lang zijn)
+        other: heeft onjuiste lengte (moet %{count} tekens lang zijn)
+      other_than: "moet anders zijn dan %{count}"
     template:
       body: ! 'Controleer de volgende velden:'
       header:
@@ -175,6 +186,7 @@ nl:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
