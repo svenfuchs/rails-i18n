@@ -56,45 +56,45 @@ lt:
     distance_in_words:
       about_x_hours:
         one: apie 1 valanda
-        few: apie %{count} valandų
+        few: apie %{count} valandas
         other: apie %{count} valandų
       about_x_months:
-        one: apie 1 mėnuo
-        few: apie %{count} mėnesiai
-        other: apie %{count} mėnesiai
+        one: apie 1 mėnesį
+        few: apie %{count} mėnesius
+        other: apie %{count} mėnesių
       about_x_years:
-        one: apie 1 metai
-        few: apie %{count} metų
+        one: apie 1 metus
+        few: apie %{count} metus
         other: apie %{count} metų
       half_a_minute: pusė minutės
       less_than_x_minutes:
         one: mažiau nei minutė
         few: mažiau nei %{count} minutės
-        other: mažiau nei %{count} minutės
+        other: mažiau nei %{count} minučių
       less_than_x_seconds:
-        one: mažiau nei 1 sekundė
+        one: mažiau nei sekundė
         few: mažiau nei %{count} sekundės
-        other: mažiau nei %{count} sekundės
+        other: mažiau nei %{count} sekundžių
       over_x_years:
         one: virš 1 metų
         few: virš %{count} metų
         other: virš %{count} metų
       x_days:
         one: 1 diena
-        few: ! '%{count} dienų'
+        few: ! '%{count} dienos'
         other: ! '%{count} dienų'
       x_minutes:
         one: 1 minutė
         few: ! '%{count} minutės'
-        other: ! '%{count} minutės'
+        other: ! '%{count} minučių'
       x_months:
         one: 1 mėnuo
         few: ! '%{count} mėnesiai'
-        other: ! '%{count} mėnesiai'
+        other: ! '%{count} mėnesių'
       x_seconds:
         one: 1 sekundė
         few: ! '%{count} sekundės'
-        other: ! '%{count} sekundės'
+        other: ! '%{count} sekundžių'
     prompts:
       day: Diena
       hour: Valanda
@@ -162,7 +162,7 @@ lt:
           byte:
             one: Baitas
             few: Baitai
-            other: Baitai
+            other: Baitų
           gb: GB
           kb: KB
           mb: MB
