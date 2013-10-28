@@ -55,44 +55,44 @@ lt:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: apie 1 valanda
+        one: apie %{count} valanda
         few: apie %{count} valandas
         other: apie %{count} valandų
       about_x_months:
-        one: apie 1 mėnesį
+        one: apie %{count} mėnesį
         few: apie %{count} mėnesius
         other: apie %{count} mėnesių
       about_x_years:
-        one: apie 1 metus
+        one: apie %{count} metus
         few: apie %{count} metus
         other: apie %{count} metų
       half_a_minute: pusė minutės
       less_than_x_minutes:
-        one: mažiau nei minutė
+        one: mažiau nei %{count} minutė
         few: mažiau nei %{count} minutės
         other: mažiau nei %{count} minučių
       less_than_x_seconds:
-        one: mažiau nei sekundė
+        one: mažiau nei %{count} sekundė
         few: mažiau nei %{count} sekundės
         other: mažiau nei %{count} sekundžių
       over_x_years:
-        one: virš 1 metų
+        one: virš %{count} metų
         few: virš %{count} metų
         other: virš %{count} metų
       x_days:
-        one: 1 diena
+        one: ! '%{count} diena'
         few: ! '%{count} dienos'
         other: ! '%{count} dienų'
       x_minutes:
-        one: 1 minutė
+        one: ! '%{count} minutė'
         few: ! '%{count} minutės'
         other: ! '%{count} minučių'
       x_months:
-        one: 1 mėnuo
+        one: ! '%{count} mėnesis'
         few: ! '%{count} mėnesiai'
         other: ! '%{count} mėnesių'
       x_seconds:
-        one: 1 sekundė
+        one: ! '%{count} sekundė'
         few: ! '%{count} sekundės'
         other: ! '%{count} sekundžių'
     prompts:
@@ -127,9 +127,9 @@ lt:
     template:
       body: ! 'Šiuose laukuose yra klaidų:'
       header:
-        one: Išsaugant objektą %{model} rasta klaida
+        one: Išsaugant objektą %{model} rasta %{count} klaida
         few: Išsaugant objektą %{model} rastos %{count} klaidos
-        other: Išsaugant objektą %{model} rastos %{count} klaidos
+        other: Išsaugant objektą %{model} rasta %{count} klaidų
   number:
     currency:
       format:
