@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.homepage     = "http://github.com/svenfuchs/rails-i18n"
   s.summary      = "Common locale data and translations for Rails i18n."
   s.description  = "A set of common locale data and translations to internationalize and/or localize your Rails applications."
+  s.license      = 'MIT'
 
   s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") +
                    Dir.glob("rails/pluralization/*") + Dir.glob("rails/transliteration/*") +
