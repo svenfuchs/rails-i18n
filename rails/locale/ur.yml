@@ -56,7 +56,7 @@ ur:
     distance_in_words:
       about_x_hours:
         one: تقریبا ایک گھنٹہ
-        other: ! 'تقریبا %{count} گھنٹہ'
+        other: ! 'تقریبا %{count} گھنٹے'
       about_x_months:
         one: تقریبا ایک مہینہ
         other: ! 'تقریبا %{count} مہینہ'
@@ -162,9 +162,7 @@ ur:
       decimal_units:
         format: ! '%n %u'
         units:
-          hundrad: سو
           thousand: ہزار
-          lakh: لاکھ
           million: ملین
           billion: بلین
           trillion: ٹریلن
