@@ -104,7 +104,7 @@ es-PE:
       exclusion: está reservado
       greater_than: debe ser mayor que %{count}
       greater_than_or_equal_to: debe ser mayor o igual que %{count}
-      inclusion: no está incluído en la lista
+      inclusion: no está incluido en la lista
       invalid: es inválido
       less_than: debe ser menor que %{count}
       less_than_or_equal_to: debe ser menor o igual que %{count}
