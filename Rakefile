@@ -34,4 +34,6 @@ end
 
 require 'i18n-spec/tasks' # needs to be loaded after rspec
 
+load 'tasks/i18n-tasks.rake'
+
 task :default => :spec

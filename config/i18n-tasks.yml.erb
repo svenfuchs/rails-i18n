@@ -1,0 +1,31 @@
+base_locale: 'en'
+locales: <%= Dir['rails/locale/*.yml'].map { |f| File.basename(f, '.yml') }.inspect %>
+
+data:
+  adapter: yaml
+  read:
+    - "rails/locale/%{locale}.yml"
+  write:
+    - "rails/locale/%{locale}.yml"
+
+search:
+  paths: ['lib/']
+
+ignore_missing:
+  - number.precision.format.*
+  - 'number.percentage.format.{format,delimiter}'
+  - number.{human,percentage}.format.delimiter
+  - number.human.decimal_units.units.unit
+  - number.{format, human.format, currency.format}.{strip_insignificant_zeros,significant,delimiter}
+
+ignore_eq_base:
+  all:
+    - 'number.*'
+    - '{activerecord,activemodel}.errors.format'
+    - 'time.{pm,am,formats.*}'
+    - 'date.{order,formats.*}'
+    - errors.format
+    - support.array.words_connector
+
+  'en-AU,en-CA,en-GB,en-IE,en-IN,en-NZ,en-US':
+    - '*'
