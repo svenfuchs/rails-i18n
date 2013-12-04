@@ -96,7 +96,7 @@ zh-CN:
       second: 秒
       year: 年
   errors: &errors
-    format: ! '%{attribute} %{message}'
+    format: ! '%{attribute}%{message}'
     messages:
       accepted: 必须是可被接受的
       blank: 不能为空字符
