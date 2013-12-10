@@ -197,3 +197,515 @@ bg:
   activerecord:
     errors:
       <<: *errors
+  # compatible with carmen-rails gem for countries drop down menu
+  world:
+    au:
+      name: Австралия
+    at:
+      name: Австрия
+    az:
+      name: Азербайджан
+    ax:
+      name: Аландски о-ви
+    al:
+      name: Албания
+    dz:
+      name: Алжир
+    as:
+      name: Американско Самоа 
+    ao:
+      name: Ангола 
+    ai:
+      name: Ангуила
+    ad:
+      name: Андора
+    aq:
+      name: Антарктика  
+    ag:
+      name: Антигуа и Барбуда
+    ar:
+      name: Аржентина
+    am:
+      name: Армения
+    aw:
+      name: Аруба
+    af:
+      name: Афганистан
+    bd:
+      name: Бангладеш
+    bb:
+      name: Барбадос
+    bs:
+      name: Бахамски острови  
+    bh:
+      name: Бахрейн
+    by:
+      name: Беларус
+    be:
+      name: Белгия
+    bz:
+      name: Белиз
+    bj:
+      name: Бенин
+    bm:
+      name: Бермудски острови
+    bo:
+      name: Боливия
+    ba:
+      name: Босна и Херцеговина
+    bw:
+      name: Ботсуана
+    br:
+      name: Бразилия
+    io:
+      name: Британска територия в Индийския океан Архипелаг Чагос
+    bn:
+      name: Бруней Даруссалам
+    bv:
+      name: Буве, остров
+    bf:
+      name: Буркина Фасо
+    bi:
+      name: Бурунди
+    bt:
+      name: Бутан
+    bg:
+      name: България
+    vu:
+      name: Вануату
+    va:
+      name: Ватикана
+    gb:
+      name: Великобритания
+    ve:
+      name: Венецуела
+    vn:
+      name: Виетнам
+    vg:
+      name: Виржински острови, Британски
+    vi:
+      name: Виржински острови, САЩ
+    ga:
+      name: Габон
+    gm:
+      name: Гамбия
+    gh:
+      name: Гана
+    gy:
+      name: Гаяна
+    gp:
+      name: Гваделупа
+    gt:
+      name: Гватемала
+    gn:
+      name: Гвинея
+    gw:
+      name: Гвинея-Бисау
+    de:
+      name: Германия
+    gi:
+      name: Гибралтар
+    gd:
+      name: Гренада
+    gl:
+      name: Гренландия
+    ge:
+      name: Грузия
+    gu:
+      name: Гуам
+    gr:
+      name: Гърция
+    gg:
+      name: Гърнзи, остров
+    dk:
+      name: Дания
+    dj:
+      name: Джибути
+    je:
+      name: Джързи, остров
+    dm:
+      name: Доминика
+    do:
+      name: Доминиканска република
+    eg:
+      name: Египет
+    ec:
+      name: Еквадор
+    gq:
+      name: Екваториална Гвинея
+    er:
+      name: Еритрея
+    ee:
+      name: Естония
+    et:
+      name: Етиопия
+    zm:
+      name: Замбия
+    zw:
+      name: Зимбабве
+    eh:
+      name: Западна Сахара
+    il:
+      name: Израел
+    tl:
+      name: Източен Тимор
+    in:
+      name: Индия
+    id:
+      name: Индонезия
+    iq:
+      name: Ирак
+    ir:
+      name: Иран, ислямска република
+    ie:
+      name: Ирландия
+    is:
+      name: Исландия
+    es:
+      name: Испания
+    it:
+      name: Италия
+    ye:
+      name: Йемен
+    jo:
+      name: Йордания
+    cv:
+      name: Кабо Верде
+    kz:
+      name: Казахстан
+    ky:
+      name: Кайманови острови
+    kh:
+      name: Камбоджа
+    cm:
+      name: Камерун
+    ca:
+      name: Канада
+    qa:
+      name: Катар
+    ke:
+      name: Кения
+    cy:
+      name: Кипър
+    kg:
+      name: Киргизстан
+    ki:
+      name: Кирибати
+    bq:
+      name: Карибска Нидерландия
+    cn:
+      name: Китайската народна република
+    cc:
+      name: Кокосови острови
+    co:
+      name: Колумбия
+    km:
+      name: Коморски острови
+    cg:
+      name: Конго
+    cd:
+      name: Конго, Демократична република (Заир)
+    xk:
+      name: Косово
+    cr:
+      name: Коста Рика
+    ci:
+      name: Кот д'Ивоар
+    kp:
+      name: Северна Корея
+    kr:
+      name: Южна Корея
+    cu:
+      name: Куба
+    kw:
+      name: Кувейт
+    ck:
+      name: Кук, острови
+    cw:
+      name: Кюрасао
+    la:
+      name: Лаос, народнодемократична република
+    lv:
+      name: Латвия
+    ls:
+      name: Лесото
+    lr:
+      name: Либерия
+    ly:
+      name: Либийска арабска джамахирия (Либия)
+    lb:
+      name: Ливан
+    lt:
+      name: Литва
+    li:
+      name: Лихтенщайн
+    lu:
+      name: Люксембург
+    mr:
+      name: Мавритания
+    mu:
+      name: Мавриций
+    mg:
+      name: Мадагаскар
+    yt:
+      name: Майот
+    mo:
+      name: Макао
+    mk:
+      name: Македония
+    mw:
+      name: Малави
+    my:
+      name: Малайзия
+    mv:
+      name: Малдивски острови
+    ml:
+      name: Мали
+    um:
+      name: Малки острови, принадлежащи на САЩ
+    mt:
+      name: Малта
+    ma:
+      name: Мароко
+    mq:
+      name: Мартиника
+    mh:
+      name: Маршалски острови
+    mx:
+      name: Мексико
+    xl:
+      name: Мелила
+    mm:
+      name: Мианмар (Бирма)
+    fm:
+      name: Микронезия, федеративен съюз
+    mz:
+      name: Мозамбик
+    md:
+      name: Молдова
+    mc:
+      name: Монако
+    mn:
+      name: Монголия
+    ms:
+      name: Монтсерат
+    na:
+      name: Намибия
+    nr:
+      name: Науру
+    np:
+      name: Непал
+    ne:
+      name: Нигер
+    ng:
+      name: Нигерия
+    nl:
+      name: Нидерландия (Холандия)
+    an:
+      name: Нидерландски Антили
+    ni:
+      name: Никарагуа
+    nu:
+      name: Ниуе
+    nz:
+      name: Нова Зеландия
+    nc:
+      name: Нова Каледония
+    'no':
+      name: Норвегия
+    nf:
+      name: Норфолк, остров
+    ae:
+      name: Обединени арабски емирства
+    om:
+      name: Оман
+    im:
+      name: Острови Ман
+    pk:
+      name: Пакистан
+    pw:
+      name: Палау
+    ps:
+      name: Палестинска територия, окупирана
+    pa:
+      name: Панама
+    pg:
+      name: Папуа - Нова Гвинея
+    py:
+      name: Парагвай
+    pe:
+      name: Перу
+    pn:
+      name: Питкерн
+    pl:
+      name: Полша
+    pt:
+      name: Португалия
+    pr:
+      name: Пуерто Рико
+    re:
+      name: Реюниън
+    cx:
+      name: Рождественски острови
+    rw:
+      name: Руанда
+    ro:
+      name: Румъния
+    ru:
+      name: Руска федерация
+    sv:
+      name: Салвадор
+    ws:
+      name: Самоа
+    sm:
+      name: Сан Марино
+    st:
+      name: Сао Томе и Принсипи
+    sa:
+      name: Саудитска Арабия
+    sj:
+      name: Свалбард и Ян Майен
+    sh:
+      name: Света Елена
+    mp:
+      name: Северни Мариански Острови
+    bl:
+      name: Сейнт Бартоломей
+    vc:
+      name: Сейнт Винсент и Гренадини
+    kn:
+      name: Сейнт Китс и Нейвис
+    lc:
+      name: Сейнт Лусия
+    mf:
+      name: Сейнт Мартин
+    pm:
+      name: Сейнт Пиер и Микелон
+    sc:
+      name: Сейшелски острови
+    sn:
+      name: Сенегал
+    sl:
+      name: Сиера Леоне
+    sg:
+      name: Сингапур
+    sx:
+      name: Синт Мартен
+    sy:
+      name: Сирийска арабска република
+    sk:
+      name: Словакия
+    si:
+      name: Словения
+    sb:
+      name: Соломонови острови
+    so:
+      name: Сумалия
+    sz:
+      name: Суазиленд
+    sd:
+      name: Судан
+    sr:
+      name: Суринам
+    xc:
+      name: Сута
+    us:
+      name: Съединени американски щати (САЩ)
+    xs:
+      name: Сърбия
+    rs:
+      name: Сърбия
+    tj:
+      name: Таджикистан
+    tw:
+      name: Тайван
+    th:
+      name: Тайланд
+    tz:
+      name: Танзания
+    tg:
+      name: Того
+    tk:
+      name: Токелау
+    to:
+      name: Тонга
+    tt:
+      name: Тринидад и Тобаго
+    tv:
+      name: Тувалу
+    tn:
+      name: Тунис
+    tm:
+      name: Туркменистан
+    tr:
+      name: Турция
+    tc:
+      name: Търкс и Кайкос, острови
+    ug:
+      name: Уганда
+    uz:
+      name: Узбекистан
+    ua:
+      name: Украйна
+    hu:
+      name: Унгария
+    wf:
+      name: Уолис и Футуна, острови
+    uy:
+      name: Уругвай
+    fo:
+      name: Ферьорски острови
+    fj:
+      name: Фиджи
+    ph:
+      name: Филипини
+    fi:
+      name: Финландия
+    fk:
+      name: Фолкландски (Малвински) острови
+    fr:
+      name: Франция
+    gf:
+      name: Френска Гвиана
+    pf:
+      name: Френска Полинезия 
+    tf:
+      name: Френски Южни територии
+    ht:
+      name: Хаити
+    hk:
+      name: Хонконг Специален административен район на Китай
+    hn:
+      name: Хондурас
+    hr:
+      name: Хърватска
+    hm:
+      name: Хърд и Мак Доналд, острови
+    cf:
+      name: Централноафриканска република
+    td:
+      name: Чад
+    xm:
+      name: Черна гора
+    me:
+      name: Черна гора
+    cz:
+      name: Чешка Република
+    cl:
+      name: Чили
+    ch:
+      name: Швейцария
+    se:
+      name: Швеция
+    lk:
+      name: Шри Ланка
+    za:
+      name: Южна Африка
+    gs:
+      name: Южна Джорджия и Южни Сандвичеви острови
+    ss:
+      name: Южен Судан
+    jm:
+      name: Ямайка
+    jp:
+      name: Япония
