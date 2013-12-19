@@ -9,6 +9,8 @@ require 'support/fake_app'
 require 'unit/matchers/have_missing_particular_pluralization_keys_matcher'
 require 'unit/matchers/have_keys_for_restrict_dependent_destroy_matcher'
 
+I18n.enforce_available_locales = false
+
 RSpec.configure do |config|
   config.mock_with :rspec
   config.fail_fast = true
