@@ -1,3 +1,12 @@
+## 4.0.1 (2013-12-19)
+ - Fix typos, formats and delimiters for Swiss-German (iso-639-2/gsw-CH)
+ - Add missing keys to Dutch (nl)
+ - Fix translations for Lithuanian (lt)
+ - Add Spanish/Panama (es-PA)
+ - Add Urdu (ur)
+ - Remove whitespace between attribute and message in Chinese (zh-CN)
+ - Support Rails 4.1.0.beta1
+
 ## 4.0.0 (2013-10-05)
  - Fix values of 'restrict_dependent_destroy' key for many languages
  - Fix currency separator and delimiters for es-AR, fi, ro and sv
