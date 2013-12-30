@@ -110,6 +110,7 @@ fr:
     messages: &errors_messages
       accepted: "doit être accepté(e)"
       blank: "doit être rempli(e)"
+      present: "doit être vide"
       confirmation: "ne concorde pas avec la confirmation"
       empty: "doit être rempli(e)"
       equal_to: "doit être égal à %{count}"
@@ -138,6 +139,7 @@ fr:
       wrong_length:
         one: "ne fait pas la bonne longueur (doit comporter un seul caractère)"
         other: "ne fait pas la bonne longueur (doit comporter %{count} caractères)"
+      other_than: "doit être différent de %{count}"
     template: &errors_template
       body: "Veuillez vérifier les champs suivants : "
       header:
@@ -194,6 +196,7 @@ fr:
     percentage:
       format:
         delimiter: ""
+        format: "%n%"
     precision:
       format:
         delimiter: ""
