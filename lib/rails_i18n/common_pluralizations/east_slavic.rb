@@ -6,6 +6,12 @@
 module RailsI18n
   module Pluralization
     module EastSlavic
+
+      FROM_2_TO_4   = (2..4).to_set
+      FROM_5_TO_9   = (5..9).to_set
+      FROM_11_TO_14 = (11..14).to_set
+      FROM_12_TO_14 = (12..14).to_set
+
       def self.rule
         lambda do |n|
           mod10 = n % 10
@@ -13,9 +19,9 @@ module RailsI18n
 
           if mod10 == 1 && mod100 != 11
             :one
-          elsif [2, 3, 4].include?(mod10) && ![12, 13, 14].include?(mod100)
+          elsif FROM_2_TO_4.include?(mod10) && !FROM_12_TO_14.include?(mod100)
             :few
-          elsif mod10 == 0 || (5..9).to_a.include?(mod10) || (11..14).to_a.include?(mod100)
+          elsif mod10 == 0 || FROM_5_TO_9.include?(mod10) || FROM_11_TO_14.include?(mod100)
             :many
           else
             :other
@@ -25,7 +31,7 @@ module RailsI18n
 
       def self.with_locale(locale)
         { locale => {
-            :'i18n' => {
+            :i18n => {
               :plural => {
                 :keys => [:one, :few, :many, :other],
                 :rule => rule }}}}
