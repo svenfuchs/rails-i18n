@@ -1,3 +1,7 @@
+## 0.3.1 (2014-01-06)
+
+- Days and months must be lower case (it)
+
 ## 0.3.0 (2012-01-10)
 
 - loads will_paginate/*.yml if the constant WillPaginate is defined
