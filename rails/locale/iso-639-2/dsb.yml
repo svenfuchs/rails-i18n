@@ -116,7 +116,7 @@ dsb:
       even: musy rowna licba byś
       exclusion: njestoj k dispoziciji
       greater_than: musy wětšy ako %{count} byś
-      greater_than_or_equal_to: musy wětšy abo jadnak %{count} być
+      greater_than_or_equal_to: musy wětšy abo jadnak %{count} byś
       inclusion: njejo płaśiwa gódnota
       invalid: njejo płaśiwy
       less_than: musy mjeńšy ako %{count} byś
@@ -133,7 +133,7 @@ dsb:
         few: jo překrotki (min. %{count} znamješka)
         one: jo překrotki (min. 1 znamješko)
         other: jo překrotki (min. %{count} znamješkow)
-        two: jo překrotki (min. %{count} znamješće)
+        two: jo překrotki (min. %{count} znamješce)
       wrong_length:
         few: njama pšawu dłujkosć (%{count} znamješka wócakane)
         one: njama pšawu dłujkosć (1 znamješko wócakane)
@@ -202,9 +202,9 @@ dsb:
   time:
     am: dopołdnja
     formats:
-      default: ! '%A, %d. %B %Y, %H:%M hodź'
-      long: ! '%A, %d. %B %Y, %H:%M hodź.'
-      short: ! '%d. %B, %H:%M hodź.'
+      default: ! '%A, %d. %B %Y, %H:%M góź.'
+      long: ! '%A, %d. %B %Y, %H:%M góź.'
+      short: ! '%d. %B, %H:%M góź.'
     pm: wótpołdnja
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
