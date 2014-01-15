@@ -115,6 +115,9 @@ de-CH:
       not_an_integer: muss ganzzahlig sein
       odd: muss ungerade sein
       record_invalid: ! 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+      restrict_dependent_destroy:
+        one: S lösche hät nöd funktioniert wills no en anhängige %{record} git
+        many: S lösche hät nöd funktioniert wills no anhängigi %{record} git
       taken: ist bereits vergeben
       too_long: ist zu lang (nicht mehr als %{count} Zeichen)
       too_short: ist zu kurz (nicht weniger als %{count} Zeichen)
