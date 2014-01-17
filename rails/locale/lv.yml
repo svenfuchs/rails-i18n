@@ -156,12 +156,12 @@ lv:
     currency:
       format:
         delimiter: .
-        format: ! '%u %n'
+        format: ! '%n %u'
         precision: 2
         separator: ! ','
         significant: false
         strip_insignificant_zeros: false
-        unit: LVL
+        unit: €
     format:
       delimiter: .
       precision: 2
