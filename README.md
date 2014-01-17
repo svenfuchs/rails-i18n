@@ -5,6 +5,9 @@ I18n Data Repository for Rails 2.3
 
 Central point to collect locale data for use in Ruby on Rails 2.3.
 
+Note that you *cannot* install these data through RubyGems against Rails 2.3.
+You should download data files into your `config/locales` directory.
+
 If your Rails version is 4.0 or above, visit the [master](https://github.com/svenfuchs/rails-i18n) branch.
 If your Rails version is 3.x, visit the [rails-3-x](https://github.com/svenfuchs/rails-i18n/tree/rails-3-x) branch.
 
