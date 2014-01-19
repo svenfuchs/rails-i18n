@@ -1,13 +1,13 @@
 de:
   date:
     abbr_day_names:
-    - So
     - Mo
     - Di
     - Mi
     - Do
     - Fr
     - Sa
+    - So
     abbr_month_names:
     -
     - Jan
@@ -23,13 +23,13 @@ de:
     - Nov
     - Dez
     day_names:
-    - Sonntag
     - Montag
     - Dienstag
     - Mittwoch
     - Donnerstag
     - Freitag
     - Samstag
+    - Sonntag
     formats:
       default: ! '%d.%m.%Y'
       long: ! '%e. %B %Y'
