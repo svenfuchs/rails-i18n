@@ -1,13 +1,13 @@
 nl:
   date:
     abbr_day_names:
-    - zon
-    - maa
-    - din
-    - woe
-    - don
-    - vri
-    - zat
+    - zo
+    - ma
+    - di
+    - wo
+    - do
+    - vr
+    - za
     abbr_month_names:
     -
     - jan
@@ -31,7 +31,7 @@ nl:
     - vrijdag
     - zaterdag
     formats:
-      default: ! '%d/%m/%Y'
+      default: ! '%d-%m-%Y'
       long: ! '%e %B %Y'
       short: ! '%e %b'
     month_names:
