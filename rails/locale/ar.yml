@@ -55,83 +55,83 @@ ar:
   datetime:
     distance_in_words:
       about_x_hours:
-        zero: ! '%{count} ساعات'
+        zero: ! 'حوالي %{count} ساعات'
         one: حوالي ساعة واحدة
-        two: ! '%{count} ساعات'
-        few: ! '%{count} ساعات'
-        many: ! '%{count} ساعات'
-        other: ! '%{count} ساعات'
+        two: ! 'حوالي ساعتان'
+        few: ! 'حوالي %{count} ساعات'
+        many: ! 'حوالي %{count} ساعة'
+        other: ! 'حوالي %{count} ساعة'
       about_x_months:
-        zero: ! '%{count} أشهر'
+        zero: ! 'حوالي %{count} شهر'
         one: حوالي شهر واحد
-        two: ! '%{count} أشهر'
-        few: ! '%{count} أشهر'
-        many: ! '%{count} أشهر'
-        other: ! '%{count} أشهر'
+        two: ! 'حوالي شهران'
+        few: ! 'حوالي %{count} أشهر'
+        many: ! 'حوالي %{count} شهر'
+        other: ! 'حوالي %{count} شهر'
       about_x_years:
-        zero: ! '%{count} سنوات'
+        zero: ! 'حوالي %{count} سنوات'
         one: حوالي سنة
-        two: ! '%{count} سنوات'
-        few: ! '%{count} سنوات'
-        many: ! '%{count} سنوات'
-        other: ! '%{count} سنوات'
+        two: ! 'حوالي سنتان'
+        few: ! 'حوالي %{count} سنوات'
+        many: ! 'حوالي %{count} سنة'
+        other: ! 'حوالي %{count} سنة'
       almost_x_years:
         zero: ما يقرب من %{count} سنة
         one: تقريبا سنة واحدة
-        two: ما يقرب من %{count} سنة
-        few: ما يقرب من %{count} سنة
+        two: ما يقرب من سنتين
+        few: ما يقرب من %{count} سنوات
         many: ما يقرب من %{count} سنة
         other: ما يقرب من %{count} سنة
       half_a_minute: نصف دقيقة
       less_than_x_minutes:
-        zero: ! '%{count} دقائق'
+        zero: ! 'أقل من %{count} دقيقة'
         one: أقل من دقيقة
-        two: ! '%{count} دقائق'
-        few: ! '%{count} دقائق'
-        many: ! '%{count} دقائق'
-        other: ! '%{count} دقائق'
+        two: ! 'أقل من دقيقتان'
+        few: ! 'أقل من %{count} دقائق'
+        many: ! 'أقل من %{count} دقيقة'
+        other: ! 'أقل من %{count} دقيقة'
       less_than_x_seconds:
-        zero: ! '%{count} ثوان'
+        zero: ! 'أقل من %{count} ثانية'
         one: أقل من ثانية
-        two: ! '%{count} ثوان'
-        few: ! '%{count} ثوان'
-        many: ! '%{count} ثوان'
-        other: ! '%{count} ثوان'
+        two: ! 'أقل من ثانيتان'
+        few: ! 'أقل من %{count} ثوان'
+        many: ! 'أقل من %{count} ثانية'
+        other: ! 'أقل من %{count} ثانية'
       over_x_years:
-        zero: ! '%{count} سنوات'
+        zero: ! 'أكثر من %{count} سنة'
         one: أكثر من سنة
-        two: ! '%{count} سنوات'
-        few: ! '%{count} سنوات'
-        many: ! '%{count} سنوات'
-        other: ! '%{count} سنوات'
+        two: ! 'أكثر من سنتين'
+        few: ! 'أكثر من %{count} سنوات'
+        many: ! 'أكثر من %{count} سنة'
+        other: ! 'أكثر من %{count} سنة'
       x_days:
-        zero: ! '%{count} أيام'
+        zero: ! '%{count} يوم'
         one: يوم واحد
-        two: ! '%{count} أيام'
+        two: ! 'يومان'
         few: ! '%{count} أيام'
-        many: ! '%{count} أيام'
-        other: ! '%{count} أيام'
+        many: ! '%{count} يوم'
+        other: ! '%{count} يوم'
       x_minutes:
-        zero: ! '%{count} دقائق'
+        zero: ! '%{count} دقيقة'
         one: دقيقة واحدة
-        two: ! '%{count} دقائق'
+        two: ! 'دقيقتان'
         few: ! '%{count} دقائق'
-        many: ! '%{count} دقائق'
-        other: ! '%{count} دقائق'
+        many: ! '%{count} دقيقة'
+        other: ! '%{count} دقيقة'
       x_months:
-        zero: ! '%{count} أشهر'
+        zero: ! '%{count} شهر'
         one: شهر واحد
-        two: ! '%{count} أشهر'
+        two: ! 'شهران'
         few: ! '%{count} أشهر'
-        many: ! '%{count} أشهر'
-        other: ! '%{count} أشهر'
+        many: ! '%{count} شهر'
+        other: ! '%{count} شهر'
       x_seconds:
-        zero: ! '%{count} ثوان'
+        zero: ! '%{count} ثانية'
         one: ثانية واحدة
-        two: ! '%{count} ثوان'
+        two: ! 'ثانيتان'
         few: ! '%{count} ثوان'
-        many: ! '%{count} ثوان'
-        other: ! '%{count} ثوان'
+        many: ! '%{count} ثانية'
+        other: ! '%{count} ثانية'
     prompts:
       day: اليوم
       hour: ساعة
