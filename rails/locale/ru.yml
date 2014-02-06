@@ -122,7 +122,7 @@ ru:
     messages:
       accepted: нужно подтвердить
       blank: не может быть пустым
-      confirmation: 'не совпадает с  %{attribute}'
+      confirmation: 'не совпадает со значением поля %{attribute}'
       empty: не может быть пустым
       equal_to: может иметь лишь значение, равное %{count}
       even: может иметь лишь нечетное значение
