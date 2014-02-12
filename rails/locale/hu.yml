@@ -55,14 +55,14 @@ hu:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: kb 1 órája
-        other: kb %{count} órája
+        one: kb. 1 órája
+        other: kb. %{count} órája
       about_x_months:
-        one: kb 1 hónapja
-        other: kb %{count} hónapja
+        one: kb. 1 hónapja
+        other: kb. %{count} hónapja
       about_x_years:
-        one: kb 1 éve
-        other: kb %{count} éve
+        one: kb. 1 éve
+        other: kb. %{count} éve
       almost_x_years:
         one: majdnem 1 éve
         other: majdnem %{count} éve
@@ -129,8 +129,8 @@ hu:
       prompt: Válasszon
     submit:
       create: Új %{model}
-      submit: ! '%{model} Mentése'
-      update: ! '%{model} Módosítása'
+      submit: ! '%{model} mentése'
+      update: ! '%{model} módosítása'
   number:
     currency:
       format:
@@ -151,11 +151,11 @@ hu:
       decimal_units:
         format: ! '%n %u'
         units:
-          billion: Milliárd
-          million: Millió
-          quadrillion: Kvadrillió
-          thousand: Ezer
-          trillion: Trillió
+          billion: milliárd
+          million: millió
+          quadrillion: billiárd
+          thousand: ezer
+          trillion: billió
           unit: ''
       format:
         delimiter: ''
