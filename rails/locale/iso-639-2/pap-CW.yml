@@ -1,0 +1,212 @@
+# pap-CW by M. Madurao for Suares & Co
+pap-CW:
+  date:
+    abbr_day_names:
+    - Dum
+    - Lun
+    - Mar
+    - Ras
+    - Wep
+    - Biè
+    - Sab
+    abbr_month_names:
+    -
+    - yan
+    - feb
+    - mar
+    - apr
+    - mei
+    - yün
+    - yül
+    - oug
+    - sèp
+    - òkt
+    - nov
+    - des
+    day_names:
+    - djadumingu
+    - djaluna
+    - djamars
+    - djárason
+    - djaweps
+    - djabièrnè
+    - djasabra
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%B di %d, %Y'
+      short: ! '%b di %d'
+    month_names:
+    -
+    - yanüari
+    - febrüari
+    - mart
+    - aprel
+    - mei
+    - yüni
+    - yüli
+    - ougùstùs
+    - sèptèmber
+    - òktober
+    - novèmber
+    - desèmber
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: mas o ménos 1 ora
+        other: mas o ménos %{count} ora
+      about_x_months:
+        one: mas o ménos 1 luna
+        other: about %{count} luna
+      about_x_years:
+        one: mas o ménos 1 aña
+        other: mas o ménos %{count} aña
+      almost_x_years:
+        one: kasi 1 aña
+        other: kasi %{count} aña
+      half_a_minute: mei minüt
+      less_than_x_minutes:
+        one: ménos ku un minüt
+        other: ménos ku %{count} minüt
+      less_than_x_seconds:
+        one: ménos ku 1 sekònde
+        other: ménos ku %{count} sekònde
+      over_x_years:
+        one: mas ku 1 aña
+        other: mas ku %{count} aña
+      x_days:
+        one: 1 dia
+        other: ! '%{count} dia'
+      x_minutes:
+        one: 1 minüt
+        other: ! '%{count} minüt'
+      x_months:
+        one: 1 month
+        other: ! '%{count} luna'
+      x_seconds:
+        one: 1 second
+        other: ! '%{count} sekònde'
+    prompts:
+      day: Dia
+      hour: Ora
+      minute: Minüt
+      month: Luna
+      second: Sekònde
+      year: Aña
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: mester asept'é
+      blank: no por keda sin yen'é
+      present: mester keda bashí
+      confirmation: ! "no ta meskos %{attribute}"
+      empty: no por keda bashí
+      equal_to: mester ta meskos ku %{count}
+      even: mester ta par
+      exclusion: ta reservá
+      greater_than: mester ta mas grandi ku %{count}
+      greater_than_or_equal_to: mester ta mes òf mas grandi ku %{count}
+      inclusion: no ta aparesé den e lista
+      invalid: no ta bálido
+      less_than: mester ta ménos ku %{count}
+      less_than_or_equal_to: mester ta ménos òf mes tantu ku %{count}
+      not_a_number: no ta un number
+      not_an_integer: mester ta un number hinté
+      odd: mester ta impar
+      record_invalid: ! 'Validashon a faya: %{errors}'
+      restrict_dependent_destroy:
+        one: "No por kita e registro akí pasobra un otro %{record} ta dependé di dje"
+        many: "No por kita e registro akí pasobra otro %{record} ta dependé di dje"
+      taken: ta usá kaba
+      too_long:
+        one: ta muchu largu (máksimo ta 1 karakter)
+        other: ta muchu largu (máksimo ta %{count} karakter)
+      too_short:
+        one: ta muchu kòrtiku (mínimo ta 1 karakter)
+        other: is too short (mínimo ta %{count} karakter)
+      wrong_length:
+        one: su largura no ta korekto (mester ta 1 karakter)
+        other: su largura no ta korekto (mester ta %{count} karakter)
+      other_than: "no por ta %{count}"
+    template:
+      body: ! 'E siguiente rúbrikanan ta duna problema:'
+      header:
+        one: 1 fout a pone ku no por a save e %{model} akí
+        other: ! '%{count} fout a pone ku no por a save e %{model} akí'
+  helpers:
+    select:
+      prompt: Por fabor skohe
+    submit:
+      create: Krea %{model}
+      submit: Warda %{model}
+      update: Aktualisá %{model}
+  number:
+    currency:
+      format:
+        delimiter: ! '.'
+        format: ! '%u%n'
+        precision: 2
+        separator: ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: ANG
+    format:
+      delimiter: ! '.'
+      precision: 3
+      separator: ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: bion
+          million: mion
+          quadrillion: kuatrion
+          thousand: mil
+          trillion: trion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', i '
+      two_words_connector: ! ' i '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      default: ! '%a, %d %b %Y %H.%M.%S %z'
+      long: ! '%B %d, %Y %H.%M'
+      short: ! '%d %b %H.%M'
+    pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
