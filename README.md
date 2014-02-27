@@ -110,6 +110,10 @@ Also, you can list all available locales:
 
     thor locales:list
 
+You can list all missing keys:
+
+    i18n-tasks missing es
+
 ### Edit README.md
 
 Add your locale name to the list in `README.md` if it isn't there.
