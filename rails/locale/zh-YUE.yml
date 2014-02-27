@@ -1,4 +1,4 @@
-zh-HK:
+zh-YUE:
   date:
     abbr_day_names:
     - 日
@@ -55,30 +55,30 @@ zh-HK:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: 約一小時
-        other: 約%{count}小時
+        one: 大概一個鐘
+        other: 大概%{count}個鐘
       about_x_months:
-        one: 約一個月
-        other: 約%{count}個月
+        one: 大概一個月
+        other: 大概%{count}個月
       about_x_years:
-        one: 約一年
-        other: 約%{count}年
+        one: 大概一年
+        other: 大概%{count}年
       almost_x_years:
-        one: 接近一年
-        other: 接近%{count}年
+        one: 差唔多一年
+        other: 差唔多%{count}年
       half_a_minute: 半分鐘
       less_than_x_minutes:
-        one: 不到一分鐘
-        other: 不到%{count}分鐘
+        one: 唔夠一分鐘
+        other: 唔夠%{count}分鐘
       less_than_x_seconds:
-        one: 不到一秒
-        other: 不到%{count}秒
+        one: 唔夠一秒
+        other: 唔夠%{count}秒
       over_x_years:
         one: 超過一年
         other: 超過%{count}年
       x_days:
-        one: 一天
-        other: ! '%{count}天'
+        one: 一日
+        other: ! '%{count}日'
       x_minutes:
         one: 一分鐘
         other: ! '%{count}分鐘'
@@ -90,7 +90,7 @@ zh-HK:
         other: ! '%{count}秒'
     prompts:
       day: 日
-      hour: 時
+      hour: 點
       minute: 分
       month: 月
       second: 秒
@@ -98,48 +98,48 @@ zh-HK:
   errors: &errors
     format: ! '%{message}'
     messages:
-      accepted: 必定要接受%{attribute}
-      blank: ! '%{attribute}不可以是空白'
-      present: ! '%{attribute}必定要是空白'
-      confirmation: ! '不符合%{attribute}'
-      empty: ! '%{attribute}不可以留空'
-      equal_to: ! '%{attribute}必須等於%{count}'
-      even: ! '%{attribute}必須要是雙數'
-      exclusion: ! '%{attribute}是被保留的關鍵字'
-      greater_than: ! '%{attribute}必須大於%{count}'
-      greater_than_or_equal_to: ! '%{attribute}必須大於或等於%{count}'
-      inclusion: ! '%{attribute}沒有包含在列表中'
-      invalid: ! '%{attribute}是無效的'
-      less_than: ! '%{attribute}必須小於%{count}'
-      less_than_or_equal_to: ! '%{attribute}必須小於或等於%{count}'
-      not_a_number: ! '%{attribute}不是數字'
-      not_an_integer: ! '%{attribute}必須是整數'
-      odd: ! '%{attribute}必須是單數'
-      record_invalid: ! '%{attribute}驗證失敗︰%{errors}'
+      accepted: 一定要接受%{attribute}
+      blank: ! '%{attribute}唔可以空白'
+      present: ! '%{attribute}要空白'
+      confirmation: ! '%{attribute}唔夾'
+      empty: ! '%{attribute}唔可以漏空'
+      equal_to: ! '%{attribute}要係%{count}'
+      even: ! '%{attribute}要係雙數'
+      exclusion: ! '%{attribute}唔用得'
+      greater_than: ! '%{attribute}要大過%{count}'
+      greater_than_or_equal_to: ! '%{attribute}要大過或者等於%{count}'
+      inclusion: ! '%{attribute}唔喺表入面'
+      invalid: ! '%{attribute}無效'
+      less_than: ! '%{attribute}要細過%{count}'
+      less_than_or_equal_to: ! '%{attribute}要細過或者等於%{count}'
+      not_a_number: ! '%{attribute}唔係一個數'
+      not_an_integer: ! '%{attribute}要係整數'
+      odd: ! '%{attribute}要係單數'
+      record_invalid: ! '%{attribute}有問題︰%{errors}'
       restrict_dependent_destroy:
-        one: 由於%{record}依賴此記錄，無法移除
-        many: 由於%{record}依賴此記錄，無法移除
-      taken: ! '%{attribute}已被使用'
+        one: 唔可以刪除，因為%{record}要用佢
+        many: 唔可以刪除，因為%{record}要用佢
+      taken: ! '%{attribute}已經用過'
       too_long:
-        one: 太長（最長為一個字元）
-        other: 太長（最長為%{count}個字元）
+        one: 太長（最多1個字）
+        other: 太長（最多%{count}個字）
       too_short:
-        one: 太短（最少為一個字元）
-        other: 太短（最少為%{count}個字元）
+        one: 太短（最少1個字）
+        other: 太短（最少%{count}個字）
       wrong_length:
-        one: 字數錯誤 (應為一個字元)
-        other: 字數錯誤 (應為%{count}個字元)
+        one: 唔啱字數 (要係1個字)
+        other: 唔啱字數 (要係%{count}個字)
       other_than: ! '%{attribute}唔可以係%{count}'
     template:
-      body: 以下欄位發生問題︰
+      body: 呢啲有問題︰
       header:
-        one: 發生一項錯誤，以致%{model}未能儲存。
-        other: 發生%{count}項錯誤，以致%{model}未能儲存。
+        one: 有一個問題，%{model}儲存唔到。
+        other: 有%{count}個問題，%{model}儲存唔到。
   helpers:
     select:
-      prompt: 請選擇
+      prompt: 喺度揀
     submit:
-      create: 新增%{model}
+      create: 新嘅%{model}
       submit: 儲存%{model}
       update: 更新%{model}
   number:
@@ -192,16 +192,16 @@ zh-HK:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! '和'
-      two_words_connector: ! '和'
+      last_word_connector: 同
+      two_words_connector: 同
       words_connector: 、
   time:
-    am: 上午
+    am: 上晝
     formats:
-      default: ! '%Y年%b%d日 %A %H:%M:%S %Z'
-      long: ! '%Y年%b%d日 %H:%M'
-      short: ! '%b%d日 %H:%M'
-    pm: 下午
+      default: ! '%Y年%b%d號 %A %H:%M:%S %Z'
+      long: ! '%Y年%b%d號 %H:%M'
+      short: ! '%b%d號 %H:%M'
+    pm: 下晝
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
