@@ -130,9 +130,9 @@ he:
     select:
       prompt: נא לבחור
     submit:
-      create: ! '%{model} יצירת'
-      submit: ! '%{model} שמור'
-      update: ! '%{model} עדכון'
+      create: ! 'יצירת %{model}'
+      submit: ! 'שמור %{model}'
+      update: ! 'עדכון %{model}'
   number:
     currency:
       format:
