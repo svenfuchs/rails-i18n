@@ -5,6 +5,7 @@
 #  - Jose BUSTAMANTE - (josebust@cisco.com)
 # Corrected by Christine Roque : christine@change.org
 # Additional correction by: https://github.com/Lioness8257
+# Additional corrections by: https://github.com/ariesandrada
 
 "tl":
   date:
@@ -158,7 +159,7 @@
          other: "humigit-kumulang %{count} buwan"
       x_months:
          one: isang buwan
-         other: "%{count} buwang"
+         other: "%{count} buwan"
       about_x_years:
          one: humigit-kumulang isang taon
          other: "humigit-kumulang %{count} taon"
@@ -186,35 +187,35 @@
       submit: "isumite ang %{model}"
 
   errors: &errors
-    format: "%{attribute} %{message}"
+    format: "%{attribute} ay %{message}"
 
     messages: &errors_messages
-      inclusion: ito ay hindi kasama sa listahan
-      exclusion: ito ay nakalaan
-      invalid: ito ay hindi wasto
-      confirmation: ito ay hindi tumutugma ang pagpapatunay
-      accepted: ito ay dapat na tanggapin
-      empty: ito ay hindi maaaring walang laman
-      blank: ito ay hindi maaaring maging katutubo
+      inclusion: hindi kasama sa listahan
+      exclusion: nakalaan na
+      invalid: hindi wasto
+      confirmation: hindi tumutugma ang pagpapatunay
+      accepted: dapat na tanggapin
+      empty: hindi maaaring walang laman
+      blank: hindi maaaring walang laman
       too_long:
-        one: "ito ay masyadong mahaba (maximum ay %{count} character)"
-        other: "ito ay masyadong mahaba (maximum ay %{count} character)"
+        one: "masyadong mahaba (pinakamadami ay %{count} character)"
+        other: "masyadong mahaba (pinakamadami ay %{count} character)"
       too_short:
-        one: "ito ay masyadong maikli (minimum ay %{count} character)"
-        other: "ito ay masyadong maikli (minimum ay %{count} character)"
+        one: "masyadong maikli (pinakakonti ay %{count} character)"
+        other: "masyadong maikli (pinakakonti ay %{count} character)"
       wrong_length:
-        one: ito ay ang maling haba (ito ay dapat %{count} character eksaktong)
-        other: ito ay ang maling haba (ito ay dapat %{count} character eksaktong)
-      not_a_number: ito ay hindi isang numero
+        one: ang maling haba (ito ay dapat eksaktong %{count} character)
+        other: ang maling haba (ito ay dapat eksaktong %{count} character)
+      not_a_number: hindi isang numero
       not_an_integer: dapat na isang integer
       greater_than: dapat na mas higit sa %{count}
       greater_than_or_equal_to: dapat na mas higit sa o katumbas ng %{count}
       equal_to: dapat na katumba sa %{count}
       less_than: dapat na mas mababa sa %{count}
       less_than_or_equal_to: dapat na mas mababa sa o katumbas ng %{count}
-      odd: dapat maging kakaibang
-      even: dapat maging kahit
-      taken: ay ginagamit
+      odd: dapat maging odd
+      even: dapat maging even
+      taken: ginagamit na
       record_invalid: "Nabigo ang pagpapatunay: %{errors}"
     template:
       header:
