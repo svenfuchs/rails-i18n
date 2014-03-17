@@ -66,6 +66,10 @@ lt:
         one: apie %{count} metus
         few: apie %{count} metus
         other: apie %{count} metų
+      almost_x_years:
+        one: beveik 1 metai
+        few: beveik %{count} metai
+        other: beveik %{count} metai
       half_a_minute: pusė minutės
       less_than_x_minutes:
         one: mažiau nei %{count} minutė
@@ -107,6 +111,7 @@ lt:
     messages:
       accepted: turi būti patvirtintas
       blank: negali būti tuščias
+      present: turi būti tuščias
       confirmation: neteisingai pakartotas
       empty: negali būti tuščias
       equal_to: turi būti lygus %{count}
@@ -119,17 +124,36 @@ lt:
       less_than: turi būti mažesnis už %{count}
       less_than_or_equal_to: turi būti mažesnis arba lygus %{count}
       not_a_number: ne skaičius
+      not_an_integer: privalo būti sveikas skaičius
       odd: turi būti nelyginis
+      record_invalid: ! 'Nepraeitos patikros: %{errors}'
+      restrict_dependent_destroy:
+        one: "Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja"
+        many: "Negalima ištrinti įrašo nes priklausomi %{record} egzistuoja"
       taken: jau užimtas
-      too_long: per ilgas (daugiausiai %{count} simboliai)
-      too_short: per trumpas (mažiausiai %{count} simboliai)
+      too_long:
+        one: per ilgas (daugiausiai 1 simbolis)
+        few: per ilgas (daugiausiai %{count} simboliai)
+        other: per ilgas (daugiausiai %{count} simboliai)
+      too_short:
+        one: per trumpas (mažiausiai 1 simbolis)
+        few: per trumpas (mažiausiai %{count} simboliai)
+        other: per trumpas (mažiausiai %{count} simboliai)
       wrong_length: neteisingo ilgio (turi būti %{count} simboliai)
+      other_than: "privalo būti kitoks nei %{count}"
     template:
       body: ! 'Šiuose laukuose yra klaidų:'
       header:
         one: Išsaugant objektą %{model} rasta %{count} klaida
         few: Išsaugant objektą %{model} rastos %{count} klaidos
         other: Išsaugant objektą %{model} rasta %{count} klaidų
+  helpers:
+    select:
+      prompt: Prašom pasirinkti
+    submit:
+       create: Sukurti %{model}
+       submit: Išsaugoti %{model}
+       update: Papildyti %{model}
   number:
     currency:
       format:
@@ -150,6 +174,11 @@ lt:
       decimal_units:
         format: ! '%n %u'
         units:
+          billion: Milijardas
+          million: Milijonas
+          quadrillion: Kvadrilijonas
+          thousand: Tūkstantis
+          trillion: Trilijonas
           unit: ''
       format:
         delimiter: ''
@@ -170,6 +199,7 @@ lt:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
