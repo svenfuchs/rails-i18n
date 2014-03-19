@@ -69,7 +69,7 @@ lt:
       almost_x_years:
         one: beveik 1 metai
         few: beveik %{count} metai
-        other: beveik %{count} metai
+        other: beveik %{count} metų
       half_a_minute: pusė minutės
       less_than_x_minutes:
         one: mažiau nei %{count} minutė
@@ -134,11 +134,11 @@ lt:
       too_long:
         one: per ilgas (daugiausiai 1 simbolis)
         few: per ilgas (daugiausiai %{count} simboliai)
-        other: per ilgas (daugiausiai %{count} simboliai)
+        other: per ilgas (daugiausiai %{count} simbolių)
       too_short:
         one: per trumpas (mažiausiai 1 simbolis)
         few: per trumpas (mažiausiai %{count} simboliai)
-        other: per trumpas (mažiausiai %{count} simboliai)
+        other: per trumpas (mažiausiai %{count} simbolių)
       wrong_length: neteisingo ilgio (turi būti %{count} simboliai)
       other_than: "privalo būti kitoks nei %{count}"
     template:
