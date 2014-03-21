@@ -31,9 +31,9 @@ fi:
     - perjantai
     - lauantai
     formats:
-      default: ! '%e. %Bta %Y'
+      default: ! '%-d.%-m.%Y'
       long: ! '%A %e. %Bta %Y'
-      short: ! '%e.%m.%Y'
+      short: ! '%d. %b'
     month_names:
     -
     - tammikuu
