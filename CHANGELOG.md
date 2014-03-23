@@ -1,3 +1,6 @@
+## 3.0.1 (2014-03-23)
+ - Fix Russian translation (ru)
+
 ## 3.0.0 (2013-10-05)
  - Fix currency separator and delimiters for es-AR, fi, ro and sv
  - Fix 'errors.messages.too_(long|short)' for German (de)
