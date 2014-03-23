@@ -1,5 +1,7 @@
 require 'spork'
 
+I18n.enforce_available_locales = false
+
 module RailsI18n
   module Spec
     module FakeApp
