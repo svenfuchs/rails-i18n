@@ -54,17 +54,17 @@ Available locales are:
 > es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PA, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
 > he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, kn, ko, lo, lt, lv, mk, mn, ms, nb,
 > ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, th,
-> tl, tr, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW
+> tl, tr, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Following locales are complete:
 
-> bs, da, en, en-US, es-EC, es-PA, hr, is, ja, nl, sr, ur, zh-HK
+> bs, da, en, en-US, es-EC, es-PA, fr, hr, is, ja, lt, nl, sr, ur, zh-HK, zh-YUE
 
 Following locales have some missing translations or pluralizations:
 
 > af, ar, az, bg, bn, ca, cs, cy, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, eo,
-> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH,
-> gl, he, hi, hi-IN, hu, id, it, it-CH, kn, ko, lo, lt, lv, mk, mn, ms, nb,
+> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-VE, et, eu, fa, fi, fr-CA, fr-CH,
+> gl, he, hi, hi-IN, hu, id, it, it-CH, kn, ko, lo, lv, mk, mn, ms, nb,
 > ne, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sv, sw, th,
 > tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
 
