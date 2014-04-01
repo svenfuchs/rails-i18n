@@ -100,6 +100,7 @@ es-CL:
     messages:
       accepted: debe ser aceptado
       blank: no puede estar en blanco
+      present: debe estar en blanco
       confirmation: no coincide con la confirmación
       empty: no puede estar vacío
       equal_to: debe ser igual a %{count}
@@ -115,10 +116,20 @@ es-CL:
       not_an_integer: debe ser un entero
       odd: debe ser impar
       record_invalid: ! 'La validación falló: %{errors}'
+      restrict_dependent_destroy:
+        one: "No se puede eliminar el registro porque existe un(a) %{record} dependiente"
+        many: "No se puede eliminar el registro porque existen %{record} dependientes"
       taken: ya está en uso
-      too_long: es demasiado largo (%{count} caracteres máximo)
-      too_short: es demasiado corto (%{count} caracteres mínimo)
-      wrong_length: no tiene la longitud correcta (%{count} caracteres exactos)
+      too_long:
+        one: "es demasiado largo (1 carácter máximo)"
+        other: "es demasiado largo (%{count} caracteres máximo)"
+      too_short:
+        one: "es demasiado corto (1 carácter mínimo)"
+        other: "es demasiado corto (%{count} caracteres mínimo)"
+      wrong_length:
+        one: "no tiene la longitud correcta (1 carácter exactos)"
+        other: "no tiene la longitud correcta (%{count} caracteres exactos)"
+      other_than: "debe ser diferente a %{count}"
     template:
       body: ! 'Se encontraron problemas con los siguientes campos:'
       header:
