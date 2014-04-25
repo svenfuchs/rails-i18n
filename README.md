@@ -53,12 +53,12 @@ Available locales are:
 > af, ar, az, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, el, en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, eo,
 > es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PA, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
 > he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, kn, ko, lo, lt, lv, mk, mn, ms, nb,
-> ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, th,
+> ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, ta, th,
 > tl, tr, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Following locales are complete:
 
-> bs, da, en, en-US, es-EC, es-PA, fr, hr, is, ja, lt, nl, sr, ur, zh-HK, zh-YUE
+> bs, da, en, en-US, es-EC, es-PA, fr, hr, is, ja, lt, nl, sr, ta, ur, zh-HK, zh-YUE
 
 Following locales have some missing translations or pluralizations:
 
