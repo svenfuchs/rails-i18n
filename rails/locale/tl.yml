@@ -186,7 +186,7 @@
       update: "i-update ang %{model}"
       submit: "isumite ang %{model}"
 
-  errors: &errors
+  errors:
     format: "%{attribute} ay %{message}"
 
     messages: &errors_messages
@@ -222,10 +222,3 @@
         one: "hindi maaaring i-save ang %{model} na ito dahil sa isang error"
         other: "hindi maaaring i-save ang %{model} na ito dahil sa %{count} error"
       body: "May mga problema sa mga sumusunod na patlang:"
-
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

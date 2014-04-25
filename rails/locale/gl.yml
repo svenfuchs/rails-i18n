@@ -88,7 +88,7 @@ gl:
       x_seconds:
         one: 1 segundo
         other: ! '%{count} segundos'
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: debe ser aceptado
@@ -169,10 +169,3 @@ gl:
       long: ! '%A %e de %B de %Y ás %H:%M'
       short: ! '%e/%m, %H:%M'
     pm: ''
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

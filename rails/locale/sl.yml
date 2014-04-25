@@ -117,7 +117,7 @@ sl:
       month: Mesec
       second: Sekunde
       year: Leto
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mora biti sprejeto
@@ -203,10 +203,3 @@ sl:
       long: ! '%d. %B, %Y ob %H:%M'
       short: ! '%d. %b ob %H:%M'
     pm: popoldan
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

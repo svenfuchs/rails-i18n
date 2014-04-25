@@ -139,7 +139,7 @@ ar:
       month: الشهر
       second: ثانية
       year: السنة
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: يجب أن تقبل
@@ -242,10 +242,3 @@ ar:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: مساءا
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

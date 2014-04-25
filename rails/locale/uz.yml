@@ -117,7 +117,7 @@ uz:
       month: oy
       second: soniya
       year: yil
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: tasdiqlash kerak
@@ -248,10 +248,3 @@ uz:
       long: ! '%d %B %Y, %H:%M'
       short: ! '%d %b, %H:%M'
     pm: kechasi
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

@@ -95,7 +95,7 @@ zh-TW:
       month: 月
       second: 秒
       year: 年
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: 必須是可被接受的
@@ -201,10 +201,3 @@ zh-TW:
       long: ! '%Y年%b%d日 %H:%M'
       short: ! '%b%d日 %H:%M'
     pm: 下午
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

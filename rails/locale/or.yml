@@ -95,7 +95,7 @@ or:
       month: ମାସ
       second: ସେକଣ୍ଢ
       year: ବର୍ଷ
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: ଗ୍ରହଣ କରିବାର ଅଛି
@@ -190,10 +190,3 @@ or:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ଅପରାହ୍ନ
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

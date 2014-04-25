@@ -95,7 +95,7 @@ hu:
       month: Hónap
       second: Másodperc
       year: Év
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: nincs elfogadva
@@ -190,10 +190,3 @@ hu:
       long: ! '%Y. %B %e., %A, %H:%M'
       short: ! '%b %e., %H:%M'
     pm: du.
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

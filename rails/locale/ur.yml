@@ -95,7 +95,7 @@ ur:
       month: ماہ
       second: سیکنڈ
       year: سال
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: قبول ہونا ضروری ہے
@@ -202,10 +202,3 @@ ur:
       default: ! '%a، %d %b %Y، %p %l:%M %Z'
       long: ! '%B %d، %Y %p %H:%M'
       short: ! '%d %b، %H:%M'
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

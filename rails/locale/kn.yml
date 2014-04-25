@@ -95,7 +95,7 @@ kn:
       month: ತಿಂಗಳು
       second: ಸೆಕೆಂಡು
       year: ವರುಷ
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: ಒಪ್ಪಿಕೊಳ್ಳಬೇಕು
@@ -190,10 +190,3 @@ kn:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ಅಪರನ್ನಃ
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

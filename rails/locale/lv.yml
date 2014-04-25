@@ -106,7 +106,7 @@ lv:
       month: mēnesis
       second: sekunde
       year: gads
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: ir jāpiekrīt
@@ -227,10 +227,3 @@ lv:
       long: ! '%Y. gada %e. %B, %H:%M:%S'
       short: ! '%d.%m.%Y., %H:%M'
     pm: pēcpusdiena
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

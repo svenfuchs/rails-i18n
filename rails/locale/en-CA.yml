@@ -104,7 +104,7 @@ en-CA:
       month: Month
       second: Seconds
       year: Year
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: must be accepted
@@ -205,10 +205,3 @@ en-CA:
       long: ! '%B %d, %Y %I:%M %p'
       short: ! '%d %b %I:%M %p'
     pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

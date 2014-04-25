@@ -95,7 +95,7 @@ et:
       month: Kuu
       second: Sekundit
       year: Aasta
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: peab olema heaks kiidetud
@@ -190,10 +190,3 @@ et:
       long: ! '%a, %d. %b %Y, %H:%M:%S %z'
       short: ! '%d.%m.%y, %H:%M'
     pm: pärast lõunat
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

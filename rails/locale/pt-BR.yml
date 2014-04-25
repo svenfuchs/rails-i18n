@@ -95,7 +95,7 @@ pt-BR:
       month: Mês
       second: Segundo
       year: Ano
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: deve ser aceito
@@ -202,10 +202,3 @@ pt-BR:
       long: ! '%d de %B de %Y, %H:%M'
       short: ! '%d de %B, %H:%M'
     pm: ''
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

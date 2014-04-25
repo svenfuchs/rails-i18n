@@ -95,7 +95,7 @@ pt:
       month: Mês
       second: Segundo
       year: Ano
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: tem de ser aceite
@@ -198,10 +198,3 @@ pt:
       long: ! '%A, %d de %B de %Y, %H:%Mh'
       short: ! '%d/%m, %H:%M hs'
     pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

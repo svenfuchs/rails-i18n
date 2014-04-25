@@ -95,7 +95,7 @@ ko:
       month: 월
       second: 초
       year: 년
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: 을(를) 반드시 확인해야 합니다
@@ -188,10 +188,3 @@ ko:
       long: ! '%Y년 %B월 %d일, %H시 %M분 %S초 %Z'
       short: ! '%y/%m/%d %H:%M'
     pm: 오후
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
