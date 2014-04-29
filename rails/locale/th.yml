@@ -73,7 +73,7 @@ th:
       month: เดือน
       second: วินาที
       year: ปี
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: ต้องถูกยอมรับ
@@ -164,10 +164,3 @@ th:
       long: ! '%d %B %Y %H:%M น.'
       short: ! '%d %b %H:%M น.'
     pm: หลังเที่ยง
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

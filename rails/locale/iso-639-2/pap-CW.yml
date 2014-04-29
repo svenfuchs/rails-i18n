@@ -96,7 +96,7 @@ pap-CW:
       month: Luna
       second: Sekònde
       year: Aña
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mester asept'é
@@ -203,10 +203,3 @@ pap-CW:
       long: ! '%B %d, %Y %H.%M'
       short: ! '%d %b %H.%M'
     pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

@@ -95,7 +95,7 @@ eu:
       month: Hilabete
       second: Segundu
       year: Urte
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: onartuta izan behar da
@@ -190,10 +190,3 @@ eu:
       long: ! '%Y(e)ko %Bren %e,  %H:%M'
       short: ! '%b %e, %H:%M'
     pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

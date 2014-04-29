@@ -85,7 +85,7 @@ nn:
       x_seconds:
         one: 1 sekund
         other: ! '%{count} sekund'
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: må vera akseptert
@@ -151,10 +151,3 @@ nn:
       long: ! '%A, %e. %B %Y, %H:%M'
       short: ! '%e. %B, %H:%M'
     pm: ''
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

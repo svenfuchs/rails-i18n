@@ -132,7 +132,7 @@ rm:
       month: mais
       second: secundas
       year: onns
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: sto vegnir acceptà
@@ -221,10 +221,3 @@ rm:
       long: ! '%A, %d. %B %Y, %H:%M Uhr'
       short: ! '%d. %B, %H:%M Uhr'
     pm: suentermezdi
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

@@ -95,7 +95,7 @@ ta:
       month: மாதம்
       second: விநாடிகள்
       year: ஆண்டு
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: ஏற்கப்பட வேண்டும்
@@ -202,10 +202,3 @@ ta:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: பி.ப.
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

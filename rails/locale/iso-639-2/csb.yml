@@ -106,7 +106,7 @@ csb:
       month: Miesiąc
       second: Sekunda
       year: Rok
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mùszi bëc zaakceptowóné
@@ -201,10 +201,3 @@ csb:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: pò pôłnim
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

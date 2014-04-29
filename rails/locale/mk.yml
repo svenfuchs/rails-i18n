@@ -95,7 +95,7 @@ mk:
       month: Месец
       second: Секунди
       year: Година
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: мора да биде прифатен
@@ -196,10 +196,3 @@ mk:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ПМ
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
