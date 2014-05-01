@@ -101,7 +101,7 @@ nl:
       accepted: moet worden geaccepteerd
       blank: moet opgegeven zijn
       present: moet leeg zijn
-      confirmation: komt niet met de bevestiging overeen
+      confirmation: ! "komt niet overeen met %{attribute}"
       empty: moet opgegeven zijn
       equal_to: moet gelijk zijn aan %{count}
       even: moet even zijn
