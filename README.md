@@ -51,7 +51,7 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 Available locales are:
 
 > af, ar, az, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, el, en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, eo,
-> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PA, es-PE, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
+> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PA, es-PE, es-US, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
 > he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, kn, ko, lo, lt, lv, mk, mn, ms, nb,
 > ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, ta, th,
 > tl, tr, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
@@ -63,7 +63,7 @@ Following locales are complete:
 Following locales have some missing translations or pluralizations:
 
 > af, ar, az, bg, bn, ca, cs, cy, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, eo,
-> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-VE, et, eu, fa, fi, fr-CA, fr-CH,
+> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-US, es-VE, et, eu, fa, fi, fr-CA, fr-CH,
 > gl, he, hi, hi-IN, hu, id, it, it-CH, kn, ko, lo, lv, mk, mn, ms, nb,
 > ne, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sv, sw, th,
 > tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
