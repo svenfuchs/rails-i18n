@@ -149,7 +149,7 @@ af:
         separator: .
         significant: vals
         strip_insignificant_zeros: vals
-        unit: $
+        unit: R
     format:
       delimiter: ! ','
       precision: 3
