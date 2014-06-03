@@ -63,6 +63,7 @@ nn:
       about_x_years:
         one: rundt 1 år
         other: rundt %{count} år
+      almost_x_years: nesten %{count} år
       half_a_minute: eit halvt minutt
       less_than_x_minutes:
         one: mindre enn 1 minutt
@@ -85,11 +86,19 @@ nn:
       x_seconds:
         one: 1 sekund
         other: ! '%{count} sekund'
+    prompts:
+      day: Dag
+      hour: Time
+      minute: Minutt
+      month: Månad
+      second: Sekund
+      year: År
   errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: må vera akseptert
       blank: kan ikkje vera blank
+      present: må vera blank
       confirmation: er ikkje stadfesta
       empty: kan ikkje vera tom
       equal_to: må vera lik %{count}
@@ -102,14 +111,27 @@ nn:
       less_than: må vera mindre enn %{count}
       less_than_or_equal_to: må vera mindre enn eller lik %{count}
       not_a_number: er ikkje eit tal
+      not_an_integer: er ikkje eit heiltal
       odd: må vera oddetal
-      taken: er allerie i bruk
+      record_invalid: ! 'Valideringa mislukka: %{errors}'
+      restrict_dependent_destroy:
+        one: "Kan ikkje sletta registreringa, fordi 1 avhengig %{record} finst."
+        many: "Kan ikkje sletta registreringa, fordi avhengige %{record} finst."
+      taken: er allereie i bruk
       too_long: er for lang (maksimum %{count} teikn)
       too_short: er for kort (minimum %{count} teikn)
       wrong_length: har feil lengde (maksimum %{count} teikn)
+      other_than: "må vera noko anna enn %{count}"
     template:
       body: ! 'det oppstod problem i følgjande felt:'
       header: kunne ikkje lagra %{model} grunna %{count} feil.
+  helpers:
+    select:
+      prompt: Gjer eit val
+    submit:
+      create: Lag %{model}
+      submit: Lagr %{model}
+      update: Oppdater %{model}
   number:
     currency:
       format:
@@ -130,6 +152,19 @@ nn:
       decimal_units:
         format: ! '%n %u'
         units:
+          billion:
+            one: milliard
+            other: milliardar
+          million:
+            one: million
+            other: millionar
+          quadrillion:
+            one: billiard
+            other: billiardar
+          thousand: tusen
+          trillion:
+            one: billion
+            other: billionar
           unit: ''
       format:
         delimiter: ''
@@ -138,12 +173,25 @@ nn:
         strip_insignificant_zeros: true
       storage_units:
         format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: kB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
     precision:
       format:
         delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' og '
+      two_words_connector: ! ' og '
+      words_connector: ', '
   time:
     am: ''
     formats:
