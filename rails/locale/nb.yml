@@ -100,6 +100,7 @@ nb:
     messages:
       accepted: må være akseptert
       blank: kan ikke være blank
+      present: må være blank
       confirmation: passer ikke bekreftelsen
       empty: kan ikke være tom
       equal_to: må være lik %{count}
@@ -115,10 +116,14 @@ nb:
       not_an_integer: er ikke et heltall
       odd: må være oddetall
       record_invalid: ! 'Det oppstod feil: %{errors}'
+      restrict_dependent_destroy:
+        one: "Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne."
+        many: "Kan ikke slette registreringen, fordi %{record} avhenger av denne."
       taken: er allerede i bruk
       too_long: er for lang (maksimum %{count} tegn)
       too_short: er for kort (minimum %{count} tegn)
       wrong_length: er av feil lengde (maksimum %{count} tegn)
+      other_than: "kan ikke være nøyaktig %{count}"
     template:
       body: ! 'Det oppstod problemer i følgende felt:'
       header:
