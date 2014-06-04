@@ -185,6 +185,6 @@ ko:
     am: 오전
     formats:
       default: ! '%Y/%m/%d %H:%M:%S'
-      long: ! '%Y년 %B월 %d일, %H시 %M분 %S초 %Z'
+      long: ! '%Y년 %m월 %d일, %H시 %M분 %S초 %Z'
       short: ! '%y/%m/%d %H:%M'
     pm: 오후
