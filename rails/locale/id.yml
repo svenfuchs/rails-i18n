@@ -62,7 +62,7 @@ id:
         other: sekitar %{count} bulan
       about_x_years:
         one: setahun
-        other: noin %{count} tahun
+        other: sekitar %{count} tahun
       almost_x_years:
         one: hampir setahun
         other: hampir %{count} tahun
