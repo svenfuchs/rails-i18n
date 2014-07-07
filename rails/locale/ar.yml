@@ -55,28 +55,28 @@ ar:
   datetime:
     distance_in_words:
       about_x_hours:
-        zero: ! 'حوالي %{count} ساعات'
+        zero: ! 'حوالي صفر ساعات'
         one: حوالي ساعة واحدة
         two: ! 'حوالي ساعتان'
         few: ! 'حوالي %{count} ساعات'
         many: ! 'حوالي %{count} ساعة'
         other: ! 'حوالي %{count} ساعة'
       about_x_months:
-        zero: ! 'حوالي %{count} شهر'
+        zero: ! 'حوالي صفر أشهر'
         one: حوالي شهر واحد
         two: ! 'حوالي شهران'
         few: ! 'حوالي %{count} أشهر'
         many: ! 'حوالي %{count} شهر'
         other: ! 'حوالي %{count} شهر'
       about_x_years:
-        zero: ! 'حوالي %{count} سنوات'
+        zero: ! 'حوالي صفر سنوات'
         one: حوالي سنة
         two: ! 'حوالي سنتان'
         few: ! 'حوالي %{count} سنوات'
         many: ! 'حوالي %{count} سنة'
         other: ! 'حوالي %{count} سنة'
       almost_x_years:
-        zero: ما يقرب من %{count} سنة
+        zero: ! 'ما يقرب من صفر سنوات'
         one: تقريبا سنة واحدة
         two: ما يقرب من سنتين
         few: ما يقرب من %{count} سنوات
@@ -84,49 +84,49 @@ ar:
         other: ما يقرب من %{count} سنة
       half_a_minute: نصف دقيقة
       less_than_x_minutes:
-        zero: ! 'أقل من %{count} دقيقة'
+        zero: ! 'أقل من صفر دقائق'
         one: أقل من دقيقة
         two: ! 'أقل من دقيقتان'
         few: ! 'أقل من %{count} دقائق'
         many: ! 'أقل من %{count} دقيقة'
         other: ! 'أقل من %{count} دقيقة'
       less_than_x_seconds:
-        zero: ! 'أقل من %{count} ثانية'
+        zero: ! 'أقل من صفر ثواني'
         one: أقل من ثانية
         two: ! 'أقل من ثانيتان'
         few: ! 'أقل من %{count} ثوان'
         many: ! 'أقل من %{count} ثانية'
         other: ! 'أقل من %{count} ثانية'
       over_x_years:
-        zero: ! 'أكثر من %{count} سنة'
+        zero: ! 'أكثر من صفر سنوات'
         one: أكثر من سنة
         two: ! 'أكثر من سنتين'
         few: ! 'أكثر من %{count} سنوات'
         many: ! 'أكثر من %{count} سنة'
         other: ! 'أكثر من %{count} سنة'
       x_days:
-        zero: ! '%{count} يوم'
+        zero: ! 'صفر أيام'
         one: يوم واحد
         two: ! 'يومان'
         few: ! '%{count} أيام'
         many: ! '%{count} يوم'
         other: ! '%{count} يوم'
       x_minutes:
-        zero: ! '%{count} دقيقة'
+        zero: ! 'صفر دقائق'
         one: دقيقة واحدة
         two: ! 'دقيقتان'
         few: ! '%{count} دقائق'
         many: ! '%{count} دقيقة'
         other: ! '%{count} دقيقة'
       x_months:
-        zero: ! '%{count} شهر'
+        zero: ! 'صفر أشهر'
         one: شهر واحد
         two: ! 'شهران'
         few: ! '%{count} أشهر'
         many: ! '%{count} شهر'
         other: ! '%{count} شهر'
       x_seconds:
-        zero: ! '%{count} ثانية'
+        zero: ! 'صفر ثواني'
         one: ثانية واحدة
         two: ! 'ثانيتان'
         few: ! '%{count} ثوان'
@@ -144,34 +144,63 @@ ar:
     messages:
       accepted: يجب أن تقبل
       blank: فارغ، يرجى ملء الحقل
-      confirmation: لا تتوافق مع التأكيد
+      present: يجب ترك الحقل فارغاً
+      confirmation: ! "لا يتوافق مع %{attribute}"
       empty: فارغ، يرجى ملء الحقل
       equal_to: يجب أن يساوي %{count}
       even: يجب أن يكون زوجي
       exclusion: محجوز
       greater_than: يجب أن يكون أكبر من %{count}
       greater_than_or_equal_to: يجب أن يكون أكبر من أو يساوي %{count}
-      inclusion: ليس خيارا مقبولا
-      invalid: غير معرف أو محدد
+      inclusion: غير مدرج في القائمة
+      invalid: غير مقبول
       less_than: يجب أن يكون أصغر من %{count}
       less_than_or_equal_to: يجب أن يكون أصغر من أو يساوي %{count}
       not_a_number: ليس رقما
-      not_an_integer: يجب أن يكون صحيحا
+      not_an_integer: يجب أن يكون عدداً صحيحاً
       odd: يجب أن يكون فردي
-      record_invalid: ! '%{errors} فشل التحقق من صحة'
-      taken: غير متوفر (مستخدم)
-      too_long: أطول من اللازم (الحد الأقصى هو %{count})
-      too_short: أقصر من اللازم (الحد الأدنى هو %{count})
-      wrong_length: بطول غير مناسب (يجب أن يكون %{count})
+      record_invalid: ! 'فشل التحقق من: %{errors}'
+      restrict_dependent_destroy:
+        one: "لا يمكن حذف السجل لوجود سجل يعتمد عليه %{record}"
+        many: "لا يمكن حذف السجل لوجود سجلات تعتمد عليه %{record}"
+      taken: محجوز مسبقاً
+      too_long:
+        zero: أطول من اللازم (الحد الأقصى هو ولا حرف)
+        one: أطول من اللازم (الحد الأقصى هو حرف واحد)
+        two: أطول من اللازم (الحد الأقصى هو حرفان)
+        few: أطول من اللازم (الحد الأقصى هو %{count} حروف)
+        many: أطول من اللازم (الحد الأقصى هو %{count} حرف)
+        other: أطول من اللازم (الحد الأقصى هو %{count} حرف)
+      too_short:
+        zero: أقصر من اللازم (الحد الأدنى هو ولا حرف)
+        one: أقصر من اللازم (الحد الأدنى هو حرف واحد)
+        two: أقصر من اللازم (الحد الأدنى هو حرفان)
+        few: أقصر من اللازم (الحد الأدنى هو %{count} حروف)
+        many: أقصر من اللازم (الحد الأدنى هو %{count} حرف)
+        other: أقصر من اللازم (الحد الأدنى هو %{count} حرف)
+      wrong_length:
+        zero: الطول غير مطابق للحد المطلوب (يجب أن يكون ولا حرف)
+        one: الطول غير مطابق للحد المطلوب (يجب أن يكون حرف واحد)
+        two: الطول غير مطابق للحد المطلوب (يجب أن يكون حرفان)
+        few: الطول غير مطابق للحد المطلوب (يجب أن يكون %{count} أحرف)
+        many: الطول غير مطابق للحد المطلوب (يجب أن يكون %{count} حرف)
+        other: الطول غير مطابق للحد المطلوب (يجب أن يكون %{count} حرف)
+      other_than:
+        zero: "الطول يجب ألاّ يكون صفر أحرف"
+        one: "الطول يجب ألاّ يكون حرفاً وحداً"
+        two: "الطول يجب ألاّ يكون حرفان"
+        few: "الطول يجب ألاّ يكون %{count} أحرف"
+        many: "الطول يجب ألاّ يكون %{count} حرفاً"
+        other: "الطول يجب ألاّ يكون %{count} حرفاً"
     template:
       body: ! 'يرجى التحقق من الحقول التالية:'
       header:
-        zero: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
+        zero: ! 'ليس بالامكان حفظ %{model}: لايوجد أخطاء.'
         one: ! 'ليس بالامكان حفظ %{model}: خطأ واحد.'
-        two: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
+        two: ! 'ليس بالامكان حفظ %{model}:  خطئان.'
         few: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
         many: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
-        other: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
+        other: ! 'ليس بالامكان حفظ %{model}: %{count} خطأ.'
   helpers:
     select:
       prompt: الرجاء اختيار
@@ -201,7 +230,7 @@ ar:
         units:
           billion: مليار
           million: مليون
-          quadrillion: الكدريليون رقم
+          quadrillion: كدريليون
           thousand: ألف
           trillion: تريليون
           unit: ''
@@ -227,18 +256,19 @@ ar:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', و '
+      last_word_connector: ! ' و '
       two_words_connector: ! ' و '
-      words_connector: ! ', '
+      words_connector: ! ' و '
   time:
-    am: صباحا
+    am: صباحاً
     formats:
       default: ! '%a %b %d %H:%M:%S %Z %Y'
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
-    pm: مساءا
+    pm: مساءً
