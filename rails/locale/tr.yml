@@ -128,7 +128,7 @@ tr:
         other: çok kısa (en az %{count} karakter)
       wrong_length:
         one: hatalı uzunlukta (1 karakter olmalı)
-        other: is the wrong length (should be %{count} characters)
+        other: hatalı uzunlukta (1 karakter olmalı)
       other_than: "%{count} karakterden oluşamaz"
     template:
       body: ! 'Lütfen aşağıdaki hataları düzeltiniz:'
@@ -176,7 +176,7 @@ tr:
       storage_units:
         format: ! '%n %u'
         units:
-          byte: Bayt
+          byte:
             one: Bayt
             other: Bayt
           gb: GB
