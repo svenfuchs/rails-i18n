@@ -133,8 +133,8 @@ tr:
     template:
       body: ! 'Lütfen aşağıdaki hataları düzeltiniz:'
       header:
-        one: ! '%{model} girişi kaydedilemedi: 1 hata.'
-        other: ! '%{model} girişi kadedilemedi: %{count} hata.'
+        one: 1 hata oluştuğu için %{model} kaydedilemedi
+        other: ! '%{count} hata oluştuğu için %{model} kaydedilemedi'
   helpers:
     select:
       prompt: Lütfen seçiniz
@@ -145,7 +145,7 @@ tr:
   number:
     currency:
       format:
-        delimiter: .
+        delimiter: ! '.'
         format: ! '%n %u'
         precision: 2
         separator: ! ','
@@ -177,13 +177,16 @@ tr:
         format: ! '%n %u'
         units:
           byte: Bayt
+            one: Bayt
+            other: Bayt
           gb: GB
           kb: KB
           mb: MB
           tb: TB
     percentage:
       format:
-        delimiter: .
+        delimiter: ''
+        format: "%%n"
     precision:
       format:
         delimiter: .
