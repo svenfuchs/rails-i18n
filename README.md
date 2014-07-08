@@ -58,7 +58,7 @@ Available locales are:
 
 Following locales are complete:
 
-> bs, da, en, en-US, en-ZA, es-EC, es-PA, fr, hr, is, ja, lt, nl, ru, sr, ta, ur, zh-HK, zh-YUE
+> bs, da, en, en-US, en-ZA, es-EC, es-PA, fr, hr, is, ja, lt, nl, ru, sr, ta, tr, ur, zh-HK, zh-YUE
 
 Following locales have some missing translations or pluralizations:
 
@@ -66,7 +66,7 @@ Following locales have some missing translations or pluralizations:
 > es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-US, es-VE, et, eu, fa, fi, fr-CA, fr-CH,
 > gl, he, hi, hi-IN, hu, id, it, it-CH, kn, ko, lo, lv, mk, mn, ms, nb,
 > ne, nn, or, pl, pt, pt-BR, rm, ro, sk, sl, sv, sw, th,
-> tl, tr, uk, uz, vi, wo, zh-CN, zh-TW
+> tl, uk, uz, vi, wo, zh-CN, zh-TW
 
 We always welcome your contributions!
 

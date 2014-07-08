@@ -70,11 +70,9 @@ tr:
       less_than_x_minutes:
         one: 1 dakikadan az
         other: ! '%{count} dakikadan az'
-        zero: 1 dakikadan az
       less_than_x_seconds:
         one: 1 saniyeden az
         other: ! '%{count} saniyeden az'
-        zero: 1 saniyeden az
       over_x_years:
         one: 1 yıldan fazla
         other: ! '%{count} yıldan fazla'
@@ -102,7 +100,8 @@ tr:
     messages:
       accepted: kabul edilmeli
       blank: doldurulmalı
-      confirmation: teyidiyle uyuşmamakta
+      present: boş bırakılmalı
+      confirmation: ! "%{attribute} teyidiyle uyuşmuyor"
       empty: doldurulmalı
       equal_to: tam olarak %{count} olmalı
       even: çift olmalı
@@ -117,15 +116,25 @@ tr:
       not_an_integer: tam sayı olmalı
       odd: tek olmalı
       record_invalid: ! 'Doğrulama başarısız oldu: %{errors}'
+      restrict_dependent_destroy:
+        one: "Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi"
+        many: "Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi"
       taken: hali hazırda kullanılmakta
-      too_long: çok uzun (en fazla %{count} karakter)
-      too_short: çok kısa (en az %{count} karakter)
-      wrong_length: yanlış uzunlukta (tam olarak %{count} karakter olmalı)
+      too_long:
+        one: çok uzun (en fazla 1 karakter)
+        other: çok uzun (en fazla %{count} karakter)
+      too_short:
+        one: çok kısa (en az 1 karakter)
+        other: çok kısa (en az %{count} karakter)
+      wrong_length:
+        one: hatalı uzunlukta (1 karakter olmalı)
+        other: hatalı uzunlukta (1 karakter olmalı)
+      other_than: "%{count} karakterden oluşamaz"
     template:
       body: ! 'Lütfen aşağıdaki hataları düzeltiniz:'
       header:
-        one: ! '%{model} girişi kaydedilemedi: 1 hata.'
-        other: ! '%{model} girişi kadedilemedi: %{count} hata.'
+        one: 1 hata oluştuğu için %{model} kaydedilemedi
+        other: ! '%{count} hata oluştuğu için %{model} kaydedilemedi'
   helpers:
     select:
       prompt: Lütfen seçiniz
@@ -136,7 +145,7 @@ tr:
   number:
     currency:
       format:
-        delimiter: .
+        delimiter: ! '.'
         format: ! '%n %u'
         precision: 2
         separator: ! ','
@@ -167,14 +176,17 @@ tr:
       storage_units:
         format: ! '%n %u'
         units:
-          byte: Bayt
+          byte:
+            one: Bayt
+            other: Bayt
           gb: GB
           kb: KB
           mb: MB
           tb: TB
     percentage:
       format:
-        delimiter: .
+        delimiter: ''
+        format: "%%n"
     precision:
       format:
         delimiter: .
