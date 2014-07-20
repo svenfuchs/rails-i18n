@@ -1,53 +1,53 @@
 fr-CH:
   date:
     abbr_day_names:
-    - Dim
-    - Lun
-    - Mar
-    - Mer
-    - Jeu
-    - Ven
-    - Sam
+    - dim
+    - lun
+    - mar
+    - mer
+    - jeu
+    - ven
+    - sam
     abbr_month_names:
     -
-    - Jan.
-    - Fév.
-    - Mar.
-    - Avr.
-    - Mai
-    - Juin
-    - Juil.
-    - Août
-    - Sept.
-    - Oct.
-    - Nov.
-    - Déc.
+    - jan.
+    - fév.
+    - mar.
+    - avr.
+    - mai
+    - juin
+    - juil.
+    - août
+    - sept.
+    - oct.
+    - nov.
+    - déc.
     day_names:
-    - Dimanche
-    - Lundi
-    - Mardi
-    - Mercredi
-    - Jeudi
-    - Vendredi
-    - Samedi
+    - dimanche
+    - lundi
+    - mardi
+    - mercredi
+    - jeudi
+    - vendredi
+    - samedi
     formats:
       default: ! '%d.%m.%Y'
       long: ! '%e %B %Y'
       short: ! '%e %b'
     month_names:
     -
-    - Janvier
-    - Février
-    - Mars
-    - Avril
-    - Mai
-    - Juin
-    - Juillet
-    - Août
-    - Septembre
-    - Octobre
-    - Novembre
-    - Décembre
+    - janvier
+    - février
+    - mars
+    - avril
+    - mai
+    - juin
+    - juillet
+    - août
+    - septembre
+    - octobre
+    - novembre
+    - décembre
     order:
     - :day
     - :month
