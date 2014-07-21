@@ -100,6 +100,7 @@ vi:
     messages:
       accepted: phải được đồng ý
       blank: không thể để trắng
+      present: cần phải để trắng
       confirmation: không khớp với xác nhận
       empty: không thể rỗng
       equal_to: phải bằng %{count}
@@ -114,10 +115,15 @@ vi:
       not_a_number: không phải là số
       not_an_integer: phải là một số nguyên
       odd: phải là số lẻ
+      record_invalid: ! 'Có các lỗi sau: %{errors}'
+      restrict_dependent_destroy:
+        one: "Không thể xóa do tồn tại đối tượng phụ thuộc %{record}"
+        many: "Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}"
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)
       wrong_length: độ dài không đúng (phải là %{count} ký tự)
+      other_than: "cần phải khác %{count}"
     template:
       body: ! 'Có lỗi với các mục sau:'
       header:
@@ -174,6 +180,7 @@ vi:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
