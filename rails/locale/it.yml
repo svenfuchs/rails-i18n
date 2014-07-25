@@ -100,6 +100,7 @@ it:
     messages:
       accepted: deve essere accettata
       blank: non può essere lasciato in bianco
+      present: deve essere lasciato in bianco
       confirmation: non coincide con la conferma
       empty: non può essere vuoto
       equal_to: deve essere uguale a %{count}
@@ -115,6 +116,9 @@ it:
       not_an_integer: non è un intero
       odd: deve essere dispari
       record_invalid: ! 'Validazione fallita: %{errors}'
+      restrict_dependent_destroy:
+        one: "Il record non può essere cancellato perchè esiste un %{record} dipendente"
+        many: "Il record non può essere cancellato perchè esistono %{record} dipendenti"
       taken: è già in uso
       too_long:
         one: è troppo lungo (il massimo è 1 carattere)
@@ -125,6 +129,7 @@ it:
       wrong_length:
         one: è della lunghezza sbagliata (deve essere di 1 carattere)
         other: è della lunghezza sbagliata (deve essere di %{count} caratteri)
+      other_than: "devono essere di numero diverso da %{count}"
     template:
       body: ! 'Per favore ricontrolla i seguenti campi:'
       header:
@@ -181,6 +186,7 @@ it:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
