@@ -194,7 +194,7 @@ fr-CA:
   time:
     am: am
     formats:
-      default: ! '%H:%M:%S'
-      long: ! '%A %d %B %Y %H:%M'
-      short: ! '%H:%M'
+      default: ! '%H h %M min %S s'
+      long: ! '%A %d %B %Y %H h %M'
+      short: ! '%H h %M'
     pm: pm
