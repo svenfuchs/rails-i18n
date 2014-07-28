@@ -11,7 +11,7 @@ hr:
     abbr_month_names:
     -
     - Sij
-    - Vel
+    - Veǉ
     - Ožu
     - Tra
     - Svi
@@ -32,8 +32,8 @@ hr:
     - Subota
     formats:
       default: ! '%d.%m.%Y.'
-      long: ! '%B %e, %Y'
-      short: ! '%e %b'
+      long: ! '%e. %B %Y.'
+      short: ! '%e.%-m.'
     month_names:
     -
     - Siječanj
@@ -181,7 +181,7 @@ hr:
         separator: .
         significant: false
         strip_insignificant_zeros: false
-        unit: Kn
+        unit: kn
     format:
       delimiter: .
       precision: 3
@@ -195,8 +195,8 @@ hr:
           thousand: Tisuća
           million: Milijun
           billion: Milijarda
-          trillion: Trilijun
-          quadrillion: Kvadrilijun
+          trillion: Bilijun
+          quadrillion: Bilijarda
           unit: ''
       format:
         delimiter: ''
@@ -224,13 +224,13 @@ hr:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', i '
+      last_word_connector: ! ' i '
       two_words_connector: ! ' i '
       words_connector: ! ', '
   time:
     am: AM
     formats:
-      default: ! '%a %b %d %H:%M:%S %Z %Y'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: ! '%d.%m.%Y. %H:%M:%S'
+      long: ! '%e. %B %Y. %H:%M'
+      short: ! '%e.%-m. %k:%M'
     pm: PM
