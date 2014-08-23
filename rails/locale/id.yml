@@ -102,7 +102,7 @@ id:
     messages:
       accepted: harus diterima
       blank: tidak bisa kosong
-      confirmation: tidak sesuai dengan konfirmasi
+      confirmation: ! 'tidak sesuai dengan %{attribute}'
       empty: tidak bisa kosong
       equal_to: harus sama dengan %{count}
       even: harus genap
