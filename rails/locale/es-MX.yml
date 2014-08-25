@@ -100,6 +100,7 @@ es-MX:
     messages:
       accepted: debe ser aceptado
       blank: no puede estar en blanco
+      present: debe estar en blanco
       confirmation: no coincide con la confirmación
       empty: no puede estar vacío
       equal_to: debe ser igual a %{count}
@@ -115,6 +116,9 @@ es-MX:
       not_an_integer: debe ser un entero
       odd: debe ser un número non
       record_invalid: ! 'La validación falló: %{errors}'
+      restrict_dependent_destroy:
+        one: "El registro no puede ser eliminado pues existe un %{record} dependiente"
+        many: "El registro no puede ser eliminado pues existen %{record} dependientes"
       taken: ya ha sido tomado
       too_long:
         one: es demasiado largo (máximo 1 caracter)
@@ -125,6 +129,7 @@ es-MX:
       wrong_length:
         one: longitud errónea (debe ser de 1 caracter)
         other: longitud errónea (debe ser de %{count} caracteres)
+      other_than: "debe ser diferente a %{count}"
     template:
       body: ! 'Revise que los siguientes campos sean válidos:'
       header:
@@ -181,6 +186,7 @@ es-MX:
     percentage:
       format:
         delimiter: ! ','
+        format: "%n%"
     precision:
       format:
         delimiter: ! ','
