@@ -115,6 +115,9 @@ de:
       not_an_integer: muss ganzzahlig sein
       odd: muss ungerade sein
       record_invalid: ! 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+      restrict_dependent_destroy:
+        one: ! 'Datensatz kann nicht gelöscht werden, da ein abhängiger %{record}-Datensatz existiert.'
+        many: ! 'Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.'
       taken: ist bereits vergeben
       too_long: ist zu lang (mehr als %{count} Zeichen)
       too_short: ist zu kurz (weniger als %{count} Zeichen)
