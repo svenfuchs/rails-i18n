@@ -1,6 +1,7 @@
 Rails Locale Data Repository
 ============================
 
+[![Gem Version](https://badge.fury.io/rb/rails-i18n.svg)](http://badge.fury.io/rb/rails-i18n)
 [![Build Status](https://secure.travis-ci.org/svenfuchs/rails-i18n.png)](http://travis-ci.org/svenfuchs/rails-i18n)
 
 Central point to collect locale data for use in Ruby on Rails.
