@@ -51,22 +51,15 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 Available locales are:
 
 > af, ar, az, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, el, en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, eo,
-> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PA, es-PE, es-US, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
-> he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, kn, ko, lo, lt, lv, mk, mn, ms, nb,
+> es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-MX, es-PA, es-PE, es-US, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
+> he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, km, kn, ko, lo, lt, lv, mk, mn, ms, nb,
 > ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, ta, th,
 > tl, tr, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
-Following locales are complete:
+Currently, no locales are complete. Typically they lack the following keys:
 
-> ar, bs, da, en, en-US, en-ZA, es-EC, es-PA, fr, hr, is, ja, lt, nl, ru, sr, ta, tr, ur, zh-HK, zh-YUE
-
-Following locales have some missing translations or pluralizations:
-
-> af, az, bg, bn, ca, cs, cy, de, de-AT, de-CH, el, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, eo,
-> es, es-419, es-AR, es-CL, es-CO, es-CR, es-MX, es-PE, es-US, es-VE, et, eu, fa, fi, fr-CA, fr-CH,
-> gl, he, hi, hi-IN, hu, id, it, it-CH, kn, ko, lo, lv, mk, mn, ms, nb,
-> ne, nn, or, pl, pt, pt-BR, rm, ro, sk, sl, sv, sw, th,
-> tl, uk, uz, vi, wo, zh-CN, zh-TW
+- `activerecord.errors.messages.record_invalid`
+- `activerecord.errors.messages.restrict_dependent_destroy`
 
 We always welcome your contributions!
 
