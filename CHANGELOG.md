@@ -1,3 +1,6 @@
+## 3.0.2 (2014-09-04)
+ - Add es-US translation
+
 ## 3.0.1 (2014-03-23)
  - Fix Russian translation (ru)
 

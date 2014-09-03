@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name         = "rails-i18n"
-  s.version      = '3.0.1'
+  s.version      = '3.0.2'
   s.authors      = ["Rails I18n Group"]
   s.email        = "rails-i18n@googlegroups.com"
   s.homepage     = "http://github.com/svenfuchs/rails-i18n"
@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
   s.rubyforge_project = '[none]'
   s.required_rubygems_version = '>= 1.3.5'
 
-  s.add_dependency "i18n", "~> 0.5"
-  s.add_dependency "rails", ">= 3.0.0", "< 4.0.0"
+  s.add_runtime_dependency "i18n", "~> 0.5"
+  s.add_runtime_dependency "rails", ">= 3.0.0", "< 4.0.0"
   s.add_development_dependency "rspec-rails", "= 2.14.0"
   s.add_development_dependency "i18n-spec", "= 0.3.0"
   s.add_development_dependency "spork", "= 1.0.0rc3"
