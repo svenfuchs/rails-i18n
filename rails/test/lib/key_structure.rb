@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'i18n'
 
+I18n.enforce_available_locales = false
+
 module I18n
   module Backend
     class Simple
