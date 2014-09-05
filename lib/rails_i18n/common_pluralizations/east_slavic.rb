@@ -7,10 +7,10 @@ module RailsI18n
   module Pluralization
     module EastSlavic
 
-      FROM_2_TO_4   = (2..4).to_set
-      FROM_5_TO_9   = (5..9).to_set
-      FROM_11_TO_14 = (11..14).to_set
-      FROM_12_TO_14 = (12..14).to_set
+      FROM_2_TO_4   = (2..4).freeze
+      FROM_5_TO_9   = (5..9).freeze
+      FROM_11_TO_14 = (11..14).freeze
+      FROM_12_TO_14 = (12..14).freeze
 
       def self.rule
         lambda do |n|
