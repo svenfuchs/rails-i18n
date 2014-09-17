@@ -56,60 +56,60 @@ pl:
     distance_in_words:
       about_x_hours:
         few: około %{count} godziny
+        many: około %{count} godzin
         one: około godziny
         other: około %{count} godzin
-        many: około %{count} godzin
       about_x_months:
         few: około %{count} miesiące
+        many: około %{count} miesięcy
         one: około miesiąca
         other: około %{count} miesięcy
-        many: około %{count} miesięcy
       about_x_years:
         few: około %{count} lata
+        many: około %{count} lat
         one: około rok
         other: około %{count} lat
-        many: około %{count} lat
       almost_x_years:
         few: prawie %{count} lata
+        many: prawie %{count} lat
         one: prawie rok
         other: prawie %{count} lat
-        many: prawie %{count} lat
       half_a_minute: pół minuty
       less_than_x_minutes:
         few: mniej niż %{count} minuty
+        many: mniej niż %{count} minut
         one: mniej niż minutę
         other: mniej niż %{count} minut
-        many: mniej niż %{count} minut
       less_than_x_seconds:
         few: mniej niż %{count} sekundy
+        many: mniej niż %{count} sekund
         one: mniej niż sekundę
         other: mniej niż %{count} sekund
-        many: mniej niż %{count} sekund
       over_x_years:
         few: ponad %{count} lata
+        many: ponad %{count} lat
         one: ponad rok
         other: ponad %{count} lat
-        many: ponad %{count} lat
       x_days:
         few: ! '%{count} dni'
+        many: ! '%{count} dni'
         one: 1 dzień
         other: ! '%{count} dni'
-        many: ! '%{count} dni'
       x_minutes:
         few: ! '%{count} minuty'
+        many: ! '%{count} minut'
         one: 1 minuta
         other: ! '%{count} minut'
-        many: ! '%{count} minut'
       x_months:
         few: ! '%{count} miesiące'
+        many: ! '%{count} miesięcy'
         one: 1 miesiąc
         other: ! '%{count} miesięcy'
-        many: ! '%{count} miesięcy'
       x_seconds:
         few: ! '%{count} sekundy'
+        many: ! '%{count} sekund'
         one: 1 sekunda
         other: ! '%{count} sekund'
-        many: ! '%{count} sekund'
     prompts:
       day: Dzień
       hour: Godzina
@@ -122,7 +122,7 @@ pl:
     messages:
       accepted: musi zostać zaakceptowane
       blank: nie może być puste
-      confirmation: nie zgadza się z potwierdzeniem
+      confirmation: ! 'nie zgadza się z polem %{attribute}'
       empty: nie może być puste
       equal_to: musi być równe %{count}
       even: musi być parzyste
@@ -136,18 +136,35 @@ pl:
       not_a_number: nie jest liczbą
       not_an_integer: musi być liczbą całkowitą
       odd: musi być nieparzyste
+      present: musi być puste
       record_invalid: ! 'Negatywne sprawdzenie poprawności: %{errors}'
+      restrict_dependent_destroy:
+        many: 'Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}'
+        one: 'Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}'
       taken: zostało już zajęte
-      too_long: jest za długie (maksymalnie %{count} znaków)
-      too_short: jest za krótkie (przynajmniej %{count} znaków)
-      wrong_length: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+      too_long:
+        few: jest za długie (maksymalnie %{count} znaki)
+        many: jest za długie (maksymalnie %{count} znaków)
+        one: jest za długie (maksymalnie jeden znak) 
+        other: jest za długie (maksymalnie %{count} znaków)
+      too_short:
+        few: jest za krótkie (przynajmniej %{count} znaki)
+        many: jest za krótkie (przynajmniej %{count} znaków)
+        one: jest za krótkie (przynajmniej jeden znak)
+        other: jest za krótkie (przynajmniej %{count} znaków)
+      wrong_length:
+        few: ma nieprawidłową długość (powinna wynosić %{count} znaki)
+        many: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+        one: ma nieprawidłową długość (powinna wynosić jeden znak)
+        other: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+      other_than: 'musi być inna niż %{count}'
     template:
       body: ! 'Błędy dotyczą następujących pól:'
       header:
-        one: ! '%{model} nie został zachowany z powodu jednego błędu'
         few: ! '%{model} nie został zachowany z powodu %{count} błędów'
-        other: ! '%{model} nie został zachowany z powodu %{count} błędów'
         many: ! '%{model} nie został zachowany z powodu %{count} błędów'
+        one: ! '%{model} nie został zachowany z powodu jednego błędu'
+        other: ! '%{model} nie został zachowany z powodu %{count} błędów'
   helpers:
     select:
       prompt: Proszę wybrać
@@ -190,9 +207,9 @@ pl:
         format: ! '%n %u'
         units:
           byte:
-            one: bajt
             few: bajty
-            many: bajty
+            many: bajtów
+            one: bajt
             other: bajty
           gb: GB
           kb: KB
@@ -201,6 +218,7 @@ pl:
     percentage:
       format:
         delimiter: ''
+        format: '%n%'
     precision:
       format:
         delimiter: ''
