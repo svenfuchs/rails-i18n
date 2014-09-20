@@ -115,7 +115,7 @@ sv:
       not_an_integer: måste vara ett heltal
       odd: måste vara udda
       record_invalid: ! 'Ett fel uppstod: %{errors}'
-      taken: har redan tagits
+      taken: används redan
       too_long: är för lång (maximum är %{count} tecken)
       too_short: är för kort (minimum är %{count} tecken)
       wrong_length: har fel längd (ska vara %{count} tecken)
