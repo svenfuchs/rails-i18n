@@ -1,3 +1,4 @@
+---
 km:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ km:
     - សុ
     - សៅ
     abbr_month_names:
-    -
+    - 
     - មករា
     - កុម្ភៈ
     - មិនា
@@ -31,11 +32,11 @@ km:
     - ថ្ងៃសៅរ៍
     - ថ្ងៃអាទិត្យ
     formats:
-      long: ! ”ថ្ងៃទី%e %B %Y %H:%M %Z"
-      default: ! “%d %B %Y”
-      short: ! “%d %b”
+      default: “%d %B %Y”
+      long: ”ថ្ងៃទី%e %B %Y %H:%M %Z"
+      short: “%d %b”
     month_names:
-    -
+    - 
     - ខែមករា
     - ខែកុម្ភៈ
     - ខែមិនា

@@ -1,3 +1,4 @@
+---
 da:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ da:
     - fre
     - lør
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -31,11 +32,11 @@ da:
     - fredag
     - lørdag
     formats:
-      default: ! '%d.%m.%Y'
-      long: ! '%e. %B %Y'
-      short: ! '%e. %b %Y'
+      default: '%d.%m.%Y'
+      long: '%e. %B %Y'
+      short: '%e. %b %Y'
     month_names:
-    -
+    - 
     - januar
     - februar
     - marts
@@ -78,16 +79,16 @@ da:
         other: mere end %{count} år
       x_days:
         one: en dag
-        other: ! '%{count} dage'
+        other: '%{count} dage'
       x_minutes:
         one: et minut
-        other: ! '%{count} minutter'
+        other: '%{count} minutter'
       x_months:
         one: en måned
-        other: ! '%{count} måneder'
+        other: '%{count} måneder'
       x_seconds:
         one: et sekund
-        other: ! '%{count} sekunder'
+        other: '%{count} sekunder'
     prompts:
       day: Dag
       hour: Time
@@ -96,11 +97,10 @@ da:
       second: Sekund
       year: År
   errors:
-    format: ! '%{attribute} %{message}'
+    format: '%{attribute} %{message}'
     messages:
       accepted: skal accepteres
       blank: skal udfyldes
-      present: skal være tom
       confirmation: stemmer ikke overens med bekræftelse
       empty: må ikke udelades
       equal_to: skal være %{count}
@@ -115,20 +115,21 @@ da:
       not_a_number: er ikke et tal
       not_an_integer: er ikke et heltal
       odd: skal være et ulige tal
-      record_invalid: ! 'Godkendelse gik galt: %{errors}'
+      other_than: skal være forskellig fra %{count}
+      present: skal være tom
+      record_invalid: 'Godkendelse gik galt: %{errors}'
       restrict_dependent_destroy:
-        one: "Kunne ikke slette posten fordi en afhængig %{record} findes"
-        many: "Kunne ikke slette posten fordi afhængige %{record} findes"
+        many: Kunne ikke slette posten fordi afhængige %{record} findes
+        one: Kunne ikke slette posten fordi en afhængig %{record} findes
       taken: er allerede brugt
       too_long: er for lang (højest %{count} tegn)
       too_short: er for kort (mindst %{count} tegn)
       wrong_length: har forkert længde (skulle være %{count} tegn)
-      other_than: "skal være forskellig fra %{count}"
     template:
-      body: ! 'Der var problemer med følgende felter:'
+      body: 'Der var problemer med følgende felter:'
       header:
         one: En fejl forhindrede %{model} i at blive gemt
-        other: ! '%{count} fejl forhindrede %{model} i at blive gemt'
+        other: '%{count} fejl forhindrede %{model} i at blive gemt'
   helpers:
     select:
       prompt: Vælg...
@@ -140,21 +141,21 @@ da:
     currency:
       format:
         delimiter: .
-        format: ! '%u %n'
+        format: '%u %n'
         precision: 2
-        separator: ! ','
+        separator: ','
         significant: false
         strip_insignificant_zeros: false
         unit: DKK
     format:
       delimiter: .
       precision: 3
-      separator: ! ','
+      separator: ','
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: '%n %u'
         units:
           billion: Milliard
           million: Million
@@ -168,7 +169,7 @@ da:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: '%n %u'
         units:
           byte:
             one: Byte
@@ -180,19 +181,19 @@ da:
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
+        format: '%n%'
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' og '
-      two_words_connector: ! ' og '
-      words_connector: ! ', '
+      last_word_connector: ' og '
+      two_words_connector: ' og '
+      words_connector: ', '
   time:
     am: ''
     formats:
-      default: ! '%e. %B %Y, %H.%M'
-      long: ! '%A d. %e. %B %Y, %H.%M'
-      short: ! '%e. %b %Y, %H.%M'
+      default: '%e. %B %Y, %H.%M'
+      long: '%A d. %e. %B %Y, %H.%M'
+      short: '%e. %b %Y, %H.%M'
     pm: ''
