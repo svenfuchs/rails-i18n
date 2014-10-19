@@ -100,7 +100,8 @@ de:
     messages:
       accepted: muss akzeptiert werden
       blank: muss ausgefüllt werden
-      confirmation: stimmt nicht mit der Bestätigung überein
+      present: darf nicht ausgefüllt werden
+      confirmation: stimmt nicht mit %{attribute} überein
       empty: muss ausgefüllt werden
       equal_to: muss genau %{count} sein
       even: muss gerade sein
@@ -122,6 +123,7 @@ de:
       too_long: ist zu lang (mehr als %{count} Zeichen)
       too_short: ist zu kurz (weniger als %{count} Zeichen)
       wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+      other_than: darf nicht gleich %{count} sein
     template:
       body: ! 'Bitte überprüfen Sie die folgenden Felder:'
       header:
@@ -182,6 +184,7 @@ de:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
