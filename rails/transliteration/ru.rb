@@ -9,6 +9,8 @@ module RailsI18n
       class << self
         def rule
           lambda do |string|
+            next '' unless string
+
             chars = string.scan(%r{#{multi_keys.join '|'}|\w|.})
 
             result = ""

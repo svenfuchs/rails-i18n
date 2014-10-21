@@ -3,6 +3,7 @@ module RailsI18n
     module Polish
       def self.rule
         lambda do |n|
+          n ||= 0
           mod10 = n % 10
           mod100 = n % 100
 
