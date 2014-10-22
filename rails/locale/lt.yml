@@ -67,7 +67,7 @@ lt:
         few: apie %{count} metus
         other: apie %{count} metų
       almost_x_years:
-        one: beveik 1 metai
+        one: beveik %{count} metai
         few: beveik %{count} metai
         other: beveik %{count} metų
       half_a_minute: pusė minutės
@@ -129,14 +129,14 @@ lt:
       record_invalid: ! 'Nepraeitos patikros: %{errors}'
       restrict_dependent_destroy:
         one: "Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja"
-        many: "Negalima ištrinti įrašo nes priklausomi %{record} egzistuoja"
+        many: "Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja"
       taken: jau užimtas
       too_long:
-        one: per ilgas (daugiausiai 1 simbolis)
+        one: per ilgas (daugiausiai %{count} simbolis)
         few: per ilgas (daugiausiai %{count} simboliai)
         other: per ilgas (daugiausiai %{count} simbolių)
       too_short:
-        one: per trumpas (mažiausiai 1 simbolis)
+        one: per trumpas (mažiausiai %{count} simbolis)
         few: per trumpas (mažiausiai %{count} simboliai)
         other: per trumpas (mažiausiai %{count} simbolių)
       wrong_length: neteisingo ilgio (turi būti %{count} simboliai)
@@ -153,7 +153,7 @@ lt:
     submit:
        create: Sukurti %{model}
        submit: Išsaugoti %{model}
-       update: Papildyti %{model}
+       update: Atnaujinti %{model}
   number:
     currency:
       format:
