@@ -6,6 +6,8 @@ module RailsI18n
       class << self
         def rule
           lambda do |string|
+            next '' unless string
+
             string.gsub(/./) do |char|
               # Regexp.last_match is local to the thread and method scope
               # of the method that did the pattern match.
@@ -91,7 +93,7 @@ module RailsI18n
         def downcased_regexp
           @downcased_regexp ||= /[а-яґєії]/
         end
-        
+
         # apostrophe can be inside a word
         def letter?(symbol)
           symbol =~ letter_regexp

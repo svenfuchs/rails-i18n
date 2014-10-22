@@ -3,6 +3,7 @@ module RailsI18n
     module Maltese
       def self.rule
         lambda do |n|
+          n ||= 0
           mod100 = n % 100
 
           if n == 1

@@ -5,6 +5,7 @@ module RailsI18n
     module Romanian
       def self.rule
         lambda do |n|
+          n ||= 0
           if n == 1
             :one
           elsif n == 0 || (1..19).to_a.include?(n % 100)

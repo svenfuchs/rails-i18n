@@ -3,6 +3,7 @@ module RailsI18n
     module Latvian
       def self.rule
         lambda do |n|
+          n ||= 0
           if n % 10 == 1 && n % 100 != 11
             :one
           else
