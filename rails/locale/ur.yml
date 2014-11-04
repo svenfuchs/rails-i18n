@@ -90,7 +90,7 @@ ur:
         other: ! '%{count} سیکنڈ'
     prompts:
       day: دن
-      hour: گہنٹہ
+      hour: گھنٹہ
       minute: منٹ
       month: ماہ
       second: سیکنڈ
