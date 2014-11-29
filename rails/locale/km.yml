@@ -52,3 +52,43 @@ km:
     - :day
     - :month
     - :year
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: ត្រូវតែព្រម
+      blank: មិនអាចរំលង
+      present: ត្រូវតែរំលង
+      confirmation: ! "ផ្ទៀងផ្ទាត់មិនត្រូវនឹង %{attribute}"
+      empty: មិនអាចរំលង
+      equal_to: ត្រូវតែស្មើ %{count}
+      even: ត្រូវតែជាចំនួនគត់
+      exclusion: មិនអនុញ្ញាតឱ្យប្រើ
+      greater_than: ត្រូវតែច្រើនជាង %{count}
+      greater_than_or_equal_to: ត្រូវតែច្រើនជាងឬស្មើ %{count}
+      inclusion: មិនបាននៅក្នុងរាយការណ៍
+      invalid: មិនត្រឹមត្រូវ
+      less_than: ត្រូវតែតិចជាង %{count}
+      less_than_or_equal_to: ត្រូវតែតិចជាងឬស្មើ %{count}
+      not_a_number: មិនមែនជាលេខទេ
+      not_an_integer: ត្រូវតែជាចំនួនពេញ
+      odd: ត្រូវតែជាចំនួនសេស
+      record_invalid: ! 'មិនមានសុពលភាព: %{errors}'
+      restrict_dependent_destroy:
+        one: "មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ"
+        many: "មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ"
+      taken: មានរួចហើយ
+      too_long:
+        one: វែងពេក (អតិបរមា 1 អក្សរ)
+        other: វែងពេក (អតិបរមា %{count} អក្សរ)
+      too_short:
+        one: ខ្លីពេក (អប្បរមា 1 អក្សរ)
+        other: ខ្លីពេក (អប្បរមា %{count} អក្សរ)
+      wrong_length:
+        one: ប្រវែងមិនត្រូវ (គួរតែមាន 1 អក្សរ)
+        other: ប្រវែងមិនត្រូវ (គួរតែមាន %{count} អក្សរ)
+      other_than: "ត្រូវតែខុសពី %{count}"
+    template:
+      body: ! 'សូមពិនិត្យមើលកំហុសនៅខាងក្រោម:'
+      header:
+        one: មានកំហុស1ដែលបានបញ្ឈប់ %{model} នេះពីការរក្សាទុក
+        other: ! មានកំហុស%{count}ដែលបានបញ្ឈប់ %{model} នេះពីការរក្សាទុក'
