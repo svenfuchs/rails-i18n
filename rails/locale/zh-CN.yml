@@ -1,13 +1,13 @@
 zh-CN:
   date:
     abbr_day_names:
-    - 日
-    - 一
-    - 二
-    - 三
-    - 四
-    - 五
-    - 六
+    - 周日
+    - 周一
+    - 周二
+    - 周三
+    - 周四
+    - 周五
+    - 周六
     abbr_month_names:
     -
     - 1月
@@ -116,17 +116,17 @@ zh-CN:
       not_an_integer: 必须是整数
       odd: 必须为单数
       record_invalid: ! '验证失败: %{errors}'
-      restrict_dependent_destroy: 
+      restrict_dependent_destroy:
         one: 由于 %{record} 需要此记录，所以无法移除记录
         many: 由于 %{record} 需要此记录，所以无法移除记录
       taken: 已经被使用
-      too_long: 
+      too_long:
         one: 过长（最长为一个字符）
         other: 过长（最长为 %{count} 个字符）
-      too_short: 
+      too_short:
         one: 过短（最短为一个字符）
         other: 过短（最短为 %{count} 个字符）
-      wrong_length: 
+      wrong_length:
         one: 长度非法（必须为一个字符）
         other: 长度非法（必须为 %{count} 个字符）
       other_than: 长度非法（不可为 %{count} 个字符
