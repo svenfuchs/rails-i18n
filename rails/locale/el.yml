@@ -78,7 +78,7 @@ el:
         other: πάνω από %{count} χρόνια
       x_days:
         one: 1 μέρα
-        other: ! '%{count} μέρες'
+        other: ! '%{count} ημέρες'
       x_minutes:
         one: 1 λεπτό
         other: ! '%{count} λεπτά'
@@ -114,7 +114,7 @@ el:
       not_a_number: δεν είναι αριθμός
       not_an_integer: πρέπει να είναι ακέραιος αριθμός
       odd: πρέπει να είναι περιττός
-      record_invalid: ! 'Επικύρωση απέτυχε: %{errors}'
+      record_invalid: ! 'Η επικύρωση απέτυχε: %{errors}'
       taken: το έχουν ήδη χρησιμοποιήσει
       too_long:
         one: είναι πολύ μεγάλο (το μέγιστο μήκος είναι 1 χαρακτήρας)
@@ -140,17 +140,17 @@ el:
   number:
     currency:
       format:
-        delimiter: .
+        delimiter: ,
         format: ! '%n %u'
         precision: 2
-        separator: ! ','
+        separator: ! '.'
         significant: false
         strip_insignificant_zeros: false
         unit: €
     format:
-      delimiter: .
+      delimiter: ,
       precision: 3
-      separator: ! ','
+      separator: ! '.'
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -172,8 +172,8 @@ el:
         format: ! '%n %u'
         units:
           byte:
-            one: byte
-            other: bytes
+            one: Byte
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
