@@ -106,20 +106,20 @@ it:
       equal_to: deve essere uguale a %{count}
       even: deve essere pari
       exclusion: è riservato
-      greater_than: deve essere superiore a %{count}
-      greater_than_or_equal_to: deve essere superiore o uguale a %{count}
-      inclusion: non è incluso nella lista
+      greater_than: deve essere maggiore di %{count}
+      greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
+      inclusion: non è compreso tra le opzioni disponibili
       invalid: non è valido
-      less_than: deve essere meno di %{count}
-      less_than_or_equal_to: deve essere meno o uguale a %{count}
+      less_than: deve essere minore di %{count}
+      less_than_or_equal_to: deve essere minore o uguale a %{count}
       not_a_number: non è un numero
-      not_an_integer: non è un intero
+      not_an_integer: non è un numero intero
       odd: deve essere dispari
       record_invalid: ! 'Validazione fallita: %{errors}'
       restrict_dependent_destroy:
         one: "Il record non può essere cancellato perchè esiste un %{record} dipendente"
         many: "Il record non può essere cancellato perchè esistono %{record} dipendenti"
-      taken: è già in uso
+      taken: è già presente
       too_long:
         one: è troppo lungo (il massimo è 1 carattere)
         other: è troppo lungo (il massimo è %{count} caratteri)
@@ -131,13 +131,13 @@ it:
         other: è della lunghezza sbagliata (deve essere di %{count} caratteri)
       other_than: "devono essere di numero diverso da %{count}"
     template:
-      body: ! 'Per favore ricontrolla i seguenti campi:'
+      body: ! 'Ricontrolla i seguenti campi:'
       header:
         one: ! 'Non posso salvare questo %{model}: 1 errore'
         other: ! 'Non posso salvare questo %{model}: %{count} errori.'
   helpers:
     select:
-      prompt: Per favore, seleziona
+      prompt: Seleziona...
     submit:
       create: Crea %{model}
       submit: Invia %{model}
