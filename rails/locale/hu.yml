@@ -1,3 +1,4 @@
+---
 hu:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ hu:
     - p.
     - szo.
     abbr_month_names:
-    -
+    - 
     - jan.
     - febr.
     - márc.
@@ -31,11 +32,11 @@ hu:
     - péntek
     - szombat
     formats:
-      default: ! '%Y.%m.%d.'
-      long: ! '%Y. %B %e.'
-      short: ! '%b %e.'
+      default: "%Y.%m.%d."
+      long: "%Y. %B %e."
+      short: "%b %e."
     month_names:
-    -
+    - 
     - január
     - február
     - március
@@ -78,16 +79,16 @@ hu:
         other: több, mint %{count} éve
       x_days:
         one: 1 napja
-        other: ! '%{count} napja'
+        other: "%{count} napja"
       x_minutes:
         one: 1 perce
-        other: ! '%{count} perce'
+        other: "%{count} perce"
       x_months:
         one: 1 hónapja
-        other: ! '%{count} hónapja'
+        other: "%{count} hónapja"
       x_seconds:
         one: 1 másodperce
-        other: ! '%{count} másodperce'
+        other: "%{count} másodperce"
     prompts:
       day: Nap
       hour: Óra
@@ -96,7 +97,7 @@ hu:
       second: Másodperc
       year: Év
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: nincs elfogadva
       blank: nincs megadva
@@ -120,36 +121,36 @@ hu:
       too_short: túl rövid (legalább %{count} karakter kell legyen)
       wrong_length: nem megfelelő hosszúságú (%{count} karakter szükséges)
     template:
-      body: ! 'Problémás mezők:'
+      body: 'Problémás mezők:'
       header:
-        one: ! '1 hiba miatt nem menthető a következő: %{model}'
-        other: ! '%{count} hiba miatt nem menthető a következő: %{model}'
+        one: '1 hiba miatt nem menthető a következő: %{model}'
+        other: "%{count} hiba miatt nem menthető a következő: %{model}"
   helpers:
     select:
       prompt: Válasszon
     submit:
       create: Új %{model}
-      submit: ! '%{model} mentése'
-      update: ! '%{model} módosítása'
+      submit: "%{model} mentése"
+      update: "%{model} módosítása"
   number:
     currency:
       format:
         delimiter: ''
-        format: ! '%n %u'
+        format: "%n %u"
         precision: 0
-        separator: ! ','
+        separator: ","
         significant: true
         strip_insignificant_zeros: true
         unit: Ft
     format:
-      delimiter: ! ' '
+      delimiter: " "
       precision: 2
-      separator: ! ','
+      separator: ","
       significant: true
       strip_insignificant_zeros: true
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: milliárd
           million: millió
@@ -163,7 +164,7 @@ hu:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: bájt
@@ -180,13 +181,13 @@ hu:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' és '
-      two_words_connector: ! ' és '
-      words_connector: ! ', '
+      last_word_connector: " és "
+      two_words_connector: " és "
+      words_connector: ", "
   time:
     am: de.
     formats:
-      default: ! '%Y. %b %e., %H:%M'
-      long: ! '%Y. %B %e., %A, %H:%M'
-      short: ! '%b %e., %H:%M'
+      default: "%Y. %b %e., %H:%M"
+      long: "%Y. %B %e., %A, %H:%M"
+      short: "%b %e., %H:%M"
     pm: du.

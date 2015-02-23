@@ -1,3 +1,4 @@
+---
 eu:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ eu:
     - Osti
     - Lar
     abbr_month_names:
-    -
+    - 
     - Urt
     - Ots
     - Mar
@@ -31,11 +32,11 @@ eu:
     - Ostirala
     - Larunbata
     formats:
-      default: ! '%Y/%m/%e'
-      long: ! '%Y(e)ko %Bk %e'
-      short: ! '%b %e'
+      default: "%Y/%m/%e"
+      long: "%Y(e)ko %Bk %e"
+      short: "%b %e"
     month_names:
-    -
+    - 
     - Urtarrila
     - Otsaila
     - Martxoa
@@ -56,38 +57,38 @@ eu:
     distance_in_words:
       about_x_hours:
         one: ordu bat inguru
-        other: ! '%{count} ordu inguru'
+        other: "%{count} ordu inguru"
       about_x_months:
         one: hilabete bat inguru
-        other: ! '%{count} hilabete inguru'
+        other: "%{count} hilabete inguru"
       about_x_years:
         one: urte bat inguru
-        other: ! '%{count} urte inguru'
+        other: "%{count} urte inguru"
       almost_x_years:
         one: ia urte bat
         other: ia %{count} urte
       half_a_minute: minutu erdi
       less_than_x_minutes:
         one: 1 minutu bat baino gutxiago
-        other: ! '%{count} minutu baino gutxiago'
+        other: "%{count} minutu baino gutxiago"
       less_than_x_seconds:
         one: segundu bat baino gutxiago
-        other: ! '%{count} segundu baino gutxiago'
+        other: "%{count} segundu baino gutxiago"
       over_x_years:
         one: urte bat baino gehiago
-        other: ! '%{count} urte baino gehiago'
+        other: "%{count} urte baino gehiago"
       x_days:
         one: egun bat
-        other: ! '%{count} egun'
+        other: "%{count} egun"
       x_minutes:
         one: minutu bat
-        other: ! '%{count} minutu'
+        other: "%{count} minutu"
       x_months:
         one: hilabete bat
-        other: ! '%{count} hilabete'
+        other: "%{count} hilabete"
       x_seconds:
         one: segundu bat
-        other: ! '%{count} segundu'
+        other: "%{count} segundu"
     prompts:
       day: Egun
       hour: Ordu
@@ -96,60 +97,60 @@ eu:
       second: Segundu
       year: Urte
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: onartuta izan behar da
       blank: ezin da zuriz utzi
       confirmation: ez dator bat konfirmazioarekin
       empty: ezin da hutsik egon
-      equal_to: ! '%{count} izan behar da'
+      equal_to: "%{count} izan behar da"
       even: bikoitia izan behar du
       exclusion: erreserbatuta dago
-      greater_than: ! '%{count} baino handiagoa izan behar da'
-      greater_than_or_equal_to: ! '%{count} baino handiago edo berdin izan behar da'
+      greater_than: "%{count} baino handiagoa izan behar da"
+      greater_than_or_equal_to: "%{count} baino handiago edo berdin izan behar da"
       inclusion: ez da zerrendako aukera bat
       invalid: ez da zuzena
-      less_than: ! '%{count} baino txikiago izan behar da'
-      less_than_or_equal_to: ! '%{count} baino txikiago edo berdin izan behar da'
+      less_than: "%{count} baino txikiago izan behar da"
+      less_than_or_equal_to: "%{count} baino txikiago edo berdin izan behar da"
       not_a_number: ez da zenbaki bat
       not_an_integer: zenbaki osoa izan behar da
       odd: bakoitia izan behar du
-      record_invalid: ! 'Balioztatze arazoa: %{errors}'
+      record_invalid: 'Balioztatze arazoa: %{errors}'
       taken: hartuta dago
       too_long: luzeegia da (%{count} karaktere gehienez)
       too_short: laburregia da (%{count} karaktere gutxienez)
       wrong_length: ez du luzeera zuzena (%{count} karaktere izan behar ditu)
     template:
-      body: ! 'Arazoak egon dira ondoko eremuekin:'
+      body: 'Arazoak egon dira ondoko eremuekin:'
       header:
         one: Errore batek ezinezkoa egin du %{model} hau gordetzea
-        other: ! '%{count} errorek ezinezkoa egiten dute %{model} hau gordetzea'
+        other: "%{count} errorek ezinezkoa egiten dute %{model} hau gordetzea"
   helpers:
     select:
       prompt: Mesedez, aukeratu
     submit:
-      create: ! '%{model}a eratu'
-      submit: ! '%{model}a gorde'
-      update: ! '%{model}a eguneratu'
+      create: "%{model}a eratu"
+      submit: "%{model}a gorde"
+      update: "%{model}a eguneratu"
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%n %u'
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: .
+      delimiter: "."
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Mila milioi
           million: Milioi
@@ -163,7 +164,7 @@ eu:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -180,13 +181,13 @@ eu:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' eta '
-      two_words_connector: ! ' eta '
-      words_connector: ! ', '
+      last_word_connector: " eta "
+      two_words_connector: " eta "
+      words_connector: ", "
   time:
     am: am
     formats:
-      default: ! '%A, %Y(e)ko %Bren %e %H:%M:%S %z'
-      long: ! '%Y(e)ko %Bren %e,  %H:%M'
-      short: ! '%b %e, %H:%M'
+      default: "%A, %Y(e)ko %Bren %e %H:%M:%S %z"
+      long: "%Y(e)ko %Bren %e,  %H:%M"
+      short: "%b %e, %H:%M"
     pm: pm

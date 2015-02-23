@@ -1,3 +1,4 @@
+---
 es-CR:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ es-CR:
     - vie
     - sáb
     abbr_month_names:
-    -
+    - 
     - ene
     - feb
     - mar
@@ -31,11 +32,11 @@ es-CR:
     - viernes
     - sábado
     formats:
-      default: ! '%d/%m/%Y'
-      long: ! '%A, %d de %B de %Y'
-      short: ! '%d de %b'
+      default: "%d/%m/%Y"
+      long: "%A, %d de %B de %Y"
+      short: "%d de %b"
     month_names:
-    -
+    - 
     - enero
     - febrero
     - marzo
@@ -78,16 +79,16 @@ es-CR:
         other: más de %{count} años
       x_days:
         one: 1 día
-        other: ! '%{count} días'
+        other: "%{count} días"
       x_minutes:
         one: 1 minuto
-        other: ! '%{count} minutos'
+        other: "%{count} minutos"
       x_months:
         one: 1 mes
-        other: ! '%{count} meses'
+        other: "%{count} meses"
       x_seconds:
         one: 1 segundo
-        other: ! '%{count} segundos'
+        other: "%{count} segundos"
     prompts:
       day: Día
       hour: Hora
@@ -96,7 +97,7 @@ es-CR:
       second: Segundos
       year: Año
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: debe ser aceptado
       blank: no puede estar en blanco
@@ -114,7 +115,7 @@ es-CR:
       not_a_number: no es un número
       not_an_integer: debe ser un entero
       odd: debe ser un número impar
-      record_invalid: ! 'La validación falló: %{errors}'
+      record_invalid: 'La validación falló: %{errors}'
       taken: ya ha sido utilizado
       too_long:
         one: es demasiado largo (máximo 1 caracter)
@@ -126,10 +127,10 @@ es-CR:
         one: longitud errónea (debe ser de 1 caracter)
         other: longitud errónea (debe ser de %{count} caracteres)
     template:
-      body: ! 'Revise que los siguientes campos sean válidos:'
+      body: 'Revise que los siguientes campos sean válidos:'
       header:
-        one: ! '%{model} no pudo guardarse debido a 1 error'
-        other: ! '%{model} no pudo guardarse debido a %{count} errores'
+        one: "%{model} no pudo guardarse debido a 1 error"
+        other: "%{model} no pudo guardarse debido a %{count} errores"
   helpers:
     select:
       prompt: Por favor seleccione
@@ -140,22 +141,22 @@ es-CR:
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%u%n'
+        delimiter: ","
+        format: "%u%n"
         precision: 0
-        separator: .
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: ¢
+        unit: "¢"
     format:
-      delimiter: ! ','
+      delimiter: ","
       precision: 2
-      separator: .
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: mil millones
           million: millón
@@ -164,12 +165,12 @@ es-CR:
           trillion: billón
           unit: ''
       format:
-        delimiter: ! ','
+        delimiter: ","
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -180,19 +181,19 @@ es-CR:
           tb: TB
     percentage:
       format:
-        delimiter: ! ','
+        delimiter: ","
     precision:
       format:
-        delimiter: ! ','
+        delimiter: ","
   support:
     array:
-      last_word_connector: ! ' y '
-      two_words_connector: ! ' y '
-      words_connector: ! ', '
+      last_word_connector: " y "
+      two_words_connector: " y "
+      words_connector: ", "
   time:
     am: am
     formats:
-      default: ! '%a, %d de %b de %Y a las %H:%M:%S %Z'
-      long: ! '%A, %d de %B de %Y a las %I:%M %p'
-      short: ! '%d de %b a las %H:%M hrs'
+      default: "%a, %d de %b de %Y a las %H:%M:%S %Z"
+      long: "%A, %d de %B de %Y a las %I:%M %p"
+      short: "%d de %b a las %H:%M hrs"
     pm: pm

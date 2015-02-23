@@ -1,3 +1,4 @@
+---
 hr:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ hr:
     - Pet
     - Sub
     abbr_month_names:
-    -
+    - 
     - Sij
     - Veǉ
     - Ožu
@@ -31,11 +32,11 @@ hr:
     - Petak
     - Subota
     formats:
-      default: ! '%d.%m.%Y.'
-      long: ! '%e. %B %Y.'
-      short: ! '%e.%-m.'
+      default: "%d.%m.%Y."
+      long: "%e. %B %Y."
+      short: "%e.%-m."
     month_names:
-    -
+    - 
     - Siječanj
     - Veljača
     - Ožujak
@@ -91,25 +92,25 @@ hr:
         many: preko %{count} godina
         other: preko %{count} godina
       x_days:
-        one: ! '%{count} dan'
-        few: ! '%{count} dana'
-        many: ! '%{count} dana'
-        other: ! '%{count} dana'
+        one: "%{count} dan"
+        few: "%{count} dana"
+        many: "%{count} dana"
+        other: "%{count} dana"
       x_minutes:
-        one: ! '%{count} minuta'
-        few: ! '%{count} minute'
-        many: ! '%{count} minuta'
-        other: ! '%{count} minuta'
+        one: "%{count} minuta"
+        few: "%{count} minute"
+        many: "%{count} minuta"
+        other: "%{count} minuta"
       x_months:
-        one: ! '%{count} mjesec'
-        few: ! '%{count} mjeseca'
-        many: ! '%{count} mjeseci'
-        other: ! '%{count} mjeseci'
+        one: "%{count} mjesec"
+        few: "%{count} mjeseca"
+        many: "%{count} mjeseci"
+        other: "%{count} mjeseci"
       x_seconds:
-        one: ! '%{count} sekunda'
-        few: ! '%{count} sekunde'
-        many: ! '%{count} sekundi'
-        other: ! '%{count} sekundi'
+        one: "%{count} sekunda"
+        few: "%{count} sekunde"
+        many: "%{count} sekundi"
+        other: "%{count} sekundi"
     prompts:
       day: Dan
       hour: Sat
@@ -118,7 +119,7 @@ hr:
       second: Sekunde
       year: Godina
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: mora biti prihvaćen
       blank: ne smije biti prazan
@@ -137,10 +138,10 @@ hr:
       not_a_number: nije broj
       not_an_integer: nije cijeli broj
       odd: mora biti neparan
-      record_invalid: ! 'Validacija nije uspjela: %{errors}'
+      record_invalid: 'Validacija nije uspjela: %{errors}'
       restrict_dependent_destroy:
-        one: "Nije moguće izbrisati zapis jer postoji ovisan %{record}"
-        many: "Nije moguće izbrisati zapis jer postoje ovisni %{record}"
+        one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
+        many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
       taken: je već zauzet
       too_long:
         one: je predugačak (maksimum je %{count} znak)
@@ -157,14 +158,14 @@ hr:
         few: nije odgovarajuće duljine (treba biti %{count} znaka)
         many: nije odgovarajuće duljine (treba biti %{count} znakova)
         other: nije odgovarajuće duljine (treba biti %{count} znakova)
-      other_than: "mora biti različit od %{count}"
+      other_than: mora biti različit od %{count}
     template:
-      body: ! 'Sljedeća polja su neispravno popunjena:'
+      body: 'Sljedeća polja su neispravno popunjena:'
       header:
-        one: ! '%{count} greška je spriječila %{model} da se spremi'
-        few: ! '%{count} greške su spriječile %{model} da se spremi'
-        many: ! '%{count} grešaka je spriječilo %{model} da se spremi'
-        other: ! '%{count} grešaka je spriječilo %{model} da se spremi'
+        one: "%{count} greška je spriječila %{model} da se spremi"
+        few: "%{count} greške su spriječile %{model} da se spremi"
+        many: "%{count} grešaka je spriječilo %{model} da se spremi"
+        other: "%{count} grešaka je spriječilo %{model} da se spremi"
   helpers:
     select:
       prompt: Izaberite
@@ -175,22 +176,22 @@ hr:
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%n %u'
+        delimiter: ","
+        format: "%n %u"
         precision: 2
-        separator: .
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
         unit: kn
     format:
-      delimiter: .
+      delimiter: "."
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           thousand: Tisuća
           million: Milijun
@@ -204,7 +205,7 @@ hr:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: bajt
@@ -224,13 +225,13 @@ hr:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' i '
-      two_words_connector: ! ' i '
-      words_connector: ! ', '
+      last_word_connector: " i "
+      two_words_connector: " i "
+      words_connector: ", "
   time:
     am: AM
     formats:
-      default: ! '%d.%m.%Y. %H:%M:%S'
-      long: ! '%e. %B %Y. %H:%M'
-      short: ! '%e.%-m. %k:%M'
+      default: "%d.%m.%Y. %H:%M:%S"
+      long: "%e. %B %Y. %H:%M"
+      short: "%e.%-m. %k:%M"
     pm: PM

@@ -1,3 +1,4 @@
+---
 uk:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ uk:
     - пт.
     - сб.
     abbr_month_names:
-    -
+    - 
     - січ.
     - лют.
     - бер.
@@ -31,11 +32,11 @@ uk:
     - п'ятниця
     - субота
     formats:
-      default: ! '%d.%m.%Y'
-      long: ! '%d %B %Y'
-      short: ! '%d %b'
+      default: "%d.%m.%Y"
+      long: "%d %B %Y"
+      short: "%d %b"
     month_names:
-    -
+    - 
     - Січня
     - Лютого
     - Березня
@@ -91,25 +92,25 @@ uk:
         one: більше %{count} року
         other: більше %{count} року
       x_days:
-        few: ! '%{count} дні'
-        many: ! '%{count} днів'
-        one: ! '%{count} день'
-        other: ! '%{count} дня'
+        few: "%{count} дні"
+        many: "%{count} днів"
+        one: "%{count} день"
+        other: "%{count} дня"
       x_minutes:
-        few: ! '%{count} хвилини'
-        many: ! '%{count} хвилин'
-        one: ! '%{count} хвилина'
-        other: ! '%{count} хвилини'
+        few: "%{count} хвилини"
+        many: "%{count} хвилин"
+        one: "%{count} хвилина"
+        other: "%{count} хвилини"
       x_months:
-        few: ! '%{count} місяці'
-        many: ! '%{count} місяців'
-        one: ! '%{count} місяць'
-        other: ! '%{count} місяця'
+        few: "%{count} місяці"
+        many: "%{count} місяців"
+        one: "%{count} місяць"
+        other: "%{count} місяця"
       x_seconds:
-        few: ! '%{count} секунди'
-        many: ! '%{count} секунд'
-        one: ! '%{count} секунда'
-        other: ! '%{count} секунди'
+        few: "%{count} секунди"
+        many: "%{count} секунд"
+        one: "%{count} секунда"
+        other: "%{count} секунди"
     prompts:
       day: День
       hour: Година
@@ -118,7 +119,7 @@ uk:
       second: Секунда
       year: Рік
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: має бути прийнятий
       blank: не може бути пустим
@@ -136,7 +137,7 @@ uk:
       not_a_number: не число
       not_an_integer: не э цілим числом
       odd: має бути непарним
-      record_invalid: ! 'Виникли помилки: %{errors}'
+      record_invalid: 'Виникли помилки: %{errors}'
       taken: вже зайнятий
       too_long:
         few: занадто довгий (максимум %{count} знаки)
@@ -154,15 +155,15 @@ uk:
         one: неправильна довжина (має бути %{count} знак)
         other: неправильна довжина (має бути %{count} знаку)
     template:
-      body: ! 'Помилки виявлено в таких полях:'
+      body: 'Помилки виявлено в таких полях:'
       header:
-        few: ! '%{model} не збережено через %{count} помилки'
-        many: ! '%{model} не збережено через %{count} помилок'
-        one: ! '%{model} не збережено через %{count} помилку'
-        other: ! '%{model} не збережено через %{count} помилки'
+        few: "%{model} не збережено через %{count} помилки"
+        many: "%{model} не збережено через %{count} помилок"
+        one: "%{model} не збережено через %{count} помилку"
+        other: "%{model} не збережено через %{count} помилки"
   helpers:
     select:
-      prompt: ! 'Оберіть: '
+      prompt: 'Оберіть: '
     submit:
       create: Створити %{model}
       submit: Зберегти %{model}
@@ -170,22 +171,22 @@ uk:
   number:
     currency:
       format:
-        delimiter: ! ' '
-        format: ! '%n %u'
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: грн.
     format:
-      delimiter: ! ' '
+      delimiter: " "
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion:
             few: Мільярдів
@@ -219,7 +220,7 @@ uk:
         significant: false
         strip_insignificant_zeros: false
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             few: байти
@@ -238,13 +239,13 @@ uk:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' та '
-      two_words_connector: ! ' і '
-      words_connector: ! ', '
+      last_word_connector: " та "
+      two_words_connector: " і "
+      words_connector: ", "
   time:
     am: до полудня
     formats:
-      default: ! '%a, %d %b %Y, %H:%M:%S %z'
-      long: ! '%d %B %Y, %H:%M'
-      short: ! '%d %b, %H:%M'
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y, %H:%M"
+      short: "%d %b, %H:%M"
     pm: по полудні

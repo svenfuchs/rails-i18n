@@ -1,3 +1,4 @@
+---
 sl:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ sl:
     - pet
     - sob
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -31,11 +32,11 @@ sl:
     - petek
     - sobota
     formats:
-      default: ! '%d.%m.%Y'
-      long: ! '%d. %b %Y'
-      short: ! '%d. %b'
+      default: "%d.%m.%Y"
+      long: "%d. %b %Y"
+      short: "%d. %b"
     month_names:
-    -
+    - 
     - januar
     - februar
     - marec
@@ -91,24 +92,24 @@ sl:
         other: več kot %{count} let
         two: več kot 2 leti
       x_days:
-        few: ! '%{count} dnevi'
+        few: "%{count} dnevi"
         one: 1 dan
-        other: ! '%{count} dni'
+        other: "%{count} dni"
         two: 2 dneva
       x_minutes:
-        few: ! '%{count} minute'
+        few: "%{count} minute"
         one: 1 minuta
-        other: ! '%{count} minut'
+        other: "%{count} minut"
         two: 2 minuti
       x_months:
-        few: ! '%{count} mesece'
+        few: "%{count} mesece"
         one: 1 mesec
-        other: ! '%{count} mesecev'
+        other: "%{count} mesecev"
         two: 2 meseca
       x_seconds:
-        few: ! '%{count} sekunde'
+        few: "%{count} sekunde"
         one: 1 sekunda
-        other: ! '%{count} sekund'
+        other: "%{count} sekund"
         two: 2 sekundi
     prompts:
       day: Dan
@@ -118,7 +119,7 @@ sl:
       second: Sekunde
       year: Leto
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: mora biti sprejeto
       blank: ne sme biti prazno
@@ -141,31 +142,31 @@ sl:
       too_short: je prekratko (zahtevano je najmanj %{count} znakov)
       wrong_length: je napačne dolžine (mora biti natančno %{count} znakov)
     template:
-      body: ! 'Napačno izpolnjena polja:'
+      body: 'Napačno izpolnjena polja:'
       header:
-        few: ! '%{count} napake preprečujejo, da bi shranili %{model}'
+        few: "%{count} napake preprečujejo, da bi shranili %{model}"
         one: Ena napaka preprečuje, da bi shranili %{model}
-        other: ! '%{count} napak preprečuje, da bi shranili %{model}'
+        other: "%{count} napak preprečuje, da bi shranili %{model}"
         two: Dve napaki preprečujeta, da bi shranili %{model}
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%u%n'
+        delimiter: "."
+        format: "%u%n"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: .
+      delimiter: "."
       precision: 2
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           unit: ''
       format:
@@ -174,7 +175,7 @@ sl:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -193,13 +194,13 @@ sl:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' in '
-      two_words_connector: ! ' in '
-      words_connector: ! ', '
+      last_word_connector: " in "
+      two_words_connector: " in "
+      words_connector: ", "
   time:
     am: dopoldan
     formats:
-      default: ! '%A, %d %b %Y ob %H:%M:%S'
-      long: ! '%d. %B, %Y ob %H:%M'
-      short: ! '%d. %b ob %H:%M'
+      default: "%A, %d %b %Y ob %H:%M:%S"
+      long: "%d. %B, %Y ob %H:%M"
+      short: "%d. %b ob %H:%M"
     pm: popoldan

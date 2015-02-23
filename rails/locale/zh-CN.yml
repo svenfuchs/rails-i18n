@@ -1,3 +1,4 @@
+---
 zh-CN:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ zh-CN:
     - 周五
     - 周六
     abbr_month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -31,11 +32,11 @@ zh-CN:
     - 星期五
     - 星期六
     formats:
-      default: ! '%Y-%m-%d'
-      long: ! '%Y年%b%d日'
-      short: ! '%b%d日'
+      default: "%Y-%m-%d"
+      long: "%Y年%b%d日"
+      short: "%b%d日"
     month_names:
-    -
+    - 
     - 一月
     - 二月
     - 三月
@@ -75,19 +76,19 @@ zh-CN:
         other: 不到 %{count} 秒
       over_x_years:
         one: 一年多
-        other: ! '%{count} 年多'
+        other: "%{count} 年多"
       x_days:
         one: 一天
-        other: ! '%{count} 天'
+        other: "%{count} 天"
       x_minutes:
         one: 一分钟
-        other: ! '%{count} 分钟'
+        other: "%{count} 分钟"
       x_months:
         one: 一个月
-        other: ! '%{count} 个月'
+        other: "%{count} 个月"
       x_seconds:
         one: 一秒
-        other: ! '%{count} 秒'
+        other: "%{count} 秒"
     prompts:
       day: 日
       hour: 时
@@ -96,7 +97,7 @@ zh-CN:
       second: 秒
       year: 年
   errors:
-    format: ! '%{attribute}%{message}'
+    format: "%{attribute}%{message}"
     messages:
       accepted: 必须是可被接受的
       blank: 不能为空字符
@@ -115,7 +116,7 @@ zh-CN:
       not_a_number: 不是数字
       not_an_integer: 必须是整数
       odd: 必须为单数
-      record_invalid: ! '验证失败: %{errors}'
+      record_invalid: '验证失败: %{errors}'
       restrict_dependent_destroy:
         one: 由于 %{record} 需要此记录，所以无法移除记录
         many: 由于 %{record} 需要此记录，所以无法移除记录
@@ -145,22 +146,22 @@ zh-CN:
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%u %n'
+        delimiter: ","
+        format: "%u %n"
         precision: 2
-        separator: .
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
         unit: CN¥
     format:
-      delimiter: ! ','
+      delimiter: ","
       precision: 3
-      separator: .
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: 十亿
           million: 百万
@@ -174,7 +175,7 @@ zh-CN:
         significant: false
         strip_insignificant_zeros: false
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -191,13 +192,13 @@ zh-CN:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', 和 '
-      two_words_connector: ! ' 和 '
-      words_connector: ! ', '
+      last_word_connector: ", 和 "
+      two_words_connector: " 和 "
+      words_connector: ", "
   time:
     am: 上午
     formats:
-      default: ! '%Y年%b%d日 %A %H:%M:%S %Z'
-      long: ! '%Y年%b%d日 %H:%M'
-      short: ! '%b%d日 %H:%M'
+      default: "%Y年%b%d日 %A %H:%M:%S %Z"
+      long: "%Y年%b%d日 %H:%M"
+      short: "%b%d日 %H:%M"
     pm: 下午

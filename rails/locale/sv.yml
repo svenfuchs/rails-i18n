@@ -1,3 +1,4 @@
+---
 sv:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ sv:
     - fre
     - lör
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -31,11 +32,11 @@ sv:
     - fredag
     - lördag
     formats:
-      default: ! '%Y-%m-%d'
-      long: ! '%e %B %Y'
-      short: ! '%e %b'
+      default: "%Y-%m-%d"
+      long: "%e %B %Y"
+      short: "%e %b"
     month_names:
-    -
+    - 
     - januari
     - februari
     - mars
@@ -78,16 +79,16 @@ sv:
         other: mer än %{count} år
       x_days:
         one: en dag
-        other: ! '%{count} dagar'
+        other: "%{count} dagar"
       x_minutes:
         one: en minut
-        other: ! '%{count} minuter'
+        other: "%{count} minuter"
       x_months:
         one: en månad
-        other: ! '%{count} månader'
+        other: "%{count} månader"
       x_seconds:
         one: en sekund
-        other: ! '%{count} sekunder'
+        other: "%{count} sekunder"
     prompts:
       day: Dag
       hour: Timme
@@ -96,7 +97,7 @@ sv:
       second: Sekund
       year: År
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: måste vara accepterad
       blank: måste anges
@@ -114,16 +115,16 @@ sv:
       not_a_number: är inte ett nummer
       not_an_integer: måste vara ett heltal
       odd: måste vara udda
-      record_invalid: ! 'Ett fel uppstod: %{errors}'
+      record_invalid: 'Ett fel uppstod: %{errors}'
       taken: används redan
       too_long: är för lång (maximum är %{count} tecken)
       too_short: är för kort (minimum är %{count} tecken)
       wrong_length: har fel längd (ska vara %{count} tecken)
     template:
-      body: ! 'Det var problem med följande fält:'
+      body: 'Det var problem med följande fält:'
       header:
         one: Ett fel förhindrade denna %{model} från att sparas
-        other: ! '%{count} fel förhindrade denna %{model} från att sparas'
+        other: "%{count} fel förhindrade denna %{model} från att sparas"
   helpers:
     select:
       prompt: Välj
@@ -135,21 +136,21 @@ sv:
     currency:
       format:
         delimiter: ''
-        format: ! '%n %u'
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: kr
     format:
       delimiter: ''
       precision: 2
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Miljard
           million: Miljon
@@ -163,7 +164,7 @@ sv:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -180,13 +181,13 @@ sv:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' och '
-      two_words_connector: ! ' och '
-      words_connector: ! ', '
+      last_word_connector: " och "
+      two_words_connector: " och "
+      words_connector: ", "
   time:
     am: ''
     formats:
-      default: ! '%a, %e %b %Y %H:%M:%S %z'
-      long: ! '%e %B %Y %H:%M'
-      short: ! '%e %b %H:%M'
+      default: "%a, %e %b %Y %H:%M:%S %z"
+      long: "%e %B %Y %H:%M"
+      short: "%e %b %H:%M"
     pm: ''

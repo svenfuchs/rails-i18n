@@ -1,3 +1,4 @@
+---
 eo:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ eo:
     - ven
     - sam
     abbr_month_names:
-    -
+    - 
     - jan.
     - feb.
     - mar.
@@ -31,11 +32,11 @@ eo:
     - vendredo
     - sabato
     formats:
-      default: ! '%Y/%m/%d'
-      long: ! '%e %B %Y'
-      short: ! '%e %b'
+      default: "%Y/%m/%d"
+      long: "%e %B %Y"
+      short: "%e %b"
     month_names:
-    -
+    - 
     - januaro
     - februaro
     - marto
@@ -80,16 +81,16 @@ eo:
         other: pli ol %{count} jaroj
       x_days:
         one: 1 tago
-        other: ! '%{count} tagoj'
+        other: "%{count} tagoj"
       x_minutes:
         one: 1 minuto
-        other: ! '%{count} minutoj'
+        other: "%{count} minutoj"
       x_months:
         one: 1 monato
-        other: ! '%{count} monatoj'
+        other: "%{count} monatoj"
       x_seconds:
         one: 1 sekundo
-        other: ! '%{count} sekundoj'
+        other: "%{count} sekundoj"
     prompts:
       day: Tago
       hour: Horo
@@ -98,7 +99,7 @@ eo:
       second: Sekundo
       year: Jaro
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: devas esti akceptita
       blank: devas esti kompletigita
@@ -116,16 +117,16 @@ eo:
       not_a_number: ne estas nombro
       not_an_integer: devas esti entjero
       odd: devas esti nepara
-      record_invalid: ! 'Validado malsukcesis: %{errors}'
+      record_invalid: 'Validado malsukcesis: %{errors}'
       taken: ne estas disponebla
       too_long: estas tro longa (maksimume %{count} karekteroj)
       too_short: estas tro mallonga (minimume %{count} karakteroj)
       wrong_length: ne estas je ĝusta longo (devas enhavi %{count} karakterojn)
     template:
-      body: ! 'Kontrolu la jenajn kampojn: '
+      body: 'Kontrolu la jenajn kampojn: '
       header:
-        one: ! 'Ne eblas registri tiun %{model}: 1 eraro'
-        other: ! 'Ne eblas registri tiun %{model}: %{count} eraroj'
+        one: 'Ne eblas registri tiun %{model}: 1 eraro'
+        other: 'Ne eblas registri tiun %{model}: %{count} eraroj'
   helpers:
     select:
       prompt: Bonvolu elekti
@@ -136,22 +137,22 @@ eo:
   number:
     currency:
       format:
-        delimiter: ! ' '
-        format: ! '%n %u'
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: ! ' '
+      delimiter: " "
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: miliardo
           million: miliono
@@ -165,7 +166,7 @@ eo:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: bitoko
@@ -182,13 +183,13 @@ eo:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' kaj '
-      two_words_connector: ! ' kaj '
-      words_connector: ! ', '
+      last_word_connector: " kaj "
+      two_words_connector: " kaj "
+      words_connector: ", "
   time:
     am: am
     formats:
-      default: ! '%d %B %Y %H:%M:%S'
-      long: ! '%A %d %B %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%d %B %Y %H:%M:%S"
+      long: "%A %d %B %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: pm

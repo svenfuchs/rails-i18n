@@ -1,3 +1,4 @@
+---
 is:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ is:
     - fös
     - lau
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -31,11 +32,11 @@ is:
     - föstudaginn
     - laugardaginn
     formats:
-      default: ! '%d.%m.%Y'
-      long: ! '%e. %B %Y'
-      short: ! '%e. %b'
+      default: "%d.%m.%Y"
+      long: "%e. %B %Y"
+      short: "%e. %b"
     month_names:
-    -
+    - 
     - janúar
     - febrúar
     - mars
@@ -78,16 +79,16 @@ is:
         other: meira en %{count} ár
       x_days:
         one: 1 dagur
-        other: ! '%{count} dagar'
+        other: "%{count} dagar"
       x_minutes:
         one: 1 mínúta
-        other: ! '%{count} mínútur'
+        other: "%{count} mínútur"
       x_months:
         one: 1 mánuður
-        other: ! '%{count} mánuðir'
+        other: "%{count} mánuðir"
       x_seconds:
         one: 1 sekúnda
-        other: ! '%{count} sekúndur'
+        other: "%{count} sekúndur"
     prompts:
       day: Dagur
       hour: Klukkustund
@@ -96,7 +97,7 @@ is:
       second: Sekúnda
       year: Ár
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: þarf að vera tekið gilt
       blank: má ekki vera autt
@@ -115,10 +116,10 @@ is:
       not_a_number: er ekki tala
       not_an_integer: þarf að vera heiltala
       odd: þarf að vera oddatala
-      record_invalid: ! 'Villur: %{errors}'
+      record_invalid: 'Villur: %{errors}'
       restrict_dependent_destroy:
-        one: "Ekki hægt að eyða færslu því %{record} sem hún er háð er til"
-        many: "Ekki hægt að eyða færslur því %{record} sem hún er háð er til"
+        one: Ekki hægt að eyða færslu því %{record} sem hún er háð er til
+        many: Ekki hægt að eyða færslur því %{record} sem hún er háð er til
       taken: er þegar í notkun
       too_long:
         one: er of langt (má mest vera 1 stafur)
@@ -129,9 +130,9 @@ is:
       wrong_length:
         one: er af rangri lengd (má mest vera 1 stafur)
         other: er af rangri lengd (má mest vera %{count} stafir)
-      other_than: "verður að vera annað en %{count}"
+      other_than: verður að vera annað en %{count}
     template:
-      body: ! 'Villur fundust í eftirfarandi dálkum:'
+      body: 'Villur fundust í eftirfarandi dálkum:'
       header:
         one: Ekki var hægt að vista %{model} vegna einnar villu.
         other: Ekki var hægt að vista %{model} vegna %{count} villna.
@@ -145,22 +146,22 @@ is:
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%n %u'
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: kr.
     format:
-      delimiter: .
+      delimiter: "."
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion:
             one: milljarður
@@ -182,7 +183,7 @@ is:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: bæti
@@ -200,13 +201,13 @@ is:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' og '
-      two_words_connector: ! ' og '
-      words_connector: ! ', '
+      last_word_connector: " og "
+      two_words_connector: " og "
+      words_connector: ", "
   time:
     am: ''
     formats:
-      default: ! '%A %e. %B %Y kl. %H:%M'
-      long: ! '%A %e. %B %Y kl. %H:%M'
-      short: ! '%e. %B kl. %H:%M'
+      default: "%A %e. %B %Y kl. %H:%M"
+      long: "%A %e. %B %Y kl. %H:%M"
+      short: "%e. %B kl. %H:%M"
     pm: ''
