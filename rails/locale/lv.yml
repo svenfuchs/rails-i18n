@@ -1,3 +1,4 @@
+---
 lv:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ lv:
     - Pk.
     - S.
     abbr_month_names:
-    -
+    - 
     - Janv
     - Febr
     - Marts
@@ -31,11 +32,11 @@ lv:
     - piektdiena
     - sestdiena
     formats:
-      default: ! '%d.%m.%Y.'
-      long: ! '%Y. gada %e. %B'
-      short: ! '%e. %B'
+      default: "%d.%m.%Y."
+      long: "%Y. gada %e. %B"
+      short: "%e. %B"
     month_names:
-    -
+    - 
     - Janvāris
     - Februāris
     - Marts
@@ -84,21 +85,21 @@ lv:
         one: vairāk kā %{count} gads
         other: vairāk kā %{count} gadi
       x_days:
-        zero: ! '%{count} dienas'
-        one: ! '%{count} diena'
-        other: ! '%{count} dienas'
+        zero: "%{count} dienas"
+        one: "%{count} diena"
+        other: "%{count} dienas"
       x_minutes:
-        zero: ! '%{count} minūtes'
-        one: ! '%{count} minūte'
-        other: ! '%{count} minūtes'
+        zero: "%{count} minūtes"
+        one: "%{count} minūte"
+        other: "%{count} minūtes"
       x_months:
-        zero: ! '%{count} mēneši'
-        one: ! '%{count} mēnesis'
-        other: ! '%{count} mēneši'
+        zero: "%{count} mēneši"
+        one: "%{count} mēnesis"
+        other: "%{count} mēneši"
       x_seconds:
-        zero: ! '%{count} sekundes'
-        one: ! '%{count} sekunde'
-        other: ! '%{count} sekundes'
+        zero: "%{count} sekundes"
+        one: "%{count} sekunde"
+        other: "%{count} sekundes"
     prompts:
       day: diena
       hour: stunda
@@ -107,7 +108,7 @@ lv:
       second: sekunde
       year: gads
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: ir jāpiekrīt
       blank: ir jābūt aizpildītam
@@ -125,7 +126,7 @@ lv:
       not_a_number: nav skaitlis
       not_an_integer: ir jābūt veselam skaitlim
       odd: ir jābūt nepāra skaitlim
-      record_invalid: ! 'Pārbaude neizdevās: %{errors}'
+      record_invalid: 'Pārbaude neizdevās: %{errors}'
       taken: ir jau aizņemts
       too_long:
         zero: ir par garu (maksimums ir %{count} simboli)
@@ -140,7 +141,7 @@ lv:
         one: ir nepareizs garums (jābūt %{count} simbolam)
         other: ir nepareizs garums (jābūt %{count} simboliem)
     template:
-      body: ! 'Problēmas ir šajos ievades laukos:'
+      body: 'Problēmas ir šajos ievades laukos:'
       header:
         zero: Dēļ %{count} kļūdām šis %{model} netika saglabāts
         one: Dēļ %{count} kļūdas šis %{model} netika saglabāts
@@ -155,22 +156,22 @@ lv:
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%n %u'
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: .
+      delimiter: "."
       precision: 2
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion:
             zero: miljardi
@@ -199,7 +200,7 @@ lv:
         significant: false
         strip_insignificant_zeros: false
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             zero: baiti
@@ -217,13 +218,13 @@ lv:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' un '
-      two_words_connector: ! ' un '
-      words_connector: ! ', '
+      last_word_connector: " un "
+      two_words_connector: " un "
+      words_connector: ", "
   time:
     am: priekšpusdiena
     formats:
-      default: ! '%Y. gada %e. %B, %H:%M'
-      long: ! '%Y. gada %e. %B, %H:%M:%S'
-      short: ! '%d.%m.%Y., %H:%M'
+      default: "%Y. gada %e. %B, %H:%M"
+      long: "%Y. gada %e. %B, %H:%M:%S"
+      short: "%d.%m.%Y., %H:%M"
     pm: pēcpusdiena

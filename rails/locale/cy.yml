@@ -1,3 +1,4 @@
+---
 cy:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ cy:
     - Gwe
     - Sad
     abbr_month_names:
-    -
+    - 
     - Ion
     - Chw
     - Maw
@@ -31,11 +32,11 @@ cy:
     - Dydd Gwener
     - Dydd Sadwrn
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%B %d, %Y'
-      short: ! '%b %d'
+      default: "%d-%m-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
-    -
+    - 
     - Ionawr
     - Chwefror
     - Mawrth
@@ -105,33 +106,33 @@ cy:
         many: dros %{count} blynedd
         other: dros %{count} blynedd
       x_days:
-        zero: ! '%{count} diwrnod'
+        zero: "%{count} diwrnod"
         one: 1 diwrnod
-        two: ! '%{count} diwrnod'
-        few: ! '%{count} diwrnod'
-        many: ! '%{count} diwrnod'
-        other: ! '%{count} diwrnod'
+        two: "%{count} diwrnod"
+        few: "%{count} diwrnod"
+        many: "%{count} diwrnod"
+        other: "%{count} diwrnod"
       x_minutes:
-        zero: ! '%{count} o funudau'
+        zero: "%{count} o funudau"
         one: 1 munud
-        two: ! '%{count} o funudau'
-        few: ! '%{count} o funudau'
-        many: ! '%{count} o funudau'
-        other: ! '%{count} o funudau'
+        two: "%{count} o funudau"
+        few: "%{count} o funudau"
+        many: "%{count} o funudau"
+        other: "%{count} o funudau"
       x_months:
-        zero: ! '%{count} mis'
+        zero: "%{count} mis"
         one: 1 mis
-        two: ! '%{count} mis'
-        few: ! '%{count} mis'
-        many: ! '%{count} mis'
-        other: ! '%{count} mis'
+        two: "%{count} mis"
+        few: "%{count} mis"
+        many: "%{count} mis"
+        other: "%{count} mis"
       x_seconds:
-        zero: ! '%{count} o eiliadau'
+        zero: "%{count} o eiliadau"
         one: 1 eiliad
-        two: ! '%{count} o eiliadau'
-        few: ! '%{count} o eiliadau'
-        many: ! '%{count} o eiliadau'
-        other: ! '%{count} o eiliadau'
+        two: "%{count} o eiliadau"
+        few: "%{count} o eiliadau"
+        many: "%{count} o eiliadau"
+        other: "%{count} o eiliadau"
     prompts:
       day: Diwrnod
       hour: Awr
@@ -140,7 +141,7 @@ cy:
       second: Eiliad
       year: Blwyddyn
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: angen ei dderbyn
       blank: methu bod yn wag
@@ -158,13 +159,13 @@ cy:
       not_a_number: heb fod yn rhif
       not_an_integer: heb fod yn rhif llawn
       odd: rhaid bod yn odrif
-      record_invalid: ! 'Gwirio wedi methu: %{errors}'
+      record_invalid: 'Gwirio wedi methu: %{errors}'
       taken: wedi'i gymryd yn barod
       too_long: yn rhy hir (cewch %{count} llythyren ar y fwyaf)
       too_short: yn rhy fyr (rhaid am o leiaf %{count} llythyren)
       wrong_length: gyda maint anghywir o lythrennau (dylai fod yn %{count} llythyren)
     template:
-      body: ! 'Cafwyd broblemau gyda''r meysydd canlynol:'
+      body: 'Cafwyd broblemau gyda''r meysydd canlynol:'
       header:
         one: Atalwyd y %{model} hwn rhag ei gadw gan 1 nam
         two: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
@@ -180,22 +181,22 @@ cy:
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%u%n'
+        delimiter: ","
+        format: "%u%n"
         precision: 2
-        separator: .
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: £
+        unit: "£"
     format:
-      delimiter: ! ','
+      delimiter: ","
       precision: 3
-      separator: .
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Biliwn
           million: Miliwn
@@ -209,7 +210,7 @@ cy:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             zero: Bytes
@@ -230,13 +231,13 @@ cy:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', a '
-      two_words_connector: ! ' a '
-      words_connector: ! ', '
+      last_word_connector: ", a "
+      two_words_connector: " a "
+      words_connector: ", "
   time:
     am: yb
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: yh

@@ -1,3 +1,4 @@
+---
 vi:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ vi:
     - Thứ sáu
     - Thứ bảy
     abbr_month_names:
-    -
+    - 
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -31,11 +32,11 @@ vi:
     - Thứ sáu
     - Thứ bảy
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%d %B, %Y'
-      short: ! '%d %b'
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
     month_names:
-    -
+    - 
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -78,16 +79,16 @@ vi:
         other: hơn %{count} năm
       x_days:
         one: 1 ngày
-        other: ! '%{count} ngày'
+        other: "%{count} ngày"
       x_minutes:
         one: 1 phút
-        other: ! '%{count} phút'
+        other: "%{count} phút"
       x_months:
         one: 1 tháng
-        other: ! '%{count} tháng'
+        other: "%{count} tháng"
       x_seconds:
         one: 1 giây
-        other: ! '%{count} giây'
+        other: "%{count} giây"
     prompts:
       day: Ngày
       hour: Giờ
@@ -96,7 +97,7 @@ vi:
       second: Giây
       year: Năm
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: phải được đồng ý
       blank: không thể để trắng
@@ -115,20 +116,20 @@ vi:
       not_a_number: không phải là số
       not_an_integer: phải là một số nguyên
       odd: phải là số lẻ
-      record_invalid: ! 'Có các lỗi sau: %{errors}'
+      record_invalid: 'Có các lỗi sau: %{errors}'
       restrict_dependent_destroy:
-        one: "Không thể xóa do tồn tại đối tượng phụ thuộc %{record}"
-        many: "Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}"
+        one: Không thể xóa do tồn tại đối tượng phụ thuộc %{record}
+        many: Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)
       wrong_length: độ dài không đúng (phải là %{count} ký tự)
-      other_than: "cần phải khác %{count}"
+      other_than: cần phải khác %{count}
     template:
-      body: ! 'Có lỗi với các mục sau:'
+      body: 'Có lỗi với các mục sau:'
       header:
         one: 1 lỗi ngăn không cho lưu %{model} này
-        other: ! '%{count} lỗi ngăn không cho lưu %{model} này'
+        other: "%{count} lỗi ngăn không cho lưu %{model} này"
   helpers:
     select:
       prompt: Vui lòng chọn
@@ -139,22 +140,22 @@ vi:
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%n %u'
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: đồng
     format:
-      delimiter: .
+      delimiter: "."
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           unit: ''
           billion: Tỷ
@@ -168,7 +169,7 @@ vi:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -186,13 +187,13 @@ vi:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', và '
-      two_words_connector: ! ' và '
-      words_connector: ! ', '
+      last_word_connector: ", và "
+      two_words_connector: " và "
+      words_connector: ", "
   time:
     am: sáng
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%d %B, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%d %B, %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: chiều

@@ -1,4 +1,4 @@
-# maintainer: Ivan Stana <stiipa@centrum.sk>
+---
 sk:
   date:
     abbr_day_names:
@@ -10,7 +10,7 @@ sk:
     - Pi
     - So
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -32,11 +32,11 @@ sk:
     - Piatok
     - Sobota
     formats:
-      default: ! '%d.%m.%Y'
-      long: ! '%d. %B %Y'
-      short: ! '%d %b'
+      default: "%d.%m.%Y"
+      long: "%d. %B %Y"
+      short: "%d %b"
     month_names:
-    -
+    - 
     - Január
     - Február
     - Marec
@@ -86,20 +86,20 @@ sk:
         other: viac ako %{count} rokmi
       x_days:
         one: dňom
-        few: ! '%{count} dňami'
-        other: ! '%{count} dňami'
+        few: "%{count} dňami"
+        other: "%{count} dňami"
       x_minutes:
         one: minútou
-        few: ! '%{count} minútami'
-        other: ! '%{count} minútami'
+        few: "%{count} minútami"
+        other: "%{count} minútami"
       x_months:
         one: mesiacom
-        few: ! '%{count} mesiacmi'
-        other: ! '%{count} mesiacmi'
+        few: "%{count} mesiacmi"
+        other: "%{count} mesiacmi"
       x_seconds:
         one: sekundou
-        few: ! '%{count} sekundami'
-        other: ! '%{count} sekundami'
+        few: "%{count} sekundami"
+        other: "%{count} sekundami"
     prompts:
       day: Deň
       hour: Hodina
@@ -108,7 +108,7 @@ sk:
       second: Sekunda
       year: Rok
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: musí byť potvrdené
       blank: je povinná položka
@@ -126,17 +126,19 @@ sk:
       not_a_number: nie je číslo
       not_an_integer: musí byť celé číslo
       odd: musí byť nepárne číslo
-      record_invalid: ! 'Validácia neúspešná: %{errors}'
+      record_invalid: 'Validácia neúspešná: %{errors}'
       taken: ste už použili
       too_long: je príliš dlhá/ý (max. %{count} znakov)
       too_short: je príliš krátky/a (min. %{count} znakov)
       wrong_length: nemá správnu dĺžku (očakáva sa %{count} znakov)
     template:
-      body: ! 'Nasledujúce polia obsahujú chybne vyplnené údaje:'
+      body: 'Nasledujúce polia obsahujú chybne vyplnené údaje:'
       header:
         one: Pri ukladaní objektu %{model} došlo k chybám a nebolo ho možné uložiť
-        few: Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné uložiť
-        other: Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné uložiť
+        few: Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné
+          uložiť
+        other: Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné
+          uložiť
   helpers:
     select:
       prompt: Prosím vyberte si
@@ -147,22 +149,22 @@ sk:
   number:
     currency:
       format:
-        delimiter: ! ' '
-        format: ! '%n %u'
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: ! ' '
+      delimiter: " "
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Miliarda
           million: Milión
@@ -176,7 +178,7 @@ sk:
         significant: false
         strip_insignificant_zeros: false
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: B
@@ -188,19 +190,19 @@ sk:
           tb: TB
     percentage:
       format:
-        delimiter: ! ' '
+        delimiter: " "
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' a '
-      two_words_connector: ! ' a '
-      words_connector: ! ', '
+      last_word_connector: " a "
+      two_words_connector: " a "
+      words_connector: ", "
   time:
     am: dopoludnia
     formats:
-      default: ! '%a %d. %B %Y %H:%M %z'
-      long: ! '%A %d. %B %Y %H:%M'
-      short: ! '%d.%m. %H:%M'
+      default: "%a %d. %B %Y %H:%M %z"
+      long: "%A %d. %B %Y %H:%M"
+      short: "%d.%m. %H:%M"
     pm: popoludní

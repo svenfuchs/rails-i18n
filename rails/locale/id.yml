@@ -1,3 +1,4 @@
+---
 id:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ id:
     - Jum
     - Sab
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -31,11 +32,11 @@ id:
     - Jum'at
     - Sabtu
     formats:
-      default: ! '%d %B %Y'
-      long: ! '%A, %d %B %Y'
-      short: ! '%d.%m.%Y'
+      default: "%d %B %Y"
+      long: "%A, %d %B %Y"
+      short: "%d.%m.%Y"
     month_names:
-    -
+    - 
     - Januari
     - Februari
     - Maret
@@ -80,16 +81,16 @@ id:
         other: lebih dari %{count} tahun
       x_days:
         one: sehari
-        other: ! '%{count} hari'
+        other: "%{count} hari"
       x_minutes:
         one: satu menit
-        other: ! '%{count} menit'
+        other: "%{count} menit"
       x_months:
         one: sebulan
-        other: ! '%{count} bulan'
+        other: "%{count} bulan"
       x_seconds:
         one: satu detik
-        other: ! '%{count} detik'
+        other: "%{count} detik"
     prompts:
       day: Hari
       hour: Jam
@@ -98,11 +99,11 @@ id:
       second: Detik
       year: Tahun
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: harus diterima
       blank: tidak bisa kosong
-      confirmation: ! 'tidak sesuai dengan %{attribute}'
+      confirmation: tidak sesuai dengan %{attribute}
       empty: tidak bisa kosong
       equal_to: harus sama dengan %{count}
       even: harus genap
@@ -115,16 +116,16 @@ id:
       less_than_or_equal_to: harus sama atau lebih kecil dari %{count}
       not_a_number: bukan angka
       odd: harus ganjil
-      record_invalid: ! 'Verifikasi gagal: %{errors}'
+      record_invalid: 'Verifikasi gagal: %{errors}'
       taken: sudah digunakan
       too_long: terlalu panjang (maksimum %{count} karakter)
       too_short: terlalu pendek (minimum %{count} karakter)
       wrong_length: jumlah karakter salah (seharusnya %{count} karakter)
     template:
-      body: ! 'Ada masalah dengan field berikut:'
+      body: 'Ada masalah dengan field berikut:'
       header:
         one: 1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan
-        other: ! '%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan'
+        other: "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
   helpers:
     select:
       prompt: Silahkan pilih
@@ -135,22 +136,22 @@ id:
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%u%n'
+        delimiter: "."
+        format: "%u%n"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: Rp
     format:
-      delimiter: .
+      delimiter: "."
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Miliar
           million: Juta
@@ -164,7 +165,7 @@ id:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -181,13 +182,13 @@ id:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' dan '
-      two_words_connector: ! ', '
-      words_connector: ! ', '
+      last_word_connector: " dan "
+      two_words_connector: ", "
+      words_connector: ", "
   time:
     am: am
     formats:
-      default: ! '%a, %d %b %Y %H.%M.%S %z'
-      long: ! '%d %B %Y %H.%M'
-      short: ! '%d %b %H.%M'
+      default: "%a, %d %b %Y %H.%M.%S %z"
+      long: "%d %B %Y %H.%M"
+      short: "%d %b %H.%M"
     pm: pm

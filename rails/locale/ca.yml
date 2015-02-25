@@ -1,3 +1,4 @@
+---
 ca:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ ca:
     - Dv
     - Ds
     abbr_month_names:
-    -
+    - 
     - Gen
     - Feb
     - Mar
@@ -31,11 +32,11 @@ ca:
     - Divendres
     - Dissabte
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%d de %B de %Y'
-      short: ! '%d de %b'
+      default: "%d-%m-%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %b"
     month_names:
-    -
+    - 
     - Gener
     - Febrer
     - Març
@@ -78,16 +79,16 @@ ca:
         other: més de %{count} anys
       x_days:
         one: 1 dia
-        other: ! '%{count} dies'
+        other: "%{count} dies"
       x_minutes:
         one: 1 minut
-        other: ! '%{count} minuts'
+        other: "%{count} minuts"
       x_months:
         one: 1 mes
-        other: ! '%{count} mesos'
+        other: "%{count} mesos"
       x_seconds:
         one: 1 segon
-        other: ! '%{count} segons'
+        other: "%{count} segons"
     prompts:
       day: dia
       hour: hora
@@ -96,7 +97,7 @@ ca:
       second: segon
       year: any
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: ha de ser acceptat
       blank: no pot estar en blanc
@@ -114,13 +115,13 @@ ca:
       not_a_number: no és un número
       not_an_integer: ha de ser un enter
       odd: ha de ser senar
-      record_invalid: ! 'La validació ha fallat: %{errors}'
+      record_invalid: 'La validació ha fallat: %{errors}'
       taken: no està disponible
       too_long: és massa llarg (%{count} caràcters màxim)
       too_short: és massa curt (%{count} caràcters mínim)
       wrong_length: no té la longitud correcta (%{count} caràcters exactament)
     template:
-      body: ! 'Hi ha hagut problemes amb els següents camps:'
+      body: 'Hi ha hagut problemes amb els següents camps:'
       header:
         one: No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error
         other: No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors
@@ -134,22 +135,22 @@ ca:
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%n %u'
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: .
+      delimiter: "."
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: mil milions
           million: milió
@@ -163,7 +164,7 @@ ca:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -180,13 +181,13 @@ ca:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', i '
-      two_words_connector: ! ' i '
-      words_connector: ! ', '
+      last_word_connector: ", i "
+      two_words_connector: " i "
+      words_connector: ", "
   time:
     am: am
     formats:
-      default: ! '%A, %d de %B de %Y %H:%M:%S %z'
-      long: ! '%d de %B de %Y %H:%M'
-      short: ! '%d de %b %H:%M'
+      default: "%A, %d de %B de %Y %H:%M:%S %z"
+      long: "%d de %B de %Y %H:%M"
+      short: "%d de %b %H:%M"
     pm: pm

@@ -1,3 +1,4 @@
+---
 km:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ km:
     - សុ
     - សៅ
     abbr_month_names:
-    -
+    - 
     - មករា
     - កុម្ភៈ
     - មិនា
@@ -31,11 +32,11 @@ km:
     - ថ្ងៃសៅរ៍
     - ថ្ងៃអាទិត្យ
     formats:
-      long: ! ”ថ្ងៃទី%e %B %Y %H:%M %Z"
-      default: ! “%d %B %Y”
-      short: ! “%d %b”
+      long: ”ថ្ងៃទី%e %B %Y %H:%M %Z"
+      default: "“%d %B %Y”"
+      short: "“%d %b”"
     month_names:
-    -
+    - 
     - ខែមករា
     - ខែកុម្ភៈ
     - ខែមិនា
@@ -53,12 +54,12 @@ km:
     - :month
     - :year
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: ត្រូវតែព្រម
       blank: មិនអាចរំលង
       present: ត្រូវតែរំលង
-      confirmation: ! "ផ្ទៀងផ្ទាត់មិនត្រូវនឹង %{attribute}"
+      confirmation: ផ្ទៀងផ្ទាត់មិនត្រូវនឹង %{attribute}
       empty: មិនអាចរំលង
       equal_to: ត្រូវតែស្មើ %{count}
       even: ត្រូវតែជាចំនួនគត់
@@ -72,10 +73,10 @@ km:
       not_a_number: មិនមែនជាលេខទេ
       not_an_integer: ត្រូវតែជាចំនួនពេញ
       odd: ត្រូវតែជាចំនួនសេស
-      record_invalid: ! 'មិនមានសុពលភាព: %{errors}'
+      record_invalid: 'មិនមានសុពលភាព: %{errors}'
       restrict_dependent_destroy:
-        one: "មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ"
-        many: "មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ"
+        one: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
+        many: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
       taken: មានរួចហើយ
       too_long:
         one: វែងពេក (អតិបរមា 1 អក្សរ)
@@ -86,9 +87,9 @@ km:
       wrong_length:
         one: ប្រវែងមិនត្រូវ (គួរតែមាន 1 អក្សរ)
         other: ប្រវែងមិនត្រូវ (គួរតែមាន %{count} អក្សរ)
-      other_than: "ត្រូវតែខុសពី %{count}"
+      other_than: ត្រូវតែខុសពី %{count}
     template:
-      body: ! 'សូមពិនិត្យមើលកំហុសនៅខាងក្រោម:'
+      body: 'សូមពិនិត្យមើលកំហុសនៅខាងក្រោម:'
       header:
         one: មានកំហុស1ដែលបានបញ្ឈប់ %{model} នេះពីការរក្សាទុក
-        other: ! មានកំហុស%{count}ដែលបានបញ្ឈប់ %{model} នេះពីការរក្សាទុក'
+        other: មានកំហុស%{count}ដែលបានបញ្ឈប់ %{model} នេះពីការរក្សាទុក'

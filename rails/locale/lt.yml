@@ -1,3 +1,4 @@
+---
 lt:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ lt:
     - Pen
     - Šeš
     abbr_month_names:
-    -
+    - 
     - Sau
     - Vas
     - Kov
@@ -31,11 +32,11 @@ lt:
     - penktadienis
     - šeštadienis
     formats:
-      default: ! '%Y-%m-%d'
-      long: ! '%B %d, %Y'
-      short: ! '%b %d'
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
-    -
+    - 
     - sausio
     - vasario
     - kovo
@@ -84,21 +85,21 @@ lt:
         few: virš %{count} metų
         other: virš %{count} metų
       x_days:
-        one: ! '%{count} diena'
-        few: ! '%{count} dienos'
-        other: ! '%{count} dienų'
+        one: "%{count} diena"
+        few: "%{count} dienos"
+        other: "%{count} dienų"
       x_minutes:
-        one: ! '%{count} minutė'
-        few: ! '%{count} minutės'
-        other: ! '%{count} minučių'
+        one: "%{count} minutė"
+        few: "%{count} minutės"
+        other: "%{count} minučių"
       x_months:
-        one: ! '%{count} mėnesis'
-        few: ! '%{count} mėnesiai'
-        other: ! '%{count} mėnesių'
+        one: "%{count} mėnesis"
+        few: "%{count} mėnesiai"
+        other: "%{count} mėnesių"
       x_seconds:
-        one: ! '%{count} sekundė'
-        few: ! '%{count} sekundės'
-        other: ! '%{count} sekundžių'
+        one: "%{count} sekundė"
+        few: "%{count} sekundės"
+        other: "%{count} sekundžių"
     prompts:
       day: Diena
       hour: Valanda
@@ -107,7 +108,7 @@ lt:
       second: Sekundės
       year: Metai
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: turi būti patvirtintas
       blank: negali būti tuščias
@@ -126,10 +127,10 @@ lt:
       not_a_number: ne skaičius
       not_an_integer: privalo būti sveikas skaičius
       odd: turi būti nelyginis
-      record_invalid: ! 'Nepraeitos patikros: %{errors}'
+      record_invalid: 'Nepraeitos patikros: %{errors}'
       restrict_dependent_destroy:
-        one: "Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja"
-        many: "Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja"
+        one: Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja
+        many: Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja
       taken: jau užimtas
       too_long:
         one: per ilgas (daugiausiai %{count} simbolis)
@@ -140,9 +141,9 @@ lt:
         few: per trumpas (mažiausiai %{count} simboliai)
         other: per trumpas (mažiausiai %{count} simbolių)
       wrong_length: neteisingo ilgio (turi būti %{count} simboliai)
-      other_than: "privalo būti kitoks nei %{count}"
+      other_than: privalo būti kitoks nei %{count}
     template:
-      body: ! 'Šiuose laukuose yra klaidų:'
+      body: 'Šiuose laukuose yra klaidų:'
       header:
         one: Išsaugant objektą %{model} rasta %{count} klaida
         few: Išsaugant objektą %{model} rastos %{count} klaidos
@@ -151,28 +152,28 @@ lt:
     select:
       prompt: Prašom pasirinkti
     submit:
-       create: Sukurti %{model}
-       submit: Išsaugoti %{model}
-       update: Atnaujinti %{model}
+      create: Sukurti %{model}
+      submit: Išsaugoti %{model}
+      update: Atnaujinti %{model}
   number:
     currency:
       format:
-        delimiter: ! ' '
-        format: ! '%n %u'
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: ! ' '
+      delimiter: " "
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Milijardas
           million: Milijonas
@@ -186,7 +187,7 @@ lt:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Baitas
@@ -205,13 +206,13 @@ lt:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' ir '
-      two_words_connector: ! ' ir '
-      words_connector: ! ', '
+      last_word_connector: " ir "
+      two_words_connector: " ir "
+      words_connector: ", "
   time:
     am: am
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: pm

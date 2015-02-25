@@ -1,3 +1,4 @@
+---
 ro:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ ro:
     - Vin
     - Sâm
     abbr_month_names:
-    -
+    - 
     - Ian
     - Feb
     - Mar
@@ -31,11 +32,11 @@ ro:
     - Vineri
     - Sâmbată
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%d %B %Y'
-      short: ! '%d %b'
+      default: "%d-%m-%Y"
+      long: "%d %B %Y"
+      short: "%d %b"
     month_names:
-    -
+    - 
     - Ianuarie
     - Februarie
     - Martie
@@ -85,20 +86,20 @@ ro:
         other: mai mult de %{count} ani
       x_days:
         one: 1 zi
-        few: ! '%{count} zile'
-        other: ! '%{count} zile'
+        few: "%{count} zile"
+        other: "%{count} zile"
       x_minutes:
         one: 1 minut
-        few: ! '%{count} minute'
-        other: ! '%{count} minute'
+        few: "%{count} minute"
+        other: "%{count} minute"
       x_months:
         one: 1 lună
-        few: ! '%{count} luni'
-        other: ! '%{count} luni'
+        few: "%{count} luni"
+        other: "%{count} luni"
       x_seconds:
         one: 1 secundă
-        few: ! '%{count} secunde'
-        other: ! '%{count} secunde'
+        few: "%{count} secunde"
+        other: "%{count} secunde"
     prompts:
       day: Ziua
       hour: Ora
@@ -107,7 +108,7 @@ ro:
       second: Secunda
       year: Anul
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: trebuie dat acceptul
       blank: nu poate fi gol
@@ -131,11 +132,11 @@ ro:
       too_short: este prea scurt (minimum de caractere este %{count})
       wrong_length: nu are lungimea corectă (trebuie să aiba %{count} caractere)
     template:
-      body: ! 'Încearcă să corectezi urmatoarele câmpuri:'
+      body: 'Încearcă să corectezi urmatoarele câmpuri:'
       header:
-        one: ! 'Nu am putut salva acest %{model}: o eroare'
-        few: ! 'Nu am putut salva acest %{model}: %{count} erori.'
-        other: ! 'Nu am putut salva acest %{model}: %{count} erori.'
+        one: 'Nu am putut salva acest %{model}: o eroare'
+        few: 'Nu am putut salva acest %{model}: %{count} erori.'
+        other: 'Nu am putut salva acest %{model}: %{count} erori.'
   helpers:
     select:
       prompt: Alegeţi
@@ -146,22 +147,22 @@ ro:
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%n %u'
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: RON
     format:
-      delimiter: .
+      delimiter: "."
       precision: 3
-      separator: ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Miliard
           million: Milion
@@ -170,12 +171,12 @@ ro:
           trillion: Trilion
           unit: ''
       format:
-        delimiter: ! ','
+        delimiter: ","
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -187,19 +188,19 @@ ro:
           tb: TB
     percentage:
       format:
-        delimiter: ! ','
+        delimiter: ","
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' şi '
-      two_words_connector: ! ' şi '
-      words_connector: ! ', '
+      last_word_connector: " şi "
+      two_words_connector: " şi "
+      words_connector: ", "
   time:
     am: ''
     formats:
-      default: ! '%a %d %b %Y, %H:%M:%S %z'
-      long: ! '%d %B %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%a %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: ''

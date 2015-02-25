@@ -1,3 +1,4 @@
+---
 nl:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ nl:
     - vr
     - za
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mrt
@@ -31,11 +32,11 @@ nl:
     - vrijdag
     - zaterdag
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%e %B %Y'
-      short: ! '%e %b'
+      default: "%d-%m-%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
     month_names:
-    -
+    - 
     - januari
     - februari
     - maart
@@ -78,16 +79,16 @@ nl:
         other: meer dan %{count} jaar
       x_days:
         one: 1 dag
-        other: ! '%{count} dagen'
+        other: "%{count} dagen"
       x_minutes:
         one: 1 minuut
-        other: ! '%{count} minuten'
+        other: "%{count} minuten"
       x_months:
         one: 1 maand
-        other: ! '%{count} maanden'
+        other: "%{count} maanden"
       x_seconds:
         one: 1 seconde
-        other: ! '%{count} seconden'
+        other: "%{count} seconden"
     prompts:
       day: dag
       hour: uur
@@ -96,12 +97,12 @@ nl:
       second: seconde
       year: jaar
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: moet worden geaccepteerd
       blank: moet opgegeven zijn
       present: moet leeg zijn
-      confirmation: ! "komt niet overeen met %{attribute}"
+      confirmation: komt niet overeen met %{attribute}
       empty: moet opgegeven zijn
       equal_to: moet gelijk zijn aan %{count}
       even: moet even zijn
@@ -115,10 +116,10 @@ nl:
       not_a_number: is geen getal
       not_an_integer: moet een geheel getal zijn
       odd: moet oneven zijn
-      record_invalid: ! 'Validatie mislukt: %{errors}'
+      record_invalid: 'Validatie mislukt: %{errors}'
       restrict_dependent_destroy:
-        one: "Kan item niet verwijderen omdat %{record} afhankelijk is"
-        many: "Kan item niet verwijderen omdat afhankelijke %{record} bestaan"
+        one: Kan item niet verwijderen omdat %{record} afhankelijk is
+        many: Kan item niet verwijderen omdat afhankelijke %{record} bestaan
       taken: is al in gebruik
       too_long:
         one: is te lang (maximaal %{count} teken)
@@ -129,38 +130,38 @@ nl:
       wrong_length:
         one: heeft onjuiste lengte (moet %{count} teken lang zijn)
         other: heeft onjuiste lengte (moet %{count} tekens lang zijn)
-      other_than: "moet anders zijn dan %{count}"
+      other_than: moet anders zijn dan %{count}
     template:
-      body: ! 'Controleer de volgende velden:'
+      body: 'Controleer de volgende velden:'
       header:
-        one: ! '%{model} niet opgeslagen: 1 fout gevonden'
-        other: ! '%{model} niet opgeslagen: %{count} fouten gevonden'
+        one: "%{model} niet opgeslagen: 1 fout gevonden"
+        other: "%{model} niet opgeslagen: %{count} fouten gevonden"
   helpers:
     select:
       prompt: Selecteer
     submit:
-      create: ! '%{model} toevoegen'
-      submit: ! '%{model} opslaan'
-      update: ! '%{model} bewaren'
+      create: "%{model} toevoegen"
+      submit: "%{model} opslaan"
+      update: "%{model} bewaren"
   number:
     currency:
       format:
-        delimiter: .
-        format: ! '%u%n'
+        delimiter: "."
+        format: "%u%n"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
-      delimiter: .
+      delimiter: "."
       precision: 2
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: miljard
           million: miljoen
@@ -174,7 +175,7 @@ nl:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -192,13 +193,13 @@ nl:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' en '
-      two_words_connector: ! ' en '
-      words_connector: ! ', '
+      last_word_connector: " en "
+      two_words_connector: " en "
+      words_connector: ", "
   time:
-    am: ! '''s ochtends'
+    am: "'s ochtends"
     formats:
-      default: ! '%a %d %b %Y %H:%M:%S %Z'
-      long: ! '%d %B %Y %H:%M'
-      short: ! '%d %b %H:%M'
-    pm: ! '''s middags'
+      default: "%a %d %b %Y %H:%M:%S %Z"
+      long: "%d %B %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: "'s middags"

@@ -1,3 +1,4 @@
+---
 nb:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ nb:
     - fre
     - lør
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -31,11 +32,11 @@ nb:
     - fredag
     - lørdag
     formats:
-      default: ! '%d.%m.%Y'
-      long: ! '%e. %B %Y'
-      short: ! '%e. %b'
+      default: "%d.%m.%Y"
+      long: "%e. %B %Y"
+      short: "%e. %b"
     month_names:
-    -
+    - 
     - januar
     - februar
     - mars
@@ -78,16 +79,16 @@ nb:
         other: over %{count} år
       x_days:
         one: 1 dag
-        other: ! '%{count} dager'
+        other: "%{count} dager"
       x_minutes:
         one: 1 minutt
-        other: ! '%{count} minutter'
+        other: "%{count} minutter"
       x_months:
         one: 1 måned
-        other: ! '%{count} måneder'
+        other: "%{count} måneder"
       x_seconds:
         one: 1 sekund
-        other: ! '%{count} sekunder'
+        other: "%{count} sekunder"
     prompts:
       day: Dag
       hour: Time
@@ -96,7 +97,7 @@ nb:
       second: Sekund
       year: År
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: må være akseptert
       blank: kan ikke være blank
@@ -115,17 +116,17 @@ nb:
       not_a_number: er ikke et tall
       not_an_integer: er ikke et heltall
       odd: må være oddetall
-      record_invalid: ! 'Det oppstod feil: %{errors}'
+      record_invalid: 'Det oppstod feil: %{errors}'
       restrict_dependent_destroy:
-        one: "Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne."
-        many: "Kan ikke slette registreringen, fordi %{record} avhenger av denne."
+        one: Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne.
+        many: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
       taken: er allerede i bruk
       too_long: er for lang (maksimum %{count} tegn)
       too_short: er for kort (minimum %{count} tegn)
       wrong_length: er av feil lengde (maksimum %{count} tegn)
-      other_than: "kan ikke være nøyaktig %{count}"
+      other_than: kan ikke være nøyaktig %{count}
     template:
-      body: ! 'Det oppstod problemer i følgende felt:'
+      body: 'Det oppstod problemer i følgende felt:'
       header:
         one: Kunne ikke lagre %{model} på grunn av én feil.
         other: Kunne ikke lagre %{model} på grunn av %{count} feil.
@@ -139,22 +140,22 @@ nb:
   number:
     currency:
       format:
-        delimiter: ! ' '
-        format: ! '%n %u'
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: kr
     format:
-      delimiter: ! ' '
+      delimiter: " "
       precision: 2
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: true
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion:
             one: milliard
@@ -171,12 +172,12 @@ nb:
             other: billioner
           unit: ''
       format:
-        delimiter: ! ' '
+        delimiter: " "
         precision: 1
         significant: false
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -193,13 +194,13 @@ nb:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' og '
-      two_words_connector: ! ' og '
-      words_connector: ! ', '
+      last_word_connector: " og "
+      two_words_connector: " og "
+      words_connector: ", "
   time:
     am: ''
     formats:
-      default: ! '%A, %e. %B %Y, %H:%M'
-      long: ! '%A, %e. %B %Y, %H:%M'
-      short: ! '%e. %B, %H:%M'
+      default: "%A, %e. %B %Y, %H:%M"
+      long: "%A, %e. %B %Y, %H:%M"
+      short: "%e. %B, %H:%M"
     pm: ''

@@ -1,3 +1,4 @@
+---
 be:
   date:
     abbr_day_names:
@@ -9,7 +10,7 @@ be:
     - Суб
     - Ндз
     abbr_month_names:
-    -
+    - 
     - Сту
     - Лют
     - Сак
@@ -31,11 +32,11 @@ be:
     - Пятніца
     - Субота
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%B %d, %Y'
-      short: ! '%b %d'
+      default: "%d-%m-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
-    -
+    - 
     - Студзень
     - Люты
     - Сакавік
@@ -78,16 +79,16 @@ be:
         other: болей за %{count} гадоў
       x_days:
         one: 1 дзень
-        other: ! '%{count} дзён'
+        other: "%{count} дзён"
       x_minutes:
         one: 1 хвіліна
-        other: ! '%{count} хвілін'
+        other: "%{count} хвілін"
       x_months:
         one: 1 месяц
-        other: ! '%{count} месяцаў'
+        other: "%{count} месяцаў"
       x_seconds:
         one: 1 секунда
-        other: ! '%{count} секундаў'
+        other: "%{count} секундаў"
     prompts:
       day: Дзень
       hour: Гадзіна
@@ -96,12 +97,12 @@ be:
       second: Секунда
       year: Год
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: трэба прыняць
       blank: не можа быць пустым
       present: павінна быць пустым
-      confirmation: ! "не супадае з %{attribute}"
+      confirmation: не супадае з %{attribute}
       empty: не можа быць пустым
       equal_to: павінна быць роўным %{count}
       even: павінна быць цотным
@@ -115,10 +116,10 @@ be:
       not_a_number: гэта не лічба
       not_an_integer: павінна быць цэлай лічбай
       odd: павінна быць няцотным
-      record_invalid: ! 'Памылкі валідацыі: %{errors}'
+      record_invalid: 'Памылкі валідацыі: %{errors}'
       restrict_dependent_destroy:
-        one: "Нельга выдаліць запіс, таму што існуе залежнасць %{record}"
-        many: "Нельга выдаліць запіс, таму што існуюць залежнасці %{record}"
+        one: Нельга выдаліць запіс, таму што існуе залежнасць %{record}
+        many: Нельга выдаліць запіс, таму што існуюць залежнасці %{record}
       taken: ўжо занята
       too_long:
         one: занадта доўгі (максімум 1 сімвал)
@@ -129,12 +130,12 @@ be:
       wrong_length:
         one: няправільная даўжыня (павінен быць 1 сімвал)
         other: няправільная даўжыня (павінны быць %{count} сімвалаў)
-      other_than: "павінна адрознівацца ад %{count}"
+      other_than: павінна адрознівацца ад %{count}
     template:
-      body: ! 'Узніклі праблемы з наступнымі палямі:'
+      body: 'Узніклі праблемы з наступнымі палямі:'
       header:
         one: не атрымалася захаваць %{model} з-за 1 памылкі
-        other: ! 'не атрымалася захаваць %{model} з-за %{count} памылак'
+        other: не атрымалася захаваць %{model} з-за %{count} памылак
   helpers:
     select:
       prompt: Калі ласка, абярыце
@@ -145,22 +146,22 @@ be:
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%u%n'
+        delimiter: ","
+        format: "%u%n"
         precision: 2
-        separator: .
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: $
+        unit: "$"
     format:
-      delimiter: ! ','
+      delimiter: ","
       precision: 3
-      separator: .
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: мільярд
           million: мільён
@@ -174,7 +175,7 @@ be:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Байт
@@ -192,13 +193,13 @@ be:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' і '
-      two_words_connector: ! ' і '
-      words_connector: ! ', '
+      last_word_connector: " і "
+      two_words_connector: " і "
+      words_connector: ", "
   time:
     am: раніцы
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: вечара

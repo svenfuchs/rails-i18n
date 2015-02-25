@@ -1,5 +1,4 @@
-#Bahasa Malaysia
-
+---
 ms:
   date:
     abbr_day_names:
@@ -33,9 +32,9 @@ ms:
     - Jumaat
     - Sabtu
     formats:
-      default: ! '%d-%m-%Y'
-      long: ! '%d %B, %Y'
-      short: ! '%d %b'
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
     month_names:
     - 
     - Januari
@@ -80,16 +79,16 @@ ms:
         other: lebih %{count} tahun
       x_days:
         one: 1 hari
-        other: ! '%{count} hari'
+        other: "%{count} hari"
       x_minutes:
         one: 1 minit
-        other: ! '%{count} minit'
+        other: "%{count} minit"
       x_months:
         one: 1 bulan
-        other: ! '%{count} bulan'
+        other: "%{count} bulan"
       x_seconds:
         one: 1 saat
-        other: ! '%{count} saat'
+        other: "%{count} saat"
     prompts:
       day: Hari
       hour: Jam
@@ -98,7 +97,7 @@ ms:
       second: Saat
       year: Tahun
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: wajib diterima
       blank: tidak boleh dikosongkan
@@ -116,7 +115,7 @@ ms:
       not_a_number: bukan nombor
       not_an_integer: mestilah integer
       odd: mesti ganjil
-      record_invalid: ! 'Pengesahan gagal: %{errors}'
+      record_invalid: 'Pengesahan gagal: %{errors}'
       taken: telah digunakan
       too_long:
         one: terlalu panjang (maksima adalah 1 karakter)
@@ -128,10 +127,10 @@ ms:
         one: mempunyai panjang yang salah (sepatutnya 1 karakter sahaja)
         other: mempunyai panjang yang salah(sepatutnya %{count} karakter sahaja)
     template:
-      body: ! 'Terdapat masalah dengan medan data tersebut:'
+      body: 'Terdapat masalah dengan medan data tersebut:'
       header:
         one: 1 ralat menhalang  %{model} ini dari disimpan
-        other: ! '%{count} ralat menhalang %{model} ini dari disimpan'
+        other: "%{count} ralat menhalang %{model} ini dari disimpan"
   helpers:
     select:
       prompt: Sila pilih
@@ -142,22 +141,22 @@ ms:
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%u%n'
+        delimiter: ","
+        format: "%u%n"
         precision: 2
-        separator: .
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
         unit: RM
     format:
-      delimiter: ! ','
+      delimiter: ","
       precision: 3
-      separator: .
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: Ribu Juta
           million: Juta
@@ -171,7 +170,7 @@ ms:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Bait
@@ -188,13 +187,13 @@ ms:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', dan '
-      two_words_connector: ! ' dan '
-      words_connector: ! ', '
+      last_word_connector: ", dan "
+      two_words_connector: " dan "
+      words_connector: ", "
   time:
     am: am
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%d %B, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%d %B, %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: pm

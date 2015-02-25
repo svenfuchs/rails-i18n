@@ -1,6 +1,4 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
+---
 af:
   date:
     abbr_day_names:
@@ -12,7 +10,7 @@ af:
     - Vry
     - Sat
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -34,11 +32,11 @@ af:
     - Vrydag
     - Saterdag
     formats:
-      default: ! '%Y-%m-%d'
-      long: ! '%B %d, %Y'
-      short: ! '%b %d'
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
     month_names:
-    -
+    - 
     - Januarie
     - Februarie
     - Maart
@@ -81,16 +79,16 @@ af:
         other: meer as %{count} jaar
       x_days:
         one: 1 dag
-        other: ! '%{count} days'
+        other: "%{count} days"
       x_minutes:
         one: 1 minuut
-        other: ! '%{count} minute'
+        other: "%{count} minute"
       x_months:
         one: 1 maand
-        other: ! '%{count} maande'
+        other: "%{count} maande"
       x_seconds:
         one: 1 sekonde
-        other: ! '%{count} sekondes'
+        other: "%{count} sekondes"
     prompts:
       day: Dag
       hour: Uur
@@ -99,7 +97,7 @@ af:
       second: Sekondes
       year: Jaar
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: moet aanvaar word
       blank: mag nie leeg wees nie
@@ -117,7 +115,7 @@ af:
       not_a_number: is nie n getal nie
       not_an_integer: moet n integer wees
       odd: moet onewe wees
-      record_invalid: ! 'Validation failed: %{errors}'
+      record_invalid: 'Validation failed: %{errors}'
       taken: is reeds geneem
       too_long:
         one: is te lank (maksimum is 1 karakter)
@@ -129,10 +127,10 @@ af:
         one: is die verkeerde lengte (moet 1 karakter wees)
         other: is die verkeerde lengte (moet %{count} karakters wees)
     template:
-      body: ! 'There were problems with the following fields:'
+      body: 'There were problems with the following fields:'
       header:
         one: 1 fout het verhoed dat hierdie %{model} gestoor kon word
-        other: ! '%{count} foute het verhoed dat hierdie %{model} gestoor kon word'
+        other: "%{count} foute het verhoed dat hierdie %{model} gestoor kon word"
   helpers:
     select:
       prompt: Kies asseblief
@@ -143,22 +141,22 @@ af:
   number:
     currency:
       format:
-        delimiter: ! ','
-        format: ! '%u%n'
+        delimiter: ","
+        format: "%u%n"
         precision: 2
-        separator: .
+        separator: "."
         significant: vals
         strip_insignificant_zeros: vals
         unit: R
     format:
-      delimiter: ! ','
+      delimiter: ","
       precision: 3
-      separator: .
+      separator: "."
       significant: vals
       strip_insignificant_zeros: vals
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: miljard
           million: miljoen
@@ -172,7 +170,7 @@ af:
         significant: waar
         strip_insignificant_zeros: waar
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -189,13 +187,13 @@ af:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ', en '
-      two_words_connector: ! ' en '
-      words_connector: ! ', '
+      last_word_connector: ", en "
+      two_words_connector: " en "
+      words_connector: ", "
   time:
     am: vm
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
     pm: nm
