@@ -176,10 +176,10 @@ hr:
   number:
     currency:
       format:
-        delimiter: ","
+        delimiter: "."
         format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: kn
