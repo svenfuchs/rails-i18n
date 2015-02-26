@@ -1,3 +1,24 @@
+## 4.0.4 (2015-02-27)
+ - Complete Brazilian Portuguese translation (pt-BR)
+ - Fix east slavic pluralization and transliteration rules
+ - Update Polish (pl)
+ - Change confirmation error message for es-* locales
+ - Update Swedish (sv)
+ - Update French (fr)
+ - Update Dutch (nl)
+ - Update Swiss German (de-CH)
+ - Update German (de, de-AT)
+ - Update Turkish (tr)
+ - Update Lithuanian (lt)
+ - Update Urdu (ur)
+ - Update Chinese (zh-CN, zh-HK, zh-TW, zh-YUE)
+ - Update Khmer (km)
+ - Update Lithuanian (lt)
+ - Update Italian (it)
+ - Add Belarusian (be)
+ - Add Tatar (tt)
+ - Update Croatian (hr)
+
 ## 4.0.3 (2014-09-04)
  - Remove activemodel and activerecord namespaces
  - Update Hebrew translation (he)
