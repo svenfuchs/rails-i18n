@@ -101,7 +101,6 @@ pap-CW:
     messages:
       accepted: mester asept'é
       blank: no por keda sin yen'é
-      present: mester keda bashí
       confirmation: ! "no ta meskos %{attribute}"
       empty: no por keda bashí
       equal_to: mester ta meskos ku %{count}
@@ -116,10 +115,12 @@ pap-CW:
       not_a_number: no ta un number
       not_an_integer: mester ta un number hinté
       odd: mester ta impar
+      other_than: "no por ta %{count}"
+      present: mester keda bashí
       record_invalid: ! 'Validashon a faya: %{errors}'
       restrict_dependent_destroy:
-        one: "No por kita e registro akí pasobra un otro %{record} ta dependé di dje"
         many: "No por kita e registro akí pasobra otro %{record} ta dependé di dje"
+        one: "No por kita e registro akí pasobra un otro %{record} ta dependé di dje"
       taken: ta usá kaba
       too_long:
         one: ta muchu largu (máksimo ta 1 karakter)
@@ -130,7 +131,6 @@ pap-CW:
       wrong_length:
         one: su largura no ta korekto (mester ta 1 karakter)
         other: su largura no ta korekto (mester ta %{count} karakter)
-      other_than: "no por ta %{count}"
     template:
       body: ! 'E siguiente rúbrikanan ta duna problema:'
       header:

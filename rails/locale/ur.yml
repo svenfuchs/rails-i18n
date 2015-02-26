@@ -101,7 +101,6 @@ ur:
     messages:
       accepted: قبول ہونا ضروری ہے
       blank: لازم ہے
-      present: خالی ہونا ضروری ہے
       confirmation: "%{attribute} میل نہیں رکھتا"
       empty: لازم ہے
       equal_to: "%{count} کے برابر ہونا چاہیے"
@@ -116,11 +115,13 @@ ur:
       not_a_number: ایک نمبر نہیں ہے
       not_an_integer: ایک عدد صحیح ہونا ضروری ہے
       odd: طاق ہونا ضروری ہے
+      other_than: "%{count} کے علاوہ کسی اور کا ہونا لازمی ہے"
+      present: خالی ہونا ضروری ہے
       record_invalid: 'توثیق میں نا کا می: %{errors}'
       restrict_dependent_destroy:
-        one: ایک منحصر %{record} کی موجودگی کے باعث اس ریکارڈ کو حذف نہیں کیا جا سکتا
         many: چند منحصر %{record}  کی موجودگی کے باعث اس ریکارڈ کو حذف نہیں کیا جا
           سکتا
+        one: ایک منحصر %{record} کی موجودگی کے باعث اس ریکارڈ کو حذف نہیں کیا جا سکتا
       taken: پہلے سے ہی استعمال میں ہے
       too_long:
         one: بہت طویل ہے (زیادہ سے زیادہ ایک حرف)
@@ -131,7 +132,6 @@ ur:
       wrong_length:
         one: غلط طوالت (ایک حرف ہونا چاہئے)
         other: غلط طوالت (%{count} حروف ہونے چاہئے)
-      other_than: "%{count} کے علاوہ کسی اور کا ہونا لازمی ہے"
     template:
       body: 'مندرجہ ذیل متن کے ساتھ مسائل ہیں:'
       header:
@@ -164,11 +164,11 @@ ur:
       decimal_units:
         format: "%n %u"
         units:
-          thousand: ہزار
-          million: ملین
           billion: بلین
-          trillion: ٹریلن
+          million: ملین
           quadrillion: کواڈریلن
+          thousand: ہزار
+          trillion: ٹریلن
           unit: Rs
       format:
         delimiter: ''
@@ -199,8 +199,8 @@ ur:
       words_connector: "، "
   time:
     am: صبح
-    pm: شام
     formats:
       default: "%a، %d %b %Y، %p %l:%M %Z"
       long: "%B %d، %Y %p %H:%M"
       short: "%d %b، %H:%M"
+    pm: شام

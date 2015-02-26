@@ -178,10 +178,10 @@ sl:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            two: Bytes
             few: Bytes
+            one: Byte
             other: Bytes
+            two: Bytes
           gb: GB
           kb: KB
           mb: MB

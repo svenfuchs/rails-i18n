@@ -99,7 +99,6 @@ nn:
     messages:
       accepted: må vera akseptert
       blank: kan ikkje vera blank
-      present: må vera blank
       confirmation: er ikkje stadfesta
       empty: kan ikkje vera tom
       equal_to: må vera lik %{count}
@@ -114,15 +113,16 @@ nn:
       not_a_number: er ikkje eit tal
       not_an_integer: er ikkje eit heiltal
       odd: må vera oddetal
+      other_than: må vera noko anna enn %{count}
+      present: må vera blank
       record_invalid: 'Valideringa mislukka: %{errors}'
       restrict_dependent_destroy:
-        one: Kan ikkje sletta registreringa, fordi 1 avhengig %{record} finst.
         many: Kan ikkje sletta registreringa, fordi avhengige %{record} finst.
+        one: Kan ikkje sletta registreringa, fordi 1 avhengig %{record} finst.
       taken: er allereie i bruk
       too_long: er for lang (maksimum %{count} teikn)
       too_short: er for kort (minimum %{count} teikn)
       wrong_length: har feil lengde (maksimum %{count} teikn)
-      other_than: må vera noko anna enn %{count}
     template:
       body: 'det oppstod problem i følgjande felt:'
       header: kunne ikkje lagra %{model} grunna %{count} feil.

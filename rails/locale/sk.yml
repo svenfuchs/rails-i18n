@@ -56,49 +56,49 @@ sk:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: asi hodinou
         few: asi %{count} hodinami
+        one: asi hodinou
         other: asi %{count} hodinami
       about_x_months:
-        one: asi mesiacom
         few: asi %{count} mesiacmi
+        one: asi mesiacom
         other: asi %{count} mesiacmi
       about_x_years:
-        one: asi rokom
         few: asi %{count} rokmi
+        one: asi rokom
         other: asi %{count} rokmi
       almost_x_years:
-        one: takmer rokom
         few: takmer %{count} rokmi
+        one: takmer rokom
         other: takmer %{count} rokmi
       half_a_minute: pol minútou
       less_than_x_minutes:
-        one: necelou minútou
         few: necelými %{count} minútami
+        one: necelou minútou
         other: necelými %{count} minútami
       less_than_x_seconds:
-        one: necelou sekundou
         few: necelými %{count} sekundami
+        one: necelou sekundou
         other: necelými %{count} sekundami
       over_x_years:
-        one: viac ako rokom
         few: viac ako %{count} rokmi
+        one: viac ako rokom
         other: viac ako %{count} rokmi
       x_days:
-        one: dňom
         few: "%{count} dňami"
+        one: dňom
         other: "%{count} dňami"
       x_minutes:
-        one: minútou
         few: "%{count} minútami"
+        one: minútou
         other: "%{count} minútami"
       x_months:
-        one: mesiacom
         few: "%{count} mesiacmi"
+        one: mesiacom
         other: "%{count} mesiacmi"
       x_seconds:
-        one: sekundou
         few: "%{count} sekundami"
+        one: sekundou
         other: "%{count} sekundami"
     prompts:
       day: Deň
@@ -134,9 +134,9 @@ sk:
     template:
       body: 'Nasledujúce polia obsahujú chybne vyplnené údaje:'
       header:
-        one: Pri ukladaní objektu %{model} došlo k chybám a nebolo ho možné uložiť
         few: Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné
           uložiť
+        one: Pri ukladaní objektu %{model} došlo k chybám a nebolo ho možné uložiť
         other: Pri ukladaní objektu %{model} došlo k %{count} chybám a nebolo ho možné
           uložiť
   helpers:

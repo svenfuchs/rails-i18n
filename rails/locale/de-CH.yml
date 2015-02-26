@@ -101,7 +101,6 @@ de-CH:
     messages:
       accepted: muss akzeptiert werden
       blank: muss ausgefüllt werden
-      present: darf nicht ausgefüllt werden
       confirmation: stimmt nicht mit %{attribute} überein
       empty: muss ausgefüllt werden
       equal_to: muss genau %{count} sein
@@ -116,16 +115,17 @@ de-CH:
       not_a_number: ist keine Zahl
       not_an_integer: muss ganzzahlig sein
       odd: muss ungerade sein
+      other_than: darf nicht gleich %{count} sein
+      present: darf nicht ausgefüllt werden
       record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
       restrict_dependent_destroy:
+        many: Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.
         one: Datensatz kann nicht gelöscht werden, da ein abhängiger %{record}-Datensatz
           existiert.
-        many: Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.
       taken: ist bereits vergeben
       too_long: ist zu lang (nicht mehr als %{count} Zeichen)
       too_short: ist zu kurz (nicht weniger als %{count} Zeichen)
       wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
-      other_than: darf nicht gleich %{count} sein
     template:
       body: 'Bitte überprüfen Sie die folgenden Felder:'
       header:

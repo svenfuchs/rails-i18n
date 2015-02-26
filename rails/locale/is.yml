@@ -101,7 +101,6 @@ is:
     messages:
       accepted: þarf að vera tekið gilt
       blank: má ekki vera autt
-      present: verður að vera autt
       confirmation: er ekki jafngilt staðfestingunni
       empty: má ekki vera tómt
       equal_to: þarf að vera jafngilt %{count}
@@ -116,10 +115,12 @@ is:
       not_a_number: er ekki tala
       not_an_integer: þarf að vera heiltala
       odd: þarf að vera oddatala
+      other_than: verður að vera annað en %{count}
+      present: verður að vera autt
       record_invalid: 'Villur: %{errors}'
       restrict_dependent_destroy:
-        one: Ekki hægt að eyða færslu því %{record} sem hún er háð er til
         many: Ekki hægt að eyða færslur því %{record} sem hún er háð er til
+        one: Ekki hægt að eyða færslu því %{record} sem hún er háð er til
       taken: er þegar í notkun
       too_long:
         one: er of langt (má mest vera 1 stafur)
@@ -130,7 +131,6 @@ is:
       wrong_length:
         one: er af rangri lengd (má mest vera 1 stafur)
         other: er af rangri lengd (má mest vera %{count} stafir)
-      other_than: verður að vera annað en %{count}
     template:
       body: 'Villur fundust í eftirfarandi dálkum:'
       header:

@@ -33,8 +33,8 @@ fr:
     - samedi
     formats:
       default: "%d/%m/%Y"
-      short: "%e %b"
       long: "%e %B %Y"
+      short: "%e %b"
     month_names:
     - 
     - janvier
@@ -69,13 +69,13 @@ fr:
         other: presque %{count} ans
       half_a_minute: une demi-minute
       less_than_x_minutes:
-        zero: moins d'une minute
         one: moins d'une minute
         other: moins de %{count} minutes
+        zero: moins d'une minute
       less_than_x_seconds:
-        zero: moins d'une seconde
         one: moins d'une seconde
         other: moins de %{count} secondes
+        zero: moins d'une seconde
       over_x_years:
         one: plus d'un an
         other: plus de %{count} ans
@@ -103,7 +103,6 @@ fr:
     messages:
       accepted: doit être accepté(e)
       blank: doit être rempli(e)
-      present: doit être vide
       confirmation: ne concorde pas avec la confirmation
       empty: doit être rempli(e)
       equal_to: doit être égal à %{count}
@@ -118,10 +117,12 @@ fr:
       not_a_number: n'est pas un nombre
       not_an_integer: doit être un nombre entier
       odd: doit être impair
+      other_than: doit être différent de %{count}
+      present: doit être vide
       record_invalid: 'La validation a échoué : %{errors}'
       restrict_dependent_destroy:
-        one: 'Suppression impossible: un autre enregistrement est lié'
         many: 'Suppression impossible: d''autres enregistrements sont liés'
+        one: 'Suppression impossible: un autre enregistrement est lié'
       taken: n'est pas disponible
       too_long:
         one: est trop long (pas plus d'un caractère)
@@ -132,7 +133,6 @@ fr:
       wrong_length:
         one: ne fait pas la bonne longueur (doit comporter un seul caractère)
         other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
-      other_than: doit être différent de %{count}
     template:
       body: 'Veuillez vérifier les champs suivants : '
       header:

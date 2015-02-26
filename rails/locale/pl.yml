@@ -137,6 +137,7 @@ pl:
       not_a_number: nie jest liczbą
       not_an_integer: musi być liczbą całkowitą
       odd: musi być nieparzyste
+      other_than: musi być inna niż %{count}
       present: musi być puste
       record_invalid: 'Negatywne sprawdzenie poprawności: %{errors}'
       restrict_dependent_destroy:
@@ -158,7 +159,6 @@ pl:
         many: ma nieprawidłową długość (powinna wynosić %{count} znaków)
         one: ma nieprawidłową długość (powinna wynosić jeden znak)
         other: ma nieprawidłową długość (powinna wynosić %{count} znaków)
-      other_than: musi być inna niż %{count}
     template:
       body: 'Błędy dotyczą następujących pól:'
       header:

@@ -122,7 +122,6 @@ bs:
     messages:
       accepted: mora biti prihvaćeno
       blank: ne smije biti prazno
-      present: mora biti prazno
       confirmation: se ne poklapa sa potvrdom
       empty: ne smije biti prazno
       equal_to: mora biti %{count}
@@ -137,15 +136,16 @@ bs:
       not_a_number: nije broj
       not_an_integer: mora biti cijeli broj
       odd: mora biti neparno
+      other_than: mora biti različito od %{count}
+      present: mora biti prazno
       record_invalid: 'Validacija nije uspjela: %{errors}'
       restrict_dependent_destroy:
-        one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
         many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
+        one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
       taken: je već zauzet
       too_long: je predugo (maksimalno je dozvoljeno %{count} znakova)
       too_short: je prekratko (predviđeno je minimalno %{count} znakova)
       wrong_length: je pogrešne dužine (trebalo bi biti tačno %{count} znakova)
-      other_than: mora biti različito od %{count}
     template:
       body: 'Desili su se problemi sa slijedećim poljima:'
       header:
