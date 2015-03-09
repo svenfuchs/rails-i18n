@@ -97,7 +97,7 @@ ko:
       second: 초
       year: 년
   errors:
-    format: "%{attribute} %{message}"
+    format: "%{attribute}%{message}"
     messages:
       accepted: 을(를) 반드시 확인해야 합니다
       blank: 에 내용을 입력해 주세요
