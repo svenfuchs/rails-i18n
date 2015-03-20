@@ -147,7 +147,7 @@ nl:
     currency:
       format:
         delimiter: "."
-        format: "%u%n"
+        format: "%u %n"
         precision: 2
         separator: ","
         significant: false
