@@ -101,7 +101,6 @@ ja:
     messages:
       accepted: を受諾してください。
       blank: を入力してください。
-      present: は入力しないでください。
       confirmation: と%{attribute}の入力が一致しません。
       empty: を入力してください。
       equal_to: は%{count}にしてください。
@@ -116,13 +115,14 @@ ja:
       not_a_number: は数値で入力してください。
       not_an_integer: は整数で入力してください。
       odd: は奇数にしてください。
+      other_than: は%{count}以外の値にしてください。
+      present: は入力しないでください。
       record_invalid: バリデーションに失敗しました。 %{errors}
       restrict_dependent_destroy: "%{record}が存在しているので削除できません。"
       taken: はすでに存在します。
       too_long: は%{count}文字以内で入力してください。
       too_short: は%{count}文字以上で入力してください。
       wrong_length: は%{count}文字で入力してください。
-      other_than: は%{count}以外の値にしてください。
     template:
       body: 次の項目を確認してください。
       header:

@@ -152,11 +152,11 @@ fi:
       decimal_units:
         format: "%n %u"
         units:
-          thousand: tuhatta
-          million: miljoonaa
           billion: miljardia
-          trillion: biljoonaa
+          million: miljoonaa
           quadrillion: tuhatta biljoonaa
+          thousand: tuhatta
+          trillion: biljoonaa
           unit: ''
       format:
         delimiter: ''

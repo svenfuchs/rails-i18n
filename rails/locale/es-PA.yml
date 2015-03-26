@@ -101,7 +101,6 @@ es-PA:
     messages:
       accepted: debe ser aceptado
       blank: no puede estar en blanco
-      present: debe estar en blanco
       confirmation: no coincide
       empty: no puede estar vacío
       equal_to: debe ser igual a %{count}
@@ -116,10 +115,12 @@ es-PA:
       not_a_number: no es un número
       not_an_integer: debe ser un entero
       odd: debe ser un número impar
+      other_than: debe ser diferente de %{count}
+      present: debe estar en blanco
       record_invalid: 'La validación falló: %{errors}'
       restrict_dependent_destroy:
-        one: No se puede eliminar el registro porque existe un(a) %{record} dependiente
         many: No se puede eliminar el registro porque existen %{record} dependientes
+        one: No se puede eliminar el registro porque existe un(a) %{record} dependiente
       taken: ya está en uso
       too_long:
         one: es demasiado largo (máximo 1 caracter)
@@ -130,7 +131,6 @@ es-PA:
       wrong_length:
         one: no tiene la longitud correcta (debe ser de 1 caracter)
         other: no tiene la longitud correcta (debe ser de %{count} caracteres)
-      other_than: debe ser diferente de %{count}
     template:
       body: 'Revise que los siguientes campos sean válidos:'
       header:

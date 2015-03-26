@@ -101,7 +101,6 @@ nl:
     messages:
       accepted: moet worden geaccepteerd
       blank: moet opgegeven zijn
-      present: moet leeg zijn
       confirmation: komt niet overeen met %{attribute}
       empty: moet opgegeven zijn
       equal_to: moet gelijk zijn aan %{count}
@@ -116,10 +115,12 @@ nl:
       not_a_number: is geen getal
       not_an_integer: moet een geheel getal zijn
       odd: moet oneven zijn
+      other_than: moet anders zijn dan %{count}
+      present: moet leeg zijn
       record_invalid: 'Validatie mislukt: %{errors}'
       restrict_dependent_destroy:
-        one: Kan item niet verwijderen omdat %{record} afhankelijk is
         many: Kan item niet verwijderen omdat afhankelijke %{record} bestaan
+        one: Kan item niet verwijderen omdat %{record} afhankelijk is
       taken: is al in gebruik
       too_long:
         one: is te lang (maximaal %{count} teken)
@@ -130,7 +131,6 @@ nl:
       wrong_length:
         one: heeft onjuiste lengte (moet %{count} teken lang zijn)
         other: heeft onjuiste lengte (moet %{count} tekens lang zijn)
-      other_than: moet anders zijn dan %{count}
     template:
       body: 'Controleer de volgende velden:'
       header:

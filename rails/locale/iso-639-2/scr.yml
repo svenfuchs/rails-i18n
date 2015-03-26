@@ -55,60 +55,60 @@ scr:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: oko %{count} sat
         few: oko %{count} sata
         many: oko %{count} sati
+        one: oko %{count} sat
         other: oko %{count} sati
       about_x_months:
-        one: oko %{count} mesec
         few: oko %{count} meseca
         many: oko %{count} meseci
+        one: oko %{count} mesec
         other: oko %{count} meseci
       about_x_years:
-        one: oko %{count} godine
         few: oko %{count} godine
         many: oko %{count} godina
+        one: oko %{count} godine
         other: oko %{count} godina
       almost_x_years:
-        one: skoro %{count} godina
         few: skoro %{count} godine
         many: skoro %{count} godina
+        one: skoro %{count} godina
         other: skoro %{count} godina
       half_a_minute: pola minute
       less_than_x_minutes:
-        one: manje od %{count} minut
         few: manje od %{count} minuta
         many: manje od %{count} minuta
+        one: manje od %{count} minut
         other: manje od %{count} minuta
       less_than_x_seconds:
         few: manje od %{count} sekunde
-        one: manje od %{count} sekund
         many: manje od %{count} sekundi
+        one: manje od %{count} sekund
         other: manje od %{count} sekundi
       over_x_years:
-        one: preko %{count} godine
         few: preko %{count} godine
         many: preko %{count} godina
+        one: preko %{count} godine
         other: preko %{count} godina
       x_days:
-        one: ! '%{count} dan'
         few: ! '%{count} dana'
         many: ! '%{count} dana'
+        one: ! '%{count} dan'
         other: ! '%{count} dana'
       x_minutes:
-        one: ! '%{count} minut'
         few: ! '%{count} minuta'
         many: ! '%{count} minuta'
+        one: ! '%{count} minut'
         other: ! '%{count} minuta'
       x_months:
-        one: ! '%{count} mesec'
         few: ! '%{count} meseca'
         many: ! '%{count} meseci'
+        one: ! '%{count} mesec'
         other: ! '%{count} meseci'
       x_seconds:
-        one: ! '%{count} sekunda'
         few: ! '%{count} sekunde'
         many: ! '%{count} sekundi'
+        one: ! '%{count} sekunda'
         other: ! '%{count} sekundi'
     prompts:
       day: Dan
@@ -122,7 +122,6 @@ scr:
     messages:
       accepted: mora biti prihvaćen
       blank: ne sme biti prazan
-      present: mora biti prazan
       confirmation: se ne slaže sa potvrdom
       empty: ne sme biti prazan
       equal_to: mora biti jednak %{count}
@@ -137,33 +136,34 @@ scr:
       not_a_number: nije broj
       not_an_integer: nije ceo broj
       odd: mora biti neparan
+      other_than: "mora biti različit od %{count}"
+      present: mora biti prazan
       record_invalid: ! 'Validacija nije uspela: %{errors}'
       restrict_dependent_destroy:
-        one: "Nije moguće obrisati zapis jer postoji zavisan %{record}"
         many: "Nije moguće obrisati zapis jer postoje zavisni %{record}"
+        one: "Nije moguće obrisati zapis jer postoji zavisan %{record}"
       taken: je već zauzet
       too_long:
-        one: je predugačak (maksimum je %{count} znak)
         few: je predugačak (maksimum je %{count} znaka)
         many: je predugačak (maksimum je %{count} znakova)
+        one: je predugačak (maksimum je %{count} znak)
         other: je predugačak (maksimum je %{count} znakova)
       too_short:
-        one: je prekratak (minimum je %{count} znak)
         few: je prekratak (minimum je %{count} znaka)
         many: je prekratak (minimum je %{count} znakova)
+        one: je prekratak (minimum je %{count} znak)
         other: je prekratak (minimum je %{count} znakova)
       wrong_length:
-        one: nije odgovarajuće dužine (treba biti %{count} znak)
         few: nije odgovarajuće dužine (treba biti %{count} znaka)
         many: nije odgovarajuće dužine (treba biti %{count} znakova)
+        one: nije odgovarajuće dužine (treba biti %{count} znak)
         other: nije odgovarajuće dužine (treba biti %{count} znakova)
-      other_than: "mora biti različit od %{count}"
     template:
       body: ! 'Molim Vas da proverite sledeća polja:'
       header:
-        one: ! 'Nisam uspeo sačuvati %{model}: %{count} greška.'
         few: ! 'Nisam uspeo sačuvati %{model}: %{count} greške.'
         many: ! 'Nisam uspeo sačuvati %{model}: %{count} greški.'
+        one: ! 'Nisam uspeo sačuvati %{model}: %{count} greška.'
         other: ! 'Nisam uspeo sačuvati %{model}: %{count} greški.'
   helpers:
     select:
@@ -192,11 +192,11 @@ scr:
       decimal_units:
         format: ! '%n %u'
         units:
-          thousand: Hiljadu
-          million: Milion
           billion: Milijarda
-          trillion: Trilion
+          million: Milion
           quadrillion: Kvadrilion
+          thousand: Hiljadu
+          trillion: Trilion
           unit: ''
       format:
         delimiter: ''
@@ -207,9 +207,9 @@ scr:
         format: ! '%n %u'
         units:
           byte:
-            one: bajt
             few: bajta
             many: bajtova
+            one: bajt
             other: bajtova
           gb: GB
           kb: KB

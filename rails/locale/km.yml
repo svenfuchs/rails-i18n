@@ -32,8 +32,8 @@ km:
     - ថ្ងៃសៅរ៍
     - ថ្ងៃអាទិត្យ
     formats:
-      long: ”ថ្ងៃទី%e %B %Y %H:%M %Z"
       default: "“%d %B %Y”"
+      long: ”ថ្ងៃទី%e %B %Y %H:%M %Z"
       short: "“%d %b”"
     month_names:
     - 
@@ -58,7 +58,6 @@ km:
     messages:
       accepted: ត្រូវតែព្រម
       blank: មិនអាចរំលង
-      present: ត្រូវតែរំលង
       confirmation: ផ្ទៀងផ្ទាត់មិនត្រូវនឹង %{attribute}
       empty: មិនអាចរំលង
       equal_to: ត្រូវតែស្មើ %{count}
@@ -73,10 +72,12 @@ km:
       not_a_number: មិនមែនជាលេខទេ
       not_an_integer: ត្រូវតែជាចំនួនពេញ
       odd: ត្រូវតែជាចំនួនសេស
+      other_than: ត្រូវតែខុសពី %{count}
+      present: ត្រូវតែរំលង
       record_invalid: 'មិនមានសុពលភាព: %{errors}'
       restrict_dependent_destroy:
-        one: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
         many: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
+        one: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
       taken: មានរួចហើយ
       too_long:
         one: វែងពេក (អតិបរមា 1 អក្សរ)
@@ -87,7 +88,6 @@ km:
       wrong_length:
         one: ប្រវែងមិនត្រូវ (គួរតែមាន 1 អក្សរ)
         other: ប្រវែងមិនត្រូវ (គួរតែមាន %{count} អក្សរ)
-      other_than: ត្រូវតែខុសពី %{count}
     template:
       body: 'សូមពិនិត្យមើលកំហុសនៅខាងក្រោម:'
       header:

@@ -101,7 +101,6 @@ zh-HK:
     messages:
       accepted: 必定要接受%{attribute}
       blank: "%{attribute}不可以是空白"
-      present: "%{attribute}必定要是空白"
       confirmation: 不符合%{attribute}
       empty: "%{attribute}不可以留空"
       equal_to: "%{attribute}必須等於%{count}"
@@ -116,10 +115,12 @@ zh-HK:
       not_a_number: "%{attribute}不是數字"
       not_an_integer: "%{attribute}必須是整數"
       odd: "%{attribute}必須是單數"
+      other_than: "%{attribute}唔可以係%{count}"
+      present: "%{attribute}必定要是空白"
       record_invalid: "%{attribute}驗證失敗︰%{errors}"
       restrict_dependent_destroy:
-        one: 由於%{record}依賴此記錄，無法移除
         many: 由於%{record}依賴此記錄，無法移除
+        one: 由於%{record}依賴此記錄，無法移除
       taken: "%{attribute}已被使用"
       too_long:
         one: 太長（最長為一個字元）
@@ -130,7 +131,6 @@ zh-HK:
       wrong_length:
         one: 字數錯誤 (應為一個字元)
         other: 字數錯誤 (應為%{count}個字元)
-      other_than: "%{attribute}唔可以係%{count}"
     template:
       body: 以下欄位發生問題︰
       header:

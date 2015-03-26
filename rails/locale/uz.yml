@@ -71,9 +71,9 @@ uz:
         one: chamasi %{count} yil
         other: chamasi %{count} yil
       almost_x_years:
-        one: deyarli 1 yil
         few: deyarli %{count} yil
         many: deyarli %{count} yil
+        one: deyarli 1 yil
         other: deyarli %{count} yil
       half_a_minute: bir daqiqadan kam
       less_than_x_minutes:
