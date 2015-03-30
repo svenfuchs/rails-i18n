@@ -56,39 +56,61 @@ be:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: каля 1 гадзіны
-        other: каля %{count} гадзін
+        one: каля %{count} гадзіны таму
+        few: каля %{count} гадзін таму
+        many: каля %{count} гадзін таму
+        other: каля %{count} гадзін таму
       about_x_months:
-        one: каля 1 месяца
-        other: каля %{count} месяцаў
+        one: каля %{count} месяца таму
+        few: каля %{count} месяцаў таму
+        many: каля %{count} месяцаў таму
+        other: каля %{count} месяцаў таму
       about_x_years:
-        one: каля 1 года
-        other: каля %{count} гадоў
+        one: каля %{count} года таму
+        few: каля %{count} гадоў таму
+        many: каля %{count} гадоў таму
+        other: каля %{count} гадоў таму
       almost_x_years:
-        one: амаль 1 год
-        other: амаль %{count} гадоў
-      half_a_minute: палова хвіліны
+        one: амаль %{count} год таму
+        few: амаль %{count} гады таму
+        many: амаль %{count} гадоў таму
+        other: амаль %{count} гадоў таму
+      half_a_minute: паўхвіліны таму
       less_than_x_minutes:
-        one: меней за 1 хвіліну
-        other: меней за %{count} хвілін
+        one: менш %{count} хвіліны таму
+        few: менш %{count} хвілін таму
+        many: менш %{count} хвілін таму
+        other: менш %{count} хвілін таму
       less_than_x_seconds:
-        one: меней за 1 секунду
-        other: меней за %{count} секундаў
+        one: менш %{count} секунды таму
+        few: менш %{count} секунд таму
+        many: менш %{count} секунд таму
+        other: менш %{count} секунд таму
       over_x_years:
-        one: болей за 1 год
-        other: болей за %{count} гадоў
+        one: больш %{count} года таму
+        few: больш %{count} гадоў таму
+        many: больш %{count} гадоў таму
+        other: больш %{count} гадоў таму
       x_days:
-        one: 1 дзень
-        other: "%{count} дзён"
+        one: "%{count} дзень таму"
+        few: "%{count} дні таму"
+        many: "%{count} дзён таму"
+        other: "%{count} дзён таму"
       x_minutes:
-        one: 1 хвіліна
-        other: "%{count} хвілін"
+        one: "%{count} хвіліну таму"
+        few: "%{count} хвіліны таму"
+        many: "%{count} хвілін таму"
+        other: "%{count} хвілін таму"
       x_months:
-        one: 1 месяц
-        other: "%{count} месяцаў"
+        one: "%{count} месяц таму"
+        few: "%{count} месяцы таму"
+        many: "%{count} месяцаў таму"
+        other: "%{count} месяцаў таму"
       x_seconds:
-        one: 1 секунда
-        other: "%{count} секундаў"
+        one: "%{count} секунду таму"
+        few: "%{count} секунды таму"
+        many: "%{count} секунд таму"
+        other: "%{count} секунд таму"
     prompts:
       day: Дзень
       hour: Гадзіна
@@ -119,22 +141,32 @@ be:
       record_invalid: 'Памылкі валідацыі: %{errors}'
       restrict_dependent_destroy:
         one: Нельга выдаліць запіс, таму што існуе залежнасць %{record}
+        few: Нельга выдаліць запіс, таму што існуюць залежнасці %{record}
         many: Нельга выдаліць запіс, таму што існуюць залежнасці %{record}
+        other: Нельга выдаліць запіс, таму што існуюць залежнасці %{record}
       taken: ўжо занята
       too_long:
         one: занадта доўгі (максімум 1 сімвал)
+        few: занадта доўгі (максімум %{count} сімвалаў)
+        many: занадта доўгі (максімум %{count} сімвалаў)
         other: занадта доўгі (максімум %{count} сімвалаў)
       too_short:
         one: занадта кароткі (мінімум 1 сімвал)
+        few: занадта кароткі (мінімум %{count} сімвалаў)
+        many: занадта кароткі (мінімум %{count} сімвалаў)
         other: занадта кароткі (мінімум %{count} сімвалаў)
       wrong_length:
         one: няправільная даўжыня (павінен быць 1 сімвал)
+        few: няправільная даўжыня (павінны быць %{count} сімвалаў)
+        many: няправільная даўжыня (павінны быць %{count} сімвалаў)
         other: няправільная даўжыня (павінны быць %{count} сімвалаў)
       other_than: павінна адрознівацца ад %{count}
     template:
       body: 'Узніклі праблемы з наступнымі палямі:'
       header:
         one: не атрымалася захаваць %{model} з-за 1 памылкі
+        few: не атрымалася захаваць %{model} з-за %{count} памылак
+        many: не атрымалася захаваць %{model} з-за %{count} памылак
         other: не атрымалася захаваць %{model} з-за %{count} памылак
   helpers:
     select:
@@ -179,6 +211,8 @@ be:
         units:
           byte:
             one: Байт
+            few: Байтаў
+            many: Байтаў
             other: Байтаў
           gb: ГБ
           kb: КБ
