@@ -55,7 +55,7 @@ Available locales are:
 > es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-MX, es-PA, es-PE, es-US, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, gl,
 > he, hi, hi-IN, hr, hu, id, is, it, it-CH, ja, km, kn, ko, lo, lt, lv, mk, mn, mr-IN, ms, nb,
 > ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, ta, th,
-> tl, tr, tt, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
+> tl, tr, tt, uk, ug, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Currently, only a few are complete. Typically they lack the following keys:
 
