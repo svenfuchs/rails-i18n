@@ -198,7 +198,7 @@ ug:
   time:
     am: چۈشتىن بۇرۇن
     formats:
-      default: "%Y %b%d %A %H:%M:%S %Z"
-      long: "%Y %b%d %H:%M"
-      short: "%b%d %H:%M"
+      default: "%Y %b %d %A %H:%M:%S %Z"
+      long: "%Y %b %d %H:%M"
+      short: "%b %d %H:%M"
     pm: چۈشتىن كېيىن
