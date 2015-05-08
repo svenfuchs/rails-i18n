@@ -122,9 +122,15 @@ de:
           existiert.
         many: Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.
       taken: ist bereits vergeben
-      too_long: ist zu lang (mehr als %{count} Zeichen)
-      too_short: ist zu kurz (weniger als %{count} Zeichen)
-      wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+      too_long:
+        one: ist zu lang (mehr als 1 Zeichen)
+        other: ist zu lang (mehr als %{count} Zeichen)
+      too_short:
+        one: ist zu kurz (weniger als 1 Zeichen)
+        other: ist zu kurz (weniger als %{count} Zeichen)
+      wrong_length:
+        one: hat die falsche Länge (muss genau 1 Zeichen haben)
+        other: hat die falsche Länge (muss genau %{count} Zeichen haben)
       other_than: darf nicht gleich %{count} sein
     template:
       body: 'Bitte überprüfen Sie die folgenden Felder:'
