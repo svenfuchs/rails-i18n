@@ -57,10 +57,14 @@ Available locales are:
 > ne, nl, nn, or, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, ta, th,
 > tl, tr, tt, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
-Currently, no locales are complete. Typically they lack the following keys:
+Currently, only a few are complete. Typically they lack the following keys:
 
 - `activerecord.errors.messages.record_invalid`
 - `activerecord.errors.messages.restrict_dependent_destroy`
+
+Complete loacales are:
+
+> en, sv
 
 We always welcome your contributions!
 
