@@ -101,6 +101,7 @@ sv:
     messages:
       accepted: måste vara accepterad
       blank: måste anges
+      present: får inte anges
       confirmation: stämmer inte överens
       empty: får ej vara tom
       equal_to: måste vara samma som
@@ -116,10 +117,14 @@ sv:
       not_an_integer: måste vara ett heltal
       odd: måste vara udda
       record_invalid: 'Ett fel uppstod: %{errors}'
+      restrict_dependent_destroy:
+        one: Kan inte ta bort post då beroende %{record} finns
+        many: Kan inte ta bort poster då beroende %{record} finns
       taken: används redan
       too_long: är för lång (maximum är %{count} tecken)
       too_short: är för kort (minimum är %{count} tecken)
       wrong_length: har fel längd (ska vara %{count} tecken)
+      other_than: måste vara annat än %{count}
     template:
       body: 'Det var problem med följande fält:'
       header:
@@ -176,6 +181,7 @@ sv:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
