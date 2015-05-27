@@ -103,6 +103,7 @@ fr-CH:
     messages:
       accepted: doit être accepté(e)
       blank: doit être rempli(e)
+      present: doit être vide
       confirmation: ne concorde pas avec %{attribute}
       empty: doit être rempli(e)
       equal_to: doit être égal à %{count}
@@ -118,6 +119,9 @@ fr-CH:
       not_an_integer: doit être un nombre entier
       odd: doit être impair
       record_invalid: 'La validation a échoué : %{errors}'
+      restrict_dependent_destroy:
+        one: 'Suppression impossible: un autre enregistrement est lié'
+        many: 'Suppression impossible: d''autres enregistrements sont liés'
       taken: n'est pas disponible
       too_long:
         one: est trop long (pas plus d'un caractère)
@@ -128,6 +132,7 @@ fr-CH:
       wrong_length:
         one: ne fait pas la bonne longueur (doit comporter un seul caractère)
         other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+      other_than: doit être différent de %{count}
     template:
       body: 'Veuillez vérifier les champs suivants : '
       header:
@@ -184,6 +189,7 @@ fr-CH:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
