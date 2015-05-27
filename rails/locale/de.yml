@@ -56,46 +56,46 @@ de:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: etwa eine Stunde
-        other: etwa %{count} Stunden
+        one: vor etwa einer Stunde
+        other: vor etwa %{count} Stunden
       about_x_months:
-        one: etwa ein Monat
-        other: etwa %{count} Monate
+        one: vor etwa einem Monat
+        other: vor etwa %{count} Monaten
       about_x_years:
-        one: etwa ein Jahr
-        other: etwa %{count} Jahre
+        one: vor etwa einem Jahr
+        other: vor etwa %{count} Jahren
       almost_x_years:
-        one: fast ein Jahr
-        other: fast %{count} Jahre
-      half_a_minute: eine halbe Minute
+        one: vor fast einem Jahr
+        other: vor fast %{count} Jahren
+      half_a_minute: vor einer halben Minute
       less_than_x_minutes:
-        one: weniger als eine Minute
-        other: weniger als %{count} Minuten
+        one: vor weniger als einer Minute
+        other: vor weniger als %{count} Minuten
       less_than_x_seconds:
-        one: weniger als eine Sekunde
-        other: weniger als %{count} Sekunden
+        one: vor weniger als eine Sekunde
+        other: vor weniger als %{count} Sekunden
       over_x_years:
-        one: mehr als ein Jahr
-        other: mehr als %{count} Jahre
+        one: vor mehr als einem Jahr
+        other: vor mehr als %{count} Jahren
       x_days:
-        one: ein Tag
-        other: "%{count} Tage"
+        one: vor einem Tag
+        other: "vor %{count} Tagen"
       x_minutes:
-        one: eine Minute
-        other: "%{count} Minuten"
+        one: vor einer Minute
+        other: "vor %{count} Minuten"
       x_months:
-        one: ein Monat
-        other: "%{count} Monate"
+        one: vor einem Monat
+        other: "vor %{count} Monaten"
       x_seconds:
-        one: eine Sekunde
-        other: "%{count} Sekunden"
+        one: vor einer Sekunde
+        other: "vor %{count} Sekunden"
     prompts:
       day: Tag
       hour: Stunden
-      minute: Minuten
+      minute: Minute
       month: Monat
-      second: Sekunden
-      year: Jahr
+      second: Sekunde
+      year: Jahr //all are in singular now
   errors:
     format: "%{attribute} %{message}"
     messages:
