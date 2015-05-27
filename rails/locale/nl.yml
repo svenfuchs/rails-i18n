@@ -138,11 +138,11 @@ nl:
         other: "%{model} niet opgeslagen: %{count} fouten gevonden"
   helpers:
     select:
-      prompt: Selecteer
+      prompt: Maak een keuze
     submit:
       create: "%{model} toevoegen"
       submit: "%{model} opslaan"
-      update: "%{model} bewaren"
+      update: "%{model} bijwerken"
   number:
     currency:
       format:
@@ -178,10 +178,10 @@ nl:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
+            one: byte
+            other: bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:
