@@ -10,7 +10,7 @@ es-CR:
     - vie
     - sáb
     abbr_month_names:
-    - 
+    -
     - ene
     - feb
     - mar
@@ -36,7 +36,7 @@ es-CR:
       long: "%A, %d de %B de %Y"
       short: "%d de %b"
     month_names:
-    - 
+    -
     - enero
     - febrero
     - marzo
@@ -176,7 +176,7 @@ es-CR:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

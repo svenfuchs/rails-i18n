@@ -10,7 +10,7 @@ lo:
     - ''
     - ''
     abbr_month_names:
-    - 
+    -
     - ''
     - ''
     - ''
@@ -36,7 +36,7 @@ lo:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - ມັງກອນ
     - ກຸມພາ
     - ມີນາ
@@ -205,7 +205,7 @@ lo:
             many: Bytes
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

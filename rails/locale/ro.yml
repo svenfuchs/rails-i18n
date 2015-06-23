@@ -10,7 +10,7 @@ ro:
     - Vin
     - Sâm
     abbr_month_names:
-    - 
+    -
     - Ian
     - Feb
     - Mar
@@ -36,7 +36,7 @@ ro:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Ianuarie
     - Februarie
     - Martie
@@ -183,7 +183,7 @@ ro:
             few: Bytes
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

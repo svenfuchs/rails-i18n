@@ -10,7 +10,7 @@ zh-TW:
     - 周五
     - 周六
     abbr_month_names:
-    - 
+    -
     - 1月
     - 2月
     - 3月
@@ -36,7 +36,7 @@ zh-TW:
       long: "%Y年%b%d日"
       short: "%b%d日"
     month_names:
-    - 
+    -
     - 一月
     - 二月
     - 三月
@@ -181,7 +181,7 @@ zh-TW:
             one: 位元組
             other: 位元組
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

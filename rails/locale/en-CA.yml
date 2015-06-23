@@ -10,7 +10,7 @@ en-CA:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ en-CA:
       long: "%B %d, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -176,7 +176,7 @@ en-CA:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

@@ -9,7 +9,7 @@ csb:
     - pią
     - sob
     abbr_month_names:
-    - 
+    -
     - stë
     - gro
     - str
@@ -35,7 +35,7 @@ csb:
       long: ! '%B %d, %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - stëcznik
     - gromicznik
     - strëmiannik
@@ -180,7 +180,7 @@ csb:
             one: bajt
             other: bajtë
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

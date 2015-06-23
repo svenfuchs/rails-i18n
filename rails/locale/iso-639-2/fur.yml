@@ -9,7 +9,7 @@ fur:
     - vin
     - sab
     abbr_month_names:
-    - 
+    -
     - Zen
     - Fev
     - Mar
@@ -35,7 +35,7 @@ fur:
       long: ! '%d di %B dal %Y'
       short: ! '%d di %b'
     month_names:
-    - 
+    -
     - Zenâr
     - Fevrâr
     - Març
@@ -168,10 +168,10 @@ fur:
           byte:
             one: Byte
             other: Byte
-          gb: Gb
-          kb: Kb
-          mb: Mb
-          tb: Tb
+          gb: GB
+          kb: kB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''

@@ -10,7 +10,7 @@ id:
     - Jum
     - Sab
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ id:
       long: "%A, %d %B %Y"
       short: "%d.%m.%Y"
     month_names:
-    - 
+    -
     - Januari
     - Februari
     - Maret
@@ -171,7 +171,7 @@ id:
             one: Byte
             other: Byte
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

@@ -10,7 +10,7 @@ lt:
     - Pen
     - Šeš
     abbr_month_names:
-    - 
+    -
     - Sau
     - Vas
     - Kov
@@ -36,7 +36,7 @@ lt:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - sausio
     - vasario
     - kovo
@@ -194,7 +194,7 @@ lt:
             few: Baitai
             other: Baitų
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

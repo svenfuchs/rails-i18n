@@ -10,7 +10,7 @@ ta:
     - வெள்ளி
     - சனி
     abbr_month_names:
-    - 
+    -
     - ஜன
     - பிப்
     - மார்ச்
@@ -36,7 +36,7 @@ ta:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - ஜனவரி
     - பிப்ரவரி
     - மார்ச்
@@ -181,7 +181,7 @@ ta:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

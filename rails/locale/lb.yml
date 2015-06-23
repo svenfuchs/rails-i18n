@@ -182,7 +182,7 @@ lb:
             one: Byte
             other: Byten
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

@@ -10,7 +10,7 @@ wo:
     - Ajj
     - Gaw
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ wo:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - Tamkharit
     - Digui Gamou
     - Gamou
@@ -176,7 +176,7 @@ wo:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:
