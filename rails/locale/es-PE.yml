@@ -64,6 +64,9 @@ es-PE:
       about_x_years:
         one: cerca de 1 año
         other: cerca de %{count} años
+      almost_x_years:
+        one: casi 1 año
+        other: casi %{count} años
       half_a_minute: medio minuto
       less_than_x_minutes:
         one: menos de 1 minuto
@@ -98,6 +101,7 @@ es-PE:
     messages:
       accepted: debe ser aceptado
       blank: no puede estar en blanco
+      present: debe estar en blanco
       confirmation: no coincide
       empty: no puede estar vacío
       equal_to: debe ser igual a %{count}
@@ -110,8 +114,12 @@ es-PE:
       less_than: debe ser menor que %{count}
       less_than_or_equal_to: debe ser menor o igual que %{count}
       not_a_number: no es un número
+      not_an_integer: debe ser un entero
       odd: debe ser un número non
       record_invalid: 'Falla de validación: %{errors}'
+      restrict_dependent_destroy:
+        one: No se puede eliminar el registro porque existe un %{record} dependiente
+        many: No se puede eliminar el registro porque existen %{record} dependientes
       taken: ya ha sido tomado
       too_long:
         one: es demasiado largo (máximo 1 caracter)
@@ -122,11 +130,19 @@ es-PE:
       wrong_length:
         one: longitud errónea (debe ser de 1 caracter)
         other: longitud errónea (debe ser de %{count} caracteres)
+      other_than: debe ser distinto de %{count}
     template:
       body: 'Revise que los siguientes campos sean válidos:'
       header:
         one: "%{model} no pudo guardarse debido a 1 error"
         other: "%{model} no pudo guardarse debido a %{count} errores"
+  helpers:
+    select:
+      prompt: Por favor seleccione
+    submit:
+      create: Crear %{model}
+      submit: Guardar %{model}
+      update: Actualizar %{model}
   number:
     currency:
       format:
@@ -147,6 +163,11 @@ es-PE:
       decimal_units:
         format: "%n %u"
         units:
+          billion: billón
+          million: millón
+          quadrillion: cuatrillón
+          thousand: mil
+          trillion: trillón
           unit: ''
       format:
         delimiter: ","
@@ -169,6 +190,11 @@ es-PE:
     precision:
       format:
         delimiter: ","
+  support:
+    array:
+      last_word_connector: " y "
+      two_words_connector: " y "
+      words_connector: ", "
   time:
     am: am
     formats:
