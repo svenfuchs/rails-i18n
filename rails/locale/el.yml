@@ -10,7 +10,7 @@ el:
     - Παρ
     - Σάβ
     abbr_month_names:
-    - 
+    -
     - Ιαν
     - Φεβ
     - Μαρ
@@ -36,7 +36,7 @@ el:
       long: "%e %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Ιανουάριος
     - Φεβρουάριος
     - Μάρτιος
@@ -176,7 +176,7 @@ el:
             one: byte
             other: bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

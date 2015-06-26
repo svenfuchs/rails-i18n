@@ -10,7 +10,7 @@ vi:
     - Thứ sáu
     - Thứ bảy
     abbr_month_names:
-    - 
+    -
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -36,7 +36,7 @@ vi:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -175,7 +175,7 @@ vi:
             one: Byte
             other: Byte
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

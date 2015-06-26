@@ -10,7 +10,7 @@ uz:
     - Ju
     - Sh
     abbr_month_names:
-    - 
+    -
     - yan.
     - fev.
     - mart
@@ -36,7 +36,7 @@ uz:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - yanvar
     - fevral
     - mart
@@ -228,7 +228,7 @@ uz:
             one: bayt
             other: bayt
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

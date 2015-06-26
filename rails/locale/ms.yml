@@ -10,7 +10,7 @@ ms:
     - Jum
     - Sab
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mac
@@ -36,7 +36,7 @@ ms:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Januari
     - Febuari
     - Mac
@@ -176,7 +176,7 @@ ms:
             one: Bait
             other: Bait
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

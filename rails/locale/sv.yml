@@ -10,7 +10,7 @@ sv:
     - fre
     - lör
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -36,7 +36,7 @@ sv:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - januari
     - februari
     - mars
@@ -175,7 +175,7 @@ sv:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

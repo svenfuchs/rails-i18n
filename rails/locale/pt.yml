@@ -10,7 +10,7 @@ pt:
     - Sex
     - Sáb
     abbr_month_names:
-    - 
+    -
     - Jan
     - Fev
     - Mar
@@ -36,7 +36,7 @@ pt:
       long: "%d de %B de %Y"
       short: "%d de %B"
     month_names:
-    - 
+    -
     - Janeiro
     - Fevereiro
     - Março
@@ -178,7 +178,7 @@ pt:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

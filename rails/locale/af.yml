@@ -10,7 +10,7 @@ af:
     - Vry
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ af:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - Januarie
     - Februarie
     - Maart
@@ -176,7 +176,7 @@ af:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

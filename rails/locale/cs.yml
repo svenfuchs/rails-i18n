@@ -10,7 +10,7 @@ cs:
     - Pá
     - So
     abbr_month_names:
-    - 
+    -
     - led
     - úno
     - bře
@@ -36,7 +36,7 @@ cs:
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - leden
     - únor
     - březen
@@ -187,7 +187,7 @@ cs:
         units:
           byte: B
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

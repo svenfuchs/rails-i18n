@@ -10,7 +10,7 @@ is:
     - fös
     - lau
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -36,7 +36,7 @@ is:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    - 
+    -
     - janúar
     - febrúar
     - mars
@@ -189,7 +189,7 @@ is:
             one: bæti
             other: bæti
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

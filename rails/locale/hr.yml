@@ -10,7 +10,7 @@ hr:
     - Pet
     - Sub
     abbr_month_names:
-    - 
+    -
     - Sij
     - Veǉ
     - Ožu
@@ -36,7 +36,7 @@ hr:
       long: "%e. %B %Y."
       short: "%e.%-m."
     month_names:
-    - 
+    -
     - Siječanj
     - Veljača
     - Ožujak
@@ -213,7 +213,7 @@ hr:
             many: bajtova
             other: bajtova
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

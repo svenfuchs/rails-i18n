@@ -10,7 +10,7 @@ hi-IN:
     - शुक्र
     - शनि
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ hi-IN:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - जनवरी
     - फरवरी
     - मार्च
@@ -170,7 +170,7 @@ hi-IN:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

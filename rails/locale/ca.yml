@@ -10,7 +10,7 @@ ca:
     - Dv
     - Ds
     abbr_month_names:
-    - 
+    -
     - Gen
     - Feb
     - Mar
@@ -36,7 +36,7 @@ ca:
       long: "%d de %B de %Y"
       short: "%d de %b"
     month_names:
-    - 
+    -
     - Gener
     - Febrer
     - Març
@@ -170,7 +170,7 @@ ca:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

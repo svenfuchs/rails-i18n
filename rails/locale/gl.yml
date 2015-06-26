@@ -10,7 +10,7 @@ gl:
     - Ven
     - Sab
     abbr_month_names:
-    - 
+    -
     - Xan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ gl:
       long: "%A %e de %B de %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - Xaneiro
     - Febreiro
     - Marzo
@@ -149,7 +149,7 @@ gl:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

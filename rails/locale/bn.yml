@@ -10,7 +10,7 @@ bn:
     - শুক্রবার
     - শনিবার
     abbr_month_names:
-    - 
+    -
     - জানুয়ারি
     - ফেব্রুয়ারি
     - মার্চ
@@ -36,7 +36,7 @@ bn:
       long: "%e de %B de %Y"
       short: "%e de %b"
     month_names:
-    - 
+    -
     - জানুয়ারি
     - ফেব্রুয়ারি
     - মার্চ
@@ -153,7 +153,7 @@ bn:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

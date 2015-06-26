@@ -10,7 +10,7 @@ ar:
     - الجمعة
     - السبت
     abbr_month_names:
-    - 
+    -
     - يناير
     - فبراير
     - مارس
@@ -36,7 +36,7 @@ ar:
       long: "%B %e, %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - يناير
     - فبراير
     - مارس
@@ -251,7 +251,7 @@ ar:
             many: Bytes
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

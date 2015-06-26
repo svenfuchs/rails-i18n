@@ -22,7 +22,7 @@ tl:
     - Biy
     - Sab
     month_names:
-    - 
+    -
     - Enero
     - Pebrero
     - Marso
@@ -36,7 +36,7 @@ tl:
     - Nobyembre
     - Disyembre
     abbr_month_names:
-    - 
+    -
     - Ene
     - Peb
     - Mar
@@ -99,7 +99,7 @@ tl:
           byte:
             one: Byte
             other: Bytes
-          kb: KB
+          kb: kB
           mb: MB
           gb: GB
           tb: TB

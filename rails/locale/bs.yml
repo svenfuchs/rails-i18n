@@ -10,7 +10,7 @@ bs:
     - pet
     - sub
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -35,7 +35,7 @@ bs:
       long: "%e. %B %Y."
       short: "%e. %b. %Y."
     month_names:
-    - 
+    -
     - januar
     - februar
     - mart
@@ -220,7 +220,7 @@ bs:
             one: bajt
             other: bajtova
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

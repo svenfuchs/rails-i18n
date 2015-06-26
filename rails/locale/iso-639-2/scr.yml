@@ -9,7 +9,7 @@ scr:
     - Pet
     - Sub
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -35,7 +35,7 @@ scr:
       long: ! '%B %e, %Y'
       short: ! '%e %b'
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - Mart
@@ -212,7 +212,7 @@ scr:
             many: bajtova
             other: bajtova
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

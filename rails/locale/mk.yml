@@ -10,7 +10,7 @@ mk:
     - Пет
     - Саб
     abbr_month_names:
-    - 
+    -
     - Јан
     - Фев
     - Мар
@@ -36,7 +36,7 @@ mk:
       long: "%B %e, %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - Јануари
     - Февруари
     - Март
@@ -176,7 +176,7 @@ mk:
             one: бајт
             other: бајти
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

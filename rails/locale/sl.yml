@@ -10,7 +10,7 @@ sl:
     - pet
     - sob
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -36,7 +36,7 @@ sl:
       long: "%d. %b %Y"
       short: "%d. %b"
     month_names:
-    - 
+    -
     - januar
     - februar
     - marec
@@ -183,7 +183,7 @@ sl:
             few: Bytes
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

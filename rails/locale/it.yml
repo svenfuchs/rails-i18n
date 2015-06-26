@@ -10,7 +10,7 @@ it:
     - ven
     - sab
     abbr_month_names:
-    - 
+    -
     - gen
     - feb
     - mar
@@ -36,7 +36,7 @@ it:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - gennaio
     - febbraio
     - marzo
@@ -181,7 +181,7 @@ it:
             one: Byte
             other: Byte
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

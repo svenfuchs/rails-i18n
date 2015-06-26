@@ -10,7 +10,7 @@ or:
     - ଶୁକ୍ର
     - ଶନି
     abbr_month_names:
-    - 
+    -
     - ଜାନୁ
     - ଫେବରୁ
     - ମାର
@@ -36,7 +36,7 @@ or:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - ଜାନୁୟାରୀ
     - ଫେବୃୟାରୀ
     - ମାର୍ଚ଼
@@ -170,7 +170,7 @@ or:
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

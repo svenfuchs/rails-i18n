@@ -10,7 +10,7 @@ hu:
     - p.
     - szo.
     abbr_month_names:
-    - 
+    -
     - jan.
     - febr.
     - márc.
@@ -36,7 +36,7 @@ hu:
       long: "%Y. %B %e."
       short: "%b %e."
     month_names:
-    - 
+    -
     - január
     - február
     - március
@@ -170,7 +170,7 @@ hu:
             one: bájt
             other: bájt
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:

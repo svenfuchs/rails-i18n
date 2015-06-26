@@ -9,7 +9,7 @@
     - Fr
     - Sa
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mär
@@ -35,7 +35,7 @@
       long: ! '%e. %B %Y'
       short: ! '%e. %b'
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - März
@@ -173,7 +173,7 @@
             one: Byte
             other: Bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
           tb: TB
     percentage:
