@@ -169,10 +169,10 @@ fi:
           byte:
             one: tavu
             other: tavua
-          gb: GB
-          kb: kB
-          mb: MB
-          tb: TB
+          gb: Gt
+          kb: kt
+          mb: Mt
+          tb: Tt
     percentage:
       format:
         delimiter: ''
