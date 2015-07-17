@@ -126,7 +126,7 @@ ja:
     template:
       body: 次の項目を確認してください
       header:
-        one: "%{model}にエラーが発生しました。"
+        one: "%{model}にエラーが発生しました"
         other: "%{model}に%{count}個のエラーが発生しました"
   helpers:
     select:
