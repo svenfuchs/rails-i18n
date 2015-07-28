@@ -99,7 +99,7 @@ ja:
     format: ! '%{attribute}%{message}'
     messages:
       accepted: を受諾してください。
-      blank: を入力してください。
+      blank: 空白にしないでください。
       confirmation: と確認の入力が一致しません。
       empty: を入力してください。
       equal_to: は%{count}にしてください。
@@ -108,7 +108,7 @@ ja:
       greater_than: は%{count}より大きい値にしてください。
       greater_than_or_equal_to: は%{count}以上の値にしてください。
       inclusion: は一覧にありません。
-      invalid: は不正な値です。
+      invalid: 無効になります。
       less_than: は%{count}より小さい値にしてください。
       less_than_or_equal_to: は%{count}以下の値にしてください。
       not_a_number: は数値で入力してください。
