@@ -183,8 +183,8 @@ he:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", את "
-      two_words_connector: " את "
+      last_word_connector: " ו"
+      two_words_connector: " ו"
       words_connector: ", "
   time:
     am: am
