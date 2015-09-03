@@ -102,7 +102,7 @@ it:
       accepted: deve essere accettata
       blank: non può essere lasciato in bianco
       present: deve essere lasciato in bianco
-      confirmation: non coincide con la conferma
+      confirmation: non coincide con %{attribute}
       empty: non può essere vuoto
       equal_to: deve essere uguale a %{count}
       even: deve essere pari
