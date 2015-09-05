@@ -10,7 +10,7 @@ el:
     - Παρ
     - Σάβ
     abbr_month_names:
-    - 
+    -
     - Ιαν
     - Φεβ
     - Μαρ
@@ -32,11 +32,11 @@ el:
     - Παρασκευή
     - Σάββατο
     formats:
-      default: "%d/%m/%Y"
-      long: "%e %B %Y"
-      short: "%d %b"
+      default: ! '%d/%m/%Y'
+      long: ! '%e %B %Y'
+      short: ! '%d %b'
     month_names:
-    - 
+    -
     - Ιανουάριος
     - Φεβρουάριος
     - Μάρτιος
@@ -79,16 +79,16 @@ el:
         other: πάνω από %{count} χρόνια
       x_days:
         one: 1 μέρα
-        other: "%{count} μέρες"
+        other: ! '%{count} ημέρες'
       x_minutes:
         one: 1 λεπτό
-        other: "%{count} λεπτά"
+        other: ! '%{count} λεπτά'
       x_months:
         one: 1 μήνα
-        other: "%{count} μήνες"
+        other: ! '%{count} μήνες'
       x_seconds:
         one: 1 δευτερόλεπτο
-        other: "%{count} δευτερόλεπτα"
+        other: ! '%{count} δευτερόλεπτα'
     prompts:
       day: Ημέρα
       hour: Ώρα
@@ -97,7 +97,7 @@ el:
       second: Δευτερόλεπτο
       year: Έτος
   errors:
-    format: "%{attribute} %{message}"
+    format: ! '%{attribute} %{message}'
     messages:
       accepted: πρέπει να είναι αποδεκτό
       blank: δεν πρέπει να είναι κενό
@@ -115,7 +115,7 @@ el:
       not_a_number: δεν είναι αριθμός
       not_an_integer: πρέπει να είναι ακέραιος αριθμός
       odd: πρέπει να είναι περιττός
-      record_invalid: 'Επικύρωση απέτυχε: %{errors}'
+      record_invalid: ! 'Η επικύρωση απέτυχε: %{errors}'
       taken: το έχουν ήδη χρησιμοποιήσει
       too_long:
         one: είναι πολύ μεγάλο (το μέγιστο μήκος είναι 1 χαρακτήρας)
@@ -127,10 +127,10 @@ el:
         one: έχει λανθασμένο μήκος (πρέπει να είναι 1 χαρακτήρας)
         other: έχει λανθασμένο μήκος (πρέπει να είναι %{count} χαρακτήρες)
     template:
-      body: 'Υπήρξαν προβλήματα με τα ακόλουθα πεδία:'
+      body: ! 'Υπήρξαν προβλήματα με τα ακόλουθα πεδία:'
       header:
         one: 1 λάθος εμπόδισε αυτό το %{model} να αποθηκευτεί.
-        other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευτεί."
+        other: ! '%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευτεί.'
   helpers:
     select:
       prompt: Παρακαλώ επιλέξτε
@@ -141,22 +141,22 @@ el:
   number:
     currency:
       format:
-        delimiter: "."
-        format: "%n %u"
+        delimiter: ","
+        format: ! '%n %u'
         precision: 2
-        separator: ","
+        separator: ! '.'
         significant: false
         strip_insignificant_zeros: false
-        unit: "€"
+        unit: €
     format:
-      delimiter: "."
+      delimiter: ","
       precision: 3
-      separator: ","
+      separator: ! '.'
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           billion: δισεκατομμύριο
           million: εκατομμύριο
@@ -170,11 +170,11 @@ el:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one: byte
-            other: bytes
+            one: Byte
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
@@ -187,13 +187,13 @@ el:
         delimiter: ''
   support:
     array:
-      last_word_connector: " και "
-      two_words_connector: " και "
-      words_connector: ", "
+      last_word_connector: ! ' και '
+      two_words_connector: ! ' και '
+      words_connector: ! ', '
   time:
     am: π.μ.
     formats:
-      default: "%d %B %Y %H:%M"
-      long: "%A %d %B %Y %H:%M:%S %Z"
-      short: "%d %b %H:%M"
+      default: ! '%d %B %Y %H:%M'
+      long: ! '%A %d %B %Y %H:%M:%S %Z'
+      short: ! '%d %b %H:%M'
     pm: μ.μ.
