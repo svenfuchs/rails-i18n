@@ -95,7 +95,7 @@ de:
       minute: Minute
       month: Monat
       second: Sekunde
-      year: Jahr //all are in singular now
+      year: Jahr
   errors:
     format: "%{attribute} %{message}"
     messages:
