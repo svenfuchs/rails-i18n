@@ -62,7 +62,7 @@ Currently, only a few are complete. Typically they lack the following keys:
 - `activerecord.errors.messages.record_invalid`
 - `activerecord.errors.messages.restrict_dependent_destroy`
 
-Complete loacales are:
+Complete locales are:
 
 > en, sv
 
