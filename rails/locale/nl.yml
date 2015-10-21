@@ -10,7 +10,7 @@ nl:
     - vr
     - za
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mrt
@@ -36,7 +36,7 @@ nl:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - januari
     - februari
     - maart
@@ -106,7 +106,7 @@ nl:
       empty: moet opgegeven zijn
       equal_to: moet gelijk zijn aan %{count}
       even: moet even zijn
-      exclusion: is niet beschikbaar
+      exclusion: is gereserveerd
       greater_than: moet groter zijn dan %{count}
       greater_than_or_equal_to: moet groter dan of gelijk zijn aan %{count}
       inclusion: is niet in de lijst opgenomen
@@ -128,11 +128,11 @@ nl:
         one: is te kort (minimaal %{count} teken)
         other: is te kort (minimaal %{count} tekens)
       wrong_length:
-        one: heeft onjuiste lengte (moet %{count} teken lang zijn)
+        one: heeft onjuiste lengte (moet 1 teken lang zijn)
         other: heeft onjuiste lengte (moet %{count} tekens lang zijn)
       other_than: moet anders zijn dan %{count}
     template:
-      body: 'Controleer de volgende velden:'
+      body: 'Er zijn problemen met de volgende velden:'
       header:
         one: "%{model} niet opgeslagen: 1 fout gevonden"
         other: "%{model} niet opgeslagen: %{count} fouten gevonden"
@@ -165,9 +165,9 @@ nl:
         units:
           billion: miljard
           million: miljoen
-          quadrillion: biljard
+          quadrillion: quadriljoen
           thousand: duizend
-          trillion: biljoen
+          trillion: triljoen
           unit: ''
       format:
         delimiter: ''
@@ -181,7 +181,7 @@ nl:
             one: byte
             other: bytes
           gb: GB
-          kb: kB
+          kb: KB
           mb: MB
           tb: TB
     percentage:
