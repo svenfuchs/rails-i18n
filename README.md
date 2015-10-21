@@ -64,6 +64,26 @@ Following locales have some missing translations or pluralizations:
 
 We always welcome your contributions!
 
+## Currency symbols
+
+Some locales have the symbol of the currency (e.g. `€`) under the key `number.currency.format.unit`,
+while others have the code (e.g. `CHF`). The value of the key depends on the widespread adoption of
+the unicode currency symbols by fonts.
+
+For example the Turkish Lira sign (`₺`) was recently added in Unicode 6.2 and while most popular
+fonts have a glyph, there are still many fonts that will not render the character correctly.
+
+If you want to provide a different value, in a Rails app, you can create your own locale file under
+`config/locales/tr.yml` and override the respective key:
+
+```YAML
+tr:
+  number:
+    currency:
+      format:
+        unit: TL
+```
+
 ## How to contribute
 
 ### Quick contribution
