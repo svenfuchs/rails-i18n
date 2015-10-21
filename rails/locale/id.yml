@@ -29,7 +29,7 @@ id:
     - Selasa
     - Rabu
     - Kamis
-    - Jum'at
+    - Jumat
     - Sabtu
     formats:
       default: "%d %B %Y"
@@ -62,7 +62,7 @@ id:
         one: sekitar sebulan
         other: sekitar %{count} bulan
       about_x_years:
-        one: setahun
+        one: sekitar setahun
         other: sekitar %{count} tahun
       almost_x_years:
         one: hampir setahun
@@ -102,9 +102,10 @@ id:
     format: "%{attribute} %{message}"
     messages:
       accepted: harus diterima
-      blank: tidak bisa kosong
+      blank: tidak boleh kosong
+      present: harus kosong
       confirmation: tidak sesuai dengan %{attribute}
-      empty: tidak bisa kosong
+      empty: tidak boleh kosong
       equal_to: harus sama dengan %{count}
       even: harus genap
       exclusion: sudah digunakan
@@ -115,12 +116,23 @@ id:
       less_than: harus lebih kecil dari %{count}
       less_than_or_equal_to: harus sama atau lebih kecil dari %{count}
       not_a_number: bukan angka
+      not_an_integer: harus bilangan bulat
       odd: harus ganjil
-      record_invalid: 'Verifikasi gagal: %{errors}'
+      record_invalid: 'Validasi gagal: %{errors}'
+      restrict_dependent_destroy:
+        one: Tidak bisa menghapus record karena terdapat satu %{record} yang bergantung
+        many: Tidak bisa menghapus record karena terdapat %{record} yang bergantung
       taken: sudah digunakan
-      too_long: terlalu panjang (maksimum %{count} karakter)
-      too_short: terlalu pendek (minimum %{count} karakter)
-      wrong_length: jumlah karakter salah (seharusnya %{count} karakter)
+      too_long: 
+        one: terlalu panjang (maksimum 1 karakter)
+        other: terlalu panjang (maksimum %{count} karakter)
+      too_short:
+        one: terlalu pendek (minimum 1 karakter)
+        other: terlalu pendek (minimum %{count} karakter)
+      wrong_length:
+        one: jumlah karakter salah (seharusnya 1 karakter)
+        other: jumlah karakter salah (seharusnya %{count} karakter)
+      other_than: harus selain %{count}
     template:
       body: 'Ada masalah dengan field berikut:'
       header:
@@ -128,11 +140,11 @@ id:
         other: "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
   helpers:
     select:
-      prompt: Silahkan pilih
+      prompt: Silakan pilih
     submit:
       create: Buat %{model}
       submit: Simpan %{model}
-      update: Update %{model}
+      update: Perbarui %{model}
   number:
     currency:
       format:
@@ -142,7 +154,7 @@ id:
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: Rp
+        unit: "Rp"
     format:
       delimiter: "."
       precision: 3
@@ -182,8 +194,8 @@ id:
         delimiter: ''
   support:
     array:
-      last_word_connector: " dan "
-      two_words_connector: ", "
+      last_word_connector: ", dan "
+      two_words_connector: " dan "
       words_connector: ", "
   time:
     am: am
