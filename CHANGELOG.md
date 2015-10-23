@@ -1,3 +1,12 @@
+## 4.0.6 (2015-10-23)
+- Depend on i18n (~> 0.7)
+- Update Indonesian (id)
+- Update German (de)
+- Update Spanish (es)
+- Update Russian (ru) - Revert "bringing the month names to uppercase"
+- Update Turkish (tr) - Use turkish lira symbol instead of TL
+- Update Dutch (nl)
+
 ## 4.0.5 (2015-09-06)
 - Update Portuguese (pt)
 - Update Korean (ko)
