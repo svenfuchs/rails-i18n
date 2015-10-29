@@ -53,6 +53,27 @@ km:
     - :day
     - :month
     - :year
+  datetime:
+    distance_in_words:
+      x_days: "%{count} ថ្ងៃ"
+      x_minutes: "%{count} នាទី"
+      x_months: "%{count} ខែ"
+      x_seconds: "%{count} វិនាទី"
+      about_x_hours: ប្រមាណ %{count} ម៉ោង
+      about_x_months: ប្រមាណ %{count} ខែ
+      about_x_years: ប្រមាណ %{count} ឆ្នាំ
+      almost_x_years: ជិត %{count} ឆ្នាំ
+      half_a_minute: កន្លះនាទី
+      less_than_x_minutes: តិចជាង %{count} នាទី
+      less_than_x_seconds: តិចជាង %{count} វិនាទី
+      over_x_years: លើសពី %{count} ឆ្នាំ
+    prompts:
+      day: ថ្ងៃ
+      hour: ម៉ោង
+      minute: នាទី
+      month: ខែ
+      second: វិនាទី
+      year: ឆ្នាំ
   errors:
     format: "%{attribute} %{message}"
     messages:
