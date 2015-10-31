@@ -32,23 +32,23 @@ km:
     - សុក្រ
     - សៅរ៍
     formats:
-      long: ”ថ្ងៃទី%e %B %Y %H:%M %Z"
-      default: "“%d %B %Y”"
-      short: "“%d %b”"
+      long: "ថ្ងៃ%A ទី%e ខែ%B ឆ្នាំ%Y"
+      default: "%d %B %Y"
+      short: "%d %b"
     month_names:
     - 
-    - ខែមករា
-    - ខែកុម្ភៈ
-    - ខែមិនា
-    - ខែមេសា
-    - ខែឧសភា
-    - ខែមិថុនា
-    - ខែកក្កដា
-    - ខែសីហា
-    - ខែកញ្ញា
-    - ខែតុលា
-    - ខែវិច្ឆិកា
-    - ខែធ្នូ
+    - មករា
+    - កុម្ភៈ
+    - មិនា
+    - មេសា
+    - ឧសភា
+    - មិថុនា
+    - កក្កដា
+    - សីហា
+    - កញ្ញា
+    - តុលា
+    - វិច្ឆិកា
+    - ធ្នូ
     order:
     - :day
     - :month
@@ -106,3 +106,59 @@ km:
     template:
       body: 'សូមពិនិត្យមើលកំហុសនៅខាងក្រោម:'
       header: មានកំហុស %{count} ដែលបានបញ្ឈប់ការរក្សាទុក %{model}នេះ
+  helpers:
+    select:
+      prompt: សូមជ្រើសរើស
+    submit:
+      create: បង្កើត%{model}
+      submit: រក្សាទុក%{model}
+      update: ប្តូរ%{model}
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%n %u"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: ៛
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: ប៊ីលាន
+          million: លាន
+          quadrillion: ក្វាឌ្រីលាន
+          thousand: ពាន់
+          trillion: ទ្រីលាន
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ", និង "
+      two_words_connector: " និង "
+      words_connector: ", "
+  time:
+    am: ព្រិក
+    formats:
+      default: "%a %d %b %Y %H:%M:%S %z"
+      long: "%d %B %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: ​ល្ងាច
