@@ -3,6 +3,7 @@ de:
     transliterate:
       rule:
         ä: "ae"
+        é: "e"
         ü: "ue"
         ö: "oe"
         Ä: "Ae"
