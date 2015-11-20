@@ -56,39 +56,39 @@ de:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: vor etwa einer Stunde
-        other: vor etwa %{count} Stunden
+        one: etwa eine Stunde
+        other: etwa %{count} Stunden
       about_x_months:
-        one: vor etwa einem Monat
-        other: vor etwa %{count} Monaten
+        one: etwa ein Monat
+        other: etwa %{count} Monate
       about_x_years:
-        one: vor etwa einem Jahr
-        other: vor etwa %{count} Jahren
+        one: etwa ein Jahr
+        other: etwa %{count} Jahre
       almost_x_years:
-        one: vor fast einem Jahr
-        other: vor fast %{count} Jahren
-      half_a_minute: vor einer halben Minute
+        one: fast ein Jahr
+        other: fast %{count} Jahre
+      half_a_minute: eine halbe Minute
       less_than_x_minutes:
-        one: vor weniger als einer Minute
-        other: vor weniger als %{count} Minuten
+        one: weniger als eine Minute
+        other: weniger als %{count} Minuten
       less_than_x_seconds:
-        one: vor weniger als eine Sekunde
-        other: vor weniger als %{count} Sekunden
+        one: weniger als eine Sekunde
+        other: weniger als %{count} Sekunden
       over_x_years:
-        one: vor mehr als einem Jahr
-        other: vor mehr als %{count} Jahren
+        one: mehr als ein Jahr
+        other: mehr als %{count} Jahre
       x_days:
-        one: vor einem Tag
-        other: "vor %{count} Tagen"
+        one: ein Tag
+        other: "%{count} Tage"
       x_minutes:
-        one: vor einer Minute
-        other: "vor %{count} Minuten"
+        one: eine Minute
+        other: "%{count} Minuten"
       x_months:
-        one: vor einem Monat
-        other: "vor %{count} Monaten"
+        one: ein Monat
+        other: "%{count} Monate"
       x_seconds:
-        one: vor einer Sekunde
-        other: "vor %{count} Sekunden"
+        one: eine Sekunde
+        other: "%{count} Sekunden"
     prompts:
       day: Tag
       hour: Stunden
