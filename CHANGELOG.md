@@ -1,3 +1,8 @@
+## 4.0.7 (2015-11-20)
+- Update Khmer (km)
+- Update Greek (el)
+- Update German (de)
+
 ## 4.0.6 (2015-10-23)
 - Depend on i18n (~> 0.7)
 - Update Indonesian (id)
