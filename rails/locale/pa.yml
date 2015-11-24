@@ -197,9 +197,9 @@ pa:
       two_words_connector: " ਅਤੇ "
       words_connector: ", "
   time:
-    am: ਪੂ.ਦੁ.
+    am: ਸਵੇਰ
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: ਬਾ.ਦੁ.
+    pm: ਸ਼ਾਮ
