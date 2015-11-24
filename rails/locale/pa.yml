@@ -40,7 +40,7 @@ pa:
     - ਜਨਵਰੀ
     - ਫ਼ਰਵਰੀ
     - ਮਾਰਚ
-    - ਅਪ੍ੈਲ
+    - ਅਪ੍ਰੈਲ
     - ਮਈ
     - ਜੂਨ
     - ਜੁਲਾਈ
@@ -99,9 +99,9 @@ pa:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: ਜਰੂਰੀ ਮੰਜੂਰ ਹੋਵੇ
+      accepted: ਜਰੂਰ ਮੰਜੂਰ ਹੋਵੇ
       blank: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
-      present: ਜਰੂਰੀ ਖਾਲੀ ਹੋਵੇ
+      present: ਜਰੂਰ ਖਾਲੀ ਹੋਵੇ
       confirmation: "%{attribute} ਨਹੀਂ ਰਲਦੇ"
       empty: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
       equal_to: "%{count} ਦੇ ਬਰਾਬਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
@@ -115,7 +115,7 @@ pa:
       less_than_or_equal_to: "%{count} ਤੋਂ ਘੱਟ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
       not_a_number: ਸੰਖਿਆ ਨਹੀਂ ਹੈ
       not_an_integer: ਜਰੂਰੀ ਹੈ ਕੇ ਪੂਰਨ ਅੰਕ ਹੋਵੇ
-      odd: ਜਰੂਰੀ ਹੈ ਕੇ ਕਲ੍ਲੀ ਹੋਵੇ
+      odd: ਜਰੂਰੀ ਹੈ ਕੇ ਕਲ਼ੀ ਹੋਵੇ
       record_invalid: 'ਪਰਮਾਣ ਫ਼ੇਲ ਹੋਇਆ: %{errors}'
       restrict_dependent_destroy:
         has_one: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਇੱਕ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹੈ
@@ -130,12 +130,12 @@ pa:
       wrong_length:
         one: ਲੰਬਾਈ ਗਲਤ ਹੈ (1 ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
         other: ਲੰਬਾਈ ਗਲਤ ਹੈ (%{count} ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
-      other_than: "%{count} ਦੀ ਜਗਾਹ ਹੋਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+      other_than: "%{count} ਦੀ ਜਗ੍ਹਾ ਹੋਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
     template:
       body: 'ਹੇਠਲੇ ਖੇਤਰਾਂ ਵਿੱਚ ਗਲਤੀਆਂ ਹਨ:'
       header:
-        one: 1 ਗਲਤੀ ਕਰਕੇ ਇਹ %{model} ਬਚਾਇਆ ਨਹੀਂ ਗਿਆ
-        other: "%{count} ਗਲਤੀਆਂ ਕਰਕੇ ਇਹ %{model} ਬਚਾਇਆ ਨਹੀਂ ਗਿਆ"
+        one: 1 ਗਲਤੀ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ
+        other: "%{count} ਗਲਤੀਆਂ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ"
   helpers:
     select:
       prompt: ਕਿਰਪਾ ਕਰਕੇ ਚੁਣੋ
@@ -163,10 +163,10 @@ pa:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ਅਰਬ
+          billion: ਬਿਲੀਅਨ
           million: ਮਿਲੀਅਨ
           quadrillion: ਕ੍ਵਾਡਰਿਲੀਅਨ
-          thousand: ਹਜਾਰ
+          thousand: ਹਜ਼ਾਰ
           trillion: ਟ੍ਰਿਲੀਅਨ
           unit: ''
       format:
