@@ -238,7 +238,7 @@ bs:
   time:
     am: ''
     formats:
-      default: "%H:%M:%S"
+      default: "%d.%m.%Y. %H:%M:%S"
       long: "%d. %B %Y. - %H:%M:%S"
       short: "%d. %b %Y. %H:%M"
     pm: ''
