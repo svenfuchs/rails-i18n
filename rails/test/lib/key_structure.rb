@@ -15,7 +15,7 @@ class KeyStructure
   PLURALIZATION_KEYS = ['zero', 'one', 'two', 'few', 'many', 'other']
 
   class << self
-    def check(locale)
+    def check(locale, version = nil)
       missing_keys = []
       broken_keys = []
       missing_pluralizations = []
