@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency('i18n', '~> 0.7')
   s.add_runtime_dependency('railties', '~> 5.0.0.beta1')
-  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "rspec-rails", "~> 3.1"
   s.add_development_dependency "i18n-spec", "= 0.4.0"
   s.add_development_dependency "spork", "= 1.0.0rc3"
   s.add_development_dependency 'i18n-tasks', '~> 0.3.6'

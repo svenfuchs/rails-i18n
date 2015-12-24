@@ -112,7 +112,7 @@ DEPENDENCIES
   i18n-spec (= 0.4.0)
   i18n-tasks (~> 0.3.6)
   rails-i18n!
-  rspec-rails
+  rspec-rails (~> 3.1)
   spork (= 1.0.0rc3)
 
 BUNDLED WITH
