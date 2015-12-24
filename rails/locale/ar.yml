@@ -33,7 +33,7 @@ ar:
     - السّبت
     formats:
       default: "%Y-%m-%d"
-      long: "%B %e, %Y"
+      long: "%B %e، %Y"
       short: "%e %b"
     month_names:
     -
@@ -212,7 +212,7 @@ ar:
   number:
     currency:
       format:
-        delimiter: ","
+        delimiter: "،"
         format: "%u%n"
         precision: 2
         separator: "."
@@ -220,7 +220,7 @@ ar:
         strip_insignificant_zeros: false
         unit: "$"
     format:
-      delimiter: ","
+      delimiter: "،"
       precision: 3
       separator: "."
       significant: false
