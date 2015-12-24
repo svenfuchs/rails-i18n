@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-i18n (4.0.7)
+    rails-i18n (4.0.8)
       i18n (~> 0.7)
       railties (~> 4.0)
 
@@ -92,4 +92,4 @@ DEPENDENCIES
   spork (= 1.0.0rc3)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
