@@ -10,7 +10,7 @@ sv:
     - fre
     - lör
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -36,7 +36,7 @@ sv:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - januari
     - februari
     - mars
@@ -118,8 +118,8 @@ sv:
       odd: måste vara udda
       record_invalid: 'Ett fel uppstod: %{errors}'
       restrict_dependent_destroy:
-        one: Kan inte ta bort post då beroende %{record} finns
-        many: Kan inte ta bort poster då beroende %{record} finns
+        has_one: Kan inte ta bort post då beroende %{record} finns
+        has_many: Kan inte ta bort poster då beroende %{record} finns
       taken: används redan
       too_long: är för lång (maximum är %{count} tecken)
       too_short: är för kort (minimum är %{count} tecken)

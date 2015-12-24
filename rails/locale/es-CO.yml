@@ -10,7 +10,7 @@ es-CO:
     - vie
     - sáb
     abbr_month_names:
-    - 
+    -
     - ene
     - feb
     - mar
@@ -36,7 +36,7 @@ es-CO:
       long: "%A, %d de %B de %Y"
       short: "%d de %b"
     month_names:
-    - 
+    -
     - enero
     - febrero
     - marzo
@@ -118,8 +118,8 @@ es-CO:
       odd: debe ser un número impar
       record_invalid: 'La validación falló: %{errors}'
       restrict_dependent_destroy:
-        one: No se puede eliminar el registro porque existe un %{record} dependiente
-        many: No se puede eliminar el registro porque existen %{record} dependientes
+        has_one: No se puede eliminar el registro porque existe un %{record} dependiente
+        has_many: No se puede eliminar el registro porque existen %{record} dependientes
       taken: ya ha sido tomado
       too_long:
         one: es demasiado largo (máximo 1 caracter)

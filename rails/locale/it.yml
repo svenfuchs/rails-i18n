@@ -10,7 +10,7 @@ it:
     - ven
     - sab
     abbr_month_names:
-    - 
+    -
     - gen
     - feb
     - mar
@@ -36,7 +36,7 @@ it:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - gennaio
     - febbraio
     - marzo
@@ -118,8 +118,8 @@ it:
       odd: deve essere dispari
       record_invalid: 'Validazione fallita: %{errors}'
       restrict_dependent_destroy:
-        one: Il record non può essere cancellato perchè esiste un %{record} dipendente
-        many: Il record non può essere cancellato perchè esistono %{record} dipendenti
+        has_one: Il record non può essere cancellato perchè esiste un %{record} dipendente
+        has_many: Il record non può essere cancellato perchè esistono %{record} dipendenti
       taken: è già presente
       too_long:
         one: è troppo lungo (il massimo è 1 carattere)

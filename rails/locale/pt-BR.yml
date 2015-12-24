@@ -10,7 +10,7 @@ pt-BR:
     - Sex
     - Sáb
     abbr_month_names:
-    - 
+    -
     - Jan
     - Fev
     - Mar
@@ -36,7 +36,7 @@ pt-BR:
       long: "%d de %B de %Y"
       short: "%d de %B"
     month_names:
-    - 
+    -
     - Janeiro
     - Fevereiro
     - Março
@@ -118,8 +118,8 @@ pt-BR:
       odd: deve ser ímpar
       record_invalid: 'A validação falhou: %{errors}'
       restrict_dependent_destroy:
-        one: Não é possível excluir o registro pois existe um %{record} dependente
-        many: Não é possível excluir o registro pois existem %{record} dependentes
+        has_one: Não é possível excluir o registro pois existe um %{record} dependente
+        has_many: Não é possível excluir o registro pois existem %{record} dependentes
       taken: já está em uso
       too_long: 'é muito longo (máximo: %{count} caracteres)'
       too_short: 'é muito curto (mínimo: %{count} caracteres)'

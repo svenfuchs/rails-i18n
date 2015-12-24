@@ -10,7 +10,7 @@ pl:
     - pią
     - sob
     abbr_month_names:
-    - 
+    -
     - sty
     - lut
     - mar
@@ -36,7 +36,7 @@ pl:
       long: "%B %d, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - styczeń
     - luty
     - marzec
@@ -140,8 +140,8 @@ pl:
       present: musi być puste
       record_invalid: 'Negatywne sprawdzenie poprawności: %{errors}'
       restrict_dependent_destroy:
-        many: Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}
-        one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
+        has_many: Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}
+        has_one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
       taken: zostało już zajęte
       too_long:
         few: jest za długie (maksymalnie %{count} znaki)

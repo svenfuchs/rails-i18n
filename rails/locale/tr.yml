@@ -10,7 +10,7 @@ tr:
     - Cum
     - Cts
     abbr_month_names:
-    - 
+    -
     - Oca
     - Şub
     - Mar
@@ -36,7 +36,7 @@ tr:
       long: "%e %B %Y, %A"
       short: "%e %b"
     month_names:
-    - 
+    -
     - Ocak
     - Şubat
     - Mart
@@ -118,8 +118,8 @@ tr:
       odd: tek olmalı
       record_invalid: 'Doğrulama başarısız oldu: %{errors}'
       restrict_dependent_destroy:
-        one: Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi
-        many: Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi
+        has_one: Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi
+        has_many: Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi
       taken: hali hazırda kullanılmakta
       too_long:
         one: çok uzun (en fazla 1 karakter)

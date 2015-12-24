@@ -7,7 +7,7 @@ shared_examples 'an ordinary transliteration rule' do
     file.content.keys.size.should == 1
   end
 
-  it 'has its locale tag as a top level namespace' do
+  it 'has its locale tag as a top level namespace' do |example|
     file.content.keys.first.should == example.metadata[:locale]
   end
 

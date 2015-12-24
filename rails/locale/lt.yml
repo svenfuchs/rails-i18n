@@ -10,7 +10,7 @@ lt:
     - Pen
     - Šeš
     abbr_month_names:
-    - 
+    -
     - Sau
     - Vas
     - Kov
@@ -36,7 +36,7 @@ lt:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - sausio
     - vasario
     - kovo
@@ -129,8 +129,8 @@ lt:
       odd: turi būti nelyginis
       record_invalid: 'Nepraeitos patikros: %{errors}'
       restrict_dependent_destroy:
-        one: Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja
-        many: Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja
+        has_one: Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja
+        has_many: Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja
       taken: jau užimtas
       too_long:
         one: per ilgas (daugiausiai %{count} simbolis)

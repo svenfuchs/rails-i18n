@@ -10,7 +10,7 @@ zh-YUE:
     - 周五
     - 周六
     abbr_month_names:
-    - 
+    -
     - 1月
     - 2月
     - 3月
@@ -36,7 +36,7 @@ zh-YUE:
       long: "%Y年%b%d日"
       short: "%b%d日"
     month_names:
-    - 
+    -
     - 一月
     - 二月
     - 三月
@@ -118,8 +118,8 @@ zh-YUE:
       odd: "%{attribute}要係單數"
       record_invalid: "%{attribute}有問題︰%{errors}"
       restrict_dependent_destroy:
-        one: 唔可以刪除，因為%{record}要用佢
-        many: 唔可以刪除，因為%{record}要用佢
+        has_one: 唔可以刪除，因為%{record}要用佢
+        has_many: 唔可以刪除，因為%{record}要用佢
       taken: "%{attribute}已經用過"
       too_long:
         one: 太長（最多1個字）

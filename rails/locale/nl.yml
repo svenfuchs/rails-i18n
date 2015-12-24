@@ -118,8 +118,8 @@ nl:
       odd: moet oneven zijn
       record_invalid: 'Validatie mislukt: %{errors}'
       restrict_dependent_destroy:
-        one: Kan item niet verwijderen omdat %{record} afhankelijk is
-        many: Kan item niet verwijderen omdat afhankelijke %{record} bestaan
+        has_one: Kan item niet verwijderen omdat %{record} afhankelijk is
+        has_many: Kan item niet verwijderen omdat afhankelijke %{record} bestaan
       taken: is al in gebruik
       too_long:
         one: is te lang (maximaal %{count} teken)

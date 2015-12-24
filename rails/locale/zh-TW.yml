@@ -10,7 +10,7 @@ zh-TW:
     - 周五
     - 周六
     abbr_month_names:
-    - 
+    -
     - 1月
     - 2月
     - 3月
@@ -36,7 +36,7 @@ zh-TW:
       long: "%Y年%b%d日"
       short: "%b%d日"
     month_names:
-    - 
+    -
     - 一月
     - 二月
     - 三月
@@ -118,8 +118,8 @@ zh-TW:
       odd: 必須是奇數
       record_invalid: '校驗失敗: %{errors}'
       restrict_dependent_destroy:
-        one: 由於 %{record} 需要此記錄，所以無法移除記錄
-        many: 由於 %{record} 需要此記錄，所以無法移除記錄
+        has_one: 由於 %{record} 需要此記錄，所以無法移除記錄
+        has_many: 由於 %{record} 需要此記錄，所以無法移除記錄
       taken: 已經被使用
       too_long:
         one: 過長（最長是一個字）

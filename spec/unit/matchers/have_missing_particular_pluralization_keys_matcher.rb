@@ -7,7 +7,7 @@ RSpec::Matchers.define :have_missing_particular_pluralization_keys do
     keys.any?
   end
 
-  failure_message_for_should_not do |filepath|
+  failure_message_when_negated do |filepath|
     flattened_keys = []
 
     @locale_file.errors[:missing_pluralization_keys].each do |parent, subkeys|

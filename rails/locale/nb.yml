@@ -10,7 +10,7 @@ nb:
     - fre
     - lør
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -36,7 +36,7 @@ nb:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    - 
+    -
     - januar
     - februar
     - mars
@@ -118,8 +118,8 @@ nb:
       odd: må være oddetall
       record_invalid: 'Det oppstod feil: %{errors}'
       restrict_dependent_destroy:
-        one: Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne.
-        many: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
+        has_one: Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne.
+        has_many: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
       taken: er allerede i bruk
       too_long: er for lang (maksimum %{count} tegn)
       too_short: er for kort (minimum %{count} tegn)

@@ -10,7 +10,7 @@ ja:
     - 金
     - 土
     abbr_month_names:
-    - 
+    -
     - 1月
     - 2月
     - 3月
@@ -36,7 +36,7 @@ ja:
       long: "%Y年%m月%d日(%a)"
       short: "%m/%d"
     month_names:
-    - 
+    -
     - 1月
     - 2月
     - 3月
@@ -117,7 +117,9 @@ ja:
       not_an_integer: は整数で入力してください
       odd: は奇数にしてください
       record_invalid: バリデーションに失敗しました %{errors}
-      restrict_dependent_destroy: "%{record}が存在しているので削除できません"
+      restrict_dependent_destroy:
+        has_one: "%{record}が存在しているので削除できません"
+        has_many: "%{record}が存在しているので削除できません"
       taken: はすでに存在します
       too_long: は%{count}文字以内で入力してください
       too_short: は%{count}文字以上で入力してください

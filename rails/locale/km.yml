@@ -10,7 +10,7 @@ km:
     - សុ
     - ស
     abbr_month_names:
-    - 
+    -
     - មករា
     - កុម្ភៈ
     - មិនា
@@ -36,7 +36,7 @@ km:
       default: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - មករា
     - កុម្ភៈ
     - មិនា
@@ -96,8 +96,8 @@ km:
       odd: ត្រូវតែជាចំនួនសេស
       record_invalid: 'មិនមានសុពលភាព៖ %{errors}'
       restrict_dependent_destroy:
-        one: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
-        many: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
+        has_one: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
+        has_many: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
       taken: មានរួចហើយ
       too_long: វែងពេក (យ៉ាងច្រើន %{count} តួ)
       too_short: ខ្លីពេក (យ៉ាងតិច %{count} តួ)

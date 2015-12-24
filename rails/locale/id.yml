@@ -10,7 +10,7 @@ id:
     - Jum
     - Sab
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +36,7 @@ id:
       long: "%A, %d %B %Y"
       short: "%d.%m.%Y"
     month_names:
-    - 
+    -
     - Januari
     - Februari
     - Maret
@@ -120,10 +120,10 @@ id:
       odd: harus ganjil
       record_invalid: 'Validasi gagal: %{errors}'
       restrict_dependent_destroy:
-        one: Tidak bisa menghapus record karena terdapat satu %{record} yang bergantung
-        many: Tidak bisa menghapus record karena terdapat %{record} yang bergantung
+        has_one: Tidak bisa menghapus record karena terdapat satu %{record} yang bergantung
+        has_many: Tidak bisa menghapus record karena terdapat %{record} yang bergantung
       taken: sudah digunakan
-      too_long: 
+      too_long:
         one: terlalu panjang (maksimum 1 karakter)
         other: terlalu panjang (maksimum %{count} karakter)
       too_short:

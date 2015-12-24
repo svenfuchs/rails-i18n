@@ -10,7 +10,7 @@ fr:
     - ven
     - sam
     abbr_month_names:
-    - 
+    -
     - jan.
     - fév.
     - mar.
@@ -36,7 +36,7 @@ fr:
       short: "%e %b"
       long: "%e %B %Y"
     month_names:
-    - 
+    -
     - janvier
     - février
     - mars
@@ -120,8 +120,8 @@ fr:
       odd: doit être impair
       record_invalid: 'La validation a échoué : %{errors}'
       restrict_dependent_destroy:
-        one: 'Suppression impossible: un autre enregistrement est lié'
-        many: 'Suppression impossible: d''autres enregistrements sont liés'
+        has_one: 'Suppression impossible: un autre enregistrement est lié'
+        has_many: 'Suppression impossible: d''autres enregistrements sont liés'
       taken: n'est pas disponible
       too_long:
         one: est trop long (pas plus d'un caractère)

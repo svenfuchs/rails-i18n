@@ -20,16 +20,16 @@ describe 'Pluralization rule for' do
 
   pluralizations_dir = File.join('rails', 'pluralization')
 
-  let(:file) do
+  let(:file) do |example|
     filename = File.join(pluralizations_dir, "#{example.metadata[:locale]}.rb")
     RailsI18n::Spec::PluralizationFile.new(filename)
   end
 
-  let(:rule) do
+  let(:rule) do |example|
     file.traverse_path(example.metadata[:locale], :i18n, :plural, :rule)
   end
 
-  let(:plural_keys) do
+  let(:plural_keys) do |example|
     file.traverse_path(example.metadata[:locale], :i18n, :plural, :keys)
   end
 

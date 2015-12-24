@@ -10,7 +10,7 @@ hr:
     - Pet
     - Sub
     abbr_month_names:
-    - 
+    -
     - Sij
     - Veǉ
     - Ožu
@@ -36,7 +36,7 @@ hr:
       long: "%e. %B %Y."
       short: "%e.%-m."
     month_names:
-    - 
+    -
     - Siječanj
     - Veljača
     - Ožujak
@@ -140,8 +140,8 @@ hr:
       odd: mora biti neparan
       record_invalid: 'Validacija nije uspjela: %{errors}'
       restrict_dependent_destroy:
-        one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
-        many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
+        has_one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
+        has_many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
       taken: je već zauzet
       too_long:
         one: je predugačak (maksimum je %{count} znak)

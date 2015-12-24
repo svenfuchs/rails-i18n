@@ -10,7 +10,7 @@ vi:
     - Thứ sáu
     - Thứ bảy
     abbr_month_names:
-    - 
+    -
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -36,7 +36,7 @@ vi:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -118,8 +118,8 @@ vi:
       odd: phải là số lẻ
       record_invalid: 'Có các lỗi sau: %{errors}'
       restrict_dependent_destroy:
-        one: Không thể xóa do tồn tại đối tượng phụ thuộc %{record}
-        many: Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}
+        has_one: Không thể xóa do tồn tại đối tượng phụ thuộc %{record}
+        has_many: Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)

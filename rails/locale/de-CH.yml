@@ -10,7 +10,7 @@ de-CH:
     - Fr
     - Sa
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mär
@@ -36,7 +36,7 @@ de-CH:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - März
@@ -118,9 +118,9 @@ de-CH:
       odd: muss ungerade sein
       record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
       restrict_dependent_destroy:
-        one: Datensatz kann nicht gelöscht werden, da ein abhängiger %{record}-Datensatz
+        has_one: Datensatz kann nicht gelöscht werden, da ein abhängiger %{record}-Datensatz
           existiert.
-        many: Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.
+        has_many: Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.
       taken: ist bereits vergeben
       too_long:
         one: ist zu lang (mehr als 1 Zeichen)

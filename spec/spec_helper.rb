@@ -14,4 +14,7 @@ I18n.enforce_available_locales = false
 RSpec.configure do |config|
   config.mock_with :rspec
   config.fail_fast = true
+  config.expect_with :rspec do |c|
+    c.syntax = :should
+  end
 end

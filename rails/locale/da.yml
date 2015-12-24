@@ -10,7 +10,7 @@ da:
     - fre
     - lør
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -36,7 +36,7 @@ da:
       long: "%e. %B %Y"
       short: "%e. %b %Y"
     month_names:
-    - 
+    -
     - januar
     - februar
     - marts
@@ -118,8 +118,8 @@ da:
       odd: skal være et ulige tal
       record_invalid: 'Godkendelse gik galt: %{errors}'
       restrict_dependent_destroy:
-        one: Kunne ikke slette posten fordi en afhængig %{record} findes
-        many: Kunne ikke slette posten fordi afhængige %{record} findes
+        has_one: Kunne ikke slette posten fordi en afhængig %{record} findes
+        has_many: Kunne ikke slette posten fordi afhængige %{record} findes
       taken: er allerede brugt
       too_long: er for lang (højest %{count} tegn)
       too_short: er for kort (mindst %{count} tegn)

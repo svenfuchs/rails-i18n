@@ -117,8 +117,8 @@ lb:
       odd: muss ongerued sinn
       record_invalid: ! 'Validatioun feelgeschlo: %{errors}'
       restrict_dependent_destroy:
-        one: "Den Enregistrement kann net geläscht gi wëll et en dovun ofhängegt %{record} gëtt"
-        many: "Den Enregistrement kann net geläscht gi wëll et dovun ofhängegt %{record} gëtt"
+        has_one: "Den Enregistrement kann net geläscht gi wëll et en dovun ofhängegt %{record} gëtt"
+        has_many: "Den Enregistrement kann net geläscht gi wëll et dovun ofhängegt %{record} gëtt"
       taken: gouf scho geholl
       too_long:
         one: ass ze laang (Maximal 1 Zeechen)

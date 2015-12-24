@@ -9,12 +9,12 @@ require 'unit/transliteration/ukrainian'
 describe "Transliteration rule for" do
   transliterations_dir = File.join('rails', 'transliteration')
 
-  let(:file) do
+  let(:file) do |example|
     filename = Dir[File.join(transliterations_dir, "#{example.metadata[:locale]}*")].first
     RailsI18n::Spec::TransliterationFile.make(filename)
   end
 
-  let(:rule) do
+  let(:rule) do |example|
     file.traverse_path(example.metadata[:locale], :i18n, :transliterate, :rule)
   end
 

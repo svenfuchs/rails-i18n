@@ -10,7 +10,7 @@ zh-HK:
     - 周五
     - 周六
     abbr_month_names:
-    - 
+    -
     - 1月
     - 2月
     - 3月
@@ -36,7 +36,7 @@ zh-HK:
       long: "%Y年%b%d日"
       short: "%b%d日"
     month_names:
-    - 
+    -
     - 一月
     - 二月
     - 三月
@@ -118,8 +118,8 @@ zh-HK:
       odd: "%{attribute}必須是單數"
       record_invalid: "%{attribute}驗證失敗︰%{errors}"
       restrict_dependent_destroy:
-        one: 由於%{record}依賴此記錄，無法移除
-        many: 由於%{record}依賴此記錄，無法移除
+        has_one: 由於%{record}依賴此記錄，無法移除
+        has_many: 由於%{record}依賴此記錄，無法移除
       taken: "%{attribute}已被使用"
       too_long:
         one: 太長（最長為一個字元）

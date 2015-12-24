@@ -10,7 +10,7 @@ cs:
     - Pá
     - So
     abbr_month_names:
-    - 
+    -
     - led
     - úno
     - bře
@@ -36,7 +36,7 @@ cs:
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - leden
     - únor
     - březen
@@ -129,8 +129,8 @@ cs:
       odd: musí být liché číslo
       record_invalid: 'Validace je neúspešná: %{errors}'
       restrict_dependent_destroy:
-        one: Nemůžu smazat položku protože existuje závislá/ý/é %{record}
-        many: Nemůžu smazat položku protože existuje závislé/ý %{record}
+        has_one: Nemůžu smazat položku protože existuje závislá/ý/é %{record}
+        has_many: Nemůžu smazat položku protože existuje závislé/ý %{record}
       taken: již databáze obsahuje
       too_long: je příliš dlouhý/á/é (max. %{count} znaků)
       too_short: je příliš krátký/á/é (min. %{count} znaků)

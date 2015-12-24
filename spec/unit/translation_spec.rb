@@ -15,7 +15,7 @@ Dir.glob('rails/locale/*.yml') do |locale_file|
     it { locale_file.should be_a_subset_of('rails/locale/en.yml') }
 
     # These two matchers are to cope with irregular key names that
-    # are found in Rails 4.0.0.
+    # are found in Rails 5.x.
     it { should_not have_missing_particular_pluralization_keys }
     it { should have_keys_for_restrict_dependent_destroy }
   end
@@ -29,5 +29,5 @@ describe "a rails-i18n rails/locale/es-419.yml locale file" do
   it { should have_one_top_level_namespace }
   it { should be_named_like_top_level_namespace }
   it { should_not have_legacy_interpolations }
-  it { pending('es-419 is not included in iso gem as a valid locale'); should have_a_valid_locale }
+  it { should have_a_valid_locale }
 end
