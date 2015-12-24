@@ -8,3 +8,4 @@ branches:
   only:
     - master
     - rails-3-x
+    - rails-4-x
