@@ -92,9 +92,9 @@ de-CH:
     prompts:
       day: Tag
       hour: Stunden
-      minute: Minuten
+      minute: Minute
       month: Monat
-      second: Sekunden
+      second: Sekunde
       year: Jahr
   errors:
     format: "%{attribute} %{message}"
