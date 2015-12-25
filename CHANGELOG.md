@@ -1,10 +1,15 @@
 ## 5.0.0 (not yet released)
 - Change the structure of translation files for Rails 5
-- Update Russian (ru)
+
+## 4.0.9 (not yet released)
 - Update Bosnian (bs)
 - Update Arabic (ar)
 - Update Panjabi (pa)
 - Update German (de)
+
+## 4.0.8 (2015-12-24)
+- Add Panjabi (pa)
+- Update Russian (ru)
 
 ## 4.0.7 (2015-11-20)
 - Update Khmer (km)
