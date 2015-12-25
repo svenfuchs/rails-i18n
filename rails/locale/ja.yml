@@ -113,10 +113,12 @@ ja:
       invalid: は不正な値です
       less_than: は%{count}より小さい値にしてください
       less_than_or_equal_to: は%{count}以下の値にしてください
+      model_invalid: "バリデーションに失敗しました: %{errors}"
       not_a_number: は数値で入力してください
       not_an_integer: は整数で入力してください
       odd: は奇数にしてください
-      record_invalid: バリデーションに失敗しました %{errors}
+      record_invalid: "バリデーションに失敗しました: %{errors}"
+      required: を入力してください
       restrict_dependent_destroy:
         has_one: "%{record}が存在しているので削除できません"
         has_many: "%{record}が存在しているので削除できません"
