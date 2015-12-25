@@ -26,7 +26,7 @@ RSpec::Matchers.define :have_keys_for_restrict_dependent_destroy do
     @missing_keys.empty? && @redundant_keys.empty?
   end
 
-  failure_message_for_should do |filepath|
+  failure_message do |filepath|
     message = ''
     if @missing_keys.any?
       message << "expected #{filepath} to contain the following keys :\n- "

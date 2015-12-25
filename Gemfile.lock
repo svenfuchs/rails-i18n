@@ -38,7 +38,7 @@ GEM
     erubis (2.7.0)
     highline (1.7.8)
     i18n (0.7.0)
-    i18n-spec (0.4.0)
+    i18n-spec (0.6.0)
       iso
     i18n-tasks (0.3.11)
       activesupport
@@ -109,7 +109,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  i18n-spec (= 0.4.0)
+  i18n-spec (~> 0.6.0)
   i18n-tasks (~> 0.3.6)
   rails-i18n!
   rspec-rails (~> 3.1)
