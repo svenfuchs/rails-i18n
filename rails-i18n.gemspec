@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-rails", "~> 3.1"
   s.add_development_dependency "i18n-spec", "~> 0.6.0"
   s.add_development_dependency "spork", "= 1.0.0rc3"
-  s.add_development_dependency 'i18n-tasks', '~> 0.3.6'
+  s.add_development_dependency 'i18n-tasks', '~> 0.9.2'
 end
