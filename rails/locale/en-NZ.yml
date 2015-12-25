@@ -1,5 +1,12 @@
 ---
 en-NZ:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "Validation failed: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Cannot delete record because a dependent %{record} exists"
+          has_many: "Cannot delete record because dependent %{record} exist"
   date:
     abbr_day_names:
     - Sun
@@ -10,7 +17,7 @@ en-NZ:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +43,7 @@ en-NZ:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -115,7 +122,6 @@ en-NZ:
       not_a_number: is not a number
       not_an_integer: must be an integer
       odd: must be odd
-      record_invalid: 'Validation failed: %{errors}'
       taken: has already been taken
       too_long:
         one: is too long (maximum is 1 character)

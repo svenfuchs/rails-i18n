@@ -23,8 +23,8 @@ class KeyStructure
       init_backend(locale)
 
       I18n.locale = locale.to_sym
-      translations = flatten_hash(I18n.backend.translations[:'default'])
-      pluralizations = find_pluralizations(I18n.backend.translations[:'default'])
+      translations = flatten_hash(I18n.backend.translations[:en])
+      pluralizations = find_pluralizations(I18n.backend.translations[:en])
       translations.keys.sort.each do |key|
         begin
           case key
@@ -32,26 +32,11 @@ class KeyStructure
             I18n.l Date.today, :format => $1.to_sym, :raise => true
           when /^time\.formats\.(\w+)/
             I18n.l Time.now, :format => $1.to_sym, :raise => true
-          when 'activerecord.errors.messages.restrict_dependent_destroy'
-            if translations[key].kind_of?(Array)
-              begin
-                I18n.t "#{key}.one", :record => 'dummy', :raise => true
-              rescue I18n::MissingTranslationData => e
-                missing_keys << e.key
-              end
-              begin
-                I18n.t "#{key}.many", :record => 'dummy', :raise => true
-              rescue I18n::MissingTranslationData => e
-                missing_keys << e.key
-              end
-            else
-              I18n.t key, :raise => true
-            end
           else
             I18n.t key, :raise => true
           end
 
-          if key != 'activerecord.errors.messages.restrict_dependent_destroy' and pluralizations.has_key?(key)
+          if pluralizations.has_key?(key)
             [0, 1, 2, 3, 5, 6, 10, 11, 100, 1000000, 10.2].each do |count|
               I18n.t key, :count => count, :raise => true
             end
@@ -108,7 +93,7 @@ class KeyStructure
         I18n.load_path = []
         I18n.reload!
 
-        I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails4/*.yml"]
+        I18n.load_path += Dir[File.dirname(__FILE__) + "/../../rails5/*.yml"]
 
         path = File.dirname(__FILE__) + "/../../locale/#{locale}.rb"
 

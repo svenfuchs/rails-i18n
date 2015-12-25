@@ -1,5 +1,12 @@
 ---
 sr:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Валидација није успела: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Није могуће обрисати запис јер постоји зависан %{record}
+          has_many: Није могуће обрисати запис јер постоје зависни %{record}
   date:
     abbr_day_names:
     - Нед
@@ -138,10 +145,6 @@ sr:
       not_a_number: није број
       not_an_integer: није цео број
       odd: мора бити непаран
-      record_invalid: 'Валидација није успела: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Није могуће обрисати запис јер постоји зависан %{record}
-        has_many: Није могуће обрисати запис јер постоје зависни %{record}
       taken: је већ заузет
       too_long:
         one: је предугачак (максимум је %{count} знак)

@@ -1,5 +1,9 @@
 ---
 sl:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: ''
   date:
     abbr_day_names:
     - ned
@@ -10,7 +14,7 @@ sl:
     - pet
     - sob
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -36,7 +40,7 @@ sl:
       long: "%d. %b %Y"
       short: "%d. %b"
     month_names:
-    - 
+    -
     - januar
     - februar
     - marec
@@ -136,7 +140,6 @@ sl:
       less_than_or_equal_to: mora biti manj ali enako %{count}
       not_a_number: ni številka
       odd: mora biti liho
-      record_invalid: ''
       taken: je že zasedeno
       too_long: je predolgo (dovoljeno je do %{count} znakov)
       too_short: je prekratko (zahtevano je najmanj %{count} znakov)

@@ -1,5 +1,9 @@
 ---
 et:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Valideerimine ebaõnnestus: %{errors}'
   date:
     abbr_day_names:
     - P
@@ -10,7 +14,7 @@ et:
     - R
     - L
     abbr_month_names:
-    - 
+    -
     - jaan.
     - veebr.
     - märts
@@ -36,7 +40,7 @@ et:
       long: "%d. %B %Y"
       short: "%d.%m.%y"
     month_names:
-    - 
+    -
     - jaanuar
     - veebruar
     - märts
@@ -115,7 +119,6 @@ et:
       not_a_number: ei ole number
       not_an_integer: peab olema täisarv
       odd: peab olema paaritu arv
-      record_invalid: 'Valideerimine ebaõnnestus: %{errors}'
       taken: on juba võetud
       too_long: on liiga pikk (maksimum on %{count} tähemärki)
       too_short: on liiga lühike (miinimum on %{count} tähemärki)

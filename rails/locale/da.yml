@@ -1,5 +1,12 @@
 ---
 da:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Godkendelse gik galt: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Kunne ikke slette posten fordi en afhængig %{record} findes
+          has_many: Kunne ikke slette posten fordi afhængige %{record} findes
   date:
     abbr_day_names:
     - søn
@@ -116,10 +123,6 @@ da:
       not_a_number: er ikke et tal
       not_an_integer: er ikke et heltal
       odd: skal være et ulige tal
-      record_invalid: 'Godkendelse gik galt: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Kunne ikke slette posten fordi en afhængig %{record} findes
-        has_many: Kunne ikke slette posten fordi afhængige %{record} findes
       taken: er allerede brugt
       too_long: er for lang (højest %{count} tegn)
       too_short: er for kort (mindst %{count} tegn)

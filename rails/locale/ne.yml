@@ -1,5 +1,9 @@
 ---
 ne:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'मान्य भएन: %{errors}'
   date:
     abbr_day_names:
     - आईत
@@ -10,7 +14,7 @@ ne:
     - शुक्र
     - शनि
     abbr_month_names:
-    - 
+    -
     - जन.
     - फेब्रु.
     - मार्च
@@ -36,7 +40,7 @@ ne:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - जनवरी
     - फेब्रुवरी
     - मार्च
@@ -115,7 +119,6 @@ ne:
       not_a_number: अंक होईन
       not_an_integer: पुर्णाकं हुनुपर्नेछ
       odd: बिजोर संख्या हुनुपर्नेछ
-      record_invalid: 'मान्य भएन: %{errors}'
       taken: पहिल्यै प्रयोग गरीएको छ
       too_long:
         one: धेरै लामो छ (अधिक्तम 1 character हो)

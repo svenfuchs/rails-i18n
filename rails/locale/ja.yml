@@ -1,5 +1,12 @@
 ---
 ja:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "%{record}が存在しているので削除できません"
+          has_many: "%{record}が存在しているので削除できません"
   date:
     abbr_day_names:
     - 日
@@ -117,11 +124,7 @@ ja:
       not_a_number: は数値で入力してください
       not_an_integer: は整数で入力してください
       odd: は奇数にしてください
-      record_invalid: "バリデーションに失敗しました: %{errors}"
       required: を入力してください
-      restrict_dependent_destroy:
-        has_one: "%{record}が存在しているので削除できません"
-        has_many: "%{record}が存在しているので削除できません"
       taken: はすでに存在します
       too_long: は%{count}文字以内で入力してください
       too_short: は%{count}文字以上で入力してください

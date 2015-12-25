@@ -1,5 +1,12 @@
 ---
 es-CL:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'La validación falló: %{errors}'
+        restrict_dependent_destroy:
+          has_one: No se puede eliminar el registro porque existe un %{record} dependiente
+          has_many: No se puede eliminar el registro porque existen %{record} dependientes
   date:
     abbr_day_names:
     - dom
@@ -116,10 +123,6 @@ es-CL:
       not_a_number: no es un número
       not_an_integer: debe ser un entero
       odd: debe ser impar
-      record_invalid: 'La validación falló: %{errors}'
-      restrict_dependent_destroy:
-        has_one: No se puede eliminar el registro porque existe un %{record} dependiente
-        has_many: No se puede eliminar el registro porque existen %{record} dependientes
       taken: ya está en uso
       too_long: es demasiado largo (%{count} caracteres máximo)
       too_short: es demasiado corto (%{count} caracteres mínimo)

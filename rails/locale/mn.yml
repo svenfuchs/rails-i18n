@@ -1,5 +1,9 @@
 ---
 mn:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Шалгалт амжилтгүй: %{errors}'
   date:
     abbr_day_names:
     - Ня
@@ -10,7 +14,7 @@ mn:
     - Ба
     - Бя
     abbr_month_names:
-    - 
+    -
     - 1 сар
     - 2 сар
     - 3 сар
@@ -36,7 +40,7 @@ mn:
       long: "%Y %B %d"
       short: "%y-%m-%d"
     month_names:
-    - 
+    -
     - 1 сар
     - 2 сар
     - 3 сар
@@ -115,7 +119,6 @@ mn:
       not_a_number: тоо биш байна
       not_an_integer: бүхэл тоо байх ёстой
       odd: сонгой байх ёстой
-      record_invalid: 'Шалгалт амжилтгүй: %{errors}'
       taken: аль хэдийн авчихсан байна
       too_long:
         one: урт байна (хамгийн уртдаа 1 тэмдэгт)

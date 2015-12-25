@@ -1,5 +1,12 @@
 ---
 zh-CN:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: '验证失败: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 由于 %{record} 需要此记录，所以无法移除记录
+          has_many: 由于 %{record} 需要此记录，所以无法移除记录
   date:
     abbr_day_names:
     - 周日
@@ -116,10 +123,6 @@ zh-CN:
       not_a_number: 不是数字
       not_an_integer: 必须是整数
       odd: 必须为单数
-      record_invalid: '验证失败: %{errors}'
-      restrict_dependent_destroy:
-        has_one: 由于 %{record} 需要此记录，所以无法移除记录
-        has_many: 由于 %{record} 需要此记录，所以无法移除记录
       taken: 已经被使用
       too_long:
         one: 过长（最长为一个字符）

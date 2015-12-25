@@ -1,5 +1,12 @@
 ---
 tt:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Хаталар чыкты: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 'Язмышны бетереп булмады, чөнки бәйлелек табылды: %{record}'
+          has_many: 'Язмышны бетереп булмады, чөнки бәйлелекләр табылды: %{record}'
   date:
     abbr_day_names:
     - Якш
@@ -116,10 +123,6 @@ tt:
       not_a_number: сан тугел
       not_an_integer: бөтен сан түгел
       odd: җөп кенә була ала
-      record_invalid: 'Хаталар чыкты: %{errors}'
-      restrict_dependent_destroy:
-        has_one: 'Язмышны бетереп булмады, чөнки бәйлелек табылды: %{record}'
-        has_many: 'Язмышны бетереп булмады, чөнки бәйлелекләр табылды: %{record}'
       taken: бар инде
       too_long:
         one: бигрәк озын (озынлыгы бердән озынрак була алмый)

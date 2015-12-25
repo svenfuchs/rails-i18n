@@ -1,5 +1,9 @@
 ---
 lv:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Pārbaude neizdevās: %{errors}'
   date:
     abbr_day_names:
     - Sv.
@@ -10,7 +14,7 @@ lv:
     - Pk.
     - S.
     abbr_month_names:
-    - 
+    -
     - Janv
     - Febr
     - Marts
@@ -36,7 +40,7 @@ lv:
       long: "%Y. gada %e. %B"
       short: "%e. %B"
     month_names:
-    - 
+    -
     - Janvāris
     - Februāris
     - Marts
@@ -126,7 +130,6 @@ lv:
       not_a_number: nav skaitlis
       not_an_integer: ir jābūt veselam skaitlim
       odd: ir jābūt nepāra skaitlim
-      record_invalid: 'Pārbaude neizdevās: %{errors}'
       taken: ir jau aizņemts
       too_long:
         zero: ir par garu (maksimums ir %{count} simboli)

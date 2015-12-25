@@ -1,5 +1,9 @@
 ---
 fi:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validointi epäonnistui: %{errors}'
   date:
     abbr_day_names:
     - su
@@ -10,7 +14,7 @@ fi:
     - pe
     - la
     abbr_month_names:
-    - 
+    -
     - tammi
     - helmi
     - maalis
@@ -36,7 +40,7 @@ fi:
       long: "%A %e. %Bta %Y"
       short: "%d. %b"
     month_names:
-    - 
+    -
     - tammikuu
     - helmikuu
     - maaliskuu
@@ -115,7 +119,6 @@ fi:
       not_a_number: ei ole luku
       not_an_integer: ei ole kokonaisluku
       odd: täytyy olla pariton
-      record_invalid: 'Validointi epäonnistui: %{errors}'
       taken: on jo käytössä
       too_long: on liian pitkä (saa olla enintään %{count} merkkiä)
       too_short: on liian lyhyt (oltava vähintään %{count} merkkiä)

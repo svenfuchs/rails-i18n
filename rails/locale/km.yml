@@ -1,5 +1,12 @@
 ---
 km:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'មិនមានសុពលភាព៖ %{errors}'
+        restrict_dependent_destroy:
+          has_one: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
+          has_many: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
   date:
     abbr_day_names:
     - អា
@@ -94,10 +101,6 @@ km:
       not_a_number: មិនមែនជាលេខទេ
       not_an_integer: ត្រូវតែជាចំនួនគត់
       odd: ត្រូវតែជាចំនួនសេស
-      record_invalid: 'មិនមានសុពលភាព៖ %{errors}'
-      restrict_dependent_destroy:
-        has_one: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
-        has_many: មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ
       taken: មានរួចហើយ
       too_long: វែងពេក (យ៉ាងច្រើន %{count} តួ)
       too_short: ខ្លីពេក (យ៉ាងតិច %{count} តួ)

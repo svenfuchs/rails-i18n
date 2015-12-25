@@ -1,5 +1,9 @@
 ---
 hu:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: Sikertelen validálás %{errors}
   date:
     abbr_day_names:
     - v.
@@ -10,7 +14,7 @@ hu:
     - p.
     - szo.
     abbr_month_names:
-    - 
+    -
     - jan.
     - febr.
     - márc.
@@ -36,7 +40,7 @@ hu:
       long: "%Y. %B %e."
       short: "%b %e."
     month_names:
-    - 
+    -
     - január
     - február
     - március
@@ -115,7 +119,6 @@ hu:
       not_a_number: nem szám
       not_an_integer: egész számnak kell lennie
       odd: páratlan kell legyen
-      record_invalid: Sikertelen validálás %{errors}
       taken: már foglalt
       too_long: túl hosszú (nem lehet több %{count} karakternél)
       too_short: túl rövid (legalább %{count} karakter kell legyen)

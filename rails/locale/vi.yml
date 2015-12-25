@@ -1,5 +1,12 @@
 ---
 vi:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Có các lỗi sau: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Không thể xóa do tồn tại đối tượng phụ thuộc %{record}
+          has_many: Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}
   date:
     abbr_day_names:
     - Chủ nhật
@@ -116,10 +123,6 @@ vi:
       not_a_number: không phải là số
       not_an_integer: phải là một số nguyên
       odd: phải là số lẻ
-      record_invalid: 'Có các lỗi sau: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Không thể xóa do tồn tại đối tượng phụ thuộc %{record}
-        has_many: Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)

@@ -1,4 +1,4 @@
-default:
+en:
   date:
     formats:
       # Use the strftime parameters for formats.

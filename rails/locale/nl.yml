@@ -1,5 +1,12 @@
 ---
 nl:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validatie mislukt: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Kan item niet verwijderen omdat %{record} afhankelijk is
+          has_many: Kan item niet verwijderen omdat afhankelijke %{record} bestaan
   date:
     abbr_day_names:
     - zo
@@ -116,10 +123,6 @@ nl:
       not_a_number: is geen getal
       not_an_integer: moet een geheel getal zijn
       odd: moet oneven zijn
-      record_invalid: 'Validatie mislukt: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Kan item niet verwijderen omdat %{record} afhankelijk is
-        has_many: Kan item niet verwijderen omdat afhankelijke %{record} bestaan
       taken: is al in gebruik
       too_long:
         one: is te lang (maximaal %{count} teken)

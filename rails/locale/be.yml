@@ -1,5 +1,12 @@
 ---
 be:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Памылкі валідацыі: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Нельга выдаліць запіс, таму што існуе залежнасць %{record}
+          has_many: Нельга выдаліць запіс, таму што існуюць залежнасці %{record}
   date:
     abbr_day_names:
     - Пан
@@ -116,10 +123,6 @@ be:
       not_a_number: гэта не лічба
       not_an_integer: павінна быць цэлай лічбай
       odd: павінна быць няцотным
-      record_invalid: 'Памылкі валідацыі: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Нельга выдаліць запіс, таму што існуе залежнасць %{record}
-        has_many: Нельга выдаліць запіс, таму што існуюць залежнасці %{record}
       taken: ўжо занята
       too_long:
         one: занадта доўгі (максімум 1 сімвал)

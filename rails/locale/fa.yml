@@ -1,5 +1,9 @@
 ---
 fa:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: رکورد نامعتبر است %{errors}
   date:
     abbr_day_names:
     - ی
@@ -10,7 +14,7 @@ fa:
     - ج
     - ش
     abbr_month_names:
-    - 
+    -
     - ژانویه
     - فوریه
     - مارس
@@ -36,7 +40,7 @@ fa:
       long: "%e %B %Y"
       short: "%m/%d"
     month_names:
-    - 
+    -
     - ژانویه
     - فوریه
     - مارس
@@ -115,7 +119,6 @@ fa:
       not_a_number: عدد نیست
       not_an_integer: عدد صحیح نیست
       odd: باید فرد باشد
-      record_invalid: رکورد نامعتبر است %{errors}
       taken: پیشتر گرفته شده
       too_long: بلند است (حداکثر %{count} کاراکتر)
       too_short: کوتاه است (حداقل %{count} کاراکتر)

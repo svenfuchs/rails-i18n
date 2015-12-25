@@ -1,5 +1,13 @@
 ---
 ur:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'توثیق میں نا کا می: %{errors}'
+        restrict_dependent_destroy:
+          has_one: ایک منحصر %{record} کی موجودگی کے باعث اس ریکارڈ کو حذف نہیں کیا جا سکتا
+          has_many: چند منحصر %{record}  کی موجودگی کے باعث اس ریکارڈ کو حذف نہیں کیا جا
+            سکتا
   date:
     abbr_day_names:
     - اتوار
@@ -116,11 +124,6 @@ ur:
       not_a_number: ایک نمبر نہیں ہے
       not_an_integer: ایک عدد صحیح ہونا ضروری ہے
       odd: طاق ہونا ضروری ہے
-      record_invalid: 'توثیق میں نا کا می: %{errors}'
-      restrict_dependent_destroy:
-        has_one: ایک منحصر %{record} کی موجودگی کے باعث اس ریکارڈ کو حذف نہیں کیا جا سکتا
-        has_many: چند منحصر %{record}  کی موجودگی کے باعث اس ریکارڈ کو حذف نہیں کیا جا
-          سکتا
       taken: پہلے سے ہی استعمال میں ہے
       too_long:
         one: بہت طویل ہے (زیادہ سے زیادہ ایک حرف)

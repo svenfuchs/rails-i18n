@@ -1,5 +1,9 @@
 ---
 th:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'ไม่ผ่านการตรวจสอบ: %{errors}'
   date:
     abbr_day_names:
     - อา
@@ -10,7 +14,7 @@ th:
     - ศ
     - ส
     abbr_month_names:
-    - 
+    -
     - ม.ค.
     - ก.พ.
     - มี.ค.
@@ -36,7 +40,7 @@ th:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - มกราคม
     - กุมภาพันธ์
     - มีนาคม
@@ -93,7 +97,6 @@ th:
       not_a_number: ไม่ใช่ตัวเลข
       not_an_integer: ไม่ใช่จำนวนเต็ม
       odd: ต้องเป็นจำนวนคี่
-      record_invalid: 'ไม่ผ่านการตรวจสอบ: %{errors}'
       taken: ถูกใช้ไปแล้ว
       too_long: ยาวเกินไป (ต้องไม่เกิน %{count} ตัวอักษร)
       too_short: สั้นเกินไป (ต้องยาวกว่า %{count} ตัวอักษร)

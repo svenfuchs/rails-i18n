@@ -1,5 +1,12 @@
 ---
 pl:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Negatywne sprawdzenie poprawności: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}
+          has_one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
   date:
     abbr_day_names:
     - nie
@@ -138,10 +145,6 @@ pl:
       not_an_integer: musi być liczbą całkowitą
       odd: musi być nieparzyste
       present: musi być puste
-      record_invalid: 'Negatywne sprawdzenie poprawności: %{errors}'
-      restrict_dependent_destroy:
-        has_many: Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}
-        has_one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
       taken: zostało już zajęte
       too_long:
         few: jest za długie (maksymalnie %{count} znaki)

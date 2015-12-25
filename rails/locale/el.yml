@@ -1,5 +1,9 @@
 ---
 el:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: ! 'Η επικύρωση απέτυχε: %{errors}'
   date:
     abbr_day_names:
     - Κυρ
@@ -115,7 +119,6 @@ el:
       not_a_number: δεν είναι αριθμός
       not_an_integer: πρέπει να είναι ακέραιος αριθμός
       odd: πρέπει να είναι περιττός
-      record_invalid: ! 'Η επικύρωση απέτυχε: %{errors}'
       taken: το έχουν ήδη χρησιμοποιήσει
       too_long:
         one: είναι πολύ μεγάλο (το μέγιστο μήκος είναι 1 χαρακτήρας)

@@ -1,5 +1,9 @@
 ---
 fr-CA:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'La validation a échoué : %{errors}'
   date:
     abbr_day_names:
     - dim
@@ -10,7 +14,7 @@ fr-CA:
     - ven
     - sam
     abbr_month_names:
-    - 
+    -
     - jan.
     - fév.
     - mar.
@@ -36,7 +40,7 @@ fr-CA:
       long: "%d %B %Y"
       short: "%y-%m-%d"
     month_names:
-    - 
+    -
     - janvier
     - février
     - mars
@@ -117,7 +121,6 @@ fr-CA:
       not_a_number: n'est pas un nombre
       not_an_integer: doit être un nombre entier
       odd: doit être impair
-      record_invalid: 'La validation a échoué : %{errors}'
       taken: n'est pas disponible
       too_long:
         one: est trop long (pas plus d'un caractère)

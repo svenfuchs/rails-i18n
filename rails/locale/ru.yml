@@ -1,5 +1,12 @@
 ---
 ru:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Возникли ошибки: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 'Невозможно удалить запись, так как существует зависимость: %{record}'
+          has_many: 'Невозможно удалить запись, так как существуют зависимости: %{record}'
   date:
     abbr_day_names:
     - Вс
@@ -138,10 +145,6 @@ ru:
       not_a_number: не является числом
       not_an_integer: не является целым числом
       odd: может иметь лишь четное значение
-      record_invalid: 'Возникли ошибки: %{errors}'
-      restrict_dependent_destroy:
-        has_one: 'Невозможно удалить запись, так как существует зависимость: %{record}'
-        has_many: 'Невозможно удалить запись, так как существуют зависимости: %{record}'
       taken: уже существует
       too_long:
         few: слишком большой длины (не может быть больше чем %{count} символа)

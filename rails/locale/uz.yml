@@ -1,5 +1,9 @@
 ---
 uz:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "%{errors} ta hato bor."
   date:
     abbr_day_names:
     - Ya
@@ -10,7 +14,7 @@ uz:
     - Ju
     - Sh
     abbr_month_names:
-    - 
+    -
     - yan.
     - fev.
     - mart
@@ -36,7 +40,7 @@ uz:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - yanvar
     - fevral
     - mart
@@ -137,7 +141,6 @@ uz:
       not_a_number: son emas
       not_an_integer: butun son emas
       odd: toq sonlar mumkin
-      record_invalid: "%{errors} ta hato bor."
       taken: band
       too_long:
         few: uzunligi yetarligidan ortiq (%{count} ta simvoldan yuqori mumkin emas)

@@ -1,5 +1,9 @@
 ---
 ms:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Pengesahan gagal: %{errors}'
   date:
     abbr_day_names:
     - Ahd
@@ -10,7 +14,7 @@ ms:
     - Jum
     - Sab
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mac
@@ -36,7 +40,7 @@ ms:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Januari
     - Febuari
     - Mac
@@ -115,7 +119,6 @@ ms:
       not_a_number: bukan nombor
       not_an_integer: mestilah integer
       odd: mesti ganjil
-      record_invalid: 'Pengesahan gagal: %{errors}'
       taken: telah digunakan
       too_long:
         one: terlalu panjang (maksima adalah 1 karakter)

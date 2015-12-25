@@ -1,5 +1,9 @@
 ---
 af:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validation failed: %{errors}'
   date:
     abbr_day_names:
     - Son
@@ -10,7 +14,7 @@ af:
     - Vry
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +40,7 @@ af:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - Januarie
     - Februarie
     - Maart
@@ -115,7 +119,6 @@ af:
       not_a_number: is nie n getal nie
       not_an_integer: moet n integer wees
       odd: moet onewe wees
-      record_invalid: 'Validation failed: %{errors}'
       taken: is reeds geneem
       too_long:
         one: is te lank (maksimum is 1 karakter)

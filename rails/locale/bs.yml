@@ -1,5 +1,12 @@
 ---
 bs:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validacija nije uspjela: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
+          has_many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
   date:
     abbr_day_names:
     - ned
@@ -137,10 +144,6 @@ bs:
       not_a_number: nije broj
       not_an_integer: mora biti cijeli broj
       odd: mora biti neparno
-      record_invalid: 'Validacija nije uspjela: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Nije moguće izbrisati zapis jer postoji ovisan %{record}
-        has_many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
       taken: je već zauzet
       too_long: je predugo (maksimalno je dozvoljeno %{count} znakova)
       too_short: je prekratko (predviđeno je minimalno %{count} znakova)

@@ -1,5 +1,12 @@
 ---
 tr:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Doğrulama başarısız oldu: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi
+          has_many: Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi
   date:
     abbr_day_names:
     - Pzr
@@ -116,10 +123,6 @@ tr:
       not_a_number: geçerli bir sayı değil
       not_an_integer: tam sayı olmalı
       odd: tek olmalı
-      record_invalid: 'Doğrulama başarısız oldu: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi
-        has_many: Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi
       taken: hali hazırda kullanılmakta
       too_long:
         one: çok uzun (en fazla 1 karakter)

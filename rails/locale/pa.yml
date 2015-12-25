@@ -1,5 +1,12 @@
 ---
 pa:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'ਪਰਮਾਣ ਫ਼ੇਲ ਹੋਇਆ: %{errors}'
+        restrict_dependent_destroy:
+          has_one: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਇੱਕ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹੈ
+          has_many: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹਨ
   date:
     abbr_day_names:
     - ਅੈਤ
@@ -116,10 +123,6 @@ pa:
       not_a_number: ਸੰਖਿਆ ਨਹੀਂ ਹੈ
       not_an_integer: ਜਰੂਰੀ ਹੈ ਕੇ ਪੂਰਨ ਅੰਕ ਹੋਵੇ
       odd: ਜਰੂਰੀ ਹੈ ਕੇ ਕਲ਼ੀ ਹੋਵੇ
-      record_invalid: 'ਪਰਮਾਣ ਫ਼ੇਲ ਹੋਇਆ: %{errors}'
-      restrict_dependent_destroy:
-        has_one: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਇੱਕ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹੈ
-        has_many: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹਨ
       taken: ਪਹਿਲਾਂ ਹੀ ਮੱਲਿਆ ਹੋਇਆ ਹੈ
       too_long:
         one: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ 1 ਅੱਖਰ)

@@ -1,5 +1,12 @@
 ---
 id:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validasi gagal: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Tidak bisa menghapus record karena terdapat satu %{record} yang bergantung
+          has_many: Tidak bisa menghapus record karena terdapat %{record} yang bergantung
   date:
     abbr_day_names:
     - Min
@@ -118,10 +125,6 @@ id:
       not_a_number: bukan angka
       not_an_integer: harus bilangan bulat
       odd: harus ganjil
-      record_invalid: 'Validasi gagal: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Tidak bisa menghapus record karena terdapat satu %{record} yang bergantung
-        has_many: Tidak bisa menghapus record karena terdapat %{record} yang bergantung
       taken: sudah digunakan
       too_long:
         one: terlalu panjang (maksimum 1 karakter)

@@ -1,5 +1,12 @@
 ---
 zh-YUE:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "%{attribute}有問題︰%{errors}"
+        restrict_dependent_destroy:
+          has_one: 唔可以刪除，因為%{record}要用佢
+          has_many: 唔可以刪除，因為%{record}要用佢
   date:
     abbr_day_names:
     - 周日
@@ -116,10 +123,6 @@ zh-YUE:
       not_a_number: "%{attribute}唔係一個數"
       not_an_integer: "%{attribute}要係整數"
       odd: "%{attribute}要係單數"
-      record_invalid: "%{attribute}有問題︰%{errors}"
-      restrict_dependent_destroy:
-        has_one: 唔可以刪除，因為%{record}要用佢
-        has_many: 唔可以刪除，因為%{record}要用佢
       taken: "%{attribute}已經用過"
       too_long:
         one: 太長（最多1個字）

@@ -1,5 +1,9 @@
 ---
 az:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Yoxlama uğursuz oldu: %{errors}'
   date:
     abbr_day_names:
     - B.
@@ -10,7 +14,7 @@ az:
     - C.
     - Ş.
     abbr_month_names:
-    - 
+    -
     - Yan
     - Fev
     - Mar
@@ -36,7 +40,7 @@ az:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Yanvar
     - Fevral
     - Mart
@@ -115,7 +119,6 @@ az:
       not_a_number: rəqəm deyil
       not_an_integer: tam rəqəm olmalıdır
       odd: tək olmalıdır
-      record_invalid: 'Yoxlama uğursuz oldu: %{errors}'
       taken: artıq mövcuddur
       too_long: çox uzundur (%{count} simvoldan çox olmalı deyil)
       too_short: çox qısadır (%{count} simvoldan az olmalı deyil)

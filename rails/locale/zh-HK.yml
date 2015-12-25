@@ -1,5 +1,12 @@
 ---
 zh-HK:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "%{attribute}驗證失敗︰%{errors}"
+        restrict_dependent_destroy:
+          has_one: 由於%{record}依賴此記錄，無法移除
+          has_many: 由於%{record}依賴此記錄，無法移除
   date:
     abbr_day_names:
     - 周日
@@ -116,10 +123,6 @@ zh-HK:
       not_a_number: "%{attribute}不是數字"
       not_an_integer: "%{attribute}必須是整數"
       odd: "%{attribute}必須是單數"
-      record_invalid: "%{attribute}驗證失敗︰%{errors}"
-      restrict_dependent_destroy:
-        has_one: 由於%{record}依賴此記錄，無法移除
-        has_many: 由於%{record}依賴此記錄，無法移除
       taken: "%{attribute}已被使用"
       too_long:
         one: 太長（最長為一個字元）

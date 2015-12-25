@@ -1,5 +1,9 @@
 ---
 or:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'ସଠିକ୍ ନୁହ: %{errors}'
   date:
     abbr_day_names:
     - ରବି
@@ -10,7 +14,7 @@ or:
     - ଶୁକ୍ର
     - ଶନି
     abbr_month_names:
-    - 
+    -
     - ଜାନୁ
     - ଫେବରୁ
     - ମାର
@@ -36,7 +40,7 @@ or:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - ଜାନୁୟାରୀ
     - ଫେବୃୟାରୀ
     - ମାର୍ଚ଼
@@ -115,7 +119,6 @@ or:
       not_a_number: ସଂଖ୍ଯ ନୁହେଁ
       not_an_integer: ଗଣନ ସଂଖ୍ଯା ହେବାର ଅଛି
       odd: ଅଯୁଗ୍ମ ହେବାର ଅଛି
-      record_invalid: 'ସଠିକ୍ ନୁହ: %{errors}'
       taken: ଗ୍ରହଣ  କରା ଯାଇଛି
       too_long: ଦିର୍ଘତମ ଅଟେ(ଅତ୍ୟଧୀକ %{count} ଅଖ୍ଯର)
       too_short: ଅତି ସଂଖିପ୍ତ ଅଟେ (ଅତ୍ଯଳ୍ପ %{count} ଅଖ୍ଯର ଅଟେ)

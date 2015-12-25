@@ -61,12 +61,17 @@ Available locales are:
 > pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, ta, th, tl, tr, tt, ug, uk,
 > ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
-Currently, no locales are complete. Typically they lack the following keys:
+Complete locales are:
 
+> en-US, ja
+
+Currently, most locales are incomplete. Typically they lack the following keys:
+
+- `activerecord.errors.messages.record_invalid`
+- `activerecord.errors.messages.restrict_dependent_destroy.has_one`
+- `activerecord.errors.messages.restrict_dependent_destroy.has_many`
 - `errors.messages.model_invalid`
 - `errors.messages.required`
-- `errors.messages.restrict_dependent_destroy.has_one`
-- `errors.messages.restrict_dependent_destroy.has_many`
 
 We always welcome your contributions!
 

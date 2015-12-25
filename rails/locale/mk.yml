@@ -1,5 +1,9 @@
 ---
 mk:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'неуспешна валидација: %{errors}'
   date:
     abbr_day_names:
     - Нед
@@ -10,7 +14,7 @@ mk:
     - Пет
     - Саб
     abbr_month_names:
-    - 
+    -
     - Јан
     - Фев
     - Мар
@@ -36,7 +40,7 @@ mk:
       long: "%B %e, %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - Јануари
     - Февруари
     - Март
@@ -115,7 +119,6 @@ mk:
       not_a_number: 'не е број '
       not_an_integer: не е цел број
       odd: мора да биде непарно
-      record_invalid: 'неуспешна валидација: %{errors}'
       taken: е зафатено
       too_long:
         one: е предолг (не повеќе од %{count} карактер)

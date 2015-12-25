@@ -1,5 +1,9 @@
 ---
 fr-CH:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'La validation a échoué : %{errors}'
   date:
     abbr_day_names:
     - dim
@@ -118,10 +122,6 @@ fr-CH:
       not_a_number: n'est pas un nombre
       not_an_integer: doit être un nombre entier
       odd: doit être impair
-      record_invalid: 'La validation a échoué : %{errors}'
-      restrict_dependent_destroy:
-        has_one: 'Suppression impossible: un autre enregistrement est lié'
-        has_many: 'Suppression impossible: d''autres enregistrements sont liés'
       taken: n'est pas disponible
       too_long:
         one: est trop long (pas plus d'un caractère)

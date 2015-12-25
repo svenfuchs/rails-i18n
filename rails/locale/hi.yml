@@ -1,5 +1,9 @@
 ---
 hi:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'सत्यापन विफल: %{errors}'
   date:
     abbr_day_names:
     - रवि
@@ -10,7 +14,7 @@ hi:
     - शुक्र
     - शनि
     abbr_month_names:
-    - 
+    -
     - जन
     - फर
     - मार्च
@@ -36,7 +40,7 @@ hi:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - जनवरी
     - फरवरी
     - मार्च
@@ -115,7 +119,6 @@ hi:
       not_a_number: कोई संख्या नहीं है
       not_an_integer: एक पूर्णांक होना चाहिए
       odd: विसम होना चाहिए
-      record_invalid: 'सत्यापन विफल: %{errors}'
       taken: पहले ही ले लिया गया है
       too_long: अत्यधिक लंबा है (अधिकतम %{count} वर्ण हैं)
       too_short: अत्यधिक छोटा है (न्यूनतम %{count} वर्ण हैं)

@@ -1,4 +1,11 @@
 lb:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: ! 'Validatioun feelgeschlo: %{errors}'
+        restrict_dependent_destroy:
+          has_one: "Den Enregistrement kann net geläscht gi wëll et en dovun ofhängegt %{record} gëtt"
+          has_many: "Den Enregistrement kann net geläscht gi wëll et dovun ofhängegt %{record} gëtt"
   date:
     abbr_day_names:
     - Son
@@ -115,10 +122,6 @@ lb:
       not_a_number: ass keng Zuel
       not_an_integer: muss eng ganz Zuel sinn
       odd: muss ongerued sinn
-      record_invalid: ! 'Validatioun feelgeschlo: %{errors}'
-      restrict_dependent_destroy:
-        has_one: "Den Enregistrement kann net geläscht gi wëll et en dovun ofhängegt %{record} gëtt"
-        has_many: "Den Enregistrement kann net geläscht gi wëll et dovun ofhängegt %{record} gëtt"
       taken: gouf scho geholl
       too_long:
         one: ass ze laang (Maximal 1 Zeechen)

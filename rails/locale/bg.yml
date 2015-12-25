@@ -1,5 +1,9 @@
 ---
 bg:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'имаше грешки: %{errors}'
   date:
     abbr_day_names:
     - нед
@@ -10,7 +14,7 @@ bg:
     - пет
     - съб
     abbr_month_names:
-    - 
+    -
     - ян.
     - фев.
     - март
@@ -36,7 +40,7 @@ bg:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - януари
     - февруари
     - март
@@ -115,7 +119,6 @@ bg:
       not_a_number: не е число
       not_an_integer: не е цяло число
       odd: трябва да е четно
-      record_invalid: 'имаше грешки: %{errors}'
       taken: вече съществува
       too_long: е прекаленo дълго (не може да е повече от %{count} символа)
       too_short: е прекалено късо (не може да бъде по-малко от %{count} символа)

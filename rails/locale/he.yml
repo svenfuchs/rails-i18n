@@ -1,5 +1,9 @@
 ---
 he:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'האימות נכשל: %{errors}'
   date:
     abbr_day_names:
     - א
@@ -10,7 +14,7 @@ he:
     - ו
     - ש
     abbr_month_names:
-    - 
+    -
     - ינו
     - פבר
     - מרץ
@@ -36,7 +40,7 @@ he:
       long: "%e ב%B, %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - ינואר
     - פברואר
     - מרץ
@@ -117,7 +121,6 @@ he:
       not_a_number: חייב להיות מספר
       not_an_integer: חייב להיות מספר שלם
       odd: חייב להיות אי זוגי
-      record_invalid: 'האימות נכשל: %{errors}'
       taken: כבר בשימוש
       too_long: ארוך מדי (יותר מ- %{count} תווים)
       too_short: קצר מדי (פחות מ- %{count} תווים)

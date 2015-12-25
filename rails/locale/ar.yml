@@ -1,5 +1,12 @@
 ---
 ar:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'فشل التحقّق من: %{errors}'
+        restrict_dependent_destroy:
+          has_one: لا يمكن حذف السجل لوجود سجل يعتمد عليه %{record}
+          has_many: لا يمكن حذف السجل لوجود سجلات تعتمد عليه %{record}
   date:
     abbr_day_names:
     - الأحد
@@ -160,10 +167,6 @@ ar:
       not_a_number: ليس رقمًا
       not_an_integer: يجب أن يكون عدداً صحيحاً
       odd: يجب أن يكون عددًا فرديًّا
-      record_invalid: 'فشل التحقّق من: %{errors}'
-      restrict_dependent_destroy:
-        has_one: لا يمكن حذف السجل لوجود سجل يعتمد عليه %{record}
-        has_many: لا يمكن حذف السجل لوجود سجلات تعتمد عليه %{record}
       taken: محجوز مُسبقًا
       too_long:
         zero: أطول من اللّازم (الحد الأقصى هو ولا حرف)

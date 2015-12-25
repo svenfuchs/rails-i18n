@@ -1,5 +1,12 @@
 ---
 nb:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Det oppstod feil: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne.
+          has_many: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
   date:
     abbr_day_names:
     - søn
@@ -116,10 +123,6 @@ nb:
       not_a_number: er ikke et tall
       not_an_integer: er ikke et heltall
       odd: må være oddetall
-      record_invalid: 'Det oppstod feil: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne.
-        has_many: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
       taken: er allerede i bruk
       too_long: er for lang (maksimum %{count} tegn)
       too_short: er for kort (minimum %{count} tegn)

@@ -1,5 +1,9 @@
 ---
 uk:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Виникли помилки: %{errors}'
   date:
     abbr_day_names:
     - нд.
@@ -10,7 +14,7 @@ uk:
     - пт.
     - сб.
     abbr_month_names:
-    - 
+    -
     - січ.
     - лют.
     - бер.
@@ -36,7 +40,7 @@ uk:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Січня
     - Лютого
     - Березня
@@ -137,7 +141,6 @@ uk:
       not_a_number: не число
       not_an_integer: не э цілим числом
       odd: має бути непарним
-      record_invalid: 'Виникли помилки: %{errors}'
       taken: вже зайнятий
       too_long:
         few: занадто довгий (максимум %{count} знаки)

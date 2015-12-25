@@ -1,5 +1,12 @@
 ---
 is:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Villur: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Ekki hægt að eyða færslu því %{record} sem hún er háð er til
+          has_many: Ekki hægt að eyða færslur því %{record} sem hún er háð er til
   date:
     abbr_day_names:
     - sun
@@ -116,10 +123,6 @@ is:
       not_a_number: er ekki tala
       not_an_integer: þarf að vera heiltala
       odd: þarf að vera oddatala
-      record_invalid: 'Villur: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Ekki hægt að eyða færslu því %{record} sem hún er háð er til
-        has_many: Ekki hægt að eyða færslur því %{record} sem hún er háð er til
       taken: er þegar í notkun
       too_long:
         one: er of langt (má mest vera 1 stafur)

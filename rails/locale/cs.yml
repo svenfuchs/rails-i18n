@@ -1,5 +1,12 @@
 ---
 cs:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validace je neúspešná: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Nemůžu smazat položku protože existuje závislá/ý/é %{record}
+          has_many: Nemůžu smazat položku protože existuje závislé/ý %{record}
   date:
     abbr_day_names:
     - Ne
@@ -127,10 +134,6 @@ cs:
       not_a_number: není číslo
       not_an_integer: musí být celé číslo
       odd: musí být liché číslo
-      record_invalid: 'Validace je neúspešná: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Nemůžu smazat položku protože existuje závislá/ý/é %{record}
-        has_many: Nemůžu smazat položku protože existuje závislé/ý %{record}
       taken: již databáze obsahuje
       too_long: je příliš dlouhý/á/é (max. %{count} znaků)
       too_short: je příliš krátký/á/é (min. %{count} znaků)

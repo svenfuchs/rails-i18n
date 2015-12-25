@@ -1,5 +1,9 @@
 ---
 sw:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Uhalalishaji umeshindikana: %{errors}'
   date:
     abbr_day_names:
     - J2
@@ -10,7 +14,7 @@ sw:
     - Ij
     - J1
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mac
@@ -36,7 +40,7 @@ sw:
       long: "%e %B, %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - Mwezi wa kwanza
     - Mwezi wa pili
     - Mwezi wa tatu
@@ -115,7 +119,6 @@ sw:
       not_a_number: inaruhusiwa namba tu
       not_an_integer: inaruhusiwa namba tu
       odd: z/iwe witiri
-      record_invalid: 'Uhalalishaji umeshindikana: %{errors}'
       taken: imesajiliwa
       too_long: ndefu sana (isizidi herufi %{count})
       too_short: fupi mno (isipungue herufi %{count})

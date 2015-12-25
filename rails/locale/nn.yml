@@ -1,5 +1,12 @@
 ---
 nn:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Valideringa mislukka: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Kan ikkje sletta registreringa, fordi 1 avhengig %{record} finst.
+          has_many: Kan ikkje sletta registreringa, fordi avhengige %{record} finst.
   date:
     abbr_day_names:
     - sun
@@ -114,10 +121,6 @@ nn:
       not_a_number: er ikkje eit tal
       not_an_integer: er ikkje eit heiltal
       odd: må vera oddetal
-      record_invalid: 'Valideringa mislukka: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Kan ikkje sletta registreringa, fordi 1 avhengig %{record} finst.
-        has_many: Kan ikkje sletta registreringa, fordi avhengige %{record} finst.
       taken: er allereie i bruk
       too_long: er for lang (maksimum %{count} teikn)
       too_short: er for kort (minimum %{count} teikn)

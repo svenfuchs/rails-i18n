@@ -1,5 +1,12 @@
 ---
 lt:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Nepraeitos patikros: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja
+          has_many: Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja
   date:
     abbr_day_names:
     - Sek
@@ -127,10 +134,6 @@ lt:
       not_a_number: ne skaičius
       not_an_integer: privalo būti sveikas skaičius
       odd: turi būti nelyginis
-      record_invalid: 'Nepraeitos patikros: %{errors}'
-      restrict_dependent_destroy:
-        has_one: Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja
-        has_many: Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja
       taken: jau užimtas
       too_long:
         one: per ilgas (daugiausiai %{count} simbolis)

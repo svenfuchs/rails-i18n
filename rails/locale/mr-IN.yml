@@ -1,5 +1,12 @@
 ---
 mr-IN:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'प्रमाणीकरण अयशस्वी: %{errors}'
+        restrict_dependent_destroy:
+          has_one: अवलंबून %{record} अस्तित्वात असल्याने रेकॉर्ड हटवू शकत नाही
+          has_many: अवलंबून %{record} अस्तित्वात असल्याने रेकॉर्ड हटवू शकत नाही
   date:
     abbr_day_names:
     - सोम
@@ -116,10 +123,6 @@ mr-IN:
       not_a_number: क्रमांक नाही
       not_an_integer: पूर्णांक असणे आवश्यक आहे
       odd: विषम संख्या असणे आवश्यक आहे
-      record_invalid: 'प्रमाणीकरण अयशस्वी: %{errors}'
-      restrict_dependent_destroy:
-        has_one: अवलंबून %{record} अस्तित्वात असल्याने रेकॉर्ड हटवू शकत नाही
-        has_many: अवलंबून %{record} अस्तित्वात असल्याने रेकॉर्ड हटवू शकत नाही
       taken: यापूर्वीच घेतले गेले आहे
       too_long:
         one: खूप लांब आहे (जास्तीत जास्त एक वर्ण परवानगी आहे)

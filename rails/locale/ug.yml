@@ -1,5 +1,12 @@
 ---
 ug:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "%{errors} دا خاتالىق بار"
+        restrict_dependent_destroy:
+          has_one: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
+          has_many: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
   date:
     abbr_day_names:
     - يەكشەنبە
@@ -116,10 +123,6 @@ ug:
       not_a_number: سان ئەمەس
       not_an_integer: پۈتۈن سان ئەمەس
       odd: تاق سان
-      record_invalid: "%{errors} دا خاتالىق بار"
-      restrict_dependent_destroy:
-        has_one: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
-        has_many: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
       taken: ئىشلىتىپ بولۇنغان
       too_long:
         one: بەك ئۇزۇن (بىر ھەرىپ)

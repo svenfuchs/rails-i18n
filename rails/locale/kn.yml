@@ -1,5 +1,9 @@
 ---
 kn:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'ತಪ್ಪು ಆಧಾರ: %{errors}'
   date:
     abbr_day_names:
     - ರವಿ
@@ -10,7 +14,7 @@ kn:
     - ಶುಕ್ರ
     - ಶನಿ
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +40,7 @@ kn:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - ಜನವರಿ
     - ಫೆಬ್ರವರಿ
     - ಮಾರ್ಚ್
@@ -115,7 +119,6 @@ kn:
       not_a_number: ಸಂಖೆ ಆಗಿಲ್ಲ
       not_an_integer: ಸಂಖೆ ಆಗಿರಬೇಕು
       odd: ಬೆಸ ಆಗಿರಬೇಕು
-      record_invalid: 'ತಪ್ಪು ಆಧಾರ: %{errors}'
       taken: ತೆಗೆದುಕೊಂಡಾಗಿದೆ
       too_long: ಬಹಳ ದೊಡ್ಡದಾಗಿದೆ (ಗರಿಷ್ಟ %{count} ಅಕ್ಷರಗಳು)
       too_short: ಬಹಳ ಚಿಕ್ಕದಾಗಿದೆ (ಕನಿಷ್ಠ %{count} ಅಕ್ಷರಗಳು)

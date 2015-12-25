@@ -1,5 +1,9 @@
 ---
 lo:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'ການຢືນຢັນບໍ່ສຳເລັດ : %{errors}'
   date:
     abbr_day_names:
     - ''
@@ -10,7 +14,7 @@ lo:
     - ''
     - ''
     abbr_month_names:
-    - 
+    -
     - ''
     - ''
     - ''
@@ -36,7 +40,7 @@ lo:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    - 
+    -
     - ມັງກອນ
     - ກຸມພາ
     - ມີນາ
@@ -151,7 +155,6 @@ lo:
       less_than_or_equal_to: ຕ້ອງຕຳ່ກວ່າ ຫຼື ເທົ່າກັບ %{count}
       not_a_number: ບໍ່ແມ່ນຕົວເລກ
       odd: ຕ້ອງເປັນເລກຄີກ
-      record_invalid: 'ການຢືນຢັນບໍ່ສຳເລັດ : %{errors}'
       taken: ຮັບເອົາໄປແລ້ວ
       too_long: ຍາວໂພດ (ສູງສຸດຄື %{count} ຕົວອັກສອນ)
       too_short: ສັ້ນໂພດ (ຕຳ່ສຸດຄື %{count} ຕົວອັກສອນ)

@@ -1,5 +1,9 @@
 ---
 cy:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Gwirio wedi methu: %{errors}'
   date:
     abbr_day_names:
     - Sul
@@ -10,7 +14,7 @@ cy:
     - Gwe
     - Sad
     abbr_month_names:
-    - 
+    -
     - Ion
     - Chw
     - Maw
@@ -36,7 +40,7 @@ cy:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - Ionawr
     - Chwefror
     - Mawrth
@@ -159,7 +163,6 @@ cy:
       not_a_number: heb fod yn rhif
       not_an_integer: heb fod yn rhif llawn
       odd: rhaid bod yn odrif
-      record_invalid: 'Gwirio wedi methu: %{errors}'
       taken: wedi'i gymryd yn barod
       too_long: yn rhy hir (cewch %{count} llythyren ar y fwyaf)
       too_short: yn rhy fyr (rhaid am o leiaf %{count} llythyren)

@@ -1,5 +1,9 @@
 ---
 ca:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'La validació ha fallat: %{errors}'
   date:
     abbr_day_names:
     - Dg
@@ -10,7 +14,7 @@ ca:
     - Dv
     - Ds
     abbr_month_names:
-    - 
+    -
     - Gen
     - Feb
     - Mar
@@ -36,7 +40,7 @@ ca:
       long: "%d de %B de %Y"
       short: "%d de %b"
     month_names:
-    - 
+    -
     - Gener
     - Febrer
     - Març
@@ -115,7 +119,6 @@ ca:
       not_a_number: no és un número
       not_an_integer: ha de ser un enter
       odd: ha de ser senar
-      record_invalid: 'La validació ha fallat: %{errors}'
       taken: no està disponible
       too_long: és massa llarg (%{count} caràcters màxim)
       too_short: és massa curt (%{count} caràcters mínim)

@@ -1,5 +1,9 @@
 ---
 sk:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validácia neúspešná: %{errors}'
   date:
     abbr_day_names:
     - Ne
@@ -10,7 +14,7 @@ sk:
     - Pi
     - So
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -36,7 +40,7 @@ sk:
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Január
     - Február
     - Marec
@@ -126,7 +130,6 @@ sk:
       not_a_number: nie je číslo
       not_an_integer: musí byť celé číslo
       odd: musí byť nepárne číslo
-      record_invalid: 'Validácia neúspešná: %{errors}'
       taken: ste už použili
       too_long: je príliš dlhá/ý (max. %{count} znakov)
       too_short: je príliš krátky/a (min. %{count} znakov)
