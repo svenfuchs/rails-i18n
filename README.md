@@ -63,7 +63,8 @@ Available locales are:
 
 Complete locales are:
 
-> en-US, ja
+> en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-MX, es-PA, es-PE,
+> es-US, es-VE, ja
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
