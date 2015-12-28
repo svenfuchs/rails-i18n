@@ -3,7 +3,7 @@ es-EC:
   activerecord:
     errors:
       messages:
-        record_invalid: 'La validación falló: %{errors}'
+        record_invalid: "La validación falló: %{errors}"
         restrict_dependent_destroy:
           has_one: No se puede eliminar el registro porque existe un(a) %{record} dependiente
           has_many: No se puede eliminar el registro porque existen %{record} dependientes
@@ -120,9 +120,11 @@ es-EC:
       invalid: no es válido
       less_than: debe ser menor que %{count}
       less_than_or_equal_to: debe ser menor que o igual a %{count}
+      model_invalid: "La validación falló: %{errors}"
       not_a_number: no es un número
       not_an_integer: debe ser un entero
       odd: debe ser un número impar
+      required: debe existir
       taken: ya está en uso
       too_long:
         one: es demasiado largo (máximo 1 caracter)
@@ -167,10 +169,14 @@ es-EC:
         format: "%n %u"
         units:
           billion: mil millones
-          million: millón
+          million:
+            one: millón
+            other: millones
           quadrillion: mil billones
           thousand: mil
-          trillion: billón
+          trillion:
+            one: billón
+            other: billones
           unit: ''
       format:
         delimiter: ''
