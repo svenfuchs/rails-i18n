@@ -168,9 +168,9 @@ nl:
         units:
           billion: miljard
           million: miljoen
-          quadrillion: quadriljoen
+          quadrillion: biljard
           thousand: duizend
-          trillion: triljoen
+          trillion: biljoen
           unit: ''
       format:
         delimiter: ''
