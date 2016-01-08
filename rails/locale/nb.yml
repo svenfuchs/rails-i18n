@@ -203,7 +203,7 @@ nb:
   time:
     am: ''
     formats:
-      default: "%A, %e. %B %Y, %H:%M"
-      long: "%A, %e. %B %Y, %H:%M"
-      short: "%e. %B, %H:%M"
+      default: "%A, %e. %B %Y, %H.%M"
+      long: "%A, %e. %B %Y, %H.%M"
+      short: "%e. %B, %H.%M"
     pm: ''
