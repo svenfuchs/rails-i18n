@@ -1,0 +1,232 @@
+---
+ua:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "Виникли помилки: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Неможливо видалити запис, так як існує залежність: %{record}"
+          has_many: "Неможливо видалити запис, так як існують залежності: %{record}"
+  date:
+    abbr_day_names:
+    - Нд
+    - Пн
+    - Вт
+    - Ср
+    - Чт
+    - Пт
+    - Сб
+    abbr_month_names:
+    -
+    - січ.
+    - лют.
+    - бер.
+    - квіт.
+    - трав.
+    - черв.
+    - лип.
+    - серп.
+    - вер.
+    - жов.
+    - лист.
+    - груд.
+    day_names:
+    - неділя
+    - понеділок
+    - вівторок
+    - середа
+    - четвер
+    - "п'ятниця"
+    - субота
+    formats:
+      default: "%d.%m.%Y"
+      long: "%-d %B %Y"
+      short: "%-d %b"
+    month_names:
+    -
+    - січня
+    - лютого
+    - березня
+    - квітня
+    - травня
+    - червня
+    - липня
+    - серпня
+    - вересня
+    - жовтня
+    - листопада
+    - грудня
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: близько 1 години
+        other: близько %{count} годин
+      about_x_months:
+        one: близько 1 місяця
+        other: близько %{count} місяців
+      about_x_years:
+        one: близько 1 року
+        other: близько %{count} років
+      almost_x_years:
+        one: майже 1 рік
+        other: майже %{count} років
+      half_a_minute: менше хвилини
+      less_than_x_minutes:
+        one: менше хвилини
+        other: менше %{count} хвилин
+      less_than_x_seconds:
+        one: менше секунди
+        other: менше %{count} секунд
+      over_x_years:
+        one: більше 1 року
+        other: більше %{count} років
+      x_days:
+        one: 1 день
+        other: "%{count} днів"
+      x_minutes:
+        one: 1 хвилина
+        other: "%{count} хвилин"
+      x_months:
+        one: 1 місяць
+        other: "%{count} місяців"
+      x_seconds:
+        one: 1 секунда
+        other: "%{count} секунд"
+    prompts:
+      day: День
+      hour: Годин
+      minute: Хвилин
+      month: Місяць
+      second: Секунд
+      year: Рік
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: потрібно підтвердити
+      blank: не може бути порожнім
+      present: потрібно залишити порожнім
+      confirmation: не співпадає зі значенням поля %{attribute}
+      empty: не може бути порожнім
+      equal_to: може мати лише значення, що рівне %{count}
+      even: може мати лише непарне значення
+      exclusion: має зарезервоване значення
+      greater_than: може мати значення більше ніж %{count}
+      greater_than_or_equal_to: може мати значення більше або рівне %{count}
+      inclusion: має непередбачене значення
+      invalid: має невірне значення
+      less_than: може мати значення менше ніж %{count}
+      less_than_or_equal_to: може мати значення менше або рівне %{count}
+      model_invalid: "Виникли помилки: %{errors}"
+      not_a_number: не є числом
+      not_an_integer: не є цілим числом
+      odd: може мати лише парне значення
+      required: повинен існувати
+      taken: уже існує
+      too_long:
+        one: занадто довгий (не може бути більше 1 символа)
+        other: занадто довгий (не може бути більше %{count} символів)
+      too_short:
+        one: недостатньої довжини (не може бути менше 1 символа)
+        other: недостатньої довжини (не може бути менше %{count} символів)
+      wrong_length:
+        one: невірної довжини (може бути довжиною рівно 1 символ)
+        other: невірної довжини (може бути довжиною рівно %{count} символів)
+      other_than: повинен відрізнятися від %{count}
+    template:
+      body: 'Виникли проблеми з наступними полями:'
+      header:
+        one: "%{model}: збереження не вдалось через 1 помилку"
+        other: "%{model}: збереження не вдалось через %{count} помилок"
+  helpers:
+    select:
+      prompt: 'Виберіть: '
+    submit:
+      create: Створити %{model}
+      submit: Зберегти %{model}
+      update: Зберегти %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "грн."
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            few: мільярди
+            many: мільярдів
+            one: мільярд
+            other: мільярдів
+          million:
+            few: мільйони
+            many: мільйонів
+            one: мільйон
+            other: мільйонів
+          quadrillion:
+            few: квадрильйони
+            many: квадрильйонів
+            one: квадрильйон
+            other: квадрильйонів
+          thousand:
+            few: тисячі
+            many: тисяч
+            one: тисяча
+            other: тисяч
+          trillion:
+            few: трильйони
+            many: трильйонів
+            one: трильйон
+            other: трильйонів
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            few: байта
+            many: байт
+            one: байт
+            other: байт
+          gb: ГБ
+          kb: КБ
+          mb: МБ
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " і "
+      two_words_connector: " і "
+      words_connector: ", "
+  time:
+    am: ранку
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y, %H:%M"
+      short: "%d %b, %H:%M"
+    pm: вечора

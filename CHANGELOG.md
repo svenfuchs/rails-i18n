@@ -1,5 +1,6 @@
 ## 5.0.0 (not yet released)
 - Change the structure of translation files for Rails 5
+- Add Ukrainian (ua)
 
 ## 4.0.9 (not yet released)
 - Update Bosnian (bs)
