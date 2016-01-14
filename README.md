@@ -65,7 +65,7 @@ Available locales are:
 Complete locales are:
 
 > en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-MX, es-PA, es-PE,
-> es-US, es-VE, ja, pt-BR
+> es-US, es-VE, ja, nl, pt-BR
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
