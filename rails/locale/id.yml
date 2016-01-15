@@ -122,9 +122,11 @@ id:
       invalid: tidak valid
       less_than: harus lebih kecil dari %{count}
       less_than_or_equal_to: harus sama atau lebih kecil dari %{count}
+      model_invalid: "Validasi gagal: %{errors}"
       not_a_number: bukan angka
       not_an_integer: harus bilangan bulat
       odd: harus ganjil
+      required: harus ada
       taken: sudah digunakan
       too_long:
         one: terlalu panjang (maksimum 1 karakter)
@@ -192,6 +194,7 @@ id:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
