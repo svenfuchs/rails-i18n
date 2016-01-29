@@ -160,7 +160,7 @@ ar:
       exclusion:  حقل %{attribute} محجوز
       greater_than: ميجب أن يكون عدد %{attribute} أكبر من %{count}
       greater_than_or_equal_to: يجب أن يكون عدد %{attribute} أكبر أو يساوي %{count}
-      inclusion:  %{attribute} غير وارد في القائمة
+      inclusion:  "%{attribute} غير وارد في القائمة"
       invalid: محتوى %{attribute} غير صالح
       less_than: يجب أن يكون عدد %{attribute} أصغر من %{count}
       less_than_or_equal_to: يجب أن يكون عدد %{attribute} أصغر أو  يساوي %{count}
@@ -197,7 +197,7 @@ ar:
         many: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
         other: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
     template:
-      body: 'يُرجى التحقّق من الحقول التّالية:'%{attribute}
+      body: "يُرجى التحقّق من الحقول التّالية:%{attribute}"
       header:
         zero: 'ليس بالامكان حفظ %{model} لسبب ولا خطأ.'
         one: 'ليس بالامكان حفظ %{model} لسبب وجود خطأ واحد.'
