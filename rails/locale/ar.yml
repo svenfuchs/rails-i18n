@@ -267,8 +267,8 @@ ar:
   support:
     array:
       last_word_connector: " و "
-      two_words_connector: " ،"
-      words_connector: " و "
+      two_words_connector: " و "
+      words_connector: " ، "
   time:
     am: صباحًا
     formats:
