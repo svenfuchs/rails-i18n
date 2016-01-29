@@ -1,5 +1,10 @@
 ## 5.0.0 (not yet released)
 - Change the structure of translation files for Rails 5
+- Update Spanish locales (ES-*)
+- Update Brazilian Portuguese (pt-BR)
+- Update Dutch (nl)
+- Update Indonesian (id)
+- Update Arabic (ar)
 
 ## 4.0.9 (not yet released)
 - Update Bosnian (bs)
