@@ -58,7 +58,7 @@ Available locales are:
 > en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, eo, es,
 > es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-PA, es-PE, es-US, es-VE,
 > et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, gl, he, hi, hi-IN, hr, hu, id, is, it,
-> it-CH, ja, km, kn, ko, lb, lo, lt, lv, ma-IN, mk, mn, mr-IN, ms, nb, ne, nl, nn, or,
+> it-CH, ja, km, kn, ko, lb, lo, lt, lv, ml, mk, mn, mr-IN, ms, nb, ne, nl, nn, or,
 > pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sr, sv, sw, ta, th, tl, tr, tt, ug, uk,
 > ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
