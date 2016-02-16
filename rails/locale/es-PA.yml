@@ -39,7 +39,7 @@ es-PA:
     - viernes
     - sábado
     formats:
-      default: "%-d/%m/%Y"
+      default: "%-d/%-m/%Y"
       long: "%A, %-d de %B de %Y"
       short: "%-d de %b"
     month_names:
@@ -63,14 +63,14 @@ es-PA:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: cerca de 1 hora
-        other: cerca de %{count} horas
+        one: alrededor de 1 hora
+        other: alrededor de %{count} horas
       about_x_months:
-        one: cerca de 1 mes
-        other: cerca de %{count} meses
+        one: alrededor de 1 mes
+        other: alrededor de %{count} meses
       about_x_years:
-        one: cerca de 1 año
-        other: cerca de %{count} años
+        one: alrededor de 1 año
+        other: alrededor de %{count} años
       almost_x_years:
         one: casi 1 año
         other: casi %{count} años
@@ -101,46 +101,46 @@ es-PA:
       hour: Hora
       minute: Minuto
       month: Mes
-      second: Segundos
+      second: Segundo
       year: Año
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: debe ser aceptado
+      accepted: debe ser aceptado(a)
       blank: no puede estar en blanco
       present: debe estar en blanco
       confirmation: no coincide
-      empty: no puede estar vacío
+      empty: no puede estar vacío(a)
       equal_to: debe ser igual a %{count}
       even: debe ser un número par
-      exclusion: está reservado
+      exclusion: está reservado(a)
       greater_than: debe ser mayor que %{count}
       greater_than_or_equal_to: debe ser mayor que o igual a %{count}
-      inclusion: no está incluido en la lista
-      invalid: no es válido
+      inclusion: no está incluido(a) en la lista
+      invalid: no es válido(a)
       less_than: debe ser menor que %{count}
       less_than_or_equal_to: debe ser menor que o igual a %{count}
       model_invalid: "La validación falló: %{errors}"
       not_a_number: no es un número
-      not_an_integer: debe ser un entero
+      not_an_integer: debe ser un número entero
       odd: debe ser un número impar
       required: debe existir
       taken: ya está en uso
       too_long:
-        one: es demasiado largo (máximo 1 caracter)
-        other: es demasiado largo (máximo %{count} caracteres)
+        one: es demasiado largo(a) (máximo 1 caracter)
+        other: es demasiado largo(a) (máximo %{count} caracteres)
       too_short:
-        one: es demasiado corto (mínimo 1 caracter)
-        other: es demasiado corto (mínimo %{count} caracteres)
+        one: es demasiado corto(a) (mínimo 1 caracter)
+        other: es demasiado corto(a) (mínimo %{count} caracteres)
       wrong_length:
         one: no tiene la longitud correcta (debe ser de 1 caracter)
         other: no tiene la longitud correcta (debe ser de %{count} caracteres)
       other_than: debe ser diferente de %{count}
     template:
-      body: 'Revise que los siguientes campos sean válidos:'
+      body: "Revise que los siguientes campos sean válidos:"
       header:
-        one: No se pudo guardar este/a %{model} porque se encontró 1 error
-        other: No se pudo guardar este/a %{model} porque se encontraron %{count} errores
+        one: No se pudo guardar este(a) %{model} porque se encontró 1 error
+        other: No se pudo guardar este(a) %{model} porque se encontraron %{count} errores
   helpers:
     select:
       prompt: Por favor seleccione
@@ -177,9 +177,9 @@ es-PA:
           trillion:
             one: billón
             other: billones
-          unit: ''
+          unit: ""
       format:
-        delimiter: ''
+        delimiter: ""
         precision: 3
         significant: true
         strip_insignificant_zeros: true
@@ -195,11 +195,11 @@ es-PA:
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: ""
         format: "%n%"
     precision:
       format:
-        delimiter: ''
+        delimiter: ""
   support:
     array:
       last_word_connector: " y "
