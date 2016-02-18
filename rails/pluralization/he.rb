@@ -1,21 +1,3 @@
-module RailsI18n
-  module Pluralization
-    module Hebrew
-      def self.rule
-        lambda do |n|
-          if n == 1
-            :one
-          else
-            :other
-          end
-        end
-      end
-    end
-  end
-end
+require 'rails_i18n/common_pluralizations/one_other'
 
-{ :he => {
-    :i18n => {
-      :plural => {
-        :keys => [:one, :two, :many, :other],
-        :rule => RailsI18n::Pluralization::Hebrew.rule }}}}
+::RailsI18n::Pluralization::OneOther.with_locale(:he)
