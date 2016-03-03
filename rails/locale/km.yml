@@ -136,11 +136,11 @@ km:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ប៊ីលាន
+          billion: ពាន់លាន
           million: លាន
           quadrillion: ក្វាឌ្រីលាន
           thousand: ពាន់
-          trillion: ទ្រីលាន
+          trillion: ពាន់ពាន់លាន
           unit: ''
       format:
         delimiter: ''
@@ -159,7 +159,7 @@ km:
       two_words_connector: " និង "
       words_connector: ", "
   time:
-    am: ព្រិក
+    am: ព្រឹក
     formats:
       default: "%a %d %b %Y %H:%M:%S %z"
       long: "%d %B %Y %H:%M"
