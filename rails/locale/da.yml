@@ -120,9 +120,11 @@ da:
       invalid: er ikke gyldig
       less_than: skal være mindre end %{count}
       less_than_or_equal_to: skal være mindre end, eller lig med, %{count}
+      model_invalid: "Godkendelse gik galt: %{errors}"
       not_a_number: er ikke et tal
       not_an_integer: er ikke et heltal
       odd: skal være et ulige tal
+      required: skal eksistere
       taken: er allerede brugt
       too_long: er for lang (højest %{count} tegn)
       too_short: er for kort (mindst %{count} tegn)
