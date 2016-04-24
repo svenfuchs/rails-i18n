@@ -121,8 +121,10 @@ de-CH:
       invalid: ist nicht gültig
       less_than: muss kleiner als %{count} sein
       less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+      model_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
       not_a_number: ist keine Zahl
       not_an_integer: muss ganzzahlig sein
+      required: muss ausgefüllt werden
       odd: muss ungerade sein
       taken: ist bereits vergeben
       too_long:
