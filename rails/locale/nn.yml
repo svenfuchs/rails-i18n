@@ -107,7 +107,7 @@ nn:
       accepted: må vera akseptert
       blank: kan ikkje vera blank
       present: må vera blank
-      confirmation: er ikkje stadfesta
+      confirmation: er ikkje lik %{attribute}
       empty: kan ikkje vera tom
       equal_to: må vera lik %{count}
       even: må vera partal
@@ -118,9 +118,11 @@ nn:
       invalid: er ugyldig
       less_than: må vera mindre enn %{count}
       less_than_or_equal_to: må vera mindre enn eller lik %{count}
+      model_invalid: 'Valideringa mislukka: %{errors}'
       not_a_number: er ikkje eit tal
       not_an_integer: er ikkje eit heiltal
       odd: må vera oddetal
+      required: må eksistera
       taken: er allereie i bruk
       too_long: er for lang (maksimum %{count} teikn)
       too_short: er for kort (minimum %{count} teikn)
@@ -134,7 +136,7 @@ nn:
       prompt: Gjer eit val
     submit:
       create: Lag %{model}
-      submit: Lagr %{model}
+      submit: Lagre %{model}
       update: Oppdater %{model}
   number:
     currency:
@@ -188,6 +190,7 @@ nn:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
