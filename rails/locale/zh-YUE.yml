@@ -120,9 +120,11 @@ zh-YUE:
       invalid: "無效"
       less_than: "要細過%{count}"
       less_than_or_equal_to: "要細過或者等於%{count}"
+      model_invalid: "驗證失敗︰%{errors}"
       not_a_number: "唔係一個數字"
       not_an_integer: "要係整數"
       odd: "要係單數"
+      required: 必須存在
       taken: "已經用緊"
       too_long:
         one: 太長（最多 1 個字）

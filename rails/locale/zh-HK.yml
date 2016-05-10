@@ -120,9 +120,11 @@ zh-HK:
       invalid: "是無效的"
       less_than: "必須小於 %{count}"
       less_than_or_equal_to: "必須小於或等於 %{count}"
+      model_invalid: "驗證失敗︰%{errors}"
       not_a_number: "必須是數字"
       not_an_integer: "必須是整數"
       odd: "必須是單數"
+      required: 必須存在
       taken: "已被使用"
       too_long:
         one: 太長（最長為一個字元）
