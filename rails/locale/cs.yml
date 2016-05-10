@@ -134,6 +134,7 @@ cs:
       not_a_number: není číslo
       not_an_integer: musí být celé číslo
       odd: musí být liché číslo
+      required: musí existovat
       taken: již databáze obsahuje
       too_long: je příliš dlouhý/á/é (max. %{count} znaků)
       too_short: je příliš krátký/á/é (min. %{count} znaků)
