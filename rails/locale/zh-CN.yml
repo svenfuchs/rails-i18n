@@ -3,7 +3,7 @@ zh-CN:
   activerecord:
     errors:
       messages:
-        record_invalid: '验证失败: %{errors}'
+        record_invalid: "验证失败: %{errors}"
         restrict_dependent_destroy:
           has_one: 由于 %{record} 需要此记录，所以无法移除记录
           has_many: 由于 %{record} 需要此记录，所以无法移除记录
@@ -120,9 +120,11 @@ zh-CN:
       invalid: 是无效的
       less_than: 必须小于 %{count}
       less_than_or_equal_to: 必须小于或等于 %{count}
+      model_invalid: "验证失败: %{errors}"
       not_a_number: 不是数字
       not_an_integer: 必须是整数
       odd: 必须为单数
+      required: 必须存在
       taken: 已经被使用
       too_long:
         one: 过长（最长为一个字符）
@@ -190,6 +192,7 @@ zh-CN:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
