@@ -134,6 +134,8 @@ tr:
         one: hatalı uzunlukta (1 karakter olmalı)
         other: hatalı uzunlukta (%{count} karakter olmalı)
       other_than: "%{count} karakterden oluşamaz"
+      model_invalid: "Doğrulama başarısız oldu: %{errors}"
+      required: doldurulmalı
     template:
       body: 'Lütfen aşağıdaki hataları düzeltiniz:'
       header:
