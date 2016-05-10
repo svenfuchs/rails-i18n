@@ -4,6 +4,9 @@ uk:
     errors:
       messages:
         record_invalid: 'Виникли помилки: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 'Неможливо видалити запис, так як існує залежність: %{record}'
+          has_many: 'Неможливо видалити запис, так як існують залежності: %{record}'
   date:
     abbr_day_names:
     - нд.
