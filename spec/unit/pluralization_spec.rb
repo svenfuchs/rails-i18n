@@ -248,31 +248,6 @@ describe 'Pluralization rule for' do
 
   describe 'Hebrew', :locale => :he do
     it_behaves_like 'an ordinary pluralization rule'
-
-    it 'has "one", "two", "many" and "other" plural keys' do
-      plural_keys.size.should == 4
-      plural_keys.should include(:one, :two, :many, :other)
-    end
-
-    it "detects that 1 in category 'one'" do
-      rule.call(1).should == :one
-    end
-
-    it "detects that 2 in category 'two'" do
-      rule.call(2).should == :other
-    end
-
-    [10, 30, 70, 100, 130].each do |count|
-      it "detects that #{count} in category 'many'" do
-        rule.call(count).should == :other
-      end
-    end
-
-    [0, 1.2, 3.94, 8.2, 11, 12, 15, 19, 25, 27, 31, 52, 84, 99].each do |count|
-      it "detects that #{count} in category 'other'" do
-        rule.call(count).should == :other
-      end
-    end
   end
 
   describe 'Hindi', :locale => :hi do
