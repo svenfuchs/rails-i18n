@@ -85,7 +85,7 @@
  - Update Czech (cs)
  - Update Indonesian (id)
  - Update Chinese Simplified (zh-CN)
- - Complete Russion (ru)
+ - Complete Russian (ru)
  - Update Arabic (ar)
  - Update Turkish (tr)
  - Update Vietnamese (vi)
@@ -277,7 +277,7 @@
 - removed the `fun` directory
 - added a pluralization rule for French (fr) locale
 - replaced pluralization instances of `1` with `%{count}` in French (fr) locale
-- modified `datetime.distance_in_words.almost_x_years` for Russion (ru) locale
+- modified `datetime.distance_in_words.almost_x_years` for Russian (ru) locale
 - changed `number.currency.format.precision` from 3 to 0 for Japanese (ja) locale
 
 ## 0.3.0 (2012-01-10)
