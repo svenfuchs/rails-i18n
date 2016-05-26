@@ -1,10 +1,28 @@
 ## 5.0.0 (not yet released)
 - Change the structure of translation files for Rails 5
-- Update Spanish locales (ES-*)
+- Update Spanish locales (ES-\*)
 - Update Brazilian Portuguese (pt-BR)
 - Update Dutch (nl)
 - Update Indonesian (id)
 - Update Arabic (ar)
+- Add German (de-DE)
+- Add French (fr-FR)
+- Add Malayalam (ml)
+- Update Chinese (zh-CN, zh-HK, zh-TW, zh-YUE)
+- Update Khmer (km)
+- Update German (de-AT, de-CH, de-DE, de)
+- Update French (fr)
+- Update Norwegian bokmål (nb)
+- Update Norwegian (nn)
+- Add Albanian (sq)
+- Update Turkish (tr)
+- Update Italian (it)
+- Update Ukrainian (uk)
+- Update Danish (da)
+- Update Spanish, Panama (es-PA)
+- Update Czech (cs)
+- Update Portuguese (pt)
+- Update Hebrew (he)
 
 ## 4.0.9 (not yet released)
 - Update Bosnian (bs)
@@ -282,7 +300,7 @@
 
 ## 0.3.0 (2012-01-10)
 
-- loads will_paginate/*.yml if the constant WillPaginate is defined
+- loads will_paginate/\*.yml if the constant WillPaginate is defined
 - filled in missing will_paginate translations for en-US/en-GB/ja/sk
 - Friulian(fur) is ready for Rails 2 and 3
 - corrected translation for 'too_short' (ro)
