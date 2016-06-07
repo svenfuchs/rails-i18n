@@ -6,7 +6,7 @@ fr:
         record_invalid: 'La validation a échoué : %{errors}'
         restrict_dependent_destroy:
           has_one: "Vous ne pouvez pas supprimer l'enregistrement car une personne à charge% {record} existe"
-          has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{records} dépendants existent"
+          has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent"
   date:
     abbr_day_names:
     - dim
