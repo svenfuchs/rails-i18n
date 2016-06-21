@@ -172,12 +172,16 @@ de:
           billion:
             one: Milliarde
             other: Milliarden
-          million: Millionen
+          million:
+            one: Million
+            other: Millionen
           quadrillion:
             one: Billiarde
             other: Billiarden
           thousand: Tausend
-          trillion: Billionen
+          trillion:
+            one: Billion
+            other: Billionen
           unit: ''
       format:
         delimiter: ''
