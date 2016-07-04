@@ -1,4 +1,4 @@
-## 5.0.0 (not yet released)
+## 5.0.0 (2016-07-05)
 - Change the structure of translation files for Rails 5
 - Update Spanish locales (ES-\*)
 - Update Brazilian Portuguese (pt-BR)
@@ -24,11 +24,14 @@
 - Update Portuguese (pt)
 - Update Hebrew (he)
 
-## 4.0.9 (not yet released)
+## 4.0.9 (2016-07-05)
 - Update Bosnian (bs)
 - Update Arabic (ar)
 - Update Panjabi (pa)
 - Update German (de)
+- Update Spanish (es)
+- Update Chinese (zh-CN, zh-TW)
+- Add Albanian (sq)
 
 ## 4.0.8 (2015-12-24)
 - Add Panjabi (pa)
