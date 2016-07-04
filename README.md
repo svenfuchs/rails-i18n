@@ -10,7 +10,7 @@ Central point to collect locale data for use in Ruby on Rails.
 
 Add to your Gemfile:
 
-    gem 'rails-i18n', '~> 5.0.0.beta1' # For 5.0.0.beta1
+    gem 'rails-i18n', '~> 5.0.0' # For 5.0.x
     gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
     gem 'rails-i18n', '~> 3.0.0' # For 3.x
     gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For 5.x
@@ -19,7 +19,7 @@ Add to your Gemfile:
 
 or run this command:
 
-    gem install rails-i18n -v '~> 5.0.0.beta1' # For 5.0.0.beta1
+    gem install rails-i18n -v '~> 5.0.0' # For 5.0.0
     gem install rails-i18n -v '~> 4.0.0' # For 4.0.x
     gem install rails-i18n -v '~> 3.0.0' # For 3.x
 
