@@ -113,6 +113,11 @@ ru:
         many: "%{count} месяцев"
         one: "%{count} месяц"
         other: "%{count} месяца"
+      x_years:
+        few: "%{count} года"
+        many: "%{count} лет"
+        one: "%{count} год"
+        other: "%{count} года"
       x_seconds:
         few: "%{count} секунды"
         many: "%{count} секунд"
