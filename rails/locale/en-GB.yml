@@ -93,6 +93,9 @@ en-GB:
       x_months:
         one: 1 month
         other: "%{count} months"
+      x_years:
+        one: 1 year
+        other: "%{count} years"    
       x_seconds:
         one: 1 second
         other: "%{count} seconds"

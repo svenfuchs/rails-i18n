@@ -90,6 +90,9 @@ ca:
       x_months:
         one: 1 mes
         other: "%{count} mesos"
+      x_years:
+        one: 1 year
+        other: "%{count} years" 
       x_seconds:
         one: 1 segon
         other: "%{count} segons"
