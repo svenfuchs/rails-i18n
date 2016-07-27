@@ -110,7 +110,7 @@ et:
       equal_to: peab olema võrdne arvuga %{count}
       even: peab olema paarisarv
       exclusion: on reserveeritud
-      greater_than: ei tohi olla suurem kui %{count}
+      greater_than: peab olema suurem kui %{count}
       greater_than_or_equal_to: peab olema suurem või võrdne arvuga %{count}
       inclusion: ei leidu nimekirjas
       invalid: ei ole korrektne
