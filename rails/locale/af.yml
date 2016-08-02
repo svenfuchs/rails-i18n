@@ -3,7 +3,10 @@ af:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Validation failed: %{errors}'
+        record_invalid: 'Validering het misluk: %{errors}'
+        restrict_dependent_destroy:
+          has_one: "Kan rekord nie skrap nie omdat 'n afhanklike %{record} bestaan"
+          has_many: 'Kan rekord nie skrap nie omdat afhanklike %{record} bestaan'
   date:
     abbr_day_names:
     - Son
@@ -73,10 +76,10 @@ af:
         other: sowat %{count} jaar
       half_a_minute: halfminuut
       less_than_x_minutes:
-        one: minder as n minuut
+        one: minder as 1 minuut
         other: minder as %{count} minute
       less_than_x_seconds:
-        one: minder as 1 second
+        one: minder as 1 sekonde
         other: minder as %{count} sekondes
       over_x_years:
         one: meer as 1 jaar
@@ -90,6 +93,9 @@ af:
       x_months:
         one: 1 maand
         other: "%{count} maande"
+      x_years:
+        one: 1 jaar
+        other: "%{count} jare"
       x_seconds:
         one: 1 sekonde
         other: "%{count} sekondes"
@@ -105,10 +111,11 @@ af:
     messages:
       accepted: moet aanvaar word
       blank: mag nie leeg wees nie
+      present: moet leeg wees
       confirmation: pas nie by bevestiging nie
       empty: mag nie leeg wees nie
       equal_to: moet gelyk wees aan %{count}
-      even: moet gelykstaande wees
+      even: moet ewe wees
       exclusion: is bespreek
       greater_than: moet meer wees as %{count}
       greater_than_or_equal_to: moet meer of gelykstaande wees aan %{count}
@@ -116,9 +123,11 @@ af:
       invalid: is ongeldig
       less_than: moet minder wees as %{count}
       less_than_or_equal_to: moet minder of gelykstaande wees aan %{count}
-      not_a_number: is nie n getal nie
-      not_an_integer: moet n integer wees
+      model_invalid: 'Validering het misluk: %{errors}'
+      not_a_number: is nie 'n getal nie
+      not_an_integer: moet 'n heelgetal wees
       odd: moet onewe wees
+      required: moet bestaan
       taken: is reeds geneem
       too_long:
         one: is te lank (maksimum is 1 karakter)
@@ -129,6 +138,7 @@ af:
       wrong_length:
         one: is die verkeerde lengte (moet 1 karakter wees)
         other: is die verkeerde lengte (moet %{count} karakters wees)
+      other_than: moet anders wees as %{count}
     template:
       body: 'There were problems with the following fields:'
       header:
@@ -148,43 +158,44 @@ af:
         format: "%u%n"
         precision: 2
         separator: "."
-        significant: vals
-        strip_insignificant_zeros: vals
+        significant: false
+        strip_insignificant_zeros: false
         unit: R
     format:
       delimiter: ","
       precision: 3
       separator: "."
-      significant: vals
-      strip_insignificant_zeros: vals
+      significant: false
+      strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
           billion: miljard
           million: miljoen
-          quadrillion: kwadriljon
+          quadrillion: biljard
           thousand: duisend
           trillion: biljoen
           unit: ''
       format:
         delimiter: ''
         precision: 3
-        significant: waar
-        strip_insignificant_zeros: waar
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: Greep
+            other: Grepe
+          gb: GG
+          kb: kG
+          mb: MG
+          tb: TG
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
