@@ -4,6 +4,9 @@ af:
     errors:
       messages:
         record_invalid: 'Validering het misluk: %{errors}'
+        restrict_dependent_destroy:
+          has_one: "Kan rekord nie skrap nie omdat 'n afhanklike %{record} bestaan"
+          has_many: 'Kan rekord nie skrap nie omdat afhanklike %{record} bestaan'
   date:
     abbr_day_names:
     - Son
@@ -90,6 +93,9 @@ af:
       x_months:
         one: 1 maand
         other: "%{count} maande"
+      x_years:
+        one: 1 jaar
+        other: "%{count} jare"
       x_seconds:
         one: 1 sekonde
         other: "%{count} sekondes"
@@ -105,6 +111,7 @@ af:
     messages:
       accepted: moet aanvaar word
       blank: mag nie leeg wees nie
+      present: moet leeg wees
       confirmation: pas nie by bevestiging nie
       empty: mag nie leeg wees nie
       equal_to: moet gelyk wees aan %{count}
@@ -116,9 +123,11 @@ af:
       invalid: is ongeldig
       less_than: moet minder wees as %{count}
       less_than_or_equal_to: moet minder of gelykstaande wees aan %{count}
+      model_invalid: 'Validering het misluk: %{errors}'
       not_a_number: is nie 'n getal nie
       not_an_integer: moet 'n heelgetal wees
       odd: moet onewe wees
+      required: moet bestaan
       taken: is reeds geneem
       too_long:
         one: is te lank (maksimum is 1 karakter)
@@ -129,6 +138,7 @@ af:
       wrong_length:
         one: is die verkeerde lengte (moet 1 karakter wees)
         other: is die verkeerde lengte (moet %{count} karakters wees)
+      other_than: moet anders wees as %{count}
     template:
       body: 'There were problems with the following fields:'
       header:
@@ -185,6 +195,7 @@ af:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
