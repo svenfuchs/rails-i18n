@@ -148,15 +148,15 @@ af:
         format: "%u%n"
         precision: 2
         separator: "."
-        significant: vals
-        strip_insignificant_zeros: vals
+        significant: false
+        strip_insignificant_zeros: false
         unit: R
     format:
       delimiter: ","
       precision: 3
       separator: "."
-      significant: vals
-      strip_insignificant_zeros: vals
+      significant: false
+      strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
@@ -170,8 +170,8 @@ af:
       format:
         delimiter: ''
         precision: 3
-        significant: waar
-        strip_insignificant_zeros: waar
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
