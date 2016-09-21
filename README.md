@@ -58,14 +58,15 @@ Available locales are:
 > en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, eo, es,
 > es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-PA, es-PE, es-US, es-VE,
 > et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, gl, he, hi, hi-IN, hr, hu, id, is, it,
-> it-CH, ja, km, kn, ko, lb, lo, lt, lv, ml, mk, mn, mr-IN, ms, nb, ne, nl, nn, or,
+> it-CH, ja, km, kn, ko, lb, lo, lt, lv, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, or,
 > pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, sv, sv-SE, sw, ta, th, tl, tr, tt, ug, uk,
 > ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Complete locales are:
 
-> en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-PA, es-PE,
-> es-US, es-VE, fr, fr-CA, fr-CH, fr-FR, id, ja, ml, nl, pt-BR
+> af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
+> es-ES, es-MX, es-PA, es-PE, es-US, es-VE, et, fr, fr-CA, fr-CH, fr-FR, id, ja, ml, nb,
+> nl, nn, pt-BR, tr, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
