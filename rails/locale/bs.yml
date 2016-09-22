@@ -37,6 +37,7 @@ bs:
     - srijeda
     - četvrtak
     - petak
+    - subota
     formats:
       default: "%d.%m.%Y."
       long: "%e. %B %Y."
