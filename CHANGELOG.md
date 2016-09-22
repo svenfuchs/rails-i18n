@@ -1,3 +1,16 @@
+## 5.0.1 (2016-09-22)
+- Update following locales:
+  - Afrikaans (af)
+  - Bosnian (bs)
+  - Catalan (ca)
+  - English (en-AU, en-CA, en-GB, en-IE, en-NZ, en-US, en-ZA, en)
+  - Estonian (et)
+  - French (fr-CA, fr-CH, fr-FR, fr)
+  - Norwegian Bokmål (nb)
+  - Russion (ru)
+  - Wolof (wo)
+  - Traditional Chinese (zh-TW)
+
 ## 5.0.0 (2016-07-05)
 - Change the structure of translation files for Rails 5
 - Update Spanish locales (ES-\*)
