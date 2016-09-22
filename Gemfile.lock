@@ -3,7 +3,7 @@ PATH
   specs:
     rails-i18n (5.0.0)
       i18n (~> 0.7)
-      railties (~> 5.0.0)
+      railties (~> 5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -117,4 +117,4 @@ DEPENDENCIES
   spork (= 1.0.0rc3)
 
 BUNDLED WITH
-   1.12.5
+   1.13.1

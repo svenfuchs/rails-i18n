@@ -93,16 +93,19 @@ nb:
       x_months:
         one: 1 måned
         other: "%{count} måneder"
+      x_years:
+        one: 1 år
+        other: "%{count} år"
       x_seconds:
         one: 1 sekund
         other: "%{count} sekunder"
     prompts:
-      day: Dag
-      hour: Time
-      minute: Minutt
-      month: Måned
-      second: Sekund
-      year: År
+      day: dag
+      hour: time
+      minute: minutt
+      month: måned
+      second: sekund
+      year: år
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -120,7 +123,7 @@ nb:
       invalid: er ugyldig
       less_than: må være mindre enn %{count}
       less_than_or_equal_to: må være mindre enn eller lik %{count}
-      model_invalid: 'Det oppstod feil: %{errors}'
+      model_invalid: "Det oppstod feil: %{errors}"
       not_a_number: er ikke et tall
       not_an_integer: er ikke et heltall
       odd: må være oddetall
@@ -131,7 +134,7 @@ nb:
       wrong_length: er av feil lengde (maksimum %{count} tegn)
       other_than: kan ikke være nøyaktig %{count}
     template:
-      body: 'Det oppstod problemer i følgende felt:'
+      body: 'Det oppstod problemer med følgende felt:'
       header:
         one: Kunne ikke lagre %{model} på grunn av én feil.
         other: Kunne ikke lagre %{model} på grunn av %{count} feil.
