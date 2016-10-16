@@ -90,6 +90,9 @@ en:
       x_minutes:
         one: 1 minute
         other: "%{count} minutes"
+      x_hours:
+        one: 1 hour
+        other: "%{count} hours"
       x_months:
         one: 1 month
         other: "%{count} months"
