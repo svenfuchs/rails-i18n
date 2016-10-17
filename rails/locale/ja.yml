@@ -90,6 +90,9 @@ ja:
       x_minutes:
         one: 1分
         other: "%{count}分"
+      x_hours:
+        one: 1時間
+        other: "%{count}時間"
       x_months:
         one: 1ヶ月
         other: "%{count}ヶ月"
