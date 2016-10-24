@@ -176,7 +176,7 @@ tr:
           unit: ''
       format:
         delimiter: "."
-        precision: 2
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:

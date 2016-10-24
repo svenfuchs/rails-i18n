@@ -183,8 +183,8 @@ pt-BR:
             other: trilhões
           unit: ''
       format:
-        delimiter: "."
-        precision: 2
+        delimiter: ""
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
