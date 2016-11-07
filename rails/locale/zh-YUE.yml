@@ -204,7 +204,7 @@ zh-YUE:
   time:
     am: 上晝
     formats:
-      default: "%Y年%b%d號 %A %H:%M:%S %Z"
-      long: "%Y年%b%d號 %H:%M"
-      short: "%b%d號 %H:%M"
+      default: "%Y年%m月%d號 %A %H:%M:%S %Z"
+      long: "%Y年%m月%d號 %H:%M"
+      short: "%m月%d號 %H:%M"
     pm: 下晝
