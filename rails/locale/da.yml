@@ -126,7 +126,7 @@ da:
       odd: skal være et ulige tal
       required: skal eksistere
       taken: er allerede brugt
-      too_long: er for lang (højest %{count} tegn)
+      too_long: er for lang (højst %{count} tegn)
       too_short: er for kort (mindst %{count} tegn)
       wrong_length: har forkert længde (skulle være %{count} tegn)
       other_than: skal være forskellig fra %{count}
