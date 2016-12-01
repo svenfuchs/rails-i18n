@@ -93,6 +93,9 @@ sv:
       x_months:
         one: en månad
         other: "%{count} månader"
+      x_years:
+        one: ett år
+        other: "%{count} år"
       x_seconds:
         one: en sekund
         other: "%{count} sekunder"
@@ -120,9 +123,11 @@ sv:
       invalid: har fel format
       less_than: måste vara mindre än %{count}
       less_than_or_equal_to: måste vara mindre än eller lika med %{count}
+      model_invalid: "Validering misslyckades: %{errors}"
       not_a_number: är inte ett nummer
       not_an_integer: måste vara ett heltal
       odd: måste vara udda
+      required: måste finnas
       taken: används redan
       too_long: är för lång (maximum är %{count} tecken)
       too_short: är för kort (minimum är %{count} tecken)
