@@ -1,5 +1,5 @@
 ---
-pt-BR:
+pt_BR:
   date:
     abbr_day_names:
     - Dom
@@ -83,6 +83,9 @@ pt-BR:
       x_minutes:
         one: 1 minuto
         other: "%{count} minutos"
+      x_hours:
+        one: 1 hora
+        other: "%{count} horas"
       x_months:
         one: 1 mês
         other: "%{count} meses"
