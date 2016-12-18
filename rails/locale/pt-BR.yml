@@ -124,7 +124,7 @@ pt-BR:
       not_a_number: não é um número
       not_an_integer: não é um número inteiro
       odd: deve ser ímpar
-      required: deve existir
+      required: é obrigatório(a)
       taken: já está em uso
       too_long:
         one: 'é muito longo (máximo: 1 caracter)'
