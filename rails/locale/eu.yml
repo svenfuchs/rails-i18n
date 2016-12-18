@@ -4,6 +4,9 @@ eu:
     errors:
       messages:
         record_invalid: 'Balioztatze arazoa: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Ezin da erregistroa ezabatu menpeko %{record} bat dagoelako
+          has_many: Ezin da erregistroa ezabat menpeko %{record}ak daudelako
   date:
     abbr_day_names:
     - Igan
@@ -105,6 +108,7 @@ eu:
     messages:
       accepted: onartuta izan behar da
       blank: ezin da zuriz utzi
+      present: zuriz egon behar da
       confirmation: ez dator bat konfirmazioarekin
       empty: ezin da hutsik egon
       equal_to: "%{count} izan behar da"
@@ -116,13 +120,22 @@ eu:
       invalid: ez da zuzena
       less_than: "%{count} baino txikiago izan behar da"
       less_than_or_equal_to: "%{count} baino txikiago edo berdin izan behar da"
+      model_invalid: "Baieztatzeak huts egin du: %{errors}"
       not_a_number: ez da zenbaki bat
       not_an_integer: zenbaki osoa izan behar da
       odd: bakoitia izan behar du
+      required: egon behar du
       taken: hartuta dago
-      too_long: luzeegia da (%{count} karaktere gehienez)
-      too_short: laburregia da (%{count} karaktere gutxienez)
-      wrong_length: ez du luzeera zuzena (%{count} karaktere izan behar ditu)
+      too_long:
+        one: "luzeegia da (karaktere 1 gehienez)"
+        other: "luzeegia da (%{count} karaktere gehienez)"
+      too_short:
+        one: "laburregia da (karaktere 1 gutxienez)"
+        other: "laburregia da (%{count} karaktere gutxienez)"
+      wrong_length:
+        one: "ez du luzeera zuzena (karaktere 1 izan behar ditu)"
+        other: "ez du luzeera zuzena (%{count} karaktere izan behar ditu)"
+      other_than: "%{count}ren ezberdina izan behar du"
     template:
       body: 'Arazoak egon dira ondoko eremuekin:'
       header:
@@ -163,7 +176,7 @@ eu:
           unit: ''
       format:
         delimiter: ''
-        precision: 3
+        precision: 1
         significant: true
         strip_insignificant_zeros: true
       storage_units:
@@ -179,6 +192,7 @@ eu:
     percentage:
       format:
         delimiter: ''
+        format: "%n %"
     precision:
       format:
         delimiter: ''
