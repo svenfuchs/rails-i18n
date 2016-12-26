@@ -4,6 +4,9 @@ ne:
     errors:
       messages:
         record_invalid: 'मान्य भएन: %{errors}'
+        restrict_dependent_destroy:
+          has_one: "रेकर्ड मेटाउन सक्दैन किनभने एउटा निर्भर %{record} अवस्थित छ"
+          has_many: "रेकर्ड मेटाउन सक्दैन किनभने धेरै निर्भर %{record} अवस्थित छन"
   date:
     abbr_day_names:
     - आईत
@@ -79,7 +82,7 @@ ne:
         one: 1 सेकेण्डभन्दा कम्ति
         other: "%{count} सेकेण्डभन्दा कम्ति"
       over_x_years:
-        one: 1 बर्षभन्दा बेसी
+        one: 1 बर्षभन्दा बढी
         other: "%{count} बर्षभन्दा बेसी"
       x_days:
         one: 1 दिन
@@ -130,16 +133,16 @@ ne:
         one: गलत लम्बाई हो (1 character हुनुपर्नेछ)
         other: गलत लम्बाई हो (%{count} characters हुनुपर्नेछ)
     template:
-      body: 'तलका क्षेत्रधारकहरु समस्याहरु देखियो:'
+      body: 'त्यहाँ निम्न क्षेत्रहरुमा समस्या देखियो:'
       header:
-        one: 1 गल्तीले यस %{model} लाई बचत गर्नबाट रोक्यो
-        other: "%{count} गल्तीले यस %{model} लाई बचत गर्नबाट रोक्यो"
+        one: 1 गल्तीले यस %{model} लाई सुरक्षित गर्नबाट रोक्यो
+        other: "%{count} गल्तीले यस %{model} लाई सुरक्षित गर्नबाट रोक्यो"
   helpers:
     select:
       prompt: कृपया छान्नुहोस्
     submit:
       create: नयाँ %{model} बनाउ
-      submit: "%{model} बचत गर"
+      submit: "%{model} सुरक्षित गर"
       update: "%{model} सामयिक बनाउ"
   number:
     currency:
@@ -150,7 +153,7 @@ ne:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "$"
+        unit: "रू"
     format:
       delimiter: ","
       precision: 3
@@ -161,7 +164,7 @@ ne:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Billion
+          billion: अर्ब
           million: Million
           quadrillion: Quadrillion
           thousand: हजार
