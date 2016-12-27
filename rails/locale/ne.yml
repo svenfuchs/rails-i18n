@@ -106,7 +106,7 @@ ne:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: स्वीकार गरिनुपर्नेछ
+      accepted: स्वीकार गरियो
       blank: खाली हुन सक्दैन
       confirmation: पुष्ठिकरणसँग मेल खाँदैन
       empty: रित्तो हुन सक्दैन
