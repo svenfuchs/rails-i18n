@@ -93,6 +93,9 @@ pt-BR:
       x_months:
         one: 1 mês
         other: "%{count} meses"
+      x_years:
+        one: 1 ano
+        other: "%{count} anos"
       x_seconds:
         one: 1 segundo
         other: "%{count} segundos"
