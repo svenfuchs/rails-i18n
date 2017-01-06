@@ -4,6 +4,9 @@ fa:
     errors:
       messages:
         record_invalid: رکورد نامعتبر است %{errors}
+        restrict_dependent_destroy:
+          has_many: نمی توان رکورد را حذف کرد بخاطر اینکه %{record} وابسته وجود دارد
+          has_one: نمی توان رکورد را حذف کرد بخاطر اینکه یک %{record} وابسته وجود دارد
   date:
     abbr_day_names:
     - ی
@@ -93,6 +96,9 @@ fa:
       x_seconds:
         one: یک ثانیه
         other: "%{count} ثانیه"
+      x_years:
+        one: 1 سال
+        other: "%{count} سال"
     prompts:
       day: روز
       hour: ساعت
@@ -116,15 +122,19 @@ fa:
       invalid: نامعتبر است
       less_than: باید کمتر از %{count} باشد
       less_than_or_equal_to: باید کمتر یا برابر %{count} باشد
+      model_invalid: "رکورد نامعتبر است %{errors}"
       not_a_number: عدد نیست
       not_an_integer: عدد صحیح نیست
       odd: باید فرد باشد
+      other_than: باید غیر از %{count} باشد
+      present: باید خالی باشد
+      required: باید وجود داشته باشد
       taken: پیشتر گرفته شده
       too_long: بلند است (حداکثر %{count} کاراکتر)
       too_short: کوتاه است (حداقل %{count} کاراکتر)
       wrong_length: نااندازه است (باید %{count} کاراکتر باشد)
     template:
-      body: 'موارد زیر مشکل داشت:'
+      body: "موارد زیر مشکل داشت:"
       header:
         one: 1 خطا جلوی ذخیره این %{model} را گرفت
         other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
@@ -160,9 +170,9 @@ fa:
           quadrillion: کادریلیون
           thousand: هزار
           trillion: تریلیون
-          unit: ''
+          unit: ""
       format:
-        delimiter: ''
+        delimiter: ""
         precision: 1
         significant: true
         strip_insignificant_zeros: true
@@ -178,10 +188,10 @@ fa:
           tb: ترابایت
     percentage:
       format:
-        delimiter: ''
+        delimiter: ""
     precision:
       format:
-        delimiter: ''
+        delimiter: ""
   support:
     array:
       last_word_connector: " و "

@@ -1,3 +1,20 @@
+## 5.0.2 (2016-12-29)
+- Add following locales:
+  - Georgian (ka)
+- Update following locales:
+  - Finnish (fi)
+  - Azeri (az)
+  - Bulgarian (bg)
+  - Russian (ru)
+  - Swedish (sv, sv-SE)
+  - Spanish (es)
+  - Danish (da)
+  - Portuguese (pt-BR)
+  - Basque (eu)
+  - Nepali (ne)
+  - Farsi/Persian (fa)
+- Fix precision for human format on eo, es-PE, fr-CA, fr-CH, fr-FR, fr, pt-BR and tr
+
 ## 5.0.1 (2016-09-22)
 - Update following locales:
   - Afrikaans (af)
