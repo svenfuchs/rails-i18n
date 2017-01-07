@@ -122,7 +122,7 @@ pt:
       invalid: é inválido
       less_than: tem de ser menor que %{count}
       less_than_or_equal_to: tem de ser menor ou igual a %{count}
-      model_invalid: 'A Validação falhou: %{errors}'
+      model_invalid: 'A validação falhou: %{errors}'
       not_a_number: não é um número
       not_an_integer: tem de ser um inteiro
       odd: tem de ser ímpar
