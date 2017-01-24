@@ -127,7 +127,7 @@ pt:
       not_an_integer: tem de ser um inteiro
       odd: tem de ser ímpar
       other_than: tem de ser diferente de %{count}
-      present: tem de ser branco
+      present: não pode estar em branco
       required: é obrigatório
       taken: não está disponível
       too_long: é demasiado grande (o máximo é de %{count} caracteres)
