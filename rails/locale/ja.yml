@@ -93,6 +93,9 @@ ja:
       x_months:
         one: 1ヶ月
         other: "%{count}ヶ月"
+      x_years:
+        one: 1年
+        other: "%{count}年"
       x_seconds:
         one: 1秒
         other: "%{count}秒"
