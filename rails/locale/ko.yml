@@ -114,7 +114,7 @@ ko:
       greater_than_or_equal_to: "%{attribute}은(는) %{count}보다 크거야 같아야 합니다"
       inclusion: "%{attribute}은(는) 목록에 포함되어 있는 값이 아닙니다"
       invalid: "%{attribute}은(는) 올바르지 않은 값입니다"
-      less_than: %"{attribute}은(는) %{count}보다 작아야 합니다"
+      less_than: "%{attribute}은(는) %{count}보다 작아야 합니다"
       less_than_or_equal_to: "%{attribute}은(는) %{count}과 작거나 같아야 합니다"
       not_a_number: "%{attribute}에 숫자를 입력해 주세요"
       not_an_integer: "%{attribute}에 정수를 입력해 주세요"
@@ -192,3 +192,4 @@ ko:
       long: "%Y년 %m월 %d일, %H시 %M분 %S초 %Z"
       short: "%y/%m/%d %H:%M"
     pm: 오후
+
