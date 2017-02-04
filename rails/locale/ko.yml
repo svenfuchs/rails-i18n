@@ -126,8 +126,8 @@ ko:
     template:
       body: '아래 문제를 확인해 주세요.'
       header:
-        one: 한 개의 오류로 인해 %{model}를 저장할 수 없습니다
-        other: "%{count}개의 오류로 인해 %{model}를 저장할 수 없습니다"
+        one: 한 개의 오류로 인해 %{model}을(를) 저장할 수 없습니다
+        other: "%{count}개의 오류로 인해 %{model}을(를)저장할 수 없습니다"
   helpers:
     select:
       prompt: 선택해주세요
