@@ -148,7 +148,7 @@ sv:
   number:
     currency:
       format:
-        delimiter: ''
+        delimiter: ' '
         format: "%n %u"
         precision: 2
         separator: ","
@@ -156,7 +156,7 @@ sv:
         strip_insignificant_zeros: false
         unit: kr
     format:
-      delimiter: ''
+      delimiter: ' '
       precision: 2
       separator: ","
       significant: false
