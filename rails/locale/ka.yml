@@ -146,9 +146,9 @@ ka:
     select:
       prompt: გთხოვთ აირჩიოთ
     submit:
-      create: შექმნა %{model}
-      submit: დამახსოვრება %{model}
-      update: განახლება %{model}
+      create: "%{model}-ს შექმნა"
+      submit: "%{model}-ს დამახსოვრება"
+      update: "%{model}-ს განახლება"
   number:
     currency:
       format:
