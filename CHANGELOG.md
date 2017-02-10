@@ -1,3 +1,13 @@
+## 5.0.3 (2017-02-10)
+- Update following locales:
+  - Portuguese (pt, pt-BR)
+  - Spanish locales (ES-\*)
+  - Japanese (ja)
+  - Georgian (ka)
+  - Korean (ko)
+  - Swedish (sv, sv-SE)
+  - Ukrainian (uk)
+
 ## 5.0.2 (2016-12-29)
 - Add following locales:
   - Georgian (ka)
