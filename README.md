@@ -59,14 +59,14 @@ Available locales are:
 > es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-PA, es-PE, es-US, es-VE,
 > et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, gl, he, hi, hi-IN, hr, hu, id, is, it,
 > it-CH, ja, ka, km, kn, ko, lb, lo, lt, lv, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, or,
-> pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, sw, ta, th, tl, tr, tt, ug, uk,
+> pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, sw, ta, th, tl, tr, tt, ug,
 > ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Complete locales are:
 
 > af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
 > es-ES, es-MX, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, id, ja, ka, ml, nb,
-> nl, nn, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE
+> nl, nn, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
