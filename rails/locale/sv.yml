@@ -114,7 +114,7 @@ sv:
       present: får inte anges
       confirmation: stämmer inte överens
       empty: får ej vara tom
-      equal_to: måste vara samma som
+      equal_to: måste vara lika med %{count}
       even: måste vara jämnt
       exclusion: är reserverat
       greater_than: måste vara större än %{count}
