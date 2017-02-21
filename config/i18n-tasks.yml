@@ -28,5 +28,5 @@ ignore_eq_base:
     - 'datetime.prompts.minute'
     - 'datetime.distance_in_words.x_minutes.{one,other}'
 
-  'en-AU,en-CA,en-GB,en-IE,en-IN,en-NZ,en-US':
+  'en-AU,en-CA,en-GB,en-IE,en-IN,en-NZ,en-US,en-CY':
     - '*'
