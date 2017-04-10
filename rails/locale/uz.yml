@@ -128,14 +128,14 @@ uz:
       accepted: tasdiqlash kerak
       blank: bosh bo'lishi mumkin emas
       confirmation: tasdiq bilan mos emas
-      empty: bosh bulishi mumkin emas
+      empty: bosh bo'lishi mumkin emas
       equal_to: "%{count} ga teng"
       even: juft sonlar mumkin
       exclusion: mumkin emas
       greater_than: "%{count} dan yuqori"
       greater_than_or_equal_to: "%{count} ga teng yoki yuqori"
       inclusion: kutilmagan natija
-      invalid: notugri
+      invalid: noto'gri
       less_than: "%{count} dan kam"
       less_than_or_equal_to: "%{count} ga teng yoki kam"
       not_a_number: son emas
