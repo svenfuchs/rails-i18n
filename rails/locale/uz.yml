@@ -3,7 +3,7 @@ uz:
   activerecord:
     errors:
       messages:
-        record_invalid: "%{errors} ta hato bor."
+        record_invalid: "%{errors}ta hato bor."
   date:
     abbr_day_names:
     - Ya
@@ -30,7 +30,7 @@ uz:
     day_names:
     - yakshanba
     - dushanba
-    - seshanbe
+    - seshanba
     - chorshanba
     - payshanba
     - juma
@@ -113,7 +113,7 @@ uz:
       x_seconds:
         few: "%{count} soniya"
         many: "%{count} soniya"
-        one: "%{count} soniyaа"
+        one: "%{count} soniya"
         other: "%{count} soniya"
     prompts:
       day: kun
@@ -126,16 +126,16 @@ uz:
     format: "%{attribute} %{message}"
     messages:
       accepted: tasdiqlash kerak
-      blank: bush bulishi mumkin emas
+      blank: bosh bo'lishi mumkin emas
       confirmation: tasdiq bilan mos emas
-      empty: bush bulishi mumkin emas
+      empty: bosh bo'lishi mumkin emas
       equal_to: "%{count} ga teng"
       even: juft sonlar mumkin
       exclusion: mumkin emas
       greater_than: "%{count} dan yuqori"
       greater_than_or_equal_to: "%{count} ga teng yoki yuqori"
       inclusion: kutilmagan natija
-      invalid: notugri
+      invalid: noto'gri
       less_than: "%{count} dan kam"
       less_than_or_equal_to: "%{count} ga teng yoki kam"
       not_a_number: son emas
@@ -153,10 +153,10 @@ uz:
         one: uzunligi yetarli emas (%{count} ta simvoldan kam mumkin emas)
         other: uzunligi yetarli emas (%{count} ta simvoldan kam mumkin emas)
       wrong_length:
-        few: uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)
-        many: uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)
-        one: uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)
-        other: uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)
+        few: uzunligi noto'gri (uzunligi %{count} simvolga teng bulishi kerak)
+        many: uzunligi noto'gri (uzunligi %{count} simvolga teng bulishi kerak)
+        one: uzunligi noto'gri (uzunligi %{count} simvolga teng bulishi kerak)
+        other: uzunligi noto'gri (uzunligi %{count} simvolga teng bulishi kerak)
     template:
       body: 'Quyidagilarda hatolar mavjud:'
       header:
@@ -180,7 +180,7 @@ uz:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: sum.
+        unit: so'm.
     format:
       delimiter: " "
       precision: 3
