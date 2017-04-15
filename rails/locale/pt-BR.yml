@@ -145,6 +145,12 @@ pt-BR:
         one: 'Não foi possível gravar %{model}: 1 erro'
         other: 'Não foi possível gravar %{model}: %{count} erros'
   helpers:
+    actions: Ações
+    links:
+      new: Criar
+      edit: Alterar
+      destroy: Apagar
+      cancel: Cancelar
     select:
       prompt: Por favor selecione
     submit:
