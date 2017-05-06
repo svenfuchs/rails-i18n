@@ -1,3 +1,16 @@
+## 5.0.4 (2017-05-06)
+- Add following locales:
+  - Cypriot Greek (el-CY)
+  - Cypriot English (en-CY)
+- Update following locales:
+  - Swedish (sv, sv-SE)
+  - Ukrainian (uk)
+  - French (fr, fr-FR)
+  - Japanese (ja)
+  - Uzbek (uz)
+  - Chinese (zh-CN, zh-HK, zh-TW, zh-YUE)
+  - Spanish (es)
+
 ## 5.0.3 (2017-02-10)
 - Update following locales:
   - Portuguese (pt, pt-BR)
