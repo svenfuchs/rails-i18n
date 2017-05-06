@@ -40,8 +40,8 @@ zh-HK:
     - 星期六
     formats:
       default: "%Y-%m-%d"
-      long: "%Y年%b%d日"
-      short: "%b%d日"
+      long: "%Y年%m月%d日"
+      short: "%m月%d日"
     month_names:
     -
     - 一月
@@ -204,7 +204,7 @@ zh-HK:
   time:
     am: 上午
     formats:
-      default: "%Y年%b%d日 %A %H:%M:%S %Z"
-      long: "%Y年%b%d日 %H:%M"
-      short: "%b%d日 %H:%M"
+      default: "%Y年%m月%d日 %A %H:%M:%S %Z"
+      long: "%Y年%m月%d日 %H:%M"
+      short: "%m月%d日 %H:%M"
     pm: 下午
