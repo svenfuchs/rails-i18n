@@ -12,8 +12,6 @@ module RailsI18n
           elsif [2, 3, 4].include?(mod10) && ![12, 13, 14].include?(mod100)
             :few
           elsif ([0, 1] + (5..9).to_a).include?(mod10) || [12, 13, 14].include?(mod100)
-            :many
-          else
             :other
           end
         end
