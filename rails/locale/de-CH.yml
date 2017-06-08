@@ -64,38 +64,38 @@ de-CH:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: etwa eine Stunde
+        one: etwa einer Stunde
         other: etwa %{count} Stunden
       about_x_months:
-        one: etwa ein Monat
-        other: etwa %{count} Monate
+        one: etwa einem Monat
+        other: etwa %{count} Monaten
       about_x_years:
-        one: etwa ein Jahr
-        other: etwa %{count} Jahre
+        one: etwa einem Jahr
+        other: etwa %{count} Jahren
       almost_x_years:
-        one: fast ein Jahr
-        other: fast %{count} Jahre
-      half_a_minute: eine halbe Minute
+        one: fast einem Jahr
+        other: fast %{count} Jahren
+      half_a_minute: einer halben Minute
       less_than_x_minutes:
-        one: weniger als eine Minute
+        one: weniger als einer Minute
         other: weniger als %{count} Minuten
       less_than_x_seconds:
-        one: weniger als eine Sekunde
+        one: weniger als einer Sekunde
         other: weniger als %{count} Sekunden
       over_x_years:
-        one: mehr als ein Jahr
-        other: mehr als %{count} Jahre
+        one: mehr als einem Jahr
+        other: mehr als %{count} Jahren
       x_days:
-        one: ein Tag
-        other: "%{count} Tage"
+        one: einem Tag
+        other: "%{count} Tagen"
       x_minutes:
-        one: eine Minute
+        one: einer Minute
         other: "%{count} Minuten"
       x_months:
-        one: ein Monat
-        other: "%{count} Monate"
+        one: einem Monat
+        other: "%{count} Monaten"
       x_seconds:
-        one: eine Sekunde
+        one: einer Sekunde
         other: "%{count} Sekunden"
     prompts:
       day: Tag
