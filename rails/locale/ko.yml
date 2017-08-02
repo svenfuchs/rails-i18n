@@ -87,6 +87,9 @@ ko:
       x_minutes:
         one: 일 분
         other: "%{count}분"
+      x_hours:
+        one: 1시간
+        other: "%{count}시간"
       x_months:
         one: 한 달
         other: "%{count}달"

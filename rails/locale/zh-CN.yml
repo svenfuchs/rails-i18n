@@ -90,6 +90,9 @@ zh-CN:
       x_minutes:
         one: 一分钟
         other: "%{count} 分钟"
+      x_hours:
+        one: 一小时 
+        other: "%{count} 小时"
       x_months:
         one: 一个月
         other: "%{count} 个月"
