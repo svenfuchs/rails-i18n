@@ -93,6 +93,9 @@ da:
       x_months:
         one: en måned
         other: "%{count} måneder"
+      x_years:
+        one: en år
+        other: "%{count} år"
       x_seconds:
         one: et sekund
         other: "%{count} sekunder"
