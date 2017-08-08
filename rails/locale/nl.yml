@@ -93,6 +93,9 @@ nl:
       x_months:
         one: 1 maand
         other: "%{count} maanden"
+      x_years:
+        one: 1 jaar
+        other: "%{count} jaar"
       x_seconds:
         one: 1 seconde
         other: "%{count} seconden"

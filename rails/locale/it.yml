@@ -93,6 +93,9 @@ it:
       x_months:
         one: 1 mese
         other: "%{count} mesi"
+      x_years:
+        one: 1 anno
+        other: "%{count} anni"
       x_seconds:
         one: 1 secondo
         other: "%{count} secondi"
