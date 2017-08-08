@@ -114,7 +114,7 @@ sv:
       present: får inte anges
       confirmation: stämmer inte överens
       empty: får ej vara tom
-      equal_to: måste vara samma som
+      equal_to: måste vara lika med %{count}
       even: måste vara jämnt
       exclusion: är reserverat
       greater_than: måste vara större än %{count}
@@ -148,7 +148,7 @@ sv:
   number:
     currency:
       format:
-        delimiter: ''
+        delimiter: ' '
         format: "%n %u"
         precision: 2
         separator: ","
@@ -156,7 +156,7 @@ sv:
         strip_insignificant_zeros: false
         unit: kr
     format:
-      delimiter: ''
+      delimiter: ' '
       precision: 2
       separator: ","
       significant: false

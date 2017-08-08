@@ -101,40 +101,40 @@ ko:
       second: 초
       year: 년
   errors:
-    format: "%{attribute}%{message}"
+    format: "%{message}"
     messages:
-      accepted: 을(를) 반드시 확인해야 합니다
-      blank: 에 내용을 입력해 주세요
-      confirmation: 은(는) 서로 일치해야 합니다
-      empty: 에 내용을 입력해 주세요
-      equal_to: 은(는) %{count}과 같아야 합니다
-      even: 에 짝수를 입력해 주세요
-      exclusion: 은(는) 이미 예약되어 있는 값입니다
-      greater_than: 은(는) %{count}보다 커야 합니다
-      greater_than_or_equal_to: 은(는) %{count}보다 크거야 같아야 합니다
-      inclusion: 은(는) 목록에 포함되어 있는 값이 아닙니다
-      invalid: 은(는) 올바르지 않은 값입니다
-      less_than: 은(는) %{count}보다 작아야 합니다
-      less_than_or_equal_to: 은(는) %{count}과 작거나 같아야 합니다
-      not_a_number: 에 숫자를 입력해 주세요
-      not_an_integer: 에 정수를 입력해 주세요
-      odd: 에 홀수를 입력해 주세요
-      taken: 은(는) 이미 존재합니다.
-      too_long: 은(는) %{count}자를 넘을 수 없습니다
-      too_short: 은(는) 적어도 %{count}자를 넘어야 합니다
-      wrong_length: 은(는) %{count}자여야 합니다
+      accepted: "%{attribute}을(를) 반드시 확인해야 합니다"
+      blank: "%{attribute}에 내용을 입력해 주세요"
+      confirmation: "%{attribute}은(는) 서로 일치해야 합니다"
+      empty: "%{attribute}에 내용을 입력해 주세요"
+      equal_to: "%{attribute}은(는) %{count}과 같아야 합니다"
+      even: "%{attribute}에 짝수를 입력해 주세요"
+      exclusion: "%{attribute}은(는) 이미 예약되어 있는 값입니다"
+      greater_than: "%{attribute}은(는) %{count}보다 커야 합니다"
+      greater_than_or_equal_to: "%{attribute}은(는) %{count}보다 크거야 같아야 합니다"
+      inclusion: "%{attribute}은(는) 목록에 포함되어 있는 값이 아닙니다"
+      invalid: "%{attribute}은(는) 올바르지 않은 값입니다"
+      less_than: "%{attribute}은(는) %{count}보다 작아야 합니다"
+      less_than_or_equal_to: "%{attribute}은(는) %{count}과 작거나 같아야 합니다"
+      not_a_number: "%{attribute}에 숫자를 입력해 주세요"
+      not_an_integer: "%{attribute}에 정수를 입력해 주세요"
+      odd: "%{attribute}에 홀수를 입력해 주세요"
+      taken: "%{attribute}은(는) 이미 존재합니다"
+      too_long: "%{attribute}은(는) %{count}자를 넘을 수 없습니다"
+      too_short: "%{attribute}은(는) 적어도 %{count}자를 넘어야 합니다"
+      wrong_length: "%{attribute}은(는) %{count}자여야 합니다"
     template:
-      body: '다음 항목에 문제가 발견되었습니다:'
+      body: '아래 문제를 확인해 주세요.'
       header:
-        one: 한 개의 오류가 발생해 %{model}를 저장 할 수 없습니다
-        other: "%{count}개의 오류가 발생해 %{model}를 저장 할 수 없습니다"
+        one: 한 개의 오류로 인해 %{model}을(를) 저장할 수 없습니다
+        other: "%{count}개의 오류로 인해 %{model}을(를) 저장할 수 없습니다"
   helpers:
     select:
       prompt: 선택해주세요
     submit:
       create: 등록
       submit: 제출
-      update: 갱신
+      update: 수정
   number:
     currency:
       format:

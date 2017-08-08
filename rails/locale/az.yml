@@ -157,7 +157,7 @@ az:
         units:
           billion: Milyard
           million: Milyon
-          quadrillion: Katrilyon
+          quadrillion: Kvadrilyon
           thousand: Min
           trillion: Trilyon
           unit: ''

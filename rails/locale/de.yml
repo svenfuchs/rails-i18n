@@ -94,6 +94,9 @@ de:
       x_months:
         one: ein Monat
         other: "%{count} Monate"
+      x_years:
+        one: ein Jahr
+        other: "%{count} Jahr"
       x_seconds:
         one: eine Sekunde
         other: "%{count} Sekunden"

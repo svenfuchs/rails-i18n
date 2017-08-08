@@ -113,6 +113,11 @@ uk:
         many: "%{count} місяців"
         one: "%{count} місяць"
         other: "%{count} місяця"
+      x_years:
+        few: "%{count} років"
+        many: "%{count} років"
+        one: "%{count} рік"
+        other: "%{count} року"
       x_seconds:
         few: "%{count} секунди"
         many: "%{count} секунд"
@@ -130,6 +135,7 @@ uk:
     messages:
       accepted: має бути прийнятий
       blank: не може бути пустим
+      present: має бути пустим
       confirmation: не збігається з підтвердженням
       empty: не може бути порожнім
       equal_to: має дорівнювати %{count}
@@ -141,9 +147,11 @@ uk:
       invalid: недійсний
       less_than: має бути менше ніж %{count}
       less_than_or_equal_to: має бути менше ніж або дорівнювати %{count}
+      model_invalid: 'Виникли помилки: %{errors}'
       not_a_number: не число
       not_an_integer: не э цілим числом
       odd: має бути непарним
+      required: не може бути порожнім
       taken: вже зайнятий
       too_long:
         few: занадто довгий (максимум %{count} знаки)
@@ -160,6 +168,7 @@ uk:
         many: неправильна довжина (має бути %{count} знаків)
         one: неправильна довжина (має бути %{count} знак)
         other: неправильна довжина (має бути %{count} знаку)
+      other_than: має відрізнятись від %{count}
     template:
       body: 'Помилки виявлено в таких полях:'
       header:

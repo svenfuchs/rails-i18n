@@ -9,4 +9,5 @@ doc
 log
 .idea
 .bundle
-
+.ruby-gemset
+.ruby-version
