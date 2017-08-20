@@ -7,7 +7,7 @@ oc:
         restrict_dependent_destroy:
           has_one: "Podètz pas suprimir l’enregistrament perque i a una dependéncia"
           has_many: "Podètz pas suprimir l’enregistrament perque i a %{record} dependéncias"
-date:
+  date:
     abbr_day_names:
     - dg
     - dl
