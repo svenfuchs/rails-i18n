@@ -112,13 +112,13 @@ oc:
       accepted: deu èsser acceptat
       blank: deu èsser garnit
       present: deu èsser void
-      confirmation: correspond pas amb %{attribute}
+      confirmation: correspond pas a %{attribute}
       empty: pòt pas èsser void
       equal_to: deu èsser egal a %{count}
       even: deu èsser parelh
       exclusion: es reservat
       greater_than: deu èsser mai grand que %{count}
-      greater_than_or_equal_to: deu èsser mai grand o egual a %{count}
+      greater_than_or_equal_to: deu èsser mai grand o egal a %{count}
       inclusion: es pas inclús dins la lista
       invalid: es pas valid
       less_than: deu èsser inferior a %{count}
