@@ -93,6 +93,9 @@ zh-YUE:
       x_months:
         one: 一個月
         other: "%{count}個月"
+      x_years:
+        one: 一年
+        other: "%{count} 年"
       x_seconds:
         one: 一秒
         other: "%{count}秒"
