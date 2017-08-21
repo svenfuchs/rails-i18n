@@ -9,27 +9,27 @@ vi:
           has_many: Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}
   date:
     abbr_day_names:
-    - Chủ nhật
-    - Thứ hai
-    - Thứ ba
-    - Thứ tư
-    - Thứ năm
-    - Thứ sáu
-    - Thứ bảy
+    - CN
+    - Thứ 2
+    - Thứ 3
+    - Thứ 4
+    - Thứ 5
+    - Thứ 6
+    - Thứ 7
     abbr_month_names:
     -
-    - Tháng một
-    - Tháng hai
-    - Tháng ba
-    - Tháng tư
-    - Tháng năm
-    - Tháng sáu
-    - Tháng bảy
-    - Tháng tám
-    - Tháng chín
-    - Tháng mười
-    - Tháng mười một
-    - Tháng mười hai
+    - Thg 1
+    - Thg 2
+    - Thg 3
+    - Thg 4
+    - Thg 5
+    - Thg 6
+    - Thg 7
+    - Thg 8
+    - Thg 9
+    - Thg 10
+    - Thg 11
+    - Thg 12
     day_names:
     - Chủ nhật
     - Thứ hai
