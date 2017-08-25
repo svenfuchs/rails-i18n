@@ -96,6 +96,9 @@ tr:
       x_seconds:
         one: 1 saniye
         other: "%{count} saniye"
+      x_years:
+        one: 1 yıl
+        other: "%{count} yıl"
     prompts:
       day: Gün
       hour: Saat
