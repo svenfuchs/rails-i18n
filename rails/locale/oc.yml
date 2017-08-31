@@ -117,7 +117,7 @@ oc:
       equal_to: deu èsser egal a %{count}
       even: deu èsser parelh
       exclusion: es reservat
-      greater_than: deu èsser mai grand que %{count}
+      greater_than: deu èsser superior a %{count}
       greater_than_or_equal_to: deu èsser mai grand o egal a %{count}
       inclusion: es pas inclús dins la lista
       invalid: es pas valid
@@ -140,7 +140,7 @@ oc:
         other: a pas la bona longor (%{count} caractèrs exactament)
       other_than: deu èsser diferent de %{count}
     template:
-      body: "I a agut de problèmas amb los  camps seguents : "
+      body: "I a agut de problèmas amb los camps seguents : "
       header:
         one: Impossible d’enregistrar aqueste/a %{model} perque i a 1 error
         other: Impossible d’enregistrar aqueste/a %{model} perque i a %{count} errors
@@ -174,7 +174,7 @@ oc:
           billion: miliard
           million: milion
           quadrillion: milion de miliards
-          thousand: mil
+          thousand: mila
           trillion: bilion
           unit: ''
       format:
