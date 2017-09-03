@@ -3,7 +3,7 @@ fr:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Asentem ur yeddi aya : %{errors}'
+        record_invalid: "Asentem ur yeddi aya : %{errors}"
         restrict_dependent_destroy:
           has_one: "Ur izmir ara ad yekkes akalas acku  %{record} seg-sen  yeneṭeḍ"
           has_many: "Ur izmir ara ad yekkes akalas acku  %{record} seg-sen neṭḍen"
