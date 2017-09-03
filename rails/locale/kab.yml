@@ -162,7 +162,7 @@ fr:
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: "€"
+        unit: "DZD"
     format:
       delimiter: " "
       precision: 3
