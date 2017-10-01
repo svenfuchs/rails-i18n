@@ -1,0 +1,213 @@
+---
+kab:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "Asentem ur yeddi aya : %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Ur izmir ara ad yekkes akalas acku  %{record} seg-sen  icudd ɣur-s"
+          has_many: "Ur izmir ara ad yekkes akalas acku  %{record} seg-sen cudden ɣur-s"
+  date:
+    abbr_day_names:
+    - Ace
+    - Ari
+    - Ara
+    - Aha
+    - Amh
+    - Sem
+    - Sed
+    abbr_month_names:
+    -
+    - Yen
+    - Fur
+    - Meɣ
+    - Yeb
+    - May
+    - Yun
+    - Yul
+    - Ɣuc
+    - Cte
+    - Tub
+    - Wam
+    - Duj
+    day_names:
+    - Acer
+    - Arim
+    - Aram
+    - Ahad
+    - Amhad
+    - Sem
+    - Sed
+    formats:
+      default: "%d-%m-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - Yennayer
+    - Fuṛar
+    - Meɣres
+    - Yebrir
+    - Mayyu
+    - Yunyu
+    - Yulyu
+    - Ɣuct
+    - Ctamber
+    - Tuber
+    - Wamber
+    - Dujamber
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 1 n usrag aya
+        other: ahat %{count} n isragen
+      about_x_months:
+        one: ahat 1 n wayyur
+        other: ahat %{count} n wayyuren
+      about_x_years:
+        one: ahat 1 n useggas
+        other: ahat %{count} n iseggasen
+      almost_x_years:
+        one: qrib 1 year
+        other: qrib %{count} n iseggasen
+      half_a_minute: azgen n tesdat
+      less_than_x_minutes:
+        one: ur iwwiḍ ara 1 n tesdat
+        other: ur iwwiḍ ara %{count} n tisdatin
+      less_than_x_seconds:
+        one: ur iwwiḍ ara 1 n tasint
+        other: ur iwwiḍ ara %{count} n tasinin
+      over_x_years:
+        one: ugar n 1 n useggas
+        other: ugar n %{count} n iseggasen
+      x_days:
+        one: 1 n wass
+        other: "%{count} n wussan"
+      x_minutes:
+        one: 1 n tesdat
+        other: "%{count} n tisdatin"
+      x_months:
+        one: 1 n wayyur
+        other: "%{count} n wayyuren"
+      x_years:
+        one: 1 n useggas
+        other: "%{count} n iseggasen"
+      x_seconds:
+        one: 1 n tasint
+        other: "%{count} n tasinin"
+    prompts:
+      day: Ass
+      hour: Asrag
+      minute: Tasdat
+      month: Ayyur
+      second: Tasinin
+      year: Aseggas
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: yessefk ad yettwaqbel
+      blank: ur izmir ara ad yili d ilem
+      present: yessefk ad yili d ilem
+      confirmation: ur imenṭaḍ ara d %{attribute}
+      empty: ur izmir ara ad yili d ilem
+      equal_to: yessefk ad yegdu %{count}
+      even: yessef ad yili d ayugan
+      exclusion: yettuḥer
+      greater_than: yessefk ad yugar %{count}
+      greater_than_or_equal_to: yessefk ad yugar neɣ ad yegdu %{count}
+      inclusion: ur yelli ara di tebdart
+      invalid: mačči d ameɣtu
+      less_than: yessefk ad yili ddaw %{count}
+      less_than_or_equal_to: yessefk ad yili ddaw neɣ yegda %{count}
+      model_invalid: "Asentem yecceḍ: %{errors}"
+      not_a_number: mačči d amḍan
+      not_an_integer: yessefk ad yili d ummid
+      odd: yessefk d aryugan
+      required: yessefk ad yili
+      taken: yettwaṭṭef yakan
+      too_long:
+        one: meqqer aṭas (afellay d 1 n usekkil)
+        other: meqqer aṭas (afellay d %{count} n isekkilen)
+      too_short:
+        one: wezzil aṭas (adday d is 1 n usekkil)
+        other: wezzil aṭas (adday d %{count} n isekkilen)
+      wrong_length:
+        one: yir teɣzi (yessefk ad yegber 1 n usekkil)
+        other: yir teɣzi (yessefk ad yegber %{count} n isekkilen)
+      other_than: yessefk ad yemgarad d  %{count}
+    template:
+      body: 'Yella wugur deg urtan-agi:'
+      header:
+        one: 1 n tuccḍa tegdel %{model}-agi seg usekles
+        other: "%{count} n tuccḍiwin gedlent %{model}-agi seg usekles"
+  helpers:
+    select:
+      prompt: Ma ulac aɣilif, fren
+    submit:
+      create: Rnu %{model}
+      submit: Sekles %{model}
+      update: Snifel %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "DZD"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Amelyaṛ
+          million: Amelyun
+          quadrillion: Abilyaṛ
+          thousand: Agim
+          trillion: Atrilyun
+          unit: ''
+      format:
+        delimiter: ' '
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Aṭamḍan
+            other: Iṭamḍanen
+          gb: GAṬ
+          kb: KAṬ
+          mb: MAṬ
+          tb: TAṬ
+    percentage:
+      format:
+        delimiter: ' '
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ' '
+  support:
+    array:
+      last_word_connector: ", d "
+      two_words_connector: " d "
+      words_connector: ", "
+  time:
+    am: ft
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+pm: md
