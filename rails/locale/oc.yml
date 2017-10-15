@@ -151,12 +151,6 @@ oc:
       create: Crear %{model}
       submit: Salvar %{model}
       update: Actualizar %{model}
-    links:
-      show: Veire
-      edit: Modificar
-      destroy: Suprimir
-      back: Tornar
-      new: Nòu
   number:
     currency:
       format:
