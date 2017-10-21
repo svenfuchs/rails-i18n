@@ -136,8 +136,8 @@ pt:
     template:
       body: 'Por favor, verifique os seguintes campos:'
       header:
-        one: 'Não foi possível guardar %{model}: 1 erro'
-        other: 'Não foi possível guardar %{model}: %{count} erros'
+        one: '1 erro impediu guardar este %{model}'
+        other: '%{count} erros impediram guardar este %{model}'
   helpers:
     select:
       prompt: Por favor seleccione
