@@ -142,8 +142,8 @@ zh-CN:
     template:
       body: 如下字段出现错误：
       header:
-        one: 有 1 个错误发生导致「%{model}」无法被保存。
-        other: 有 %{count} 个错误发生导致「%{model}」无法被保存。
+        one: 有 1 个错误发生导致“%{model}”无法被保存。
+        other: 有 %{count} 个错误发生导致“%{model}”无法被保存。
   helpers:
     select:
       prompt: 请选择
