@@ -201,8 +201,8 @@ zh-CN:
         delimiter: ''
   support:
     array:
-      last_word_connector: "、以及"
-      two_words_connector: "以及"
+      last_word_connector: " 以及 "
+      two_words_connector: " 和 "
       words_connector: "、"
   time:
     am: 上午
