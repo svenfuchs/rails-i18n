@@ -142,8 +142,8 @@ zh-CN:
     template:
       body: 如下字段出现错误：
       header:
-        one: 有 1 个错误发生导致「%{model}」无法被保存。
-        other: 有 %{count} 个错误发生导致「%{model}」无法被保存。
+        one: 有 1 个错误发生导致“%{model}”无法被保存。
+        other: 有 %{count} 个错误发生导致“%{model}”无法被保存。
   helpers:
     select:
       prompt: 请选择
@@ -201,9 +201,9 @@ zh-CN:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", 和 "
-      two_words_connector: " 和 "
-      words_connector: ", "
+      last_word_connector: "、以及"
+      two_words_connector: "以及"
+      words_connector: "、"
   time:
     am: 上午
     formats:
