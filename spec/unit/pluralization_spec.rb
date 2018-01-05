@@ -9,6 +9,7 @@ require 'support/pluralization_file'
 
 require 'unit/pluralization/ordinary'
 require 'unit/pluralization/other'
+require 'unit/pluralization/one_other'
 require 'unit/pluralization/one_with_zero_other'
 require 'unit/pluralization/one_upto_two_other'
 require 'unit/pluralization/one_two_other'
@@ -175,7 +176,7 @@ describe 'Pluralization rule for' do
 
   describe 'Chinese', :locale => :zh do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'other form language'
+    it_behaves_like 'one-other forms language'
   end
 
   describe 'Colognian', :locale => :ksh do
