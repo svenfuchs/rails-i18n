@@ -223,7 +223,7 @@ ar:
         strip_insignificant_zeros: false
         unit: "$"
     format:
-      delimiter: "،"
+      delimiter: ","
       precision: 3
       separator: "."
       significant: false
