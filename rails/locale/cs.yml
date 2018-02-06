@@ -191,6 +191,7 @@ cs:
         units:
           byte:
             one: B
+            few: B
             other: B
           gb: GB
           kb: KB
