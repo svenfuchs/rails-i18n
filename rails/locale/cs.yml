@@ -189,7 +189,9 @@ cs:
       storage_units:
         format: "%n %u"
         units:
-          byte: B
+          byte:
+            one: B
+            other: B
           gb: GB
           kb: KB
           mb: MB
