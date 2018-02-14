@@ -157,6 +157,7 @@ We will do the formality check and publish it as quick as we can.
 
 * [devise-i18n](https://github.com/tigrish/devise-i18n)
 * [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
+* [kaminari-i18n](https://github.com/tigrish/kaminari-i18n)
 * [i18n-country-translation](https://github.com/onomojo/i18n-country-translations) for translations of country names
 * [i18n-spec](https://github.com/tigrish/i18n-spec) for RSpec matchers to test your locale files
 * [iso](https://github.com/tigrish/iso) for the list of valid language/region codes and their translations
