@@ -69,12 +69,12 @@ zh-CN:
       half_a_minute: 半分钟
       less_than_x_minutes: 不到 %{count} 分钟
       less_than_x_seconds: 不到 %{count} 秒
-      over_x_years: %{count} 年多
-      x_days: %{count} 天
-      x_minutes: %{count} 分钟
-      x_months: %{count} 个月
-      x_years: %{count} 年
-      x_seconds: %{count} 秒
+      over_x_years: "%{count} 年多"
+      x_days: "%{count} 天"
+      x_minutes: "%{count} 分钟"
+      x_months: "%{count} 个月"
+      x_years: "%{count} 年"
+      x_seconds: "%{count} 秒"
     prompts:
       day: 日
       hour: 时
