@@ -1,3 +1,6 @@
+## 5.1.1 (2018-02-26)
+- Fix #767 (New Chinese pluralization rules break stuff)
+
 ## 5.1.0 (2018-02-14)
 - Add following locales:
   - Spanish (Nicaragua) (es-NI)
