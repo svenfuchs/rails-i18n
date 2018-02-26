@@ -62,43 +62,19 @@ zh-CN:
     - :day
   datetime:
     distance_in_words:
-      about_x_hours:
-        one: 大约一小时
-        other: 大约 %{count} 小时
-      about_x_months:
-        one: 大约一个月
-        other: 大约 %{count} 个月
-      about_x_years:
-        one: 大约一年
-        other: 大约 %{count} 年
-      almost_x_years:
-        one: 接近一年
-        other: 接近 %{count} 年
+      about_x_hours: 大约 %{count} 小时
+      about_x_months: 大约 %{count} 个月
+      about_x_years: 大约 %{count} 年
+      almost_x_years: 接近 %{count} 年
       half_a_minute: 半分钟
-      less_than_x_minutes:
-        one: 不到一分钟
-        other: 不到 %{count} 分钟
-      less_than_x_seconds:
-        one: 不到一秒
-        other: 不到 %{count} 秒
-      over_x_years:
-        one: 一年多
-        other: "%{count} 年多"
-      x_days:
-        one: 一天
-        other: "%{count} 天"
-      x_minutes:
-        one: 一分钟
-        other: "%{count} 分钟"
-      x_months:
-        one: 一个月
-        other: "%{count} 个月"
-      x_years:
-        one: 一年
-        other: "%{count} 年"
-      x_seconds:
-        one: 一秒
-        other: "%{count} 秒"
+      less_than_x_minutes: 不到 %{count} 分钟
+      less_than_x_seconds: 不到 %{count} 秒
+      over_x_years: "%{count} 年多"
+      x_days: "%{count} 天"
+      x_minutes: "%{count} 分钟"
+      x_months: "%{count} 个月"
+      x_years: "%{count} 年"
+      x_seconds: "%{count} 秒"
     prompts:
       day: 日
       hour: 时
@@ -129,21 +105,13 @@ zh-CN:
       odd: 必须为单数
       required: 必须存在
       taken: 已经被使用
-      too_long:
-        one: 过长（最长为一个字符）
-        other: 过长（最长为 %{count} 个字符）
-      too_short:
-        one: 过短（最短为一个字符）
-        other: 过短（最短为 %{count} 个字符）
-      wrong_length:
-        one: 长度非法（必须为一个字符）
-        other: 长度非法（必须为 %{count} 个字符）
+      too_long: 过长（最长为 %{count} 个字符）
+      too_short: 过短（最短为 %{count} 个字符）
+      wrong_length: 长度非法（必须为 %{count} 个字符）
       other_than: 长度非法（不可为 %{count} 个字符
     template:
       body: 如下字段出现错误：
-      header:
-        one: 有 1 个错误发生导致“%{model}”无法被保存。
-        other: 有 %{count} 个错误发生导致“%{model}”无法被保存。
+      header: 有 %{count} 个错误发生导致“%{model}”无法被保存。
   helpers:
     select:
       prompt: 请选择
@@ -185,9 +153,7 @@ zh-CN:
       storage_units:
         format: "%n %u"
         units:
-          byte:
-            one: Byte
-            other: Bytes
+          byte: 字节
           gb: GB
           kb: KB
           mb: MB

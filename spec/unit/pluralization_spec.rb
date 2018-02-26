@@ -176,7 +176,7 @@ describe 'Pluralization rule for' do
 
   describe 'Chinese', :locale => :zh do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'one-other forms language'
+    it_behaves_like 'other form language'
   end
 
   describe 'Colognian', :locale => :ksh do
