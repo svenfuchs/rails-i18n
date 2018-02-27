@@ -10,18 +10,18 @@ Central point to collect locale data for use in Ruby on Rails.
 
 Add to your Gemfile:
 
-    gem 'rails-i18n', '~> 5.0.0' # For 5.0.x
-    gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
-    gem 'rails-i18n', '~> 3.0.0' # For 3.x
+    gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
+    gem 'rails-i18n', '~> 4.0' # For 4.0.x
+    gem 'rails-i18n', '~> 3.0' # For 3.x
     gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For 5.x
     gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x' # For 4.x
     gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-3-x' # For 3.x
 
 or run this command:
 
-    gem install rails-i18n -v '~> 5.0.0' # For 5.0.0
-    gem install rails-i18n -v '~> 4.0.0' # For 4.0.x
-    gem install rails-i18n -v '~> 3.0.0' # For 3.x
+    gem install rails-i18n -v '~> 5.1' # For  For 5.0.x, 5.1.x and 5.2.x
+    gem install rails-i18n -v '~> 4.0' # For 4.0.x
+    gem install rails-i18n -v '~> 3.0' # For 3.x
 
 Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
 
@@ -54,19 +54,19 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 
 Available locales are:
 
-> af, ar, az, be, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, de-DE, el,
-> en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, eo, es,
-> es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-PA, es-PE, es-US, es-VE,
+> af, ar, az, be, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, de-DE, el, el-CY,
+> en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, en-CY,eo, es,
+> es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE,
 > et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, gl, he, hi, hi-IN, hr, hu, id, is, it,
 > it-CH, ja, ka, km, kn, ko, lb, lo, lt, lv, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, or,
-> pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, sw, ta, th, tl, tr, tt, ug, uk,
+> pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, sw, ta, th, tl, tr, tt, ug,
 > ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Complete locales are:
 
 > af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
-> es-ES, es-MX, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, id, ja, ka, ml, nb,
-> nl, nn, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE
+> es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, id, ja, ka, ml, nb,
+> nl, nn, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
@@ -157,6 +157,7 @@ We will do the formality check and publish it as quick as we can.
 
 * [devise-i18n](https://github.com/tigrish/devise-i18n)
 * [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
+* [kaminari-i18n](https://github.com/tigrish/kaminari-i18n)
 * [i18n-country-translation](https://github.com/onomojo/i18n-country-translations) for translations of country names
 * [i18n-spec](https://github.com/tigrish/i18n-spec) for RSpec matchers to test your locale files
 * [iso](https://github.com/tigrish/iso) for the list of valid language/region codes and their translations

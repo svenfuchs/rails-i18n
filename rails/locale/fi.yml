@@ -4,6 +4,9 @@ fi:
     errors:
       messages:
         record_invalid: 'Validointi epäonnistui: %{errors}'
+        restrict_dependent_destroy:
+          has_one: "Ei voida poistaa mallia koska tästä riippuvainen %{record} löytyy"
+          has_many: "Ei voida poistaa mallia koska tästä riippuvaisia %{record} löytyy"
   date:
     abbr_day_names:
     - su
@@ -90,6 +93,9 @@ fi:
       x_months:
         one: kuukausi
         other: "%{count} kuukautta"
+      x_years:
+        one: vuosi
+        other: "%{count} vuotta"
       x_seconds:
         one: sekunti
         other: "%{count} sekuntia"
@@ -105,6 +111,7 @@ fi:
     messages:
       accepted: täytyy olla hyväksytty
       blank: ei voi olla sisällötön
+      present: täytyy olla sisällötön
       confirmation: ei vastaa varmennusta
       empty: ei voi olla tyhjä
       equal_to: täytyy olla yhtä suuri kuin %{count}
@@ -116,17 +123,25 @@ fi:
       invalid: on kelvoton
       less_than: täytyy olla pienempi kuin %{count}
       less_than_or_equal_to: täytyy olla pienempi tai yhtä suuri kuin %{count}
+      model_invalid: "Validointi epäonnistui: %{errors}"
       not_a_number: ei ole luku
       not_an_integer: ei ole kokonaisluku
       odd: täytyy olla pariton
+      required: täytyy olla
       taken: on jo käytössä
-      too_long: on liian pitkä (saa olla enintään %{count} merkkiä)
-      too_short: on liian lyhyt (oltava vähintään %{count} merkkiä)
-      wrong_length: on väärän pituinen (täytyy olla täsmälleen %{count} merkkiä)
+      too_long:
+        one: on liian pitkä (saa olla enintään 1 merkki)
+        other: on liian pitkä (saa olla enintään %{count} merkkiä)
+      too_short:
+        one: on liian lyhyt (oltava vähintään 1 merkki)
+        other: on liian lyhyt (oltava vähintään %{count} merkkiä)
+      wrong_length:
+        one: on väärän pituinen (täytyy olla täsmälleen 1 merkki)
+        other: on väärän pituinen (täytyy olla täsmälleen %{count} merkkiä)
     template:
       body: 'Seuraavat kentät aiheuttivat ongelmia:'
       header:
-        one: Virhe syötteessä esti mallin %{model} tallentamisen
+        one: Virhe esti mallin %{model} tallentamisen
         other: "%{count} virhettä esti mallin %{model} tallentamisen"
   helpers:
     select:
@@ -155,11 +170,11 @@ fi:
       decimal_units:
         format: "%n %u"
         units:
-          thousand: tuhatta
-          million: miljoonaa
           billion: miljardia
-          trillion: biljoonaa
+          million: miljoonaa
           quadrillion: tuhatta biljoonaa
+          thousand: tuhatta
+          trillion: biljoonaa
           unit: ''
       format:
         delimiter: ''

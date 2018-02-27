@@ -1,3 +1,47 @@
+## 5.1.1 (2018-02-26)
+- Fix #767 (New Chinese pluralization rules break stuff)
+
+## 5.1.0 (2018-02-14)
+- Add following locales:
+  - Spanish (Nicaragua) (es-NI)
+  - Occitan (oc)
+- Update following locales:
+  - Azerbaijani (az)
+  - Danish (da)
+  - German (de)
+  - Chinese (zh-*)
+  - Vietnamese (vi)
+  - Turkish (tr)
+  - Portuguese (pt)
+  - Finnish (fi)
+  - Arabic (ar)
+  - Czech (cs)
+- Remove spec/integration directory and spork gem
+- Bump gem dependencies to include i18n 1.0
+
+## 5.0.4 (2017-05-06)
+- Add following locales:
+  - Cypriot Greek (el-CY)
+  - Cypriot English (en-CY)
+- Update following locales:
+  - Swedish (sv, sv-SE)
+  - Ukrainian (uk)
+  - French (fr, fr-FR)
+  - Japanese (ja)
+  - Uzbek (uz)
+  - Chinese (zh-CN, zh-HK, zh-TW, zh-YUE)
+  - Spanish (es)
+
+## 5.0.3 (2017-02-10)
+- Update following locales:
+  - Portuguese (pt, pt-BR)
+  - Spanish locales (ES-\*)
+  - Japanese (ja)
+  - Georgian (ka)
+  - Korean (ko)
+  - Swedish (sv, sv-SE)
+  - Ukrainian (uk)
+
 ## 5.0.2 (2016-12-29)
 - Add following locales:
   - Georgian (ka)

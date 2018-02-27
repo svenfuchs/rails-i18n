@@ -9,6 +9,7 @@ require 'support/pluralization_file'
 
 require 'unit/pluralization/ordinary'
 require 'unit/pluralization/other'
+require 'unit/pluralization/one_other'
 require 'unit/pluralization/one_with_zero_other'
 require 'unit/pluralization/one_upto_two_other'
 require 'unit/pluralization/one_two_other'
