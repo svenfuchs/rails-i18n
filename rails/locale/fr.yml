@@ -174,7 +174,9 @@ fr:
         format: "%n %u"
         units:
           billion: milliard
-          million: million
+          million:
+            one: million
+            other: millions
           quadrillion: million de milliards
           thousand: millier
           trillion: billion
