@@ -222,11 +222,6 @@ describe 'Pluralization rule for' do
     it_behaves_like 'other form language'
   end
 
-  describe 'Filipino', :locale => :fil do
-    it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'one(with zero)-other forms language'
-  end
-
   describe 'French', :locale => :fr do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(upto 2)-other forms language'
