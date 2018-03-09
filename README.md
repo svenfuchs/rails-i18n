@@ -159,6 +159,7 @@ We will do the formality check and publish it as quick as we can.
 * [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
 * [kaminari-i18n](https://github.com/tigrish/kaminari-i18n)
 * [i18n-country-translation](https://github.com/onomojo/i18n-country-translations) for translations of country names
+* [i18n-timezones](https://github.com/onomojo/i18n-timezones) for translations of Rails time zones
 * [i18n-spec](https://github.com/tigrish/i18n-spec) for RSpec matchers to test your locale files
 * [iso](https://github.com/tigrish/iso) for the list of valid language/region codes and their translations
 * [i18n-tasks](https://github.com/glebm/i18n-tasks)
