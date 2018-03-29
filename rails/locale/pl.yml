@@ -145,6 +145,7 @@ pl:
       not_an_integer: musi być liczbą całkowitą
       odd: musi być nieparzyste
       present: musi być puste
+      required: musi istnieć
       taken: zostało już zajęte
       too_long:
         few: jest za długie (maksymalnie %{count} znaki)
