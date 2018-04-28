@@ -94,7 +94,7 @@ da:
         one: en måned
         other: "%{count} måneder"
       x_years:
-        one: en år
+        one: et år
         other: "%{count} år"
       x_seconds:
         one: et sekund
