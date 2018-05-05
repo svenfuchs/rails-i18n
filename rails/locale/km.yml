@@ -136,11 +136,11 @@ km:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ពាន់លាន
+          billion: ប៊ីលាន
           million: លាន
-          quadrillion: ក្វាឌ្រីលាន
+          quadrillion: ក្វាទ្រីលាន
           thousand: ពាន់
-          trillion: ពាន់ពាន់លាន
+          trillion: ទ្រីលាន
           unit: ''
       format:
         delimiter: ''
