@@ -206,7 +206,7 @@ oc:
   time:
     am: am
     formats:
-      default: "Lo %d %b de %Y a %Ho%M %Ss"
-      long: "Lo %d %b de %Y a %Ho%M"
-      short: "%d %b %Ho%M"
+      default: "Lo %e %b de %Y a %Ho%M %Ss"
+      long: "Lo %a %e %b de %Y a %Ho%M"
+      short: "%e %b %Ho%M"
     pm: pm
