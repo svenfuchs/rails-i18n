@@ -64,40 +64,40 @@ fr-CH:
     distance_in_words:
       about_x_hours:
         one: environ une heure
-        other: environ %{count} heures
+        other: environ %{count} heures
       about_x_months:
         one: environ un mois
-        other: environ %{count} mois
+        other: environ %{count} mois
       about_x_years:
         one: environ un an
-        other: environ %{count} ans
+        other: environ %{count} ans
       almost_x_years:
         one: presqu'un an
         other: presque %{count} ans
       half_a_minute: une demi-minute
       less_than_x_minutes:
-        one: moins d'une minute
-        other: moins de %{count} minutes
-        zero: moins d'une minute
+        one: moins d'une minute
+        other: moins de %{count} minutes
+        zero: moins d'une minute
       less_than_x_seconds:
-        one: moins d'une seconde
-        other: moins de %{count} secondes
+        one: moins d'une seconde
+        other: moins de %{count} secondes
         zero: moins d'une seconde
       over_x_years:
         one: plus d'un an
-        other: plus de %{count} ans
+        other: plus de %{count} ans
       x_days:
-        one: 1 jour
-        other: "%{count} jours"
+        one: 1 jour
+        other: "%{count} jours"
       x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
+        one: 1 minute
+        other: "%{count} minutes"
       x_months:
-        one: 1 mois
-        other: "%{count} mois"
+        one: 1 mois
+        other: "%{count} mois"
       x_seconds:
-        one: 1 seconde
-        other: "%{count} secondes"
+        one: 1 seconde
+        other: "%{count} secondes"
     prompts:
       day: Jour
       hour: Heure
@@ -139,7 +139,7 @@ fr-CH:
         other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
       other_than: doit être différent de %{count}
     template:
-      body: 'Veuillez vérifier les champs suivants : '
+      body: 'Veuillez vérifier les champs suivants : '
       header:
         one: 'Impossible d''enregistrer ce %{model} : 1 erreur'
         other: 'Impossible d''enregistrer ce %{model} : %{count} erreurs'
