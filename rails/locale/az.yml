@@ -111,15 +111,15 @@ az:
       present: boş olmalıdır
       confirmation: təsdiqə uyğun deyil
       empty: boş ola bilməz
-      equal_to: "%{count} simvoldan ibarət olmalıdır"
+      equal_to: "%{count}-ə bərabər olmalıdır"
       even: cüt olmalıdır
       exclusion: qorunur
-      greater_than: "%{count} simvoldan böyük olmalıdır"
-      greater_than_or_equal_to: "%{count} simvoldan az olmamalıdır"
+      greater_than: "%{count}-dən böyük olmalıdır"
+      greater_than_or_equal_to: "%{count}-dən az olmamalıdır"
       inclusion: siyahıya daxil deyil
       invalid: yanlışdır
-      less_than: "%{count} simvoldan kiçik olmalıdır"
-      less_than_or_equal_to: "%{count} simvoldan çox olmamalıdır"
+      less_than: "%{count}-dən kiçik olmalıdır"
+      less_than_or_equal_to: "%{count}-dən çox olmamalıdır"
       model_invalid: "Yoxlama uğursuz oldu: %{errors}"
       not_a_number: rəqəm deyil
       not_an_integer: tam ədəd olmalıdır
