@@ -158,6 +158,8 @@ zh-CN:
           kb: KB
           mb: MB
           tb: TB
+          pb: PB
+          eb: EB
     percentage:
       format:
         delimiter: ''
