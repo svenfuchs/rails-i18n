@@ -196,6 +196,8 @@ fr:
           kb: ko
           mb: Mo
           tb: To
+          pb: Po
+          eb: Eo
     percentage:
       format:
         delimiter: ''
