@@ -5,7 +5,7 @@ fr-CA:
       messages:
         record_invalid: 'La validation a échoué : %{errors}'
         restrict_dependent_destroy:
-          has_one: "Vous ne pouvez pas supprimer l'enregistrement car une personne à charge %{record} existe"
+          has_one: "Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record} dépendant(e) existe"
           has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent"
   date:
     abbr_day_names:
@@ -64,40 +64,43 @@ fr-CA:
     distance_in_words:
       about_x_hours:
         one: environ une heure
-        other: environ %{count} heures
+        other: environ %{count} heures
       about_x_months:
         one: environ un mois
-        other: environ %{count} mois
+        other: environ %{count} mois
       about_x_years:
         one: environ un an
-        other: environ %{count} ans
+        other: environ %{count} ans
       almost_x_years:
         one: presqu'un an
         other: presque %{count} ans
       half_a_minute: une demi-minute
       less_than_x_minutes:
-        one: moins d'une minute
-        other: moins de %{count} minutes
-        zero: moins d'une minute
+        one: moins d'une minute
+        other: moins de %{count} minutes
+        zero: moins d'une minute
       less_than_x_seconds:
-        one: moins d'une seconde
-        other: moins de %{count} secondes
+        one: moins d'une seconde
+        other: moins de %{count} secondes
         zero: moins d'une seconde
       over_x_years:
         one: plus d'un an
-        other: plus de %{count} ans
+        other: plus de %{count} ans
       x_days:
-        one: 1 jour
-        other: "%{count} jours"
+        one: 1 jour
+        other: "%{count} jours"
       x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
+        one: 1 minute
+        other: "%{count} minutes"
       x_months:
-        one: 1 mois
-        other: "%{count} mois"
+        one: 1 mois
+        other: "%{count} mois"
+      x_years:
+        one: 1 an
+        other: "%{count} ans"
       x_seconds:
-        one: 1 seconde
-        other: "%{count} secondes"
+        one: 1 seconde
+        other: "%{count} secondes"
     prompts:
       day: Jour
       hour: Heure
@@ -122,7 +125,7 @@ fr-CA:
       invalid: n'est pas valide
       less_than: doit être inférieur à %{count}
       less_than_or_equal_to: doit être inférieur ou égal à %{count}
-      model_invalid: "Validation échouée: %{errors}"
+      model_invalid: "Validation échouée : %{errors}"
       not_a_number: n'est pas un nombre
       not_an_integer: doit être un nombre entier
       odd: doit être impair
@@ -139,17 +142,17 @@ fr-CA:
         other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
       other_than: doit être différent de %{count}
     template:
-      body: 'Veuillez vérifier les champs suivants : '
+      body: 'Veuillez vérifier les champs suivants : '
       header:
-        one: 'Impossible d''enregistrer ce %{model} : 1 erreur'
-        other: 'Impossible d''enregistrer ce %{model} : %{count} erreurs'
+        one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
+        other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   helpers:
     select:
       prompt: Veuillez sélectionner
     submit:
-      create: Créer un %{model}
-      submit: Enregistrer ce %{model}
-      update: Modifier ce %{model}
+      create: Créer un(e) %{model}
+      submit: Enregistrer ce(tte) %{model}
+      update: Modifier ce(tte) %{model}
   number:
     currency:
       format:
@@ -170,11 +173,11 @@ fr-CA:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Milliard
-          million: Million
-          quadrillion: Million de milliards
-          thousand: Millier
-          trillion: Mille milliard
+          billion: milliard
+          million: million
+          quadrillion: million de milliards
+          thousand: millier
+          trillion: billion
           unit: ''
       format:
         delimiter: ''
@@ -185,12 +188,14 @@ fr-CA:
         format: "%n %u"
         units:
           byte:
-            one: Octet
-            other: Octets
+            one: octet
+            other: octets
           gb: Go
           kb: ko
           mb: Mo
           tb: To
+          pb: Po
+          eb: Eo
     percentage:
       format:
         delimiter: ''

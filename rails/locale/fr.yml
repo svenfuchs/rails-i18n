@@ -96,7 +96,7 @@ fr:
         one: 1 mois
         other: "%{count} mois"
       x_years:
-        one: un an
+        one: 1 an
         other: "%{count} ans"
       x_seconds:
         one: 1 seconde
@@ -174,9 +174,7 @@ fr:
         format: "%n %u"
         units:
           billion: milliard
-          million:
-            one: million
-            other: millions
+          million: million
           quadrillion: million de milliards
           thousand: millier
           trillion: billion
