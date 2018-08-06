@@ -10,20 +10,24 @@ Centralization of locale data collection for Ruby on Rails.
 
 Include the gem to your Gemfile:
 
-    gem 'rails-i18n', '~> 6.0.0.beta1' # For 6.0.0.beta1 or higher
-    gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
-    gem 'rails-i18n', '~> 4.0' # For 4.0.x
-    gem 'rails-i18n', '~> 3.0' # For 3.x
-    gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For 5.x
-    gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x' # For 4.x
-    gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-3-x' # For 3.x
+``` ruby
+gem 'rails-i18n', '~> 6.0.0.beta1' # For 6.0.0.beta1 or higher
+gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
+gem 'rails-i18n', '~> 4.0' # For 4.0.x
+gem 'rails-i18n', '~> 3.0' # For 3.x
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For 5.x
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x' # For 4.x
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-3-x' # For 3.x
+```
 
 Alternatively, execute the following command:
 
-    gem install rails-i18n -v '~> 6.0.0.beta1' # For 6.0.0.beta1 or higher
-    gem install rails-i18n -v '~> 5.1' # For  For 5.0.x, 5.1.x and 5.2.x
-    gem install rails-i18n -v '~> 4.0' # For 4.0.x
-    gem install rails-i18n -v '~> 3.0' # For 3.x
+``` shell
+gem install rails-i18n -v '~> 6.0.0.beta1' # For 6.0.0.beta1 or higher
+gem install rails-i18n -v '~> 5.1' # For  For 5.0.x, 5.1.x and 5.2.x
+gem install rails-i18n -v '~> 4.0' # For 4.0.x
+gem install rails-i18n -v '~> 3.0' # For 3.x
+```
 
 Note that your Ruby on Rails version must be 3.0 or higher in order to install the `rails-i18n` gem. For rails 2.x, install it manually as described in the Manual Installation section below.
 
@@ -31,11 +35,15 @@ Note that your Ruby on Rails version must be 3.0 or higher in order to install t
 
 `rails-i18n` gem initially loads all available locale files, pluralization and transliteration rules. This default behaviour can be changed. If you specify in `config/environments/*` the locales which have to be loaded via `I18n.available_locales` option:
 
-    config.i18n.available_locales = ['es-CO', :de]
+``` ruby
+config.i18n.available_locales = ['es-CO', :de]
+```
 
 or
 
-    config.i18n.available_locales = :nl
+``` ruby
+config.i18n.available_locales = :nl
+```
 
 ## Manual Installation
 
@@ -89,7 +97,7 @@ fonts have a glyph, there are still many fonts that will not render the characte
 If you want to provide a different value, you can create a custom locale file under
 `config/locales/tr.yml` and override the respective key:
 
-```YAML
+``` yaml
 tr:
   number:
     currency:
@@ -123,28 +131,40 @@ If not,
 
 Before committing and pushing your changes, test the integrity of your locale file.
 
-    bundle exec rake spec
+``` shell
+bundle exec rake spec
+```
 
 Make sure you have included all translations with:
 
-    bundle exec rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
+``` shell
+bundle exec rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
+```
 
 Make sure it is normalized with:
 
-    thor locales:normalize LOCALE # or "thor locales:normalize_all"
+``` shell
+thor locales:normalize LOCALE # or "thor locales:normalize_all"
+```
 
 You can list all complete and incomplete locales:
 
-    thor locales:complete
-    thor locales:incomplete
+``` shell
+thor locales:complete
+thor locales:incomplete
+```
 
 Also, you can list all available locales:
 
-    thor locales:list
+``` shell
+thor locales:list
+```
 
 You can list all missing keys:
 
-    i18n-tasks missing es
+``` shell
+i18n-tasks missing es
+```
 
 ### Edit README.md
 
