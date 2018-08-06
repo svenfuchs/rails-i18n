@@ -5,7 +5,7 @@ fr-CH:
       messages:
         record_invalid: 'La validation a échoué : %{errors}'
         restrict_dependent_destroy:
-          has_one: "Vous ne pouvez pas supprimer l'enregistrement car une personne à charge %{record} existe"
+          has_one: "Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record} dépendant(e) existe"
           has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent"
   date:
     abbr_day_names:
@@ -141,15 +141,15 @@ fr-CH:
     template:
       body: 'Veuillez vérifier les champs suivants : '
       header:
-        one: 'Impossible d''enregistrer ce %{model} : 1 erreur'
-        other: 'Impossible d''enregistrer ce %{model} : %{count} erreurs'
+        one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
+        other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   helpers:
     select:
       prompt: Veuillez sélectionner
     submit:
-      create: Créer un %{model}
-      submit: Enregistrer ce %{model}
-      update: Modifier ce %{model}
+      create: Créer un(e) %{model}
+      submit: Enregistrer ce(tte) %{model}
+      update: Modifier ce(tte) %{model}
   number:
     currency:
       format:
