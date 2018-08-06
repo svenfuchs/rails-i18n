@@ -95,6 +95,9 @@ fr-CH:
       x_months:
         one: 1 mois
         other: "%{count} mois"
+      x_years:
+        one: 1 an
+        other: "%{count} ans"
       x_seconds:
         one: 1 seconde
         other: "%{count} secondes"
@@ -191,6 +194,8 @@ fr-CH:
           kb: ko
           mb: Mo
           tb: To
+          pb: Po
+          eb: Eo
     percentage:
       format:
         delimiter: ''

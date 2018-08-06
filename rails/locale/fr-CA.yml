@@ -95,6 +95,9 @@ fr-CA:
       x_months:
         one: 1 mois
         other: "%{count} mois"
+      x_years:
+        one: 1 an
+        other: "%{count} ans"
       x_seconds:
         one: 1 seconde
         other: "%{count} secondes"
@@ -170,11 +173,11 @@ fr-CA:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Milliard
-          million: Million
-          quadrillion: Million de milliards
-          thousand: Millier
-          trillion: Mille milliard
+          billion: milliard
+          million: million
+          quadrillion: million de milliards
+          thousand: millier
+          trillion: billion
           unit: ''
       format:
         delimiter: ''
@@ -185,12 +188,14 @@ fr-CA:
         format: "%n %u"
         units:
           byte:
-            one: Octet
-            other: Octets
+            one: octet
+            other: octets
           gb: Go
           kb: ko
           mb: Mo
           tb: To
+          pb: Po
+          eb: Eo
     percentage:
       format:
         delimiter: ''
