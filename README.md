@@ -129,6 +129,10 @@ Make sure you have included all translations with:
 
     bundle exec rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
 
+Make sure it is normalized with:
+
+    thor locales:normalize LOCALE # or "thor locales:normalize_all"
+
 You can list all complete and incomplete locales:
 
     thor locales:complete
