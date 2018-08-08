@@ -80,6 +80,13 @@ lo:
         few: 'ປະມານ %{count} ປີ '
         many: 'ປະມານ %{count} ປີ '
         other: 'ປະມານ %{count} ປີ '
+      almost_x_years:
+        zero: 'ເກືອບ %{count} ປີ '
+        one: 'ເກືອບ 1 ປີ '
+        two: 'ເກືອບ %{count} ປີ '
+        few: 'ເກືອບ %{count} ປີ '
+        many: 'ເກືອບ %{count} ປີ '
+        other: 'ເກືອບ %{count} ປີ '
       half_a_minute: 'ເຄິ່ງນາທີ '
       less_than_x_minutes:
         zero: 'ນ້ອຍກວ່າ %{count} ນາທີ '
