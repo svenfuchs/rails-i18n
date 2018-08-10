@@ -6,27 +6,27 @@ lo:
         record_invalid: 'ການຢືນຢັນບໍ່ສຳເລັດ : %{errors}'
   date:
     abbr_day_names:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
+    - ອາທິດ
+    - ຈັນ
+    - ອັງຄານ
+    - ພຸດ
+    - ພະຫັດ
+    - ສຸກ
+    - ເສົາ
     abbr_month_names:
     -
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
+    - ມ.ກ
+    - ກ.ພ
+    - ມ.ນ
+    - ມ.ສ
+    - ພ.ພ
+    - ມິ.ຖ
+    - ກ.ລ
+    - ສ.ຫ
+    - ກ.ຍ
+    - ຕ.ລ
+    - ພ.ຈ
+    - ທ.ວ
     day_names:
     - ອາທິດ
     - ຈັນ
@@ -80,6 +80,13 @@ lo:
         few: 'ປະມານ %{count} ປີ '
         many: 'ປະມານ %{count} ປີ '
         other: 'ປະມານ %{count} ປີ '
+      almost_x_years:
+        zero: 'ເກືອບ %{count} ປີ '
+        one: 'ເກືອບ 1 ປີ '
+        two: 'ເກືອບ %{count} ປີ '
+        few: 'ເກືອບ %{count} ປີ '
+        many: 'ເກືອບ %{count} ປີ '
+        other: 'ເກືອບ %{count} ປີ '
       half_a_minute: 'ເຄິ່ງນາທີ '
       less_than_x_minutes:
         zero: 'ນ້ອຍກວ່າ %{count} ນາທີ '
@@ -223,9 +230,9 @@ lo:
       two_words_connector: 'ແລະ '
       words_connector: ", "
   time:
-    am: ''
+    am: 'ເຊົ້າ'
     formats:
       default: "%a %d %b %Y %H:%M:%S %z"
       long: "%d %B %Y %H:%M น."
       short: "%d %b %H:%M น."
-    pm: ''
+    pm: 'ແລງ'
