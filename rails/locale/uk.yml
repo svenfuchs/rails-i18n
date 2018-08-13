@@ -114,7 +114,7 @@ uk:
         one: "%{count} місяць"
         other: "%{count} місяця"
       x_years:
-        few: "%{count} років"
+        few: "%{count} роки"
         many: "%{count} років"
         one: "%{count} рік"
         other: "%{count} року"
