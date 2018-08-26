@@ -148,8 +148,8 @@ pt:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: "."
+        format: "%u %n"
         precision: 2
         separator: ","
         significant: false
