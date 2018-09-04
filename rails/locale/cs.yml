@@ -210,9 +210,9 @@ cs:
       two_words_connector: " a "
       words_connector: ", "
   time:
-    am: am
+    am: dopoledne
     formats:
-      default: "%a %d. %B %Y %H:%M %z"
-      long: "%A %d. %B %Y %H:%M"
-      short: "%d. %m. %H:%M"
-    pm: pm
+      default: "%a %e. %B %Y %H:%M %z"
+      long: "%A %e. %B %Y %H:%M"
+      short: "%e. %-m. %H:%M"
+    pm: odpoledne
