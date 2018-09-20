@@ -87,16 +87,16 @@ de:
         other: mehr als %{count} Jahre
       x_days:
         one: ein Tag
-        other: "%{count} Tage"
+        other: "%{count} Tagen"
       x_minutes:
         one: eine Minute
         other: "%{count} Minuten"
       x_months:
         one: ein Monat
-        other: "%{count} Monate"
+        other: "%{count} Monaten"
       x_years:
         one: ein Jahr
-        other: "%{count} Jahr"
+        other: "%{count} Jahren"
       x_seconds:
         one: eine Sekunde
         other: "%{count} Sekunden"
