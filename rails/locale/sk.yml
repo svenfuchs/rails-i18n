@@ -205,7 +205,7 @@ sk:
   time:
     am: dopoludnia
     formats:
-      default: "%a %d. %B %Y %H:%M %z"
-      long: "%A %d. %B %Y %H:%M"
-      short: "%d.%m. %H:%M"
+      default: "%a %e. %B %Y %H:%M %z"
+      long: "%A %e. %B %Y %H:%M"
+      short: "%e. %-m. %H:%M"
     pm: popoludní
