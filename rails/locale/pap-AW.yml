@@ -116,10 +116,6 @@ pap-AW:
       not_a_number: no ta un number
       not_an_integer: mester ta un number hinté
       odd: mester ta impar
-      record_invalid: ! 'Validashon a faya: %{errors}'
-      restrict_dependent_destroy:
-        one: "No por kita e registro akí pasobra un otro %{record} ta dependé di dje"
-        many: "No por kita e registro akí pasobra otro %{record} ta dependé di dje"
       taken: ta usá kaba
       too_long:
         one: ta muchu largu (máksimo ta 1 karakter)
