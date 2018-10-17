@@ -1,5 +1,12 @@
 # pap-CW merged M. Maduro and Rianne Helings by Richenel Ansano for Suares & Co
 pap-CW:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validashon a faya: %{errors}'
+        restrict_dependent_destroy:
+          one: "No por kita e registro akí pasobra un otro %{record} ta dependé di dje"
+          many: "No por kita e registro akí pasobra otro %{record} ta dependé di dje"
   date:
     abbr_day_names:
     - dum
@@ -97,7 +104,7 @@ pap-CW:
       second: Sekònde
       year: Aña
   errors:
-    format: ! '%{attribute} %{message}'
+    format: '%{attribute} %{message}'
     messages:
       accepted: mester asept'é
       blank: no por keda sin yen'é
@@ -116,10 +123,6 @@ pap-CW:
       not_a_number: no ta un number
       not_an_integer: mester ta un number hinté
       odd: mester ta impar
-      record_invalid: ! 'Validashon a faya: %{errors}'
-      restrict_dependent_destroy:
-        one: "No por kita e registro akí pasobra un otro %{record} ta dependé di dje"
-        many: "No por kita e registro akí pasobra otro %{record} ta dependé di dje"
       taken: ta usá kaba
       too_long:
         one: ta muchu largu (máksimo ta 1 karakter)
