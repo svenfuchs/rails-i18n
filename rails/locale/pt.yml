@@ -204,7 +204,7 @@ pt:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", e"
+      last_word_connector: " e "
       two_words_connector: " e "
       words_connector: ", "
   time:
