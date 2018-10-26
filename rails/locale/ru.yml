@@ -246,6 +246,8 @@ ru:
           kb: КБ
           mb: МБ
           tb: ТБ
+          pb: ПБ
+          eb: ЭБ
     percentage:
       format:
         delimiter: ''
