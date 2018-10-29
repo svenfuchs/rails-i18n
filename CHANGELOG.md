@@ -1,3 +1,27 @@
+## 5.1.2 (2018-10-29)
+- Add Telugu (te) locale
+- Update following locales:
+  - Azerbaijani (az)
+  - Belarusian (be)
+  - Czech (cs)
+  - Danish (da)
+  - English (en)
+  - Spanish (es)
+  - French (fr-*)
+  - Japanese (ja)
+  - Georgian (ka)
+  - Korean (ko)
+  - Lao (lo)
+  - Occitan (oc)
+  - Polish (pl)
+  - Portuguese (pt-*)
+  - Russian (ru)
+  - Slovak (sk)
+  - Ukrainian (uk)
+  - Vietnamese (vi)
+  - Chinese (zh-CN)
+- Remove :fil inflector (#771)
+
 ## 5.1.1 (2018-02-26)
 - Fix #767 (New Chinese pluralization rules break stuff)
 
