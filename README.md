@@ -4,11 +4,11 @@ Rails Locale Data Repository
 [![Gem Version](https://badge.fury.io/rb/rails-i18n.svg)](http://badge.fury.io/rb/rails-i18n)
 [![Build Status](https://secure.travis-ci.org/svenfuchs/rails-i18n.png)](http://travis-ci.org/svenfuchs/rails-i18n)
 
-Central point to collect locale data for use in Ruby on Rails.
+Centralization of locale data collection for Ruby on Rails.
 
-## Gem installation
+## Gem Installation
 
-Add to your Gemfile:
+Include the gem to your Gemfile:
 
     gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
     gem 'rails-i18n', '~> 4.0' # For 4.0.x
@@ -17,20 +17,17 @@ Add to your Gemfile:
     gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x' # For 4.x
     gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-3-x' # For 3.x
 
-or run this command:
+Alternatively, execute the following command:
 
     gem install rails-i18n -v '~> 5.1' # For  For 5.0.x, 5.1.x and 5.2.x
     gem install rails-i18n -v '~> 4.0' # For 4.0.x
     gem install rails-i18n -v '~> 3.0' # For 3.x
 
-Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
+Note that your Ruby on Rails version must be 3.0 or higher in order to install the `rails-i18n` gem. For rails 2.x, install it manually as described in the Manual Installation section below.
 
 ## Configuration
 
-By default `rails-i18n` loads all locale files, pluralization and
-transliteration rules available in the gem. This behaviour can be changed, if you
-specify in `config/environments/*` the locales which have to be loaded via
-`I18n.available_locales` option:
+`rails-i18n` gem initially loads all available locale files, pluralization and transliteration rules. This default behaviour can be changed. If you specify in `config/environments/*` the locales which have to be loaded via `I18n.available_locales` option:
 
     config.i18n.available_locales = ['es-CO', :de]
 
@@ -38,9 +35,9 @@ or
 
     config.i18n.available_locales = :nl
 
-## Manual installation
+## Manual Installation
 
-Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into the `config/locales` directory of your Rails application.
+Download desired locale files found in [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) directory and move them into the `config/locales` directory of your Rails application.
 
 If any translation doesn't suit well to the requirements of your application, edit them or add your own locale files.
 
@@ -52,7 +49,7 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 
 ## Available Locales
 
-Available locales are:
+Available locales:
 
 > af, ar, az, be, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, de-DE, el, el-CY,
 > en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, en-CY,eo, es,
@@ -62,7 +59,7 @@ Available locales are:
 > pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, sw, ta, te, th, tl, tr, tt, ug,
 > ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
-Complete locales are:
+Complete locales:
 
 > af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
 > es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, id, ja, ka, ml, nb,
@@ -78,7 +75,7 @@ Currently, most locales are incomplete. Typically they lack the following keys:
 
 We always welcome your contributions!
 
-## Currency symbols
+## Currency Symbols
 
 Some locales have the symbol of the currency (e.g. `€`) under the key `number.currency.format.unit`,
 while others have the code (e.g. `CHF`). The value of the key depends on the widespread adoption of
@@ -87,7 +84,7 @@ the unicode currency symbols by fonts.
 For example the Turkish Lira sign (`₺`) was recently added in Unicode 6.2 and while most popular
 fonts have a glyph, there are still many fonts that will not render the character correctly.
 
-If you want to provide a different value, in a Rails app, you can create your own locale file under
+If you want to provide a different value, you can create a custom locale file under
 `config/locales/tr.yml` and override the respective key:
 
 ```YAML
@@ -98,29 +95,29 @@ tr:
         unit: TL
 ```
 
-## How to contribute
+## How to Contribute
 
-### Quick contribution
+### Quick Contribution
 
-If you are familiar with GitHub operations, follow the procedures described in the subsequent sections.
+If you are familiar with GitHub operations, then follow the procedures described in the subsequent sections.
 
-If you are not,
+If not,
 
 * Save your locale data on the [Gist](http://gist.github.com).
 * Open an issue with reference to the Gist you created.
 
-### Fetch the `rails-i18n` repository
+### Fetching the `rails-i18n` Repository
 
 * Get a github account and Git program if you haven't. See [Help.Github](http://help.github.com/) for instructions.
 * Fork `svenfuchs/rails-i18n` repository and clone it into your PC.
 
-### Create or edit your locale file
+### Creating or Editing your Locale File
 
 * Have a look in `rails/locale/en.yml`, which should be used as the base of your translation.
 * Create or edit your locale file.
   Please pay attention to save your files as UTF-8.
 
-### Test your locale file
+### Testing your Locale File
 
 Before committing and pushing your changes, test the integrity of your locale file.
 
