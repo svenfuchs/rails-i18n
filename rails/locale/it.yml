@@ -109,35 +109,35 @@ it:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: deve essere accettata
-      blank: non può essere lasciato in bianco
-      present: deve essere lasciato in bianco
-      confirmation: non coincide con %{attribute}
-      empty: non può essere vuoto
-      equal_to: deve essere uguale a %{count}
-      even: deve essere pari
-      exclusion: è riservato
+      accepted: ": il campo deve essere accettato"
+      blank: ": il campo non può essere lasciato in bianco"
+      present: deve essere un campo presente
+      confirmation: ": l'attributo non coincide con il campo %{attribute}"
+      empty: non può essere un campo vuoto
+      equal_to: ": la lunghezza del campo deve essere uguale a %{count}"
+      even: deve essere un numero pari
+      exclusion: è campo riservato
       greater_than: deve essere maggiore di %{count}
       greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
-      inclusion: non è compreso tra le opzioni disponibili
-      invalid: non è valido
+      inclusion: ": il valore del campo non è compreso tra le opzioni disponibili"
+      invalid: ": il campo non è valido"
       less_than: deve essere minore di %{count}
       less_than_or_equal_to: deve essere minore o uguale a %{count}
       not_a_number: non è un numero
       not_an_integer: non è un numero intero
-      odd: deve essere dispari
+      odd: deve essere un numero dispari
       required: deve esistere
-      taken: è già presente
+      taken: è un valore già presente
       too_long:
-        one: è troppo lungo (il massimo è 1 carattere)
-        other: è troppo lungo (il massimo è %{count} caratteri)
+        one: ": il campo è troppo lungo (il massimo è 1 carattere)"
+        other: ": il campo è troppo lungo (il massimo è %{count} caratteri)"
       too_short:
-        one: è troppo corto (il minimo è 1 carattere)
-        other: è troppo corto (il minimo è %{count} caratteri)
+        one: ": il campo è troppo corto (il minimo è 1 carattere)"
+        other: ": il campo è troppo corto (il minimo è %{count} caratteri)"
       wrong_length:
-        one: è della lunghezza sbagliata (deve essere di 1 carattere)
-        other: è della lunghezza sbagliata (deve essere di %{count} caratteri)
-      other_than: devono essere di numero diverso da %{count}
+        one: ": il campo è della lunghezza sbagliata (deve essere di 1 carattere)"
+        other: ": il campo è della lunghezza sbagliata (deve essere di %{count} caratteri)"
+      other_than: ": la lunghezza deve essere diverso da %{count}"
     template:
       body: 'Ricontrolla i seguenti campi:'
       header:
