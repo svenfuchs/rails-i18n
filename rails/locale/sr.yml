@@ -142,9 +142,11 @@ sr:
       invalid: није исправан
       less_than: мора бити мањи од %{count}
       less_than_or_equal_to: мора бити мањи или једнак %{count}
+      model_invalid: 'Валидација није успела: %{errors}'
       not_a_number: није број
       not_an_integer: није цео број
       odd: мора бити непаран
+      required: мора постојати
       taken: је већ заузет
       too_long:
         one: је предугачак (максимум је %{count} знак)
