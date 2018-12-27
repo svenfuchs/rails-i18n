@@ -41,18 +41,18 @@ lv:
       short: "%e. %B"
     month_names:
     -
-    - janvāris
-    - februāris
-    - marts
-    - aprīlis
-    - maijs
-    - jūnijs
-    - jūlijs
-    - augusts
-    - septembris
-    - oktobris
-    - novembris
-    - decembris
+    - janvārī
+    - ferbruārī
+    - martā
+    - aprīlī
+    - maijā
+    - jūnijā
+    - jūlijā
+    - augustā
+    - septembrī
+    - oktobrī
+    - novembrī
+    - decembrī
     order:
     - :year
     - :month
