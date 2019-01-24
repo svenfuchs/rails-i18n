@@ -17,7 +17,7 @@ nl:
     - vr
     - za
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mrt
@@ -43,7 +43,7 @@ nl:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - januari
     - februari
     - maart
@@ -75,43 +75,42 @@ nl:
         one: bijna een jaar
         other: bijna %{count} jaar
       half_a_minute: een halve minuut
-      less_than_x_minutes:
-        one: minder dan een minuut
-        other: minder dan %{count} minuten
       less_than_x_seconds:
         one: minder dan een seconde
         other: minder dan %{count} seconden
+      less_than_x_minutes:
+        one: minder dan een minuut
+        other: minder dan %{count} minuten
       over_x_years:
         one: meer dan een jaar
         other: meer dan %{count} jaar
-      x_days:
-        one: 1 dag
-        other: "%{count} dagen"
+      x_seconds:
+        one: 1 seconde
+        other: "%{count} seconden"
       x_minutes:
         one: 1 minuut
         other: "%{count} minuten"
+      x_days:
+        one: 1 dag
+        other: "%{count} dagen"
       x_months:
         one: 1 maand
         other: "%{count} maanden"
       x_years:
         one: 1 jaar
         other: "%{count} jaar"
-      x_seconds:
-        one: 1 seconde
-        other: "%{count} seconden"
     prompts:
-      day: dag
-      hour: uur
-      minute: minuut
-      month: maand
       second: seconde
+      minute: minuut
+      hour: uur
+      day: dag
+      month: maand
       year: jaar
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: moet worden geaccepteerd
       blank: moet opgegeven zijn
-      present: moet leeg zijn
       confirmation: komt niet overeen met %{attribute}
       empty: moet opgegeven zijn
       equal_to: moet gelijk zijn aan %{count}
@@ -123,10 +122,12 @@ nl:
       invalid: is ongeldig
       less_than: moet minder zijn dan %{count}
       less_than_or_equal_to: moet minder dan of gelijk zijn aan %{count}
-      model_invalid: "Validatie mislukt: %{errors}"
+      model_invalid: 'Validatie mislukt: %{errors}'
       not_a_number: is geen getal
       not_an_integer: moet een geheel getal zijn
       odd: moet oneven zijn
+      other_than: moet anders zijn dan %{count}
+      present: moet leeg zijn
       required: moet bestaan
       taken: is al in gebruik
       too_long:
@@ -138,7 +139,6 @@ nl:
       wrong_length:
         one: heeft onjuiste lengte (moet 1 teken lang zijn)
         other: heeft onjuiste lengte (moet %{count} tekens lang zijn)
-      other_than: moet anders zijn dan %{count}
     template:
       body: 'Er zijn problemen met de volgende velden:'
       header:

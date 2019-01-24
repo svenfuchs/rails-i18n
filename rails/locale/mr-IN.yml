@@ -17,7 +17,7 @@ mr-IN:
     - शनि
     - रवि
     abbr_month_names:
-    -
+    - 
     - जाने
     - फेब्रु
     - मार्च
@@ -43,7 +43,7 @@ mr-IN:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - जानेवारी
     - फेब्रुवारी
     - मार्च
@@ -75,40 +75,39 @@ mr-IN:
         one: जवळजवळ एक वर्ष
         other: जवळजवळ %{count} वर्ष
       half_a_minute: अर्धा मिनिट
-      less_than_x_minutes:
-        one: एका मिनिटापेक्षा कमी
-        other: "%{count} मिनिटापेक्षा कमी"
       less_than_x_seconds:
         one: एक सेकंद पेक्षा कमी
         other: "%{count} सेकंद पेक्षा कमी"
+      less_than_x_minutes:
+        one: एका मिनिटापेक्षा कमी
+        other: "%{count} मिनिटापेक्षा कमी"
       over_x_years:
         one: एका वर्षापेक्षा जास्त काळ
         other: "%{count} वर्षापेक्षा जास्त काळ"
-      x_days:
-        one: एक दिवस
-        other: "%{count} दिवस"
-      x_minutes:
-        one: एक मिनिट
-        other: "%{count} मिनिट"
-      x_months:
-        one: एक महिना
-        other: "%{count} महिना"
       x_seconds:
         one: एक सेकंद
         other: "%{count} सेकंद"
+      x_minutes:
+        one: एक मिनिट
+        other: "%{count} मिनिट"
+      x_days:
+        one: एक दिवस
+        other: "%{count} दिवस"
+      x_months:
+        one: एक महिना
+        other: "%{count} महिना"
     prompts:
-      day: दिवस
-      hour: तास
-      minute: मिनिट
-      month: महिना
       second: सेकंद
+      minute: मिनिट
+      hour: तास
+      day: दिवस
+      month: महिना
       year: वर्ष
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: मान्य केले पाहिजे
       blank: रिक्त ठेवता येणार नाही
-      present: रिक्त असणे आवश्यक आहे
       confirmation: "%{attribute} जुळत नाही"
       empty: रिक्त असू शकत नाही
       equal_to: "%{count} समान असणे आवश्यक"
@@ -123,6 +122,8 @@ mr-IN:
       not_a_number: क्रमांक नाही
       not_an_integer: पूर्णांक असणे आवश्यक आहे
       odd: विषम संख्या असणे आवश्यक आहे
+      other_than: "%{count} पेक्षा इतर असणे आवश्यक आहे"
+      present: रिक्त असणे आवश्यक आहे
       taken: यापूर्वीच घेतले गेले आहे
       too_long:
         one: खूप लांब आहे (जास्तीत जास्त एक वर्ण परवानगी आहे)
@@ -133,7 +134,6 @@ mr-IN:
       wrong_length:
         one: लांबी चुक आहे (एक वर्ण असणे आवश्यक आहे)
         other: लांबी चुक आहे (%{count} वर्ण असणे आवश्यक आहे)
-      other_than: "%{count} पेक्षा इतर असणे आवश्यक आहे"
     template:
       body: 'खालील फील्ड सह समस्या होते:'
       header:

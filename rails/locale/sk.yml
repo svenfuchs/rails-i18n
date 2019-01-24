@@ -14,7 +14,7 @@ sk:
     - Pi
     - So
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -40,7 +40,7 @@ sk:
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - Január
     - Február
     - Marec
@@ -76,40 +76,40 @@ sk:
         few: takmer %{count} rokmi
         other: takmer %{count} rokmi
       half_a_minute: pol minútou
-      less_than_x_minutes:
-        one: necelou minútou
-        few: necelými %{count} minútami
-        other: necelými %{count} minútami
       less_than_x_seconds:
         one: necelou sekundou
         few: necelými %{count} sekundami
         other: necelými %{count} sekundami
+      less_than_x_minutes:
+        one: necelou minútou
+        few: necelými %{count} minútami
+        other: necelými %{count} minútami
       over_x_years:
         one: viac ako rokom
         few: viac ako %{count} rokmi
         other: viac ako %{count} rokmi
-      x_days:
-        one: dňom
-        few: "%{count} dňami"
-        other: "%{count} dňami"
-      x_minutes:
-        one: minútou
-        few: "%{count} minútami"
-        other: "%{count} minútami"
-      x_months:
-        one: mesiacom
-        few: "%{count} mesiacmi"
-        other: "%{count} mesiacmi"
       x_seconds:
         one: sekundou
         few: "%{count} sekundami"
         other: "%{count} sekundami"
+      x_minutes:
+        one: minútou
+        few: "%{count} minútami"
+        other: "%{count} minútami"
+      x_days:
+        one: dňom
+        few: "%{count} dňami"
+        other: "%{count} dňami"
+      x_months:
+        one: mesiacom
+        few: "%{count} mesiacmi"
+        other: "%{count} mesiacmi"
     prompts:
-      day: Deň
-      hour: Hodina
-      minute: Minúta
-      month: Mesiac
       second: Sekunda
+      minute: Minúta
+      hour: Hodina
+      day: Deň
+      month: Mesiac
       year: Rok
   errors:
     format: "%{attribute} %{message}"

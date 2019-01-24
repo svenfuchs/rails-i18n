@@ -5,8 +5,9 @@ fa:
       messages:
         record_invalid: رکورد نامعتبر است %{errors}
         restrict_dependent_destroy:
+          has_one: نمی توان رکورد را حذف کرد بخاطر اینکه یک %{record} وابسته وجود
+            دارد
           has_many: نمی توان رکورد را حذف کرد بخاطر اینکه %{record} وابسته وجود دارد
-          has_one: نمی توان رکورد را حذف کرد بخاطر اینکه یک %{record} وابسته وجود دارد
   date:
     abbr_day_names:
     - ی
@@ -17,7 +18,7 @@ fa:
     - ج
     - ش
     abbr_month_names:
-    -
+    - 
     - ژانویه
     - فوریه
     - مارس
@@ -43,7 +44,7 @@ fa:
       long: "%e %B %Y"
       short: "%m/%d"
     month_names:
-    -
+    - 
     - ژانویه
     - فوریه
     - مارس
@@ -75,36 +76,36 @@ fa:
         one: حدود یک سال
         other: حدود %{count} سال
       half_a_minute: نیم دقیقه
-      less_than_x_minutes:
-        one: کمتر از یک دقیقه
-        other: کمتر از %{count} دقیقه
       less_than_x_seconds:
         one: یک ثانیه
         other: کمتر  از %{count} ثانیه
+      less_than_x_minutes:
+        one: کمتر از یک دقیقه
+        other: کمتر از %{count} دقیقه
       over_x_years:
         one: بیش از یک سال
         other: بیش از %{count} سال
-      x_days:
-        one: یک روز
-        other: "%{count} روز"
-      x_minutes:
-        one: یک دقیقه
-        other: "%{count} دقیقه"
-      x_months:
-        one: یک ماه
-        other: "%{count} ماه"
       x_seconds:
         one: یک ثانیه
         other: "%{count} ثانیه"
+      x_minutes:
+        one: یک دقیقه
+        other: "%{count} دقیقه"
+      x_days:
+        one: یک روز
+        other: "%{count} روز"
+      x_months:
+        one: یک ماه
+        other: "%{count} ماه"
       x_years:
         one: 1 سال
         other: "%{count} سال"
     prompts:
-      day: روز
-      hour: ساعت
-      minute: دقیقه
-      month: ماه
       second: ثانیه
+      minute: دقیقه
+      hour: ساعت
+      day: روز
+      month: ماه
       year: سال
   errors:
     format: "%{attribute} %{message}"
@@ -122,7 +123,7 @@ fa:
       invalid: نامعتبر است
       less_than: باید کمتر از %{count} باشد
       less_than_or_equal_to: باید کمتر یا برابر %{count} باشد
-      model_invalid: "رکورد نامعتبر است %{errors}"
+      model_invalid: رکورد نامعتبر است %{errors}
       not_a_number: عدد نیست
       not_an_integer: عدد صحیح نیست
       odd: باید فرد باشد
@@ -134,7 +135,7 @@ fa:
       too_short: کوتاه است (حداقل %{count} کاراکتر)
       wrong_length: نااندازه است (باید %{count} کاراکتر باشد)
     template:
-      body: "موارد زیر مشکل داشت:"
+      body: 'موارد زیر مشکل داشت:'
       header:
         one: 1 خطا جلوی ذخیره این %{model} را گرفت
         other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
@@ -170,9 +171,9 @@ fa:
           quadrillion: کادریلیون
           thousand: هزار
           trillion: تریلیون
-          unit: ""
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 1
         significant: true
         strip_insignificant_zeros: true
@@ -188,10 +189,10 @@ fa:
           tb: ترابایت
     percentage:
       format:
-        delimiter: ""
+        delimiter: ''
     precision:
       format:
-        delimiter: ""
+        delimiter: ''
   support:
     array:
       last_word_connector: " و "

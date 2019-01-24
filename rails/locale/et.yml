@@ -5,8 +5,8 @@ et:
       messages:
         record_invalid: 'Valideerimine ebaõnnestus: %{errors}'
         restrict_dependent_destroy:
-          has_one: "Ei saa kirjet kustutada kuna sõltuv %{record} on olemas"
-          has_many: "Ei saa kirjet kustutada kuna sõltuvad %{record} on olemas"
+          has_one: Ei saa kirjet kustutada kuna sõltuv %{record} on olemas
+          has_many: Ei saa kirjet kustutada kuna sõltuvad %{record} on olemas
   date:
     abbr_day_names:
     - P
@@ -17,7 +17,7 @@ et:
     - R
     - L
     abbr_month_names:
-    -
+    - 
     - jaan.
     - veebr.
     - märts
@@ -43,7 +43,7 @@ et:
       long: "%d. %B %Y"
       short: "%d.%m.%y"
     month_names:
-    -
+    - 
     - jaanuar
     - veebruar
     - märts
@@ -75,43 +75,42 @@ et:
         one: peaaegu üks aasta
         other: peaaegu %{count} aastat
       half_a_minute: pool minutit
-      less_than_x_minutes:
-        one: vähem kui %{count} minut
-        other: vähem kui %{count} minutit
       less_than_x_seconds:
         one: vähem kui %{count} sekund
         other: vähem kui %{count} sekundit
+      less_than_x_minutes:
+        one: vähem kui %{count} minut
+        other: vähem kui %{count} minutit
       over_x_years:
         one: üle %{count} aasta
         other: üle %{count} aasta
-      x_days:
-        one: "%{count} päev"
-        other: "%{count} päeva"
+      x_seconds:
+        one: "%{count} sekund"
+        other: "%{count} sekundit"
       x_minutes:
         one: "%{count} minut"
         other: "%{count} minutit"
+      x_days:
+        one: "%{count} päev"
+        other: "%{count} päeva"
       x_months:
         one: "%{count} kuu"
         other: "%{count} kuud"
       x_years:
         one: "%{count} aasta"
         other: "%{count} aastat"
-      x_seconds:
-        one: "%{count} sekund"
-        other: "%{count} sekundit"
     prompts:
-      day: Päev
-      hour: Tunde
-      minute: Minutit
-      month: Kuu
       second: Sekundit
+      minute: Minutit
+      hour: Tunde
+      day: Päev
+      month: Kuu
       year: Aasta
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: peab olema heaks kiidetud
       blank: on täitmata
-      present: peab olema täitmata
       confirmation: ei vasta kinnitusele
       empty: on tühi
       equal_to: peab olema võrdne arvuga %{count}
@@ -123,16 +122,17 @@ et:
       invalid: ei ole korrektne
       less_than: peab olema vähem kui %{count}
       less_than_or_equal_to: peab olema vähem või võrdne arvuga %{count}
-      model_invalid: "Valideerimine ebaõnnestus: %{errors}"
+      model_invalid: 'Valideerimine ebaõnnestus: %{errors}'
       not_a_number: ei ole number
       not_an_integer: peab olema täisarv
       odd: peab olema paaritu arv
+      other_than: peab olema midagi muud kui %{count}
+      present: peab olema täitmata
       required: peab olemas olema
       taken: on juba võetud
       too_long: on liiga pikk (maksimum on %{count} tähemärki)
       too_short: on liiga lühike (miinimum on %{count} tähemärki)
       wrong_length: on vale pikkusega (peab olema %{count} tähemärki)
-      other_than: peab olema midagi muud kui %{count}
     template:
       body: 'Probleeme ilmnes järgmiste väljadega:'
       header:

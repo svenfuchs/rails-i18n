@@ -17,7 +17,7 @@ pt-BR:
     - Sex
     - Sáb
     abbr_month_names:
-    -
+    - 
     - Jan
     - Fev
     - Mar
@@ -43,7 +43,7 @@ pt-BR:
       long: "%d de %B de %Y"
       short: "%d de %B"
     month_names:
-    -
+    - 
     - Janeiro
     - Fevereiro
     - Março
@@ -75,43 +75,42 @@ pt-BR:
         one: quase 1 ano
         other: quase %{count} anos
       half_a_minute: meio minuto
-      less_than_x_minutes:
-        one: menos de um minuto
-        other: menos de %{count} minutos
       less_than_x_seconds:
         one: menos de 1 segundo
         other: menos de %{count} segundos
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
       over_x_years:
         one: mais de 1 ano
         other: mais de %{count} anos
-      x_days:
-        one: 1 dia
-        other: "%{count} dias"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
       x_minutes:
         one: 1 minuto
         other: "%{count} minutos"
+      x_days:
+        one: 1 dia
+        other: "%{count} dias"
       x_months:
         one: 1 mês
         other: "%{count} meses"
       x_years:
         one: 1 ano
         other: "%{count} anos"
-      x_seconds:
-        one: 1 segundo
-        other: "%{count} segundos"
     prompts:
-      day: Dia
-      hour: Hora
-      minute: Minuto
-      month: Mês
       second: Segundo
+      minute: Minuto
+      hour: Hora
+      day: Dia
+      month: Mês
       year: Ano
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: deve ser aceito
       blank: não pode ficar em branco
-      present: deve ficar em branco
       confirmation: não é igual a %{attribute}
       empty: não pode ficar vazio
       equal_to: deve ser igual a %{count}
@@ -127,6 +126,8 @@ pt-BR:
       not_a_number: não é um número
       not_an_integer: não é um número inteiro
       odd: deve ser ímpar
+      other_than: deve ser diferente de %{count}
+      present: deve ficar em branco
       required: é obrigatório(a)
       taken: já está em uso
       too_long:
@@ -138,7 +139,6 @@ pt-BR:
       wrong_length:
         one: não possui o tamanho esperado (1 caracter)
         other: não possui o tamanho esperado (%{count} caracteres)
-      other_than: deve ser diferente de %{count}
     template:
       body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
       header:
@@ -186,7 +186,7 @@ pt-BR:
             other: trilhões
           unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
@@ -196,12 +196,12 @@ pt-BR:
           byte:
             one: Byte
             other: Bytes
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
-          tb: TB
           pb: PB
-          eb: EB
+          tb: TB
     percentage:
       format:
         delimiter: "."

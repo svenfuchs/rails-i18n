@@ -3,7 +3,7 @@ zh-TW:
   activerecord:
     errors:
       messages:
-        record_invalid: "校驗失敗: %{errors}"
+        record_invalid: '校驗失敗: %{errors}'
         restrict_dependent_destroy:
           has_one: 由於 %{record} 需要此記錄，所以無法移除記錄
           has_many: 由於 %{record} 需要此記錄，所以無法移除記錄
@@ -17,7 +17,7 @@ zh-TW:
     - 周五
     - 周六
     abbr_month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -43,7 +43,7 @@ zh-TW:
       long: "%Y年%m月%d日"
       short: "%m月%d日"
     month_names:
-    -
+    - 
     - 一月
     - 二月
     - 三月
@@ -75,43 +75,42 @@ zh-TW:
         one: 接近一年
         other: 接近 %{count} 年
       half_a_minute: 半分鐘
-      less_than_x_minutes:
-        one: 不到一分鐘
-        other: 不到 %{count} 分鐘
       less_than_x_seconds:
         one: 不到一秒
         other: 不到 %{count} 秒
+      less_than_x_minutes:
+        one: 不到一分鐘
+        other: 不到 %{count} 分鐘
       over_x_years:
         one: 一年多
         other: "%{count} 年多"
-      x_days:
-        one: 一天
-        other: "%{count} 天"
+      x_seconds:
+        one: 一秒
+        other: "%{count} 秒"
       x_minutes:
         one: 一分鐘
         other: "%{count} 分鐘"
+      x_days:
+        one: 一天
+        other: "%{count} 天"
       x_months:
         one: 一個月
         other: "%{count} 個月"
       x_years:
         one: 一年
         other: "%{count} 年"
-      x_seconds:
-        one: 一秒
-        other: "%{count} 秒"
     prompts:
-      day: 日
-      hour: 時
-      minute: 分
-      month: 月
       second: 秒
+      minute: 分
+      hour: 時
+      day: 日
+      month: 月
       year: 年
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: 必須是可被接受的
       blank: 不能為空白
-      present: 必須是空白
       confirmation: 兩次輸入須一致
       empty: 不能留空
       equal_to: 必須等於 %{count}
@@ -123,10 +122,12 @@ zh-TW:
       invalid: 是無效的
       less_than: 必須小於 %{count}
       less_than_or_equal_to: 必須小於或等於 %{count}
-      model_invalid: "校驗失敗: %{errors}"
+      model_invalid: '校驗失敗: %{errors}'
       not_a_number: 不是數字
       not_an_integer: 必須是整數
       odd: 必須是奇數
+      other_than: 不可以是 %{count} 個字
+      present: 必須是空白
       required: 必須存在
       taken: 已經被使用
       too_long:
@@ -138,7 +139,6 @@ zh-TW:
       wrong_length:
         one: 字數錯誤 (必須是一個字)
         other: 字數錯誤 (必須是 %{count} 個字)
-      other_than: 不可以是 %{count} 個字
     template:
       body: 以下欄位發生問題：
       header:
