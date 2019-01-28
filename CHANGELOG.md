@@ -1,3 +1,13 @@
+## 5.1.3 (2019-01-28)
+
+- Update following locales:
+  - Spanish (es-*)
+  - English (en-*)
+  - Hungarian (hu)
+  - Hebrew (he)
+  - Cyrillic Serbian (sr)
+  - Farsi/Persian (fa)
+
 ## 5.1.2 (2018-10-29)
 - Add Telugu (te) locale
 - Update following locales:
