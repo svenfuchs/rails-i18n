@@ -10,6 +10,7 @@ Centralization of locale data collection for Ruby on Rails.
 
 Include the gem to your Gemfile:
 
+    gem 'rails-i18n', '~> 6.0.0.beta1' # For 6.0.0.beta1 or higher
     gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
     gem 'rails-i18n', '~> 4.0' # For 4.0.x
     gem 'rails-i18n', '~> 3.0' # For 3.x
@@ -19,6 +20,7 @@ Include the gem to your Gemfile:
 
 Alternatively, execute the following command:
 
+    gem install rails-i18n -v '~> 6.0.0.beta1' # For 6.0.0.beta1 or higher
     gem install rails-i18n -v '~> 5.1' # For  For 5.0.x, 5.1.x and 5.2.x
     gem install rails-i18n -v '~> 4.0' # For 4.0.x
     gem install rails-i18n -v '~> 3.0' # For 3.x
