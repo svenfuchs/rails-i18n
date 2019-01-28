@@ -1,3 +1,9 @@
+## 6.0.0.beta1 (2019-01-28)
+
+- Update rails-i18n.gemspec to use Railties 6.0.0.beta1
+- Update Gemfile
+- Update .travis.yml
+
 ## 5.1.3 (2019-01-28)
 
 - Update following locales:
