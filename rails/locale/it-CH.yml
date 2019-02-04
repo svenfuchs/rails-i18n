@@ -14,7 +14,7 @@ it-CH:
     - Ven
     - Sab
     abbr_month_names:
-    -
+    - 
     - Gen
     - Feb
     - Mar
@@ -40,7 +40,7 @@ it-CH:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - Gennaio
     - Febbraio
     - Marzo
@@ -72,33 +72,33 @@ it-CH:
         one: circa 1 anno
         other: circa %{count} anni
       half_a_minute: mezzo minuto
-      less_than_x_minutes:
-        one: meno di un minuto
-        other: meno di %{count} minuti
       less_than_x_seconds:
         one: meno di un secondo
         other: meno di %{count} secondi
+      less_than_x_minutes:
+        one: meno di un minuto
+        other: meno di %{count} minuti
       over_x_years:
         one: oltre un anno
         other: oltre %{count} anni
-      x_days:
-        one: 1 giorno
-        other: "%{count} giorni"
-      x_minutes:
-        one: 1 minuto
-        other: "%{count} minuti"
-      x_months:
-        one: 1 mese
-        other: "%{count} mesi"
       x_seconds:
         one: 1 secondo
         other: "%{count} secondi"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minuti"
+      x_days:
+        one: 1 giorno
+        other: "%{count} giorni"
+      x_months:
+        one: 1 mese
+        other: "%{count} mesi"
     prompts:
-      day: Giorno
-      hour: Ora
-      minute: Minuto
-      month: Mese
       second: Secondi
+      minute: Minuto
+      hour: Ora
+      day: Giorno
+      month: Mese
       year: Anno
   errors:
     format: "%{attribute} %{message}"

@@ -14,7 +14,7 @@ mn:
     - Ба
     - Бя
     abbr_month_names:
-    -
+    - 
     - 1 сар
     - 2 сар
     - 3 сар
@@ -40,7 +40,7 @@ mn:
       long: "%Y %B %d"
       short: "%y-%m-%d"
     month_names:
-    -
+    - 
     - 1 сар
     - 2 сар
     - 3 сар
@@ -72,33 +72,33 @@ mn:
         one: бараг 1 жил
         other: бараг %{count} жил
       half_a_minute: хагас минут
-      less_than_x_minutes:
-        one: 1 минутаас бага
-        other: "%{count} минутаас бага"
       less_than_x_seconds:
         one: 1 секундээс бага
         other: "%{count} секундээс бага"
+      less_than_x_minutes:
+        one: 1 минутаас бага
+        other: "%{count} минутаас бага"
       over_x_years:
         one: 1 жилээс илүү
         other: "%{count} жилээс илүү"
-      x_days:
-        one: 1 өдөр
-        other: "%{count} өдөр"
-      x_minutes:
-        one: 1 минут
-        other: "%{count} минут"
-      x_months:
-        one: 1 сар
-        other: "%{count} сар"
       x_seconds:
         one: 1 секунд
         other: "%{count} секунд"
+      x_minutes:
+        one: 1 минут
+        other: "%{count} минут"
+      x_days:
+        one: 1 өдөр
+        other: "%{count} өдөр"
+      x_months:
+        one: 1 сар
+        other: "%{count} сар"
     prompts:
-      day: Өдөр
-      hour: Цаг
-      minute: Минут
-      month: Сар
       second: Секунд
+      minute: Минут
+      hour: Цаг
+      day: Өдөр
+      month: Сар
       year: Жил
   errors:
     format: "%{attribute} %{message}"

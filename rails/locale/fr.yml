@@ -5,8 +5,10 @@ fr:
       messages:
         record_invalid: 'La validation a échoué : %{errors}'
         restrict_dependent_destroy:
-          has_one: "Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record} dépendant(e) existe"
-          has_many: "Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent"
+          has_one: Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record}
+            dépendant(e) existe
+          has_many: Vous ne pouvez pas supprimer l'enregistrement parce que les %{record}
+            dépendants existent
   date:
     abbr_day_names:
     - dim
@@ -17,7 +19,7 @@ fr:
     - ven
     - sam
     abbr_month_names:
-    -
+    - 
     - jan.
     - fév.
     - mar.
@@ -40,10 +42,10 @@ fr:
     - samedi
     formats:
       default: "%d/%m/%Y"
-      short: "%e %b"
       long: "%e %B %Y"
+      short: "%e %b"
     month_names:
-    -
+    - 
     - janvier
     - février
     - mars
@@ -75,45 +77,44 @@ fr:
         one: presqu'un an
         other: presque %{count} ans
       half_a_minute: une demi-minute
-      less_than_x_minutes:
-        zero: moins d'une minute
-        one: moins d'une minute
-        other: moins de %{count} minutes
       less_than_x_seconds:
         zero: moins d'une seconde
         one: moins d'une seconde
         other: moins de %{count} secondes
+      less_than_x_minutes:
+        zero: moins d'une minute
+        one: moins d'une minute
+        other: moins de %{count} minutes
       over_x_years:
         one: plus d'un an
         other: plus de %{count} ans
-      x_days:
-        one: 1 jour
-        other: "%{count} jours"
+      x_seconds:
+        one: 1 seconde
+        other: "%{count} secondes"
       x_minutes:
         one: 1 minute
         other: "%{count} minutes"
+      x_days:
+        one: 1 jour
+        other: "%{count} jours"
       x_months:
         one: 1 mois
         other: "%{count} mois"
       x_years:
         one: 1 an
         other: "%{count} ans"
-      x_seconds:
-        one: 1 seconde
-        other: "%{count} secondes"
     prompts:
-      day: Jour
-      hour: Heure
-      minute: Minute
-      month: Mois
       second: Seconde
+      minute: Minute
+      hour: Heure
+      day: Jour
+      month: Mois
       year: Année
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: doit être accepté(e)
       blank: doit être rempli(e)
-      present: doit être vide
       confirmation: ne concorde pas avec %{attribute}
       empty: doit être rempli(e)
       equal_to: doit être égal à %{count}
@@ -125,10 +126,12 @@ fr:
       invalid: n'est pas valide
       less_than: doit être inférieur à %{count}
       less_than_or_equal_to: doit être inférieur ou égal à %{count}
-      model_invalid: "Validation échouée : %{errors}"
+      model_invalid: 'Validation échouée : %{errors}'
       not_a_number: n'est pas un nombre
       not_an_integer: doit être un nombre entier
       odd: doit être impair
+      other_than: doit être différent de %{count}
+      present: doit être vide
       required: doit exister
       taken: n'est pas disponible
       too_long:
@@ -140,7 +143,6 @@ fr:
       wrong_length:
         one: ne fait pas la bonne longueur (doit comporter un seul caractère)
         other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
-      other_than: doit être différent de %{count}
     template:
       body: 'Veuillez vérifier les champs suivants : '
       header:
@@ -190,12 +192,12 @@ fr:
           byte:
             one: octet
             other: octets
+          eb: Eo
           gb: Go
           kb: ko
           mb: Mo
-          tb: To
           pb: Po
-          eb: Eo
+          tb: To
     percentage:
       format:
         delimiter: ''

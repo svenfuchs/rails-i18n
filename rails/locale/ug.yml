@@ -17,7 +17,7 @@ ug:
     - جۈمە
     - شەنبە
     abbr_month_names:
-    -
+    - 
     - يانۋار
     - فېۋرال
     - مارت
@@ -43,7 +43,7 @@ ug:
       long: "%Y-%m-%d"
       short: "%b%d"
     month_names:
-    -
+    - 
     - يانۋار
     - فېۋرال
     - مارت
@@ -75,40 +75,39 @@ ug:
         one: بىر يىلغا يېقىن
         other: "%{count} يىلغا يېقىن"
       half_a_minute: يېرىم مىنۇت
-      less_than_x_minutes:
-        one: بىر مىنۇتقا يەتمىگەن
-        other: "%{count} مىنۇتقا يەتمىگەن"
       less_than_x_seconds:
         one: بىر سىكۇنتقا يەتمىگەن
         other: "%{count} سىكنۇتقا"
+      less_than_x_minutes:
+        one: بىر مىنۇتقا يەتمىگەن
+        other: "%{count} مىنۇتقا يەتمىگەن"
       over_x_years:
         one: بىر يىلدىن ئارتۇق
         other: "%{count} يىلدىن ئارتۇق"
-      x_days:
-        one: بىر كۈن
-        other: "%{count} كۈن"
-      x_minutes:
-        one: بىر مىنۇت
-        other: "%{count} مىنۇت"
-      x_months:
-        one: بىر ئاي
-        other: "%{count} ئاي"
       x_seconds:
         one: بىر سىكنۇت
         other: "%{count} سىكنۇت"
+      x_minutes:
+        one: بىر مىنۇت
+        other: "%{count} مىنۇت"
+      x_days:
+        one: بىر كۈن
+        other: "%{count} كۈن"
+      x_months:
+        one: بىر ئاي
+        other: "%{count} ئاي"
     prompts:
-      day: كۈن
-      hour: سائەت
-      minute: مىنۇت
-      month: ئاي
       second: سىكنۇت
+      minute: مىنۇت
+      hour: سائەت
+      day: كۈن
+      month: ئاي
       year: يىل
   errors:
     format: "%{attribute}%{message}"
     messages:
       accepted: تەستىقلاش كېرەك
       blank: بوش بولماسلىقى كېرەك
-      present: بوش بولىشى كېرەك
       confirmation: تەستىق بىلەن ماس ئەمەس
       empty: بوش بولماسلىقى كېرەك
       equal_to: "%{count} غا تەڭ"
@@ -123,6 +122,8 @@ ug:
       not_a_number: سان ئەمەس
       not_an_integer: پۈتۈن سان ئەمەس
       odd: تاق سان
+      other_than: ئىناۋەتسىز ئۇزۇنلۇق (%{count} ھەرىپ بولماسلىقى كېرەك)
+      present: بوش بولىشى كېرەك
       taken: ئىشلىتىپ بولۇنغان
       too_long:
         one: بەك ئۇزۇن (بىر ھەرىپ)
@@ -133,7 +134,6 @@ ug:
       wrong_length:
         one: ئىناۋەتسىز ئۇزۇنلۇق (بىر ھەرىپ)
         other: ئىناۋەتسىز ئۇزۇنلۇق (چوقۇم %{count} ھەرىپ)
-      other_than: ئىناۋەتسىز ئۇزۇنلۇق (%{count} ھەرىپ بولماسلىقى كېرەك)
     template:
       body: تۆۋەندىكى سۆز بۆلەكلىرىدە خاتالىق بار
       header:
