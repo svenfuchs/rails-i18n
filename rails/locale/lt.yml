@@ -17,7 +17,7 @@ lt:
     - Pen
     - Šeš
     abbr_month_names:
-    -
+    - 
     - Sau
     - Vas
     - Kov
@@ -43,7 +43,7 @@ lt:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - sausio
     - vasario
     - kovo
@@ -79,47 +79,46 @@ lt:
         few: beveik %{count} metai
         other: beveik %{count} metų
       half_a_minute: pusė minutės
-      less_than_x_minutes:
-        one: mažiau nei %{count} minutė
-        few: mažiau nei %{count} minutės
-        other: mažiau nei %{count} minučių
       less_than_x_seconds:
         one: mažiau nei %{count} sekundė
         few: mažiau nei %{count} sekundės
         other: mažiau nei %{count} sekundžių
+      less_than_x_minutes:
+        one: mažiau nei %{count} minutė
+        few: mažiau nei %{count} minutės
+        other: mažiau nei %{count} minučių
       over_x_years:
         one: virš %{count} metų
         few: virš %{count} metų
         other: virš %{count} metų
-      x_days:
-        one: "%{count} diena"
-        few: "%{count} dienos"
-        other: "%{count} dienų"
-      x_minutes:
-        one: "%{count} minutė"
-        few: "%{count} minutės"
-        other: "%{count} minučių"
-      x_months:
-        one: "%{count} mėnesis"
-        few: "%{count} mėnesiai"
-        other: "%{count} mėnesių"
       x_seconds:
         one: "%{count} sekundė"
         few: "%{count} sekundės"
         other: "%{count} sekundžių"
+      x_minutes:
+        one: "%{count} minutė"
+        few: "%{count} minutės"
+        other: "%{count} minučių"
+      x_days:
+        one: "%{count} diena"
+        few: "%{count} dienos"
+        other: "%{count} dienų"
+      x_months:
+        one: "%{count} mėnesis"
+        few: "%{count} mėnesiai"
+        other: "%{count} mėnesių"
     prompts:
-      day: Diena
-      hour: Valanda
-      minute: Minutė
-      month: Mėnuo
       second: Sekundės
+      minute: Minutė
+      hour: Valanda
+      day: Diena
+      month: Mėnuo
       year: Metai
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: turi būti patvirtintas
       blank: negali būti tuščias
-      present: turi būti tuščias
       confirmation: neteisingai pakartotas
       empty: negali būti tuščias
       equal_to: turi būti lygus %{count}
@@ -134,6 +133,8 @@ lt:
       not_a_number: ne skaičius
       not_an_integer: privalo būti sveikas skaičius
       odd: turi būti nelyginis
+      other_than: privalo būti kitoks nei %{count}
+      present: turi būti tuščias
       taken: jau užimtas
       too_long:
         one: per ilgas (daugiausiai %{count} simbolis)
@@ -144,7 +145,6 @@ lt:
         few: per trumpas (mažiausiai %{count} simboliai)
         other: per trumpas (mažiausiai %{count} simbolių)
       wrong_length: neteisingo ilgio (turi būti %{count} simboliai)
-      other_than: privalo būti kitoks nei %{count}
     template:
       body: 'Šiuose laukuose yra klaidų:'
       header:

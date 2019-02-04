@@ -17,7 +17,7 @@ vi:
     - Thứ 6
     - Thứ 7
     abbr_month_names:
-    -
+    - 
     - Thg 1
     - Thg 2
     - Thg 3
@@ -43,7 +43,7 @@ vi:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -75,40 +75,39 @@ vi:
         one: gần 1 năm
         other: gần %{count} năm
       half_a_minute: 30 giây
-      less_than_x_minutes:
-        one: chưa tới 1 phút
-        other: chưa tới %{count} phút
       less_than_x_seconds:
         one: chưa tới 1 giây
         other: chưa tới %{count} giây
+      less_than_x_minutes:
+        one: chưa tới 1 phút
+        other: chưa tới %{count} phút
       over_x_years:
         one: hơn 1 năm
         other: hơn %{count} năm
-      x_days:
-        one: 1 ngày
-        other: "%{count} ngày"
-      x_minutes:
-        one: 1 phút
-        other: "%{count} phút"
-      x_months:
-        one: 1 tháng
-        other: "%{count} tháng"
       x_seconds:
         one: 1 giây
         other: "%{count} giây"
+      x_minutes:
+        one: 1 phút
+        other: "%{count} phút"
+      x_days:
+        one: 1 ngày
+        other: "%{count} ngày"
+      x_months:
+        one: 1 tháng
+        other: "%{count} tháng"
     prompts:
-      day: Ngày
-      hour: Giờ
-      minute: Phút
-      month: Tháng
       second: Giây
+      minute: Phút
+      hour: Giờ
+      day: Ngày
+      month: Tháng
       year: Năm
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: phải được đồng ý
       blank: không thể để trắng
-      present: cần phải để trắng
       confirmation: không khớp với xác nhận
       empty: không thể rỗng
       equal_to: phải bằng %{count}
@@ -123,11 +122,12 @@ vi:
       not_a_number: không phải là số
       not_an_integer: phải là một số nguyên
       odd: phải là số lẻ
+      other_than: cần phải khác %{count}
+      present: cần phải để trắng
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)
       wrong_length: độ dài không đúng (phải là %{count} ký tự)
-      other_than: cần phải khác %{count}
     template:
       body: 'Có lỗi với các mục sau:'
       header:
@@ -160,12 +160,12 @@ vi:
       decimal_units:
         format: "%n %u"
         units:
-          unit: ''
           billion: Tỷ
           million: Triệu
           quadrillion: Triệu tỷ
           thousand: Nghìn
           trillion: Nghìn tỷ
+          unit: ''
       format:
         delimiter: ''
         precision: 1

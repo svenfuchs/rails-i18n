@@ -17,7 +17,7 @@ cs:
     - Pá
     - So
     abbr_month_names:
-    -
+    - 
     - led
     - úno
     - bře
@@ -43,7 +43,7 @@ cs:
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - leden
     - únor
     - březen
@@ -79,47 +79,46 @@ cs:
         few: téměř %{count} roky
         other: téměř %{count} roky
       half_a_minute: půl minutou
-      less_than_x_minutes:
-        one: necelou minutou
-        few: ani ne %{count} minutami
-        other: ani ne %{count} minutami
       less_than_x_seconds:
         one: necelou sekundou
         few: ani ne %{count} sekundami
         other: ani ne %{count} sekundami
+      less_than_x_minutes:
+        one: necelou minutou
+        few: ani ne %{count} minutami
+        other: ani ne %{count} minutami
       over_x_years:
         one: více než rokem
         few: více než %{count} roky
         other: více než %{count} roky
-      x_days:
-        one: 24 hodinami
-        few: "%{count} dny"
-        other: "%{count} dny"
-      x_minutes:
-        one: minutou
-        few: "%{count} minutami"
-        other: "%{count} minutami"
-      x_months:
-        one: měsícem
-        few: "%{count} měsíci"
-        other: "%{count} měsíci"
       x_seconds:
         one: sekundou
         few: "%{count} sekundami"
         other: "%{count} sekundami"
+      x_minutes:
+        one: minutou
+        few: "%{count} minutami"
+        other: "%{count} minutami"
+      x_days:
+        one: 24 hodinami
+        few: "%{count} dny"
+        other: "%{count} dny"
+      x_months:
+        one: měsícem
+        few: "%{count} měsíci"
+        other: "%{count} měsíci"
     prompts:
-      day: Den
-      hour: Hodina
-      minute: Minuta
-      month: Měsíc
       second: Sekunda
+      minute: Minuta
+      hour: Hodina
+      day: Den
+      month: Měsíc
       year: Rok
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: musí být potvrzeno
       blank: je povinná položka
-      present: musí být prázdný/á/é
       confirmation: nebylo potvrzeno
       empty: nesmí být prázdný/á/é
       equal_to: musí být rovno %{count}
@@ -134,12 +133,13 @@ cs:
       not_a_number: není číslo
       not_an_integer: musí být celé číslo
       odd: musí být liché číslo
+      other_than: musí být rozdílný/á/é od %{count}
+      present: musí být prázdný/á/é
       required: musí existovat
       taken: již databáze obsahuje
       too_long: je příliš dlouhý/á/é (max. %{count} znaků)
       too_short: je příliš krátký/á/é (min. %{count} znaků)
       wrong_length: nemá správnou délku (očekáváno %{count} znaků)
-      other_than: musí být rozdílný/á/é od %{count}
     template:
       body: 'Následující pole obsahují chybně vyplněné údaje: '
       header:
