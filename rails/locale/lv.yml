@@ -40,19 +40,19 @@ lv:
       long: "%Y. gada %e. %B"
       short: "%e. %B"
     month_names:
-    - 
-    - Janvāris
-    - Februāris
-    - Marts
-    - Aprīlis
-    - Maijs
-    - Jūnijs
-    - Jūlijs
-    - Augusts
-    - Septembris
-    - Oktobris
-    - Novembris
-    - Decembris
+    -
+    - janvārī
+    - ferbruārī
+    - martā
+    - aprīlī
+    - maijā
+    - jūnijā
+    - jūlijā
+    - augustā
+    - septembrī
+    - oktobrī
+    - novembrī
+    - decembrī
     order:
     - :year
     - :month
