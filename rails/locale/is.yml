@@ -17,7 +17,7 @@ is:
     - fös
     - lau
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -43,7 +43,7 @@ is:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    -
+    - 
     - janúar
     - febrúar
     - mars
@@ -75,40 +75,39 @@ is:
         one: næstum 1 ár
         other: næstum %{count} ár
       half_a_minute: hálf mínúta
-      less_than_x_minutes:
-        one: minna en 1 mínúta
-        other: minna en %{count} mínútur
       less_than_x_seconds:
         one: minna en 1 sekúnda
         other: minna en %{count} sekúndur
+      less_than_x_minutes:
+        one: minna en 1 mínúta
+        other: minna en %{count} mínútur
       over_x_years:
         one: meira en 1 ár
         other: meira en %{count} ár
-      x_days:
-        one: 1 dagur
-        other: "%{count} dagar"
-      x_minutes:
-        one: 1 mínúta
-        other: "%{count} mínútur"
-      x_months:
-        one: 1 mánuður
-        other: "%{count} mánuðir"
       x_seconds:
         one: 1 sekúnda
         other: "%{count} sekúndur"
+      x_minutes:
+        one: 1 mínúta
+        other: "%{count} mínútur"
+      x_days:
+        one: 1 dagur
+        other: "%{count} dagar"
+      x_months:
+        one: 1 mánuður
+        other: "%{count} mánuðir"
     prompts:
-      day: Dagur
-      hour: Klukkustund
-      minute: Mínúta
-      month: Mánuður
       second: Sekúnda
+      minute: Mínúta
+      hour: Klukkustund
+      day: Dagur
+      month: Mánuður
       year: Ár
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: þarf að vera tekið gilt
       blank: má ekki vera autt
-      present: verður að vera autt
       confirmation: er ekki jafngilt staðfestingunni
       empty: má ekki vera tómt
       equal_to: þarf að vera jafngilt %{count}
@@ -123,6 +122,8 @@ is:
       not_a_number: er ekki tala
       not_an_integer: þarf að vera heiltala
       odd: þarf að vera oddatala
+      other_than: verður að vera annað en %{count}
+      present: verður að vera autt
       taken: er þegar í notkun
       too_long:
         one: er of langt (má mest vera 1 stafur)
@@ -133,7 +134,6 @@ is:
       wrong_length:
         one: er af rangri lengd (má mest vera 1 stafur)
         other: er af rangri lengd (má mest vera %{count} stafir)
-      other_than: verður að vera annað en %{count}
     template:
       body: 'Villur fundust í eftirfarandi dálkum:'
       header:

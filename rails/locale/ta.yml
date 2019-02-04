@@ -17,7 +17,7 @@ ta:
     - வெள்ளி
     - சனி
     abbr_month_names:
-    -
+    - 
     - ஜன
     - பிப்
     - மார்ச்
@@ -43,7 +43,7 @@ ta:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - ஜனவரி
     - பிப்ரவரி
     - மார்ச்
@@ -75,40 +75,39 @@ ta:
         one: கிட்டத்தட்ட 1  ஆண்டு
         other: கிட்டத்தட்ட %{count}  ஆண்டுகள்
       half_a_minute: அரை நிமிடம்
-      less_than_x_minutes:
-        one: ஒரு நிமிடத்திற்கும் குறைவாக
-        other: குறைவாக %{count} நிமிடங்கள்
       less_than_x_seconds:
         one: ஒரு வினாடிக்கும் குறைவாக
         other: குறைவாக %{count} வினாடிகள்
+      less_than_x_minutes:
+        one: ஒரு நிமிடத்திற்கும் குறைவாக
+        other: குறைவாக %{count} நிமிடங்கள்
       over_x_years:
         one: ஒரு  ஆண்டிற்கு மேலாக
         other: "%{count}  ஆண்டிற்கு மேலாக"
-      x_days:
-        one: 1 நாள்
-        other: "%{count} நாட்கள்"
-      x_minutes:
-        one: 1 நிமிடம்
-        other: "%{count} நிமிடங்கள்"
-      x_months:
-        one: 1 மாதம்
-        other: "%{count} மாதங்கள்"
       x_seconds:
         one: 1 வினாடி
         other: "%{count} விநாடிகள்"
+      x_minutes:
+        one: 1 நிமிடம்
+        other: "%{count} நிமிடங்கள்"
+      x_days:
+        one: 1 நாள்
+        other: "%{count} நாட்கள்"
+      x_months:
+        one: 1 மாதம்
+        other: "%{count} மாதங்கள்"
     prompts:
-      day: நாள்
-      hour: மணி
-      minute: நிமிடம்
-      month: மாதம்
       second: விநாடிகள்
+      minute: நிமிடம்
+      hour: மணி
+      day: நாள்
+      month: மாதம்
       year: ஆண்டு
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: ஏற்கப்பட வேண்டும்
       blank: காலியாக இருக்க முடியாது
-      present: காலியாக இருக்க வேண்டும்
       confirmation: "%{attribute}  பொருந்தவில்லை"
       empty: வெறுமையாக இருக்க முடியாது
       equal_to: "%{count} சமமாக இருக்க வேண்டும்"
@@ -123,6 +122,8 @@ ta:
       not_a_number: ஒரு எண் அல்ல
       not_an_integer: ஒரு முழு எண்ணாக இருக்க வேண்டும்
       odd: ஒற்றைப்படை இருக்க வேண்டும்
+      other_than: "%{count} தவிர வேறு இருக்க வேண்டும்"
+      present: காலியாக இருக்க வேண்டும்
       taken: ஏற்கனவே எடுத்துகொள்ள பட்டது
       too_long:
         one: மிக நீளமாக உள்ளது (அதிகபட்சமாக ஒரு எழுத்து)
@@ -133,7 +134,6 @@ ta:
       wrong_length:
         one: தவறான நீளம் (1 எழுத்து இருக்கவேண்டும்)
         other: தவறான நீளம் (%{count} எழுத்துக்கள் இருக்கவேண்டும்)
-      other_than: "%{count} தவிர வேறு இருக்க வேண்டும்"
     template:
       body: 'பின்வரும் புலங்களில் பிரச்சினைகள் உள்ளது:'
       header:

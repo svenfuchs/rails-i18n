@@ -3,10 +3,10 @@ oc:
   activerecord:
     errors:
       messages:
-        record_invalid: 'La validacion a fracassat : %{errors}'
+        record_invalid: La validacion a fracassat : %{errors}
         restrict_dependent_destroy:
-          has_one: "Podètz pas suprimir l’enregistrament perque i a una dependéncia"
-          has_many: "Podètz pas suprimir l’enregistrament perque i a %{record} dependéncias"
+          has_one: Podètz pas suprimir l’enregistrament perque i a una dependéncia
+          has_many: Podètz pas suprimir l’enregistrament perque i a %{record} dependéncias
   date:
     abbr_day_names:
     - dg
@@ -17,7 +17,7 @@ oc:
     - dv
     - ds
     abbr_month_names:
-    -
+    - 
     - gen
     - feb
     - març
@@ -75,43 +75,42 @@ oc:
         one: quasi un an
         other: quasi %{count} ans
       half_a_minute: mièja minuta
-      less_than_x_minutes:
-        one: mens d’una minuta
-        other: mens de %{count} minutas
       less_than_x_seconds:
         one: mens d’una segonda
         other: mens de %{count} segondas
+      less_than_x_minutes:
+        one: mens d’una minuta
+        other: mens de %{count} minutas
       over_x_years:
         one: mai d’un an
         other: mai de %{count} ans
-      x_days:
-        one: un jorn
-        other: "%{count} jorns"
+      x_seconds:
+        one: una segonda
+        other: "%{count} segondas"
       x_minutes:
         one: una minuta
         other: "%{count} minutas"
+      x_days:
+        one: un jorn
+        other: "%{count} jorns"
       x_months:
         one: un mes
         other: "%{count} meses"
       x_years:
         one: un an
-        other: "%{count} ans" 
-      x_seconds:
-        one: una segonda
-        other: "%{count} segondas"
+        other: "%{count} ans"
     prompts:
-      day: jorn
-      hour: ora
-      minute: minuta
-      month: mes
       second: segonda
+      minute: minuta
+      hour: ora
+      day: jorn
+      month: mes
       year: an
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: deu èsser acceptat
       blank: deu èsser garnit
-      present: deu èsser void
       confirmation: correspond pas a %{attribute}
       empty: pòt pas èsser void
       equal_to: deu èsser egal a %{count}
@@ -123,10 +122,12 @@ oc:
       invalid: es pas valid
       less_than: deu èsser inferior a %{count}
       less_than_or_equal_to: deu èsser inferior o egal a %{count}
-      model_invalid: "Validacion fracassada : %{errors}"
+      model_invalid: Validacion fracassada : %{errors}
       not_a_number: es pas un nombre
       not_an_integer: deu èsser un nombre entièr
       odd: deu èsser un nombre impar
+      other_than: deu èsser diferent de %{count}
+      present: deu èsser void
       required: deu existir
       taken: es pas disponible
       too_long:
@@ -138,9 +139,8 @@ oc:
       wrong_length:
         one: a pas la bona longor (un caractèr solament)
         other: a pas la bona longor (%{count} caractèrs exactament)
-      other_than: deu èsser diferent de %{count}
     template:
-      body: "I a agut de problèmas amb los camps seguents : "
+      body: I a agut de problèmas amb los camps seguents : 
       header:
         one: Impossible d’enregistrar aqueste/a %{model} perque i a 1 error
         other: Impossible d’enregistrar aqueste/a %{model} perque i a %{count} errors
@@ -194,7 +194,7 @@ oc:
           tb: To
     percentage:
       format:
-        delimiter: '%n%'
+        delimiter: "%n%"
     precision:
       format:
         delimiter: ''
@@ -206,7 +206,7 @@ oc:
   time:
     am: am
     formats:
-      default: "Lo %e %b de %Y a %Ho%M %Ss"
-      long: "Lo %a %e %b de %Y a %Ho%M"
+      default: Lo %e %b de %Y a %Ho%M %Ss
+      long: Lo %a %e %b de %Y a %Ho%M
       short: "%e %b %Ho%M"
     pm: pm

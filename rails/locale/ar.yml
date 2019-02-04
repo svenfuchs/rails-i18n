@@ -43,7 +43,7 @@ ar:
       long: "%e %B، %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - يناير
     - فبراير
     - مارس
@@ -91,13 +91,6 @@ ar:
         many: ما يقرب من %{count} سنة
         other: ما يقرب من %{count} سنة
       half_a_minute: نصف دقيقة
-      less_than_x_minutes:
-        zero: أقل من صفر دقائق
-        one: أقل من دقيقة
-        two: أقل من دقيقتان
-        few: أقل من %{count} دقائق
-        many: أقل من %{count} دقيقة
-        other: أقل من %{count} دقيقة
       less_than_x_seconds:
         zero: أقل من صفر ثواني
         one: أقل من ثانية
@@ -105,6 +98,13 @@ ar:
         few: أقل من %{count} ثوان
         many: أقل من %{count} ثانية
         other: أقل من %{count} ثانية
+      less_than_x_minutes:
+        zero: أقل من صفر دقائق
+        one: أقل من دقيقة
+        two: أقل من دقيقتان
+        few: أقل من %{count} دقائق
+        many: أقل من %{count} دقيقة
+        other: أقل من %{count} دقيقة
       over_x_years:
         zero: أكثر من صفر سنوات
         one: أكثر من سنة
@@ -112,27 +112,6 @@ ar:
         few: أكثر من %{count} سنوات
         many: أكثر من %{count} سنة
         other: أكثر من %{count} سنة
-      x_days:
-        zero: صفر أيام
-        one: يوم واحد
-        two: يومان
-        few: "%{count} أيام"
-        many: "%{count} يوم"
-        other: "%{count} يوم"
-      x_minutes:
-        zero: صفر دقائق
-        one: دقيقة واحدة
-        two: دقيقتان
-        few: "%{count} دقائق"
-        many: "%{count} دقيقة"
-        other: "%{count} دقيقة"
-      x_months:
-        zero: صفر أشهر
-        one: شهر واحد
-        two: شهران
-        few: "%{count} أشهر"
-        many: "%{count} شهر"
-        other: "%{count} شهر"
       x_seconds:
         zero: صفر ثواني
         one: ثانية واحدة
@@ -140,33 +119,61 @@ ar:
         few: "%{count} ثوان"
         many: "%{count} ثانية"
         other: "%{count} ثانية"
+      x_minutes:
+        zero: صفر دقائق
+        one: دقيقة واحدة
+        two: دقيقتان
+        few: "%{count} دقائق"
+        many: "%{count} دقيقة"
+        other: "%{count} دقيقة"
+      x_days:
+        zero: صفر أيام
+        one: يوم واحد
+        two: يومان
+        few: "%{count} أيام"
+        many: "%{count} يوم"
+        other: "%{count} يوم"
+      x_months:
+        zero: صفر أشهر
+        one: شهر واحد
+        two: شهران
+        few: "%{count} أشهر"
+        many: "%{count} شهر"
+        other: "%{count} شهر"
     prompts:
-      day: اليوم
-      hour: ساعة
-      minute: دقيقة
-      month: الشهر
       second: ثانية
+      minute: دقيقة
+      hour: ساعة
+      day: اليوم
+      month: الشهر
       year: السنة
   errors:
     format: "%{message}"
     messages:
       accepted: يجب أن تقبل %{attribute}
       blank: لا يمكن أن يكون محتوى %{attribute} فارغاً
-      present:  يجب ترك حقل %{attribute} فارغاً
       confirmation: محتوى %{attribute} لا يتوافق مع %{attribute}
       empty: لا يمكن أن يكون محتوى %{attribute} فارغاً
       equal_to: يجب أن يساوي طول %{attribute} %{count}
       even: يجب أن يكون عدد %{attribute} زوجياً
-      exclusion:  حقل %{attribute} محجوز
+      exclusion: حقل %{attribute} محجوز
       greater_than: ميجب أن يكون عدد %{attribute} أكبر من %{count}
       greater_than_or_equal_to: يجب أن يكون عدد %{attribute} أكبر أو يساوي %{count}
-      inclusion:  "%{attribute} غير وارد في القائمة"
+      inclusion: "%{attribute} غير وارد في القائمة"
       invalid: محتوى %{attribute} غير صالح
       less_than: يجب أن يكون عدد %{attribute} أصغر من %{count}
       less_than_or_equal_to: يجب أن يكون عدد %{attribute} أصغر أو  يساوي %{count}
       not_a_number: يجب أن يكون محتوى %{attribute} رقماً
       not_an_integer: يجب أن يكون عدد %{attribute} عدد صحيحاً
       odd: يجب أن يكون عدد %{attribute} عدداً فردياً
+      other_than:
+        zero: طول %{attribute} يجب ألاّ يكون صفر حرف
+        one: طول %{attribute} يجب ألاّ يكون حرفاً واحداً
+        two: طول %{attribute} يجب ألاّ يكون حرفان
+        few: طول %{attribute} يجب ألاّ يكون %{count} أحرف
+        many: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
+        other: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
+      present: يجب ترك حقل %{attribute} فارغاً
       taken: حقل %{attribute} محجوز مسبقاً
       too_long:
         zero: محتوى %{attribute} أطول من اللّازم (الحد الأقصى هو ولا حرف)
@@ -189,22 +196,15 @@ ar:
         few: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون %{count} أحرف)
         many: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون %{count} حرف)
         other: طول %{attribute} غير مطابق للحد المطلوب (يجب أن يكون %{count} حرف)
-      other_than:
-        zero: طول %{attribute} يجب ألاّ يكون صفر حرف
-        one: طول %{attribute} يجب ألاّ يكون حرفاً واحداً
-        two: طول %{attribute} يجب ألاّ يكون حرفان
-        few: طول %{attribute} يجب ألاّ يكون %{count} أحرف
-        many: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
-        other: طول %{attribute} يجب ألاّ يكون %{count} حرفاً
     template:
-      body: "يُرجى التحقّق من الحقول التّالية:%{attribute}"
+      body: يُرجى التحقّق من الحقول التّالية:%{attribute}
       header:
-        zero: 'ليس بالامكان حفظ %{model} لسبب ولا خطأ.'
-        one: 'ليس بالامكان حفظ %{model} لسبب وجود خطأ واحد.'
-        two: 'ليس بالامكان حفظ %{model} لسبب وجود خطئان.'
-        few: 'ليس بالامكان حفظ %{model} لسبب وجود %{count} أخطاء.'
-        many: 'ليس بالامكان حفظ %{model} لسبب وجود %{count} خطأ.'
-        other: 'ليس بالامكان حفظ %{model} لسبب وجود %{count} خطأ.'
+        zero: ليس بالامكان حفظ %{model} لسبب ولا خطأ.
+        one: ليس بالامكان حفظ %{model} لسبب وجود خطأ واحد.
+        two: ليس بالامكان حفظ %{model} لسبب وجود خطئان.
+        few: ليس بالامكان حفظ %{model} لسبب وجود %{count} أخطاء.
+        many: ليس بالامكان حفظ %{model} لسبب وجود %{count} خطأ.
+        other: ليس بالامكان حفظ %{model} لسبب وجود %{count} خطأ.
   helpers:
     select:
       prompt: يُرجى الاختيار

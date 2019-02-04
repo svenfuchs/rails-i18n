@@ -1,11 +1,13 @@
+---
 sq:
   activerecord:
     errors:
       messages:
-        record_invalid: "Validimi dështoi: %{errors}"
+        record_invalid: 'Validimi dështoi: %{errors}'
         restrict_dependent_destroy:
-          has_one: "Nuk mund të fshini rekordin për shkak se një %{record} i varur ekziston"
-          has_many: "Nuk mund të fshini rekordin për shkak se %{record} të varura ekzistojnë"
+          has_one: Nuk mund të fshini rekordin për shkak se një %{record} i varur
+            ekziston
+          has_many: Nuk mund të fshini rekordin për shkak se %{record} të varura ekzistojnë
   date:
     abbr_day_names:
     - E Diel
@@ -16,7 +18,7 @@ sq:
     - E Premte
     - E Shtunë
     abbr_month_names:
-    -
+    - 
     - Janar
     - Shkurt
     - Mars
@@ -42,7 +44,7 @@ sq:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - Janar
     - Shkurt
     - Mars
@@ -74,40 +76,39 @@ sq:
         one: gati 1 vit
         other: gati %{count} vite
       half_a_minute: gjysëm minute
-      less_than_x_minutes:
-        one: më pak se një minutë
-        other: më pak se %{count} minuta
       less_than_x_seconds:
         one: më pak se 1 sekond
         other: më pak se %{count} sekonda
+      less_than_x_minutes:
+        one: më pak se një minutë
+        other: më pak se %{count} minuta
       over_x_years:
         one: mbi 1 vit
         other: mbi %{count} vite
-      x_days:
-        one: 1 ditë
-        other: "%{count} ditë"
+      x_seconds:
+        one: 1 sekond
+        other: "%{count} sekonda"
       x_minutes:
         one: 1 minutë
         other: "%{count} minuta"
+      x_days:
+        one: 1 ditë
+        other: "%{count} ditë"
       x_months:
         one: 1 muaj
         other: "%{count} muaj"
-      x_seconds:
-        one: 1 sekond
-        other: "%{count} sekonda"  
     prompts:
-      day: Ditë
-      hour: Orë
-      minute: Minutë
-      month: Muaj
       second: Sekond
+      minute: Minutë
+      hour: Orë
+      day: Ditë
+      month: Muaj
       year: Vit
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: duhet të pranohet
       blank: nuk mund të jetë bosh
-      present: duhet të jetë bosh
       confirmation: nuk përputhet me %{attribute}
       empty: nuk mund të jetë bosh
       equal_to: duhet të përputhet me %{count}
@@ -119,10 +120,12 @@ sq:
       invalid: është e palejuar
       less_than: duhet të jetë më pak se %{count}
       less_than_or_equal_to: duhet të jetë më pak ose i barabartë me %{count}
-      model_invalid: "Validimi dështoi: %{errors}"
+      model_invalid: 'Validimi dështoi: %{errors}'
       not_a_number: nuk është numër
       not_an_integer: duhet të jetë numër
       odd: duhet të jetë tek
+      other_than: duhet të jetë më shumë se %{count}
+      present: duhet të jetë bosh
       required: duhet të ekzistojë
       taken: është marrë tashmë
       too_long:
@@ -134,7 +137,6 @@ sq:
       wrong_length:
         one: është gjatësia e gabuar (duhet të jetë 1 shkronjë)
         other: është gjatësia e gabuar (duhet të jetë %{count} shkronja)
-      other_than: duhet të jetë më shumë se %{count}
     template:
       body: 'Kishte probleme me formën e mëposhtme:'
       header:
@@ -156,7 +158,7 @@ sq:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "LEK"
+        unit: LEK
     format:
       delimiter: ","
       precision: 3
