@@ -111,7 +111,7 @@ zh-HK:
     messages:
       accepted: 必定要被接受
       blank: 不可以是空白
-      confirmation: 兩次輸入不一致
+      confirmation: 與 %{attribute} 不一致
       empty: 不可以留空
       equal_to: 必須等於 %{count}
       even: 必須要是雙數

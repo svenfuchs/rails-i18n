@@ -111,7 +111,7 @@ zh-TW:
     messages:
       accepted: 必須是可被接受的
       blank: 不能為空白
-      confirmation: 兩次輸入須一致
+      confirmation: 與 %{attribute} 須一致
       empty: 不能留空
       equal_to: 必須等於 %{count}
       even: 必須是偶數
