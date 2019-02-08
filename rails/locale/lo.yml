@@ -14,7 +14,7 @@ lo:
     - ສຸກ
     - ເສົາ
     abbr_month_names:
-    -
+    - 
     - ມ.ກ
     - ກ.ພ
     - ມ.ນ
@@ -40,7 +40,7 @@ lo:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - ມັງກອນ
     - ກຸມພາ
     - ມີນາ
@@ -88,13 +88,6 @@ lo:
         many: 'ເກືອບ %{count} ປີ '
         other: 'ເກືອບ %{count} ປີ '
       half_a_minute: 'ເຄິ່ງນາທີ '
-      less_than_x_minutes:
-        zero: 'ນ້ອຍກວ່າ %{count} ນາທີ '
-        one: 'ນ້ອຍກວ່າ 1 ນາທີ '
-        two: 'ນ້ອຍກວ່າ %{count} ນາທີ '
-        few: 'ນ້ອຍກວ່າ %{count} ນາທີ '
-        many: 'ນ້ອຍກວ່າ %{count} ນາທີ '
-        other: 'ນ້ອຍກວ່າ %{count} ນາທີ '
       less_than_x_seconds:
         zero: 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
         one: 'ນ້ອຍກວ່າ 1 ວິນາທີ '
@@ -102,6 +95,13 @@ lo:
         few: 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
         many: 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
         other: 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
+      less_than_x_minutes:
+        zero: 'ນ້ອຍກວ່າ %{count} ນາທີ '
+        one: 'ນ້ອຍກວ່າ 1 ນາທີ '
+        two: 'ນ້ອຍກວ່າ %{count} ນາທີ '
+        few: 'ນ້ອຍກວ່າ %{count} ນາທີ '
+        many: 'ນ້ອຍກວ່າ %{count} ນາທີ '
+        other: 'ນ້ອຍກວ່າ %{count} ນາທີ '
       over_x_years:
         zero: 'ຫຼາຍກວ່າ %{count} ປີ '
         one: 'ຫຼາຍກວ່າ 1 ປີ '
@@ -109,27 +109,6 @@ lo:
         few: 'ຫຼາຍກວ່າ %{count} ປີ '
         many: 'ຫຼາຍກວ່າ %{count} ປີ '
         other: 'ຫຼາຍກວ່າ %{count} ປີ '
-      x_days:
-        zero: "%{count} ມື້ "
-        one: '1 ມື້ '
-        two: "%{count} ມື້ "
-        few: "%{count} ມື້ "
-        many: "%{count} ມື້ "
-        other: "%{count} ມື້ "
-      x_minutes:
-        zero: "%{count} ນາທີ "
-        one: '1 ນາທີ '
-        two: "%{count} ນາທີ "
-        few: "%{count} ນາທີ "
-        many: "%{count} ນາທີ "
-        other: "%{count} ນາທີ "
-      x_months:
-        zero: "%{count} ເດືອນ"
-        one: 1 ເດືອນ
-        two: "%{count} ເດືອນ"
-        few: "%{count} ເດືອນ"
-        many: "%{count} ເດືອນ"
-        other: "%{count} ເດືອນ"
       x_seconds:
         zero: "%{count} ວິນາທີ "
         one: '1 ວິນາທີ '
@@ -137,12 +116,33 @@ lo:
         few: "%{count} ວິນາທີ "
         many: "%{count} ວິນາທີ "
         other: "%{count} ວິນາທີ "
+      x_minutes:
+        zero: "%{count} ນາທີ "
+        one: '1 ນາທີ '
+        two: "%{count} ນາທີ "
+        few: "%{count} ນາທີ "
+        many: "%{count} ນາທີ "
+        other: "%{count} ນາທີ "
+      x_days:
+        zero: "%{count} ມື້ "
+        one: '1 ມື້ '
+        two: "%{count} ມື້ "
+        few: "%{count} ມື້ "
+        many: "%{count} ມື້ "
+        other: "%{count} ມື້ "
+      x_months:
+        zero: "%{count} ເດືອນ"
+        one: 1 ເດືອນ
+        two: "%{count} ເດືອນ"
+        few: "%{count} ເດືອນ"
+        many: "%{count} ເດືອນ"
+        other: "%{count} ເດືອນ"
     prompts:
-      day: ວັນ
-      hour: ຊົ່ວໂມງ
-      minute: ນາທີ
-      month: ເດືອນ
       second: ວິນາທີ
+      minute: ນາທີ
+      hour: ຊົ່ວໂມງ
+      day: ວັນ
+      month: ເດືອນ
       year: ປີ
   errors:
     format: "%{attribute} %{message}"
@@ -230,9 +230,9 @@ lo:
       two_words_connector: 'ແລະ '
       words_connector: ", "
   time:
-    am: 'ເຊົ້າ'
+    am: ເຊົ້າ
     formats:
       default: "%a %d %b %Y %H:%M:%S %z"
       long: "%d %B %Y %H:%M น."
       short: "%d %b %H:%M น."
-    pm: 'ແລງ'
+    pm: ແລງ

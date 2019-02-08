@@ -3,7 +3,7 @@ el-CY:
   activerecord:
     errors:
       messages:
-        record_invalid: ! 'Η επικύρωση απέτυχε: %{errors}'
+        record_invalid: 'Η επικύρωση απέτυχε: %{errors}'
   date:
     abbr_day_names:
     - Κυρ
@@ -14,7 +14,7 @@ el-CY:
     - Παρ
     - Σάβ
     abbr_month_names:
-    -
+    - 
     - Ιαν
     - Φεβ
     - Μαρ
@@ -36,11 +36,11 @@ el-CY:
     - Παρασκευή
     - Σάββατο
     formats:
-      default: ! '%d/%m/%Y'
-      long: ! '%e %B %Y'
-      short: ! '%d %b'
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%d %b"
     month_names:
-    -
+    - 
     - Ιανουάριος
     - Φεβρουάριος
     - Μάρτιος
@@ -72,36 +72,36 @@ el-CY:
         one: σχεδόν ένα χρόνο
         other: σχεδόν %{count} χρόνια
       half_a_minute: μισό λεπτό
-      less_than_x_minutes:
-        one: λιγότερο από ένα λεπτό
-        other: λιγότερο από %{count} λεπτά
       less_than_x_seconds:
         one: λιγότερο από ένα δευτερόλεπτο
         other: λιγότερο από %{count} δευτερόλεπτα
+      less_than_x_minutes:
+        one: λιγότερο από ένα λεπτό
+        other: λιγότερο από %{count} λεπτά
       over_x_years:
         one: πάνω από ένα χρόνο
         other: πάνω από %{count} χρόνια
-      x_days:
-        one: 1 μέρα
-        other: ! '%{count} ημέρες'
-      x_minutes:
-        one: 1 λεπτό
-        other: ! '%{count} λεπτά'
-      x_months:
-        one: 1 μήνα
-        other: ! '%{count} μήνες'
       x_seconds:
         one: 1 δευτερόλεπτο
-        other: ! '%{count} δευτερόλεπτα'
+        other: "%{count} δευτερόλεπτα"
+      x_minutes:
+        one: 1 λεπτό
+        other: "%{count} λεπτά"
+      x_days:
+        one: 1 μέρα
+        other: "%{count} ημέρες"
+      x_months:
+        one: 1 μήνα
+        other: "%{count} μήνες"
     prompts:
-      day: Ημέρα
-      hour: Ώρα
-      minute: Λεπτό
-      month: Μήνας
       second: Δευτερόλεπτο
+      minute: Λεπτό
+      hour: Ώρα
+      day: Ημέρα
+      month: Μήνας
       year: Έτος
   errors:
-    format: ! '%{attribute} %{message}'
+    format: "%{attribute} %{message}"
     messages:
       accepted: πρέπει να είναι αποδεκτό
       blank: δεν πρέπει να είναι κενό
@@ -130,10 +130,10 @@ el-CY:
         one: έχει λανθασμένο μήκος (πρέπει να είναι 1 χαρακτήρας)
         other: έχει λανθασμένο μήκος (πρέπει να είναι %{count} χαρακτήρες)
     template:
-      body: ! 'Υπήρξαν προβλήματα με τα ακόλουθα πεδία:'
+      body: 'Υπήρξαν προβλήματα με τα ακόλουθα πεδία:'
       header:
         one: 1 λάθος εμπόδισε αυτό το %{model} να αποθηκευτεί.
-        other: ! '%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευτεί.'
+        other: "%{count} λάθη εμπόδισαν αυτό το %{model} να αποθηκευτεί."
   helpers:
     select:
       prompt: Παρακαλώ επιλέξτε
@@ -145,21 +145,21 @@ el-CY:
     currency:
       format:
         delimiter: "."
-        format: ! '%n %u'
+        format: "%n %u"
         precision: 2
-        separator: ! ','
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: €
+        unit: "€"
     format:
       delimiter: "."
       precision: 3
-      separator: ! ','
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           billion: δισεκατομμύριο
           million: εκατομμύριο
@@ -173,7 +173,7 @@ el-CY:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: "%n %u"
         units:
           byte:
             one: Byte
@@ -190,13 +190,13 @@ el-CY:
         delimiter: ''
   support:
     array:
-      last_word_connector: ! ' και '
-      two_words_connector: ! ' και '
-      words_connector: ! ', '
+      last_word_connector: " και "
+      two_words_connector: " και "
+      words_connector: ", "
   time:
     am: π.μ.
     formats:
-      default: ! '%d %B %Y %H:%M'
-      long: ! '%A %d %B %Y %H:%M:%S %Z'
-      short: ! '%d %b %H:%M'
+      default: "%d %B %Y %H:%M"
+      long: "%A %d %B %Y %H:%M:%S %Z"
+      short: "%d %b %H:%M"
     pm: μ.μ.

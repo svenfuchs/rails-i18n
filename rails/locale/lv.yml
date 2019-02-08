@@ -14,7 +14,7 @@ lv:
     - Pk.
     - S.
     abbr_month_names:
-    -
+    - 
     - Janv
     - Febr
     - Marts
@@ -41,18 +41,18 @@ lv:
       short: "%e. %B"
     month_names:
     -
-    - Janvāris
-    - Februāris
-    - Marts
-    - Aprīlis
-    - Maijs
-    - Jūnijs
-    - Jūlijs
-    - Augusts
-    - Septembris
-    - Oktobris
-    - Novembris
-    - Decembris
+    - janvārī
+    - ferbruārī
+    - martā
+    - aprīlī
+    - maijā
+    - jūnijā
+    - jūlijā
+    - augustā
+    - septembrī
+    - oktobrī
+    - novembrī
+    - decembrī
     order:
     - :year
     - :month
@@ -76,40 +76,40 @@ lv:
         one: gandrīz %{count} gads
         other: gandrīz %{count} gadi
       half_a_minute: pusminūte
-      less_than_x_minutes:
-        zero: mazāk par %{count} minūtēm
-        one: mazāk par %{count} minūti
-        other: mazāk par %{count} minūtēm
       less_than_x_seconds:
         zero: mazāk par %{count} sekundēm
         one: mazāk par %{count} sekundi
         other: mazāk par %{count} sekundēm
+      less_than_x_minutes:
+        zero: mazāk par %{count} minūtēm
+        one: mazāk par %{count} minūti
+        other: mazāk par %{count} minūtēm
       over_x_years:
         zero: vairāk kā %{count} gadi
         one: vairāk kā %{count} gads
         other: vairāk kā %{count} gadi
-      x_days:
-        zero: "%{count} dienas"
-        one: "%{count} diena"
-        other: "%{count} dienas"
-      x_minutes:
-        zero: "%{count} minūtes"
-        one: "%{count} minūte"
-        other: "%{count} minūtes"
-      x_months:
-        zero: "%{count} mēneši"
-        one: "%{count} mēnesis"
-        other: "%{count} mēneši"
       x_seconds:
         zero: "%{count} sekundes"
         one: "%{count} sekunde"
         other: "%{count} sekundes"
+      x_minutes:
+        zero: "%{count} minūtes"
+        one: "%{count} minūte"
+        other: "%{count} minūtes"
+      x_days:
+        zero: "%{count} dienas"
+        one: "%{count} diena"
+        other: "%{count} dienas"
+      x_months:
+        zero: "%{count} mēneši"
+        one: "%{count} mēnesis"
+        other: "%{count} mēneši"
     prompts:
-      day: diena
-      hour: stunda
-      minute: minūte
-      month: mēnesis
       second: sekunde
+      minute: minūte
+      hour: stunda
+      day: diena
+      month: mēnesis
       year: gads
   errors:
     format: "%{attribute} %{message}"

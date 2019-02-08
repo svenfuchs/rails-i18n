@@ -1,10 +1,10 @@
+require "json"
+
 module RailsI18n
   module Spec
     module RubyContent
       def content
-        @content ||= silence_warnings do
-          eval(IO.read(@filepath), TOPLEVEL_BINDING).deep_symbolize_keys
-        end
+        @content ||= eval(IO.read(@filepath), TOPLEVEL_BINDING)
       end
     end
   end

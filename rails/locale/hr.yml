@@ -17,7 +17,7 @@ hr:
     - Pet
     - Sub
     abbr_month_names:
-    -
+    - 
     - Sij
     - Veǉ
     - Ožu
@@ -43,7 +43,7 @@ hr:
       long: "%e. %B %Y."
       short: "%e.%-m."
     month_names:
-    -
+    - 
     - Siječanj
     - Veljača
     - Ožujak
@@ -83,54 +83,53 @@ hr:
         many: skoro %{count} godina
         other: skoro %{count} godina
       half_a_minute: pola minute
-      less_than_x_minutes:
-        one: manje od %{count} minute
-        few: manje od %{count} minute
-        many: manje od %{count} minuta
-        other: manje od %{count} minuta
       less_than_x_seconds:
         one: manje od %{count} sekunde
         few: manje od %{count} sekunde
         many: manje od %{count} sekundi
         other: manje od %{count} sekundi
+      less_than_x_minutes:
+        one: manje od %{count} minute
+        few: manje od %{count} minute
+        many: manje od %{count} minuta
+        other: manje od %{count} minuta
       over_x_years:
         one: preko %{count} godine
         few: preko %{count} godine
         many: preko %{count} godina
         other: preko %{count} godina
-      x_days:
-        one: "%{count} dan"
-        few: "%{count} dana"
-        many: "%{count} dana"
-        other: "%{count} dana"
-      x_minutes:
-        one: "%{count} minuta"
-        few: "%{count} minute"
-        many: "%{count} minuta"
-        other: "%{count} minuta"
-      x_months:
-        one: "%{count} mjesec"
-        few: "%{count} mjeseca"
-        many: "%{count} mjeseci"
-        other: "%{count} mjeseci"
       x_seconds:
         one: "%{count} sekunda"
         few: "%{count} sekunde"
         many: "%{count} sekundi"
         other: "%{count} sekundi"
+      x_minutes:
+        one: "%{count} minuta"
+        few: "%{count} minute"
+        many: "%{count} minuta"
+        other: "%{count} minuta"
+      x_days:
+        one: "%{count} dan"
+        few: "%{count} dana"
+        many: "%{count} dana"
+        other: "%{count} dana"
+      x_months:
+        one: "%{count} mjesec"
+        few: "%{count} mjeseca"
+        many: "%{count} mjeseci"
+        other: "%{count} mjeseci"
     prompts:
-      day: Dan
-      hour: Sat
-      minute: Minuta
-      month: Mjesec
       second: Sekunde
+      minute: Minuta
+      hour: Sat
+      day: Dan
+      month: Mjesec
       year: Godina
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: mora biti prihvaćen
       blank: ne smije biti prazan
-      present: mora biti prazan
       confirmation: se ne slaže sa svojom potvrdom
       empty: ne smije biti prazan
       equal_to: mora biti jednak %{count}
@@ -145,6 +144,8 @@ hr:
       not_a_number: nije broj
       not_an_integer: nije cijeli broj
       odd: mora biti neparan
+      other_than: mora biti različit od %{count}
+      present: mora biti prazan
       taken: je već zauzet
       too_long:
         one: je predugačak (maksimum je %{count} znak)
@@ -161,7 +162,6 @@ hr:
         few: nije odgovarajuće duljine (treba biti %{count} znaka)
         many: nije odgovarajuće duljine (treba biti %{count} znakova)
         other: nije odgovarajuće duljine (treba biti %{count} znakova)
-      other_than: mora biti različit od %{count}
     template:
       body: 'Sljedeća polja su neispravno popunjena:'
       header:
@@ -196,11 +196,11 @@ hr:
       decimal_units:
         format: "%n %u"
         units:
-          thousand: Tisuća
-          million: Milijun
           billion: Milijarda
-          trillion: Bilijun
+          million: Milijun
           quadrillion: Bilijarda
+          thousand: Tisuća
+          trillion: Bilijun
           unit: ''
       format:
         delimiter: ''

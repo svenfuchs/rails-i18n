@@ -43,7 +43,7 @@ sq:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - Janar
     - Shkurt
     - Mars
@@ -75,12 +75,12 @@ sq:
         one: gati 1 vit
         other: gati %{count} vjet
       half_a_minute: gjysmë minute
-      less_than_x_minutes:
-        one: më pak se një minutë
-        other: më pak se %{count} minuta
       less_than_x_seconds:
         one: më pak se 1 sekondë
         other: më pak se %{count} sekonda
+      less_than_x_minutes:
+        one: më pak se një minutë
+        other: më pak se %{count} minuta
       over_x_years:
         one: mbi 1 vit
         other: mbi %{count} vjet
@@ -90,21 +90,21 @@ sq:
       x_minutes:
         one: 1 minutë
         other: "%{count} minuta"
+      x_days:
+        one: 1 ditë
+        other: "%{count} ditë"
       x_months:
         one: 1 muaj
         other: "%{count} muaj"
       x_years:
         one: 1 vit
         other: "%{count} vjet"
-      x_seconds:
-        one: 1 sekondë
-        other: "%{count} sekonda"
     prompts:
-      day: Ditë
-      hour: Orë
+      second: Sekond
       minute: Minutë
+      hour: Orë
+      day: Ditë
       month: Muaj
-      second: Sekonda
       year: Vit
   errors:
     format: "%{attribute} %{message}"
@@ -127,6 +127,8 @@ sq:
       not_a_number: s’është numër
       not_an_integer: duhet të jetë numër i plotë
       odd: duhet të jetë tek
+      other_than: duhet të jetë më shumë se %{count}
+      present: duhet të jetë bosh
       required: duhet të ekzistojë
       taken: është zënë tashmë
       too_long:
@@ -138,7 +140,6 @@ sq:
       wrong_length:
         one: ka gjatësi të gabuar (duhet të jetë 1 shenjë)
         other: ka gjatësi të gabuar (duhet të jetë %{count} shenja)
-      other_than: duhet të jetë i ndryshëm nga %{count}
     template:
       body: 'Pati probleme me fushat vijuese:'
       header:
@@ -188,12 +189,12 @@ sq:
           byte:
             one: Bajt
             other: Bajte
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
-          tb: TB
           pb: PB
-          eb: EB
+          tb: TB
     percentage:
       format:
         delimiter: ''

@@ -3,10 +3,10 @@ en-CA:
   activerecord:
     errors:
       messages:
-        record_invalid: "Validation failed: %{errors}"
+        record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
-          has_one: "Cannot delete record because a dependent %{record} exists"
-          has_many: "Cannot delete record because dependent %{record} exist"
+          has_one: Cannot delete record because a dependent %{record} exists
+          has_many: Cannot delete record because dependent %{record} exist
   date:
     abbr_day_names:
     - Sun
@@ -17,7 +17,7 @@ en-CA:
     - Fri
     - Sat
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -43,7 +43,7 @@ en-CA:
       long: "%B %d, %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - January
     - February
     - March
@@ -75,43 +75,42 @@ en-CA:
         one: almost 1 year
         other: almost %{count} years
       half_a_minute: half a minute
-      less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
       less_than_x_seconds:
         one: less than 1 second
         other: less than %{count} seconds
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
       over_x_years:
         one: over 1 year
         other: over %{count} years
-      x_days:
-        one: 1 day
-        other: "%{count} days"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
       x_minutes:
         one: 1 minute
         other: "%{count} minutes"
+      x_days:
+        one: 1 day
+        other: "%{count} days"
       x_months:
         one: 1 month
         other: "%{count} months"
       x_years:
         one: 1 year
         other: "%{count} years"
-      x_seconds:
-        one: 1 second
-        other: "%{count} seconds"
     prompts:
-      day: Day
-      hour: Hour
-      minute: Minute
-      month: Month
       second: Seconds
+      minute: Minute
+      hour: Hour
+      day: Day
+      month: Month
       year: Year
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: must be accepted
       blank: can't be blank
-      present: must be blank
       confirmation: doesn't match %{attribute}
       empty: can't be empty
       equal_to: must be equal to %{count}
@@ -123,10 +122,12 @@ en-CA:
       invalid: is invalid
       less_than: must be less than %{count}
       less_than_or_equal_to: must be less than or equal to %{count}
-      model_invalid: "Validation failed: %{errors}"
+      model_invalid: 'Validation failed: %{errors}'
       not_a_number: is not a number
       not_an_integer: must be an integer
       odd: must be odd
+      other_than: must be other than %{count}
+      present: must be blank
       required: must exist
       taken: has already been taken
       too_long:
@@ -138,7 +139,6 @@ en-CA:
       wrong_length:
         one: is the wrong length (should be 1 character)
         other: is the wrong length (should be %{count} characters)
-      other_than: must be other than %{count}
     template:
       body: 'There were problems with the following fields:'
       header:
@@ -188,12 +188,12 @@ en-CA:
           byte:
             one: Byte
             other: Bytes
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
-          tb: TB
           pb: PB
-          eb: EB
+          tb: TB
     percentage:
       format:
         delimiter: ''
