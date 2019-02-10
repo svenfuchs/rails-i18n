@@ -111,7 +111,7 @@ zh-YUE:
     messages:
       accepted: 一定要被接受
       blank: 唔可以空白
-      confirmation: 兩次輸入唔夾
+      confirmation: 與 %{attribute} 唔夾
       empty: 唔可以漏空
       equal_to: 要等於 %{count}
       even: 要係雙數

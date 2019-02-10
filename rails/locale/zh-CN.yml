@@ -87,7 +87,7 @@ zh-CN:
     messages:
       accepted: 必须是可被接受的
       blank: 不能为空字符
-      confirmation: 与确认值不匹配
+      confirmation: 与 %{attribute} 不匹配
       empty: 不能留空
       equal_to: 必须等于 %{count}
       even: 必须为双数
