@@ -73,7 +73,7 @@ Complete locales:
 
 > af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
 > es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, id, ja, ka, ml, nb,
-> nl, nn, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
+> nl, nn, pt, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
