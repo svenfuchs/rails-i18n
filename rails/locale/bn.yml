@@ -19,10 +19,10 @@ bn:
     - জুন
     - জুলাই
     - অগাস্ট
-    - সেপ্টেমবার
-    - অক্টোবার
-    - নভেম্বার
-    - ডিসেম্বার
+    - সেপ্টেম্বর
+    - অক্টোবর
+    - নভেম্বর
+    - ডিসেম্বর
     day_names:
     - রবিবার
     - সোমবার
@@ -45,10 +45,10 @@ bn:
     - জুন
     - জুলাই
     - অগাস্ট
-    - সেপ্টেমবার
-    - অক্টোবার
-    - নভেম্বার
-    - ডিসেম্বার
+    - সেপ্টেম্বর
+    - অক্টোবর
+    - নভেম্বর
+    - ডিসেম্বর
     order:
     - :year
     - :month
@@ -64,7 +64,7 @@ bn:
       about_x_years:
         one: প্রায় ১ বছর
         other: প্রায় %{count} বছর
-      half_a_minute: অার্ধেক মিনিট
+      half_a_minute: অর্ধেক মিনিট
       less_than_x_seconds:
         one: '১ সেকেন্ডর কম '
         other: "%{count} সেকেন্ডের কম"
@@ -102,7 +102,7 @@ bn:
       empty: খালি রাখা যাবে না
       equal_to: "%{count} এর সঙ্গে সমান হতে হবে"
       even: জোড় হতে হবে
-      exclusion: রিসার্ভ করা অাছে
+      exclusion: রিসার্ভ করা আছে
       greater_than: "%{count} থেকে বড়ো হতে হবে"
       greater_than_or_equal_to: "%{count} থেকে বড়ো অথবা তার সমান হতে হবে"
       inclusion: লিস্টে অন্তর্ভুক্ত নয়
@@ -111,7 +111,7 @@ bn:
       less_than_or_equal_to: "%{count} থেকে ছোটো অথবা তার সমান হতে হবে"
       not_a_number: নম্বর নয়
       odd: বেজোড় হতে হবে
-      taken: অাগেই নিয়ে নেওয়া হয়েছে
+      taken: আগেই নিয়ে নেওয়া হয়েছে
       too_long: খুব বড়ো (সর্বোচ্চ %{count} অক্ষর)
       too_short: খুব ছোটো (সর্বনিম্ন %{count} অক্ষর)
       wrong_length: দৈর্ঘ্যটি সঠিক নয় (%{count} অক্ষর হতে হবে)
@@ -129,7 +129,7 @@ bn:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "₹"
+        unit: "৳"
     format:
       delimiter: ","
       precision: 2
