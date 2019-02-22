@@ -191,7 +191,7 @@ tl:
   support:
     array:
       last_word_connector: ", at"
-      two_words_connector: at
+      two_words_connector: " at "
       words_connector: ","
   time:
     am: AM
