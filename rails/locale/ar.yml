@@ -216,12 +216,12 @@ ar:
     currency:
       format:
         delimiter: ","
-        format: "%u%n"
-        precision: 2
+        format: "%u %n"
+        precision: 3
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "$"
+        unit: "KWD"
     format:
       delimiter: ","
       precision: 3
