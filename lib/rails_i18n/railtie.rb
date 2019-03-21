@@ -3,6 +3,12 @@ require 'rails'
 module RailsI18n
   class Railtie < ::Rails::Railtie #:nodoc:
     initializer 'rails-i18n' do |app|
+      app.config.i18n.locale = false
+
+      app.config.after_initialize do
+        app.config.i18n.locale = true
+      end
+
       RailsI18n::Railtie.instance_eval do
         pattern = pattern_from app.config.i18n.available_locales
 
