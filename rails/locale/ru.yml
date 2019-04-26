@@ -82,7 +82,7 @@ ru:
         few: почти %{count} года
         many: почти %{count} лет
         other: почти %{count} лет
-      half_a_minute: меньше минуты
+      half_a_minute: полминуты
       less_than_x_seconds:
         one: меньше %{count} секунды
         few: меньше %{count} секунд
