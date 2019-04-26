@@ -151,7 +151,7 @@ bs:
       too_short: je prekratko (predviđeno je minimalno %{count} znakova)
       wrong_length: je pogrešne dužine (trebalo bi biti tačno %{count} znakova)
     template:
-      body: 'Desili su se problemi sa slijedećim poljima:'
+      body: 'Desili su se problemi sa sljedećim poljima:'
       header:
         one: 1 greška je spriječila da se ovaj %{model} spremi
         few: "%{count} greške su spriječile da se ovaj %{model} spremi"
