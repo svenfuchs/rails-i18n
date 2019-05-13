@@ -69,10 +69,10 @@ mg:
         other: adiny %{count} eo ho eo
       about_x_months:
         one: iray volana eo ho eo
-        other: %{count} volana eo ho eo
+        other: volana %{count} eo ho eo
       about_x_years:
         one: herintaona eo ho eo
-        other: %{count} taona eo ho eo
+        other: taona %{count} eo ho eo
       almost_x_years:
         one: saika herintaona
         other: saika %{count} taona
@@ -87,7 +87,7 @@ mg:
         other: latsaky ny %{count} minitra
       over_x_years:
         one: Herintaona mahery
-        other: %{count} taona mahery
+        other:  maherin'ny %{count} taona
       x_seconds:
         one: 1 segondra
         other: "%{count} segondra"
