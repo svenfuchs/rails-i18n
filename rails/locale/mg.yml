@@ -1,11 +1,5 @@
-
-      storage_units:
-        format: "%n %u"
-        units:
-          byte:
-            one: Byte
-            other: Bytes
-eb: EBfr:
+---
+mg:
   activerecord:
     errors:
       messages:
@@ -236,4 +230,4 @@ eb: EB
       default: "%d %B %Y %Hh %Mmin %Ss"
       long: "%A %d %B %Y %Hh%M"
       short: "%d %b %Hh%M"
-pm: pm
+    pm: pm
