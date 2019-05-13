@@ -194,20 +194,6 @@ mg:
             other: octets
           eb: Eo
           gb: Go
-      storage_units:
-        format: "%n %u"
-        units:
-          byte:
-            one: Byte
-            other: Bytes
-eb: EB
-      storage_units:
-        format: "%n %u"
-        units:
-          byte:
-            one: Byte
-            other: Bytes
-eb: EB
           kb: ko
           mb: Mo
           pb: Po
