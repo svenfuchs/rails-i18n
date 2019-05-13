@@ -164,7 +164,7 @@ mg:
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: "€"
+        unit: "Ar"
     format:
       delimiter: " "
       precision: 3
@@ -177,8 +177,8 @@ mg:
         units:
           billion: tapitrisa
           million: hetsy
-          quadrillion: hetsy de tapitrisa
-          thousand: an-drivony
+          quadrillion: hetsy tapitrisa
+          thousand: Arivo
           trillion: arivo tapitrisa
           unit: ''
       format:
