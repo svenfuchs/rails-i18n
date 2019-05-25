@@ -126,39 +126,39 @@ sr:
       month: Месец
       year: Година
   errors:
-    format: "%{attribute} %{message}"
+    format: "Поље %{attribute} %{message}"
     messages:
       accepted: мора бити прихваћено
-      blank: не сме бити празан
+      blank: не сме бити празано
       confirmation: се не слаже са потврдом
-      empty: не сме бити празан
-      equal_to: мора бити једнак %{count}
-      even: мора бити паран
-      exclusion: је резервисан
-      greater_than: мора бити већи од %{count}
-      greater_than_or_equal_to: мора бити већи или једнак %{count}
+      empty: не сме бити празано
+      equal_to: мора бити једнако %{count}
+      even: мора бити парно
+      exclusion: је резервисано
+      greater_than: мора бити веће од %{count}
+      greater_than_or_equal_to: мора бити веће или једнако %{count}
       inclusion: није у листи
-      invalid: није исправан
-      less_than: мора бити мањи од %{count}
-      less_than_or_equal_to: мора бити мањи или једнак %{count}
+      invalid: није исправно
+      less_than: мора бити мање од %{count}
+      less_than_or_equal_to: мора бити мање или једнако %{count}
       model_invalid: 'Валидација није успела: %{errors}'
       not_a_number: није број
       not_an_integer: није цео број
-      odd: мора бити непаран
-      other_than: мора бити различит од %{count}
-      present: мора бити празан
+      odd: мора бити непарно
+      other_than: мора бити различито од %{count}
+      present: мора бити празно
       required: мора постојати
-      taken: је већ заузет
+      taken: је већ заузето
       too_long:
-        one: је предугачак (максимум је %{count} знак)
-        few: је предугачак (максимум је %{count} знака)
-        many: је предугачак (максимум је %{count} знакова)
-        other: је предугачак (максимум је %{count} знакова)
+        one: је предугачко (максимум је %{count} знак)
+        few: је предугачко (максимум је %{count} знака)
+        many: је предугачко (максимум је %{count} знакова)
+        other: је предугачко (максимум је %{count} знакова)
       too_short:
-        one: је прекратак (минимум је %{count} знак)
-        few: је прекратак (минимум је %{count} знака)
-        many: је прекратак (минимум је %{count} знакова)
-        other: је прекратак (минимум је %{count} знакова)
+        one: је прекратко (минимум је %{count} знак)
+        few: је прекратко (минимум је %{count} знака)
+        many: је прекратко (минимум је %{count} знакова)
+        other: је прекратко (минимум је %{count} знакова)
       wrong_length:
         one: није одговарајуће дужине (треба бити %{count} знак)
         few: није одговарајуће дужине (треба бити %{count} знака)
