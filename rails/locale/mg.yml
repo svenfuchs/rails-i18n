@@ -11,13 +11,13 @@ mg:
             betsaka miankina aminy
   date:
     abbr_day_names:
-    - lah
-    - lats
-    - tal
-    - lar
-    - lak
-    - zom
-    - sab
+    - Alah
+    - Alats
+    - Tal
+    - Alar
+    - Alak
+    - Zom
+    - Asab
     abbr_month_names:
     - 
     - jan.
@@ -33,13 +33,13 @@ mg:
     - nov.
     - des.
     day_names:
-    - lahady
-    - latsinainy
-    - talata
-    - larobia
-    - lakamisy
-    - zoma
-    - sabotsy
+    - Alahady
+    - Alatsinainy
+    - Talata
+    - Alarobia
+    - Alakamisy
+    - Zoma
+    - Asabotsy
     formats:
       default: "%d/%m/%Y"
       long: "%e %B %Y"
