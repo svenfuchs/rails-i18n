@@ -82,7 +82,7 @@ uk:
         few: майже %{count} років
         many: майже %{count} років
         other: майже %{count} років
-      half_a_minute: півхвилини
+      half_a_minute: пів хвилини
       less_than_x_seconds:
         one: менше %{count} секунди
         few: менше %{count} секунд
