@@ -127,7 +127,7 @@ sl:
     messages:
       accepted: mora biti sprejeto
       blank: ne sme biti prazno
-      confirmation: se ne ujema s potrditvijo
+      confirmation: se ne ujema z vrednostjo %{attribute}
       empty: ne sme biti prazno
       equal_to: mora biti enako %{count}
       even: mora biti sodo
