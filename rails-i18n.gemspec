@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
                    %w(README.md CHANGELOG.md MIT-LICENSE.txt)
   s.platform     = Gem::Platform::RUBY
   s.require_path = 'lib'
-  s.rubyforge_project = '[none]'
   s.required_rubygems_version = '>= 1.8.11'
 
   s.add_runtime_dependency('i18n', '>= 0.7', '< 2')
