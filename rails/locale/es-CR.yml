@@ -100,7 +100,7 @@ es-CR:
         one: 1 año
         other: "%{count} años"
     prompts:
-      second: Segundos
+      second: Segundo
       minute: Minuto
       hour: Hora
       day: Día

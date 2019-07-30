@@ -100,7 +100,7 @@ en-IE:
         one: 1 year
         other: "%{count} years"
     prompts:
-      second: Seconds
+      second: Second
       minute: Minute
       hour: Hour
       day: Day
