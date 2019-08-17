@@ -113,7 +113,7 @@ If you are familiar with GitHub operations, then follow the procedures described
 
 If not,
 
-* Save your locale data on the [Gist](http://gist.github.com).
+* Save your locale data in a [Gist](http://gist.github.com).
 * Open an issue with reference to the Gist you created.
 
 ### Fetching the `rails-i18n` Repository
