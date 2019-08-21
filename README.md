@@ -176,6 +176,25 @@ If you are ready, push the repository into the Github and send us a pull request
 
 We will do the formality check and publish it as quick as we can.
 
+### Add an informative title to your pull request or issue
+
+If your pull request or issue concerns a specific locale - please indicate the relevant locale
+in the issue or pull request title in order to facilitate triage.
+
+**Best:**
+
+*Danish: change da.errors.messages.required to "skal udfyldes"*
+
+**Good:**
+
+*Human precision in Swedish locale file is set to 1*
+
+*Update es-PE.yml, the currency unit is incorrect*
+
+**Bad:**
+
+*Changing some string about validation*
+
 ## See also
 
 * [devise-i18n](https://github.com/tigrish/devise-i18n)
