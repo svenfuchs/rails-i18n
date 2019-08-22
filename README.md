@@ -130,6 +130,7 @@ If not,
 ### Testing your Locale File
 
 Before committing and pushing your changes, test the integrity of your locale file.
+(You can also run the tests using Docker, see below)
 
 ``` shell
 bundle exec rake spec
@@ -194,6 +195,20 @@ in the issue or pull request title in order to facilitate triage.
 **Bad:**
 
 *Changing some string about validation*
+
+### Docker
+
+Build the image:
+
+```
+docker build --tag=railsi18n .
+```
+
+Run the tests:
+
+```
+docker run railsi18n
+```
 
 ## See also
 
