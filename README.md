@@ -210,6 +210,13 @@ Run the tests:
 docker run railsi18n
 ```
 
+To run the other commands described above:
+
+```
+sudo docker run railsi18n bundle exec rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
+
+```
+
 ## See also
 
 * [devise-i18n](https://github.com/tigrish/devise-i18n)
