@@ -63,7 +63,7 @@ lt:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: apie %{count} valanda
+        one: apie %{count} valandą
         few: apie %{count} valandas
         other: apie %{count} valandų
       about_x_months:
@@ -122,8 +122,8 @@ lt:
       confirmation: neteisingai pakartotas
       empty: negali būti tuščias
       equal_to: turi būti lygus %{count}
-      even: turi būti lyginis
-      exclusion: užimtas
+      even: turi būti lyginis skaičius
+      exclusion: yra rezervuotas
       greater_than: turi būti didesnis už %{count}
       greater_than_or_equal_to: turi būti didesnis arba lygus %{count}
       inclusion: nenumatyta reikšmė
@@ -132,7 +132,7 @@ lt:
       less_than_or_equal_to: turi būti mažesnis arba lygus %{count}
       not_a_number: ne skaičius
       not_an_integer: privalo būti sveikas skaičius
-      odd: turi būti nelyginis
+      odd: turi būti nelyginis skaičius
       other_than: privalo būti kitoks nei %{count}
       present: turi būti tuščias
       taken: jau užimtas
