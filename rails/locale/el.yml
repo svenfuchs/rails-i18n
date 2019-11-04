@@ -4,6 +4,9 @@ el:
     errors:
       messages:
         record_invalid: 'Η επικύρωση απέτυχε: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Η εγγραφή δεν μπορεί να διαγραφεί γιατί υπάρχει εξαρτημένο %{record}
+          has_many: Η εγγραφή δεν μπορεί να διαγραφεί γιατί υπάρχουν εξαρτημένα %{record}
   date:
     abbr_day_names:
     - Κυρ
@@ -93,6 +96,9 @@ el:
       x_months:
         one: 1 μήνα
         other: "%{count} μήνες"
+      x_years:
+        one: 1 χρόνος
+        other: "%{count} χρόνια"
     prompts:
       second: Δευτερόλεπτο
       minute: Λεπτό
@@ -116,9 +122,13 @@ el:
       invalid: είναι άκυρο
       less_than: πρέπει να είναι λιγότερο από %{count}
       less_than_or_equal_to: πρέπει να είναι λιγότερο ή ίσο με %{count}
+      model_invalid: 'Η επικύρωση απέτυχε: %{errors}'
       not_a_number: δεν είναι αριθμός
       not_an_integer: πρέπει να είναι ακέραιος αριθμός
       odd: πρέπει να είναι περιττός
+      other_than: πρέπει να είναι διάφορο του %{count}
+      present: πρέπει να είναι κενό
+      required: πρέπει να υπάρχει
       taken: το έχουν ήδη χρησιμοποιήσει
       too_long:
         one: είναι πολύ μεγάλο (το μέγιστο μήκος είναι 1 χαρακτήρας)
@@ -178,13 +188,16 @@ el:
           byte:
             one: Byte
             other: Bytes
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
