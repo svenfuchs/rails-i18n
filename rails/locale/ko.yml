@@ -4,6 +4,9 @@ ko:
     errors:
       messages:
         record_invalid: 데이터 검증에 실패하였습니다. %{errors}
+        restrict_dependent_destroy:
+          has_one: "%{record}가 존재하기 때문에 삭제할 수 없습니다"
+          has_many: "%{record}가 존재하기 때문에 삭제할 수 없습니다"
   date:
     abbr_day_names:
     - 일
@@ -14,7 +17,7 @@ ko:
     - 금
     - 토
     abbr_month_names:
-    -
+    - 
     - 1월
     - 2월
     - 3월
@@ -40,7 +43,7 @@ ko:
       long: "%Y년 %m월 %d일 (%a)"
       short: "%m/%d"
     month_names:
-    -
+    - 
     - 1월
     - 2월
     - 3월
@@ -72,33 +75,36 @@ ko:
         one: 일 년 이하
         other: "%{count}년 이하"
       half_a_minute: 30초
-      less_than_x_minutes:
-        one: 일 분 이하
-        other: "%{count}분 이하"
       less_than_x_seconds:
         one: 일 초 이하
         other: "%{count}초 이하"
+      less_than_x_minutes:
+        one: 일 분 이하
+        other: "%{count}분 이하"
       over_x_years:
         one: 일 년 이상
         other: "%{count}년 이상"
-      x_days:
-        one: 하루
-        other: "%{count}일"
-      x_minutes:
-        one: 일 분
-        other: "%{count}분"
-      x_months:
-        one: 한 달
-        other: "%{count}달"
       x_seconds:
         one: 일 초
         other: "%{count}초"
+      x_minutes:
+        one: 일 분
+        other: "%{count}분"
+      x_days:
+        one: 하루
+        other: "%{count}일"
+      x_months:
+        one: 한 달
+        other: "%{count}달"
+      x_years:
+        one: 일 년
+        other: "%{count}년"
     prompts:
-      day: 일
-      hour: 시
-      minute: 분
-      month: 월
       second: 초
+      minute: 분
+      hour: 시
+      day: 일
+      month: 월
       year: 년
   errors:
     format: "%{message}"
@@ -116,15 +122,19 @@ ko:
       invalid: "%{attribute}은(는) 올바르지 않은 값입니다"
       less_than: "%{attribute}은(는) %{count}보다 작아야 합니다"
       less_than_or_equal_to: "%{attribute}은(는) %{count}과 작거나 같아야 합니다"
+      model_invalid: "%{attribute}에 대한 데이터 검증에 실패하였습니다: %{errors}"
       not_a_number: "%{attribute}에 숫자를 입력해 주세요"
       not_an_integer: "%{attribute}에 정수를 입력해 주세요"
       odd: "%{attribute}에 홀수를 입력해 주세요"
+      other_than: "%{attribute}은(는) %{count}와(과) 달라야 합니다"
+      present: "%{attribute}은(는) 비어있어야 합니다"
+      required: "%{attribute}은(는) 반드시 있어야 합니다"
       taken: "%{attribute}은(는) 이미 존재합니다"
       too_long: "%{attribute}은(는) %{count}자를 넘을 수 없습니다"
       too_short: "%{attribute}은(는) 적어도 %{count}자를 넘어야 합니다"
       wrong_length: "%{attribute}은(는) %{count}자여야 합니다"
     template:
-      body: '아래 문제를 확인해 주세요.'
+      body: 아래 문제를 확인해 주세요.
       header:
         one: 한 개의 오류로 인해 %{model}을(를) 저장할 수 없습니다
         other: "%{count}개의 오류로 인해 %{model}을(를) 저장할 수 없습니다"
@@ -177,6 +187,7 @@ ko:
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''

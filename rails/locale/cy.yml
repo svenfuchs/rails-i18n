@@ -14,7 +14,7 @@ cy:
     - Gwe
     - Sad
     abbr_month_names:
-    -
+    - 
     - Ion
     - Chw
     - Maw
@@ -40,7 +40,7 @@ cy:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - Ionawr
     - Chwefror
     - Mawrth
@@ -88,13 +88,6 @@ cy:
         many: bron yn %{count} blynedd
         other: bron yn %{count} blynedd
       half_a_minute: hanner munud
-      less_than_x_minutes:
-        zero: llai na %{count} munud
-        one: llai na munud
-        two: llai na %{count} munud
-        few: llai na %{count} munud
-        many: llai na %{count} munud
-        other: llai na %{count} munud
       less_than_x_seconds:
         zero: llai na %{count} eiliad
         one: llai nag eiliad
@@ -102,6 +95,13 @@ cy:
         few: llai na %{count} eiliad
         many: llai na %{count} eiliad
         other: llai na %{count} eiliad
+      less_than_x_minutes:
+        zero: llai na %{count} munud
+        one: llai na munud
+        two: llai na %{count} munud
+        few: llai na %{count} munud
+        many: llai na %{count} munud
+        other: llai na %{count} munud
       over_x_years:
         zero: dros %{count} blynedd
         one: dros flwyddyn
@@ -109,27 +109,6 @@ cy:
         few: dros %{count} blynedd
         many: dros %{count} blynedd
         other: dros %{count} blynedd
-      x_days:
-        zero: "%{count} diwrnod"
-        one: 1 diwrnod
-        two: "%{count} diwrnod"
-        few: "%{count} diwrnod"
-        many: "%{count} diwrnod"
-        other: "%{count} diwrnod"
-      x_minutes:
-        zero: "%{count} o funudau"
-        one: 1 munud
-        two: "%{count} o funudau"
-        few: "%{count} o funudau"
-        many: "%{count} o funudau"
-        other: "%{count} o funudau"
-      x_months:
-        zero: "%{count} mis"
-        one: 1 mis
-        two: "%{count} mis"
-        few: "%{count} mis"
-        many: "%{count} mis"
-        other: "%{count} mis"
       x_seconds:
         zero: "%{count} o eiliadau"
         one: 1 eiliad
@@ -137,12 +116,33 @@ cy:
         few: "%{count} o eiliadau"
         many: "%{count} o eiliadau"
         other: "%{count} o eiliadau"
+      x_minutes:
+        zero: "%{count} o funudau"
+        one: 1 munud
+        two: "%{count} o funudau"
+        few: "%{count} o funudau"
+        many: "%{count} o funudau"
+        other: "%{count} o funudau"
+      x_days:
+        zero: "%{count} diwrnod"
+        one: 1 diwrnod
+        two: "%{count} diwrnod"
+        few: "%{count} diwrnod"
+        many: "%{count} diwrnod"
+        other: "%{count} diwrnod"
+      x_months:
+        zero: "%{count} mis"
+        one: 1 mis
+        two: "%{count} mis"
+        few: "%{count} mis"
+        many: "%{count} mis"
+        other: "%{count} mis"
     prompts:
-      day: Diwrnod
-      hour: Awr
-      minute: Munud
-      month: Mis
       second: Eiliad
+      minute: Munud
+      hour: Awr
+      day: Diwrnod
+      month: Mis
       year: Blwyddyn
   errors:
     format: "%{attribute} %{message}"

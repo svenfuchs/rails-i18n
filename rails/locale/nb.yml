@@ -17,7 +17,7 @@ nb:
     - fre
     - lør
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -43,7 +43,7 @@ nb:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    -
+    - 
     - januar
     - februar
     - mars
@@ -75,43 +75,42 @@ nb:
         one: nesten 1 år
         other: nesten %{count} år
       half_a_minute: et halvt minutt
-      less_than_x_minutes:
-        one: mindre enn 1 minutt
-        other: mindre enn %{count} minutter
       less_than_x_seconds:
         one: mindre enn 1 sekund
         other: mindre enn %{count} sekunder
+      less_than_x_minutes:
+        one: mindre enn 1 minutt
+        other: mindre enn %{count} minutter
       over_x_years:
         one: over 1 år
         other: over %{count} år
-      x_days:
-        one: 1 dag
-        other: "%{count} dager"
+      x_seconds:
+        one: 1 sekund
+        other: "%{count} sekunder"
       x_minutes:
         one: 1 minutt
         other: "%{count} minutter"
+      x_days:
+        one: 1 dag
+        other: "%{count} dager"
       x_months:
         one: 1 måned
         other: "%{count} måneder"
       x_years:
         one: 1 år
         other: "%{count} år"
-      x_seconds:
-        one: 1 sekund
-        other: "%{count} sekunder"
     prompts:
-      day: dag
-      hour: time
-      minute: minutt
-      month: måned
       second: sekund
+      minute: minutt
+      hour: time
+      day: dag
+      month: måned
       year: år
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: må være akseptert
-      blank: kan ikke være blank
-      present: må være blank
+      blank: kan ikke være tom
       confirmation: er ikke lik %{attribute}
       empty: kan ikke være tom
       equal_to: må være lik %{count}
@@ -123,16 +122,17 @@ nb:
       invalid: er ugyldig
       less_than: må være mindre enn %{count}
       less_than_or_equal_to: må være mindre enn eller lik %{count}
-      model_invalid: "Det oppstod feil: %{errors}"
+      model_invalid: 'Det oppstod feil: %{errors}'
       not_a_number: er ikke et tall
       not_an_integer: er ikke et heltall
       odd: må være oddetall
+      other_than: kan ikke være nøyaktig %{count}
+      present: må være tom
       required: må eksistere
       taken: er allerede i bruk
       too_long: er for lang (maksimum %{count} tegn)
       too_short: er for kort (minimum %{count} tegn)
       wrong_length: er av feil lengde (maksimum %{count} tegn)
-      other_than: kan ikke være nøyaktig %{count}
     template:
       body: 'Det oppstod problemer med følgende felt:'
       header:

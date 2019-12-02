@@ -4,6 +4,9 @@ fi:
     errors:
       messages:
         record_invalid: 'Validointi epäonnistui: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Ei voida poistaa mallia koska tästä riippuvainen %{record} löytyy
+          has_many: Ei voida poistaa mallia koska tästä riippuvaisia %{record} löytyy
   date:
     abbr_day_names:
     - su
@@ -14,7 +17,7 @@ fi:
     - pe
     - la
     abbr_month_names:
-    -
+    - 
     - tammi
     - helmi
     - maalis
@@ -40,7 +43,7 @@ fi:
       long: "%A %e. %Bta %Y"
       short: "%d. %b"
     month_names:
-    -
+    - 
     - tammikuu
     - helmikuu
     - maaliskuu
@@ -72,33 +75,36 @@ fi:
         one: melkein yksi vuosi
         other: melkein %{count} vuotta
       half_a_minute: puoli minuuttia
-      less_than_x_minutes:
-        one: alle minuutti
-        other: alle %{count} minuuttia
       less_than_x_seconds:
         one: alle sekunti
         other: alle %{count} sekuntia
+      less_than_x_minutes:
+        one: alle minuutti
+        other: alle %{count} minuuttia
       over_x_years:
         one: yli vuosi
         other: yli %{count} vuotta
-      x_days:
-        one: päivä
-        other: "%{count} päivää"
-      x_minutes:
-        one: minuutti
-        other: "%{count} minuuttia"
-      x_months:
-        one: kuukausi
-        other: "%{count} kuukautta"
       x_seconds:
         one: sekunti
         other: "%{count} sekuntia"
+      x_minutes:
+        one: minuutti
+        other: "%{count} minuuttia"
+      x_days:
+        one: päivä
+        other: "%{count} päivää"
+      x_months:
+        one: kuukausi
+        other: "%{count} kuukautta"
+      x_years:
+        one: vuosi
+        other: "%{count} vuotta"
     prompts:
-      day: päivä
-      hour: tunti
-      minute: minuutti
-      month: kuukausi
       second: sekunti
+      minute: minuutti
+      hour: tunti
+      day: päivä
+      month: kuukausi
       year: vuosi
   errors:
     format: "%{attribute} %{message}"
@@ -116,17 +122,26 @@ fi:
       invalid: on kelvoton
       less_than: täytyy olla pienempi kuin %{count}
       less_than_or_equal_to: täytyy olla pienempi tai yhtä suuri kuin %{count}
+      model_invalid: 'Validointi epäonnistui: %{errors}'
       not_a_number: ei ole luku
       not_an_integer: ei ole kokonaisluku
       odd: täytyy olla pariton
+      present: täytyy olla sisällötön
+      required: täytyy olla
       taken: on jo käytössä
-      too_long: on liian pitkä (saa olla enintään %{count} merkkiä)
-      too_short: on liian lyhyt (oltava vähintään %{count} merkkiä)
-      wrong_length: on väärän pituinen (täytyy olla täsmälleen %{count} merkkiä)
+      too_long:
+        one: on liian pitkä (saa olla enintään 1 merkki)
+        other: on liian pitkä (saa olla enintään %{count} merkkiä)
+      too_short:
+        one: on liian lyhyt (oltava vähintään 1 merkki)
+        other: on liian lyhyt (oltava vähintään %{count} merkkiä)
+      wrong_length:
+        one: on väärän pituinen (täytyy olla täsmälleen 1 merkki)
+        other: on väärän pituinen (täytyy olla täsmälleen %{count} merkkiä)
     template:
       body: 'Seuraavat kentät aiheuttivat ongelmia:'
       header:
-        one: Virhe syötteessä esti mallin %{model} tallentamisen
+        one: Virhe esti mallin %{model} tallentamisen
         other: "%{count} virhettä esti mallin %{model} tallentamisen"
   helpers:
     select:
@@ -155,11 +170,11 @@ fi:
       decimal_units:
         format: "%n %u"
         units:
-          thousand: tuhatta
-          million: miljoonaa
           billion: miljardia
-          trillion: biljoonaa
+          million: miljoonaa
           quadrillion: tuhatta biljoonaa
+          thousand: tuhatta
+          trillion: biljoonaa
           unit: ''
       format:
         delimiter: ''

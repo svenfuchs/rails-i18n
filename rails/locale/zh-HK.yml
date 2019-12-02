@@ -3,7 +3,7 @@ zh-HK:
   activerecord:
     errors:
       messages:
-        record_invalid: "驗證失敗︰%{errors}"
+        record_invalid: 驗證失敗︰%{errors}
         restrict_dependent_destroy:
           has_one: 由於%{record}依賴此記錄，無法移除
           has_many: 由於%{record}依賴此記錄，無法移除
@@ -17,7 +17,7 @@ zh-HK:
     - 周五
     - 周六
     abbr_month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -40,10 +40,10 @@ zh-HK:
     - 星期六
     formats:
       default: "%Y-%m-%d"
-      long: "%Y年%b%d日"
-      short: "%b%d日"
+      long: "%Y年%m月%d日"
+      short: "%m月%d日"
     month_names:
-    -
+    - 
     - 一月
     - 二月
     - 三月
@@ -75,57 +75,61 @@ zh-HK:
         one: 接近一年
         other: 接近%{count}年
       half_a_minute: 半分鐘
-      less_than_x_minutes:
-        one: 不到一分鐘
-        other: 不到%{count}分鐘
       less_than_x_seconds:
         one: 不到一秒
         other: 不到%{count}秒
+      less_than_x_minutes:
+        one: 不到一分鐘
+        other: 不到%{count}分鐘
       over_x_years:
         one: 超過一年
         other: 超過%{count}年
-      x_days:
-        one: 一天
-        other: "%{count}天"
-      x_minutes:
-        one: 一分鐘
-        other: "%{count}分鐘"
-      x_months:
-        one: 一個月
-        other: "%{count}個月"
       x_seconds:
         one: 一秒
         other: "%{count}秒"
+      x_minutes:
+        one: 一分鐘
+        other: "%{count}分鐘"
+      x_days:
+        one: 一天
+        other: "%{count}天"
+      x_months:
+        one: 一個月
+        other: "%{count}個月"
+      x_years:
+        one: 一年
+        other: "%{count} 年"
     prompts:
-      day: 日
-      hour: 時
-      minute: 分
-      month: 月
       second: 秒
+      minute: 分
+      hour: 時
+      day: 日
+      month: 月
       year: 年
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: 必定要被接受
-      blank: "不可以是空白"
-      present: "必定要是空白"
-      confirmation: 兩次輸入不一致
-      empty: "不可以留空"
-      equal_to: "必須等於 %{count}"
-      even: "必須要是雙數"
-      exclusion: "是被保留的關鍵字"
-      greater_than: "必須大於 %{count}"
-      greater_than_or_equal_to: "必須大於或等於 %{count}"
-      inclusion: "並非可被接受的內容"
-      invalid: "是無效的"
-      less_than: "必須小於 %{count}"
-      less_than_or_equal_to: "必須小於或等於 %{count}"
-      model_invalid: "驗證失敗︰%{errors}"
-      not_a_number: "必須是數字"
-      not_an_integer: "必須是整數"
-      odd: "必須是單數"
+      blank: 不可以是空白
+      confirmation: 與 %{attribute} 不一致
+      empty: 不可以留空
+      equal_to: 必須等於 %{count}
+      even: 必須要是雙數
+      exclusion: 是被保留的關鍵字
+      greater_than: 必須大於 %{count}
+      greater_than_or_equal_to: 必須大於或等於 %{count}
+      inclusion: 並非可被接受的內容
+      invalid: 是無效的
+      less_than: 必須小於 %{count}
+      less_than_or_equal_to: 必須小於或等於 %{count}
+      model_invalid: 驗證失敗︰%{errors}
+      not_a_number: 必須是數字
+      not_an_integer: 必須是整數
+      odd: 必須是單數
+      other_than: 不可以是 %{count} 個字
+      present: 必定要是空白
       required: 必須存在
-      taken: "已被使用"
+      taken: 已被使用
       too_long:
         one: 太長（最長為一個字元）
         other: 太長（最長為 %{count} 個字元）
@@ -135,7 +139,6 @@ zh-HK:
       wrong_length:
         one: 字數錯誤 (應為一個字元)
         other: 字數錯誤 (應為 %{count} 個字元)
-      other_than: "不可以是 %{count} 個字"
     template:
       body: 以下欄位發生問題︰
       header:
@@ -204,7 +207,7 @@ zh-HK:
   time:
     am: 上午
     formats:
-      default: "%Y年%b%d日 %A %H:%M:%S %Z"
-      long: "%Y年%b%d日 %H:%M"
-      short: "%b%d日 %H:%M"
+      default: "%Y年%m月%d日 %A %H:%M:%S %Z"
+      long: "%Y年%m月%d日 %H:%M"
+      short: "%m月%d日 %H:%M"
     pm: 下午

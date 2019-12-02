@@ -14,7 +14,7 @@ ca:
     - Dv
     - Ds
     abbr_month_names:
-    -
+    - 
     - Gen
     - Feb
     - Mar
@@ -40,7 +40,7 @@ ca:
       long: "%d de %B de %Y"
       short: "%d de %b"
     month_names:
-    -
+    - 
     - Gener
     - Febrer
     - Març
@@ -72,36 +72,36 @@ ca:
         one: quasi 1 any
         other: quasi %{count} anys
       half_a_minute: mig minut
-      less_than_x_minutes:
-        one: menys d'1 minut
-        other: menys de %{count} minuts
       less_than_x_seconds:
         one: menys d'1 segon
         other: menys de %{count} segons
+      less_than_x_minutes:
+        one: menys d'1 minut
+        other: menys de %{count} minuts
       over_x_years:
         one: més d'1 any
         other: més de %{count} anys
-      x_days:
-        one: 1 dia
-        other: "%{count} dies"
+      x_seconds:
+        one: 1 segon
+        other: "%{count} segons"
       x_minutes:
         one: 1 minut
         other: "%{count} minuts"
+      x_days:
+        one: 1 dia
+        other: "%{count} dies"
       x_months:
         one: 1 mes
         other: "%{count} mesos"
       x_years:
         one: 1 year
-        other: "%{count} years" 
-      x_seconds:
-        one: 1 segon
-        other: "%{count} segons"
+        other: "%{count} years"
     prompts:
-      day: dia
-      hour: hora
-      minute: minut
-      month: mes
       second: segon
+      minute: minut
+      hour: hora
+      day: dia
+      month: mes
       year: any
   errors:
     format: "%{attribute} %{message}"

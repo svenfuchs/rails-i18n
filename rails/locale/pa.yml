@@ -17,7 +17,7 @@ pa:
     - ਸ਼ੁੱਕਰ
     - ਸ਼ਨਿੱਚਰ
     abbr_month_names:
-    -
+    - 
     - ਜਨ
     - ਫ਼ਰ
     - ਮਾਰਚ
@@ -43,7 +43,7 @@ pa:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - ਜਨਵਰੀ
     - ਫ਼ਰਵਰੀ
     - ਮਾਰਚ
@@ -75,40 +75,39 @@ pa:
         one: ਤਕਰੀਬਨ 1 ਸਾਲ
         other: ਤਕਰੀਬਨ %{count} ਸਾਲ
       half_a_minute: ਅੱਧਾ ਮਿੰਟ
-      less_than_x_minutes:
-        one: 1 ਮਿੰਟ ਤੋਂ ਘੱਟ
-        other: "%{count} ਮਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       less_than_x_seconds:
         one: 1 ਸਕਿੰਟ ਤੋਂ ਘੱਟ
         other: "%{count} ਸਕਿੰਟਾਂ ਤੋਂ ਘੱਟ"
+      less_than_x_minutes:
+        one: 1 ਮਿੰਟ ਤੋਂ ਘੱਟ
+        other: "%{count} ਮਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       over_x_years:
         one: 1 ਸਾਲ ਤੋਂ ਵੱਧ
         other: "%{count} ਸਾਲਾਂ ਤੋਂ ਵੱਧ"
-      x_days:
-        one: 1 ਦਿਨ
-        other: "%{count} ਦਿਨ"
-      x_minutes:
-        one: 1 ਮਿੰਟ
-        other: "%{count} ਮਿੰਟ"
-      x_months:
-        one: 1 ਮਹੀਨਾ
-        other: "%{count} ਮਹੀਨੇ"
       x_seconds:
         one: 1 ਸਕਿੰਟ
         other: "%{count} ਸਕਿੰਟ"
+      x_minutes:
+        one: 1 ਮਿੰਟ
+        other: "%{count} ਮਿੰਟ"
+      x_days:
+        one: 1 ਦਿਨ
+        other: "%{count} ਦਿਨ"
+      x_months:
+        one: 1 ਮਹੀਨਾ
+        other: "%{count} ਮਹੀਨੇ"
     prompts:
-      day: ਦਿਨ
-      hour: ਘੰਟਾ
-      minute: ਮਿੰਟ
-      month: ਮਹੀਨਾ
       second: ਸਕਿੰਟ
+      minute: ਮਿੰਟ
+      hour: ਘੰਟਾ
+      day: ਦਿਨ
+      month: ਮਹੀਨਾ
       year: ਸਾਲ
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: ਜਰੂਰ ਮੰਜੂਰ ਹੋਵੇ
       blank: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
-      present: ਜਰੂਰ ਖਾਲੀ ਹੋਵੇ
       confirmation: "%{attribute} ਨਹੀਂ ਰਲਦੇ"
       empty: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
       equal_to: "%{count} ਦੇ ਬਰਾਬਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
@@ -123,6 +122,8 @@ pa:
       not_a_number: ਸੰਖਿਆ ਨਹੀਂ ਹੈ
       not_an_integer: ਜਰੂਰੀ ਹੈ ਕੇ ਪੂਰਨ ਅੰਕ ਹੋਵੇ
       odd: ਜਰੂਰੀ ਹੈ ਕੇ ਕਲ਼ੀ ਹੋਵੇ
+      other_than: "%{count} ਦੀ ਜਗ੍ਹਾ ਹੋਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+      present: ਜਰੂਰ ਖਾਲੀ ਹੋਵੇ
       taken: ਪਹਿਲਾਂ ਹੀ ਮੱਲਿਆ ਹੋਇਆ ਹੈ
       too_long:
         one: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ 1 ਅੱਖਰ)
@@ -133,7 +134,6 @@ pa:
       wrong_length:
         one: ਲੰਬਾਈ ਗਲਤ ਹੈ (1 ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
         other: ਲੰਬਾਈ ਗਲਤ ਹੈ (%{count} ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
-      other_than: "%{count} ਦੀ ਜਗ੍ਹਾ ਹੋਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
     template:
       body: 'ਹੇਠਲੇ ਖੇਤਰਾਂ ਵਿੱਚ ਗਲਤੀਆਂ ਹਨ:'
       header:

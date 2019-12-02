@@ -63,79 +63,78 @@ uk:
   datetime:
     distance_in_words:
       about_x_hours:
+        one: близько %{count} година
         few: близько %{count} години
         many: близько %{count} годин
-        one: близько %{count} година
         other: близько %{count} години
       about_x_months:
+        one: близько %{count} місяця
         few: близько %{count} місяців
         many: близько %{count} місяців
-        one: близько %{count} місяця
         other: близько %{count} місяця
       about_x_years:
+        one: близько %{count} року
         few: близько %{count} років
         many: близько %{count} років
-        one: близько %{count} року
         other: близько %{count} року
       almost_x_years:
+        one: майже %{count} роки
         few: майже %{count} років
         many: майже %{count} років
-        one: майже %{count} роки
         other: майже %{count} років
-      half_a_minute: півхвилини
-      less_than_x_minutes:
-        few: менше %{count} хвилин
-        many: менше %{count} хвилин
-        one: менше %{count} хвилини
-        other: менше %{count} хвилини
+      half_a_minute: пів хвилини
       less_than_x_seconds:
+        one: менше %{count} секунди
         few: менше %{count} секунд
         many: менше %{count} секунд
-        one: менше %{count} секунди
         other: менше %{count} секунди
+      less_than_x_minutes:
+        one: менше %{count} хвилини
+        few: менше %{count} хвилин
+        many: менше %{count} хвилин
+        other: менше %{count} хвилини
       over_x_years:
+        one: більше %{count} року
         few: більше %{count} років
         many: більше %{count} років
-        one: більше %{count} року
         other: більше %{count} року
-      x_days:
-        few: "%{count} дні"
-        many: "%{count} днів"
-        one: "%{count} день"
-        other: "%{count} дня"
-      x_minutes:
-        few: "%{count} хвилини"
-        many: "%{count} хвилин"
-        one: "%{count} хвилина"
-        other: "%{count} хвилини"
-      x_months:
-        few: "%{count} місяці"
-        many: "%{count} місяців"
-        one: "%{count} місяць"
-        other: "%{count} місяця"
-      x_years:
-        few: "%{count} років"
-        many: "%{count} років"
-        one: "%{count} рік"
-        other: "%{count} року"
       x_seconds:
+        one: "%{count} секунда"
         few: "%{count} секунди"
         many: "%{count} секунд"
-        one: "%{count} секунда"
         other: "%{count} секунди"
+      x_minutes:
+        one: "%{count} хвилина"
+        few: "%{count} хвилини"
+        many: "%{count} хвилин"
+        other: "%{count} хвилини"
+      x_days:
+        one: "%{count} день"
+        few: "%{count} дні"
+        many: "%{count} днів"
+        other: "%{count} дня"
+      x_months:
+        one: "%{count} місяць"
+        few: "%{count} місяці"
+        many: "%{count} місяців"
+        other: "%{count} місяця"
+      x_years:
+        one: "%{count} рік"
+        few: "%{count} роки"
+        many: "%{count} років"
+        other: "%{count} року"
     prompts:
-      day: День
-      hour: Година
-      minute: Хвилина
-      month: Місяць
       second: Секунда
+      minute: Хвилина
+      hour: Година
+      day: День
+      month: Місяць
       year: Рік
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: має бути прийнятий
       blank: не може бути пустим
-      present: має бути пустим
       confirmation: не збігається з підтвердженням
       empty: не може бути порожнім
       equal_to: має дорівнювати %{count}
@@ -149,32 +148,33 @@ uk:
       less_than_or_equal_to: має бути менше ніж або дорівнювати %{count}
       model_invalid: 'Виникли помилки: %{errors}'
       not_a_number: не число
-      not_an_integer: не э цілим числом
+      not_an_integer: не є цілим числом
       odd: має бути непарним
+      other_than: має відрізнятись від %{count}
+      present: має бути пустим
       required: не може бути порожнім
       taken: вже зайнятий
       too_long:
+        one: занадто довгий (максимум %{count} знак)
         few: занадто довгий (максимум %{count} знаки)
         many: занадто довгий (максимум %{count} знаків)
-        one: занадто довгий (максимум %{count} знак)
         other: занадто довгий (максимум %{count} знаку)
       too_short:
+        one: занадто короткий (мінімум %{count} знак)
         few: занадто короткий (мінімум %{count} знаки)
         many: занадто короткий (мінімум %{count} знаків)
-        one: занадто короткий (мінімум %{count} знак)
         other: занадто короткий (мінімум %{count} знаку)
       wrong_length:
+        one: неправильна довжина (має бути %{count} знак)
         few: неправильна довжина (має бути %{count} знаки)
         many: неправильна довжина (має бути %{count} знаків)
-        one: неправильна довжина (має бути %{count} знак)
         other: неправильна довжина (має бути %{count} знаку)
-      other_than: має відрізнятись від %{count}
     template:
       body: 'Помилки виявлено в таких полях:'
       header:
+        one: "%{model} не збережено через %{count} помилку"
         few: "%{model} не збережено через %{count} помилки"
         many: "%{model} не збережено через %{count} помилок"
-        one: "%{model} не збережено через %{count} помилку"
         other: "%{model} не збережено через %{count} помилки"
   helpers:
     select:
@@ -204,29 +204,29 @@ uk:
         format: "%n %u"
         units:
           billion:
+            one: Мільярд
             few: Мільярдів
             many: Мільярдів
-            one: Мільярд
             other: Мільярдів
           million:
+            one: Мільйон
             few: Мільйонів
             many: Мільйонів
-            one: Мільйон
             other: Мільйонів
           quadrillion:
+            one: Квадрильйон
             few: Квадрильйонів
             many: Квадрильйонів
-            one: Кквадрильйон
             other: Квадрильйонів
           thousand:
+            one: Тисяча
             few: Тисяч
             many: Тисяч
-            one: Тисяча
             other: Тисяч
           trillion:
+            one: Трильйон
             few: Трильйонів
             many: Трильйонів
-            one: Трильйон
             other: Трильйонів
           unit: ''
       format:
@@ -238,9 +238,9 @@ uk:
         format: "%n %u"
         units:
           byte:
+            one: байт
             few: байти
             many: байтів
-            one: байт
             other: байту
           gb: ГБ
           kb: кБ

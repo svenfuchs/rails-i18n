@@ -4,6 +4,9 @@ az:
     errors:
       messages:
         record_invalid: 'Yoxlama uğursuz oldu: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Əlaqəli %{record} yazı olduğundan bu yazını silmək mümkün deyil
+          has_many: Əlaqəli %{record} yazılar olduğundan bu yazını silmək mümkün deyil
   date:
     abbr_day_names:
     - B.
@@ -14,7 +17,7 @@ az:
     - C.
     - Ş.
     abbr_month_names:
-    -
+    - 
     - Yan
     - Fev
     - Mar
@@ -40,7 +43,7 @@ az:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - Yanvar
     - Fevral
     - Mart
@@ -72,33 +75,33 @@ az:
         one: təqribən 1 il
         other: təqribən %{count} il
       half_a_minute: yarım dəqiqə
-      less_than_x_minutes:
-        one: 1 dəqiqədən az
-        other: "%{count} dəqiqədən az"
       less_than_x_seconds:
         one: 1 saniyədən az
         other: "%{count} saniyədən az"
+      less_than_x_minutes:
+        one: 1 dəqiqədən az
+        other: "%{count} dəqiqədən az"
       over_x_years:
         one: 1 ildən çox
         other: "%{count} ildən çox"
-      x_days:
-        one: 1 gün
-        other: "%{count} gün"
-      x_minutes:
-        one: 1 dəqiqə
-        other: "%{count} dəqiqə"
-      x_months:
-        one: 1 ay
-        other: "%{count} ay"
       x_seconds:
         one: 1 saniyə
         other: "%{count} saniyə"
+      x_minutes:
+        one: 1 dəqiqə
+        other: "%{count} dəqiqə"
+      x_days:
+        one: 1 gün
+        other: "%{count} gün"
+      x_months:
+        one: 1 ay
+        other: "%{count} ay"
     prompts:
-      day: Gün
-      hour: Saat
-      minute: Dəqiqə
-      month: Ay
       second: Saniyə
+      minute: Dəqiqə
+      hour: Saat
+      day: Gün
+      month: Ay
       year: İl
   errors:
     format: "%{attribute} %{message}"
@@ -116,9 +119,13 @@ az:
       invalid: yanlışdır
       less_than: "%{count}-dən kiçik olmalıdır"
       less_than_or_equal_to: kiçik və ya %{count}-ə bərabər olmalıdır
+      model_invalid: 'Yoxlama uğursuz oldu: %{errors}'
       not_a_number: rəqəm deyil
       not_an_integer: tam rəqəm olmalıdır
       odd: tək olmalıdır
+      other_than: "%{count}-dən fərqli olmalıdır"
+      present: boş olmalıdır
+      required: mövcud olmalıdır
       taken: artıq mövcuddur
       too_long: çox uzundur (%{count} simvoldan çox olmalı deyil)
       too_short: çox qısadır (%{count} simvoldan az olmalı deyil)
@@ -157,7 +164,7 @@ az:
         units:
           billion: Milyard
           million: Milyon
-          quadrillion: Katrilyon
+          quadrillion: Kvadrilyon
           thousand: Min
           trillion: Trilyon
           unit: ''

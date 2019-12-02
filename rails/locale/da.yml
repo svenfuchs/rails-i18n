@@ -17,7 +17,7 @@ da:
     - fre
     - lør
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -43,7 +43,7 @@ da:
       long: "%e. %B %Y"
       short: "%e. %b %Y"
     month_names:
-    -
+    - 
     - januar
     - februar
     - marts
@@ -75,40 +75,42 @@ da:
         one: næsten et år
         other: næsten %{count} år
       half_a_minute: et halvt minut
-      less_than_x_minutes:
-        one: mindre end et minut
-        other: mindre end %{count} minutter
       less_than_x_seconds:
         one: mindre end et sekund
         other: mindre end %{count} sekunder
+      less_than_x_minutes:
+        one: mindre end et minut
+        other: mindre end %{count} minutter
       over_x_years:
         one: mere end et år
         other: mere end %{count} år
-      x_days:
-        one: en dag
-        other: "%{count} dage"
-      x_minutes:
-        one: et minut
-        other: "%{count} minutter"
-      x_months:
-        one: en måned
-        other: "%{count} måneder"
       x_seconds:
         one: et sekund
         other: "%{count} sekunder"
+      x_minutes:
+        one: et minut
+        other: "%{count} minutter"
+      x_days:
+        one: en dag
+        other: "%{count} dage"
+      x_months:
+        one: en måned
+        other: "%{count} måneder"
+      x_years:
+        one: et år
+        other: "%{count} år"
     prompts:
-      day: Dag
-      hour: Time
-      minute: Minut
-      month: Måned
       second: Sekund
+      minute: Minut
+      hour: Time
+      day: Dag
+      month: Måned
       year: År
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: skal accepteres
       blank: skal udfyldes
-      present: skal være tom
       confirmation: stemmer ikke overens med bekræftelse
       empty: må ikke udelades
       equal_to: skal være %{count}
@@ -120,16 +122,23 @@ da:
       invalid: er ikke gyldig
       less_than: skal være mindre end %{count}
       less_than_or_equal_to: skal være mindre end, eller lig med, %{count}
-      model_invalid: "Godkendelse gik galt: %{errors}"
+      model_invalid: 'Godkendelse gik galt: %{errors}'
       not_a_number: er ikke et tal
       not_an_integer: er ikke et heltal
       odd: skal være et ulige tal
+      other_than: skal være forskellig fra %{count}
+      present: skal være tom
       required: skal eksistere
       taken: er allerede brugt
-      too_long: er for lang (højst %{count} tegn)
-      too_short: er for kort (mindst %{count} tegn)
-      wrong_length: har forkert længde (skulle være %{count} tegn)
-      other_than: skal være forskellig fra %{count}
+      too_long:
+        one: er for lang (højst 1 tegn)
+        other: er for lang (højst %{count} tegn)
+      too_short:
+        one: er for kort (mindst 1 tegn)
+        other: er for kort (mindst %{count} tegn)
+      wrong_length:
+        one: har forkert længde (skulle være 1 tegn)
+        other: har forkert længde (skulle være %{count} tegn)
     template:
       body: 'Der var problemer med følgende felter:'
       header:

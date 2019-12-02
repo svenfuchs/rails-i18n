@@ -3,7 +3,7 @@ ja:
   activerecord:
     errors:
       messages:
-        record_invalid: "バリデーションに失敗しました: %{errors}"
+        record_invalid: 'バリデーションに失敗しました: %{errors}'
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
@@ -17,7 +17,7 @@ ja:
     - 金
     - 土
     abbr_month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -43,7 +43,7 @@ ja:
       long: "%Y年%m月%d日(%a)"
       short: "%m/%d"
     month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -75,43 +75,42 @@ ja:
         one: 1年弱
         other: "%{count}年弱"
       half_a_minute: 30秒前後
-      less_than_x_minutes:
-        one: 1分以内
-        other: "%{count}分未満"
       less_than_x_seconds:
         one: 1秒以内
         other: "%{count}秒未満"
+      less_than_x_minutes:
+        one: 1分以内
+        other: "%{count}分未満"
       over_x_years:
         one: 1年以上
         other: "%{count}年以上"
-      x_days:
-        one: 1日
-        other: "%{count}日"
+      x_seconds:
+        one: 1秒
+        other: "%{count}秒"
       x_minutes:
         one: 1分
         other: "%{count}分"
+      x_days:
+        one: 1日
+        other: "%{count}日"
       x_months:
         one: 1ヶ月
         other: "%{count}ヶ月"
       x_years:
         one: 1年
         other: "%{count}年"
-      x_seconds:
-        one: 1秒
-        other: "%{count}秒"
     prompts:
-      day: 日
-      hour: 時
-      minute: 分
-      month: 月
       second: 秒
+      minute: 分
+      hour: 時
+      day: 日
+      month: 月
       year: 年
   errors:
     format: "%{attribute}%{message}"
     messages:
       accepted: を受諾してください
       blank: を入力してください
-      present: は入力しないでください
       confirmation: と%{attribute}の入力が一致しません
       empty: を入力してください
       equal_to: は%{count}にしてください
@@ -123,16 +122,17 @@ ja:
       invalid: は不正な値です
       less_than: は%{count}より小さい値にしてください
       less_than_or_equal_to: は%{count}以下の値にしてください
-      model_invalid: "バリデーションに失敗しました: %{errors}"
+      model_invalid: 'バリデーションに失敗しました: %{errors}'
       not_a_number: は数値で入力してください
       not_an_integer: は整数で入力してください
       odd: は奇数にしてください
+      other_than: は%{count}以外の値にしてください
+      present: は入力しないでください
       required: を入力してください
       taken: はすでに存在します
       too_long: は%{count}文字以内で入力してください
       too_short: は%{count}文字以上で入力してください
       wrong_length: は%{count}文字で入力してください
-      other_than: は%{count}以外の値にしてください
     template:
       body: 次の項目を確認してください
       header:
@@ -180,9 +180,11 @@ ja:
         format: "%n%u"
         units:
           byte: バイト
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
@@ -193,13 +195,13 @@ ja:
         delimiter: ''
   support:
     array:
-      last_word_connector: と
-      two_words_connector: と
-      words_connector: と
+      last_word_connector: "、"
+      two_words_connector: "、"
+      words_connector: "、"
   time:
     am: 午前
     formats:
-      default: "%Y/%m/%d %H:%M:%S"
-      long: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
-      short: "%y/%m/%d %H:%M"
+      default: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
+      long: "%Y/%m/%d %H:%M"
+      short: "%m/%d %H:%M"
     pm: 午後
