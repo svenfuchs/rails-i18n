@@ -130,9 +130,15 @@ nb:
       present: må være tom
       required: må eksistere
       taken: er allerede i bruk
-      too_long: er for lang (maksimum %{count} tegn)
-      too_short: er for kort (minimum %{count} tegn)
-      wrong_length: er av feil lengde (maksimum %{count} tegn)
+      too_long:
+        one: er for lang (maksimalt 1 tegn)
+        other: er for lang (maksimalt %{count} tegn)
+      too_short:
+        one: er for kort (minst 1 tegn)
+        other: er for kort (minst %{count} tegn)
+      wrong_length:
+        one: har feil lengde (må være 1 tegn)
+        other: har feil lengde (må være %{count} tegn)
     template:
       body: 'Det oppstod problemer med følgende felt:'
       header:
