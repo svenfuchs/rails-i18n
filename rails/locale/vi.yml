@@ -202,6 +202,3 @@ vi:
       long: "%d %B, %Y %H:%M"
       short: "%d %b %H:%M"
     pm: chiều
-  created_at: "Tạo lúc"
-  updated_at: "Cập nhật lúc"
-
