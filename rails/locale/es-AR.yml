@@ -125,7 +125,7 @@ es-AR:
       model_invalid: 'La validación falló: %{errors}'
       not_a_number: no es un número
       not_an_integer: debe ser un entero
-      odd: debe ser un número non
+      odd: debe ser un número impar
       other_than: debe ser distinto de %{count}
       present: debe estar en blanco
       required: debe existir
