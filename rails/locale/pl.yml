@@ -40,7 +40,7 @@ pl:
     - sobota
     formats:
       default: "%d-%m-%Y"
-      long: "%B %d, %Y"
+      long: "%d %B %Y"
       short: "%d %b"
     month_names:
     - 
