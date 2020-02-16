@@ -3,11 +3,11 @@ fr:
   activerecord:
     errors:
       messages:
-        record_invalid: 'La validation a échoué : %{errors}'
+        record_invalid: 'La validation a échoué : %{errors}'
         restrict_dependent_destroy:
-          has_one: Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record}
+          has_one: Vous ne pouvez pas supprimer l’enregistrement car un(e) %{record}
             dépendant(e) existe
-          has_many: Vous ne pouvez pas supprimer l'enregistrement parce que les %{record}
+          has_many: Vous ne pouvez pas supprimer l’enregistrement parce que les %{record}
             dépendants existent
   date:
     abbr_day_names:
@@ -42,8 +42,8 @@ fr:
     - samedi
     formats:
       default: "%d/%m/%Y"
-      long: "%e %B %Y"
-      short: "%e %b"
+      long: "%e %B %Y"
+      short: "%e %b"
     month_names:
     - 
     - janvier
@@ -66,42 +66,42 @@ fr:
     distance_in_words:
       about_x_hours:
         one: environ une heure
-        other: environ %{count} heures
+        other: environ %{count} heures
       about_x_months:
         one: environ un mois
-        other: environ %{count} mois
+        other: environ %{count} mois
       about_x_years:
         one: environ un an
-        other: environ %{count} ans
+        other: environ %{count} ans
       almost_x_years:
-        one: presqu'un an
-        other: presque %{count} ans
-      half_a_minute: une demi-minute
+        one: presqu’un an
+        other: presque %{count} ans
+      half_a_minute: une demi‑minute
       less_than_x_seconds:
-        zero: moins d'une seconde
-        one: moins d'une seconde
-        other: moins de %{count} secondes
+        zero: moins d’une seconde
+        one: moins d’une seconde
+        other: moins de %{count} secondes
       less_than_x_minutes:
-        zero: moins d'une minute
-        one: moins d'une minute
-        other: moins de %{count} minutes
+        zero: moins d’une minute
+        one: moins d’une minute
+        other: moins de %{count} minutes
       over_x_years:
-        one: plus d'un an
-        other: plus de %{count} ans
+        one: plus d’un an
+        other: plus de %{count} ans
       x_seconds:
-        one: 1 seconde
-        other: "%{count} secondes"
+        one: 1 seconde
+        other: "%{count} secondes"
       x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
+        one: 1 minute
+        other: "%{count} minutes"
       x_days:
-        one: 1 jour
-        other: "%{count} jours"
+        one: 1 jour
+        other: "%{count} jours"
       x_months:
-        one: 1 mois
-        other: "%{count} mois"
+        one: 1 mois
+        other: "%{count} mois"
       x_years:
-        one: 1 an
+        one: 1 an
         other: "%{count} ans"
     prompts:
       second: Seconde
@@ -117,37 +117,37 @@ fr:
       blank: doit être rempli(e)
       confirmation: ne concorde pas avec %{attribute}
       empty: doit être rempli(e)
-      equal_to: doit être égal à %{count}
+      equal_to: doit être égal à %{count}
       even: doit être pair
-      exclusion: n'est pas disponible
-      greater_than: doit être supérieur à %{count}
-      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
-      inclusion: n'est pas inclus(e) dans la liste
-      invalid: n'est pas valide
-      less_than: doit être inférieur à %{count}
-      less_than_or_equal_to: doit être inférieur ou égal à %{count}
-      model_invalid: 'Validation échouée : %{errors}'
-      not_a_number: n'est pas un nombre
+      exclusion: n’est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n’est pas inclus(e) dans la liste
+      invalid: n’est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      model_invalid: 'Validation échouée : %{errors}'
+      not_a_number: n’est pas un nombre
       not_an_integer: doit être un nombre entier
       odd: doit être impair
-      other_than: doit être différent de %{count}
+      other_than: doit être différent de %{count}
       present: doit être vide
       required: doit exister
-      taken: n'est pas disponible
+      taken: n’est pas disponible
       too_long:
-        one: est trop long (pas plus d'un caractère)
-        other: est trop long (pas plus de %{count} caractères)
+        one: est trop long (pas plus d’un caractère)
+        other: est trop long (pas plus de %{count} caractères)
       too_short:
         one: est trop court (au moins un caractère)
-        other: est trop court (au moins %{count} caractères)
+        other: est trop court (au moins %{count} caractères)
       wrong_length:
         one: ne fait pas la bonne longueur (doit comporter un seul caractère)
-        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
     template:
-      body: 'Veuillez vérifier les champs suivants : '
+      body: 'Veuillez vérifier les champs suivants : '
       header:
-        one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
-        other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
+        one: 'Impossible d’enregistrer ce(tte) %{model} : 1 erreur'
+        other: 'Impossible d’enregistrer ce(tte) %{model} : %{count} erreurs'
   helpers:
     select:
       prompt: Veuillez sélectionner
@@ -158,22 +158,22 @@ fr:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: "%n %u"
+        format: "%n %u"
         units:
           billion: milliard
           million: million
@@ -187,7 +187,7 @@ fr:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: "%n %u"
         units:
           byte:
             one: octet
@@ -201,7 +201,7 @@ fr:
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
+        format: "%n %"
     precision:
       format:
         delimiter: ''
