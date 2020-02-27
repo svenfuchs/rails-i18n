@@ -99,7 +99,7 @@ de:
         other: "%{count} Monate"
       x_years:
         one: ein Jahr
-        other: "%{count} Jahr"
+        other: "%{count} Jahre"
     prompts:
       second: Sekunde
       minute: Minute
