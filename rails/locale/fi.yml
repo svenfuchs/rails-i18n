@@ -17,7 +17,7 @@ fi:
     - pe
     - la
     abbr_month_names:
-    - 
+    -
     - tammi
     - helmi
     - maalis
@@ -43,7 +43,7 @@ fi:
       long: "%A %e. %Bta %Y"
       short: "%d. %b"
     month_names:
-    - 
+    -
     - tammikuu
     - helmikuu
     - maaliskuu
@@ -100,17 +100,17 @@ fi:
         one: vuosi
         other: "%{count} vuotta"
     prompts:
-      second: sekunti
-      minute: minuutti
-      hour: tunti
-      day: päivä
-      month: kuukausi
-      year: vuosi
+      second: Sekunti
+      minute: Minuutti
+      hour: Tunti
+      day: Päivä
+      month: Kuukausi
+      year: Vuosi
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: täytyy olla hyväksytty
-      blank: ei voi olla sisällötön
+      blank: ei voi olla tyhjä
       confirmation: ei vastaa varmennusta
       empty: ei voi olla tyhjä
       equal_to: täytyy olla yhtä suuri kuin %{count}
@@ -119,12 +119,12 @@ fi:
       greater_than: täytyy olla suurempi kuin %{count}
       greater_than_or_equal_to: täytyy olla suurempi tai yhtä suuri kuin %{count}
       inclusion: ei löydy listasta
-      invalid: on kelvoton
+      invalid: on virheellinen
       less_than: täytyy olla pienempi kuin %{count}
       less_than_or_equal_to: täytyy olla pienempi tai yhtä suuri kuin %{count}
       model_invalid: 'Validointi epäonnistui: %{errors}'
       not_a_number: ei ole luku
-      not_an_integer: ei ole kokonaisluku
+      not_an_integer: täytyy olla kokonaisluku
       odd: täytyy olla pariton
       present: täytyy olla sisällötön
       required: täytyy olla
@@ -141,7 +141,7 @@ fi:
     template:
       body: 'Seuraavat kentät aiheuttivat ongelmia:'
       header:
-        one: Virhe esti mallin %{model} tallentamisen
+        one: Virhe syötteessä esti mallin %{model} tallentamisen
         other: "%{count} virhettä esti mallin %{model} tallentamisen"
   helpers:
     select:
