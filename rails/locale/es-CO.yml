@@ -17,7 +17,7 @@ es-CO:
     - vie
     - sáb
     abbr_month_names:
-    -
+    - 
     - ene
     - feb
     - mar
@@ -43,7 +43,7 @@ es-CO:
       long: "%A, %d de %B de %Y"
       short: "%d de %b"
     month_names:
-    -
+    - 
     - enero
     - febrero
     - marzo
@@ -182,7 +182,7 @@ es-CO:
             other: billones
           unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
@@ -200,11 +200,11 @@ es-CO:
           tb: TB
     percentage:
       format:
-        delimiter: ""
+        delimiter: ''
         format: "%n%"
     precision:
       format:
-        delimiter: ""
+        delimiter: ''
   support:
     array:
       last_word_connector: " y "
