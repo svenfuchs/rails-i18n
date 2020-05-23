@@ -91,6 +91,9 @@ de:
       x_minutes:
         one: eine Minute
         other: "%{count} Minuten"
+      x_hours:
+        one: eine Stunde
+        other: "%{count} Stunden"
       x_days:
         one: ein Tag
         other: "%{count} Tage"
