@@ -1,9 +1,8 @@
 language: ruby
 rvm:
-  - 2.2.9
-  - 2.3.6
-  - 2.4.3
-  - 2.5.0
+  - 2.5.3
+  - 2.6.0
 branches:
   only:
     - master
+    - rails-5-x

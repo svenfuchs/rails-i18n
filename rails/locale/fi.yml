@@ -5,8 +5,8 @@ fi:
       messages:
         record_invalid: 'Validointi epäonnistui: %{errors}'
         restrict_dependent_destroy:
-          has_one: "Ei voida poistaa mallia koska tästä riippuvainen %{record} löytyy"
-          has_many: "Ei voida poistaa mallia koska tästä riippuvaisia %{record} löytyy"
+          has_one: Ei voida poistaa mallia koska tästä riippuvainen %{record} löytyy
+          has_many: Ei voida poistaa mallia koska tästä riippuvaisia %{record} löytyy
   date:
     abbr_day_names:
     - su
@@ -75,43 +75,42 @@ fi:
         one: melkein yksi vuosi
         other: melkein %{count} vuotta
       half_a_minute: puoli minuuttia
-      less_than_x_minutes:
-        one: alle minuutti
-        other: alle %{count} minuuttia
       less_than_x_seconds:
         one: alle sekunti
         other: alle %{count} sekuntia
+      less_than_x_minutes:
+        one: alle minuutti
+        other: alle %{count} minuuttia
       over_x_years:
         one: yli vuosi
         other: yli %{count} vuotta
-      x_days:
-        one: päivä
-        other: "%{count} päivää"
+      x_seconds:
+        one: sekunti
+        other: "%{count} sekuntia"
       x_minutes:
         one: minuutti
         other: "%{count} minuuttia"
+      x_days:
+        one: päivä
+        other: "%{count} päivää"
       x_months:
         one: kuukausi
         other: "%{count} kuukautta"
       x_years:
         one: vuosi
         other: "%{count} vuotta"
-      x_seconds:
-        one: sekunti
-        other: "%{count} sekuntia"
     prompts:
-      day: päivä
-      hour: tunti
-      minute: minuutti
-      month: kuukausi
-      second: sekunti
-      year: vuosi
+      second: Sekunti
+      minute: Minuutti
+      hour: Tunti
+      day: Päivä
+      month: Kuukausi
+      year: Vuosi
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: täytyy olla hyväksytty
-      blank: ei voi olla sisällötön
-      present: täytyy olla sisällötön
+      blank: ei voi olla tyhjä
       confirmation: ei vastaa varmennusta
       empty: ei voi olla tyhjä
       equal_to: täytyy olla yhtä suuri kuin %{count}
@@ -120,13 +119,14 @@ fi:
       greater_than: täytyy olla suurempi kuin %{count}
       greater_than_or_equal_to: täytyy olla suurempi tai yhtä suuri kuin %{count}
       inclusion: ei löydy listasta
-      invalid: on kelvoton
+      invalid: on virheellinen
       less_than: täytyy olla pienempi kuin %{count}
       less_than_or_equal_to: täytyy olla pienempi tai yhtä suuri kuin %{count}
-      model_invalid: "Validointi epäonnistui: %{errors}"
+      model_invalid: 'Validointi epäonnistui: %{errors}'
       not_a_number: ei ole luku
-      not_an_integer: ei ole kokonaisluku
+      not_an_integer: täytyy olla kokonaisluku
       odd: täytyy olla pariton
+      present: täytyy olla sisällötön
       required: täytyy olla
       taken: on jo käytössä
       too_long:
@@ -141,7 +141,7 @@ fi:
     template:
       body: 'Seuraavat kentät aiheuttivat ongelmia:'
       header:
-        one: Virhe esti mallin %{model} tallentamisen
+        one: Virhe syötteessä esti mallin %{model} tallentamisen
         other: "%{count} virhettä esti mallin %{model} tallentamisen"
   helpers:
     select:

@@ -1,4 +1,5 @@
 require File.dirname(__FILE__) + '/rails/test/lib/key_structure.rb'
+require File.dirname(__FILE__) + '/rails/test/lib/normalize.rb'
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib') unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/lib')
 
 class Locales < Thor
@@ -51,6 +52,22 @@ class Locales < Thor
     end
 
     puts "The structure is good." if good
+  end
+
+  desc 'normalize LOCALE', 'Normalize locale file.'
+  def normalize(locale)
+    Dir.glob(format('%s/rails/locale/%s.{rb,yml}', File.dirname(__FILE__), locale)) do |filename|
+      h = YAML.load_file(filename)
+      File.write(filename, Normalize.deep_sort(h).to_yaml)
+    end
+  end
+
+  desc 'normalize_all', 'Normalize all locale files.'
+  def normalize_all
+    Dir.glob(format('%s/rails/locale/*.{rb,yml}', File.dirname(__FILE__))) do |filename|
+      h = YAML.load_file(filename)
+      File.write(filename, Normalize.deep_sort(h).to_yaml)
+    end
   end
 
   desc 'list', 'List locale names.'

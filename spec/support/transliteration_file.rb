@@ -37,7 +37,10 @@ module RailsI18n
 
     class YAMLTransliterationFile < TransliterationFile
       def content
-        @content ||= YAML.load_file(@filepath).deep_symbolize_keys
+        return @content if @content
+
+        hash = YAML.load_file(@filepath)
+        @content = JSON.parse(JSON[hash], symbolize_names: true)
       end
 
       def transliterate(string)

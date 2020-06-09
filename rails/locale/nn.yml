@@ -17,7 +17,7 @@ nn:
     - fre
     - lau
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -43,7 +43,7 @@ nn:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    -
+    - 
     - januar
     - februar
     - mars
@@ -73,40 +73,39 @@ nn:
         other: rundt %{count} år
       almost_x_years: nesten %{count} år
       half_a_minute: eit halvt minutt
-      less_than_x_minutes:
-        one: mindre enn 1 minutt
-        other: mindre enn %{count} minutt
       less_than_x_seconds:
         one: mindre enn 1 sekund
         other: mindre enn %{count} sekund
+      less_than_x_minutes:
+        one: mindre enn 1 minutt
+        other: mindre enn %{count} minutt
       over_x_years:
         one: over 1 år
         other: over %{count} år
-      x_days:
-        one: 1 dag
-        other: "%{count} dagar"
-      x_minutes:
-        one: 1 minutt
-        other: "%{count} minutt"
-      x_months:
-        one: 1 månad
-        other: "%{count} månader"
       x_seconds:
         one: 1 sekund
         other: "%{count} sekund"
+      x_minutes:
+        one: 1 minutt
+        other: "%{count} minutt"
+      x_days:
+        one: 1 dag
+        other: "%{count} dagar"
+      x_months:
+        one: 1 månad
+        other: "%{count} månader"
     prompts:
-      day: Dag
-      hour: Time
-      minute: Minutt
-      month: Månad
       second: Sekund
+      minute: Minutt
+      hour: Time
+      day: Dag
+      month: Månad
       year: År
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: må vera akseptert
       blank: kan ikkje vera blank
-      present: må vera blank
       confirmation: er ikkje lik %{attribute}
       empty: kan ikkje vera tom
       equal_to: må vera lik %{count}
@@ -122,12 +121,13 @@ nn:
       not_a_number: er ikkje eit tal
       not_an_integer: er ikkje eit heiltal
       odd: må vera oddetal
+      other_than: må vera noko anna enn %{count}
+      present: må vera blank
       required: må eksistera
       taken: er allereie i bruk
       too_long: er for lang (maksimum %{count} teikn)
       too_short: er for kort (minimum %{count} teikn)
       wrong_length: har feil lengde (maksimum %{count} teikn)
-      other_than: må vera noko anna enn %{count}
     template:
       body: 'det oppstod problem i følgjande felt:'
       header: kunne ikkje lagra %{model} grunna %{count} feil.

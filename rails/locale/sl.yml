@@ -14,7 +14,7 @@ sl:
     - pet
     - sob
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -40,7 +40,7 @@ sl:
       long: "%d. %b %Y"
       short: "%d. %b"
     month_names:
-    -
+    - 
     - januar
     - februar
     - marec
@@ -60,74 +60,74 @@ sl:
   datetime:
     distance_in_words:
       about_x_hours:
-        few: okoli %{count} ure
         one: okoli 1 ura
-        other: okoli %{count} ur
         two: okoli 2 uri
+        few: okoli %{count} ure
+        other: okoli %{count} ur
       about_x_months:
-        few: okoli %{count} mesece
         one: okoli 1 mesec
-        other: okoli %{count} mesecev
         two: okoli 2 meseca
+        few: okoli %{count} mesece
+        other: okoli %{count} mesecev
       about_x_years:
-        few: okoli %{count} leta
         one: okoli 1 leto
-        other: okoli %{count} let
         two: okoli 2 leti
+        few: okoli %{count} leta
+        other: okoli %{count} let
       almost_x_years:
-        few: skoraj %{count} leta
         one: skoraj 1 leto
-        other: skoraj %{count} let
         two: skoraj 2 leti
+        few: skoraj %{count} leta
+        other: skoraj %{count} let
       half_a_minute: pol minute
-      less_than_x_minutes:
-        few: manj kot %{count} minute
-        one: manj kot ena minuta
-        other: manj kot %{count} minut
-        two: manj kot dve minuti
       less_than_x_seconds:
-        few: manj kot %{count} sekunde
         one: manj kot 1 sekunda
-        other: manj kot %{count} sekund
         two: manj kot 2 sekundi
+        few: manj kot %{count} sekunde
+        other: manj kot %{count} sekund
+      less_than_x_minutes:
+        one: manj kot ena minuta
+        two: manj kot dve minuti
+        few: manj kot %{count} minute
+        other: manj kot %{count} minut
       over_x_years:
-        few: več kot %{count} leta
         one: več kot 1 leto
-        other: več kot %{count} let
         two: več kot 2 leti
-      x_days:
-        few: "%{count} dnevi"
-        one: 1 dan
-        other: "%{count} dni"
-        two: 2 dneva
-      x_minutes:
-        few: "%{count} minute"
-        one: 1 minuta
-        other: "%{count} minut"
-        two: 2 minuti
-      x_months:
-        few: "%{count} mesece"
-        one: 1 mesec
-        other: "%{count} mesecev"
-        two: 2 meseca
+        few: več kot %{count} leta
+        other: več kot %{count} let
       x_seconds:
-        few: "%{count} sekunde"
         one: 1 sekunda
-        other: "%{count} sekund"
         two: 2 sekundi
+        few: "%{count} sekunde"
+        other: "%{count} sekund"
+      x_minutes:
+        one: 1 minuta
+        two: 2 minuti
+        few: "%{count} minute"
+        other: "%{count} minut"
+      x_days:
+        one: 1 dan
+        two: 2 dneva
+        few: "%{count} dnevi"
+        other: "%{count} dni"
+      x_months:
+        one: 1 mesec
+        two: 2 meseca
+        few: "%{count} mesece"
+        other: "%{count} mesecev"
     prompts:
-      day: Dan
-      hour: Ura
-      minute: Minute
-      month: Mesec
       second: Sekunde
+      minute: Minute
+      hour: Ura
+      day: Dan
+      month: Mesec
       year: Leto
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: mora biti sprejeto
       blank: ne sme biti prazno
-      confirmation: se ne ujema s potrditvijo
+      confirmation: se ne ujema z vrednostjo %{attribute}
       empty: ne sme biti prazno
       equal_to: mora biti enako %{count}
       even: mora biti sodo
@@ -147,10 +147,10 @@ sl:
     template:
       body: 'Napačno izpolnjena polja:'
       header:
-        few: "%{count} napake preprečujejo, da bi shranili %{model}"
         one: Ena napaka preprečuje, da bi shranili %{model}
-        other: "%{count} napak preprečuje, da bi shranili %{model}"
         two: Dve napaki preprečujeta, da bi shranili %{model}
+        few: "%{count} napake preprečujejo, da bi shranili %{model}"
+        other: "%{count} napak preprečuje, da bi shranili %{model}"
   number:
     currency:
       format:

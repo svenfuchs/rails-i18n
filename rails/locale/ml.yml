@@ -3,7 +3,7 @@ ml:
   activerecord:
     errors:
       messages:
-        record_invalid: "Validation failed: %{errors}"
+        record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_one: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
           has_many: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
@@ -17,7 +17,7 @@ ml:
     - വെ.
     - ശ.
     abbr_month_names:
-    -
+    - 
     - ജനു.
     - ഫെബ്ര.
     - മാർ.
@@ -43,7 +43,7 @@ ml:
       long: "%d %B, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - ജനുവരി
     - ഫെബ്രുവരി
     - മാർച്ച്
@@ -64,51 +64,50 @@ ml:
     distance_in_words:
       about_x_hours:
         one: എകദേശം 1 മണിക്കൂർ
-        other: "എകദേശം %{count} മണിക്കൂർ"
+        other: എകദേശം %{count} മണിക്കൂർ
       about_x_months:
         one: എകദേശം 1 മാസം
-        other: "എകദേശം %{count} മാസം"
+        other: എകദേശം %{count} മാസം
       about_x_years:
         one: എകദേശം 1 വർഷം
-        other: "എകദേശം %{count} വർഷം"
+        other: എകദേശം %{count} വർഷം
       almost_x_years:
         one: ഏതാണ്ട്  1 വർഷം
-        other: "ഏതാണ്ട്  %{count} വർഷം"
+        other: ഏതാണ്ട്  %{count} വർഷം
       half_a_minute: അര സൂക്ഷ്മ
-      less_than_x_minutes:
-        one: ഒരു മിനുറ്റിനു ഉള്ളിൽ
-        other: "%{count} മിനുറ്റിനു ഉള്ളിൽ"
       less_than_x_seconds:
         one: ഒരു നിമിഷത്തിനു ഉള്ളിൽ
         other: "%{count} നിമിഷത്തിനു ഉള്ളിൽ"
+      less_than_x_minutes:
+        one: ഒരു മിനുറ്റിനു ഉള്ളിൽ
+        other: "%{count} മിനുറ്റിനു ഉള്ളിൽ"
       over_x_years:
         one: ഒരു വര്ഷത്തിനു മേലെ
         other: "%{count} വര്ഷത്തിനു മേലെ"
-      x_days:
-        one: 1 ദിവസം
-        other: "%{count} ദിവസങ്ങൾ"
-      x_minutes:
-        one: 1 മിനിറ്റ്
-        other: "%{count} മിനിറ്റ്"
-      x_months:
-        one: 1 മാസം
-        other: "%{count} മാസം"
       x_seconds:
         one: 1 നിമിഷം
         other: "%{count} നിമിഷം"
+      x_minutes:
+        one: 1 മിനിറ്റ്
+        other: "%{count} മിനിറ്റ്"
+      x_days:
+        one: 1 ദിവസം
+        other: "%{count} ദിവസങ്ങൾ"
+      x_months:
+        one: 1 മാസം
+        other: "%{count} മാസം"
     prompts:
-      day: ദിവസം
-      hour: മണിക്കൂർ
-      minute: സുക്ഷ്മ
-      month: സുക്ഷ്മ
       second: നിമിഷം
+      minute: സുക്ഷ്മ
+      hour: മണിക്കൂർ
+      day: ദിവസം
+      month: സുക്ഷ്മ
       year: വർഷം
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: സ്വീകരികേണ്ടത്  അത്യാവശ്യം ആണ്
       blank: ഒഴിവായി കിടക്കുവാൻ പാടുള്ളതല്ല
-      present: ഒഴിവായി ഇരിക്കണം
       confirmation: "%{attribute} ആയി സാമ്യം ഇല്ല"
       empty: ഒഴിവായി കിടക്കുവാൻ പാടുള്ളതല്ല
       equal_to: "%{count} ആയി സാമ്യം വേണം"
@@ -120,22 +119,23 @@ ml:
       invalid: അസാധുവാണ്
       less_than: "%{count} നേകാൾ ചെറുതായിരിക്കണം"
       less_than_or_equal_to: "%{count} നു തുല്യമോ അല്ലെങ്കിൽ ചെറുതോ ആയിരിക്കണം"
-      model_invalid: "മൂല്യനിർണ്ണയം പരാജയപ്പെട്ടു: %{errors}"
+      model_invalid: 'മൂല്യനിർണ്ണയം പരാജയപ്പെട്ടു: %{errors}'
       not_a_number: ഒരു അക്കം അല്ല
       not_an_integer: ഒരു അക്കം ആയിരിക്കണം
       odd: ഒട്ടസന്ഘ്യ ആയിരിക്കണം
+      other_than: must be other than %{count}
+      present: ഒഴിവായി ഇരിക്കണം
       required: എന്തായാലും ഉണ്ടായിരിക്കണം
       taken: ഇതിനു മുൻപേ ഉപയോഗിച്ചിരിക്കുന്നു
       too_long:
         one: വളരെ വലുതാണ് (പരമാവധി 1 പ്രതീകം)
-        other: "വളരെ വലുതാണ് (പരമാവധി %{count} പ്രതീകങ്ങൾ)"
+        other: വളരെ വലുതാണ് (പരമാവധി %{count} പ്രതീകങ്ങൾ)
       too_short:
         one: വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌  1 പ്രതീകം)
-        other: "വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌ %{count} പ്രതീകങ്ങൾ)"
+        other: വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌ %{count} പ്രതീകങ്ങൾ)
       wrong_length:
         one: തെറ്റായ നീളം ആണ്  (1 പ്രതീകം ആയിരിക്കണം)
-        other: "തെറ്റായ നീളം ആണ്  (%{count} പ്രതീകങ്ങൾ ആയിരിക്കണം)"
-      other_than: "must be other than %{count}"
+        other: തെറ്റായ നീളം ആണ്  (%{count} പ്രതീകങ്ങൾ ആയിരിക്കണം)
     template:
       body: 'താഴെ പറഞ്ഞവയിൽ തെറ്റുകൾ ഉണ്ട്:'
       header:

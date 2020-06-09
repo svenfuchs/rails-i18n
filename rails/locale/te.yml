@@ -1,14 +1,12 @@
-# Telugu translations for Ruby on Rails
-# by Ravi Teja Dandu(raviteja499@gmail.com)
 ---
 te:
   activerecord:
     errors:
       messages:
-        record_invalid: "ధ్రువీకరన విఫలమైనది: %{errors}"
+        record_invalid: 'ధ్రువీకరన విఫలమైనది: %{errors}'
         restrict_dependent_destroy:
-          has_one: "రికార్డ్ను తొలగించలేరు, ఎందుకంటే ఒక ఆధారపడిన %{record} ఉంది"
-          has_many: "రికార్డ్ను తొలగించలేరు, ఎందుకంటే ఆధారపడిన %{record} ఉంది"
+          has_one: రికార్డ్ను తొలగించలేరు, ఎందుకంటే ఒక ఆధారపడిన %{record} ఉంది
+          has_many: రికార్డ్ను తొలగించలేరు, ఎందుకంటే ఆధారపడిన %{record} ఉంది
   date:
     abbr_day_names:
     - ఆది
@@ -19,7 +17,7 @@ te:
     - శుక్ర
     - శని
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -45,7 +43,7 @@ te:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - జనవరి
     - ఫిబ్రవరి
     - మార్చి
@@ -77,43 +75,42 @@ te:
         one: దాదాపు ఒక సంవత్సరం
         other: దాదాపు %{count} సంవత్సరాలు
       half_a_minute: అర నిమిషం
-      less_than_x_minutes:
-        one: ఒక నిమిషం కన్నా తక్కువ
-        other: "%{count} నిమిషాల కన్నా తక్కువ"
       less_than_x_seconds:
         one: ఒక క్షణం కన్నా తక్కువ
         other: "%{count} క్షణాలు కన్నా తక్కువ"
+      less_than_x_minutes:
+        one: ఒక నిమిషం కన్నా తక్కువ
+        other: "%{count} నిమిషాల కన్నా తక్కువ"
       over_x_years:
         one: ఒక సంవత్సరం పైగా
         other: "%{count} సంవత్సరాల పైగా"
-      x_days:
-        one: ఒక రోజు
-        other: "%{count} రోజులు"
+      x_seconds:
+        one: ఒక క్షణం
+        other: "%{count} క్షణాలు"
       x_minutes:
         one: ఒక నిమిషం
         other: "%{count} నిమిషాలు"
+      x_days:
+        one: ఒక రోజు
+        other: "%{count} రోజులు"
       x_months:
         one: ఒక నెల
         other: "%{count} నెలలు"
       x_years:
         one: ఒక సంవత్సరం
         other: "%{count} సంవత్సరాలు"
-      x_seconds:
-        one: ఒక క్షణం
-        other: "%{count} క్షణాలు"
     prompts:
-      day: రోజు
-      hour: గంట
-      minute: నిమిషం
-      month: నెల
       second: క్షణాలు
+      minute: నిమిషం
+      hour: గంట
+      day: రోజు
+      month: నెల
       year: సంవత్సరం
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: అంగీకరించి ఉండాలి
       blank: ఖాళీగా ఉండకూడదు
-      present: ఖాళీగా ఉండాలి
       confirmation: "%{attribute} సరిపోలడం లేదు"
       empty: శూన్యంగా ఉండకూడదు
       equal_to: "%{count}కు సమానంగా ఉండాలి"
@@ -125,10 +122,12 @@ te:
       invalid: చెల్లనిది
       less_than: "%{count} కంటే తక్కువ ఉండాలి"
       less_than_or_equal_to: "%{count} నాలుగు కంటే తక్కువగా లేదా సమానంగా ఉండాలి"
-      model_invalid: "ధృవీకరణ విఫలమైంది: %{errors}"
+      model_invalid: 'ధృవీకరణ విఫలమైంది: %{errors}'
       not_a_number: సంఖ్య కాదు
       not_an_integer: పూర్ణాంకంగా ఉండాలి
       odd: బేసి సంఖ్య అయి ఉండాలి
+      other_than: "%{count} కన్నా వేరు ఉండాలి"
+      present: ఖాళీగా ఉండాలి
       required: ఉనికిలో ఉండాలి
       taken: ఇప్పటికే తీసుకోబడింది
       too_long:
@@ -140,7 +139,6 @@ te:
       wrong_length:
         one: తప్పు పొడవు (ఒక అక్షరం ఉండాలి)
         other: తప్పు పొడవు (%{count} అక్షరాలు ఉండాలి)
-      other_than: "%{count} కన్నా వేరు ఉండాలి"
     template:
       body: 'కింది రంగాలలో సమస్యలు ఉన్నాయి:'
       header:

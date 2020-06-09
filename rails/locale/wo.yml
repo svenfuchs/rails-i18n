@@ -3,10 +3,10 @@ wo:
   activerecord:
     errors:
       messages:
-        record_invalid: "Validation failed: %{errors}"
+        record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
-          has_one: "Cannot delete record because a dependent %{record} exists"
-          has_many: "Cannot delete record because dependent %{record} exist"
+          has_one: Cannot delete record because a dependent %{record} exists
+          has_many: Cannot delete record because dependent %{record} exist
   date:
     abbr_day_names:
     - Dib
@@ -17,7 +17,7 @@ wo:
     - Ajj
     - Gaw
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -43,7 +43,7 @@ wo:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
+    - 
     - Tamkharit
     - Digui Gamou
     - Gamou
@@ -75,36 +75,36 @@ wo:
         one: almost 1 year
         other: almost %{count} years
       half_a_minute: half a minute
-      less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
       less_than_x_seconds:
         one: less than 1 second
         other: less than %{count} seconds
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
       over_x_years:
         one: over 1 year
         other: over %{count} years
-      x_days:
-        one: 1 day
-        other: "%{count} days"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
       x_minutes:
         one: 1 minute
         other: "%{count} minutes"
+      x_days:
+        one: 1 day
+        other: "%{count} days"
       x_months:
         one: 1 month
         other: "%{count} months"
       x_years:
         one: 1 year
-        other: "%{count} years"  
-      x_seconds:
-        one: 1 second
-        other: "%{count} seconds"
+        other: "%{count} years"
     prompts:
-      day: Day
-      hour: Hour
+      second: Second
       minute: Minute
+      hour: Hour
+      day: Day
       month: Month
-      second: Seconds
       year: Year
   errors:
     format: "%{attribute} %{message}"
