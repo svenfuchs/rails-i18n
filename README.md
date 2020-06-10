@@ -80,6 +80,9 @@ Currently, most locales are incomplete. Typically they lack the following keys:
 - `activerecord.errors.messages.record_invalid`
 - `activerecord.errors.messages.restrict_dependent_destroy.has_one`
 - `activerecord.errors.messages.restrict_dependent_destroy.has_many`
+
+The following keys should NOT be included:
+
 - `errors.messages.model_invalid`
 - `errors.messages.required`
 
