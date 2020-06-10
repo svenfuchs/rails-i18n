@@ -7,6 +7,8 @@ pap-CW:
         restrict_dependent_destroy:
           has_one: "No por kita e registro akí pasobra un otro %{record} ta dependé di dje"
           has_many: "No por kita e registro akí pasobra otro %{record} ta dependé di dje"
+        model_invalid: MODEL INVALID
+        required: REQUIRED
   date:
     abbr_day_names:
     - dum
