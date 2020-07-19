@@ -129,7 +129,6 @@ vi:
       too_short: quá ngắn (tối thiểu %{count} ký tự)
       wrong_length: độ dài không đúng (phải là %{count} ký tự)
       required: "phải có"
-      taken: "đã tồn tại"
     template:
       body: 'Có lỗi với các mục sau:'
       header:
