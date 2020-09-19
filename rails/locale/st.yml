@@ -5,12 +5,12 @@ st:
       messages:
         record_invalid: 'Netefatso e fosahetse: %{errors}'
         restrict_dependent_destroy:
-          has_one: E ka se hlakolehe hobane kamano e teng le %{record}
-          has_many: E ka se hlakolehe hobane kamano e teng le %{record}
+          has_one: E ka se hlakolehe hobane kamano e le ٰngoe teng le %{record}
+          has_many: E ka se hlakolehe hobane kamano tse ngata li teng le %{record}
   date:
     abbr_day_names:
     - Son
-    - Man
+    - ٰMan
     - Labob
     - Labor
     - Labon
@@ -21,9 +21,9 @@ st:
     - Phe
     - Hlako
     - Tlha
-    - "\\'Mes"
-    - Mots
-    - Phuptj
+    - 'Mes
+    - Motš
+    - Phupt
     - Phup
     - Pha
     - Loe
@@ -32,7 +32,7 @@ st:
     - Tši
     day_names:
     - Sontaha
-    - Montaha
+    - ٰMantaha
     - Labobeli
     - Laboraro
     - Labone
@@ -47,7 +47,7 @@ st:
     - Pherekhong
     - Hlakola
     - Hlakubele
-    - "\\'Mesa"
+    - ٰMesa
     - Motšeanong
     - Phuptjane
     - Phupu
@@ -63,10 +63,10 @@ st:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ekaba hora e le \'ngoe
+        one: ekaba hora e le ٰngoe
         other: ekaba hora tse %{count}
       about_x_months:
-        one: ekaba khoeli e le \'ngoe
+        one: ekaba khoeli e le ٰngoe
         other: ekaba likhoeli tse %{count}
       about_x_years:
         one: ekaba selemo se le seng
@@ -142,7 +142,7 @@ st:
     template:
       body: 'Ho bile le mathata ka a itseng makaleng a latelang:'
       header:
-        one: phoso e le \'ngoe e thibetse  %{model} ho bolokeha
+        one: phoso e le ٰngoe e thibetse  %{model} ho bolokeha
         other: liphoso tse %{count} li thibetse %{model} ho bolokeha
   helpers:
     select:
