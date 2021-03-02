@@ -10,6 +10,7 @@ module RailsI18n
 
         add("rails/locale/#{pattern}.yml")
         add("rails/pluralization/#{pattern}.rb")
+        add("rails/ordinals/#{pattern}.rb")
         add("rails/transliteration/#{pattern}.{rb,yml}")
 
         init_pluralization_module
