@@ -74,7 +74,7 @@ it:
         one: circa un anno
         other: circa %{count} anni
       almost_x_years:
-        one: quasi 1 anno
+        one: quasi un anno
         other: quasi %{count} anni
       half_a_minute: mezzo minuto
       less_than_x_seconds:
