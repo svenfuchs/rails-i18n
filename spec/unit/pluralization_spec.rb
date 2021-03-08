@@ -662,13 +662,13 @@ describe 'Pluralization rule for' do
       plural_keys.should include(:one, :few, :other)
     end
 
-    [0.1, 0.31, 1, 21, 31, 41, 51, 61, 81, 101, 1031].each do |count|
+    [1, 21, 31, 41, 51, 61, 81, 101, 1031].each do |count|
       it "detects that #{count} in category 'one'" do
         rule.call(count).should == :one
       end
     end
 
-    [0.3, 0.42, 2, 3, 4, 22, 23, 24, 102, 1034].each do |count|
+    [2, 3, 4, 22, 23, 24, 102, 1034].each do |count|
       it "detects that #{count} in category 'few'" do
         rule.call(count).should == :few
       end
