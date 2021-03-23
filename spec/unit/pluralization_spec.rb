@@ -234,7 +234,7 @@ describe 'Pluralization rule for' do
 
   describe 'Georgian', :locale => :ka do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'other form language'
+    it_behaves_like 'one-other forms language'
   end
 
   describe 'guw', :locale => :guw do
