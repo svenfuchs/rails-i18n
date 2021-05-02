@@ -3,7 +3,7 @@ sq:
   activerecord:
     errors:
       messages:
-        record_invalid: "Vleftësimi dështoi: %{errors}"
+        record_invalid: "Vlerësimi dështoi: %{errors}"
         restrict_dependent_destroy:
           has_one: "S’fshihet dot zëri, ngaqë ekziston një %{record} që varet prej tij"
           has_many: "S’fshihet dot zëri, ngaqë ekzistojnë %{record} që varen prej tij"
@@ -100,7 +100,7 @@ sq:
         one: 1 vit
         other: "%{count} vjet"
     prompts:
-      second: Sekond
+      second: Sekondë
       minute: Minutë
       hour: Orë
       day: Ditë
@@ -123,12 +123,12 @@ sq:
       invalid: është i pavlefshëm
       less_than: duhet të jetë më i vogël se %{count}
       less_than_or_equal_to: duhet të jetë më i vogël ose i barabartë me %{count}
-      model_invalid: "Vleftësimi dështoi: %{errors}"
+      model_invalid: "Vlerësimi dështoi: %{errors}"
       not_a_number: s’është numër
       not_an_integer: duhet të jetë numër i plotë
       odd: duhet të jetë tek
       other_than: duhet të jetë më shumë se %{count}
-      present: duhet të jetë bosh
+      present: duhet të jetë e zbrazët
       required: duhet të ekzistojë
       taken: është zënë tashmë
       too_long:
@@ -161,7 +161,7 @@ sq:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "ALL"
+        unit: "$"
     format:
       delimiter: ","
       precision: 3
@@ -172,7 +172,7 @@ sq:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Bilion
+          billion: Miliard
           million: Milion
           quadrillion: Kuadrilion
           thousand: Mijë
