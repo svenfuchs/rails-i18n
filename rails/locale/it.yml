@@ -5,10 +5,8 @@ it:
       messages:
         record_invalid: 'Validazione fallita: %{errors}'
         restrict_dependent_destroy:
-          has_one: Il record non può essere cancellato perchè esiste un %{record}
-            dipendente
-          has_many: Il record non può essere cancellato perchè esistono %{record}
-            dipendenti
+          has_one: Il record non può essere cancellato perchè esiste un %{record} dipendente
+          has_many: Il record non può essere cancellato perchè esistono %{record} dipendenti
   date:
     abbr_day_names:
     - dom
@@ -124,6 +122,7 @@ it:
       invalid: non è valido
       less_than: deve essere minore di %{count}
       less_than_or_equal_to: deve essere minore o uguale a %{count}
+      model_invalid: 'Validazione fallita: %{errors}'
       not_a_number: non è un numero
       not_an_integer: non è un numero intero
       odd: deve essere dispari
@@ -189,9 +188,11 @@ it:
           byte:
             one: Byte
             other: Byte
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
