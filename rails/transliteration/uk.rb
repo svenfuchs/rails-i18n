@@ -62,28 +62,12 @@ module RailsI18n
 
         private
 
-        if RUBY_VERSION < '1.9'
-          # two bytes will be enough for Cyrillic
-          class_eval <<-END, __FILE__, __LINE__ + 1
-            def behind
-              tail = @pre_match && @pre_match[-2..-1]
-              tail && tail.split(//).last
-            end
+        def behind
+          @pre_match && @pre_match[-1]
+        end
 
-            def ahead
-              @post_match && @post_match[0..1].split(//).first
-            end
-          END
-        else
-          class_eval <<-END, __FILE__, __LINE__ + 1
-            def behind
-              @pre_match && @pre_match[-1]
-            end
-
-            def ahead
-              @post_match && @post_match[0]
-            end
-          END
+        def ahead
+          @post_match && @post_match[0]
         end
 
         def downcased?(symbol)
