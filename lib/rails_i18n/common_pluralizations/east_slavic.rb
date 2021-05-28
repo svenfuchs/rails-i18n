@@ -1,7 +1,7 @@
 # Originally was implemented by Yaroslav Markin in "russian" gem
 # (http://github.com/yaroslav/russian)
 #
-# Used for Belarusian, Bosnian, Croatian, Russian, Serbian, Serbo-Croatian, Ukrainian.
+# Used for Belarusian, Bosnian, Croatian, Russian, Serbo-Croatian, Ukrainian.
 
 module RailsI18n
   module Pluralization
