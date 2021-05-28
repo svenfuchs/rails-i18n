@@ -4,6 +4,9 @@ ca:
     errors:
       messages:
         record_invalid: 'La validació ha fallat: %{errors}'
+        restrict_dependent_destroy:
+          has_one: No es pot eliminar el registre perquè existeix un %{record} dependent
+          has_many: No es pot eliminar el registre perquè existeixen %{record} dependents 
   date:
     abbr_day_names:
     - Dg
@@ -119,13 +122,23 @@ ca:
       invalid: no és vàlid
       less_than: ha de ser menor que %{count}
       less_than_or_equal_to: ha de ser menor o igual a %{count}
+      model_invalid: 'La validació ha fallat: %{errors}'
       not_a_number: no és un número
       not_an_integer: ha de ser un enter
       odd: ha de ser senar
+      other_than: ha de ser diferent de %{count}
+      present: ha d'estar en blanc
+      required: ha d'existir
       taken: no està disponible
-      too_long: és massa llarg (%{count} caràcters màxim)
-      too_short: és massa curt (%{count} caràcters mínim)
-      wrong_length: no té la longitud correcta (%{count} caràcters exactament)
+      too_long:
+        one: és massa llarg (1 caràcter màxim)
+        other: és massa llarg (%{count} caràcters màxim)
+      too_short:
+        one: és massa curt (1 caràcter mínim)
+        other: és massa curt (%{count} caràcters mínim)
+      wrong_length:
+        one: no té la longitud correcta (1 caràcter exactament)
+        other: no té la longitud correcta (%{count} caràcters exactament)
     template:
       body: 'Hi ha hagut problemes amb els següents camps:'
       header:
@@ -159,10 +172,18 @@ ca:
         format: "%n %u"
         units:
           billion: mil milions
-          million: milió
-          quadrillion: quadrilió
-          thousand: mil
-          trillion: trilió
+          million:
+            one: milió
+            other: milions
+          quadrillion:
+            one: quadrilió
+            other: quadrilions
+          thousand:
+            one: miler
+            other: milers
+          trillion:
+            one: bilió
+            other: bilions
           unit: ''
       format:
         delimiter: ''
@@ -175,13 +196,16 @@ ca:
           byte:
             one: Byte
             other: Bytes
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
         delimiter: ''
+        format: "%n %"
     precision:
       format:
         delimiter: ''
