@@ -188,8 +188,8 @@ sv:
           tb: TB
     percentage:
       format:
-        delimiter: ''
-        format: "%n%"
+        delimiter: ' '
+        format: "%n %"
     precision:
       format:
         delimiter: ''
