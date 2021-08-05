@@ -42,7 +42,7 @@ ur:
     - ہفتہ
     formats:
       default: "%d %B %Y"
-      long: "%B %d، %Y"
+      long: "%d %B، %Y"
       short: "%d %b"
     month_names:
     - 
@@ -205,6 +205,6 @@ ur:
     am: صبح
     formats:
       default: "%a، %d %b %Y، %p %l:%M %Z"
-      long: "%B %d، %Y %p %H:%M"
+      long: "%d %B، %Y %p %H:%M"
       short: "%d %b، %H:%M"
     pm: شام
