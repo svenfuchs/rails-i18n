@@ -41,7 +41,7 @@ ml:
     formats:
       default: "%d-%m-%Y"
       long: "%d %B, %Y"
-      short: "%b %d"
+      short: "%d %b"
     month_names:
     - 
     - ജനുവരി
@@ -205,6 +205,6 @@ ml:
     am: രാവിലെ
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
+      long: "%Y, %B %d %H:%M"
       short: "%d %b %H:%M"
     pm: വൈകിട്ട്

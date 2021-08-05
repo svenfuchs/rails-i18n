@@ -37,8 +37,8 @@ kn:
     - ಶನಿವಾರ
     formats:
       default: "%Y-%m-%d"
-      long: "%B %d, %Y"
-      short: "%b %d"
+      long: "%d %B %Y"
+      short: "%d %b"
     month_names:
     - 
     - ಜನವರಿ
@@ -191,6 +191,6 @@ kn:
     am: ಪ್ರಾತಃಕಾಲ
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
+      long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
     pm: ಅಪರನ್ನಃ

@@ -40,8 +40,8 @@ mr-IN:
     - रविवार
     formats:
       default: "%d-%m-%Y"
-      long: "%B %d, %Y"
-      short: "%b %d"
+      long: "%d %B %Y"
+      short: "%d %b"
     month_names:
     - 
     - जानेवारी
@@ -202,6 +202,6 @@ mr-IN:
     am: म.पू.
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
+      long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
     pm: म.नं.
