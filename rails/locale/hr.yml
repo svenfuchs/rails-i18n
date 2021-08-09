@@ -175,7 +175,7 @@ hr:
     submit:
       create: Stvori %{model}
       submit: Spremi %{model}
-      update: Izmjeni %{model}
+      update: Izmijeni %{model}
   number:
     currency:
       format:
