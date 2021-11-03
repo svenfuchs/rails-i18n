@@ -111,7 +111,7 @@ da:
     messages:
       accepted: skal accepteres
       blank: skal udfyldes
-      confirmation: stemmer ikke overens med bekræftelse
+      confirmation: stemmer ikke overens med %{attribute}
       empty: må ikke udelades
       equal_to: skal være %{count}
       even: skal være et lige tal
