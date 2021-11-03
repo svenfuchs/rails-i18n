@@ -117,11 +117,11 @@ da:
       even: skal være et lige tal
       exclusion: er reserveret
       greater_than: skal være større end %{count}
-      greater_than_or_equal_to: skal være større end, eller lig med, %{count}
+      greater_than_or_equal_to: skal være større end eller lig med %{count}
       inclusion: er ikke på listen
       invalid: er ikke gyldig
       less_than: skal være mindre end %{count}
-      less_than_or_equal_to: skal være mindre end, eller lig med, %{count}
+      less_than_or_equal_to: skal være mindre end eller lig med %{count}
       model_invalid: 'Godkendelse gik galt: %{errors}'
       not_a_number: er ikke et tal
       not_an_integer: er ikke et heltal
