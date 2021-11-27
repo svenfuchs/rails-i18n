@@ -172,10 +172,10 @@ hr:
     template:
       body: 'Sljedeća polja su neispravno popunjena:'
       header:
-        one: "%{count} greška je spriječila %{model} da se spremi"
-        few: "%{count} greške su spriječile %{model} da se spremi"
-        many: "%{count} grešaka je spriječilo %{model} da se spremi"
-        other: "%{count} grešaka je spriječilo %{model} da se spremi"
+        one: "%{count} greška je spriječila da se spremi %{model}"
+        few: "%{count} greške su spriječile da se spremi %{model}"
+        many: "%{count} grešaka je spriječilo da se spremi %{model}"
+        other: "%{count} grešaka je spriječilo da se spremi %{model}"
   helpers:
     select:
       prompt: Izaberite
