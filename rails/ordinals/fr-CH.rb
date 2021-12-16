@@ -1,5 +1,5 @@
 {
-  :"fr-CH": {
+  "fr-CH": {
     number: {
       nth: {
         ordinals: -> (_key, number:, **_options) {
