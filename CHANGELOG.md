@@ -1,4 +1,46 @@
-## 6.0.0
+## unreleased
+
+## 7.0.1 (2021-12-24)
+
+- Fix ordinals loading.
+
+## 7.0.0 (2021-12-23)
+
+- Support Rails 7
+- Drop support for Ruby 1.8
+- Eager load translations during boot phase if possible.
+- Translate ordinals (fr, fr-FR, fr-CA, fr-BE)
+- Update following locales:
+  - Albanian (sq)
+  - Catalan (ca)
+  - Chinese (zh-CN, zh-TW)
+  - Croatian (hr)
+  - Danish (da)
+  - Finnish (fi)
+  - French (fr, fr-FR, fr-CA, fr-BE)
+  - Georgian (ka)
+  - German (de)
+  - Greek (el, el-CY)
+  - Italian (it, it-CH)
+  - Latvian (lv)
+  - Lithuanian (lt)
+  - Norwegian (nb)
+  - Polish (pl)
+  - Portuguese (pt-BR)
+  - Romanian (ro)
+  - Serbian (sr)
+  - Spanish (es-CO, es-AR)
+  - Swedish (sv)
+  - Turkish (tr)
+  - Ukrainian (uk)
+  - Vietnamese (vi)
+- Add following locales:
+  - English Trinidad & Tobago (en-TT)
+  - Papiamento (pap-AW, pap-CW)
+  - Sesotho (st)
+
+## 6.0.0 (2019-08-17)
+
 - Update rails-i18n.gemspec to use Railties 6.0.0
 - Add Malagasy (mg) locale
 - Update following locales:
