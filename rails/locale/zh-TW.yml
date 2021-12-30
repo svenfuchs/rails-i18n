@@ -107,7 +107,7 @@ zh-TW:
       month: 月
       year: 年
   errors:
-    format: "%{attribute} %{message}"
+    format: "%{attribute}%{message}"
     messages:
       accepted: 必須是可被接受的
       blank: 不能為空白
