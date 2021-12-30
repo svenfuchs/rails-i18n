@@ -93,9 +93,9 @@ gl:
     format: "%{attribute} %{message}"
     messages:
       accepted: debe ser aceptado
-      blank: non pode estar en blanco
+      blank: non pode estar en branco
       confirmation: non coincide coa confirmación
-      empty: non pode estar valeiro
+      empty: non pode estar baleiro
       equal_to: debe ser igual a %{count}
       even: debe ser impar
       exclusion: xa existe
@@ -114,8 +114,8 @@ gl:
     template:
       body: 'Atopáronse os seguintes problemas:'
       header:
-        one: 1 erro evitou que se poidese gardar o %{model}
-        other: "%{count} erros evitaron que se poidese gardar o %{model}"
+        one: 1 erro evitou que se puidese gardar o %{model}
+        other: "%{count} erros evitaron que se puidese gardar o %{model}"
   number:
     currency:
       format:
