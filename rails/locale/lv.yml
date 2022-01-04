@@ -220,9 +220,11 @@ lv:
             zero: baiti
             one: baits
             other: baiti
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
