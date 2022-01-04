@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description  = "A set of common locale data and translations to internationalize and/or localize your Rails applications."
   s.license      = 'MIT'
 
-  s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") +
+  s.files        = Dir.glob("lib/**/*") + Dir.glob("rails/locale/*") + Dir.glob("rails/ordinals/*") +
                    Dir.glob("rails/pluralization/*") + Dir.glob("rails/transliteration/*") +
                    %w(README.md CHANGELOG.md MIT-LICENSE.txt)
   s.platform     = Gem::Platform::RUBY
