@@ -4,6 +4,9 @@ lv:
     errors:
       messages:
         record_invalid: 'Pārbaude neizdevās: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Nevar dzēst ierakstu, jo ir atkarīgs %{record}
+          has_many: Nevar dzēst ierakstu, jo ir atkarīgi %{record}
   date:
     abbr_day_names:
     - Sv.
@@ -104,6 +107,10 @@ lv:
         zero: "%{count} mēneši"
         one: "%{count} mēnesis"
         other: "%{count} mēneši"
+      x_years:
+        zero: 0 gadi
+        one: 1 gads
+        other: "%{count} gadi"
     prompts:
       second: sekunde
       minute: minūte
@@ -127,9 +134,13 @@ lv:
       invalid: nav derīgs
       less_than: ir jābūt mazākam par %{count}
       less_than_or_equal_to: ir jābūt mazākam vai vienādam ar %{count}
+      model_invalid: 'Validācija neizdevās: %{errors}'
       not_a_number: nav skaitlis
       not_an_integer: ir jābūt veselam skaitlim
       odd: ir jābūt nepāra skaitlim
+      other_than: jābūt citam nekā %{count}
+      present: jābūt tukšam
+      required: ir jābūt
       taken: ir jau aizņemts
       too_long:
         zero: ir par garu (maksimums ir %{count} simboli)
