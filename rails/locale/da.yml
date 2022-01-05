@@ -128,7 +128,7 @@ da:
       odd: skal være et ulige tal
       other_than: skal være forskellig fra %{count}
       present: skal være tom
-      required: skal eksistere
+      required: skal udfyldes
       taken: er allerede brugt
       too_long:
         one: er for lang (højst 1 tegn)
