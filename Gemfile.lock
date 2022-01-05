@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    rails-i18n (7.0.0)
+    rails-i18n (7.0.1)
       i18n (>= 0.7, < 2)
-      railties (>= 7.0.0, < 8)
+      railties (>= 6.0.0, < 8)
 
 GEM
   remote: https://rubygems.org/
@@ -37,7 +37,7 @@ GEM
       concurrent-ruby (~> 1.0)
     i18n-spec (0.6.0)
       iso
-    i18n-tasks (0.9.35)
+    i18n-tasks (0.9.37)
       activesupport (>= 4.0.2)
       ast (>= 2.1.0)
       erubi
@@ -53,10 +53,12 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     method_source (1.0.0)
+    mini_portile2 (2.6.1)
     minitest (5.15.0)
-    nokogiri (1.12.5-x86_64-linux)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    parser (3.0.3.2)
+    parser (3.1.0.0)
       ast (~> 2.4.1)
     racc (1.6.0)
     rack (2.2.3)
@@ -106,9 +108,9 @@ PLATFORMS
 
 DEPENDENCIES
   i18n-spec (~> 0.6.0)
-  i18n-tasks (~> 0.9.20)
+  i18n-tasks (~> 0.9.37)
   rails-i18n!
   rspec-rails (~> 3.7)
 
 BUNDLED WITH
-   2.2.22
+   2.2.31

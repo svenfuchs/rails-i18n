@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('railties', '>= 6.0.0', '< 8')
   s.add_development_dependency "rspec-rails", "~> 3.7"
   s.add_development_dependency "i18n-spec", "~> 0.6.0"
-  s.add_development_dependency 'i18n-tasks', '~> 0.9.20'
+  s.add_development_dependency 'i18n-tasks', '~> 0.9.37'
 end
