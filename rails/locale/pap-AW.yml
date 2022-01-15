@@ -165,8 +165,8 @@ pap-AW:
       delimiter: '.'
       precision: 3
       separator: ','
-      significant: falsu
-      strip_insignificant_zeros: falsu
+      significant: false
+      strip_insignificant_zeros: false
     human:
       decimal_units:
         format: '%n %u'
