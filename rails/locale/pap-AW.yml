@@ -57,9 +57,9 @@ pap-AW:
     - novèmber
     - desèmber
     order:
-    - :aña
-    - :luna
-    - :dia
+    - :year
+    - :month
+    - :day
   datetime:
     distance_in_words:
       about_x_hours:
