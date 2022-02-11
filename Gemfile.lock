@@ -101,6 +101,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
+    yalphabetize (0.6.2)
     zeitwerk (2.5.4)
 
 PLATFORMS
@@ -111,6 +112,7 @@ DEPENDENCIES
   i18n-tasks (~> 0.9.37)
   rails-i18n!
   rspec-rails (~> 3.7)
+  yalphabetize
 
 BUNDLED WITH
    2.3.7
