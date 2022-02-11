@@ -9,7 +9,7 @@
     - Fr
     - Sa
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mär
@@ -35,7 +35,7 @@
       long: ! '%e. %B %Y'
       short: ! '%e. %b'
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - März
@@ -67,33 +67,33 @@
         one: fascht es johr
         other: fascht %{count} johr
       half_a_minute: e halbi minute
-      less_than_x_minutes:
-        one: weniger als e minute
-        other: weniger als %{count} minute
       less_than_x_seconds:
         one: weniger als e sekunde
         other: weniger als %{count} sekunde
+      less_than_x_minutes:
+        one: weniger als e minute
+        other: weniger als %{count} minute
       over_x_years:
         one: meh als es johr
         other: meh als %{count} johr
-      x_days:
-        one: ein tag
-        other: ! '%{count} täg'
-      x_minutes:
-        one: ei minute
-        other: ! '%{count} minute'
-      x_months:
-        one: ein monet
-        other: ! '%{count} mönet'
       x_seconds:
         one: ei sekunde
         other: ! '%{count} sekunde'
+      x_minutes:
+        one: ei minute
+        other: ! '%{count} minute'
+      x_days:
+        one: ein tag
+        other: ! '%{count} täg'
+      x_months:
+        one: ein monet
+        other: ! '%{count} mönet'
     prompts:
-      day: tag
-      hour: stund
-      minute: minute
-      month: monet
       second: sekunde
+      minute: minute
+      hour: stund
+      day: tag
+      month: monet
       year: johr
   errors:
     format: ! '%{attribute} %{message}'

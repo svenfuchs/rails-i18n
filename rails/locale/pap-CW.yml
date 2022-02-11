@@ -1,4 +1,3 @@
-# pap-CW merged M. Maduro and Rianne Helings by Richenel Ansano for Suares & Co
 pap-CW:
   activerecord:
     errors:
@@ -75,43 +74,42 @@ pap-CW:
         one: kasi 1 aña
         other: kasi %{count} aña
       half_a_minute: mei minüt
-      less_than_x_minutes:
-        one: ménos ku 1 minüt
-        other: ménos ku %{count} minüt
       less_than_x_seconds:
         one: ménos ku 1 sekònde
         other: ménos ku %{count} sekònde
+      less_than_x_minutes:
+        one: ménos ku 1 minüt
+        other: ménos ku %{count} minüt
       over_x_years:
         one: mas ku 1 aña
         other: mas ku %{count} aña
-      x_days:
-        one: 1 dia
-        other: '%{count} dia'
+      x_seconds:
+        one: 1 sekònde
+        other: '%{count} sekònde'
       x_minutes:
         one: 1 minüt
         other: '%{count} minüt'
+      x_days:
+        one: 1 dia
+        other: '%{count} dia'
       x_months:
         one: 1 luna
         other: '%{count} luna'
       x_years:
         one: 1 year
         other: "%{count} years"
-      x_seconds:
-        one: 1 sekònde
-        other: '%{count} sekònde'
     prompts:
-      day: Dia
-      hour: Ora
-      minute: Minüt
-      month: Luna
       second: Sekònde
+      minute: Minüt
+      hour: Ora
+      day: Dia
+      month: Luna
       year: Aña
   errors:
     format: '%{attribute} %{message}'
     messages:
       accepted: mester asept'é
       blank: no por keda sin yen'é
-      present: mester keda bashí
       confirmation: "no ta meskos %{attribute}"
       empty: no por keda bashí
       equal_to: mester ta meskos ku %{count}
@@ -127,6 +125,8 @@ pap-CW:
       not_a_number: no ta un number
       not_an_integer: mester ta un number hinté
       odd: mester ta impar
+      other_than: "no por ta %{count}"
+      present: mester keda bashí
       required: must exist
       taken: ta usá kaba
       too_long:
@@ -138,7 +138,6 @@ pap-CW:
       wrong_length:
         one: su largura no ta korekto (mester ta 1 karakter)
         other: su largura no ta korekto (mester ta %{count} karakter)
-      other_than: "no por ta %{count}"
     template:
       body: 'E siguiente rúbrikanan ta duna problema:'
       header:
@@ -188,12 +187,12 @@ pap-CW:
           byte:
             one: Bait
             other: Bait
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
-          tb: TB
           pb: PB
-          eb: EB
+          tb: TB
     percentage:
       format:
         delimiter: ''

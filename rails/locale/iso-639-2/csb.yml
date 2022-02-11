@@ -9,7 +9,7 @@ csb:
     - pią
     - sob
     abbr_month_names:
-    - 
+    -
     - stë
     - gro
     - str
@@ -35,7 +35,7 @@ csb:
       long: ! '%B %d, %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - stëcznik
     - gromicznik
     - strëmiannik
@@ -55,56 +55,56 @@ csb:
   datetime:
     distance_in_words:
       about_x_hours:
-        few: kòle %{count} gòdzën
         one: kòle gòdzënë
+        few: kòle %{count} gòdzën
         other: kòle %{count} gòdzën
       about_x_months:
-        few: kòle %{count} miesąców
         one: kòle miesąca
+        few: kòle %{count} miesąców
         other: kòle %{count} miesąców
       about_x_years:
-        few: kòle %{count} lat
         one: kòle rokù
+        few: kòle %{count} lat
         other: kòle %{count} lat
       almost_x_years:
-        few: wnet %{count} lata
         one: wnet rok
+        few: wnet %{count} lata
         other: wnet %{count} lat
       half_a_minute: pół minutë
-      less_than_x_minutes:
-        few: mni jak %{count} minutë
-        one: mni jak minuta
-        other: mni jak %{count} minutów
       less_than_x_seconds:
-        few: mni jak %{count} sekùndë
         one: mni jak sekùnda
+        few: mni jak %{count} sekùndë
         other: mni jak %{count} sekùndów
+      less_than_x_minutes:
+        one: mni jak minuta
+        few: mni jak %{count} minutë
+        other: mni jak %{count} minutów
       over_x_years:
-        few: wicy jak %{count} lata
         one: wicy jak rok
+        few: wicy jak %{count} lata
         other: wicy jak %{count} lat
-      x_days:
-        few: ! '%{count} dni'
-        one: 1 dzéń
-        other: ! '%{count} dniów'
-      x_minutes:
-        few: ! '%{count} minutë'
-        one: 1 minuta
-        other: ! '%{count} minutów'
-      x_months:
-        few: ! '%{count} miesiące'
-        one: 1 miesąc
-        other: ! '%{count} miesięców'
       x_seconds:
-        few: ! '%{count} sekùndë'
         one: 1 sekùnda
+        few: ! '%{count} sekùndë'
         other: ! '%{count} sekùndów'
+      x_minutes:
+        one: 1 minuta
+        few: ! '%{count} minutë'
+        other: ! '%{count} minutów'
+      x_days:
+        one: 1 dzéń
+        few: ! '%{count} dni'
+        other: ! '%{count} dniów'
+      x_months:
+        one: 1 miesąc
+        few: ! '%{count} miesiące'
+        other: ! '%{count} miesięców'
     prompts:
-      day: Dzéń
-      hour: Gòdzëna
-      minute: Minuta
-      month: Miesiąc
       second: Sekunda
+      minute: Minuta
+      hour: Gòdzëna
+      day: Dzéń
+      month: Miesiąc
       year: Rok
   errors:
     format: ! '%{attribute} %{message}'

@@ -43,7 +43,7 @@ sq:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Janar
     - Shkurt
     - Mars
@@ -84,12 +84,12 @@ sq:
       over_x_years:
         one: mbi 1 vit
         other: mbi %{count} vjet
-      x_days:
-        one: 1 ditë
-        other: "%{count} ditë"
       x_minutes:
         one: 1 minutë
         other: "%{count} minuta"
+      x_days:
+        one: 1 ditë
+        other: "%{count} ditë"
       x_days:
         one: 1 ditë
         other: "%{count} ditë"
@@ -111,7 +111,6 @@ sq:
     messages:
       accepted: duhet pranuar
       blank: s’mund të jetë i zbrazët
-      present: duhet të jetë i zbrazët
       confirmation: s’përputhet me %{attribute}
       empty: s’mund të jetë i zbrazët
       equal_to: duhet të jetë baras me %{count}
@@ -128,6 +127,7 @@ sq:
       not_an_integer: duhet të jetë numër i plotë
       odd: duhet të jetë tek
       other_than: duhet të jetë më shumë se %{count}
+      present: duhet të jetë i zbrazët
       present: duhet të jetë e zbrazët
       required: duhet të ekzistojë
       taken: është zënë tashmë
