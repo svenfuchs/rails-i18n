@@ -9,7 +9,7 @@ scr:
     - Pet
     - Sub
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -35,7 +35,7 @@ scr:
       long: ! '%B %e, %Y'
       short: ! '%e %b'
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - Mart
@@ -75,54 +75,53 @@ scr:
         many: skoro %{count} godina
         other: skoro %{count} godina
       half_a_minute: pola minute
+      less_than_x_seconds:
+        one: manje od %{count} sekund
+        few: manje od %{count} sekunde
+        many: manje od %{count} sekundi
+        other: manje od %{count} sekundi
       less_than_x_minutes:
         one: manje od %{count} minut
         few: manje od %{count} minuta
         many: manje od %{count} minuta
         other: manje od %{count} minuta
-      less_than_x_seconds:
-        few: manje od %{count} sekunde
-        one: manje od %{count} sekund
-        many: manje od %{count} sekundi
-        other: manje od %{count} sekundi
       over_x_years:
         one: preko %{count} godine
         few: preko %{count} godine
         many: preko %{count} godina
         other: preko %{count} godina
-      x_days:
-        one: ! '%{count} dan'
-        few: ! '%{count} dana'
-        many: ! '%{count} dana'
-        other: ! '%{count} dana'
-      x_minutes:
-        one: ! '%{count} minut'
-        few: ! '%{count} minuta'
-        many: ! '%{count} minuta'
-        other: ! '%{count} minuta'
-      x_months:
-        one: ! '%{count} mesec'
-        few: ! '%{count} meseca'
-        many: ! '%{count} meseci'
-        other: ! '%{count} meseci'
       x_seconds:
         one: ! '%{count} sekunda'
         few: ! '%{count} sekunde'
         many: ! '%{count} sekundi'
         other: ! '%{count} sekundi'
+      x_minutes:
+        one: ! '%{count} minut'
+        few: ! '%{count} minuta'
+        many: ! '%{count} minuta'
+        other: ! '%{count} minuta'
+      x_days:
+        one: ! '%{count} dan'
+        few: ! '%{count} dana'
+        many: ! '%{count} dana'
+        other: ! '%{count} dana'
+      x_months:
+        one: ! '%{count} mesec'
+        few: ! '%{count} meseca'
+        many: ! '%{count} meseci'
+        other: ! '%{count} meseci'
     prompts:
-      day: Dan
-      hour: Sat
-      minute: Minut
-      month: Mesec
       second: Sekund
+      minute: Minut
+      hour: Sat
+      day: Dan
+      month: Mesec
       year: Godina
   errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mora biti prihvaćen
       blank: ne sme biti prazan
-      present: mora biti prazan
       confirmation: se ne slaže sa potvrdom
       empty: ne sme biti prazan
       equal_to: mora biti jednak %{count}
@@ -137,6 +136,8 @@ scr:
       not_a_number: nije broj
       not_an_integer: nije ceo broj
       odd: mora biti neparan
+      other_than: "mora biti različit od %{count}"
+      present: mora biti prazan
       record_invalid: ! 'Validacija nije uspela: %{errors}'
       restrict_dependent_destroy:
         one: "Nije moguće obrisati zapis jer postoji zavisan %{record}"
@@ -157,7 +158,6 @@ scr:
         few: nije odgovarajuće dužine (treba biti %{count} znaka)
         many: nije odgovarajuće dužine (treba biti %{count} znakova)
         other: nije odgovarajuće dužine (treba biti %{count} znakova)
-      other_than: "mora biti različit od %{count}"
     template:
       body: ! 'Molim Vas da proverite sledeća polja:'
       header:
@@ -192,11 +192,11 @@ scr:
       decimal_units:
         format: ! '%n %u'
         units:
-          thousand: Hiljadu
-          million: Milion
           billion: Milijarda
-          trillion: Trilion
+          million: Milion
           quadrillion: Kvadrilion
+          thousand: Hiljadu
+          trillion: Trilion
           unit: ''
       format:
         delimiter: ''

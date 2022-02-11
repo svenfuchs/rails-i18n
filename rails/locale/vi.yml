@@ -17,7 +17,7 @@ vi:
     - Thứ 6
     - Thứ 7
     abbr_month_names:
-    - 
+    -
     - Thg 1
     - Thg 2
     - Thg 3
@@ -43,7 +43,7 @@ vi:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Tháng một
     - Tháng hai
     - Tháng ba
@@ -124,11 +124,11 @@ vi:
       odd: phải là số lẻ
       other_than: cần phải khác %{count}
       present: cần phải để trắng
+      required: "phải có"
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)
       wrong_length: độ dài không đúng (phải là %{count} ký tự)
-      required: "phải có"
     template:
       body: 'Có lỗi với các mục sau:'
       header:

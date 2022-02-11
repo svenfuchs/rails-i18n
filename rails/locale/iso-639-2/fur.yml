@@ -9,7 +9,7 @@ fur:
     - vin
     - sab
     abbr_month_names:
-    - 
+    -
     - Zen
     - Fev
     - Mar
@@ -35,7 +35,7 @@ fur:
       long: ! '%d di %B dal %Y'
       short: ! '%d di %b'
     month_names:
-    - 
+    -
     - Zenâr
     - Fevrâr
     - Març
@@ -67,33 +67,33 @@ fur:
         one: cuasi un an
         other: cuasi %{count} agns
       half_a_minute: mieç minût
-      less_than_x_minutes:
-        one: mancul di un minût
-        other: mancul di %{count} minûts
       less_than_x_seconds:
         one: mancul di un secont
         other: mancul di %{count} seconts
+      less_than_x_minutes:
+        one: mancul di un minût
+        other: mancul di %{count} minûts
       over_x_years:
         one: plui di un an
         other: plui di %{count} agns
-      x_days:
-        one: 1 zornade
-        other: ! '%{count} zornadis'
-      x_minutes:
-        one: 1 minût
-        other: ! '%{count} minûts'
-      x_months:
-        one: 1 mês
-        other: ! '%{count} mês'
       x_seconds:
         one: 1 secont
         other: ! '%{count} seconts'
+      x_minutes:
+        one: 1 minût
+        other: ! '%{count} minûts'
+      x_days:
+        one: 1 zornade
+        other: ! '%{count} zornadis'
+      x_months:
+        one: 1 mês
+        other: ! '%{count} mês'
     prompts:
-      day: Zornade
-      hour: Ore
-      minute: Minût
-      month: Mês
       second: Secont
+      minute: Minût
+      hour: Ore
+      day: Zornade
+      month: Mês
       year: An
   errors:
     format: ! '%{attribute} %{message}'

@@ -9,7 +9,7 @@ dsb:
     - Pě
     - So
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - měr
@@ -35,7 +35,7 @@ dsb:
       long: ! '%d. %B %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - Měrc
@@ -55,56 +55,56 @@ dsb:
   datetime:
     distance_in_words:
       about_x_hours:
-        few: něźi %{count} góźinami
         one: něźi 1 góźinu
-        other: něźi %{count} góźinami
         two: něźi %{count} góźinoma
+        few: něźi %{count} góźinami
+        other: něźi %{count} góźinami
       about_x_months:
-        few: něźi %{count} mjasecami
         one: něźi 1 mjasecom
-        other: něźi %{count} mjasecami
         two: něźi %{count} mjasecoma
+        few: něźi %{count} mjasecami
+        other: něźi %{count} mjasecami
       about_x_years:
-        few: něźi %{count} lětami
         one: něźi 1 lětom
-        other: něźi %{count} lětami
         two: něźi %{count} lětoma
+        few: něźi %{count} lětami
+        other: něźi %{count} lětami
       half_a_minute: poł minuty
-      less_than_x_minutes:
-        few: mjenjej ako %{count} minutami
-        one: mjenjej ako 1 minutu
-        other: mjenjej ako %{count} minutami
-        two: mjenjej ako %{count} minutoma
       less_than_x_seconds:
-        few: mjenjej ako %{count} sekundami
         one: mjenjej ako 1 sekundu
-        other: mjenjej ako %{count} sekundami
         two: mjenjej ako %{count} sekundoma
+        few: mjenjej ako %{count} sekundami
+        other: mjenjej ako %{count} sekundami
+      less_than_x_minutes:
+        one: mjenjej ako 1 minutu
+        two: mjenjej ako %{count} minutoma
+        few: mjenjej ako %{count} minutami
+        other: mjenjej ako %{count} minutami
       over_x_years:
-        few: wěcej ako %{count} lětami
         one: wěcej ako 1 lětom
-        other: wěcej ako %{count} lětami
         two: wěcej ako %{count} lětoma
-      x_days:
-        few: ! '%{count} dnjami'
-        one: 1 dnjom
-        other: ! '%{count} dnjami'
-        two: ! '%{count} dnjoma'
-      x_minutes:
-        few: ! '%{count} minutami'
-        one: 1 minutu
-        other: ! '%{count} minutami'
-        two: ! '%{count} minutoma'
-      x_months:
-        few: ! '%{count} mjasecami'
-        one: 1 mjasecom
-        other: ! '%{count} mjasecami'
-        two: ! '%{count} mjasecoma'
+        few: wěcej ako %{count} lětami
+        other: wěcej ako %{count} lětami
       x_seconds:
-        few: ! '%{count} sekundami'
         one: 1 sekundu
-        other: ! '%{count} sekundami'
         two: ! '%{count} sekundoma'
+        few: ! '%{count} sekundami'
+        other: ! '%{count} sekundami'
+      x_minutes:
+        one: 1 minutu
+        two: ! '%{count} minutoma'
+        few: ! '%{count} minutami'
+        other: ! '%{count} minutami'
+      x_days:
+        one: 1 dnjom
+        two: ! '%{count} dnjoma'
+        few: ! '%{count} dnjami'
+        other: ! '%{count} dnjami'
+      x_months:
+        one: 1 mjasecom
+        two: ! '%{count} mjasecoma'
+        few: ! '%{count} mjasecami'
+        other: ! '%{count} mjasecami'
   errors:
     format: ! '%{attribute} %{message}'
     messages:
@@ -125,31 +125,27 @@ dsb:
       odd: musy njerowna licba byś
       taken: jo južo w datowej bance
       too_long:
-        few: jo pśedłujki (maks. %{count} znamješka)
         one: jo pśedłujki (maks. 1 znamješko)
-        other: jo pśedłujki (maks. %{count} znamješkow)
         two: jo pśedłujki (maks. %{count} znamješce)
+        few: jo pśedłujki (maks. %{count} znamješka)
+        other: jo pśedłujki (maks. %{count} znamješkow)
       too_short:
-        few: jo překrotki (min. %{count} znamješka)
         one: jo překrotki (min. 1 znamješko)
-        other: jo překrotki (min. %{count} znamješkow)
         two: jo překrotki (min. %{count} znamješce)
+        few: jo překrotki (min. %{count} znamješka)
+        other: jo překrotki (min. %{count} znamješkow)
       wrong_length:
-        few: njama pšawu dłujkosć (%{count} znamješka wócakane)
         one: njama pšawu dłujkosć (1 znamješko wócakane)
-        other: njama pšawu dłujkosć (%{count} znamješkow wócakanych)
         two: njama pšawu dłujkosć (%{count} znamješce wócakanej)
+        few: njama pšawu dłujkosć (%{count} znamješka wócakane)
+        other: njama pšawu dłujkosć (%{count} znamješkow wócakanych)
     template:
       body: ! 'Pšosym pśeglědaj slědujuce póla:'
       header:
-        few: Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo
-          było móžno składowaś
-        one: Pśi składowanju objekta %{model} jo k zmólce dojšło a njejo było móžno
-          składowaś
-        other: Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo
-          było móžno składowaś
-        two: Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo
-          było móžno składowaś
+        one: Pśi składowanju objekta %{model} jo k zmólce dojšło a njejo było móžno składowaś
+        two: Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś
+        few: Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś
+        other: Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś
   number:
     currency:
       format:
@@ -180,10 +176,10 @@ dsb:
         format: ! '%n %u'
         units:
           byte:
-            few: bajty
             one: bajt
-            other: bajtow
             two: bajta
+            few: bajty
+            other: bajtow
           gb: GB
           kb: KB
           mb: MB
