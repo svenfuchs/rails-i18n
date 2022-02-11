@@ -1,0 +1,23 @@
+allowed_orders:
+  - [has_one, has_many]
+  - [zero, one, two, few, many, other]
+  - [second, minute, hour, day, month, year]
+  -
+    - about_x_hours
+    - about_x_months
+    - about_x_years
+    - almost_x_years
+    - half_a_minute
+    - less_than_x_seconds
+    - less_than_x_minutes
+    - over_x_years
+    - x_seconds
+    - x_minutes
+    - x_days
+    - x_months
+    - x_years
+
+
+indent_sequences: false
+only:
+  - rails/locale/
