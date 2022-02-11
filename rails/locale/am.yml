@@ -1,0 +1,269 @@
+---
+am:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Առաջացել են խնդիրներ: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 'Հնարավոր չէ ջնջել գրառումը, քանի որ կա կախվածություն: %{record}'
+          has_many: 'Հնարավոր չէ ջնջել գրառումը, քանի որ կան կախվածություններ: %{record}'
+  date:
+    abbr_day_names:
+    - Կի
+    - Եկ
+    - Եք
+    - Չո
+    - Հի
+    - Ու
+    - Շա
+    abbr_month_names:
+    - 
+    - Հնվ.
+    - Փտր.
+    - Մրտ․
+    - Ապր.
+    - Մյս․
+    - Հուն․
+    - Հուլ․
+    - Օգս.
+    - Սեպտ.
+    - Հոկ.
+    - Նյբ.
+    - Դեկ.
+    day_names:
+    - Կիրակի
+    - Երկուշաբթի
+    - Երեքշաբթի
+    - Չորեքշաբթի
+    - Հինգշաբթի
+    - Ուրբաթ
+    - Շաբաթ
+    formats:
+      default: "%d.%m.%Y"
+      long: "%-d %B %Y"
+      short: "%-d %b"
+    month_names:
+    - 
+    - Հունվարի
+    - Փետրվարի
+    - Մարտի
+    - Ապրիլի
+    - Մայիսի
+    - Հունիսի
+    - Հուլիսի
+    - Օգոստոսի
+    - Սեպտեմբերի
+    - Հոկտեմբերի
+    - Նոյեմբերի
+    - Դեկտեմբերի
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: մոտավորապես %{count} ժամ
+        few: մոտավորապես %{count} ժամ
+        many: մոտավորապես %{count} ժամ
+        other: մոտավորապես %{count} ժամ
+      about_x_months:
+        one: մոտավորապես %{count} ամիս
+        few: մոտավորապես %{count} ամիս
+        many: մոտավորապես %{count} ամիս
+        other: մոտավորապես %{count} ամիս
+      about_x_years:
+        one: մոտավորապես %{count} տարի
+        few: մոտավորապես %{count} տարի
+        many: մոտավորապես %{count} տարի
+        other: մոտավորապես %{count} տարի
+      almost_x_years:
+        one: մոտ 1 տարի
+        few: մոտ %{count} տարի
+        many: մոտ %{count} տարի
+        other: մոտ %{count} տարի
+      half_a_minute: կես րոպե
+      less_than_x_seconds:
+        one: "%{count} վայրկյանից քիչ"
+        few: "%{count} վայրկյանից քիչ"
+        many: "%{count} վայրկյանից քիչ"
+        other: "%{count} վայրկյանից քիչ"
+      less_than_x_minutes:
+        one: "%{count} րոպեից քիչ"
+        few: "%{count} րոպեից քիչ"
+        many: "%{count} րոպեից քիչ"
+        other: "%{count} րոպեից քիչ"
+      over_x_years:
+        one: "%{count} տարուց ավել"
+        few: "%{count} տարուց ավել"
+        many: "%{count} տարուց ավել"
+        other: "%{count} տարուց ավել"
+      x_seconds:
+        one: "%{count} վայրկյան"
+        few: "%{count} վայրկյան"
+        many: "%{count} վայրկյան"
+        other: "%{count} վայրկյան"
+      x_minutes:
+        one: "%{count} րոպե"
+        few: "%{count} րոպե"
+        many: "%{count} րոպե"
+        other: "%{count} րոպե"
+      x_days:
+        one: "%{count} օր"
+        few: "%{count} օր"
+        many: "%{count} օր"
+        other: "%{count} օր"
+      x_months:
+        one: "%{count} ամիս"
+        few: "%{count} ամիս"
+        many: "%{count} ամիս"
+        other: "%{count} ամիս"
+      x_years:
+        one: "%{count} տարի"
+        few: "%{count} տարի"
+        many: "%{count} տարի"
+        other: "%{count} տարի"
+    prompts:
+      second: Վայրկյան
+      minute: Րոպե
+      hour: Ժամ
+      day: Օր
+      month: Ամիս
+      year: Տարի
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: պետք է հաստատել
+      blank: չի կարող դատարկ լինել
+      confirmation: չի համընկնում %{attribute} դաշտի արժեքի հետ
+      empty: չի կարող դատարկ լինել
+      equal_to: կարող է ունենալ միայն արժեք հավասար %{count}
+      even: կարող է ունենալ միայն զույգ արժեք
+      exclusion: ունի արմագրված արժեք
+      greater_than: կարող է ունենալ արժեք մեծ քան %{count}
+      greater_than_or_equal_to: կարող է ունենալ արժեք մեծ կամ հավասար  %{count}
+      inclusion: չնախատեսված արժեք ունի
+      invalid: սխալ արժեք ունի
+      less_than: կարող է ունենալ արժեք փոքր քան %{count}
+      less_than_or_equal_to: կարող է ունենալ արժեք փոքր կամ հավասար %{count}
+      model_invalid: 'Առաջացել են սխալներ: %{errors}'
+      not_a_number: թիվ չէ
+      not_an_integer: ամբողջական թիվ չէ
+      odd: կարող է ունենալ միայն կենտ արժեք
+      other_than: պետք է տարբերվի %{count} ից
+      present: պետք է թողնել դատարկ
+      required: չի կարող բացակայել
+      taken: արդեն գոյություն ունի
+      too_long:
+        one: Չափազանց երկար է (չի կարող լինել ավելի, քան %{count} խորհրդանիշ)
+        few: Չափազանց երկար է (չի կարող լինել ավելի, քան %{count} խորհրդանիշ)
+        many: Չափազանց երկար է (չի կարող լինել ավելի, քան %{count} խորհրդանիշ)
+        other: Չափազանց երկար է (չի կարող լինել ավելի, քան %{count} խորհրդանիշ)
+      too_short:
+        one: Չափազանց կարճ է (չի կարող լինել պակաս, քան %{count} խորհրդանիշ)
+        few: Չափազանց կարճ է (չի կարող լինել պակաս, քան %{count} խորհրդանիշ)
+        many: Չափազանց կարճ է (չի կարող լինել պակաս, քան %{count} խորհրդանիշ)
+        other: Չափազանց կարճ է (չի կարող լինել պակաս, քան %{count} խորհրդանիշ)
+      wrong_length:
+        one: սխալ երկարություն (երկարությունը պետք է լինի ճիշտ %{count} խորհրդանիշ)
+        few: սխալ երկարություն (երկարությունը պետք է լինի ճիշտ %{count} խորհրդանիշ)
+        many: սխալ երկարություն (երկարությունը պետք է լինի ճիշտ %{count} խորհրդանիշ)
+        other: սխալ երկարություն (երկարությունը պետք է լինի ճիշտ %{count} խորհրդանիշ)
+    template:
+      body: 'Խնդիրներ են առաջացել հետեւյալ դաշտերի հետ:'
+      header:
+        one: "%{model}: պահպանումը ձախողվեց, քանի որ կա %{count} սխալ "
+        few: "%{model}: պահպանումը ձախողվեց, քանի որ կա %{count} սխալ "
+        many: "%{model}: պահպանումը ձախողվեց, քանի որ կա %{count} սխալ "
+        other: "%{model}: պահպանումը ձախողվեց, քանի որ կա %{count} սխալ "
+  helpers:
+    select:
+      prompt: 'Ընտրեք: '
+    submit:
+      create: Ստեղծել %{model}
+      submit: Պապհպանել %{model}
+      update: Թարմացնել %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: դր.
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: միլիարդ
+            few: միլիարդ
+            many: միլիարդ
+            other: միլիարդ
+          million:
+            one: միլիոն
+            few: միլիոն
+            many: միլիոն
+            other: միլիոն
+          quadrillion:
+            one: կվադրիլիոն
+            few: կվադրիլիոն
+            many: կվադրիլիոն
+            other: կվադրիլիոն
+          thousand:
+            one: հազար
+            few: հազար
+            many: հազար
+            other: հազար
+          trillion:
+            one: տրիլիոն
+            few: տրիլիոն
+            many: տրիլիոն
+            other: տրիլիոն
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: բայթ
+            few: բայթ
+            many: բայթ
+            other: բայթ
+          eb: ԷԲ
+          gb: ԳԲ
+          kb: ԿԲ
+          mb: ՄԲ
+          pb: ՊԲ
+          tb: ՏԲ
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " եվ "
+      two_words_connector: " եվ "
+      words_connector: ", "
+  time:
+    am: առավոտյան
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y, %H:%M"
+      short: "%d %b, %H:%M"
+    pm: երեկոյան
