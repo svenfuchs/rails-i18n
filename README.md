@@ -2,7 +2,7 @@ Rails Locale Data Repository
 ============================
 
 [![Gem Version](https://badge.fury.io/rb/rails-i18n.svg)](http://badge.fury.io/rb/rails-i18n)
-[![Build Status](https://secure.travis-ci.org/svenfuchs/rails-i18n.svg)](http://travis-ci.org/svenfuchs/rails-i18n)
+[![CI](https://github.com/svenfuchs/rails-i18n/actions/workflows/ci.yml/badge.svg)](https://github.com/svenfuchs/rails-i18n/actions/workflows/ci.yml)
 
 Centralization of locale data collection for Ruby on Rails.
 
@@ -219,7 +219,6 @@ To run the other commands described above:
 
 ```
 docker run railsi18n bundle exec rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
-
 ```
 
 ## See also
