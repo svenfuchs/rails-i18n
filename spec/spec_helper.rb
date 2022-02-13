@@ -1,7 +1,6 @@
 ENV["RAILS_ENV"] = "test"
 
 require 'i18n-spec'
-require 'i18n/core_ext/hash'
 require 'active_support/core_ext/kernel/reporting'
 require 'socket'
 require 'unit/matchers/have_missing_particular_pluralization_keys_matcher'
