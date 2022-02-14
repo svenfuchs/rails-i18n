@@ -13,6 +13,11 @@ namespace :test do
   end
 end
 
+desc 'Check alphabetisation of all locale files.'
+task :yalphabetize do
+  system('bundle exec yalphabetize')
+end
+
 require 'rspec/core'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
@@ -30,4 +35,4 @@ end
 
 require 'i18n-spec/tasks' # needs to be loaded after rspec
 
-task :default => :spec
+task :default => [:spec, :yalphabetize]
