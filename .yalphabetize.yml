@@ -16,8 +16,6 @@ allowed_orders:
     - x_days
     - x_months
     - x_years
-
-
 indent_sequences: false
 only:
   - rails/locale/
