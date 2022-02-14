@@ -1,5 +1,24 @@
 ## unreleased
 
+## 7.0.2 (2022-02-12)
+
+- Fix long date format for many locales #939 #943
+- Update following locales:
+  - Chinese (zh-TW) #941
+  - Croatian (hr) #940
+  - Danish (da) #802 #946 #947 #948
+  - Finnish (fi) #949
+  - French (fr) #968
+  - Galician (gl) #961
+  - Papiamento (pap-AW, pap-CW) #974 #975
+  - Serbian (sr) #972
+  - Spanish (es, es-CL, es-ES) #936
+  - Swedish (sv) #935
+  - Tamil (ta) #953
+- Fix require statement in `rails/pluralization/tr` #964
+- Add rails/ordinals to s.files in Gemspec #969
+- Update i18n-tasks to be ActiveSupport 7+ ready #970
+
 ## 7.0.1 (2021-12-24)
 
 - Fix ordinals loading.
