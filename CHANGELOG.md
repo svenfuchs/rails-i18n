@@ -1,5 +1,7 @@
 ## unreleased
 
+- Remove eager loading of translations during boot phase (this is now done by Rails).
+
 ## 7.0.2 (2022-02-12)
 
 - Fix long date format for many locales #939 #943
