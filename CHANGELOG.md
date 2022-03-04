@@ -2,6 +2,10 @@
 
 - Remove eager loading of translations during boot phase (this is now done by Rails).
 
+## 7.0.3 (2022-03-01)
+
+- Revert long date formats on default "en" locale #980
+
 ## 7.0.2 (2022-02-12)
 
 - Fix long date format for many locales #939 #943
