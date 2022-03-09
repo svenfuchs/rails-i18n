@@ -142,8 +142,8 @@ fy:
     template:
       body: 'Der wiene problemen mei de neikommende fjilden:'
       header:
-        one: 1 flater behindere it fêstlizzen fan %{model}
-        other: "%{count} flaters behinderen it fêstlizzen fan %{model}"
+        one: %{model} fêstlizzen behindere troch 1 flater
+        other: "%{model} fêstlizzen behindere troch %{count} flaters"
   helpers:
     select:
       prompt: Meitsje in kar
