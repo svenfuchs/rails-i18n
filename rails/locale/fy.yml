@@ -142,15 +142,15 @@ fy:
     template:
       body: 'Der wiene problemen mei de neikommende fjilden:'
       header:
-        one: %{model} fêstlizzen behindere troch 1 flater
+        one: "%{model} fêstlizzen behindere troch 1 flater"
         other: "%{model} fêstlizzen behindere troch %{count} flaters"
   helpers:
     select:
       prompt: Meitsje in kar
     submit:
-      create: %{model} oanmeitsje
-      submit: %{model} fêstlizze
-      update: %{model} bywurkje
+      create: "%{model} oanmeitsje"
+      submit: "%{model} fêstlizze"
+      update: "%{model} bywurkje"
   number:
     currency:
       format:
