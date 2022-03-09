@@ -66,7 +66,7 @@ Available locales:
 > af, ar, az, be, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, de-DE, el, el-CY,
 > en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, en-CY, en-TT, eo, es,
 > es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE,
-> et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, gl, he, hi, hi-IN, hr, hu, id, is, it,
+> et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, fy, gl, he, hi, hi-IN, hr, hu, id, is, it,
 > it-CH, ja, ka, km, kn, ko, lb, lo, lt, lv, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, oc, or,
 > pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, st, sw, ta, te, th, tl, tr, tt, ug,
 > ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
@@ -74,7 +74,7 @@ Available locales:
 Complete locales:
 
 > af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
-> es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, id, it, ja, ka, ml, nb,
+> es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, fy, id, it, ja, ka, ml, nb,
 > nl, nn, pt, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
 
 Currently, most locales are incomplete. Typically they lack the following keys:
