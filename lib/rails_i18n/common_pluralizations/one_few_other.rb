@@ -1,6 +1,6 @@
 module RailsI18n
   module Pluralization
-    module Serbian
+    module OneFewOther
       FROM_2_TO_4   = (2..4).to_a.freeze
       FROM_12_TO_14 = (12..14).to_a.freeze
 
