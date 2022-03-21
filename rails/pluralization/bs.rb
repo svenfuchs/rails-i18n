@@ -1,3 +1,3 @@
-require 'rails_i18n/common_pluralizations/east_slavic'
+require 'rails_i18n/common_pluralizations/one_few_other'
 
-::RailsI18n::Pluralization::EastSlavic.with_locale(:bs)
+::RailsI18n::Pluralization::OneFewOther.with_locale(:bs)
