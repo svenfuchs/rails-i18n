@@ -12,6 +12,7 @@ require 'unit/pluralization/other'
 require 'unit/pluralization/one_other'
 require 'unit/pluralization/one_with_zero_other'
 require 'unit/pluralization/one_upto_two_other'
+
 require 'unit/pluralization/one_two_other'
 require 'unit/pluralization/east_slavic'
 require 'unit/pluralization/west_slavic'
@@ -105,7 +106,7 @@ describe 'Pluralization rule for' do
 
   describe 'Bosnian', :locale => :bs do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'East Slavic'
+    it_behaves_like 'one-few-other forms language'
   end
 
   describe 'Breton', :locale => :br do
@@ -209,7 +210,7 @@ describe 'Pluralization rule for' do
 
   describe 'Croatian', :locale => :hr do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'East Slavic'
+    it_behaves_like 'one-few-other forms language'
   end
 
   describe 'Czech', :locale => :cs do
@@ -656,6 +657,7 @@ describe 'Pluralization rule for' do
 
   describe 'Serbian', :locale => :sr do
     it_behaves_like 'an ordinary pluralization rule'
+    it_behaves_like 'one-few-other forms language'
 
     it 'has "one", "few", and "other" plural keys' do
       plural_keys.size.should == 3
@@ -683,7 +685,7 @@ describe 'Pluralization rule for' do
 
   describe 'Serbo-Croatian', :locale => :sh do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'East Slavic'
+    it_behaves_like 'one-few-other forms language'
   end
 
   describe 'Sichuan Yi', :locale => :ii do
