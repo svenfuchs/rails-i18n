@@ -12,7 +12,7 @@ require 'unit/pluralization/other'
 require 'unit/pluralization/one_other'
 require 'unit/pluralization/one_with_zero_other'
 require 'unit/pluralization/one_upto_two_other'
-
+require 'unit/pluralization/one_few_other'
 require 'unit/pluralization/one_two_other'
 require 'unit/pluralization/east_slavic'
 require 'unit/pluralization/west_slavic'
