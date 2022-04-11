@@ -82,16 +82,16 @@ kn:
         one: ಒಂದು ವರುಷಕ್ಕಿಂತ ಹೆಚ್ಚು
         other: "%{count} ವರುಷಗಳಿಗಿಂತ ಹೆಚ್ಚು"
       x_seconds:
-        one: 1 ಸೆಕೆಂಡ್
+        one: "%{count} ಸೆಕೆಂಡ್"
         other: "%{count} ಸೆಕೆಂಡುಗಳು"
       x_minutes:
-        one: 1 ನಿಮಿಷ
+        one: "%{count} ನಿಮಿಷ"
         other: "%{count} ನಿಮಿಷಗಳು"
       x_days:
-        one: 1 ದಿನ
+        one: "%{count} ದಿನ"
         other: "%{count} ದಿನಗಳು"
       x_months:
-        one: 1 ತಿಂಗಳು
+        one: "%{count} ತಿಂಗಳು"
         other: "%{count} ತಿಂಗಳುಗಳು"
     prompts:
       second: ಸೆಕೆಂಡು
@@ -126,7 +126,7 @@ kn:
     template:
       body: 'ಸಮಸ್ಯೆಗಳಿರುವ ಜಾಗಗಳು:'
       header:
-        one: 1 ಧೋಷದ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ
+        one: "%{count} ಧೋಷದ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
         other: "%{count} ಧೋಷಗಳ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
   helpers:
     select:

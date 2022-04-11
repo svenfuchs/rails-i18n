@@ -59,35 +59,35 @@ gl:
         one: aproximadamente unha hora
         other: "%{count} horas"
       about_x_months:
-        one: aproximadamente 1 mes
+        one: aproximadamente %{count} mes
         other: "%{count} meses"
       about_x_years:
-        one: aproximadamente 1 ano
+        one: aproximadamente %{count} ano
         other: "%{count} anos"
       half_a_minute: medio minuto
       less_than_x_seconds:
         zero: menos dun segundo
-        one: 1 segundo
+        one: "%{count} segundo"
         few: poucos segundos
         other: "%{count} segundos"
       less_than_x_minutes:
         zero: menos dun minuto
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minutos"
       over_x_years:
         one: máis dun ano
         other: "%{count} anos"
       x_seconds:
-        one: 1 segundo
+        one: "%{count} segundo"
         other: "%{count} segundos"
       x_minutes:
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minuto"
       x_days:
-        one: 1 día
+        one: "%{count} día"
         other: "%{count} días"
       x_months:
-        one: 1 mes
+        one: "%{count} mes"
         other: "%{count} meses"
   errors:
     format: "%{attribute} %{message}"
@@ -114,7 +114,7 @@ gl:
     template:
       body: 'Atopáronse os seguintes problemas:'
       header:
-        one: 1 erro evitou que se puidese gardar o %{model}
+        one: "%{count} erro evitou que se puidese gardar o %{model}"
         other: "%{count} erros evitaron que se puidese gardar o %{model}"
   number:
     currency:

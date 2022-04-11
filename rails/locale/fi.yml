@@ -130,13 +130,13 @@ fi:
       required: täytyy olla
       taken: on jo käytössä
       too_long:
-        one: on liian pitkä (saa olla enintään 1 merkki)
+        one: on liian pitkä (saa olla enintään %{count} merkki)
         other: on liian pitkä (saa olla enintään %{count} merkkiä)
       too_short:
-        one: on liian lyhyt (oltava vähintään 1 merkki)
+        one: on liian lyhyt (oltava vähintään %{count} merkki)
         other: on liian lyhyt (oltava vähintään %{count} merkkiä)
       wrong_length:
-        one: on väärän pituinen (täytyy olla täsmälleen 1 merkki)
+        one: on väärän pituinen (täytyy olla täsmälleen %{count} merkki)
         other: on väärän pituinen (täytyy olla täsmälleen %{count} merkkiä)
     template:
       body: 'Seuraavat kentät aiheuttivat ongelmia:'

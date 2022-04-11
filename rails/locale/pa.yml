@@ -63,38 +63,38 @@ pa:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ਲਗਭਗ 1 ਘੰਟਾ
+        one: ਲਗਭਗ %{count} ਘੰਟਾ
         other: ਲਗਭਗ %{count} ਘੰਟੇ
       about_x_months:
-        one: ਲਗਭਗ 1 ਮਹੀਨਾ
+        one: ਲਗਭਗ %{count} ਮਹੀਨਾ
         other: ਲਗਭਗ %{count} ਮਹੀਨੇ
       about_x_years:
-        one: ਲਗਭਗ 1 ਸਾਲ
+        one: ਲਗਭਗ %{count} ਸਾਲ
         other: ਲਗਭਗ %{count} ਸਾਲ
       almost_x_years:
-        one: ਤਕਰੀਬਨ 1 ਸਾਲ
+        one: ਤਕਰੀਬਨ %{count} ਸਾਲ
         other: ਤਕਰੀਬਨ %{count} ਸਾਲ
       half_a_minute: ਅੱਧਾ ਮਿੰਟ
       less_than_x_seconds:
-        one: 1 ਸਕਿੰਟ ਤੋਂ ਘੱਟ
+        one: "%{count} ਸਕਿੰਟ ਤੋਂ ਘੱਟ"
         other: "%{count} ਸਕਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       less_than_x_minutes:
-        one: 1 ਮਿੰਟ ਤੋਂ ਘੱਟ
+        one: "%{count} ਮਿੰਟ ਤੋਂ ਘੱਟ"
         other: "%{count} ਮਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       over_x_years:
-        one: 1 ਸਾਲ ਤੋਂ ਵੱਧ
+        one: "%{count} ਸਾਲ ਤੋਂ ਵੱਧ"
         other: "%{count} ਸਾਲਾਂ ਤੋਂ ਵੱਧ"
       x_seconds:
-        one: 1 ਸਕਿੰਟ
+        one: "%{count} ਸਕਿੰਟ"
         other: "%{count} ਸਕਿੰਟ"
       x_minutes:
-        one: 1 ਮਿੰਟ
+        one: "%{count} ਮਿੰਟ"
         other: "%{count} ਮਿੰਟ"
       x_days:
-        one: 1 ਦਿਨ
+        one: "%{count} ਦਿਨ"
         other: "%{count} ਦਿਨ"
       x_months:
-        one: 1 ਮਹੀਨਾ
+        one: "%{count} ਮਹੀਨਾ"
         other: "%{count} ਮਹੀਨੇ"
     prompts:
       second: ਸਕਿੰਟ
@@ -126,18 +126,18 @@ pa:
       present: ਜਰੂਰ ਖਾਲੀ ਹੋਵੇ
       taken: ਪਹਿਲਾਂ ਹੀ ਮੱਲਿਆ ਹੋਇਆ ਹੈ
       too_long:
-        one: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ 1 ਅੱਖਰ)
+        one: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ %{count} ਅੱਖਰ)
         other: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ %{count} ਅੱਖਰ)
       too_short:
-        one: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ 1 ਅੱਖਰ)
+        one: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ %{count} ਅੱਖਰ)
         other: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ %{count} ਅੱਖਰ)
       wrong_length:
-        one: ਲੰਬਾਈ ਗਲਤ ਹੈ (1 ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
+        one: ਲੰਬਾਈ ਗਲਤ ਹੈ (%{count} ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
         other: ਲੰਬਾਈ ਗਲਤ ਹੈ (%{count} ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
     template:
       body: 'ਹੇਠਲੇ ਖੇਤਰਾਂ ਵਿੱਚ ਗਲਤੀਆਂ ਹਨ:'
       header:
-        one: 1 ਗਲਤੀ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ
+        one: "%{count} ਗਲਤੀ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ"
         other: "%{count} ਗਲਤੀਆਂ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ"
   helpers:
     select:

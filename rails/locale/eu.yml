@@ -79,7 +79,7 @@ eu:
         one: segundu bat baino gutxiago
         other: "%{count} segundu baino gutxiago"
       less_than_x_minutes:
-        one: 1 minutu bat baino gutxiago
+        one: "%{count} minutu bat baino gutxiago"
         other: "%{count} minutu baino gutxiago"
       over_x_years:
         one: urte bat baino gehiago
@@ -128,13 +128,13 @@ eu:
       required: egon behar du
       taken: hartuta dago
       too_long:
-        one: luzeegia da (karaktere 1 gehienez)
+        one: luzeegia da (karaktere %{count} gehienez)
         other: luzeegia da (%{count} karaktere gehienez)
       too_short:
-        one: laburregia da (karaktere 1 gutxienez)
+        one: laburregia da (karaktere %{count} gutxienez)
         other: laburregia da (%{count} karaktere gutxienez)
       wrong_length:
-        one: ez du luzeera zuzena (karaktere 1 izan behar ditu)
+        one: ez du luzeera zuzena (karaktere %{count} izan behar ditu)
         other: ez du luzeera zuzena (%{count} karaktere izan behar ditu)
     template:
       body: 'Arazoak egon dira ondoko eremuekin:'

@@ -63,16 +63,16 @@ ml:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: എകദേശം 1 മണിക്കൂർ
+        one: എകദേശം %{count} മണിക്കൂർ
         other: എകദേശം %{count} മണിക്കൂർ
       about_x_months:
-        one: എകദേശം 1 മാസം
+        one: എകദേശം %{count} മാസം
         other: എകദേശം %{count} മാസം
       about_x_years:
-        one: എകദേശം 1 വർഷം
+        one: എകദേശം %{count} വർഷം
         other: എകദേശം %{count} വർഷം
       almost_x_years:
-        one: ഏതാണ്ട്  1 വർഷം
+        one: ഏതാണ്ട്  %{count} വർഷം
         other: ഏതാണ്ട്  %{count} വർഷം
       half_a_minute: അര സൂക്ഷ്മ
       less_than_x_seconds:
@@ -85,16 +85,16 @@ ml:
         one: ഒരു വര്ഷത്തിനു മേലെ
         other: "%{count} വര്ഷത്തിനു മേലെ"
       x_seconds:
-        one: 1 നിമിഷം
+        one: "%{count} നിമിഷം"
         other: "%{count} നിമിഷം"
       x_minutes:
-        one: 1 മിനിറ്റ്
+        one: "%{count} മിനിറ്റ്"
         other: "%{count} മിനിറ്റ്"
       x_days:
-        one: 1 ദിവസം
+        one: "%{count} ദിവസം"
         other: "%{count} ദിവസങ്ങൾ"
       x_months:
-        one: 1 മാസം
+        one: "%{count} മാസം"
         other: "%{count} മാസം"
     prompts:
       second: നിമിഷം
@@ -128,13 +128,13 @@ ml:
       required: എന്തായാലും ഉണ്ടായിരിക്കണം
       taken: ഇതിനു മുൻപേ ഉപയോഗിച്ചിരിക്കുന്നു
       too_long:
-        one: വളരെ വലുതാണ് (പരമാവധി 1 പ്രതീകം)
+        one: വളരെ വലുതാണ് (പരമാവധി %{count} പ്രതീകം)
         other: വളരെ വലുതാണ് (പരമാവധി %{count} പ്രതീകങ്ങൾ)
       too_short:
-        one: വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌  1 പ്രതീകം)
+        one: വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌  %{count} പ്രതീകം)
         other: വളരെ ചെറുതാണ് (ഏറ്റവും കുറഞ്ഞത്‌ %{count} പ്രതീകങ്ങൾ)
       wrong_length:
-        one: തെറ്റായ നീളം ആണ്  (1 പ്രതീകം ആയിരിക്കണം)
+        one: തെറ്റായ നീളം ആണ്  (%{count} പ്രതീകം ആയിരിക്കണം)
         other: തെറ്റായ നീളം ആണ്  (%{count} പ്രതീകങ്ങൾ ആയിരിക്കണം)
     template:
       body: 'താഴെ പറഞ്ഞവയിൽ തെറ്റുകൾ ഉണ്ട്:'

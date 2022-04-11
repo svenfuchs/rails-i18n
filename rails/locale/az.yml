@@ -63,38 +63,38 @@ az:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: təxminən 1 saat
+        one: təxminən %{count} saat
         other: təxminən %{count} saat
       about_x_months:
-        one: təxminən 1 ay
+        one: təxminən %{count} ay
         other: təxminən %{count} ay
       about_x_years:
-        one: təxminən 1 il
+        one: təxminən %{count} il
         other: təxminən %{count} il
       almost_x_years:
-        one: təqribən 1 il
+        one: təqribən %{count} il
         other: təqribən %{count} il
       half_a_minute: yarım dəqiqə
       less_than_x_seconds:
-        one: 1 saniyədən az
+        one: "%{count} saniyədən az"
         other: "%{count} saniyədən az"
       less_than_x_minutes:
-        one: 1 dəqiqədən az
+        one: "%{count} dəqiqədən az"
         other: "%{count} dəqiqədən az"
       over_x_years:
-        one: 1 ildən çox
+        one: "%{count} ildən çox"
         other: "%{count} ildən çox"
       x_seconds:
-        one: 1 saniyə
+        one: "%{count} saniyə"
         other: "%{count} saniyə"
       x_minutes:
-        one: 1 dəqiqə
+        one: "%{count} dəqiqə"
         other: "%{count} dəqiqə"
       x_days:
-        one: 1 gün
+        one: "%{count} gün"
         other: "%{count} gün"
       x_months:
-        one: 1 ay
+        one: "%{count} ay"
         other: "%{count} ay"
     prompts:
       second: Saniyə
@@ -133,7 +133,7 @@ az:
     template:
       body: 'Aşağıdaki səhvlər üzə çıxdı:'
       header:
-        one: "%{model} saxlanmadı: 1 səhv"
+        one: "%{model} saxlanmadı: %{count} səhv"
         other: "%{model} saxlanmadı: %{count} səhv"
   helpers:
     select:

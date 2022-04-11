@@ -60,38 +60,38 @@ or:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ପାଖାପାଖି 1 ଘଣ୍ତ
+        one: ପାଖାପାଖି %{count} ଘଣ୍ତ
         other: ପାଖାପାଖି %{count} ଘଣ୍ତ
       about_x_months:
-        one: ପାଖାପାଖି 1 ମାସ
+        one: ପାଖାପାଖି %{count} ମାସ
         other: ପାଖାପାଖି %{count} ମାସ
       about_x_years:
-        one: ପାଖାପାଖି 1 year
+        one: ପାଖାପାଖି %{count} year
         other: ପାଖାପାଖି %{count} years
       almost_x_years:
-        one: ଅଳ୍ପ ଉଣ 1 ବର୍ଷ
+        one: ଅଳ୍ପ ଉଣ %{count} ବର୍ଷ
         other: ଅଳ୍ପ ଉଣ %{count} ବର୍ଷ
       half_a_minute: ଦେଢ ମିନଟ୍
       less_than_x_seconds:
-        one: 1 ସେକଣ୍ଢ ବାକ
+        one: "%{count} ସେକଣ୍ଢ ବାକ"
         other: "%{count} ସେକଣ୍ଢ ବାକ"
       less_than_x_minutes:
-        one: 1 ମିନଟ ବାକ
+        one: "%{count} ମିନଟ ବାକ"
         other: "%{count} ମିନଟ ବାକ"
       over_x_years:
-        one: 1 ବର୍ଷରୁ ଅଧିକ
+        one: "%{count} ବର୍ଷରୁ ଅଧିକ"
         other: "%{count} ବର୍ଷରୁ ଅଧିକ"
       x_seconds:
-        one: 1 ସେକଣ୍ଢ
+        one: "%{count} ସେକଣ୍ଢ"
         other: "%{count} ସେକଣ୍ଢ"
       x_minutes:
-        one: 1 ମିନଟ
+        one: "%{count} ମିନଟ"
         other: "%{count} ମିନଟ"
       x_days:
-        one: 1  ଦିନ
+        one: "%{count}  ଦିନ"
         other: "%{count} ଦିନ"
       x_months:
-        one: 1 ମାସ
+        one: "%{count} ମାସ"
         other: "%{count} ମାସ"
     prompts:
       second: ସେକଣ୍ଢ
@@ -126,7 +126,7 @@ or:
     template:
       body: 'ନିମ୍ନ ଜାଗା ରେ ଅସୁବିଧା ହେଇଛି:'
       header:
-        one: 1 ଭୁଲ ଯଗୁଁ ନିମ୍ନ %{model} ସୁରଖିତ ହେଇପାରି ନଥିଲା
+        one: "%{count} ଭୁଲ ଯଗୁଁ ନିମ୍ନ %{model} ସୁରଖିତ ହେଇପାରି ନଥିଲା"
         other: "%{count} ଭୁଲ ଯଗୁଁ ଏହି %{model} ସୁରଖିତ ହେଇପାରି ନଥିଲା"
   helpers:
     select:

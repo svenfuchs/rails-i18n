@@ -63,16 +63,16 @@ ta:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: சுமார் 1 மணி நேரம்
+        one: சுமார் %{count} மணி நேரம்
         other: சுமார் %{count} மணி
       about_x_months:
-        one: சுமார் 1 மாதம்
+        one: சுமார் %{count} மாதம்
         other: சுமார் %{count} மாதங்களுக்கு
       about_x_years:
-        one: சுமார் 1  ஆண்டு
+        one: சுமார் %{count}  ஆண்டு
         other: சுமார் %{count}  ஆண்டுகள்
       almost_x_years:
-        one: கிட்டத்தட்ட 1  ஆண்டு
+        one: கிட்டத்தட்ட %{count}  ஆண்டு
         other: கிட்டத்தட்ட %{count}  ஆண்டுகள்
       half_a_minute: அரை நிமிடம்
       less_than_x_seconds:
@@ -85,16 +85,16 @@ ta:
         one: ஒரு  ஆண்டிற்கு மேலாக
         other: "%{count}  ஆண்டிற்கு மேலாக"
       x_seconds:
-        one: 1 வினாடி
+        one: "%{count} வினாடி"
         other: "%{count} விநாடிகள்"
       x_minutes:
-        one: 1 நிமிடம்
+        one: "%{count} நிமிடம்"
         other: "%{count} நிமிடங்கள்"
       x_days:
-        one: 1 நாள்
+        one: "%{count} நாள்"
         other: "%{count} நாட்கள்"
       x_months:
-        one: 1 மாதம்
+        one: "%{count} மாதம்"
         other: "%{count} மாதங்கள்"
     prompts:
       second: விநாடிகள்
@@ -132,12 +132,12 @@ ta:
         one: மிகவும் குறுகியதாக உள்ளது (குறைந்தபட்சம் ஒரு எழுத்து)
         other: மிகவும் குறுகியதாக உள்ளது (குறைந்தபட்சம் %{count} எழுத்துக்கள்)
       wrong_length:
-        one: தவறான நீளம் (1 எழுத்து இருக்கவேண்டும்)
+        one: தவறான நீளம் (%{count} எழுத்து இருக்கவேண்டும்)
         other: தவறான நீளம் (%{count} எழுத்துக்கள் இருக்கவேண்டும்)
     template:
       body: 'பின்வரும் புலங்களில் பிரச்சினைகள் உள்ளது:'
       header:
-        one: 1 பிழை இந்த %{model} ஐ சேமிக்க தடையாக உள்ளது
+        one: "%{count} பிழை இந்த %{model} ஐ சேமிக்க தடையாக உள்ளது"
         other: "%{count} பிழைகள் இந்த %{model} ஐ சேமிக்க தடையாக உள்ளது"
   helpers:
     select:

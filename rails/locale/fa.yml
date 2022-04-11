@@ -98,7 +98,7 @@ fa:
         one: یک ماه
         other: "%{count} ماه"
       x_years:
-        one: 1 سال
+        one: "%{count} سال"
         other: "%{count} سال"
     prompts:
       second: ثانیه
@@ -137,7 +137,7 @@ fa:
     template:
       body: 'موارد زیر مشکل داشت:'
       header:
-        one: 1 خطا جلوی ذخیره این %{model} را گرفت
+        one: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
         other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
   helpers:
     select:

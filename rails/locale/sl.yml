@@ -60,28 +60,28 @@ sl:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: okoli 1 ura
+        one: okoli %{count} ura
         two: okoli 2 uri
         few: okoli %{count} ure
         other: okoli %{count} ur
       about_x_months:
-        one: okoli 1 mesec
+        one: okoli %{count} mesec
         two: okoli 2 meseca
         few: okoli %{count} mesece
         other: okoli %{count} mesecev
       about_x_years:
-        one: okoli 1 leto
+        one: okoli %{count} leto
         two: okoli 2 leti
         few: okoli %{count} leta
         other: okoli %{count} let
       almost_x_years:
-        one: skoraj 1 leto
+        one: skoraj %{count} leto
         two: skoraj 2 leti
         few: skoraj %{count} leta
         other: skoraj %{count} let
       half_a_minute: pol minute
       less_than_x_seconds:
-        one: manj kot 1 sekunda
+        one: manj kot %{count} sekunda
         two: manj kot 2 sekundi
         few: manj kot %{count} sekunde
         other: manj kot %{count} sekund
@@ -91,27 +91,27 @@ sl:
         few: manj kot %{count} minute
         other: manj kot %{count} minut
       over_x_years:
-        one: več kot 1 leto
+        one: več kot %{count} leto
         two: več kot 2 leti
         few: več kot %{count} leta
         other: več kot %{count} let
       x_seconds:
-        one: 1 sekunda
+        one: "%{count} sekunda"
         two: 2 sekundi
         few: "%{count} sekunde"
         other: "%{count} sekund"
       x_minutes:
-        one: 1 minuta
+        one: "%{count} minuta"
         two: 2 minuti
         few: "%{count} minute"
         other: "%{count} minut"
       x_days:
-        one: 1 dan
+        one: "%{count} dan"
         two: 2 dneva
         few: "%{count} dnevi"
         other: "%{count} dni"
       x_months:
-        one: 1 mesec
+        one: "%{count} mesec"
         two: 2 meseca
         few: "%{count} mesece"
         other: "%{count} mesecev"

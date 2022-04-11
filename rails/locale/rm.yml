@@ -107,7 +107,7 @@ rm:
         other: "%{count} secundas"
       x_minutes:
         zero: "%{count} minutas"
-        one: 1 minuta
+        one: "%{count} minuta"
         two: "%{count} minutas"
         few: "%{count} minutas"
         many: "%{count} minutas"
@@ -159,7 +159,7 @@ rm:
       body: 'Faschai uschè bain e controllai ils suandants champs:'
       header:
         zero: 'Betg pussaivel da memorisar quest %{model}: %{count} errurs.'
-        one: 'Betg pussaivel da memorisar quest %{model}: 1 errur.'
+        one: 'Betg pussaivel da memorisar quest %{model}: %{count} errur.'
         two: 'Betg pussaivel da memorisar quest %{model}: %{count} errurs.'
         few: 'Betg pussaivel da memorisar quest %{model}: %{count} errurs.'
         many: 'Betg pussaivel da memorisar quest %{model}: %{count} errurs.'

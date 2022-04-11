@@ -72,7 +72,7 @@ it-CH:
         one: circa un anno
         other: circa %{count} anni
       almost_x_years:
-        one: circa 1 anno
+        one: circa %{count} anno
         other: circa %{count} anni
       half_a_minute: mezzo minuto
       less_than_x_seconds:
@@ -85,19 +85,19 @@ it-CH:
         one: oltre un anno
         other: oltre %{count} anni
       x_seconds:
-        one: 1 secondo
+        one: "%{count} secondo"
         other: "%{count} secondi"
       x_minutes:
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minuti"
       x_days:
-        one: 1 giorno
+        one: "%{count} giorno"
         other: "%{count} giorni"
       x_months:
-        one: 1 mese
+        one: "%{count} mese"
         other: "%{count} mesi"
       x_years:
-        one: 1 anno
+        one: "%{count} anno"
         other: "%{count} anni"
     prompts:
       second: Secondi
@@ -131,18 +131,18 @@ it-CH:
       required: deve esistere
       taken: è già presente
       too_long:
-        one: è troppo lungo (il massimo è 1 carattere)
+        one: è troppo lungo (il massimo è %{count} carattere)
         other: è troppo lungo (il massimo è %{count} caratteri)
       too_short:
-        one: è troppo corto (il minimo è 1 carattere)
+        one: è troppo corto (il minimo è %{count} carattere)
         other: è troppo corto (il minimo è %{count} caratteri)
       wrong_length:
-        one: è della lunghezza sbagliata (deve essere di 1 carattere)
+        one: è della lunghezza sbagliata (deve essere di %{count} carattere)
         other: è della lunghezza sbagliata (deve essere di %{count} caratteri)
     template:
       body: 'Per favore ricontrolla i seguenti campi:'
       header:
-        one: 'Non posso salvare questo %{model}: 1 errore'
+        one: 'Non posso salvare questo %{model}: %{count} errore'
         other: 'Non posso salvare questo %{model}: %{count} errori.'
   helpers:
     select:

@@ -131,13 +131,13 @@ da:
       required: skal udfyldes
       taken: er allerede brugt
       too_long:
-        one: er for lang (højst 1 tegn)
+        one: er for lang (højst %{count} tegn)
         other: er for lang (højst %{count} tegn)
       too_short:
-        one: er for kort (mindst 1 tegn)
+        one: er for kort (mindst %{count} tegn)
         other: er for kort (mindst %{count} tegn)
       wrong_length:
-        one: har forkert længde (skulle være 1 tegn)
+        one: har forkert længde (skulle være %{count} tegn)
         other: har forkert længde (skulle være %{count} tegn)
     template:
       body: 'Der var problemer med følgende felter:'

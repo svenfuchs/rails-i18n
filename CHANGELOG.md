@@ -36,6 +36,7 @@
   bo, br, by, cy, dz, ff, ga, gd, guw, gv, ig, ii, iu, jv, kab, kde, kea, ksh,
   kw, lag, ln, mo, mt, my, naq, nso, root, sah, se, ses, sg, sh, shi, sma, smi,
   smj, smn, sms, ti, to, tzm, wa, yo, zh #1017
+- Change instances of the `one` pluralization key to use `%{count}` interpolation #993
 
 ## 7.0.5 (2022-07-03)
 

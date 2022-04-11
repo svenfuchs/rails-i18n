@@ -63,10 +63,10 @@ hi-IN:
         one: लग - भग एक घंटा
         other: लग - भग %{count} घंटा
       about_x_months:
-        one: लग - भग 1 महीना
+        one: लग - भग %{count} महीना
         other: लग - भग %{count} महीना
       about_x_years:
-        one: लग - भग 1 साल
+        one: लग - भग %{count} साल
         other: लग - भग %{count} साल
       almost_x_years:
         one: लग - भग एक साल

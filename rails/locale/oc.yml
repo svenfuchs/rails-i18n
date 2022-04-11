@@ -142,7 +142,7 @@ oc:
     template:
       body: I a agut de problèmas amb los camps seguents : 
       header:
-        one: Impossible d’enregistrar aqueste/a %{model} perque i a 1 error
+        one: Impossible d’enregistrar aqueste/a %{model} perque i a %{count} error
         other: Impossible d’enregistrar aqueste/a %{model} perque i a %{count} errors
   helpers:
     select:

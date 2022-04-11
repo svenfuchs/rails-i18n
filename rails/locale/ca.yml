@@ -6,7 +6,7 @@ ca:
         record_invalid: 'La validació ha fallat: %{errors}'
         restrict_dependent_destroy:
           has_one: No es pot eliminar el registre perquè existeix un %{record} dependent
-          has_many: No es pot eliminar el registre perquè existeixen %{record} dependents 
+          has_many: No es pot eliminar el registre perquè existeixen %{record} dependents
   date:
     abbr_day_names:
     - Dg
@@ -63,41 +63,41 @@ ca:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: aproximadament 1 hora
+        one: aproximadament %{count} hora
         other: aproximadament %{count} hores
       about_x_months:
-        one: aproximadament 1 mes
+        one: aproximadament %{count} mes
         other: aproximadament %{count} mesos
       about_x_years:
-        one: aproximadament 1 any
+        one: aproximadament %{count} any
         other: aproximadament %{count} anys
       almost_x_years:
-        one: quasi 1 any
+        one: quasi %{count} any
         other: quasi %{count} anys
       half_a_minute: mig minut
       less_than_x_seconds:
-        one: menys d'1 segon
+        one: menys d'%{count} segon
         other: menys de %{count} segons
       less_than_x_minutes:
-        one: menys d'1 minut
+        one: menys d'%{count} minut
         other: menys de %{count} minuts
       over_x_years:
-        one: més d'1 any
+        one: més d'%{count} any
         other: més de %{count} anys
       x_seconds:
-        one: 1 segon
+        one: "%{count} segon"
         other: "%{count} segons"
       x_minutes:
-        one: 1 minut
+        one: "%{count} minut"
         other: "%{count} minuts"
       x_days:
-        one: 1 dia
+        one: "%{count} dia"
         other: "%{count} dies"
       x_months:
-        one: 1 mes
+        one: "%{count} mes"
         other: "%{count} mesos"
       x_years:
-        one: 1 year
+        one: "%{count} year"
         other: "%{count} years"
     prompts:
       second: segon
@@ -131,18 +131,18 @@ ca:
       required: ha d'existir
       taken: no està disponible
       too_long:
-        one: és massa llarg (1 caràcter màxim)
+        one: és massa llarg (%{count} caràcter màxim)
         other: és massa llarg (%{count} caràcters màxim)
       too_short:
-        one: és massa curt (1 caràcter mínim)
+        one: és massa curt (%{count} caràcter mínim)
         other: és massa curt (%{count} caràcters mínim)
       wrong_length:
-        one: no té la longitud correcta (1 caràcter exactament)
+        one: no té la longitud correcta (%{count} caràcter exactament)
         other: no té la longitud correcta (%{count} caràcters exactament)
     template:
       body: 'Hi ha hagut problemes amb els següents camps:'
       header:
-        one: No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error
+        one: No s'ha pogut desar aquest/a %{model} perquè hi ha %{count} error
         other: No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors
   helpers:
     select:
