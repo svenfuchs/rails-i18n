@@ -98,7 +98,7 @@ zh-HK:
         other: "%{count}個月"
       x_years:
         one: 一年
-        other: "%{count} 年"
+        other: "%{count}年"
     prompts:
       second: 秒
       minute: 分
@@ -107,43 +107,43 @@ zh-HK:
       month: 月
       year: 年
   errors:
-    format: "%{attribute} %{message}"
+    format: "%{attribute}%{message}"
     messages:
       accepted: 必定要被接受
       blank: 不可以是空白
-      confirmation: 與 %{attribute} 不一致
+      confirmation: 與%{attribute}不一致
       empty: 不可以留空
-      equal_to: 必須等於 %{count}
+      equal_to: 必須等於%{count}
       even: 必須要是雙數
       exclusion: 是被保留的關鍵字
-      greater_than: 必須大於 %{count}
-      greater_than_or_equal_to: 必須大於或等於 %{count}
+      greater_than: 必須大於%{count}
+      greater_than_or_equal_to: 必須大於或等於%{count}
       inclusion: 並非可被接受的內容
       invalid: 是無效的
-      less_than: 必須小於 %{count}
-      less_than_or_equal_to: 必須小於或等於 %{count}
+      less_than: 必須小於%{count}
+      less_than_or_equal_to: 必須小於或等於%{count}
       model_invalid: 驗證失敗︰%{errors}
       not_a_number: 必須是數字
       not_an_integer: 必須是整數
       odd: 必須是單數
-      other_than: 不可以是 %{count} 個字
+      other_than: 不可以是%{count}個字
       present: 必定要是空白
       required: 必須存在
       taken: 已被使用
       too_long:
         one: 太長（最長為一個字元）
-        other: 太長（最長為 %{count} 個字元）
+        other: 太長（最長為%{count}個字元）
       too_short:
         one: 太短（最少為一個字元）
-        other: 太短（最少為 %{count} 個字元）
+        other: 太短（最少為%{count}個字元）
       wrong_length:
-        one: 字數錯誤 (應為一個字元)
-        other: 字數錯誤 (應為 %{count} 個字元)
+        one: 字數錯誤（應為一個字元）
+        other: 字數錯誤（應為%{count}個字元）
     template:
       body: 以下欄位發生問題︰
       header:
-        one: 發生一項錯誤，以致 %{model} 未能儲存。
-        other: 發生%{count}項錯誤，以致 %{model} 未能儲存。
+        one: 發生一項錯誤，以致%{model}未能儲存。
+        other: 發生%{count}項錯誤，以致%{model}未能儲存。
   helpers:
     select:
       prompt: 請選擇
@@ -201,7 +201,7 @@ zh-HK:
         delimiter: ''
   support:
     array:
-      last_word_connector: 和
+      last_word_connector: "、"
       two_words_connector: 和
       words_connector: "、"
   time:
