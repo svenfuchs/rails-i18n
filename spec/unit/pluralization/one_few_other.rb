@@ -14,7 +14,7 @@ shared_examples 'one-few-other forms language' do
   end
 
   [0, 5, 6, 7, 17, 18, 19, 100, 1000, 10000, 100000, 1000000,
-   0.0, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.5, 1.7, 2.0, 2.5, 2.6. 2.7, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0].each do |count|
+   0.0, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.5, 1.7, 2.0, 2.5, 2.6, 2.7, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0].each do |count|
     it "detects that #{count} in category 'other'" do
       rule.call(count).should == :other
     end
