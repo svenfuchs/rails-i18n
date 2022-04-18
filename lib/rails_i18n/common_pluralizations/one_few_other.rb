@@ -7,6 +7,12 @@ module RailsI18n
       def self.rule
         lambda do |n|
           n ||= 0
+          frac = (n.to_d % 1)
+
+          if frac.nonzero?
+            n = frac.to_s.split('.').last.to_i
+          end
+
           mod10 = n % 10
           mod100 = n % 100
 
