@@ -3,7 +3,7 @@ zh-YUE:
   activerecord:
     errors:
       messages:
-        record_invalid: 驗證失敗︰%{errors}
+        record_invalid: 驗證失敗：%{errors}
         restrict_dependent_destroy:
           has_one: 唔可以刪除，因為%{record}要用佢
           has_many: 唔可以刪除，因為%{record}要用佢
@@ -122,7 +122,7 @@ zh-YUE:
       invalid: 無效
       less_than: 要細過%{count}
       less_than_or_equal_to: 要細過或者等於%{count}
-      model_invalid: 驗證失敗︰%{errors}
+      model_invalid: 驗證失敗：%{errors}
       not_a_number: 唔係一個數字
       not_an_integer: 要係整數
       odd: 要係單數
@@ -140,7 +140,7 @@ zh-YUE:
         one: 唔啱字數（要係1個字）
         other: 唔啱字數（要係%{count}個字）
     template:
-      body: 呢啲有問題︰
+      body: 呢啲有問題：
       header:
         one: 有一個問題，%{model}儲存唔到。
         other: 有%{count}個問題，%{model}儲存唔到。
