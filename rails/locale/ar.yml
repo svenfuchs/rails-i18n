@@ -157,7 +157,7 @@ ar:
       equal_to: يجب أن يساوي طول %{attribute} %{count}
       even: يجب أن يكون عدد %{attribute} زوجياً
       exclusion: حقل %{attribute} محجوز
-      greater_than: ميجب أن يكون عدد %{attribute} أكبر من %{count}
+      greater_than: يجب أن يكون عدد %{attribute} أكبر من %{count}
       greater_than_or_equal_to: يجب أن يكون عدد %{attribute} أكبر أو يساوي %{count}
       inclusion: "%{attribute} غير وارد في القائمة"
       invalid: محتوى %{attribute} غير صالح
