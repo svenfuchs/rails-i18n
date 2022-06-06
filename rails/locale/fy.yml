@@ -140,10 +140,10 @@ fy:
         one: hat de ferkearde lingte (moat 1 teken wêze)
         other: hat de ferkearde lingte (moat %{count} tekens wêze)
     template:
-      body: 'Der wiene problemen mei de neikommende fjilden:'
+      body: 'Der binne problemen mei de neikommende fjilden:'
       header:
-        one: 1 flater behindere it fêstlizzen fan %{model}
-        other: "%{count} flaters behinderen it fêstlizzen fan %{model}"
+        one: 1 flater behinderet it fêstlizzen fan %{model}
+        other: "%{count} flaters behinderje it fêstlizzen fan %{model}"
   helpers:
     select:
       prompt: Meitsje in kar
