@@ -67,7 +67,7 @@ fy:
         other: likernôch %{count} oeren
       about_x_months:
         one: likernôch 1 moanne
-        other: likernôch %{count} moanne
+        other: likernôch %{count} moannen
       about_x_years:
         one: likernôch 1 jier
         other: likernôch %{count} jier
@@ -95,7 +95,7 @@ fy:
         other: "%{count} dagen"
       x_months:
         one: 1 moanne
-        other: "%{count} moanne"
+        other: "%{count} moannen"
       x_years:
         one: 1 jier
         other: "%{count} jier"
@@ -142,8 +142,8 @@ fy:
     template:
       body: 'Der wiene problemen mei de neikommende fjilden:'
       header:
-        one: "%{model} fêstlizzen behindere troch 1 flater"
-        other: "%{model} fêstlizzen behindere troch %{count} flaters"
+        one: 1 flater behindere it fêstlizzen fan %{model}
+        other: "%{count} flaters behinderen it fêstlizzen fan %{model}"
   helpers:
     select:
       prompt: Meitsje in kar
