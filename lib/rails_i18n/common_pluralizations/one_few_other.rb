@@ -1,12 +1,18 @@
 module RailsI18n
   module Pluralization
-    module Serbian
+    module OneFewOther
       FROM_2_TO_4   = (2..4).to_a.freeze
       FROM_12_TO_14 = (12..14).to_a.freeze
 
       def self.rule
         lambda do |n|
           n ||= 0
+          frac = (n.to_d % 1)
+
+          if frac.nonzero?
+            n = frac.to_s.split('.').last.to_i
+          end
+
           mod10 = n % 10
           mod100 = n % 100
 
