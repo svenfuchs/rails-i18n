@@ -341,6 +341,11 @@ describe 'Pluralization rule for' do
     it_behaves_like 'other form language'
   end
 
+  describe 'Kazakh', :locale => :kk do
+    it_behaves_like 'an ordinary pluralization rule'
+    it_behaves_like 'one-other forms language'
+  end
+
   describe 'Khmer', :locale => :km do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
