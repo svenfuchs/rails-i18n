@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-i18n (7.0.3)
+    rails-i18n (7.0.5)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
 
