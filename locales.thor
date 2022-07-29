@@ -54,6 +54,9 @@ class Locales < Thor
     puts "The structure is good." if good
   end
 
+  # Sorts all the keys alphabetically
+  # Ensures that the quoting is the simplest
+  # Ensures that the line break width is respected
   desc 'normalize LOCALE', 'Normalize locale file.'
   def normalize(locale)
     Dir.glob(format('%s/rails/locale/%s.{rb,yml}', File.dirname(__FILE__), locale)) do |filename|
