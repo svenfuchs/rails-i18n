@@ -63,7 +63,7 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 
 Available locales:
 
-> af, ar, az, be, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, de-DE, el, el-CY,
+> af, ar, az, be, bg, bn, bs, ca, cs, da, de, de-AT, de-CH, de-DE, el, el-CY,
 > en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, en-CY, en-TT, eo, es,
 > es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE,
 > et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, fy, gl, he, hi, hi-IN, hr, hu, id, is, it,
@@ -76,6 +76,15 @@ Complete locales:
 > af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
 > es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, fy, id, it, ja, ka, ml, nb,
 > nl, nn, pt, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
+
+Removed locales:
+
+> cy
+
+The cy locale was removed in commit 84f6c6b9b7a3e50df2b1fb1ccf7add329f7eab4f since unfortunately we could not find a Welsh speaker to support it. 
+We would welcome contributions to add it back to the project.
+The locale is mostly complete for the missing translations please refer to [#1006](https://github.com/svenfuchs/rails-i18n/issues/1006)
+
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
