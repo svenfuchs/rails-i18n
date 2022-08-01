@@ -124,7 +124,7 @@ vi:
       odd: phải là số lẻ
       other_than: cần phải khác %{count}
       present: cần phải để trắng
-      taken: đã có
+      taken: đã tồn tại
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)
       wrong_length: độ dài không đúng (phải là %{count} ký tự)
