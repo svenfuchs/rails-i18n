@@ -102,6 +102,18 @@ class Locales < Thor
 
   desc 'incomplete', 'List incomplete locales'
   def incomplete
+    puts self.incomplete_locales.join(', ')
+  end
+
+  desc 'incomplete_count', 'Returns the number of incomplete locales'
+  def incomplete_count
+    puts self.incomplete_locales.count
+  end
+
+  private
+
+  desc 'incomplete_locales', 'Returns an array of incomplete locales'
+  def incomplete_locales
     locales = []
     Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
       if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
@@ -113,6 +125,7 @@ class Locales < Thor
         end
       end
     end
-    puts locales.sort.join(', ')
+    return locales.sort
   end
+  
 end
