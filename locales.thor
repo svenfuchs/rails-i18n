@@ -75,13 +75,7 @@ class Locales < Thor
 
   desc 'list', 'List locale names.'
   def list
-    locales = []
-    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
-      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
-        locales << md[1]
-      end
-    end
-    puts locales.sort.join(', ')
+    puts self.list_locales.join(', ')
   end
 
   desc 'complete', 'List complete locales'
@@ -105,6 +99,17 @@ class Locales < Thor
   end
 
   private
+
+  desc 'list_locales', 'List all locales'
+  def list_locales
+    locales = []
+    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
+      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
+        locales << md[1]
+      end
+    end
+    return locales.sort
+  end
 
   desc 'complete_locales', 'List complete locales'
   def complete_locales
