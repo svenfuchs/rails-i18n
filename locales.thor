@@ -86,18 +86,7 @@ class Locales < Thor
 
   desc 'complete', 'List complete locales'
   def complete
-    locales = []
-    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
-      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
-        locale = md[1]
-        
-        missing_keys, broken_keys, missing_pluralizations = KeyStructure.check(locale)
-        if missing_keys.empty? && broken_keys.empty? && missing_pluralizations.empty?
-          locales << locale
-        end
-      end
-    end
-    puts locales.sort.join(', ')
+    puts self.complete_locales.join(', ')
   end
 
   desc 'incomplete', 'List incomplete locales'
@@ -111,6 +100,22 @@ class Locales < Thor
   end
 
   private
+
+  desc 'complete_locales', 'List complete locales'
+  def complete_locales
+    locales = []
+    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
+      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
+        locale = md[1]
+        
+        missing_keys, broken_keys, missing_pluralizations = KeyStructure.check(locale)
+        if missing_keys.empty? && broken_keys.empty? && missing_pluralizations.empty?
+          locales << locale
+        end
+      end
+    end
+    return locales.sort
+  end
 
   desc 'incomplete_locales', 'Returns an array of incomplete locales'
   def incomplete_locales
