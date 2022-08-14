@@ -89,6 +89,11 @@ class Locales < Thor
     puts self.complete_locales.join(', ')
   end
 
+  desc 'complete_count', 'Returns the number of complete locales'
+  def complete_count
+    puts self.complete_locales.count
+  end
+
   desc 'incomplete', 'List incomplete locales'
   def incomplete
     puts self.incomplete_locales.join(', ')
