@@ -107,12 +107,10 @@ class Locales < Thor
 
   desc 'list_locales', 'List all locales'
   def list_locales
-    locales = []
-    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
-      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
-        locales << md[1]
-      end
-    end
+    path_to_locales = 'rails/locale'
+    Dir.chdir(path_to_locales)
+    locale_files = Dir.glob('**/*.yml')
+    locales = locale_files.map{ |f| File.basename(f, '.yml') }
     return locales.sort
   end
 
