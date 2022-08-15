@@ -63,13 +63,7 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 
 Available locales:
 
-> af, ar, az, be, bg, bn, bs, ca, cs, da, de, de-AT, de-CH, de-DE, el, el-CY,
-> en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, en-CY, en-TT, eo, es,
-> es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE,
-> et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, fy, gl, he, hi, hi-IN, hr, hu, id, is, it,
-> it-CH, ja, ka, km, kn, ko, lb, lo, lt, lv, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, oc, or,
-> pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, st, sw, ta, te, th, tl, tr, tt, ug,
-> ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
+af, ar, az, be, bg, bn, bs, ca, cs, csb, da, de, de-AT, de-CH, de-DE, dsb, el, el-CY, en, en-AU, en-CA, en-CY, en-GB, en-IE, en-IN, en-NZ, en-TT, en-US, en-ZA, eo, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, fur, fy, gl, gsw-CH, he, hi, hi-IN, hr, hsb, hu, id, is, it, it-CH, ja, ka, kk, km, kn, ko, lb, lo, lt, lv, mg, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, oc, or, pa, pap-AW, pap-CW, pl, pt, pt-BR, rm, ro, ru, scr, sk, sl, sq, sr, st, sv, sv-SE, sw, ta, te, th, tl, tr, tt, ug, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
 Complete locales:
 
