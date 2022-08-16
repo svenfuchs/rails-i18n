@@ -103,6 +103,12 @@ class Locales < Thor
     puts self.incomplete_locales.count
   end
 
+  desc 'orphaned_pluralizations', 'Returns pluralizations that do nothave a locale file'
+  def orphaned_pluralizations
+    orphans = self.list_pluralizations.difference(self.list_locales)
+    puts orphans.join(', ')
+  end
+
   private
 
   desc 'list_locales', 'List all locales'
@@ -112,6 +118,16 @@ class Locales < Thor
     locale_files = Dir.glob('**/*.yml')
     locales = locale_files.map{ |f| File.basename(f, '.yml') }
     return locales.sort
+  end
+
+  desc 'list_pluralizations', 'List all pluralizations'
+  def list_pluralizations
+    path_to_pluralizations = 'rails/pluralization'
+    Dir.chdir(path_to_pluralizations)
+    pluralization_files = Dir.glob('*.rb')
+    pluralizations = pluralization_files.map{ |f| File.basename(f, '.rb') }
+    Dir.chdir('../..') # rewind
+    return pluralizations.sort
   end
 
   desc 'complete_locales', 'List complete locales'
