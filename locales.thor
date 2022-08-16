@@ -117,6 +117,7 @@ class Locales < Thor
     Dir.chdir(path_to_locales)
     locale_files = Dir.glob('**/*.yml')
     locales = locale_files.map{ |f| File.basename(f, '.yml') }
+    Dir.chdir('../..') # rewind
     return locales.sort
   end
 
