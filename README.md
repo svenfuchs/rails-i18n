@@ -77,6 +77,12 @@ The cy locale was removed in commit 84f6c6b9b7a3e50df2b1fb1ccf7add329f7eab4f sin
 We would welcome contributions to add it back to the project.
 The locale is mostly complete for the missing translations please refer to [#1006](https://github.com/svenfuchs/rails-i18n/issues/1006)
 
+**Removed pluralizations:**
+
+ak, am, bh, bm, bo, br, by, cy, dz, ff, ga, gd, guw, gv, ig, ii, iu, jv, kab, kde, kea, ksh, kw, lag, ln, mo, mt, my, naq, nso, root, sah, se, ses, sg, sh, shi, sma, smi, smj, smn, sms, ti, to, tzm, wa, yo, zh
+
+The above pluralization rules were removed because they did not have corresponding locale files.
+
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
