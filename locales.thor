@@ -1,5 +1,6 @@
 require File.dirname(__FILE__) + '/rails/test/lib/key_structure.rb'
 require File.dirname(__FILE__) + '/rails/test/lib/normalize.rb'
+require File.dirname(__FILE__) + '/rails/test/lib/check_locales.rb'
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib') unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/lib')
 
 class Locales < Thor
@@ -75,12 +76,12 @@ class Locales < Thor
 
   desc 'list', 'List locale names.'
   def list
-    puts self.list_locales.join(', ')
+    puts CheckLocales.list_locales.join(', ')
   end
 
   desc 'count_all', 'Returns the number of available locales'
   def count_all
-    puts self.list_locales.count
+    puts CheckLocales.count
   end
 
   desc 'complete', 'List complete locales'
@@ -103,33 +104,12 @@ class Locales < Thor
     puts self.incomplete_locales.count
   end
 
-  desc 'orphaned_pluralizations', 'Returns pluralizations that do nothave a locale file'
+  desc 'orphaned_pluralizations', 'Returns pluralizations that do not have a locale file'
   def orphaned_pluralizations
-    orphans = self.list_pluralizations.difference(self.list_locales)
-    puts orphans.join(', ')
+    puts CheckLocales.orphaned_pluralizations.join(', ')
   end
 
   private
-
-  desc 'list_locales', 'List all locales'
-  def list_locales
-    path_to_locales = 'rails/locale'
-    Dir.chdir(path_to_locales)
-    locale_files = Dir.glob('**/*.yml')
-    locales = locale_files.map{ |f| File.basename(f, '.yml') }
-    Dir.chdir('../..') # rewind
-    return locales.sort
-  end
-
-  desc 'list_pluralizations', 'List all pluralizations'
-  def list_pluralizations
-    path_to_pluralizations = 'rails/pluralization'
-    Dir.chdir(path_to_pluralizations)
-    pluralization_files = Dir.glob('*.rb')
-    pluralizations = pluralization_files.map{ |f| File.basename(f, '.rb') }
-    Dir.chdir('../..') # rewind
-    return pluralizations.sort
-  end
 
   desc 'complete_locales', 'List complete locales'
   def complete_locales
