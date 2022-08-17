@@ -109,14 +109,6 @@ class Locales < Thor
     puts CheckLocales.orphan_pluralizations.join(', ')
   end
 
-  desc 'delete_orphan_pluralizations', 'Deletes pluralizations that do not have a locale file'
-  def delete_orphans
-    CheckLocales.orphan_pluralizations.each do |orphan|
-        f = "rails/pluralization/"+orphan+".rb"
-        File.delete(f)
-    end
-  end
-
   private
 
   desc 'complete_locales', 'List complete locales'
