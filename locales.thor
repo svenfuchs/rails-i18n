@@ -104,9 +104,9 @@ class Locales < Thor
     puts self.incomplete_locales.count
   end
 
-  desc 'orphaned_pluralizations', 'Returns pluralizations that do not have a locale file'
-  def orphaned_pluralizations
-    puts CheckLocales.orphaned_pluralizations.join(', ')
+  desc 'orphan_pluralizations', 'Returns pluralizations that do not have a locale file'
+  def orphan_pluralizations
+    puts CheckLocales.orphan_pluralizations.join(', ')
   end
 
   private

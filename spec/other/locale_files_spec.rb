@@ -7,7 +7,7 @@ require_relative '../../rails/test/lib/check_locales.rb'
 describe "Locale files" do
   # there should not be any orphan pluralization files
   it "pluralization files should have a corresponding locale.yml file" do
-    expect(CheckLocales.orphaned_pluralizations).to be_empty
+    expect(CheckLocales.orphan_pluralizations).to be_empty
   end  
 
 
