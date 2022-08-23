@@ -3,7 +3,7 @@ zh-YUE:
   activerecord:
     errors:
       messages:
-        record_invalid: 驗證失敗︰%{errors}
+        record_invalid: 驗證失敗：%{errors}
         restrict_dependent_destroy:
           has_one: 唔可以刪除，因為%{record}要用佢
           has_many: 唔可以刪除，因為%{record}要用佢
@@ -98,7 +98,7 @@ zh-YUE:
         other: "%{count}個月"
       x_years:
         one: 一年
-        other: "%{count} 年"
+        other: "%{count}年"
     prompts:
       second: 秒
       minute: 分
@@ -107,13 +107,13 @@ zh-YUE:
       month: 月
       year: 年
   errors:
-    format: "%{attribute} %{message}"
+    format: "%{attribute}%{message}"
     messages:
       accepted: 一定要被接受
       blank: 唔可以空白
-      confirmation: 與 %{attribute} 唔夾
+      confirmation: 與%{attribute}唔夾
       empty: 唔可以漏空
-      equal_to: 要等於 %{count}
+      equal_to: 要等於%{count}
       even: 要係雙數
       exclusion: 唔用得
       greater_than: 要大過%{count}
@@ -122,7 +122,7 @@ zh-YUE:
       invalid: 無效
       less_than: 要細過%{count}
       less_than_or_equal_to: 要細過或者等於%{count}
-      model_invalid: 驗證失敗︰%{errors}
+      model_invalid: 驗證失敗：%{errors}
       not_a_number: 唔係一個數字
       not_an_integer: 要係整數
       odd: 要係單數
@@ -131,16 +131,16 @@ zh-YUE:
       required: 必須存在
       taken: 已經用緊
       too_long:
-        one: 太長（最多 1 個字）
-        other: 太長（最多 %{count} 個字）
+        one: 太長（最多1個字）
+        other: 太長（最多%{count}個字）
       too_short:
-        one: 太短（最少 1 個字）
-        other: 太短（最少 %{count} 個字）
+        one: 太短（最少1個字）
+        other: 太短（最少%{count}個字）
       wrong_length:
-        one: 唔啱字數 (要係 1 個字)
-        other: 唔啱字數 (要係 %{count} 個字)
+        one: 唔啱字數（要係1個字）
+        other: 唔啱字數（要係%{count}個字）
     template:
-      body: 呢啲有問題︰
+      body: 呢啲有問題：
       header:
         one: 有一個問題，%{model}儲存唔到。
         other: 有%{count}個問題，%{model}儲存唔到。
@@ -201,7 +201,7 @@ zh-YUE:
         delimiter: ''
   support:
     array:
-      last_word_connector: 同
+      last_word_connector: "、"
       two_words_connector: 同
       words_connector: "、"
   time:
