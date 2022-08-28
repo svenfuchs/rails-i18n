@@ -31,5 +31,11 @@ class CheckLocales < Thor
   def self.orphan_pluralizations
     return self.list_pluralizations.difference(self.list_locales)
   end
+
+  # Returns locales that do not have a pluralization file
+  def self.orphan_locales
+    return self.list_locales.difference(self.list_pluralizations)
+  end
+
 end
 
