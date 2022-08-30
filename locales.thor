@@ -114,6 +114,18 @@ class Locales < Thor
     puts CheckLocales.orphan_locales.join(', ')
   end
 
+  desc 'en_line_count', 'the line count of en.yml'
+  def en_line_count
+    puts CheckLocales.en_line_count
+  end
+
+  desc 'check_line_count', 'Returns a list of locale files with their line count, so that we can identify anomalies'
+  def check_line_count
+    for file, count in CheckLocales.line_counts() do
+      puts "#{file}: #{count} lines"
+    end
+  end
+
   private
 
   desc 'complete_locales', 'List complete locales'
