@@ -35,6 +35,31 @@ Note that your Ruby on Rails version must be 3.0 or higher in order to install t
 
 ## Configuration
 
+### Enabled modules
+
+By default, all `rails-i18n` modules (locales, pluralization, transliteration, ordinals) are enabled.
+
+If you would like to only enable specific modules, you can do so in your Rails configuration:
+
+```ruby
+# to enable only pluralization rules, but disable all other features
+config.rails_i18n.enabled_modules = [:pluralization]
+
+# to enable pluralization and ordinals
+config.rails_i18n.enabled_modules = [:pluralization, :ordinals]
+```
+
+The possible module names:
+
+* `:locale`
+* `:ordinals`
+* `:pluralization`
+* `:transliteration`
+
+Setting `enabled_modules` will restrict the gem's loaded features to only the specific types.
+
+### Available locales
+
 `rails-i18n` gem initially loads all available locale files, pluralization and transliteration rules. This default behaviour can be changed. If you specify in `config/environments/*` the locales which have to be loaded via `I18n.available_locales` option:
 
 ``` ruby
