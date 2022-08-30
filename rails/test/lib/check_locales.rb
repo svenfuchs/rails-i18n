@@ -45,21 +45,19 @@ class CheckLocales < Thor
     @en_line_count
   end
 
-  # a heuristic check of the locales
-  # returns a hash of locale files with a line count that does not match en.yml
+  # Helps identify anomalies in the locale.yml files
+  # returns a hash of locale files with their line count
   # in the format 'locale_file' : line count
-  # {'problem_locale1.yml': 100, 'problem_locale2.yml': 111 ... }
-  def self.check_line_count
-    wrong_line_count = {}
+  # {'locale1.yml': 100, 'locale2.yml': 111 ... }
+  def self.line_counts
+    file_line_count = {}
     Dir.chdir(@path_to_locales)
     locale_files = Dir.glob('**/*.yml')
     for f in locale_files do
       line_count = File.open(f).readlines().size
-      if line_count != @en_line_count
-        wrong_line_count[f] = line_count
-      end
+      file_line_count[f] = line_count
     end
-    return wrong_line_count
+    return file_line_count
   end
 end
 
