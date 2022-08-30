@@ -114,6 +114,11 @@ class Locales < Thor
     puts CheckLocales.orphan_locales.join(', ')
   end
 
+  desc 'en_line_count', 'the line count of en.yml'
+  def en_line_count
+    puts CheckLocales.en_line_count
+  end
+
   desc 'check_line_count', 'a heuristic check of the locales. Checks the line count of locale files compared to :en'
   def check_line_count
     wrong_line_count = CheckLocales.check_line_count()

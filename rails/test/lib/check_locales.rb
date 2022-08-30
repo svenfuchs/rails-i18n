@@ -7,6 +7,7 @@ class CheckLocales < Thor
 
   @path_to_locales = 'rails/locale'
   @path_to_pluralizations = 'rails/pluralization'
+  @en_line_count = File.open(@path_to_locales+'/en.yml').readlines().size
 
   def self.list_locales
     Dir.chdir(@path_to_locales)
@@ -38,19 +39,23 @@ class CheckLocales < Thor
   def self.orphan_locales
     return self.list_locales.difference(self.list_pluralizations)
   end
+  
+  # Returns the line count of the en.yml file
+  def self.en_line_count
+    @en_line_count
+  end
 
   # a heuristic check of the locales
   # returns a hash of locale files with a line count that does not match en.yml
   # in the format 'locale_file' : line count
   # {'problem_locale1.yml': 100, 'problem_locale2.yml': 111 ... }
   def self.check_line_count
-    en_line_count = File.open(@path_to_locales+'/en.yml').readlines().size
     wrong_line_count = {}
     Dir.chdir(@path_to_locales)
     locale_files = Dir.glob('**/*.yml')
     for f in locale_files do
       line_count = File.open(f).readlines().size
-      if line_count != en_line_count
+      if line_count != @en_line_count
         wrong_line_count[f] = line_count
       end
     end
