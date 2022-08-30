@@ -114,6 +114,19 @@ class Locales < Thor
     puts CheckLocales.orphan_locales.join(', ')
   end
 
+  desc 'check_line_count', 'a heuristic check of the locales. Checks the line count of locale files compared to :en'
+  def check_line_count
+    wrong_line_count = CheckLocales.check_line_count()
+    if !wrong_line_count.empty?
+      puts "The following locale files do not have the same lenght as en.yml:"
+      for file, count in wrong_line_count do
+        puts "#{file}: #{count} lines"
+      end
+    else
+      puts "All locale files have the same length as en.yml"
+    end
+  end
+
   private
 
   desc 'complete_locales', 'List complete locales'
