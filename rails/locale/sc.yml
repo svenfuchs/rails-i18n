@@ -115,7 +115,7 @@ sc:
       empty: non pòdet èsser bòidu
       equal_to: depet èssere uguale a %{count}
       even: depet èssere pari
-      exclusion: è riservato
+      exclusion: est riservadu
       greater_than: depet èssere prus mannu de %{count}
       greater_than_or_equal_to: depet èssere prus mannu o uguale a %{count}
       inclusion: no est inclùdidu in sa lista
