@@ -178,8 +178,8 @@ sc:
             one: millione
             other: milliones
           quadrillion:
-            one: cuadrilione
-            other: cuadriliones
+            one: cuadrillione
+            other: cuadrilliones
           thousand: mìgia
           trillion: mìgia milliardos
           unit: ''
