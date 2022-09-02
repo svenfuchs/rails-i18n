@@ -106,15 +106,9 @@ zh-HK:
       present: 必定要是空白
       required: 必須存在
       taken: 已被使用
-      too_long:
-        one: 太長（最長為一個字元）
-        other: 太長（最長為%{count}個字元）
-      too_short:
-        one: 太短（最少為一個字元）
-        other: 太短（最少為%{count}個字元）
-      wrong_length:
-        one: 字數錯誤（應為一個字元）
-        other: 字數錯誤（應為%{count}個字元）
+      too_long: 太長（最長為%{count}個字元）
+      too_short: 太短（最少為%{count}個字元）
+      wrong_length: 字數錯誤（應為%{count}個字元）
     template:
       body: 以下欄位發生問題：
       header:
