@@ -111,9 +111,7 @@ zh-HK:
       wrong_length: 字數錯誤（應為%{count}個字元）
     template:
       body: 以下欄位發生問題：
-      header:
-        one: 發生一項錯誤，以致%{model}未能儲存。
-        other: 發生%{count}項錯誤，以致%{model}未能儲存。
+      header: 發生%{count}項錯誤，以致%{model}未能儲存。
   helpers:
     select:
       prompt: 請選擇
