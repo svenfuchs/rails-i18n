@@ -106,20 +106,12 @@ zh-TW:
       present: 必須是空白
       required: 必須存在
       taken: 已經被使用
-      too_long:
-        one: 過長（最長是一個字）
-        other: 過長（最長是%{count}個字）
-      too_short:
-        one: 過短（最短是一個字）
-        other: 過短（最短是%{count}個字）
-      wrong_length:
-        one: 字數錯誤（必須是一個字）
-        other: 字數錯誤（必須是%{count}個字）
+      too_long: 過長（最長是%{count}個字）
+      too_short: 過短（最短是%{count}個字）
+      wrong_length: 字數錯誤（必須是%{count}個字）
     template:
       body: 以下欄位發生問題：
-      header:
-        one: 有1個錯誤發生使得「%{model}」無法被儲存。
-        other: 有%{count}個錯誤發生使得「%{model}」無法被儲存。
+      header: 有%{count}個錯誤發生使得「%{model}」無法被儲存。
   helpers:
     select:
       prompt: 請選擇
