@@ -62,43 +62,19 @@ zh-TW:
     - :day
   datetime:
     distance_in_words:
-      about_x_hours:
-        one: 大約一小時
-        other: 大約%{count}小時
-      about_x_months:
-        one: 大約一個月
-        other: 大約%{count}個月
-      about_x_years:
-        one: 大約一年
-        other: 大約%{count}年
-      almost_x_years:
-        one: 接近一年
-        other: 接近%{count}年
+      about_x_hours: 大約%{count}小時
+      about_x_months: 大約%{count}個月
+      about_x_years: 大約%{count}年
+      almost_x_years: 接近%{count}年
       half_a_minute: 半分鐘
-      less_than_x_seconds:
-        one: 不到一秒
-        other: 不到%{count}秒
-      less_than_x_minutes:
-        one: 不到一分鐘
-        other: 不到%{count}分鐘
-      over_x_years:
-        one: 一年多
-        other: "%{count}年多"
-      x_seconds:
-        one: 一秒
-        other: "%{count}秒"
-      x_minutes:
-        one: 一分鐘
-        other: "%{count}分鐘"
-      x_days:
-        one: 一天
-        other: "%{count}天"
-      x_months:
-        one: 一個月
-        other: "%{count}個月"
-      x_years:
-        one: 一年
-        other: "%{count}年"
+      less_than_x_seconds: 不到%{count}秒
+      less_than_x_minutes: 不到%{count}分鐘
+      over_x_years: "%{count}年多"
+      x_seconds: "%{count}秒"
+      x_minutes: "%{count}分鐘"
+      x_days: "%{count}天"
+      x_months: "%{count}個月"
+      x_years: "%{count}年"
     prompts:
       second: 秒
       minute: 分
