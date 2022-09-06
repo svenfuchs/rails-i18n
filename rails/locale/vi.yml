@@ -62,40 +62,18 @@ vi:
     - :year
   datetime:
     distance_in_words:
-      about_x_hours:
-        one: khoảng 1 giờ
-        other: khoảng %{count} giờ
-      about_x_months:
-        one: khoảng 1 tháng
-        other: khoảng %{count} tháng
-      about_x_years:
-        one: khoảng 1 năm
-        other: khoảng %{count} năm
-      almost_x_years:
-        one: gần 1 năm
-        other: gần %{count} năm
+      about_x_hours: khoảng %{count} giờ
+      about_x_months: khoảng %{count} tháng
+      about_x_years: khoảng %{count} năm
+      almost_x_years: gần %{count} năm
       half_a_minute: 30 giây
-      less_than_x_seconds:
-        one: chưa tới 1 giây
-        other: chưa tới %{count} giây
-      less_than_x_minutes:
-        one: chưa tới 1 phút
-        other: chưa tới %{count} phút
-      over_x_years:
-        one: hơn 1 năm
-        other: hơn %{count} năm
-      x_seconds:
-        one: 1 giây
-        other: "%{count} giây"
-      x_minutes:
-        one: 1 phút
-        other: "%{count} phút"
-      x_days:
-        one: 1 ngày
-        other: "%{count} ngày"
-      x_months:
-        one: 1 tháng
-        other: "%{count} tháng"
+      less_than_x_seconds: chưa tới %{count} giây
+      less_than_x_minutes: chưa tới %{count} phút
+      over_x_years: hơn %{count} năm
+      x_seconds: "%{count} giây"
+      x_minutes: "%{count} phút"
+      x_days: "%{count} ngày"
+      x_months: "%{count} tháng"
     prompts:
       second: Giây
       minute: Phút
@@ -131,9 +109,7 @@ vi:
       required: "phải có"
     template:
       body: 'Có lỗi với các mục sau:'
-      header:
-        one: 1 lỗi ngăn không cho lưu %{model} này
-        other: "%{count} lỗi ngăn không cho lưu %{model} này"
+      header: "%{count} lỗi ngăn không cho lưu %{model} này"
   helpers:
     select:
       prompt: Vui lòng chọn
