@@ -62,43 +62,19 @@ ja:
     - :day
   datetime:
     distance_in_words:
-      about_x_hours:
-        one: 約1時間
-        other: 約%{count}時間
-      about_x_months:
-        one: 約1ヶ月
-        other: 約%{count}ヶ月
-      about_x_years:
-        one: 約1年
-        other: 約%{count}年
-      almost_x_years:
-        one: 1年弱
-        other: "%{count}年弱"
+      about_x_hours: 約%{count}時間
+      about_x_months: 約%{count}ヶ月
+      about_x_years: 約%{count}年
+      almost_x_years: "%{count}年弱"
       half_a_minute: 30秒前後
-      less_than_x_seconds:
-        one: 1秒以内
-        other: "%{count}秒未満"
-      less_than_x_minutes:
-        one: 1分以内
-        other: "%{count}分未満"
-      over_x_years:
-        one: 1年以上
-        other: "%{count}年以上"
-      x_seconds:
-        one: 1秒
-        other: "%{count}秒"
-      x_minutes:
-        one: 1分
-        other: "%{count}分"
-      x_days:
-        one: 1日
-        other: "%{count}日"
-      x_months:
-        one: 1ヶ月
-        other: "%{count}ヶ月"
-      x_years:
-        one: 1年
-        other: "%{count}年"
+      less_than_x_seconds: "%{count}秒未満"
+      less_than_x_minutes: "%{count}分未満"
+      over_x_years: "%{count}年以上"
+      x_seconds: "%{count}秒"
+      x_minutes: "%{count}分"
+      x_days: "%{count}日"
+      x_months: "%{count}ヶ月"
+      x_years: "%{count}年"
     prompts:
       second: 秒
       minute: 分
@@ -135,9 +111,7 @@ ja:
       wrong_length: は%{count}文字で入力してください
     template:
       body: 次の項目を確認してください
-      header:
-        one: "%{model}にエラーが発生しました"
-        other: "%{model}に%{count}個のエラーが発生しました"
+      header: "%{model}に%{count}個のエラーが発生しました"
   helpers:
     select:
       prompt: 選択してください
