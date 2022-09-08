@@ -200,7 +200,7 @@ de-AT:
           mb: MB
           pb: PB
           tb: TB
-     percentage:
+      percentage:
       format:
         delimiter: ''
         format: "%n%"
