@@ -107,7 +107,6 @@ lv:
         zero: "%{count} mēneši"
         one: "%{count} mēnesis"
         other: "%{count} mēneši"
-      x_years:
         zero: 0 gadi
         one: 1 gads
         other: "%{count} gadi"
