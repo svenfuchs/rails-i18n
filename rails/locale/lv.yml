@@ -108,7 +108,6 @@ lv:
         one: "%{count} mēnesis"
         other: "%{count} mēneši"
         zero: 0 gadi
-        one: 1 gads
         other: "%{count} gadi"
     prompts:
       second: sekunde
