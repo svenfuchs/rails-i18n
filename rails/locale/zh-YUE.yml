@@ -62,43 +62,19 @@ zh-YUE:
     - :day
   datetime:
     distance_in_words:
-      about_x_hours:
-        one: 大概一個鐘
-        other: 大概%{count}個鐘
-      about_x_months:
-        one: 大概一個月
-        other: 大概%{count}個月
-      about_x_years:
-        one: 大概一年
-        other: 大概%{count}年
-      almost_x_years:
-        one: 差唔多一年
-        other: 差唔多%{count}年
+      about_x_hours: 大概%{count}個鐘
+      about_x_months: 大概%{count}個月
+      about_x_years: 大概%{count}年
+      almost_x_years: 差唔多%{count}年
       half_a_minute: 半分鐘
-      less_than_x_seconds:
-        one: 唔夠一秒
-        other: 唔夠%{count}秒
-      less_than_x_minutes:
-        one: 唔夠一分鐘
-        other: 唔夠%{count}分鐘
-      over_x_years:
-        one: 超過一年
-        other: 超過%{count}年
-      x_seconds:
-        one: 一秒
-        other: "%{count}秒"
-      x_minutes:
-        one: 一分鐘
-        other: "%{count}分鐘"
-      x_days:
-        one: 一日
-        other: "%{count}日"
-      x_months:
-        one: 一個月
-        other: "%{count}個月"
-      x_years:
-        one: 一年
-        other: "%{count}年"
+      less_than_x_seconds: 唔夠%{count}秒
+      less_than_x_minutes: 唔夠%{count}分鐘
+      over_x_years: 超過%{count}年
+      x_seconds: "%{count}秒"
+      x_minutes: "%{count}分鐘"
+      x_days: "%{count}日"
+      x_months: "%{count}個月"
+      x_years: "%{count}年"
     prompts:
       second: 秒
       minute: 分
@@ -130,20 +106,12 @@ zh-YUE:
       present: 一定要空白
       required: 必須存在
       taken: 已經用緊
-      too_long:
-        one: 太長（最多1個字）
-        other: 太長（最多%{count}個字）
-      too_short:
-        one: 太短（最少1個字）
-        other: 太短（最少%{count}個字）
-      wrong_length:
-        one: 唔啱字數（要係1個字）
-        other: 唔啱字數（要係%{count}個字）
+      too_long: 太長（最多%{count}個字）
+      too_short: 太短（最少%{count}個字）
+      wrong_length: 唔啱字數（要係%{count}個字）
     template:
       body: 呢啲有問題：
-      header:
-        one: 有一個問題，%{model}儲存唔到。
-        other: 有%{count}個問題，%{model}儲存唔到。
+      header: 有%{count}個問題，%{model}儲存唔到。
   helpers:
     select:
       prompt: 請喺度揀
