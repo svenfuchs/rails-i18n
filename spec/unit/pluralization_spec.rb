@@ -289,6 +289,11 @@ describe 'Pluralization rule for' do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
+  
+    describe 'Sardinian', :locale => :sc do
+    it_behaves_like 'an ordinary pluralization rule'
+    it_behaves_like 'one-other forms language'
+  end
 
   describe 'Serbian', :locale => :sr do
     it_behaves_like 'an ordinary pluralization rule'
