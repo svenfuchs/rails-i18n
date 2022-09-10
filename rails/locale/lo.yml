@@ -61,15 +61,15 @@ lo:
     distance_in_words:
       about_x_hours: ປະມານ %{count} ຊົ່ວໂມງ
       about_x_months: ປະມານ %{count} ເດືອນ
-      about_x_years: 'ປະມານ %{count} ປີ '
-      almost_x_years: 'ເກືອບ %{count} ປີ '
+      about_x_years: 'ປະມານ %{count} ປີ'
+      almost_x_years: 'ເກືອບ %{count} ປີ'
       half_a_minute: 'ເຄິ່ງນາທີ '
-      less_than_x_seconds: 'ນ້ອຍກວ່າ %{count} ວິນາທີ '
-      less_than_x_minutes: 'ນ້ອຍກວ່າ %{count} ນາທີ '
-      over_x_years: 'ຫຼາຍກວ່າ %{count} ປີ '
-      x_seconds: "%{count} ວິນາທີ "
-      x_minutes: "%{count} ນາທີ "
-      x_days: "%{count} ມື້ "
+      less_than_x_seconds: 'ນ້ອຍກວ່າ %{count} ວິນາທີ'
+      less_than_x_minutes: 'ນ້ອຍກວ່າ %{count} ນາທີ'
+      over_x_years: 'ຫຼາຍກວ່າ %{count} ປີ'
+      x_seconds: "%{count} ວິນາທີ"
+      x_minutes: "%{count} ນາທີ"
+      x_days: "%{count} ມື້"
       x_months: "%{count} ເດືອນ"
     prompts:
       second: ວິນາທີ
