@@ -63,7 +63,7 @@ lo:
       about_x_months: ປະມານ %{count} ເດືອນ
       about_x_years: 'ປະມານ %{count} ປີ'
       almost_x_years: 'ເກືອບ %{count} ປີ'
-      half_a_minute: 'ເຄິ່ງນາທີ '
+      half_a_minute: 'ເຄິ່ງນາທີ'
       less_than_x_seconds: 'ນ້ອຍກວ່າ %{count} ວິນາທີ'
       less_than_x_minutes: 'ນ້ອຍກວ່າ %{count} ນາທີ'
       over_x_years: 'ຫຼາຍກວ່າ %{count} ປີ'
