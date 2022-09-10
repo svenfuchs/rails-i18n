@@ -62,43 +62,19 @@ zh-TW:
     - :day
   datetime:
     distance_in_words:
-      about_x_hours:
-        one: 大約一小時
-        other: 大約%{count}小時
-      about_x_months:
-        one: 大約一個月
-        other: 大約%{count}個月
-      about_x_years:
-        one: 大約一年
-        other: 大約%{count}年
-      almost_x_years:
-        one: 接近一年
-        other: 接近%{count}年
+      about_x_hours: 大約%{count}小時
+      about_x_months: 大約%{count}個月
+      about_x_years: 大約%{count}年
+      almost_x_years: 接近%{count}年
       half_a_minute: 半分鐘
-      less_than_x_seconds:
-        one: 不到一秒
-        other: 不到%{count}秒
-      less_than_x_minutes:
-        one: 不到一分鐘
-        other: 不到%{count}分鐘
-      over_x_years:
-        one: 一年多
-        other: "%{count}年多"
-      x_seconds:
-        one: 一秒
-        other: "%{count}秒"
-      x_minutes:
-        one: 一分鐘
-        other: "%{count}分鐘"
-      x_days:
-        one: 一天
-        other: "%{count}天"
-      x_months:
-        one: 一個月
-        other: "%{count}個月"
-      x_years:
-        one: 一年
-        other: "%{count}年"
+      less_than_x_seconds: 不到%{count}秒
+      less_than_x_minutes: 不到%{count}分鐘
+      over_x_years: "%{count}年多"
+      x_seconds: "%{count}秒"
+      x_minutes: "%{count}分鐘"
+      x_days: "%{count}天"
+      x_months: "%{count}個月"
+      x_years: "%{count}年"
     prompts:
       second: 秒
       minute: 分
@@ -130,20 +106,12 @@ zh-TW:
       present: 必須是空白
       required: 必須存在
       taken: 已經被使用
-      too_long:
-        one: 過長（最長是一個字）
-        other: 過長（最長是%{count}個字）
-      too_short:
-        one: 過短（最短是一個字）
-        other: 過短（最短是%{count}個字）
-      wrong_length:
-        one: 字數錯誤（必須是一個字）
-        other: 字數錯誤（必須是%{count}個字）
+      too_long: 過長（最長是%{count}個字）
+      too_short: 過短（最短是%{count}個字）
+      wrong_length: 字數錯誤（必須是%{count}個字）
     template:
       body: 以下欄位發生問題：
-      header:
-        one: 有1個錯誤發生使得「%{model}」無法被儲存。
-        other: 有%{count}個錯誤發生使得「%{model}」無法被儲存。
+      header: 有%{count}個錯誤發生使得「%{model}」無法被儲存。
   helpers:
     select:
       prompt: 請選擇
