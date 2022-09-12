@@ -122,6 +122,7 @@ fr-FR:
       exclusion: n'est pas disponible
       greater_than: doit être supérieur à %{count}
       greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      in: doit être dans l'intervalle %{count}
       inclusion: n'est pas inclus(e) dans la liste
       invalid: n'est pas valide
       less_than: doit être inférieur à %{count}
