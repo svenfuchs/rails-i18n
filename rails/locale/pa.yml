@@ -9,10 +9,10 @@ pa:
           has_many: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹਨ
   date:
     abbr_day_names:
-    - ਅੈਤ
+    - ਐਤ
     - ਸੋਮ
     - ਮੰਗਲ
-    - ਬੱੁਧ
+    - ਬੁੱਧ
     - ਵੀਰ
     - ਸ਼ੁੱਕਰ
     - ਸ਼ਨਿੱਚਰ
@@ -63,38 +63,38 @@ pa:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ਲਗਭਗ 1 ਘੰਟਾ
+        one: ਲਗਭਗ ਇੱਕ ਘੰਟਾ
         other: ਲਗਭਗ %{count} ਘੰਟੇ
       about_x_months:
-        one: ਲਗਭਗ 1 ਮਹੀਨਾ
+        one: ਲਗਭਗ ਇੱਕ ਮਹੀਨਾ
         other: ਲਗਭਗ %{count} ਮਹੀਨੇ
       about_x_years:
-        one: ਲਗਭਗ 1 ਸਾਲ
+        one: ਲਗਭਗ ਇੱਕ ਸਾਲ
         other: ਲਗਭਗ %{count} ਸਾਲ
       almost_x_years:
-        one: ਤਕਰੀਬਨ 1 ਸਾਲ
+        one: ਤਕਰੀਬਨ ਇੱਕ ਸਾਲ
         other: ਤਕਰੀਬਨ %{count} ਸਾਲ
       half_a_minute: ਅੱਧਾ ਮਿੰਟ
       less_than_x_seconds:
-        one: 1 ਸਕਿੰਟ ਤੋਂ ਘੱਟ
+        one: ਇੱਕ ਸਕਿੰਟ ਤੋਂ ਘੱਟ
         other: "%{count} ਸਕਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       less_than_x_minutes:
-        one: 1 ਮਿੰਟ ਤੋਂ ਘੱਟ
+        one: ਇੱਕ ਮਿੰਟ ਤੋਂ ਘੱਟ
         other: "%{count} ਮਿੰਟਾਂ ਤੋਂ ਘੱਟ"
       over_x_years:
-        one: 1 ਸਾਲ ਤੋਂ ਵੱਧ
+        one: ਇੱਕ ਸਾਲ ਤੋਂ ਵੱਧ
         other: "%{count} ਸਾਲਾਂ ਤੋਂ ਵੱਧ"
       x_seconds:
-        one: 1 ਸਕਿੰਟ
+        one: ਇੱਕ ਸਕਿੰਟ
         other: "%{count} ਸਕਿੰਟ"
       x_minutes:
-        one: 1 ਮਿੰਟ
+        one: ਇੱਕ ਮਿੰਟ
         other: "%{count} ਮਿੰਟ"
       x_days:
-        one: 1 ਦਿਨ
+        one: ਇੱਕ ਦਿਨ
         other: "%{count} ਦਿਨ"
       x_months:
-        one: 1 ਮਹੀਨਾ
+        one: ਇੱਕ ਮਹੀਨਾ
         other: "%{count} ਮਹੀਨੇ"
     prompts:
       second: ਸਕਿੰਟ
@@ -106,39 +106,39 @@ pa:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: ਜਰੂਰ ਮੰਜੂਰ ਹੋਵੇ
+      accepted: ਜ਼ਰੂਰ ਮੰਜ਼ੂਰ ਹੋਵੇ
       blank: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
       confirmation: "%{attribute} ਨਹੀਂ ਰਲਦੇ"
       empty: ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ
       equal_to: "%{count} ਦੇ ਬਰਾਬਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
-      even: ਜਰੂਰੀ ਹੈ ਕੇ ਜੋਟਾ ਹੋਵੇ
+      even: ਜ਼ਰੂਰੀ ਹੈ ਕੇ ਜੋਟਾ ਹੋਵੇ
       exclusion: ਮੱਲਿਆ ਹੋਇਆ ਹੈ
-      greater_than: "%{count} ਤੋਂ ਵਧੇਰੇ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
-      greater_than_or_equal_to: "%{count} ਤੋਂ ਵਧੇਰੇ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
+      greater_than: "%{count} ਤੋਂ ਵਧੇਰੇ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ"
+      greater_than_or_equal_to: "%{count} ਤੋਂ ਵਧੇਰੇ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ"
       inclusion: ਇਸ ਲਿਸਟ ਵਿੱਚ ਸ਼ਾਮਿਲ ਨਹੀਂ ਹੈ
       invalid: ਨਾ-ਮੰਜੂਰਸ਼ੁਦਾ ਹੈ
-      less_than: "%{count} ਤੋਂ ਘੱਟ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
-      less_than_or_equal_to: "%{count} ਤੋਂ ਘੱਟ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
+      less_than: "%{count} ਤੋਂ ਘੱਟ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ"
+      less_than_or_equal_to: "%{count} ਤੋਂ ਘੱਟ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ"
       not_a_number: ਸੰਖਿਆ ਨਹੀਂ ਹੈ
-      not_an_integer: ਜਰੂਰੀ ਹੈ ਕੇ ਪੂਰਨ ਅੰਕ ਹੋਵੇ
-      odd: ਜਰੂਰੀ ਹੈ ਕੇ ਕਲ਼ੀ ਹੋਵੇ
+      not_an_integer: ਜ਼ਰੂਰੀ ਹੈ ਕੇ ਪੂਰਨ ਅੰਕ ਹੋਵੇ
+      odd: ਜ਼ਰੂਰੀ ਹੈ ਕੇ ਕਲ਼ੀ ਹੋਵੇ
       other_than: "%{count} ਦੀ ਜਗ੍ਹਾ ਹੋਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
-      present: ਜਰੂਰ ਖਾਲੀ ਹੋਵੇ
+      present: ਜ਼ਰੂਰ ਖਾਲੀ ਹੋਵੇ
       taken: ਪਹਿਲਾਂ ਹੀ ਮੱਲਿਆ ਹੋਇਆ ਹੈ
       too_long:
-        one: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ 1 ਅੱਖਰ)
+        one: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ ਇੱਕ ਅੱਖਰ)
         other: ਲੰਬਾਈ ਜ਼ਿਆਦਾ ਹੈ (ਵੱਧ ਤੋਂ ਵੱਧ %{count} ਅੱਖਰ)
       too_short:
-        one: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ 1 ਅੱਖਰ)
+        one: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ ਇੱਕ ਅੱਖਰ)
         other: ਲੰਬਾਈ ਘੱਟ ਹੈ (ਘੱਟ ਤੋਂ ਘੱਟ %{count} ਅੱਖਰ)
       wrong_length:
-        one: ਲੰਬਾਈ ਗਲਤ ਹੈ (1 ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
+        one: ਲੰਬਾਈ ਗਲਤ ਹੈ (ਇੱਕ ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
         other: ਲੰਬਾਈ ਗਲਤ ਹੈ (%{count} ਅੱਖਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ)
     template:
       body: 'ਹੇਠਲੇ ਖੇਤਰਾਂ ਵਿੱਚ ਗਲਤੀਆਂ ਹਨ:'
       header:
-        one: 1 ਗਲਤੀ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ
-        other: "%{count} ਗਲਤੀਆਂ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲਿ਼ਆ ਨਹੀਂ ਗਿਆ"
+        one: ਇੱਕ ਗਲਤੀ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲ਼ਿਆ ਨਹੀਂ ਗਿਆ
+        other: "%{count} ਗਲਤੀਆਂ ਕਰਕੇ ਇਹ %{model} ਸੰਭਾਲ਼ਿਆ ਨਹੀਂ ਗਿਆ"
   helpers:
     select:
       prompt: ਕਿਰਪਾ ਕਰਕੇ ਚੁਣੋ
@@ -155,7 +155,7 @@ pa:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "$"
+        unit: "₹"
     format:
       delimiter: ","
       precision: 3
@@ -166,11 +166,11 @@ pa:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ਬਿਲੀਅਨ
-          million: ਮਿਲੀਅਨ
-          quadrillion: ਕ੍ਵਾਡਰਿਲੀਅਨ
+          billion: ਦਸ ਕਰੋੜ
+          million: ਦਸ ਲੱਖ
+          quadrillion: ਲੱਖ ਅਰਬ
           thousand: ਹਜ਼ਾਰ
-          trillion: ਟ੍ਰਿਲੀਅਨ
+          trillion: ਸੌ ਅਰਬ
           unit: ''
       format:
         delimiter: ''
@@ -183,10 +183,10 @@ pa:
           byte:
             one: ਬਾਈਟ
             other: ਬਾਈਟ
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+          gb: ਗਿਗਾ ਬਾਈਟ
+          kb: ਕਿਲੋ ਬਾਈਟ
+          mb: ਮੈਗਾ ਬਾਈਟ
+          tb: ਟੈਰਾ ਬਾਈਟ
     percentage:
       format:
         delimiter: ''
@@ -196,7 +196,7 @@ pa:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", ਅਤੇ "
+      last_word_connector: " ਅਤੇ "
       two_words_connector: " ਅਤੇ "
       words_connector: ", "
   time:
