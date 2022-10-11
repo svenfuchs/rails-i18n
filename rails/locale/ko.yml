@@ -67,7 +67,7 @@ ko:
         other: "약 %{count}시간"
       about_x_months:
         one: 대략 1달
-        other: "대략 %{count}달"
+        other: "대략 %{count}개월"
       about_x_years:
         one: 대략 1년
         other: "대략 %{count}년"
