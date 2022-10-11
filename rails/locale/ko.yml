@@ -82,7 +82,7 @@ ko:
         one: 1분 미만
         other: "%{count}분 미만"
       over_x_years:
-        one: 1년 미만
+        one: 1년 초과
         other: "%{count}년 미만"
       x_seconds:
         one: 1초
