@@ -65,7 +65,7 @@ ko:
       about_x_hours: 대략 %{count}시간
       about_x_months: 대략 %{count}개월
       about_x_years: 대략 %{count}년
-      almost_x_years: "거의 %{count}년"
+      almost_x_years: 거의 %{count}년
       half_a_minute: 30초
       less_than_x_seconds: "%{count}초 미만"
       less_than_x_minutes: "%{count}분 미만"
