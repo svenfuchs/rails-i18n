@@ -1,5 +1,6 @@
 require File.dirname(__FILE__) + '/rails/test/lib/key_structure.rb'
 require File.dirname(__FILE__) + '/rails/test/lib/normalize.rb'
+require File.dirname(__FILE__) + '/rails/test/lib/check_locales.rb'
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib') unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/lib')
 
 class Locales < Thor
@@ -54,6 +55,9 @@ class Locales < Thor
     puts "The structure is good." if good
   end
 
+  # Sorts all the keys alphabetically
+  # Ensures that the quoting is the simplest
+  # Ensures that the line break width is respected
   desc 'normalize LOCALE', 'Normalize locale file.'
   def normalize(locale)
     Dir.glob(format('%s/rails/locale/%s.{rb,yml}', File.dirname(__FILE__), locale)) do |filename|
@@ -72,17 +76,60 @@ class Locales < Thor
 
   desc 'list', 'List locale names.'
   def list
-    locales = []
-    Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
-      if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
-        locales << md[1]
-      end
-    end
-    puts locales.sort.join(', ')
+    puts CheckLocales.list_locales.join(', ')
+  end
+
+  desc 'count_all', 'Returns the number of available locales'
+  def count_all
+    puts CheckLocales.count
   end
 
   desc 'complete', 'List complete locales'
   def complete
+    puts self.complete_locales.join(', ')
+  end
+
+  desc 'complete_count', 'Returns the number of complete locales'
+  def complete_count
+    puts self.complete_locales.count
+  end
+
+  desc 'incomplete', 'List incomplete locales'
+  def incomplete
+    puts self.incomplete_locales.join(', ')
+  end
+
+  desc 'incomplete_count', 'Returns the number of incomplete locales'
+  def incomplete_count
+    puts self.incomplete_locales.count
+  end
+
+  desc 'orphan_pluralizations', 'Returns pluralizations that do not have a locale file'
+  def orphan_pluralizations
+    puts CheckLocales.orphan_pluralizations.join(', ')
+  end
+
+  desc 'orphan_locales', 'Returns locales that do not have a pluralization file'
+  def orphan_locales
+    puts CheckLocales.orphan_locales.join(', ')
+  end
+
+  desc 'en_line_count', 'the line count of en.yml'
+  def en_line_count
+    puts CheckLocales.en_line_count
+  end
+
+  desc 'check_line_count', 'Returns a list of locale files with their line count, so that we can identify anomalies'
+  def check_line_count
+    for file, count in CheckLocales.line_counts() do
+      puts "#{file}: #{count} lines"
+    end
+  end
+
+  private
+
+  desc 'complete_locales', 'List complete locales'
+  def complete_locales
     locales = []
     Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
       if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
@@ -94,11 +141,11 @@ class Locales < Thor
         end
       end
     end
-    puts locales.sort.join(', ')
+    return locales.sort
   end
 
-  desc 'incomplete', 'List incomplete locales'
-  def incomplete
+  desc 'incomplete_locales', 'Returns an array of incomplete locales'
+  def incomplete_locales
     locales = []
     Dir.glob(File.dirname(__FILE__) + '/rails/locale/*.{rb,yml}') do |filename|
       if md = filename.match(/([\w\-]+)\.(rb|yml)$/)
@@ -110,6 +157,7 @@ class Locales < Thor
         end
       end
     end
-    puts locales.sort.join(', ')
+    return locales.sort
   end
+  
 end

@@ -165,6 +165,7 @@ de:
     format:
       delimiter: "."
       precision: 2
+      round_mode: default
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -197,9 +198,11 @@ de:
           byte:
             one: Byte
             other: Bytes
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:

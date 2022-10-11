@@ -2,14 +2,19 @@ require 'rails'
 
 module RailsI18n
   class Railtie < ::Rails::Railtie #:nodoc:
+    config.rails_i18n = RailsI18n
+
     initializer 'rails-i18n' do |app|
       RailsI18n::Railtie.instance_eval do
         pattern = pattern_from app.config.i18n.available_locales
 
-        add("rails/locale/#{pattern}.yml")
-        add("rails/pluralization/#{pattern}.rb")
-        add("rails/ordinals/#{pattern}.rb")
-        add("rails/transliteration/#{pattern}.{rb,yml}")
+        if app.config.rails_i18n.enabled_modules.empty?
+          RailsI18n.enabled_modules = Set.new([:locale, :pluralization, :ordinals, :transliteration])
+        end
+
+        RailsI18n.enabled_modules.each do |feature|
+          add("rails/#{feature}/#{pattern}.{rb,yml}")
+        end
 
         init_pluralization_module
       end

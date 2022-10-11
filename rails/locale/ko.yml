@@ -62,43 +62,19 @@ ko:
     - :day
   datetime:
     distance_in_words:
-      about_x_hours:
-        one: 대략 1시간
-        other: "약 %{count}시간"
-      about_x_months:
-        one: 대략 1달
-        other: "대략 %{count}개월"
-      about_x_years:
-        one: 대략 1년
-        other: "대략 %{count}년"
-      almost_x_years:
-        one: 거의 1년
-        other: "거의 %{count}년"
+      about_x_hours: 대략 %{count}시간
+      about_x_months: 대략 %{count}개월
+      about_x_years: 대략 %{count}년
+      almost_x_years: "거의 %{count}년"
       half_a_minute: 30초
-      less_than_x_seconds:
-        one: 1초 미만
-        other: "%{count}초 미만"
-      less_than_x_minutes:
-        one: 1분 미만
-        other: "%{count}분 미만"
-      over_x_years:
-        one: 1년 초과
-        other: "%{count}년 미만"
-      x_seconds:
-        one: 1초
-        other: "%{count}초"
-      x_minutes:
-        one: 1분
-        other: "%{count}분"
-      x_days:
-        one: 1일
-        other: "%{count}일"
-      x_months:
-        one: 1달
-        other: "%{count}달"
-      x_years:
-        one: 1년
-        other: "%{count}년"
+      less_than_x_seconds: "%{count}초 미만"
+      less_than_x_minutes: "%{count}분 미만"
+      over_x_years: "%{count}년 초과"
+      x_seconds: "%{count}초"
+      x_minutes: "%{count}분"
+      x_days: "%{count}일"
+      x_months: "%{count}개월"
+      x_years: "%{count}년"
     prompts:
       second: 초
       minute: 분
@@ -135,9 +111,7 @@ ko:
       wrong_length: "%{attribute}은(는) %{count}자여야 합니다"
     template:
       body: 아래 문제를 확인해 주세요.
-      header:
-        one: 1개의 오류로 인해 %{model}을(를) 저장할 수 없습니다
-        other: "%{count}개의 오류로 인해 %{model}을(를) 저장할 수 없습니다"
+      header: "%{count}개의 오류로 인해 %{model}을(를) 저장할 수 없습니다"
   helpers:
     select:
       prompt: 선택해주세요

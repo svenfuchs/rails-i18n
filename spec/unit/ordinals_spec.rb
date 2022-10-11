@@ -1,10 +1,10 @@
 require 'spec_helper'
-require 'rails_i18n/railtie'
+require 'rails_i18n'
 
 describe 'Ordinals for' do
   # Mock Rails app in order to trigger the Railtie
   let(:app) { double :app, config: config }
-  let(:config) { double :config, eager_load_namespaces: [], i18n: I18n }
+  let(:config) { double :config, eager_load_namespaces: [], i18n: I18n, rails_i18n: RailsI18n }
 
   before do
     I18n.available_locales = %w[fr en fr-CA fr-CH fr-FR]

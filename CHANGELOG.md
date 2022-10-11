@@ -1,6 +1,24 @@
 ## unreleased
 
-- Remove eager loading of translations during boot phase (this is now done by Rails).
+- French (fr, fr-CA, fr-CH, fr-CA): change an abreviation for March month in abbr_month_names #1002
+
+## 7.0.5 (2022-07-03)
+
+- No changes.
+
+## 7.0.4 (2022-07-03)
+
+- Add following locales:
+  - Western Frisian (fy) #985
+  - Kazakh (kk) #945
+- Update following locales:
+  - Slovak (sk): Fixed missing message #994
+  - French (fr): Revert remainder of NBSP characters #996 
+  - French (fr): Use no-padded date format #991
+  - Arabic (ar): fix errors.messages.greater_than typo #998
+  - South slavic pluralizers #987
+- Update update.rb to fetch active_model locale #1000
+- Remove eager loading of translations during boot phase (this is now done by Rails). #983
 
 ## 7.0.3 (2022-03-01)
 
