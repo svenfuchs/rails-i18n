@@ -5,8 +5,8 @@ ko:
       messages:
         record_invalid: 데이터 검증에 실패하였습니다. %{errors}
         restrict_dependent_destroy:
-          has_one: "%{record}가 존재하기 때문에 삭제할 수 없습니다"
-          has_many: "%{record}가 존재하기 때문에 삭제할 수 없습니다"
+          has_one: "%{record}(이)가 존재하기 때문에 삭제할 수 없습니다"
+          has_many: "%{record}(이)가 존재하기 때문에 삭제할 수 없습니다"
   date:
     abbr_day_names:
     - 일
@@ -39,9 +39,9 @@ ko:
     - 금요일
     - 토요일
     formats:
-      default: "%Y/%m/%d"
-      long: "%Y년 %m월 %d일 (%a)"
-      short: "%m/%d"
+      default: "%Y-%m-%d"
+      long: "%Y년 %m월 %d일"
+      short: "%m월 %d일"
     month_names:
     - 
     - 1월
@@ -62,18 +62,18 @@ ko:
     - :day
   datetime:
     distance_in_words:
-      about_x_hours: 약 %{count}시간
-      about_x_months: 약 %{count}달
-      about_x_years: 약 %{count}년
-      almost_x_years: "%{count}년 이하"
+      about_x_hours: 대략 %{count}시간
+      about_x_months: 대략 %{count}개월
+      about_x_years: 대략 %{count}년
+      almost_x_years: 거의 %{count}년
       half_a_minute: 30초
-      less_than_x_seconds: "%{count}초 이하"
-      less_than_x_minutes: "%{count}분 이하"
-      over_x_years: "%{count}년 이상"
+      less_than_x_seconds: "%{count}초 미만"
+      less_than_x_minutes: "%{count}분 미만"
+      over_x_years: "%{count}년 초과"
       x_seconds: "%{count}초"
       x_minutes: "%{count}분"
       x_days: "%{count}일"
-      x_months: "%{count}달"
+      x_months: "%{count}개월"
       x_years: "%{count}년"
     prompts:
       second: 초
@@ -141,7 +141,7 @@ ko:
         units:
           billion: 십억
           million: 백만
-          quadrillion: 경
+          quadrillion: 천조
           thousand: 천
           trillion: 조
           unit: ''
@@ -154,10 +154,10 @@ ko:
         format: "%n%u"
         units:
           byte: 바이트
-          gb: 기가바이트
-          kb: 킬로바이트
-          mb: 메가바이트
-          tb: 테라바이트
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
@@ -168,12 +168,12 @@ ko:
   support:
     array:
       last_word_connector: ", "
-      two_words_connector: '와(과) '
+      two_words_connector: ', '
       words_connector: ", "
   time:
     am: 오전
     formats:
-      default: "%Y/%m/%d %H:%M:%S"
-      long: "%Y년 %m월 %d일, %H시 %M분 %S초 %Z"
-      short: "%y/%m/%d %H:%M"
+      default: "%Y년 %m월 %d일 %A %H시 %M분 %S초 %z"
+      long: "%Y년 %m월 %d일 %H시 %M분"
+      short: "%m월 %d일 %H:%M"
     pm: 오후
