@@ -1,7 +1,11 @@
 require 'active_support'
 
 # Inspired from https://stackoverflow.com/questions/7275952/how-can-i-sort-yaml-files/13368706#13368706
-
+#
+# Used to standardize the locale yaml files 
+# Sorts all the keys alphabetically
+# Ensures that the quoting is the simplest
+# Ensures that the line break width is respected
 module Normalize
   PLURALIZATION_KEYS = %w(zero one two few many other).freeze
   ACTIVERECORD_KEYS = %w(has_one has_many).freeze

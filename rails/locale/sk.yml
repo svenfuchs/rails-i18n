@@ -130,6 +130,7 @@ sk:
       not_a_number: nie je číslo
       not_an_integer: musí byť celé číslo
       odd: musí byť nepárne číslo
+      required: musí existovať
       taken: ste už použili
       too_long: je príliš dlhá/ý (max. %{count} znakov)
       too_short: je príliš krátky/a (min. %{count} znakov)

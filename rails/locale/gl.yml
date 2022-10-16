@@ -101,7 +101,7 @@ gl:
       exclusion: xa existe
       greater_than: debe ser maior que %{count}
       greater_than_or_equal_to: debe ser maior ou igual que %{count}
-      inclusion: non está incluido na lista
+      inclusion: non está incluído na lista
       invalid: non é válido
       less_than: debe ser menor que %{count}
       less_than_or_equal_to: debe ser menor ou igual que %{count}

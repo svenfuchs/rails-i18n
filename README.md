@@ -2,7 +2,7 @@ Rails Locale Data Repository
 ============================
 
 [![Gem Version](https://badge.fury.io/rb/rails-i18n.svg)](http://badge.fury.io/rb/rails-i18n)
-[![Build Status](https://secure.travis-ci.org/svenfuchs/rails-i18n.svg)](http://travis-ci.org/svenfuchs/rails-i18n)
+[![CI](https://github.com/svenfuchs/rails-i18n/actions/workflows/ci.yml/badge.svg)](https://github.com/svenfuchs/rails-i18n/actions/workflows/ci.yml)
 
 Centralization of locale data collection for Ruby on Rails.
 
@@ -35,6 +35,31 @@ Note that your Ruby on Rails version must be 3.0 or higher in order to install t
 
 ## Configuration
 
+### Enabled modules
+
+By default, all `rails-i18n` modules (locales, pluralization, transliteration, ordinals) are enabled.
+
+If you would like to only enable specific modules, you can do so in your Rails configuration:
+
+```ruby
+# to enable only pluralization rules, but disable all other features
+config.rails_i18n.enabled_modules = [:pluralization]
+
+# to enable pluralization and ordinals
+config.rails_i18n.enabled_modules = [:pluralization, :ordinals]
+```
+
+The possible module names:
+
+* `:locale`
+* `:ordinals`
+* `:pluralization`
+* `:transliteration`
+
+Setting `enabled_modules` will restrict the gem's loaded features to only the specific types.
+
+### Available locales
+
 `rails-i18n` gem initially loads all available locale files, pluralization and transliteration rules. This default behaviour can be changed. If you specify in `config/environments/*` the locales which have to be loaded via `I18n.available_locales` option:
 
 ``` ruby
@@ -61,21 +86,33 @@ Locale data whose structure is compatible with Rails 2.3 are available on the se
 
 ## Available Locales
 
-Available locales:
+**Available locales:**
 
-> af, ar, az, be, bg, bn, bs, ca, cs, cy, da, de, de-AT, de-CH, de-DE, dz, el, el-CY,
-> en, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, en-CY, en-TT, eo, es,
-> es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE,
-> et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, gl, he, hi, hi-IN, hr, hu, id, is, it,
-> it-CH, ja, ka, km, kn, ko, lb, lo, lt, lv, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, oc, or,
-> pa, pl, pt, pt-BR, rm, ro, ru, sk, sl, sq, sr, st, sw, ta, te, th, tl, tr, tt, ug,
-> ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
-Complete locales:
+af, ar, az, be, bg, bn, bs, ca, cs, csb, da, de, de-AT, de-CH, de-DE, dsb, dz, el, el-CY, en, en-AU, en-CA, en-CY, en-GB, en-IE, en-IN, en-NZ, en-TT, en-US, en-ZA, eo, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, eu, fa, fi, fr, fr-CA, fr-CH, fr-FR, fur, fy, gl, gsw-CH, he, hi, hi-IN, hr, hsb, hu, id, is, it, it-CH, ja, ka, kk, km, kn, ko, lb, lo, lt, lv, mg, mk, ml, mn, mr-IN, ms, nb, ne, nl, nn, oc, or, pa, pap-AW, pap-CW, pl, pt, pt-BR, rm, ro, ru, sc, scr, sk, sl, sq, sr, st, sv, sv-SE, sw, ta, te, th, tl, tr, tt, ug, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE
 
-> af, da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC,
-> es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, id, it, ja, ka, ml, nb,
-> nl, nn, pt, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
+**Complete locales:**
+
+da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, fy, id, it, ja, ka, ml, nb, nl, nn, pt, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
+
+**Locales with missing pluralization rules**
+
+af, csb, dsb, fur, gsw-CH, lb, rm, scr, sq, te, tt, ug, uz
+
+**Removed locales:**
+
+cy
+
+The cy locale was removed in commit 84f6c6b9b7a3e50df2b1fb1ccf7add329f7eab4f since unfortunately we could not find a Welsh speaker to support it. 
+We would welcome contributions to add it back to the project.
+The locale is mostly complete for the missing translations please refer to [#1006](https://github.com/svenfuchs/rails-i18n/issues/1006)
+
+**Removed pluralizations:**
+
+ak, am, bh, bm, bo, br, by, cy, dz, ff, ga, gd, guw, gv, ig, ii, iu, jv, kab, kde, kea, ksh, kw, lag, ln, mo, mt, my, naq, nso, root, sah, se, ses, sg, sh, shi, sma, smi, smj, smn, sms, ti, to, tzm, wa, yo, zh
+
+The above pluralization rules were removed because they did not have corresponding locale files.
+
 
 Currently, most locales are incomplete. Typically they lack the following keys:
 
@@ -219,7 +256,6 @@ To run the other commands described above:
 
 ```
 docker run railsi18n bundle exec rake i18n-spec:completeness rails/locale/en.yml rails/locale/YOUR_NEW_LOCALE.yml
-
 ```
 
 ## See also

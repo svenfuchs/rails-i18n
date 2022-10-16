@@ -18,7 +18,7 @@ bn:
     - মে
     - জুন
     - জুলাই
-    - অগাস্ট
+    - আগস্ট
     - সেপ্টেম্বর
     - অক্টোবর
     - নভেম্বর
@@ -33,8 +33,8 @@ bn:
     - শনিবার
     formats:
       default: "%e/%m/%Y"
-      long: "%e de %B de %Y"
-      short: "%e de %b"
+      long: "%e %B %Y"
+      short: "%e %b"
     month_names:
     - 
     - জানুয়ারি
@@ -44,7 +44,7 @@ bn:
     - মে
     - জুন
     - জুলাই
-    - অগাস্ট
+    - আগস্ট
     - সেপ্টেম্বর
     - অক্টোবর
     - নভেম্বর
@@ -56,17 +56,17 @@ bn:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: প্রায় ১ ঘন্টা
-        other: প্রায় %{count} ঘন্টা
+        one: প্রায় ১ ঘণ্টা
+        other: প্রায় %{count} ঘণ্টা
       about_x_months:
         one: প্রায় ১ মাস
         other: প্রায় %{count} মাস
       about_x_years:
         one: প্রায় ১ বছর
         other: প্রায় %{count} বছর
-      half_a_minute: অর্ধেক মিনিট
+      half_a_minute: অর্ধ মিনিট
       less_than_x_seconds:
-        one: '১ সেকেন্ডর কম '
+        one: '১ সেকেন্ডর কম'
         other: "%{count} সেকেন্ডের কম"
       less_than_x_minutes:
         one: ১ মিনিটের কম
@@ -89,7 +89,7 @@ bn:
     prompts:
       second: সেকেন্ড
       minute: মিনিট
-      hour: ঘন্টা
+      hour: ঘণ্টা
       day: দিন
       month: মাস
       year: বছর
@@ -103,9 +103,9 @@ bn:
       equal_to: "%{count} এর সঙ্গে সমান হতে হবে"
       even: জোড় হতে হবে
       exclusion: রিসার্ভ করা আছে
-      greater_than: "%{count} থেকে বড়ো হতে হবে"
-      greater_than_or_equal_to: "%{count} থেকে বড়ো অথবা তার সমান হতে হবে"
-      inclusion: লিস্টে অন্তর্ভুক্ত নয়
+      greater_than: "%{count} থেকে বড় হতে হবে"
+      greater_than_or_equal_to: "%{count} থেকে বড় অথবা তার সমান হতে হবে"
+      inclusion: তালিকায় অন্তর্ভুক্ত নয়
       invalid: সঠিক নয়
       less_than: "%{count} থেকে ছোটো হতে হবে"
       less_than_or_equal_to: "%{count} থেকে ছোটো অথবা তার সমান হতে হবে"
@@ -118,8 +118,8 @@ bn:
     template:
       body: 'এই ফিল্ডগুলোতে কিছু সমস্যা দেখা দিয়েছে:'
       header:
-        one: ১ টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি
-        other: "%{count} টি ত্রুটির কারনে %{model} সংরক্ষন করা সম্ভব হয়নি"
+        one: ১টি ত্রুটির কারণে %{model} সংরক্ষণ করা সম্ভব হয়নি
+        other: "%{count}টি ত্রুটির কারণে %{model} সংরক্ষণ করা সম্ভব হয়নি"
   number:
     currency:
       format:
@@ -150,8 +150,8 @@ bn:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
+            one: বাইট
+            other: বাইট
           gb: GB
           kb: KB
           mb: MB
@@ -170,7 +170,7 @@ bn:
   time:
     am: am
     formats:
-      default: "%A, %e de %B de %Y %H:%M:%S %z"
-      long: "%e de %B de %Y %H:%M"
-      short: "%e de %b %H:%M"
+      default: "%A, %e %B %Y %H:%M:%S %z"
+      long: "%e %B %Y %H:%M"
+      short: "%e %b %H:%M"
     pm: pm

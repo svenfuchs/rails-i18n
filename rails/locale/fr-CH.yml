@@ -22,7 +22,7 @@ fr-CH:
     - 
     - jan.
     - fév.
-    - mar.
+    - mars
     - avr.
     - mai
     - juin
@@ -42,8 +42,8 @@ fr-CH:
     - samedi
     formats:
       default: "%d.%m.%Y"
-      long: "%e %B %Y"
-      short: "%e %b"
+      long: "%-d %B %Y"
+      short: "%-d %b"
     month_names:
     - 
     - janvier
@@ -122,6 +122,7 @@ fr-CH:
       exclusion: n'est pas disponible
       greater_than: doit être supérieur à %{count}
       greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      in: doit être dans l'intervalle %{count}
       inclusion: n'est pas inclus(e) dans la liste
       invalid: n'est pas valide
       less_than: doit être inférieur à %{count}
@@ -168,6 +169,7 @@ fr-CH:
     format:
       delimiter: "'"
       precision: 3
+      round_mode: default
       separator: "."
       significant: false
       strip_insignificant_zeros: false
