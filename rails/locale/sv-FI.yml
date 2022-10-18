@@ -40,8 +40,8 @@ sv-FI:
       - lördag
     formats:
       default: "%-d.%-m.%Y"
-      long: "%d. %Bta %Y"
-      short: "%d. %b"
+      long: "%e %B %Y"
+      short: "%e %b"
     month_names:
       -
       - januari
