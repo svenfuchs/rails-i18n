@@ -39,9 +39,9 @@ sv-FI:
       - fredag
       - lördag
     formats:
-      default: "%Y-%m-%d"
-      long: "%e %B %Y"
-      short: "%e %b"
+      default: "%-d.%-m.%Y"
+      long: "%d. %Bta %Y"
+      short: "%d. %b"
     month_names:
       -
       - januari
