@@ -4,6 +4,7 @@
   ordinals) are enabled #1019
 - Add following locales:
   - Sardinian (sc) #1030
+  - Swedish (sv-FI): Finland’s native Swedish-speakers #1055
 - Update following locales:
   - Bengali (bn): Fix date and spelling issues #1031
   - Chinese (zh-HK, zh-TW, zh-YUE, zh-CN):
