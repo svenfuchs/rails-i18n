@@ -1,6 +1,41 @@
 ## unreleased
 
-- French (fr, fr-CA, fr-CH, fr-CA): change an abreviation for March month in abbr_month_names #1002
+- Add option to choose which modules (locales, pluralization, transliteration,
+  ordinals) are enabled #1019
+- Add following locales:
+  - Sardinian (sc) #1030
+- Update following locales:
+  - Bengali (bn): Fix date and spelling issues #1031
+  - Chinese (zh-HK, zh-TW, zh-YUE, zh-CN):
+    - Simplify pluralization #1032 #1033 #1036
+    - Standardize punctuation #997
+  - English (en, en-CY, en-IE, en-TT, en-US, en-ZA):
+    - Add pluralization #1021
+    - Add `in` and `round_mode` keys #1042
+  - French (fr, fr-CA, fr-CH, fr-CA):
+    - Change an abreviation for March month in abbr_month_names #1002
+    - Add `in` and `round_mode` keys #1046
+  - Galician (gl): Add missing accent on `incluído` #961
+  - German (de-AT, de-CH, de-DE, de):
+    - Add transliteration rule for `ẞ` #1025
+    - Add `eb` and `pb` storage units #1043
+    - Add `round_mode` key #1044
+  - Greek (el-CY): Add pluralization #1022
+  - Japanese (ja): Simplify pluralization #1038
+  - Korean (ko):
+    - Language improvements #989
+    - Simplify pluralization #1037
+  - Latvian (lv): Add multiple missing translations #966
+  - Spanish (es, es-419, es-AR, es-CL, es-CO, es-CR, es-ES, es-MX, es-NI, es-PA,
+    es-PE, es-US, es-VE): Add `round_mode` key #1045
+  - Swedish (sv-SE): Adjust precision and add some missing keys #1047
+  - Vietnamese (vi):
+    - Update translation for taken #1009
+    - Simplify pluralization #1035
+- Removed pluralizations rules that do not have locale files: ak, am, bh, bm,
+  bo, br, by, cy, dz, ff, ga, gd, guw, gv, ig, ii, iu, jv, kab, kde, kea, ksh,
+  kw, lag, ln, mo, mt, my, naq, nso, root, sah, se, ses, sg, sh, shi, sma, smi,
+  smj, smn, sms, ti, to, tzm, wa, yo, zh #1017
 
 ## 7.0.5 (2022-07-03)
 
@@ -13,7 +48,7 @@
   - Kazakh (kk) #945
 - Update following locales:
   - Slovak (sk): Fixed missing message #994
-  - French (fr): Revert remainder of NBSP characters #996 
+  - French (fr): Revert remainder of NBSP characters #996
   - French (fr): Use no-padded date format #991
   - Arabic (ar): fix errors.messages.greater_than typo #998
   - South slavic pluralizers #987
