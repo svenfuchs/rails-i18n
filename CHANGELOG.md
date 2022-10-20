@@ -3,6 +3,7 @@
 - Add option to choose which modules (locales, pluralization, transliteration,
   ordinals) are enabled #1019
 - Add following locales:
+  - Dzongkha (dz) #1052
   - Sardinian (sc) #1030
 - Update following locales:
   - Bengali (bn): Fix date and spelling issues #1031
