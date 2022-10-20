@@ -1,5 +1,6 @@
 ## unreleased
 
+- Punjabi Shahmukhi (pa-PK): added new locale #1053
 - French (fr, fr-CA, fr-CH, fr-CA): change an abreviation for March month in abbr_month_names #1002
 
 ## 7.0.5 (2022-07-03)
