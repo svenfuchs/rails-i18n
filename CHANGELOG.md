@@ -1,5 +1,6 @@
 ## unreleased
 
+- Punjabi Gurmukhi (pa): typographical corrections, native large number names, unit expansion, removal of Oxford comma #1049
 - French (fr, fr-CA, fr-CH, fr-CA): change an abreviation for March month in abbr_month_names #1002
 
 ## 7.0.5 (2022-07-03)
