@@ -96,9 +96,6 @@ sv-FI:
       x_months:
         one: en månad
         other: "%{count} månader"
-      x_years:
-        one: ett år
-        other: "%{count} år"
     prompts:
       second: Sekund
       minute: Minut
