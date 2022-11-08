@@ -1,4 +1,4 @@
-## unreleased
+## 7.0.6 (2022-11-08)
 
 - Add option to choose which modules (locales, pluralization, transliteration,
   ordinals) are enabled #1019
