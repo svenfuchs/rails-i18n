@@ -5,6 +5,7 @@
 - Add following locales:
   - Dzongkha (dz) #1052
   - Sardinian (sc) #1030
+  - Swedish (sv-FI): Finland’s native Swedish-speakers #1055
 - Update following locales:
   - Bengali (bn): Fix date and spelling issues #1031
   - Chinese (zh-HK, zh-TW, zh-YUE, zh-CN):
