@@ -60,38 +60,38 @@ bg:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: около 1 час
+        one: около %{count} час
         other: около %{count} часа
       about_x_months:
-        one: около 1 месец
+        one: около %{count} месец
         other: около %{count} месеца
       about_x_years:
-        one: около 1 година
+        one: около %{count} година
         other: около %{count} години
       almost_x_years:
-        one: почти 1 година
+        one: почти %{count} година
         other: почти %{count} години
       half_a_minute: половин минута
       less_than_x_seconds:
-        one: по-малко от 1 секунда
+        one: по-малко от %{count} секунда
         other: по-малко от %{count} секунди
       less_than_x_minutes:
-        one: по-малко от 1 минута
+        one: по-малко от %{count} минута
         other: по-малко от %{count} минути
       over_x_years:
-        one: над 1 година
+        one: над %{count} година
         other: над %{count} години
       x_seconds:
-        one: 1 секунда
+        one: "%{count} секунда"
         other: "%{count} секунди"
       x_minutes:
-        one: 1 минута
+        one: "%{count} минута"
         other: "%{count} минути"
       x_days:
-        one: 1 ден
+        one: "%{count} ден"
         other: "%{count} дни"
       x_months:
-        one: 1 месец
+        one: "%{count} месец"
         other: "%{count} месеца"
     prompts:
       second: Секунда
@@ -126,7 +126,7 @@ bg:
     template:
       body: 'Възникнаха проблеми със следните полета:'
       header:
-        one: "%{model}: записът е неуспешен заради 1 грешка"
+        one: "%{model}: записът е неуспешен заради %{count} грешка"
         other: "%{model}: записът е неуспешен заради %{count} грешки"
   helpers:
     select:

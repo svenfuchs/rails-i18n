@@ -63,41 +63,41 @@ es-VE:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: cerca de 1 hora
+        one: cerca de %{count} hora
         other: cerca de %{count} horas
       about_x_months:
-        one: cerca de 1 mes
+        one: cerca de %{count} mes
         other: cerca de %{count} meses
       about_x_years:
-        one: cerca de 1 año
+        one: cerca de %{count} año
         other: cerca de %{count} años
       almost_x_years:
-        one: casi 1 año
+        one: casi %{count} año
         other: casi %{count} años
       half_a_minute: medio minuto
       less_than_x_seconds:
-        one: menos de 1 segundo
+        one: menos de %{count} segundo
         other: menos de %{count} segundos
       less_than_x_minutes:
-        one: menos de 1 minuto
+        one: menos de %{count} minuto
         other: menos de %{count} minutos
       over_x_years:
-        one: más de 1 año
+        one: más de %{count} año
         other: más de %{count} años
       x_seconds:
-        one: 1 segundo
+        one: "%{count} segundo"
         other: "%{count} segundos"
       x_minutes:
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minutos"
       x_days:
-        one: 1 día
+        one: "%{count} día"
         other: "%{count} días"
       x_months:
-        one: 1 mes
+        one: "%{count} mes"
         other: "%{count} meses"
       x_years:
-        one: 1 año
+        one: "%{count} año"
         other: "%{count} años"
     prompts:
       second: Segundo
@@ -131,18 +131,18 @@ es-VE:
       required: debe existir
       taken: ya está en uso
       too_long:
-        one: es demasiado largo (máximo 1 caracter)
+        one: es demasiado largo (máximo %{count} caracter)
         other: es demasiado largo (máximo %{count} caracteres)
       too_short:
-        one: es demasiado corto (mínimo 1 caracter)
+        one: es demasiado corto (mínimo %{count} caracter)
         other: es demasiado corto (mínimo %{count} caracteres)
       wrong_length:
-        one: longitud errónea (debe ser de 1 caracter)
+        one: longitud errónea (debe ser de %{count} caracter)
         other: longitud errónea (debe ser de %{count} caracteres)
     template:
       body: 'Revise que los siguientes campos sean válidos:'
       header:
-        one: "%{model} no pudo guardarse debido a 1 error"
+        one: "%{model} no pudo guardarse debido a %{count} error"
         other: "%{model} no pudo guardarse debido a %{count} errores"
   helpers:
     select:

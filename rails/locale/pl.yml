@@ -99,22 +99,22 @@ pl:
         many: ponad %{count} lat
         other: ponad %{count} lat
       x_seconds:
-        one: 1 sekunda
+        one: "%{count} sekunda"
         few: "%{count} sekundy"
         many: "%{count} sekund"
         other: "%{count} sekund"
       x_minutes:
-        one: 1 minuta
+        one: "%{count} minuta"
         few: "%{count} minuty"
         many: "%{count} minut"
         other: "%{count} minut"
       x_days:
-        one: 1 dzień
+        one: "%{count} dzień"
         few: "%{count} dni"
         many: "%{count} dni"
         other: "%{count} dni"
       x_months:
-        one: 1 miesiąc
+        one: "%{count} miesiąc"
         few: "%{count} miesiące"
         many: "%{count} miesięcy"
         other: "%{count} miesięcy"

@@ -60,41 +60,41 @@ ka:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: დაახლოებით 1 საათი
+        one: დაახლოებით %{count} საათი
         other: დაახლოებით %{count} საათი
       about_x_months:
-        one: დაახლოებით 1 თვე
+        one: დაახლოებით %{count} თვე
         other: დაახლოებით %{count} თვე
       about_x_years:
-        one: დაახლოებით 1 წელი
+        one: დაახლოებით %{count} წელი
         other: დაახლოებით %{count} წელი
       almost_x_years:
-        one: თითქმის 1 წელი
+        one: თითქმის %{count} წელი
         other: თითქმის %{count} წელი
       half_a_minute: ნახევარი წუთი
       less_than_x_seconds:
-        one: 1 წამზე ნაკლები
+        one: "%{count} წამზე ნაკლები"
         other: "%{count} წამზე ნაკლები"
       less_than_x_minutes:
-        one: 1 წუთზე ნაკლები
+        one: "%{count} წუთზე ნაკლები"
         other: "%{count} წუთზე ნაკლები"
       over_x_years:
-        one: 1 წელზე მეტი
+        one: "%{count} წელზე მეტი"
         other: "%{count} წელზე მეტი"
       x_seconds:
-        one: 1 წამი
+        one: "%{count} წამი"
         other: "%{count} წამი"
       x_minutes:
-        one: 1 წუთი
+        one: "%{count} წუთი"
         other: "%{count} წუთი"
       x_days:
-        one: 1 დღე
+        one: "%{count} დღე"
         other: "%{count} დღე"
       x_months:
-        one: 1 თვე
+        one: "%{count} თვე"
         other: "%{count} თვე"
       x_years:
-        one: 1 წელი
+        one: "%{count} წელი"
         other: "%{count} წელი"
     prompts:
       second: წამი
@@ -128,18 +128,18 @@ ka:
       required: უნდა არსებობდეს
       taken: უკვე დაკავებულია
       too_long:
-        one: არის ძალიან გრძელი (მაქსიმუმია 1 სიმბოლო)
+        one: არის ძალიან გრძელი (მაქსიმუმია %{count} სიმბოლო)
         other: არის მეტისმეტად დიდი სიგრძის (მაქსიმუმია %{count} სიმბოლო)
       too_short:
-        one: არის ძალიან მოკლე (მინიმუმია 1 სიმბოლო)
+        one: არის ძალიან მოკლე (მინიმუმია %{count} სიმბოლო)
         other: არის ძალიან მოკლე (მინიმუმია %{count} სიმბოლო)
       wrong_length:
-        one: არის არასწორი სიგრძის (უნდა იყოს ზუსტად 1 სიბმოლო)
+        one: არის არასწორი სიგრძის (უნდა იყოს ზუსტად %{count} სიბმოლო)
         other: არის არასწორი სიგრძის (უნდა იყოს ზუსტად %{count} სიბმოლო)
     template:
       body: 'შეიქმნა პრობლემები შემდეგ ველებთან დაკავშირებით:'
       header:
-        one: "%{model}-ს შენახვა ვერ განხორციელდა 1 შეცდომის გამო"
+        one: "%{model}-ს შენახვა ვერ განხორციელდა %{count} შეცდომის გამო"
         other: "%{model}-ს შენახვა ვერ განხორციელდა %{count} შეცდომის გამო"
   helpers:
     select:

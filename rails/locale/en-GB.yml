@@ -63,41 +63,41 @@ en-GB:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: about 1 hour
+        one: about %{count} hour
         other: about %{count} hours
       about_x_months:
-        one: about 1 month
+        one: about %{count} month
         other: about %{count} months
       about_x_years:
-        one: about 1 year
+        one: about %{count} year
         other: about %{count} years
       almost_x_years:
-        one: almost 1 year
+        one: almost %{count} year
         other: almost %{count} years
       half_a_minute: half a minute
       less_than_x_seconds:
-        one: less than 1 second
+        one: less than %{count} second
         other: less than %{count} seconds
       less_than_x_minutes:
         one: less than a minute
         other: less than %{count} minutes
       over_x_years:
-        one: over 1 year
+        one: over %{count} year
         other: over %{count} years
       x_seconds:
-        one: 1 second
+        one: "%{count} second"
         other: "%{count} seconds"
       x_minutes:
-        one: 1 minute
+        one: "%{count} minute"
         other: "%{count} minutes"
       x_days:
-        one: 1 day
+        one: "%{count} day"
         other: "%{count} days"
       x_months:
-        one: 1 month
+        one: "%{count} month"
         other: "%{count} months"
       x_years:
-        one: 1 year
+        one: "%{count} year"
         other: "%{count} years"
     prompts:
       second: Second
@@ -131,18 +131,18 @@ en-GB:
       required: must exist
       taken: has already been taken
       too_long:
-        one: is too long (maximum is 1 character)
+        one: is too long (maximum is %{count} character)
         other: is too long (maximum is %{count} characters)
       too_short:
-        one: is too short (minimum is 1 character)
+        one: is too short (minimum is %{count} character)
         other: is too short (minimum is %{count} characters)
       wrong_length:
-        one: is the wrong length (should be 1 character)
+        one: is the wrong length (should be %{count} character)
         other: is the wrong length (should be %{count} characters)
     template:
       body: 'There were problems with the following fields:'
       header:
-        one: 1 error prohibited this %{model} from being saved
+        one: "%{count} error prohibited this %{model} from being saved"
         other: "%{count} errors prohibited this %{model} from being saved"
   helpers:
     select:

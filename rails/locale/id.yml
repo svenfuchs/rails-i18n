@@ -78,11 +78,11 @@ id:
       half_a_minute: setengah menit
       less_than_x_seconds:
         zero: kurang dari 1 detik
-        one: kurang dari 1 detik
+        one: kurang dari %{count} detik
         other: kurang dari %{count} detik
       less_than_x_minutes:
         zero: kurang dari 1 menit
-        one: kurang dari 1 menit
+        one: kurang dari %{count} menit
         other: kurang dari  %{count} menit
       over_x_years:
         one: lebih dari setahun
@@ -131,18 +131,18 @@ id:
       required: harus ada
       taken: sudah digunakan
       too_long:
-        one: terlalu panjang (maksimum 1 karakter)
+        one: terlalu panjang (maksimum %{count} karakter)
         other: terlalu panjang (maksimum %{count} karakter)
       too_short:
-        one: terlalu pendek (minimum 1 karakter)
+        one: terlalu pendek (minimum %{count} karakter)
         other: terlalu pendek (minimum %{count} karakter)
       wrong_length:
-        one: jumlah karakter salah (seharusnya 1 karakter)
+        one: jumlah karakter salah (seharusnya %{count} karakter)
         other: jumlah karakter salah (seharusnya %{count} karakter)
     template:
       body: 'Ada masalah dengan field berikut:'
       header:
-        one: 1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan
+        one: "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
         other: "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"
   helpers:
     select:

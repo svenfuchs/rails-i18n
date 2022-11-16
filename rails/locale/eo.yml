@@ -84,16 +84,16 @@ eo:
         one: pli ol unu jaro
         other: pli ol %{count} jaroj
       x_seconds:
-        one: 1 sekundo
+        one: "%{count} sekundo"
         other: "%{count} sekundoj"
       x_minutes:
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minutoj"
       x_days:
-        one: 1 tago
+        one: "%{count} tago"
         other: "%{count} tagoj"
       x_months:
-        one: 1 monato
+        one: "%{count} monato"
         other: "%{count} monatoj"
     prompts:
       second: Sekundo
@@ -128,7 +128,7 @@ eo:
     template:
       body: 'Kontrolu la jenajn kampojn: '
       header:
-        one: 'Ne eblas registri tiun %{model}: 1 eraro'
+        one: 'Ne eblas registri tiun %{model}: %{count} eraro'
         other: 'Ne eblas registri tiun %{model}: %{count} eraroj'
   helpers:
     select:

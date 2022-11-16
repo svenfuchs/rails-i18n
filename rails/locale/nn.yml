@@ -63,36 +63,36 @@ nn:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: rundt 1 time
+        one: rundt %{count} time
         other: rundt %{count} timar
       about_x_months:
-        one: rundt 1 månad
+        one: rundt %{count} månad
         other: rundt %{count} månader
       about_x_years:
-        one: rundt 1 år
+        one: rundt %{count} år
         other: rundt %{count} år
       almost_x_years: nesten %{count} år
       half_a_minute: eit halvt minutt
       less_than_x_seconds:
-        one: mindre enn 1 sekund
+        one: mindre enn %{count} sekund
         other: mindre enn %{count} sekund
       less_than_x_minutes:
-        one: mindre enn 1 minutt
+        one: mindre enn %{count} minutt
         other: mindre enn %{count} minutt
       over_x_years:
-        one: over 1 år
+        one: over %{count} år
         other: over %{count} år
       x_seconds:
-        one: 1 sekund
+        one: "%{count} sekund"
         other: "%{count} sekund"
       x_minutes:
-        one: 1 minutt
+        one: "%{count} minutt"
         other: "%{count} minutt"
       x_days:
-        one: 1 dag
+        one: "%{count} dag"
         other: "%{count} dagar"
       x_months:
-        one: 1 månad
+        one: "%{count} månad"
         other: "%{count} månader"
     prompts:
       second: Sekund

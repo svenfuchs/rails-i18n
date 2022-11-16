@@ -63,41 +63,41 @@ sq:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: rreth 1 orë
+        one: rreth %{count} orë
         other: rreth %{count} orë
       about_x_months:
-        one: rreth 1 muaj
+        one: rreth %{count} muaj
         other: rreth %{count} muaj
       about_x_years:
-        one: rreth 1 vit
+        one: rreth %{count} vit
         other: rreth %{count} vjet
       almost_x_years:
-        one: gati 1 vit
+        one: gati %{count} vit
         other: gati %{count} vjet
       half_a_minute: gjysmë minute
       less_than_x_seconds:
-        one: më pak se 1 sekondë
+        one: më pak se %{count} sekondë
         other: më pak se %{count} sekonda
       less_than_x_minutes:
         one: më pak se një minutë
         other: më pak se %{count} minuta
       over_x_years:
-        one: mbi 1 vit
+        one: mbi %{count} vit
         other: mbi %{count} vjet
       x_days:
-        one: 1 ditë
+        one: "%{count} ditë"
         other: "%{count} ditë"
       x_minutes:
-        one: 1 minutë
+        one: "%{count} minutë"
         other: "%{count} minuta"
       x_days:
-        one: 1 ditë
+        one: "%{count} ditë"
         other: "%{count} ditë"
       x_months:
-        one: 1 muaj
+        one: "%{count} muaj"
         other: "%{count} muaj"
       x_years:
-        one: 1 vit
+        one: "%{count} vit"
         other: "%{count} vjet"
     prompts:
       second: Sekondë
@@ -132,18 +132,18 @@ sq:
       required: duhet të ekzistojë
       taken: është zënë tashmë
       too_long:
-        one: është shumë i gjatë (maksimumi është 1 shenjë)
+        one: është shumë i gjatë (maksimumi është %{count} shenjë)
         other: është shumë i gjatë (maksimumi është %{count} shenja)
       too_short:
-        one: është shumë i shkurtër (minimumi është 1 shenjë)
+        one: është shumë i shkurtër (minimumi është %{count} shenjë)
         other: është shumë i shkurtër (minimumi është %{count} shenja)
       wrong_length:
-        one: ka gjatësi të gabuar (duhet të jetë 1 shenjë)
+        one: ka gjatësi të gabuar (duhet të jetë %{count} shenjë)
         other: ka gjatësi të gabuar (duhet të jetë %{count} shenja)
     template:
       body: 'Pati probleme me fushat vijuese:'
       header:
-        one: Ruajtja e këtij %{model} u pengua nga 1 gabim
+        one: Ruajtja e këtij %{model} u pengua nga %{count} gabim
         other: "Ruajtja e këtij %{model} u pengua nga %{count} gabime"
   helpers:
     select:

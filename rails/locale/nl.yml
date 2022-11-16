@@ -85,19 +85,19 @@ nl:
         one: meer dan een jaar
         other: meer dan %{count} jaar
       x_seconds:
-        one: 1 seconde
+        one: "%{count} seconde"
         other: "%{count} seconden"
       x_minutes:
-        one: 1 minuut
+        one: "%{count} minuut"
         other: "%{count} minuten"
       x_days:
-        one: 1 dag
+        one: "%{count} dag"
         other: "%{count} dagen"
       x_months:
-        one: 1 maand
+        one: "%{count} maand"
         other: "%{count} maanden"
       x_years:
-        one: 1 jaar
+        one: "%{count} jaar"
         other: "%{count} jaar"
     prompts:
       second: seconde
@@ -137,12 +137,12 @@ nl:
         one: is te kort (minimaal %{count} teken)
         other: is te kort (minimaal %{count} tekens)
       wrong_length:
-        one: heeft onjuiste lengte (moet 1 teken lang zijn)
+        one: heeft onjuiste lengte (moet %{count} teken lang zijn)
         other: heeft onjuiste lengte (moet %{count} tekens lang zijn)
     template:
       body: 'Er zijn problemen met de volgende velden:'
       header:
-        one: "%{model} niet opgeslagen: 1 fout gevonden"
+        one: "%{model} niet opgeslagen: %{count} fout gevonden"
         other: "%{model} niet opgeslagen: %{count} fouten gevonden"
   helpers:
     select:

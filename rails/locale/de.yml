@@ -132,13 +132,13 @@ de:
       required: muss ausgefüllt werden
       taken: ist bereits vergeben
       too_long:
-        one: ist zu lang (mehr als 1 Zeichen)
+        one: ist zu lang (mehr als %{count} Zeichen)
         other: ist zu lang (mehr als %{count} Zeichen)
       too_short:
-        one: ist zu kurz (weniger als 1 Zeichen)
+        one: ist zu kurz (weniger als %{count} Zeichen)
         other: ist zu kurz (weniger als %{count} Zeichen)
       wrong_length:
-        one: hat die falsche Länge (muss genau 1 Zeichen haben)
+        one: hat die falsche Länge (muss genau %{count} Zeichen haben)
         other: hat die falsche Länge (muss genau %{count} Zeichen haben)
     template:
       body: 'Bitte überprüfen Sie die folgenden Felder:'

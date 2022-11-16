@@ -5,7 +5,7 @@ nb:
       messages:
         record_invalid: 'Det oppstod feil: %{errors}'
         restrict_dependent_destroy:
-          has_one: Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne.
+          has_one: Kan ikke slette registreringen, fordi %{count} %{record} avhenger av denne.
           has_many: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
   date:
     abbr_day_names:
@@ -63,41 +63,41 @@ nb:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: rundt 1 time
+        one: rundt %{count} time
         other: rundt %{count} timer
       about_x_months:
-        one: rundt 1 måned
+        one: rundt %{count} måned
         other: rundt %{count} måneder
       about_x_years:
-        one: rundt 1 år
+        one: rundt %{count} år
         other: rundt %{count} år
       almost_x_years:
-        one: nesten 1 år
+        one: nesten %{count} år
         other: nesten %{count} år
       half_a_minute: et halvt minutt
       less_than_x_seconds:
-        one: mindre enn 1 sekund
+        one: mindre enn %{count} sekund
         other: mindre enn %{count} sekunder
       less_than_x_minutes:
-        one: mindre enn 1 minutt
+        one: mindre enn %{count} minutt
         other: mindre enn %{count} minutter
       over_x_years:
-        one: over 1 år
+        one: over %{count} år
         other: over %{count} år
       x_seconds:
-        one: 1 sekund
+        one: "%{count} sekund"
         other: "%{count} sekunder"
       x_minutes:
-        one: 1 minutt
+        one: "%{count} minutt"
         other: "%{count} minutter"
       x_days:
-        one: 1 dag
+        one: "%{count} dag"
         other: "%{count} dager"
       x_months:
-        one: 1 måned
+        one: "%{count} måned"
         other: "%{count} måneder"
       x_years:
-        one: 1 år
+        one: "%{count} år"
         other: "%{count} år"
     prompts:
       second: sekund
@@ -131,13 +131,13 @@ nb:
       required: må eksistere
       taken: er allerede i bruk
       too_long:
-        one: er for lang (maksimalt 1 tegn)
+        one: er for lang (maksimalt %{count} tegn)
         other: er for lang (maksimalt %{count} tegn)
       too_short:
-        one: er for kort (minst 1 tegn)
+        one: er for kort (minst %{count} tegn)
         other: er for kort (minst %{count} tegn)
       wrong_length:
-        one: har feil lengde (må være 1 tegn)
+        one: har feil lengde (må være %{count} tegn)
         other: har feil lengde (må være %{count} tegn)
     template:
       body: 'Det oppstod problemer med følgende felt:'

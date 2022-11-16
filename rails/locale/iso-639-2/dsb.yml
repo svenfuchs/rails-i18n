@@ -56,53 +56,53 @@ dsb:
     distance_in_words:
       about_x_hours:
         few: něźi %{count} góźinami
-        one: něźi 1 góźinu
+        one: něźi %{count} góźinu
         other: něźi %{count} góźinami
         two: něźi %{count} góźinoma
       about_x_months:
         few: něźi %{count} mjasecami
-        one: něźi 1 mjasecom
+        one: něźi %{count} mjasecom
         other: něźi %{count} mjasecami
         two: něźi %{count} mjasecoma
       about_x_years:
         few: něźi %{count} lětami
-        one: něźi 1 lětom
+        one: něźi %{count} lětom
         other: něźi %{count} lětami
         two: něźi %{count} lětoma
       half_a_minute: poł minuty
       less_than_x_minutes:
         few: mjenjej ako %{count} minutami
-        one: mjenjej ako 1 minutu
+        one: mjenjej ako %{count} minutu
         other: mjenjej ako %{count} minutami
         two: mjenjej ako %{count} minutoma
       less_than_x_seconds:
         few: mjenjej ako %{count} sekundami
-        one: mjenjej ako 1 sekundu
+        one: mjenjej ako %{count} sekundu
         other: mjenjej ako %{count} sekundami
         two: mjenjej ako %{count} sekundoma
       over_x_years:
         few: wěcej ako %{count} lětami
-        one: wěcej ako 1 lětom
+        one: wěcej ako %{count} lětom
         other: wěcej ako %{count} lětami
         two: wěcej ako %{count} lětoma
       x_days:
         few: ! '%{count} dnjami'
-        one: 1 dnjom
+        one: "%{count} dnjom"
         other: ! '%{count} dnjami'
         two: ! '%{count} dnjoma'
       x_minutes:
         few: ! '%{count} minutami'
-        one: 1 minutu
+        one: "%{count} minutu"
         other: ! '%{count} minutami'
         two: ! '%{count} minutoma'
       x_months:
         few: ! '%{count} mjasecami'
-        one: 1 mjasecom
+        one: "%{count} mjasecom"
         other: ! '%{count} mjasecami'
         two: ! '%{count} mjasecoma'
       x_seconds:
         few: ! '%{count} sekundami'
-        one: 1 sekundu
+        one: "%{count} sekundu"
         other: ! '%{count} sekundami'
         two: ! '%{count} sekundoma'
   errors:
@@ -126,17 +126,17 @@ dsb:
       taken: jo južo w datowej bance
       too_long:
         few: jo pśedłujki (maks. %{count} znamješka)
-        one: jo pśedłujki (maks. 1 znamješko)
+        one: jo pśedłujki (maks. %{count} znamješko)
         other: jo pśedłujki (maks. %{count} znamješkow)
         two: jo pśedłujki (maks. %{count} znamješce)
       too_short:
         few: jo překrotki (min. %{count} znamješka)
-        one: jo překrotki (min. 1 znamješko)
+        one: jo překrotki (min. %{count} znamješko)
         other: jo překrotki (min. %{count} znamješkow)
         two: jo překrotki (min. %{count} znamješce)
       wrong_length:
         few: njama pšawu dłujkosć (%{count} znamješka wócakane)
-        one: njama pšawu dłujkosć (1 znamješko wócakane)
+        one: njama pšawu dłujkosć (%{count} znamješko wócakane)
         other: njama pšawu dłujkosć (%{count} znamješkow wócakanych)
         two: njama pšawu dłujkosć (%{count} znamješce wócakanej)
     template:

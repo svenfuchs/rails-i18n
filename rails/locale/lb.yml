@@ -87,16 +87,16 @@ lb:
         one: méi wéi ee Joer
         other: méi wéi %{count} Joer
       x_seconds:
-        one: 1 Sekonn
+        one: "%{count} Sekonn"
         other: "%{count} Sekonnen"
       x_minutes:
-        one: 1 Minutt
+        one: "%{count} Minutt"
         other: "%{count} Minutten"
       x_days:
-        one: 1 Dag
+        one: "%{count} Dag"
         other: "%{count} Deeg"
       x_months:
-        one: 1 Mount
+        one: "%{count} Mount"
         other: "%{count} Méint"
     prompts:
       second: Sekonnen
@@ -128,10 +128,10 @@ lb:
       present: muss eidel sinn
       taken: gouf scho geholl
       too_long:
-        one: ass ze laang (Maximal 1 Zeechen)
+        one: ass ze laang (Maximal %{count} Zeechen)
         other: ass ze laang (net méi wéi %{count} Zeechen)
       too_short:
-        one: ass ze kuerz (Mniimal 1 Zeechen)
+        one: ass ze kuerz (Mniimal %{count} Zeechen)
         other: ass ze kuerz (mindestens %{count} Zeechen)
       wrong_length:
         one: huet déi falsch Längt (muss genee een Zeeche sinn)
@@ -139,7 +139,7 @@ lb:
     template:
       body: 'Et gouf Problemer mat dëse Felder:'
       header:
-        one: 1 Feeler verhënnert d'Späichere vu(n) %{model}
+        one: "%{count} Feeler verhënnert d'Späichere vu(n) %{model}"
         other: "%{count} Feeler verhënneren d'Späichere vu(n) %{model}"
   helpers:
     select:

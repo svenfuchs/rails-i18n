@@ -72,7 +72,7 @@ ro:
         few: aproximativ %{count} ani
         other: aproximativ %{count} ani
       almost_x_years:
-        one: aproape 1 an
+        one: aproape %{count} an
         few: aproape %{count} ani
         other: aproape %{count} ani
       half_a_minute: jumătate de minut
@@ -89,19 +89,19 @@ ro:
         few: mai mult de %{count} ani
         other: mai mult de %{count} ani
       x_seconds:
-        one: 1 secundă
+        one: "%{count} secundă"
         few: "%{count} secunde"
         other: "%{count} secunde"
       x_minutes:
-        one: 1 minut
+        one: "%{count} minut"
         few: "%{count} minute"
         other: "%{count} minute"
       x_days:
-        one: 1 zi
+        one: "%{count} zi"
         few: "%{count} zile"
         other: "%{count} zile"
       x_months:
-        one: 1 lună
+        one: "%{count} lună"
         few: "%{count} luni"
         other: "%{count} luni"
     prompts:

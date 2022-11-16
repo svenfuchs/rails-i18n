@@ -60,38 +60,38 @@ hu:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: kb. 1 órája
+        one: kb. %{count} órája
         other: kb. %{count} órája
       about_x_months:
-        one: kb. 1 hónapja
+        one: kb. %{count} hónapja
         other: kb. %{count} hónapja
       about_x_years:
-        one: kb. 1 éve
+        one: kb. %{count} éve
         other: kb. %{count} éve
       almost_x_years:
-        one: majdnem 1 éve
+        one: majdnem %{count} éve
         other: majdnem %{count} éve
       half_a_minute: fél perce
       less_than_x_seconds:
-        one: kevesebb, mint 1 másodperce
+        one: kevesebb, mint %{count} másodperce
         other: kevesebb, mint %{count} másodperce
       less_than_x_minutes:
-        one: kevesebb, mint 1 perce
+        one: kevesebb, mint %{count} perce
         other: kevesebb, mint %{count} perce
       over_x_years:
-        one: több, mint 1 éve
+        one: több, mint %{count} éve
         other: több, mint %{count} éve
       x_seconds:
-        one: 1 másodperce
+        one: "%{count} másodperce"
         other: "%{count} másodperce"
       x_minutes:
-        one: 1 perce
+        one: "%{count} perce"
         other: "%{count} perce"
       x_days:
-        one: 1 napja
+        one: "%{count} napja"
         other: "%{count} napja"
       x_months:
-        one: 1 hónapja
+        one: "%{count} hónapja"
         other: "%{count} hónapja"
     prompts:
       second: Másodperc
@@ -126,7 +126,7 @@ hu:
     template:
       body: 'Problémás mezők:'
       header:
-        one: '1 hiba miatt nem menthető a következő: %{model}'
+        one: '%{count} hiba miatt nem menthető a következő: %{model}'
         other: "%{count} hiba miatt nem menthető a következő: %{model}"
   helpers:
     select:

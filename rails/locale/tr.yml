@@ -63,41 +63,41 @@ tr:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: yaklaşık 1 saat
+        one: yaklaşık %{count} saat
         other: yaklaşık %{count} saat
       about_x_months:
-        one: yaklaşık 1 ay
+        one: yaklaşık %{count} ay
         other: yaklaşık %{count} ay
       about_x_years:
-        one: yaklaşık 1 yıl
+        one: yaklaşık %{count} yıl
         other: yaklaşık %{count} yıl
       almost_x_years:
-        one: neredeyse 1 yıl
+        one: neredeyse %{count} yıl
         other: neredeyse %{count} yıl
       half_a_minute: yarım dakika
       less_than_x_seconds:
-        one: 1 saniyeden az
+        one: "%{count} saniyeden az"
         other: "%{count} saniyeden az"
       less_than_x_minutes:
-        one: 1 dakikadan az
+        one: "%{count} dakikadan az"
         other: "%{count} dakikadan az"
       over_x_years:
-        one: 1 yıldan fazla
+        one: "%{count} yıldan fazla"
         other: "%{count} yıldan fazla"
       x_seconds:
-        one: 1 saniye
+        one: "%{count} saniye"
         other: "%{count} saniye"
       x_minutes:
-        one: 1 dakika
+        one: "%{count} dakika"
         other: "%{count} dakika"
       x_days:
-        one: 1 gün
+        one: "%{count} gün"
         other: "%{count} gün"
       x_months:
-        one: 1 ay
+        one: "%{count} ay"
         other: "%{count} ay"
       x_years:
-        one: 1 yıl
+        one: "%{count} yıl"
         other: "%{count} yıl"
     prompts:
       second: Saniye
@@ -131,18 +131,18 @@ tr:
       required: doldurulmalı
       taken: hali hazırda kullanılmakta
       too_long:
-        one: çok uzun (en fazla 1 karakter)
+        one: çok uzun (en fazla %{count} karakter)
         other: çok uzun (en fazla %{count} karakter)
       too_short:
-        one: çok kısa (en az 1 karakter)
+        one: çok kısa (en az %{count} karakter)
         other: çok kısa (en az %{count} karakter)
       wrong_length:
-        one: hatalı uzunlukta (1 karakter olmalı)
+        one: hatalı uzunlukta (%{count} karakter olmalı)
         other: hatalı uzunlukta (%{count} karakter olmalı)
     template:
       body: 'Lütfen aşağıdaki hataları düzeltiniz:'
       header:
-        one: 1 hata oluştuğu için %{model} kaydedilemedi
+        one: "%{count} hata oluştuğu için %{model} kaydedilemedi"
         other: "%{count} hata oluştuğu için %{model} kaydedilemedi"
   helpers:
     select:

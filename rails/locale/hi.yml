@@ -63,10 +63,10 @@ hi:
         one: लगभग एक घंटा
         other: लगभग %{count} घंटा
       about_x_months:
-        one: लगभग 1 महीना
+        one: लगभग %{count} महीना
         other: लगभग %{count} महीना
       about_x_years:
-        one: लगभग 1 साल
+        one: लगभग %{count} साल
         other: लगभग %{count} साल
       almost_x_years:
         one: लगभग एक साल

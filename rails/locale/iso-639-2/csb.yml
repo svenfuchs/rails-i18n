@@ -85,19 +85,19 @@ csb:
         other: wicy jak %{count} lat
       x_days:
         few: ! '%{count} dni'
-        one: 1 dzéń
+        one: "%{count} dzéń"
         other: ! '%{count} dniów'
       x_minutes:
         few: ! '%{count} minutë'
-        one: 1 minuta
+        one: "%{count} minuta"
         other: ! '%{count} minutów'
       x_months:
         few: ! '%{count} miesiące'
-        one: 1 miesąc
+        one: "%{count} miesąc"
         other: ! '%{count} miesięców'
       x_seconds:
         few: ! '%{count} sekùndë'
-        one: 1 sekùnda
+        one: "%{count} sekùnda"
         other: ! '%{count} sekùndów'
     prompts:
       day: Dzéń

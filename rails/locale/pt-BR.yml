@@ -63,41 +63,41 @@ pt-BR:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: aproximadamente 1 hora
+        one: aproximadamente %{count} hora
         other: aproximadamente %{count} horas
       about_x_months:
-        one: aproximadamente 1 mês
+        one: aproximadamente %{count} mês
         other: aproximadamente %{count} meses
       about_x_years:
-        one: aproximadamente 1 ano
+        one: aproximadamente %{count} ano
         other: aproximadamente %{count} anos
       almost_x_years:
-        one: quase 1 ano
+        one: quase %{count} ano
         other: quase %{count} anos
       half_a_minute: meio minuto
       less_than_x_seconds:
-        one: menos de 1 segundo
+        one: menos de %{count} segundo
         other: menos de %{count} segundos
       less_than_x_minutes:
         one: menos de um minuto
         other: menos de %{count} minutos
       over_x_years:
-        one: mais de 1 ano
+        one: mais de %{count} ano
         other: mais de %{count} anos
       x_seconds:
-        one: 1 segundo
+        one: "%{count} segundo"
         other: "%{count} segundos"
       x_minutes:
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minutos"
       x_days:
-        one: 1 dia
+        one: "%{count} dia"
         other: "%{count} dias"
       x_months:
-        one: 1 mês
+        one: "%{count} mês"
         other: "%{count} meses"
       x_years:
-        one: 1 ano
+        one: "%{count} ano"
         other: "%{count} anos"
     prompts:
       second: Segundo
@@ -131,18 +131,18 @@ pt-BR:
       required: é obrigatório(a)
       taken: já está em uso
       too_long:
-        one: 'é muito longo (máximo: 1 caracter)'
+        one: 'é muito longo (máximo: %{count} caracter)'
         other: 'é muito longo (máximo: %{count} caracteres)'
       too_short:
-        one: 'é muito curto (mínimo: 1 caracter)'
+        one: 'é muito curto (mínimo: %{count} caracter)'
         other: 'é muito curto (mínimo: %{count} caracteres)'
       wrong_length:
-        one: não possui o tamanho esperado (1 caracter)
+        one: não possui o tamanho esperado (%{count} caracter)
         other: não possui o tamanho esperado (%{count} caracteres)
     template:
       body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
       header:
-        one: 'Não foi possível gravar %{model}: 1 erro'
+        one: 'Não foi possível gravar %{model}: %{count} erro'
         other: 'Não foi possível gravar %{model}: %{count} erros'
   helpers:
     select:

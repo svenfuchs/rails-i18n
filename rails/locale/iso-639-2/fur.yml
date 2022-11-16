@@ -77,16 +77,16 @@ fur:
         one: plui di un an
         other: plui di %{count} agns
       x_days:
-        one: 1 zornade
+        one: "%{count} zornade"
         other: ! '%{count} zornadis'
       x_minutes:
-        one: 1 minût
+        one: "%{count} minût"
         other: ! '%{count} minûts'
       x_months:
-        one: 1 mês
+        one: "%{count} mês"
         other: ! '%{count} mês'
       x_seconds:
-        one: 1 secont
+        one: "%{count} secont"
         other: ! '%{count} seconts'
     prompts:
       day: Zornade
@@ -122,7 +122,7 @@ fur:
     template:
       body: ! 'Torne par plasê a controlâ i cjamps ca sot:'
       header:
-        one: ! 'No si pues salvâ chest %{model}: 1 erôr'
+        one: ! 'No si pues salvâ chest %{model}: %{count} erôr'
         other: ! 'No si pues salvâ chest %{model}: %{count} erôrs.'
   helpers:
     select:

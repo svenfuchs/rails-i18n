@@ -63,38 +63,38 @@ ne:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: लगभग 1 घण्टा
+        one: लगभग %{count} घण्टा
         other: लगभग %{count} घण्टा
       about_x_months:
-        one: लगभग 1 महिना
+        one: लगभग %{count} महिना
         other: लगभग %{count} महिना
       about_x_years:
-        one: लगभग 1 बर्ष
+        one: लगभग %{count} बर्ष
         other: लगभग %{count} बर्ष
       almost_x_years:
-        one: झण्डै 1 बर्ष
+        one: झण्डै %{count} बर्ष
         other: झण्डै %{count} बर्ष
       half_a_minute: आधा मिनेट
       less_than_x_seconds:
-        one: 1 सेकेण्डभन्दा कम्ति
+        one: "%{count} सेकेण्डभन्दा कम्ति"
         other: "%{count} सेकेण्डभन्दा कम्ति"
       less_than_x_minutes:
-        one: 1 मिनेटभन्दा कम्ति
+        one: "%{count} मिनेटभन्दा कम्ति"
         other: "%{count} मिनेटभन्दा कम्ति"
       over_x_years:
-        one: 1 बर्षभन्दा बढी
+        one: "%{count} बर्षभन्दा बढी"
         other: "%{count} बर्षभन्दा बेसी"
       x_seconds:
-        one: 1 सेकेण्ड
+        one: "%{count} सेकेण्ड"
         other: "%{count} सेकेण्ड"
       x_minutes:
-        one: 1 मिनेट
+        one: "%{count} मिनेट"
         other: "%{count} मिनेट"
       x_days:
-        one: 1 दिन
+        one: "%{count} दिन"
         other: "%{count} दिन"
       x_months:
-        one: 1 महिना
+        one: "%{count} महिना"
         other: "%{count} महिना"
     prompts:
       second: सेकेण्ड
@@ -124,18 +124,18 @@ ne:
       odd: बिजोर संख्या हुनुपर्नेछ
       taken: पहिल्यै प्रयोग गरीएको छ
       too_long:
-        one: धेरै लामो छ (अधिक्तम 1 character हो)
+        one: धेरै लामो छ (अधिक्तम %{count} character हो)
         other: धेरै लामो छ (अधिक्तम %{count} characters हो)
       too_short:
-        one: धेरै छोटो छ (न्युनत्तम 1 character हो)
+        one: धेरै छोटो छ (न्युनत्तम %{count} character हो)
         other: धेरै छोटो छ (न्युनत्तम %{count} characters हो)
       wrong_length:
-        one: गलत लम्बाई हो (1 character हुनुपर्नेछ)
+        one: गलत लम्बाई हो (%{count} character हुनुपर्नेछ)
         other: गलत लम्बाई हो (%{count} characters हुनुपर्नेछ)
     template:
       body: 'त्यहाँ निम्न क्षेत्रहरुमा समस्या देखियो:'
       header:
-        one: 1 गल्तीले यस %{model} लाई सुरक्षित गर्नबाट रोक्यो
+        one: "%{count} गल्तीले यस %{model} लाई सुरक्षित गर्नबाट रोक्यो"
         other: "%{count} गल्तीले यस %{model} लाई सुरक्षित गर्नबाट रोक्यो"
   helpers:
     select:

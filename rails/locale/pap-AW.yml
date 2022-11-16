@@ -63,41 +63,41 @@ pap-AW:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: mas o ménos 1 ora
+        one: mas o ménos %{count} ora
         other: mas o ménos %{count} ora
       about_x_months:
-        one: mas o ménos 1 luna
+        one: mas o ménos %{count} luna
         other: mas o ménos %{count} luna
       about_x_years:
-        one: mas o ménos 1 aña
+        one: mas o ménos %{count} aña
         other: mas o ménos %{count} aña
       almost_x_years:
-        one: kasi 1 aña
+        one: kasi %{count} aña
         other: kasi %{count} aña
       half_a_minute: mei minüt
       less_than_x_minutes:
-        one: ménos ku 1 minüt
+        one: ménos ku %{count} minüt
         other: ménos ku %{count} minüt
       less_than_x_seconds:
-        one: ménos ku 1 sekònde
+        one: ménos ku %{count} sekònde
         other: ménos ku %{count} sekònde
       over_x_years:
-        one: mas ku 1 aña
+        one: mas ku %{count} aña
         other: mas ku %{count} aña
       x_days:
-        one: 1 dia
+        one: "%{count} dia"
         other: '%{count} dia'
       x_minutes:
-        one: 1 minüt
+        one: "%{count} minüt"
         other: '%{count} minüt'
       x_months:
-        one: 1 luna
+        one: "%{count} luna"
         other: '%{count} luna'
       x_years:
-        one: 1 year
+        one: "%{count} year"
         other: "%{count} years"
       x_seconds:
-        one: 1 sekònde
+        one: "%{count} sekònde"
         other: '%{count} sekònde'
     prompts:
       day: Dia
@@ -130,19 +130,19 @@ pap-AW:
       required: must exist
       taken: ta usá kaba
       too_long:
-        one: ta muchu largu (máksimo ta 1 karakter)
+        one: ta muchu largu (máksimo ta %{count} karakter)
         other: ta muchu largu (máksimo ta %{count} karakter)
       too_short:
-        one: ta muchu kòrtiku (mínimo ta 1 karakter)
+        one: ta muchu kòrtiku (mínimo ta %{count} karakter)
         other: ta muchu kòrtiku (mínimo ta %{count} karakter)
       wrong_length:
-        one: su largura no ta korekto (mester ta 1 karakter)
+        one: su largura no ta korekto (mester ta %{count} karakter)
         other: su largura no ta korekto (mester ta %{count} karakter)
       other_than: "no por ta %{count}"
     template:
       body: 'E siguiente rúbrikanan ta duna problema:'
       header:
-        one: 1 fout a pone ku no por a warda e %{model} akí
+        one: "%{count} fout a pone ku no por a warda e %{model} akí"
         other: '%{count} fout a pone ku no por a save e %{model} akí'
   helpers:
     select:

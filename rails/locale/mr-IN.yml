@@ -66,10 +66,10 @@ mr-IN:
         one: सुमारे एक तास
         other: सुमारे %{count} तास
       about_x_months:
-        one: सुमारे 1 महीना
+        one: सुमारे %{count} महीना
         other: सुमारे %{count} महिना
       about_x_years:
-        one: सुमारे 1 वर्ष
+        one: सुमारे %{count} वर्ष
         other: सुमारे %{count} वर्ष
       almost_x_years:
         one: जवळजवळ एक वर्ष
