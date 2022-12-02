@@ -1,3 +1,8 @@
+## unreleased
+
+- Update following locales:
+  - Japanese (ja): Add `in` and `round_mode` keys #1059
+
 ## 7.0.6 (2022-11-08)
 
 - Add option to choose which modules (locales, pluralization, transliteration,
