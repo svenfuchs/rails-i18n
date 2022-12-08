@@ -100,6 +100,44 @@ de:
       x_years:
         one: ein Jahr
         other: "%{count} Jahre"
+    distance_in_words_ago:
+      about_x_hours:
+        one: vor etwa einer Stunde
+        other: vor etwa %{count} Stunden
+      about_x_months:
+        one: vor etwa einem Monat
+        other: vor etwa %{count} Monaten
+      about_x_years:
+        one: vor etwa einem Jahr
+        other: vor etwa %{count} Jahren
+      almost_x_years:
+        one: vor beinahe einem Jahr
+        other: vor beinahe %{count} Jahren
+      half_a_minute: vor einer halben Minute
+      less_than_x_seconds:
+        one: vor weniger als einer Sekunde
+        other: vor weniger als %{count} Sekunden
+      less_than_x_minutes:
+        one: vor weniger als einer Minute
+        other: vor weniger als %{count} Minuten
+      over_x_years:
+        one: vor über einem Jahr
+        other: vor über %{count} Jahren
+      x_seconds:
+        one: vor einer Sekunde
+        other: vor %{count} Sekunden
+      x_minutes:
+        one: vor einer Minute
+        other: vor %{count} Minuten
+      x_days:
+        one: vor einem Tag
+        other: vor %{count} Tagen
+      x_months:
+        one: vor einem Monat
+        other: vor %{count} Monaten
+      x_years:
+        one: vor einem Jahr
+        other: vor %{count} Jahren        
     prompts:
       second: Sekunde
       minute: Minute
