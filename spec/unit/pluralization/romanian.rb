@@ -9,7 +9,7 @@ shared_examples 'Romanian language' do
   end
 
   [0, "0", 2, "2", 3, 5, 8, 9, 10, 11, 15, 19, 101, 106, 112, 117,
-   119, 201].each do |count|
+   119, 201, nil].each do |count|
     it "detects that #{count.inspect} in category 'few'" do
       rule.call(count).should == :few
     end

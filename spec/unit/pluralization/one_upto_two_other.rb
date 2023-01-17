@@ -10,7 +10,7 @@ shared_examples 'one(upto 2)-other forms language' do
     end
   end
 
-  [2, "2", 2.1, 5, 11, 21, 22, 37, 40, 900.5].each do |count|
+  [2, "2", 2.1, 5, 11, 21, 22, 37, 40, 900.5, nil].each do |count|
     it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end

@@ -16,7 +16,8 @@ shared_examples 'one-two-other forms language' do
     end
   end
 
-  [0, 0.3, 1.2, 3, "3", 5, 10, 11, 21, 23, 31, 50, 81, 99, 100].each do |count|
+  [0, 0.3, 1.2, 3, "3", 5, 10, 11, 21, 23, 31, 50, 81, 99, 100,
+   nil].each do |count|
     it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end
