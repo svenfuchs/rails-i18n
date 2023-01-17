@@ -6,7 +6,7 @@ module RailsI18n
 
       def self.rule
         lambda do |n|
-          n ||= 0
+          n = n.to_d
           frac = (n.to_d % 1)
 
           if frac.nonzero?

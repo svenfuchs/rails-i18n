@@ -5,7 +5,10 @@ module RailsI18n
   module Pluralization
     module OneWithZeroOther
       def self.rule
-        lambda { |n| n == 0 || n == 1 ? :one : :other }
+        lambda do |n|
+          n = n.to_d
+          n == 0 || n == 1 ? :one : :other
+        end
       end
 
       def self.with_locale(locale)
