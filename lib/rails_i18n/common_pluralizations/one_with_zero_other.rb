@@ -6,8 +6,10 @@ module RailsI18n
     module OneWithZeroOther
       def self.rule
         lambda do |n|
-          n = n.to_d
-          n == 0 || n == 1 ? :one : :other
+          case n.to_d
+          when 0, 1 then :one
+          else :other
+          end
         end
       end
 
