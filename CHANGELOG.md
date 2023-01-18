@@ -2,6 +2,8 @@
 
 - Update following locales:
   - Japanese (ja): Add `in` and `round_mode` keys #1059
+  - English (en-ZA): ZAR currency format #1066
+  - Afrikaan (af): ZAR currency format #1066
 
 ## 7.0.6 (2022-11-08)
 
