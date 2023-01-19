@@ -17,7 +17,7 @@ shared_examples 'East Slavic' do
   end
 
   [0, "0", 5, "5", 8, 10, 11, 18, 20, 25, 27, 30, 35, 38, 40,
-   nil].each do |count|
+   nil, "abc"].each do |count|
     it "detects that #{count.inspect} in category 'many'" do
       rule.call(count).should == :many
     end

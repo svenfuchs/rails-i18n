@@ -4,7 +4,7 @@ shared_examples 'one(upto 2)-other forms language' do
     plural_keys.should include(:one, :other)
   end
 
-  [0, "0", 0.5, 1, "1", 1.2, 1.8].each do |count|
+  [0, "0", 0.5, 1, "1", 1.2, 1.8, "abc"].each do |count|
     it "detects that #{count.inspect} in category 'one'" do
       rule.call(count).should == :one
     end

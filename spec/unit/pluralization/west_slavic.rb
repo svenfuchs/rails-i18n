@@ -14,7 +14,7 @@ shared_examples 'West Slavic' do
     end
   end
 
-  [0, "0", 0.5, "0.5", 1.7, 2.1, 5, 7.8, 10, 875, nil].each do |count|
+  [0, "0", 0.5, "0.5", 1.7, 2.1, 5, 7.8, 10, 875, nil, "abc"].each do |count|
     it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end
