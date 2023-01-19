@@ -1,6 +1,6 @@
 ## unreleased
 
-- Non-numerics are considered as `other` #1065
+- Non-numerics counts are considered as `other` in all pluralizations #1067
 - Update following locales:
   - Japanese (ja): Add `in` and `round_mode` keys #1059
   - English (en-ZA): ZAR currency format #1066
