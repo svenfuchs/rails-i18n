@@ -3,7 +3,8 @@ module RailsI18n
     module Polish
       def self.rule
         lambda do |n|
-          n ||= 0
+          return :other unless n.is_a?(Numeric)
+
           mod10 = n % 10
           mod100 = n % 100
 
@@ -11,7 +12,7 @@ module RailsI18n
             :one
           elsif [2, 3, 4].include?(mod10) && ![12, 13, 14].include?(mod100)
             :few
-          elsif ([0, 1] + (5..9).to_a).include?(mod10) || [12, 13, 14].include?(mod100)
+          elsif [0, 1, 5, 6, 7, 8, 9].include?(mod10) || [12, 13, 14].include?(mod100)
             :many
           else
             :other

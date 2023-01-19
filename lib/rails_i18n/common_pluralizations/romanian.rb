@@ -3,15 +3,15 @@
 module RailsI18n
   module Pluralization
     module Romanian
-      FEW = (1..19).to_a
-      private_constant :FEW
+      FROM_1_TO_19 = (1..19).to_a.freeze
 
       def self.rule
         lambda do |n|
-          n = n.to_d
+          return :other unless n.is_a?(Numeric)
+
           if n == 1
             :one
-          elsif n == 0 || FEW.include?(n % 100)
+          elsif n == 0 || FROM_1_TO_19.include?(n % 100)
             :few
           else
             :other

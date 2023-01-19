@@ -6,7 +6,6 @@
 module RailsI18n
   module Pluralization
     module EastSlavic
-
       FROM_2_TO_4   = (2..4).to_a.freeze
       FROM_5_TO_9   = (5..9).to_a.freeze
       FROM_11_TO_14 = (11..14).to_a.freeze
@@ -14,7 +13,8 @@ module RailsI18n
 
       def self.rule
         lambda do |n|
-          n = n.to_d
+          return :other unless n.is_a?(Numeric)
+
           mod10 = n % 10
           mod100 = n % 100
 

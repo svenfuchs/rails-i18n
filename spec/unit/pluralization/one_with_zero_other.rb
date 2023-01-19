@@ -4,13 +4,13 @@ shared_examples 'one(with zero)-other forms language' do
     plural_keys.should include(:one, :other)
   end
 
-  [0, "0", 1, "1", nil, "abc"].each do |count|
+  [0, 1].each do |count|
     it "detects that #{count.inspect} in category 'one'" do
       rule.call(count).should == :one
     end
   end
 
-  [0.4, 1.2, 2, "2", 5, 11, 21, 22, 27, 99, 1_000].each do |count|
+  [0.4, 1.2, 2, 5, 11, 21, 22, 27, 99, 1_000, nil, "abc"].each do |count|
     it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end

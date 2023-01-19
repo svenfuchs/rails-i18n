@@ -6,7 +6,8 @@ module RailsI18n
 
       def self.rule
         lambda do |n|
-          n = n.to_d
+          return :other unless n.is_a?(Numeric)
+
           frac = (n.to_d % 1)
 
           if frac.nonzero?
