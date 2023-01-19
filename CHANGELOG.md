@@ -1,5 +1,6 @@
 ## unreleased
 
+- Transform to decimal to select pluralization rule #1065
 - Update following locales:
   - Japanese (ja): Add `in` and `round_mode` keys #1059
   - English (en-ZA): ZAR currency format #1066

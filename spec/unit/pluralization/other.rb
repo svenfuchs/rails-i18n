@@ -3,8 +3,8 @@ shared_examples 'other form language' do
     plural_keys.should == [:other]
   end
 
-  [0, 1, 1.2, 2, 5, 11, 21, 22, 27, 99, 1000].each do |count|
-    it "detects that #{count} in category 'other'" do
+  [0, 1, "1", 1.2, "1.2", 2, 5, 11, 21, 22, 27, 99, 1_000, nil].each do |count|
+    it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end
   end

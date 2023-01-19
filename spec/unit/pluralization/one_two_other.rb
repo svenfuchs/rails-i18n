@@ -4,16 +4,21 @@ shared_examples 'one-two-other forms language' do
     plural_keys.should include(:one, :two, :other)
   end
 
-  it "detects that 1 in category 'one'" do
-    rule.call(1).should == :one
+  [1, "1"].each do |count|
+    it "detects that #{count.inspect} in category 'one'" do
+      rule.call(count).should == :one
+    end
   end
 
-  it "detects that 2 in category 'two'" do
-    rule.call(2).should == :two
+  [2, "2"].each do |count|
+    it "detects that #{count.inspect} in category 'two'" do
+      rule.call(count).should == :two
+    end
   end
 
-  [0, 0.3, 1.2, 3, 5, 10, 11, 21, 23, 31, 50, 81, 99, 100].each do |count|
-    it "detects that #{count} in category 'other'" do
+  [0, 0.3, 1.2, 3, "3", 5, 10, 11, 21, 23, 31, 50, 81, 99, 100,
+   nil].each do |count|
+    it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end
   end

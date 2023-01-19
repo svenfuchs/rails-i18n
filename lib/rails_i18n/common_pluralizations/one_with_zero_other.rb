@@ -5,7 +5,12 @@ module RailsI18n
   module Pluralization
     module OneWithZeroOther
       def self.rule
-        lambda { |n| n == 0 || n == 1 ? :one : :other }
+        lambda do |n|
+          case n.to_d
+          when 0, 1 then :one
+          else :other
+          end
+        end
       end
 
       def self.with_locale(locale)

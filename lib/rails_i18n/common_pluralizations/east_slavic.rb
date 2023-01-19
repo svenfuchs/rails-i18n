@@ -14,7 +14,7 @@ module RailsI18n
 
       def self.rule
         lambda do |n|
-          n ||= 0
+          n = n.to_d
           mod10 = n % 10
           mod100 = n % 100
 
