@@ -5,6 +5,7 @@
   - Japanese (ja): Add `in` and `round_mode` keys #1059
   - English (en-ZA): ZAR currency format #1066
   - Afrikaan (af): ZAR currency format #1066
+  - German (de, de-DE, de-AT, de-CH): Use abbreviated months in the short time format #1062
 - Add ordinalization for German (de, de-AT, de-CH, de-DE)
 
 ## 7.0.6 (2022-11-08)

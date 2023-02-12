@@ -218,5 +218,5 @@ de-CH:
     formats:
       default: "%A, %d. %B %Y, %H:%M Uhr"
       long: "%A, %d. %B %Y, %H:%M Uhr"
-      short: "%d. %B, %H:%M Uhr"
+      short: "%d. %b, %H:%M Uhr"
     pm: nachmittags
