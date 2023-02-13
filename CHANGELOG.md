@@ -2,10 +2,11 @@
 
 - Transform to decimal to select pluralization rule #1065
 - Update following locales:
-  - Japanese (ja): Add `in` and `round_mode` keys #1059
-  - English (en-ZA): ZAR currency format #1066
   - Afrikaan (af): ZAR currency format #1066
+  - English (en-ZA): ZAR currency format #1066
   - German (de, de-DE, de-AT, de-CH): Use abbreviated months in the short time format #1062
+  - Japanese (ja): Add `in` and `round_mode` keys #1059
+  - Korean (ko): Fix typo in `equal_to` keys #1061
 - Add ordinalization for German (de, de-AT, de-CH, de-DE)
 
 ## 7.0.6 (2022-11-08)
