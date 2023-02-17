@@ -8,14 +8,15 @@ shared_examples 'Romanian language' do
     rule.call(1).should == :one
   end
 
-  [0, "0", 2, "2", 3, 5, 8, 9, 10, 11, 15, 19, 101, 106, 112, 117,
-   119, 201, nil].each do |count|
+  [0, 2, 3, 5, 8, 9, 10, 11, 15, 19, 101, 106, 112, 117, 119,
+   201].each do |count|
     it "detects that #{count.inspect} in category 'few'" do
       rule.call(count).should == :few
     end
   end
 
-  [0.4, "0.4", 1.7, 20, 21, 23, 34, 45, 66, 89, 100, 120, 138].each do |count|
+  [0.4, 1.7, 20, 21, 23, 34, 45, 66, 89, 100, 120, 138, nil,
+   "abc"].each do |count|
     it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end

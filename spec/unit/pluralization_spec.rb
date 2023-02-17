@@ -56,19 +56,20 @@ describe 'Pluralization rule for' do
     end
 
     [3, 4, 5, 6, 7, 8, 9, 10, 103, 105, 110].each do |count|
-      it "detects that #{count} in category 'few'" do
+      it "detects that #{count.inspect} in category 'few'" do
         rule.call(count).should == :few
       end
     end
 
     [11, 12, 20, 51, 67, 89, 91, 99, 111, 158, 199].each do |count|
-      it "detects that #{count} in category 'many'" do
+      it "detects that #{count.inspect} in category 'many'" do
         rule.call(count).should == :many
       end
     end
 
-    [0.3, 1.2, 2.2, 8.5, 11.68, 100, 101, 102, 200, 201, 202].each do |count|
-      it "detects that #{count} in category 'other'" do
+    [0.3, 1.2, 2.2, 8.5, 11.68, 100, 101, 102, 200, 201, 202, nil,
+     "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
     end
@@ -172,13 +173,14 @@ describe 'Pluralization rule for' do
     end
 
     [1, 21, 31, 41, 51, 61, 101].each do |count|
-      it "detects that #{count} in category 'one'" do
+      it "detects that #{count.inspect} in category 'one'" do
         rule.call(count).should == :one
       end
     end
 
-    [0, 0.4, 1.7, 2, 5, 10, 11, 20, 22, 37, 40, 111, 123].each do |count|
-      it "detects that #{count} in category 'other'" do
+    [0, 0.4, 1.7, 2, 5, 10, 11, 20, 22, 37, 40, 111, 123, nil,
+     "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
     end
@@ -193,19 +195,20 @@ describe 'Pluralization rule for' do
     end
 
     [1, 21, 31, 41, 51, 61, 101].each do |count|
-      it "detects that #{count} in category 'one'" do
+      it "detects that #{count.inspect} in category 'one'" do
         rule.call(count).should == :one
       end
     end
 
     [2, 3, 5, 8, 9, 22, 26, 29, 32, 34, 39, 109].each do |count|
-      it "detects that #{count} in category 'few'" do
+      it "detects that #{count.inspect} in category 'few'" do
         rule.call(count).should == :few
       end
     end
 
-    [0, 0.4, 1.7, 10, 11, 15, 20, 30, 40, 70, 111, 122.7].each do |count|
-      it "detects that #{count} in category 'other'" do
+    [0, 0.4, 1.7, 10, 11, 15, 20, 30, 40, 70, 111, 122.7, nil,
+     "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
     end
@@ -221,13 +224,14 @@ describe 'Pluralization rule for' do
     end
 
     [1, 21, 31, 41, 51, 61, 101, 111, 131].each do |count|
-      it "detects that #{count} in category 'one'" do
+      it "detects that #{count.inspect} in category 'one'" do
         rule.call(count).should == :one
       end
     end
 
-    [0, 0.4, 1.7, 2, 7, 10, 11, 15, 20, 27, 33, 46, 70, 122.7].each do |count|
-      it "detects that #{count} in category 'other'" do
+    [0, 0.4, 1.7, 2, 7, 10, 11, 15, 20, 27, 33, 46, 70, 122.7, nil,
+     "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
     end
@@ -262,19 +266,20 @@ describe 'Pluralization rule for' do
     end
 
     [2, 3, 4, 22, 23, 24, 92, 93, 94].each do |count|
-      it "detects that #{count} in category 'few'" do
+      it "detects that #{count.inspect} in category 'few'" do
         rule.call(count).should == :few
       end
     end
 
-    [0, 5, 8, 10, 11, 18, 20, 21, 25, 27, 30, 31, 35, 38, 40, 41, 114].each do |count|
-      it "detects that #{count} in category 'many'" do
+    [0, 5, 8, 10, 11, 18, 20, 21, 25, 27, 30, 31, 35, 38, 40, 41,
+     114].each do |count|
+      it "detects that #{count.inspect} in category 'many'" do
         rule.call(count).should == :many
       end
     end
 
-    [1.2, 3.7, 11.5, 20.8, 1004.3].each do |count|
-      it "detects that #{count} in category 'other'" do
+    [1.2, 3.7, 11.5, 20.8, 1_004.3, nil, "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
     end
@@ -289,7 +294,7 @@ describe 'Pluralization rule for' do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'East Slavic'
   end
-  
+
     describe 'Sardinian', :locale => :sc do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-other forms language'
@@ -304,20 +309,21 @@ describe 'Pluralization rule for' do
       plural_keys.should include(:one, :few, :other)
     end
 
-    [1, 21, 31, 41, 51, 61, 81, 101, 1031].each do |count|
-      it "detects that #{count} in category 'one'" do
+    [1, 21, 31, 41, 51, 61, 81, 101, 1_031].each do |count|
+      it "detects that #{count.inspect} in category 'one'" do
         rule.call(count).should == :one
       end
     end
 
-    [2, 3, 4, 22, 23, 24, 102, 1034].each do |count|
-      it "detects that #{count} in category 'few'" do
+    [2, 3, 4, 22, 23, 24, 102, 1_034].each do |count|
+      it "detects that #{count.inspect} in category 'few'" do
         rule.call(count).should == :few
       end
     end
 
-    [0.11, 0.13, 56.78, 11, 12, 13, 14, 15, 27, 100, 1012].each do |count|
-      it "detects that #{count} in category 'other'" do
+    [0.11, 0.13, 56.78, 11, 12, 13, 14, 15, 27, 100, 1_012, nil,
+     "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
     end
@@ -337,25 +343,26 @@ describe 'Pluralization rule for' do
     end
 
     [1, 101, 201, 301, 601].each do |count|
-      it "detects that #{count} in category 'one'" do
+      it "detects that #{count.inspect} in category 'one'" do
         rule.call(count).should == :one
       end
     end
 
     [2, 102, 302, 502].each do |count|
-      it "detects that #{count} in category 'two'" do
+      it "detects that #{count.inspect} in category 'two'" do
         rule.call(count).should == :two
       end
     end
 
     [3, 4, 103, 104, 203, 204, 403, 404].each do |count|
-      it "detects that #{count} in category 'few'" do
+      it "detects that #{count.inspect} in category 'few'" do
         rule.call(count).should == :few
       end
     end
 
-    [0, 1.2, 3.7, 5, 10, 11, 12, 13, 17, 20, 21, 23, 71, 84, 99, 100].each do |count|
-      it "detects that #{count} in category 'other'" do
+    [0, 1.2, 3.7, 5, 10, 11, 12, 13, 17, 20, 21, 23, 71, 84, 99, 100, nil,
+     "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
     end

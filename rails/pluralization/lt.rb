@@ -3,7 +3,8 @@ module RailsI18n
     module Lithuanian
       def self.rule
         lambda do |n|
-          n ||= 0
+          return :other unless n.is_a?(Numeric)
+
           mod10 = n % 10
           mod100 = n % 100
 

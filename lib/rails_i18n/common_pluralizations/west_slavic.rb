@@ -5,13 +5,10 @@ module RailsI18n
     module WestSlavic
       def self.rule
         lambda do |n|
-          n = n.to_d
-          if n == 1
-            :one
-          elsif [2, 3, 4].include?(n)
-            :few
-          else
-            :other
+          case n
+          when 1 then :one
+          when 2, 3, 4 then :few
+          else :other
           end
         end
       end

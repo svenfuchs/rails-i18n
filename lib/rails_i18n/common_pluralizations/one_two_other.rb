@@ -6,7 +6,7 @@ module RailsI18n
     module OneTwoOther
       def self.rule
         lambda do |n|
-          case n.to_d
+          case n
           when 1 then :one
           when 2 then :two
           else :other

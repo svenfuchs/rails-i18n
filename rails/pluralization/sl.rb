@@ -3,17 +3,13 @@ module RailsI18n
     module Slovenian
       def self.rule
         lambda do |n|
-          n ||= 0
-          mod100 = n % 100
+          return :other unless n.is_a?(Numeric)
 
-          if mod100 == 1
-            :one
-          elsif mod100 == 2
-            :two
-          elsif mod100 == 3 || mod100 == 4
-            :few
-          else
-            :other
+          case n % 100
+          when 1 then :one
+          when 2 then :two
+          when 3, 4 then :few
+          else :other
           end
         end
       end

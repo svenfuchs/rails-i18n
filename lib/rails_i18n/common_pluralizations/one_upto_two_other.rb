@@ -5,10 +5,7 @@ module RailsI18n
     module OneUptoTwoOther
       def self.rule
         lambda do |n|
-          return :other if n.nil?
-
-          n = n.to_d
-          n >= 0 && n < 2 ? :one : :other
+          n.is_a?(Numeric) && n >= 0 && n < 2 ? :one : :other
         end
       end
 
