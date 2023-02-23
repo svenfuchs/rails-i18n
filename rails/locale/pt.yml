@@ -17,7 +17,7 @@ pt:
     - sex
     - sáb
     abbr_month_names:
-    - 
+    -
     - jan
     - fev
     - mar
@@ -43,7 +43,7 @@ pt:
       long: "%d de %B de %Y"
       short: "%d de %B"
     month_names:
-    - 
+    -
     - janeiro
     - fevereiro
     - março
@@ -118,6 +118,7 @@ pt:
       exclusion: é reservado
       greater_than: tem de ser maior que %{count}
       greater_than_or_equal_to: tem de ser maior ou igual a %{count}
+      in: deve estar em %{count}
       inclusion: não está incluído na lista
       invalid: é inválido
       less_than: tem de ser menor que %{count}
