@@ -7,6 +7,8 @@
   - German (de, de-DE, de-AT, de-CH): Use abbreviated months in the short time format #1062
   - Japanese (ja): Add `in` and `round_mode` keys #1059
   - Korean (ko): Fix typo in `equal_to` keys #1061
+  - Portuguese (pt, pt-BR): add translation for `errors.messages.in` #1071
+  - Spanish (es): add translation for `errors.messages.in` #1071
 - Add ordinalization for German (de, de-AT, de-CH, de-DE)
 
 ## 7.0.6 (2022-11-08)
