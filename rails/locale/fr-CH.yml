@@ -74,7 +74,7 @@ fr-CH:
         one: environ un an
         other: environ %{count} ans
       almost_x_years:
-        one: presqu'un an
+        one: presque un an
         other: presque %{count} ans
       half_a_minute: une demi-minute
       less_than_x_seconds:
