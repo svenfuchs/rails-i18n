@@ -295,6 +295,39 @@ describe 'Pluralization rule for' do
     it_behaves_like 'East Slavic'
   end
 
+  describe 'ScottishGaelic', :locale => :gd do
+    it_behaves_like 'an ordinary pluralization rule'
+
+    it 'has "one", "two", "few" and "other" plural keys' do
+      plural_keys.size.should == 4
+      plural_keys.should include(:one, :two, :few, :other)
+    end
+
+    [1, 11, 1.2, 11.99].each do |count|
+      it "detects that #{count.inspect} in category 'one'" do
+        rule.call(count).should == :one
+      end
+    end
+
+    [2, 12, 2.2, 12.99].each do |count|
+      it "detects that #{count.inspect} in category 'two'" do
+        rule.call(count).should == :two
+      end
+    end
+
+    [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 19.5].each do |count|
+      it "detects that #{count.inspect} in category 'few'" do
+        rule.call(count).should == :few
+      end
+    end
+
+    [0, 20, 21, 23, 100, 20.8, 1_004.3, nil, "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
+        rule.call(count).should == :other
+      end
+    end
+  end
+
     describe 'Sardinian', :locale => :sc do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one-other forms language'
