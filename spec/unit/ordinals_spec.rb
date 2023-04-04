@@ -34,4 +34,15 @@ describe 'Ordinals for' do
       end
     end
   end
+
+  describe 'ScottishGaelic' do
+    it 'uses the default rules' do
+      I18n.with_locale(:gd) do
+        ActiveSupport::Inflector.ordinalize(1).should == "1ᵈ"
+        ActiveSupport::Inflector.ordinalize(2).should == "2ⁿᵃ"
+        ActiveSupport::Inflector.ordinalize(3).should == "3ˢ"
+        ActiveSupport::Inflector.ordinalize(4).should == "4ᵐʰ"
+      end
+    end
+  end
 end
