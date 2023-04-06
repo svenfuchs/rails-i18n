@@ -3,11 +3,12 @@
     number: {
       nth: {
         ordinals: -> (_key, number:, **_options) {
-          if number.to_i.abs == 1
+          case number.to_i.abs
+          when 1
             'ᵈ'
-          elsif number.to_i.abs == 2
+          when 2
             'ⁿᵃ'
-          elsif number.to_i.abs == 3
+          when 3
             'ˢ'
           else
             'ᵐʰ'
