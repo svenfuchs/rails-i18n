@@ -25,5 +25,5 @@ end
 { :gd => {
     :'i18n' => {
       :plural => {
-        :keys => [:one, :few, :many, :other],
+        :keys => [:one, :two, :few, :other],
         :rule => RailsI18n::Pluralization::ScottishGaelic.rule }}}}
