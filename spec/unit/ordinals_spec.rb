@@ -7,7 +7,7 @@ describe 'Ordinals for' do
   let(:config) { double :config, eager_load_namespaces: [], i18n: I18n, rails_i18n: RailsI18n }
 
   before do
-    I18n.available_locales = %w[fr en fr-CA fr-CH fr-FR]
+    I18n.available_locales = %w[fr en fr-CA fr-CH fr-FR gd]
 
     RailsI18n::Railtie.initializers.each { |init| init.run(app) }
     I18n.backend.reload!
@@ -36,7 +36,7 @@ describe 'Ordinals for' do
   end
 
   describe 'ScottishGaelic' do
-    it 'uses the default rules' do
+    it 'uses the custom rules' do
       I18n.with_locale(:gd) do
         ActiveSupport::Inflector.ordinalize(1).should == "1ᵈ"
         ActiveSupport::Inflector.ordinalize(2).should == "2ⁿᵃ"
