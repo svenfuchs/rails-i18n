@@ -5,7 +5,7 @@ module RailsI18n
         lambda do |n|
           return :other unless n.is_a?(Numeric)
 
-          floorn = n.floor()
+          floorn = n.floor
 
           if floorn == 1 || floorn == 11
             :one
