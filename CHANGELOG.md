@@ -12,6 +12,7 @@
   - Spanish (es): add translation for `errors.messages.in` #1071
   - French (fr, fr-CA, fr-CH, fr-FR): fix typo on 'almost_x_years: one' #1074
 - Add ordinalization for German (de, de-AT, de-CH, de-DE)
+- Remove keys that are present twice from Latvian (lv), Albanian (sq) #1080
 
 ## 7.0.6 (2022-11-08)
 
