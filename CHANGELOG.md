@@ -12,6 +12,7 @@
   - Russian (ru): fix some errors in 'datetime' section, add `errors.messages.in` and `number.format.round_mode` keys #1077
   - Spanish (es): add translation for `errors.messages.in` #1071
   - French (fr, fr-CA, fr-CH, fr-FR): fix typo on 'almost_x_years: one' #1074
+  - Indonesian (id): Remove duplicate spaces in `id.datetime.distance_in_words.less_than_x_minutes.other` #1079
   - Romanian (ro): Correction of Saturday in Romanian #1078
 - Add ordinalization for German (de, de-AT, de-CH, de-DE)
 
