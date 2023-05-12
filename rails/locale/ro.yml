@@ -34,7 +34,7 @@ ro:
     - miercuri
     - joi
     - vineri
-    - sâmbată
+    - sâmbătă
     formats:
       default: "%d-%m-%Y"
       long: "%d %B %Y"
