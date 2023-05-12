@@ -83,7 +83,7 @@ id:
       less_than_x_minutes:
         zero: kurang dari 1 menit
         one: kurang dari %{count} menit
-        other: kurang dari  %{count} menit
+        other: kurang dari %{count} menit
       over_x_years:
         one: lebih dari setahun
         other: lebih dari %{count} tahun

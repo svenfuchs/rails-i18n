@@ -8,11 +8,15 @@
   - Japanese (ja): Add `in` and `round_mode` keys #1059
   - Korean (ko): Fix typo in `equal_to` keys #1061
   - Portuguese (pt, pt-BR): add translation for `errors.messages.in` #1071
+  - Scottish Gaelic (gd): Add locale
   - Russian (ru): fix some errors in 'datetime' section, add `errors.messages.in` and `number.format.round_mode` keys #1077
   - Spanish (es): add translation for `errors.messages.in` #1071
   - French (fr, fr-CA, fr-CH, fr-FR): fix typo on 'almost_x_years: one' #1074
+  - Indonesian (id): Remove duplicate spaces in `id.datetime.distance_in_words.less_than_x_minutes.other` #1079
+  - Romanian (ro): Correction of Saturday in Romanian #1078
   - Croatian (hr): use lowercase for month and weekday names #1081
 - Add ordinalization for German (de, de-AT, de-CH, de-DE)
+- Remove keys that are present twice from Latvian (lv), Albanian (sq) #1080
 
 ## 7.0.6 (2022-11-08)
 
