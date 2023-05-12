@@ -9,53 +9,53 @@ hr:
           has_many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
   date:
     abbr_day_names:
-    - Ned
-    - Pon
-    - Uto
-    - Sri
-    - Čet
-    - Pet
-    - Sub
+    - ned
+    - pon
+    - uto
+    - sri
+    - čet
+    - pet
+    - sub
     abbr_month_names:
-    - 
-    - Sij
-    - Veǉ
-    - Ožu
-    - Tra
-    - Svi
-    - Lip
-    - Srp
-    - Kol
-    - Ruj
-    - Lis
-    - Stu
-    - Pro
+    -
+    - sij
+    - veǉ
+    - ožu
+    - tra
+    - svi
+    - lip
+    - srp
+    - kol
+    - ruj
+    - lis
+    - stu
+    - pro
     day_names:
-    - Nedjelja
-    - Ponedjeljak
-    - Utorak
-    - Srijeda
-    - Četvrtak
-    - Petak
-    - Subota
+    - nedjelja
+    - ponedjeljak
+    - utorak
+    - srijeda
+    - četvrtak
+    - petak
+    - subota
     formats:
       default: "%d.%m.%Y."
       long: "%e. %B %Y."
       short: "%e.%-m."
     month_names:
-    - 
-    - Siječanj
-    - Veljača
-    - Ožujak
-    - Travanj
-    - Svibanj
-    - Lipanj
-    - Srpanj
-    - Kolovoz
-    - Rujan
-    - Listopad
-    - Studeni
-    - Prosinac
+    -
+    - siječanj
+    - veljača
+    - ožujak
+    - travanj
+    - svibanj
+    - lipanj
+    - srpanj
+    - kolovoz
+    - rujan
+    - listopad
+    - studeni
+    - prosinac
     order:
     - :day
     - :month
@@ -203,11 +203,11 @@ hr:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Milijarda
-          million: Milijun
-          quadrillion: Bilijarda
-          thousand: Tisuća
-          trillion: Bilijun
+          billion: milijarda
+          million: milijun
+          quadrillion: bilijarda
+          thousand: tisuća
+          trillion: bilijun
           unit: ''
       format:
         delimiter: ''
