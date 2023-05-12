@@ -8,6 +8,7 @@
   - Japanese (ja): Add `in` and `round_mode` keys #1059
   - Korean (ko): Fix typo in `equal_to` keys #1061
   - Portuguese (pt, pt-BR): add translation for `errors.messages.in` #1071
+  - Scottish Gaelic (gd): Add locale
   - Russian (ru): fix some errors in 'datetime' section, add `errors.messages.in` and `number.format.round_mode` keys #1077
   - Spanish (es): add translation for `errors.messages.in` #1071
   - French (fr, fr-CA, fr-CH, fr-FR): fix typo on 'almost_x_years: one' #1074
