@@ -15,6 +15,7 @@
   - Indonesian (id): Remove duplicate spaces in `id.datetime.distance_in_words.less_than_x_minutes.other` #1079
   - Romanian (ro): Correction of Saturday in Romanian #1078
 - Add ordinalization for German (de, de-AT, de-CH, de-DE)
+- Remove keys that are present twice from Latvian (lv), Albanian (sq) #1080
 
 ## 7.0.6 (2022-11-08)
 

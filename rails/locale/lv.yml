@@ -17,7 +17,7 @@ lv:
     - Pk.
     - S.
     abbr_month_names:
-    - 
+    -
     - Janv
     - Febr
     - Marts
@@ -107,7 +107,6 @@ lv:
         zero: "%{count} mēneši"
         one: "%{count} mēnesis"
         other: "%{count} mēneši"
-        zero: 0 gadi
     prompts:
       second: sekunde
       minute: minūte
