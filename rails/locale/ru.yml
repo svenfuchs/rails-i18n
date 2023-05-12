@@ -142,6 +142,7 @@ ru:
       exclusion: имеет зарезервированное значение
       greater_than: может иметь значение большее %{count}
       greater_than_or_equal_to: может иметь значение большее или равное %{count}
+      in: должно быть в диапазоне %{count}
       inclusion: имеет непредусмотренное значение
       invalid: имеет неверное значение
       less_than: может иметь значение меньшее чем %{count}
@@ -196,6 +197,7 @@ ru:
     format:
       delimiter: " "
       precision: 3
+      round_mode: default
       separator: ","
       significant: false
       strip_insignificant_zeros: false
