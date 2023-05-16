@@ -5,7 +5,7 @@ nb:
       messages:
         record_invalid: 'Det oppstod feil: %{errors}'
         restrict_dependent_destroy:
-          has_one: Kan ikke slette registreringen, fordi %{count} %{record} avhenger av denne.
+          has_one: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
           has_many: Kan ikke slette registreringen, fordi %{record} avhenger av denne.
   date:
     abbr_day_names:
@@ -17,7 +17,7 @@ nb:
     - fre
     - lør
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -43,7 +43,7 @@ nb:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    - 
+    -
     - januar
     - februar
     - mars
