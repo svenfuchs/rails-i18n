@@ -1,3 +1,8 @@
+## unreleased
+
+- Update following locales:
+  - Norwegian (nb): Fix extra `%{count}` interpolation in `has_one` key #1082
+
 ## 7.0.7 (2022-05-12)
 
 - Non-numerics counts are considered as `other` in all pluralizations #1067
