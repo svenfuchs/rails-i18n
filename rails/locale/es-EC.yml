@@ -132,13 +132,13 @@ es-EC:
       required: debe existir
       taken: ya está en uso
       too_long:
-        one: es demasiado largo (máximo %{count} caracter)
+        one: es demasiado largo (máximo %{count} carácter)
         other: es demasiado largo (máximo %{count} caracteres)
       too_short:
-        one: es demasiado corto (mínimo %{count} caracter)
+        one: es demasiado corto (mínimo %{count} carácter)
         other: es demasiado corto (mínimo %{count} caracteres)
       wrong_length:
-        one: no tiene la longitud correcta (debe ser de %{count} caracter)
+        one: no tiene la longitud correcta (debe ser de %{count} carácter)
         other: no tiene la longitud correcta (debe ser de %{count} caracteres)
     template:
       body: 'Revise que los siguientes campos sean válidos:'

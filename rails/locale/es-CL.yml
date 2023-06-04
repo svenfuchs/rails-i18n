@@ -131,13 +131,13 @@ es-CL:
       required: debe existir
       taken: ya está en uso
       too_long:
-        one: es demasiado largo (%{count} caracter máximo)
+        one: es demasiado largo (%{count} carácter máximo)
         other: es demasiado largo (%{count} caracteres máximo)
       too_short:
-        one: es demasiado corto (%{count} caracter mínimo)
+        one: es demasiado corto (%{count} carácter mínimo)
         other: es demasiado corto (%{count} caracteres mínimo)
       wrong_length:
-        one: no tiene la longitud correcta (%{count} caracter exacto)
+        one: no tiene la longitud correcta (%{count} carácter exacto)
         other: no tiene la longitud correcta (%{count} caracteres exactos)
     template:
       body: 'Se encontraron problemas con los siguientes campos:'
