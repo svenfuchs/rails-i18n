@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'i18n'
+require 'date'
 
 I18n.enforce_available_locales = false
 
@@ -24,6 +25,7 @@ class KeyStructure
 
       I18n.locale = locale.to_sym
       translations = flatten_hash(I18n.backend.translations[:en])
+      translations.delete('i18n.plural.rule')
       pluralizations = find_pluralizations(I18n.backend.translations[:en])
       translations.keys.sort.each do |key|
         begin
@@ -38,7 +40,7 @@ class KeyStructure
 
           if pluralizations.has_key?(key)
             [0, 1, 2, 3, 5, 6, 10, 11, 100, 1000000, 10.2].each do |count|
-              I18n.t key, :count => count, :raise => true
+              I18n.t key, :count => count, :model => 'model', :raise => true
             end
           end
         rescue I18n::InvalidPluralizationData => e
