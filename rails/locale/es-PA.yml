@@ -132,13 +132,13 @@ es-PA:
       required: debe existir
       taken: ya está en uso
       too_long:
-        one: es demasiado largo(a) (máximo %{count} caracter)
+        one: es demasiado largo(a) (máximo %{count} carácter)
         other: es demasiado largo(a) (máximo %{count} caracteres)
       too_short:
-        one: es demasiado corto(a) (mínimo %{count} caracter)
+        one: es demasiado corto(a) (mínimo %{count} carácter)
         other: es demasiado corto(a) (mínimo %{count} caracteres)
       wrong_length:
-        one: no tiene la longitud correcta (debe ser de %{count} caracter)
+        one: no tiene la longitud correcta (debe ser de %{count} carácter)
         other: no tiene la longitud correcta (debe ser de %{count} caracteres)
     template:
       body: 'Revise que los siguientes campos sean válidos:'
