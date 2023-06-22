@@ -3,6 +3,7 @@
 - Update following locales:
   - Norwegian (nb): Fix extra `%{count}` interpolation in `has_one` key #1082
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-NI es-PA es-PE es-US es-VE): Fix typo in word _carácter_ #1090
+  - Ukranian: Use hryvnia symbol as a currency unit #1093
 
 ## 7.0.7 (2022-05-12)
 
