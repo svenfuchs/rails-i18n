@@ -17,7 +17,7 @@ es-VE:
     - vie
     - sáb
     abbr_month_names:
-    - 
+    -
     - ene
     - feb
     - mar
@@ -43,7 +43,7 @@ es-VE:
       long: "%A, %d de %B de %Y"
       short: "%d de %b"
     month_names:
-    - 
+    -
     - enero
     - febrero
     - marzo
@@ -118,6 +118,7 @@ es-VE:
       exclusion: está reservado
       greater_than: debe ser mayor que %{count}
       greater_than_or_equal_to: debe ser mayor o igual que %{count}
+      in: debe estar en %{count}
       inclusion: no está incluido en la lista
       invalid: no es válido
       less_than: debe ser menor que %{count}
