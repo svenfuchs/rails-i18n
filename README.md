@@ -92,7 +92,7 @@ af, ar, az, be, bg, bn, bs, ca, cs, csb, da, de, de-AT, de-CH, de-DE, dsb, dz, e
 
 **Complete locales:**
 
-da, de, de-AT, de-CH, de-DE, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, et, fa, fr, fr-CA, fr-CH, fr-FR, fy, id, it, ja, ka, ml, nb, nl, nn, pt, pt-BR, sv, sv-SE, tr, zh-CN, zh-HK, zh-TW, zh-YUE, uk
+en, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, fr, fr-CA, fr-CH, fr-FR, gd, ja, ru, sc
 
 **Locales with missing pluralization rules**
 
