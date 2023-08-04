@@ -17,7 +17,7 @@ en-US:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -43,7 +43,7 @@ en-US:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -118,6 +118,7 @@ en-US:
       exclusion: is reserved
       greater_than: must be greater than %{count}
       greater_than_or_equal_to: must be greater than or equal to %{count}
+      in: must be in %{count}
       inclusion: is not included in the list
       invalid: is invalid
       less_than: must be less than %{count}
@@ -164,6 +165,7 @@ en-US:
     format:
       delimiter: ","
       precision: 3
+      round_mode: default
       separator: "."
       significant: false
       strip_insignificant_zeros: false
