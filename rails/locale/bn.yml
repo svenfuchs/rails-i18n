@@ -64,6 +64,9 @@ bn:
       about_x_years:
         one: প্রায় ১ বছর
         other: প্রায় %{count} বছর
+      almost_x_years:
+        one: প্রায় ১ বছর
+        other: প্রায় %{count} বছর
       half_a_minute: অর্ধ মিনিট
       less_than_x_seconds:
         one: '১ সেকেন্ডর কম'
