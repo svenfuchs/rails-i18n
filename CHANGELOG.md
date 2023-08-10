@@ -5,6 +5,7 @@
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-NI es-PA es-PE es-US es-VE): Fix typo in word _carácter_ #1090
   - Ukranian: Use hryvnia symbol as a currency unit #1093
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-ES es-MX es-NI es-PA es-PE es-US es-VE): Normalize and add missing keys #1089
+  - Bengali (bn): Add missing keys #1094
 
 ## 7.0.7 (2022-05-12)
 
