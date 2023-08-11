@@ -17,7 +17,7 @@ ko:
     - 금
     - 토
     abbr_month_names:
-    - 
+    -
     - 1월
     - 2월
     - 3월
@@ -43,7 +43,7 @@ ko:
       long: "%Y년 %m월 %d일"
       short: "%m월 %d일"
     month_names:
-    - 
+    -
     - 1월
     - 2월
     - 3월
@@ -94,6 +94,7 @@ ko:
       exclusion: "%{attribute}은(는) 이미 예약되어 있는 값입니다"
       greater_than: "%{attribute}은(는) %{count}보다 커야 합니다"
       greater_than_or_equal_to: "%{attribute}은(는) %{count}보다 크거나 같아야 합니다"
+      in: "%{attribute}은(는) %{count}범위 안에 있어야 합니다"
       inclusion: "%{attribute}은(는) 목록에 포함되어 있는 값이 아닙니다"
       invalid: "%{attribute}은(는) 올바르지 않은 값입니다"
       less_than: "%{attribute}은(는) %{count}보다 작아야 합니다"
@@ -132,6 +133,7 @@ ko:
     format:
       delimiter: ","
       precision: 3
+      round_mode: default
       separator: "."
       significant: false
       strip_insignificant_zeros: false
