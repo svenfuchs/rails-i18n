@@ -8,7 +8,7 @@
   - English (en-US): Normalize and add missing keys (`in` and `round_mode`) #1095
   - Korean (ko): Add missing keys (`in` and `round_mode`) #1097
   - Norwegian (nb): Fix extra `%{count}` interpolation in `has_one` key #1082
-  - Portuguese (pt pt-BR): Add missing keys (`round_mode) #1100
+  - Portuguese (pt pt-BR): Add missing keys (`round_mode`) #1100
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-NI es-PA es-PE es-US es-VE): Fix typo in word _carácter_ #1090
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-ES es-MX es-NI es-PA es-PE es-US es-VE): Normalize and add missing keys (`in`) #1089
   - Ukranian: Use hryvnia symbol as a currency unit #1093
