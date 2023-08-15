@@ -1,14 +1,17 @@
 ## unreleased
 
+
+## 7.0.8 (2022-08-15)
+
 - Update following locales:
-  - Norwegian (nb): Fix extra `%{count}` interpolation in `has_one` key #1082
-  - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-NI es-PA es-PE es-US es-VE): Fix typo in word _carácter_ #1090
-  - Ukranian: Use hryvnia symbol as a currency unit #1093
-  - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-ES es-MX es-NI es-PA es-PE es-US es-VE): Normalize and add missing keys #1089
-  - Bengali (bn): Add missing keys #1094
+  - Bengali (bn): Add missing keys (`almost_x_years`) #1094
+  - English (en-US): Normalize and add missing keys (`in` and `round_mode`) #1095
   - Korean (ko): Add missing keys (`in` and `round_mode`) #1097
-  - English (en-US): Normalize and add missing keys #1095
-  - Portuguese (pt pt-BR): Add missing keys #1100
+  - Norwegian (nb): Fix extra `%{count}` interpolation in `has_one` key #1082
+  - Portuguese (pt pt-BR): Add missing keys (`round_mode) #1100
+  - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-NI es-PA es-PE es-US es-VE): Fix typo in word _carácter_ #1090
+  - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-ES es-MX es-NI es-PA es-PE es-US es-VE): Normalize and add missing keys (`in`) #1089
+  - Ukranian: Use hryvnia symbol as a currency unit #1093
 
 ## 7.0.7 (2022-05-12)
 
