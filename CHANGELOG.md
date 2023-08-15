@@ -1,7 +1,7 @@
 ## unreleased
 
 
-## 7.0.8 (2022-08-15)
+## 7.0.8 (2023-08-15)
 
 - Update following locales:
   - Bengali (bn): Add missing keys (`almost_x_years`) #1094
@@ -13,7 +13,7 @@
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-ES es-MX es-NI es-PA es-PE es-US es-VE): Normalize and add missing keys (`in`) #1089
   - Ukranian: Use hryvnia symbol as a currency unit #1093
 
-## 7.0.7 (2022-05-12)
+## 7.0.7 (2023-05-12)
 
 - Non-numerics counts are considered as `other` in all pluralizations #1067
 - Update following locales:
