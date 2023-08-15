@@ -8,6 +8,7 @@
   - Bengali (bn): Add missing keys #1094
   - Korean (ko): Add missing keys (`in` and `round_mode`) #1097
   - English (en-US): Normalize and add missing keys #1095
+  - Portuguese (pt pt-BR): Add missing keys #1100
 
 ## 7.0.7 (2022-05-12)
 
