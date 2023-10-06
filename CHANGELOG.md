@@ -1,5 +1,7 @@
 ## unreleased
 
+- Add following locales:
+  - Welsh (cy)
 
 ## 7.0.8 (2023-08-15)
 
