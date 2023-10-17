@@ -201,9 +201,9 @@ ro:
       two_words_connector: " și "
       words_connector: ", "
   time:
-    am: ''
+    am: am
     formats:
       default: "%a %d %b %Y, %H:%M:%S %z"
       long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: ''
+    pm: pm

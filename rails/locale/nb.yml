@@ -213,9 +213,9 @@ nb:
       two_words_connector: " og "
       words_connector: ", "
   time:
-    am: ''
+    am: am
     formats:
       default: "%A, %e. %B %Y, %H:%M"
       long: "%A, %e. %B %Y, %H:%M"
       short: "%e. %B, %H:%M"
-    pm: ''
+    pm: pm
