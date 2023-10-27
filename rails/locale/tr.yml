@@ -9,15 +9,15 @@ tr:
           has_many: Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi
   date:
     abbr_day_names:
-    - Pzr
+    - Paz
     - Pzt
     - Sal
-    - Çrş
-    - Prş
+    - Çar
+    - Per
     - Cum
-    - Cts
+    - Cmt
     abbr_month_names:
-    - 
+    -
     - Oca
     - Şub
     - Mar
@@ -43,7 +43,7 @@ tr:
       long: "%e %B %Y, %A"
       short: "%e %b"
     month_names:
-    - 
+    -
     - Ocak
     - Şubat
     - Mart
@@ -155,7 +155,7 @@ tr:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%u%n"
         precision: 2
         separator: ","
         significant: false
@@ -191,10 +191,11 @@ tr:
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: "."
         format: "%%n"
     precision:
       format:

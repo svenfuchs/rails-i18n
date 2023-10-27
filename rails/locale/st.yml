@@ -10,52 +10,52 @@ st:
   date:
     abbr_day_names:
     - Son
-    - ٰMan
-    - Labob
-    - Labor
-    - Labon
-    - Laboh
+    - Mma
+    - Bed
+    - Rar
+    - Ne
+    - Hla
     - Moq
     abbr_month_names:
-    - 
+    -
     - Phe
-    - Hlako
-    - Tlha
-    - ٰMes
-    - Motš
-    - Phupt
-    - Phup
+    - Kol
+    - Ube
+    - Mme
+    - Mot
+    - Jan
+    - Upu
     - Pha
-    - Loe
+    - Leo
     - Mph
-    - Pul
-    - Tši
+    - Pun
+    - Tsh
     day_names:
     - Sontaha
-    - ٰMantaha
-    - Labobeli
-    - Laboraro
+    - Mmantaha
+    - Labobedi
+    - Laboraru
     - Labone
-    - Labohlano
+    - Labohlane
     - Moqebelo
     formats:
       default: "%Y-%m-%d"
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
-    - Pherekhong
+    -
+    - Phesekgong
     - Hlakola
     - Hlakubele
-    - ٰMesa
-    - Motšeanong
-    - Phuptjane
+    - Mmese
+    - Motsheanong
+    - Phupjane
     - Phupu
-    - Phato
-    - Loetse
+    - Phata
+    - Leotshe
     - Mphalane
-    - Pulungoana
-    - Tšitoe
+    - Pundungwane
+    - Tshitwe
     order:
     - :year
     - :month
@@ -154,17 +154,17 @@ st:
   number:
     currency:
       format:
-        delimiter: ","
+        delimiter: " "
         format: "%u%n"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: M
     format:
-      delimiter: ","
+      delimiter: " "
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -196,15 +196,15 @@ st:
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: " "
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", le "
-      two_words_connector: " le "
+      last_word_connector: ", "
+      two_words_connector: ", "
       words_connector: ", "
   time:
     am: am

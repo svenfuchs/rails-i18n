@@ -9,22 +9,22 @@ ru:
           has_many: 'Невозможно удалить запись, так как существуют зависимости: %{record}'
   date:
     abbr_day_names:
-    - Вс
-    - Пн
-    - Вт
-    - Ср
-    - Чт
-    - Пт
-    - Сб
+    - вс
+    - пн
+    - вт
+    - ср
+    - чт
+    - пт
+    - сб
     abbr_month_names:
-    - 
+    -
     - янв.
     - февр.
-    - марта
+    - мар.
     - апр.
     - мая
-    - июня
-    - июля
+    - июн.
+    - июл.
     - авг.
     - сент.
     - окт.
@@ -43,7 +43,7 @@ ru:
       long: "%-d %B %Y"
       short: "%-d %b"
     month_names:
-    - 
+    -
     - января
     - февраля
     - марта
@@ -187,15 +187,15 @@ ru:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: руб.
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       round_mode: default
       separator: ","
@@ -206,30 +206,30 @@ ru:
         format: "%n %u"
         units:
           billion:
-            one: миллиард
+            one: Миллиард
             few: миллиардов
             many: миллиардов
-            other: миллиардов
+            other: Миллиарда
           million:
-            one: миллион
+            one: Миллион
             few: миллионов
             many: миллионов
-            other: миллионов
+            other: Миллиона
           quadrillion:
             one: квадриллион
             few: квадриллионов
             many: квадриллионов
             other: квадриллионов
           thousand:
-            one: тысяча
+            one: Тысяча
             few: тысяч
             many: тысяч
-            other: тысяч
+            other: Тысячи
           trillion:
-            one: триллион
+            one: Триллион
             few: триллионов
             many: триллионов
-            other: триллионов
+            other: Триллиона
           unit: ''
       format:
         delimiter: ''
@@ -240,10 +240,10 @@ ru:
         format: "%n %u"
         units:
           byte:
-            one: байт
+            one: Байт
             few: байта
             many: байт
-            other: байта
+            other: Байта
           eb: ЭБ
           gb: ГБ
           kb: КБ
@@ -252,8 +252,8 @@ ru:
           tb: ТБ
     percentage:
       format:
-        delimiter: ''
-        format: "%n%"
+        delimiter: " "
+        format: "%n %"
     precision:
       format:
         delimiter: ''

@@ -5,8 +5,10 @@ it:
       messages:
         record_invalid: 'Validazione fallita: %{errors}'
         restrict_dependent_destroy:
-          has_one: Il record non può essere cancellato perchè esiste un %{record} dipendente
-          has_many: Il record non può essere cancellato perchè esistono %{record} dipendenti
+          has_one: Il record non può essere cancellato perchè esiste un %{record}
+            dipendente
+          has_many: Il record non può essere cancellato perchè esistono %{record}
+            dipendenti
   date:
     abbr_day_names:
     - dom
@@ -17,7 +19,7 @@ it:
     - ven
     - sab
     abbr_month_names:
-    - 
+    -
     - gen
     - feb
     - mar
@@ -43,7 +45,7 @@ it:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - gennaio
     - febbraio
     - marzo
@@ -100,7 +102,7 @@ it:
         one: "%{count} anno"
         other: "%{count} anni"
     prompts:
-      second: Secondi
+      second: Secondo
       minute: Minuto
       hour: Ora
       day: Giorno
@@ -155,7 +157,7 @@ it:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -171,11 +173,19 @@ it:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Miliardi
-          million: Milioni
+          billion:
+            one: Miliardo
+            other: Miliardi
+          million:
+            one: Milione
+            other: Milioni
           quadrillion: Biliardi
-          thousand: Mila
-          trillion: Bilioni
+          thousand:
+            one: Mille
+            other: Mila
+          trillion:
+            one: Mille miliardi
+            other: Mila miliardi
           unit: ''
       format:
         delimiter: ''
@@ -196,7 +206,7 @@ it:
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: "."
         format: "%n%"
     precision:
       format:

@@ -14,7 +14,7 @@ ms:
     - Jum
     - Sab
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mac
@@ -40,9 +40,9 @@ ms:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - Januari
-    - Febuari
+    - Februari
     - Mac
     - April
     - Mei
@@ -161,7 +161,7 @@ ms:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Ribu Juta
+          billion: Bilion
           million: Juta
           quadrillion: Juta-juta
           thousand: Ribu
@@ -181,16 +181,18 @@ ms:
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: ","
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", dan "
+      last_word_connector: " dan "
       two_words_connector: " dan "
       words_connector: ", "
   time:

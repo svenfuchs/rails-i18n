@@ -2,27 +2,27 @@
 bn:
   date:
     abbr_day_names:
-    - রবিবার
-    - সোমবার
-    - মঙ্গলবার
-    - বুধবার
-    - বৃহস্পতিবার
-    - শুক্রবার
-    - শনিবার
+    - রবি
+    - সোম
+    - মঙ্গল
+    - বুধ
+    - বৃহস্পতি
+    - শুক্র
+    - শনি
     abbr_month_names:
-    - 
-    - জানুয়ারি
-    - ফেব্রুয়ারি
+    -
+    - জানু
+    - ফেব
     - মার্চ
-    - এপ্রিল
+    - এপ্রি
     - মে
     - জুন
-    - জুলাই
-    - আগস্ট
-    - সেপ্টেম্বর
-    - অক্টোবর
-    - নভেম্বর
-    - ডিসেম্বর
+    - জুল
+    - আগ
+    - সেপ
+    - অক্টো
+    - নভে
+    - ডিসে
     day_names:
     - রবিবার
     - সোমবার
@@ -36,9 +36,9 @@ bn:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    - 
-    - জানুয়ারি
-    - ফেব্রুয়ারি
+    -
+    - জানুয়ারী
+    - ফেব্রুয়ারী
     - মার্চ
     - এপ্রিল
     - মে
@@ -69,7 +69,7 @@ bn:
         other: প্রায় %{count} বছর
       half_a_minute: অর্ধ মিনিট
       less_than_x_seconds:
-        one: '১ সেকেন্ডর কম'
+        one: ১ সেকেন্ডর কম
         other: "%{count} সেকেন্ডের কম"
       less_than_x_minutes:
         one: ১ মিনিটের কম
@@ -127,7 +127,7 @@ bn:
     currency:
       format:
         delimiter: ","
-        format: "%u %n"
+        format: "%n%u"
         precision: 2
         separator: "."
         significant: false
@@ -143,6 +143,10 @@ bn:
       decimal_units:
         format: "%n %u"
         units:
+          billion: কোটি
+          million: লাখ
+          thousand: হাজার
+          trillion: লাখ কোটি
           unit: ''
       format:
         delimiter: ''
@@ -158,16 +162,18 @@ bn:
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: ","
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", এবং "
+      last_word_connector: " এবং "
       two_words_connector: " এবং "
       words_connector: ", "
   time:

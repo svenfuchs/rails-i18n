@@ -14,7 +14,7 @@ hi-IN:
     - शुक्र
     - शनि
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -40,7 +40,7 @@ hi-IN:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - जनवरी
     - फरवरी
     - मार्च

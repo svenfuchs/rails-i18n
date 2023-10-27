@@ -9,18 +9,18 @@ tt:
           has_many: 'Язмышны бетереп булмады, чөнки бәйлелекләр табылды: %{record}'
   date:
     abbr_day_names:
-    - Якш
-    - Дүш
-    - Сиш
-    - Чәр
-    - Пән
-    - Җом
-    - Шим
+    - якш.
+    - дүш.
+    - сиш.
+    - чәр.
+    - пәнҗ.
+    - җом.
+    - шим.
     abbr_month_names:
-    - 
+    -
     - гыйн.
-    - февр.
-    - март
+    - фев.
+    - мар.
     - апр.
     - май
     - июнь
@@ -43,7 +43,7 @@ tt:
       long: "%-d %B %Y"
       short: "%-d %b"
     month_names:
-    - 
+    -
     - гыйнвар
     - февраль
     - март
@@ -149,15 +149,15 @@ tt:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: сум
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false
@@ -193,14 +193,15 @@ tt:
           byte:
             one: байт
             other: байт
-          gb: ГБ
-          kb: КБ
-          mb: МБ
-          tb: ТБ
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: TB
     percentage:
       format:
-        delimiter: ''
-        format: "%n%"
+        delimiter: " "
+        format: "%n %"
     precision:
       format:
         delimiter: ''

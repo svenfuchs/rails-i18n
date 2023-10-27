@@ -6,27 +6,27 @@ bg:
         record_invalid: 'имаше грешки: %{errors}'
   date:
     abbr_day_names:
-    - нед
-    - пон
+    - нд
+    - пн
     - вт
     - ср
-    - чет
-    - пет
-    - съб
+    - чт
+    - пт
+    - сб
     abbr_month_names:
-    - 
-    - ян.
-    - фев.
+    -
+    - яну
+    - фев
     - март
-    - апр.
+    - апр
     - май
     - юни
     - юли
-    - авг.
-    - сеп.
-    - окт.
-    - ноем.
-    - дек.
+    - авг
+    - сеп
+    - окт
+    - ное
+    - дек
     day_names:
     - неделя
     - понеделник
@@ -40,7 +40,7 @@ bg:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - януари
     - февруари
     - март
@@ -138,15 +138,15 @@ bg:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: лв.
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false
@@ -155,11 +155,19 @@ bg:
       decimal_units:
         format: "%n %u"
         units:
-          billion: милиарда
-          million: милиона
+          billion:
+            one: Милиард
+            other: Милиарда
+          million:
+            one: Милион
+            other: Милиона
           quadrillion: квадрилиона
-          thousand: хиляди
-          trillion: трилиона
+          thousand:
+            one: Хил'.'
+            other: Хиляди
+          trillion:
+            one: Трилион
+            other: Трилиона
           unit: ''
       format:
         delimiter: ''
@@ -172,13 +180,15 @@ bg:
           byte:
             one: Байт
             other: Байта
-          gb: ГБ
-          kb: КБ
-          mb: МБ
-          tb: ТБ
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: " "
+        format: "%n%"
     precision:
       format:
         delimiter: ''

@@ -9,17 +9,17 @@ pa:
           has_many: ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ ਕਿਉਂਕਿ ਨਿਰਭਰ %{record} ਮੌਜੂਦ ਹਨ
   date:
     abbr_day_names:
-    - ਅੈਤ
+    - ਐਤ
     - ਸੋਮ
     - ਮੰਗਲ
-    - ਬੱੁਧ
+    - ਬੁੱਧ
     - ਵੀਰ
-    - ਸ਼ੁੱਕਰ
+    - ਸ਼ੁੱਕਰ
     - ਸ਼ਨਿੱਚਰ
     abbr_month_names:
-    - 
+    -
     - ਜਨ
-    - ਫ਼ਰ
+    - ਫ਼ਰ
     - ਮਾਰਚ
     - ਅਪ੍ਰੈ
     - ਮਈ
@@ -36,16 +36,16 @@ pa:
     - ਮੰਗਲਵਾਰ
     - ਬੁੱਧਵਾਰ
     - ਵੀਰਵਾਰ
-    - ਸ਼ੁੱਕਰਵਾਰ
-    - ਸ਼ਨਿੱਚਰਵਾਰ
+    - ਸ਼ੁੱਕਰਵਾਰ
+    - ਸ਼ਨਿੱਚਰਵਾਰ
     formats:
       default: "%Y-%m-%d"
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - ਜਨਵਰੀ
-    - ਫ਼ਰਵਰੀ
+    - ਫ਼ਰਵਰੀ
     - ਮਾਰਚ
     - ਅਪ੍ਰੈਲ
     - ਮਈ
@@ -166,11 +166,11 @@ pa:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ਬਿਲੀਅਨ
-          million: ਮਿਲੀਅਨ
+          billion: ਅਰਬ
+          million: ਲੱਖ
           quadrillion: ਕ੍ਵਾਡਰਿਲੀਅਨ
-          thousand: ਹਜ਼ਾਰ
-          trillion: ਟ੍ਰਿਲੀਅਨ
+          thousand: ਹਜ਼ਾਰ
+          trillion: ਖਰਬ
           unit: ''
       format:
         delimiter: ''
@@ -186,17 +186,18 @@ pa:
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: ","
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", ਅਤੇ "
+      last_word_connector: " ਅਤੇ "
       two_words_connector: " ਅਤੇ "
       words_connector: ", "
   time:

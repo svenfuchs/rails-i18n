@@ -9,53 +9,53 @@ be:
           has_many: Нельга выдаліць запіс, таму што існуюць залежнасці %{record}
   date:
     abbr_day_names:
-    - Пан
-    - Аўт
-    - Сер
-    - Чцв
-    - Пят
-    - Суб
-    - Ндз
+    - нд
+    - пн
+    - аў
+    - ср
+    - чц
+    - пт
+    - сб
     abbr_month_names:
-    - 
-    - Сту
-    - Лют
-    - Сак
-    - Кра
-    - Тра
-    - Чэр
-    - Ліп
-    - Жні
-    - Вер
-    - Кас
-    - Ліс
-    - Сне
+    -
+    - сту
+    - лют
+    - сак
+    - кра
+    - мая
+    - чэр
+    - ліп
+    - жні
+    - вер
+    - кас
+    - ліс
+    - сне
     day_names:
-    - Нядзеля
-    - Панядзелак
-    - Аўторак
-    - Серада
-    - Чацвер
-    - Пятніца
-    - Субота
+    - нядзеля
+    - панядзелак
+    - аўторак
+    - серада
+    - чацвер
+    - пятніца
+    - субота
     formats:
       default: "%d.%m.%Y"
       long: "%-d %B %Y"
       short: "%-d %b"
     month_names:
-    - 
-    - Студзень
-    - Люты
-    - Сакавік
-    - Красавік
-    - Травень
-    - Чэрвень
-    - Ліпень
-    - Жнівень
-    - Верасень
-    - Кастрычнік
-    - Лістапад
-    - Снежань
+    -
+    - студзеня
+    - лютага
+    - сакавіка
+    - красавіка
+    - мая
+    - чэрвеня
+    - ліпеня
+    - жніўня
+    - верасня
+    - кастрычніка
+    - лістапада
+    - снежня
     order:
     - :day
     - :month
@@ -186,17 +186,17 @@ be:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: руб.
     format:
-      delimiter: ","
+      delimiter: " "
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -204,30 +204,30 @@ be:
         format: "%n %u"
         units:
           billion:
-            one: мільярд
+            one: Мільярд
             few: мільярда
             many: мільярдаў
-            other: мільярда
+            other: Мільярда
           million:
-            one: мільён
+            one: Мільён
             few: мільёна
             many: мільёнаў
-            other: мільёна
+            other: Мільёна
           quadrillion:
             one: квадрыльён
             few: квадрыльёна
             many: квадрыльёнаў
             other: квадрыльёна
           thousand:
-            one: тысяча
+            one: Тысяча
             few: тысячы
             many: тысяч
-            other: тысячы
+            other: Тысячы
           trillion:
-            one: трыльён
+            one: Трыльён
             few: трыльёна
             many: трыльёнаў
-            other: трыльёна
+            other: Трыльёна
           unit: ''
       format:
         delimiter: ''
@@ -238,10 +238,10 @@ be:
         format: "%n %u"
         units:
           byte:
-            one: байт
+            one: Байт
             few: байта
             many: байтаў
-            other: байта
+            other: Байта
           eb: ЭБ
           gb: ГБ
           kb: КБ
@@ -250,8 +250,8 @@ be:
           tb: ТБ
     percentage:
       format:
-        delimiter: ''
-        format: "%n%"
+        delimiter: " "
+        format: "%n %"
     precision:
       format:
         delimiter: ''

@@ -17,19 +17,19 @@ te:
     - శుక్ర
     - శని
     abbr_month_names:
-    - 
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
+    -
+    - జన
+    - ఫిబ్ర
+    - మార్చి
+    - ఏప్రి
+    - మే
+    - జూన్
+    - జులై
+    - ఆగ
+    - సెప్టెం
+    - అక్టో
+    - నవం
+    - డిసెం
     day_names:
     - ఆదివారం
     - సోమవారం
@@ -43,19 +43,19 @@ te:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - జనవరి
     - ఫిబ్రవరి
     - మార్చి
     - ఏప్రిల్
     - మే
     - జూన్
-    - జూలై
+    - జులై
     - ఆగస్టు
-    - సెప్టెంబరు
-    - అక్టోబరు
-    - నవంబరు
-    - డిసెంబరు
+    - సెప్టెంబర్
+    - అక్టోబర్
+    - నవంబర్
+    - డిసెంబర్
     order:
     - :day
     - :month
@@ -100,10 +100,10 @@ te:
         one: ఒక సంవత్సరం
         other: "%{count} సంవత్సరాలు"
     prompts:
-      second: క్షణాలు
-      minute: నిమిషం
+      second: సెకను
+      minute: నిమిషము
       hour: గంట
-      day: రోజు
+      day: దినం
       month: నెల
       year: సంవత్సరం
   errors:
@@ -171,11 +171,19 @@ te:
       decimal_units:
         format: "%n %u"
         units:
-          billion: బిలియన్
-          million: మిలియన్
+          billion:
+            one: బిలియన్
+            other: బిలియన్లు
+          million:
+            one: మిలియన్
+            other: మిలియన్లు
           quadrillion: క్వాడ్రిలియన్
-          thousand: వెయ్యి
-          trillion: ట్రిలియన్
+          thousand:
+            one: వేయి
+            other: వేలు
+          trillion:
+            one: ట్రిలియన్
+            other: ట్రిలియన్లు
           unit: ''
       format:
         delimiter: ''
@@ -186,22 +194,23 @@ te:
         format: "%n %u"
         units:
           byte:
-            one: బైట్
-            other: బైట్లు
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: బైట్
+            other: బైట్‌లు
+          gb: జీబీ
+          kb: కేబీ
+          mb: ఎమ్‌బి
+          pb: పీబీ
+          tb: టీబీ
     percentage:
       format:
-        delimiter: ''
+        delimiter: ","
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", మరియు "
+      last_word_connector: " మరియు "
       two_words_connector: " మరియు "
       words_connector: ", "
   time:

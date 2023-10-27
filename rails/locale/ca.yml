@@ -9,53 +9,53 @@ ca:
           has_many: No es pot eliminar el registre perquè existeixen %{record} dependents
   date:
     abbr_day_names:
-    - Dg
-    - Dl
-    - Dm
-    - Dc
-    - Dj
-    - Dv
-    - Ds
+    - dg.
+    - dl.
+    - dt.
+    - dc.
+    - dj.
+    - dv.
+    - ds.
     abbr_month_names:
-    - 
-    - Gen
-    - Feb
-    - Mar
-    - Abr
-    - Mai
-    - Jun
-    - Jul
-    - Ago
-    - Set
-    - Oct
-    - Nov
-    - Des
+    -
+    - de gen.
+    - de febr.
+    - de març
+    - d’abr.
+    - de maig
+    - de juny
+    - de jul.
+    - d’ag.
+    - de set.
+    - d’oct.
+    - de nov.
+    - de des.
     day_names:
-    - Diumenge
-    - Dilluns
-    - Dimarts
-    - Dimecres
-    - Dijous
-    - Divendres
-    - Dissabte
+    - diumenge
+    - dilluns
+    - dimarts
+    - dimecres
+    - dijous
+    - divendres
+    - dissabte
     formats:
       default: "%d-%m-%Y"
       long: "%d de %B de %Y"
       short: "%d de %b"
     month_names:
-    - 
-    - Gener
-    - Febrer
-    - Març
-    - Abril
-    - Maig
-    - Juny
-    - Juliol
-    - Agost
-    - Setembre
-    - Octubre
-    - Novembre
-    - Desembre
+    -
+    - de gener
+    - de febrer
+    - de març
+    - d’abril
+    - de maig
+    - de juny
+    - de juliol
+    - d’agost
+    - de setembre
+    - d’octubre
+    - de novembre
+    - de desembre
     order:
     - :day
     - :month
@@ -100,12 +100,12 @@ ca:
         one: "%{count} year"
         other: "%{count} years"
     prompts:
-      second: segon
-      minute: minut
-      hour: hora
-      day: dia
-      month: mes
-      year: any
+      second: Segon
+      minute: Minut
+      hour: Hora
+      day: Dia
+      month: Mes
+      year: Any
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -155,7 +155,7 @@ ca:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -171,19 +171,21 @@ ca:
       decimal_units:
         format: "%n %u"
         units:
-          billion: mil milions
+          billion:
+            one: Miler de milions
+            other: Milers de milions
           million:
-            one: milió
-            other: milions
+            one: Milió
+            other: Milions
           quadrillion:
             one: quadrilió
             other: quadrilions
           thousand:
-            one: miler
-            other: milers
+            one: Miler
+            other: Milers
           trillion:
-            one: bilió
-            other: bilions
+            one: Bilió
+            other: Bilions
           unit: ''
       format:
         delimiter: ''
@@ -204,14 +206,14 @@ ca:
           tb: TB
     percentage:
       format:
-        delimiter: ''
-        format: "%n %"
+        delimiter: "."
+        format: "%n %"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", i "
+      last_word_connector: " i "
       two_words_connector: " i "
       words_connector: ", "
   time:

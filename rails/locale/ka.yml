@@ -6,26 +6,26 @@ ka:
         record_invalid: 'დადასტურება წარუმატებელია: %{errors}'
   date:
     abbr_day_names:
-    - კვ
+    - კვი
     - ორშ
-    - სამშ
-    - ოთხშ
-    - ხუთშ
+    - სამ
+    - ოთხ
+    - ხუთ
     - პარ
     - შაბ
     abbr_month_names:
-    - 
-    - იანვ
+    -
+    - იან
     - თებ
-    - მარტი
+    - მარ
     - აპრ
-    - მაისი
+    - მაი
     - ივნ
     - ივლ
     - აგვ
-    - სექტ
+    - სექ
     - ოქტ
-    - ნოემბ
+    - ნოე
     - დეკ
     day_names:
     - კვირა
@@ -40,7 +40,7 @@ ka:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - იანვარი
     - თებერვალი
     - მარტი
@@ -97,12 +97,12 @@ ka:
         one: "%{count} წელი"
         other: "%{count} წელი"
     prompts:
-      second: წამი
-      minute: წუთი
-      hour: საათი
-      day: დღე
-      month: თვე
-      year: წელი
+      second: Წამი
+      minute: Წუთი
+      hour: Საათი
+      day: Დღე
+      month: Თვე
+      year: Წელი
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -151,15 +151,15 @@ ka:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: ლ
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false
@@ -168,11 +168,11 @@ ka:
       decimal_units:
         format: "%n %u"
         units:
-          billion: მილიარდი
-          million: მილიონი
+          billion: Მილიარდი
+          million: Მილიონი
           quadrillion: კვადრილიონი
-          thousand: ათასი
-          trillion: ტრილიონი
+          thousand: Ათასი
+          trillion: Ტრილიონი
           unit: ''
       format:
         delimiter: ''
@@ -186,19 +186,20 @@ ka:
             one: ბაიტი
             other: ბაიტები
           gb: GB
-          kb: KB
+          kb: Კბაიტი
           mb: MB
-          tb: TB
+          pb: Პბაიტი
+          tb: Ტბაიტი
     percentage:
       format:
-        delimiter: ''
+        delimiter: " "
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", და "
+      last_word_connector: " და "
       two_words_connector: " და "
       words_connector: ", "
   time:

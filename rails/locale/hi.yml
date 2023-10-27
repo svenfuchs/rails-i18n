@@ -14,19 +14,19 @@ hi:
     - शुक्र
     - शनि
     abbr_month_names:
-    - 
-    - जन
-    - फर
+    -
+    - जन॰
+    - फ़र॰
     - मार्च
-    - अप्रै
+    - अप्रैल
     - मई
     - जून
-    - जुला
-    - अग
-    - सितं
-    - अक्टू
-    - नवं
-    - दिस
+    - जुल॰
+    - अग॰
+    - सित॰
+    - अक्तू॰
+    - नव॰
+    - दिस॰
     day_names:
     - रविवार
     - सोमवार
@@ -40,9 +40,9 @@ hi:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - जनवरी
-    - फरवरी
+    - फ़रवरी
     - मार्च
     - अप्रैल
     - मई
@@ -50,7 +50,7 @@ hi:
     - जुलाई
     - अगस्त
     - सितंबर
-    - अक्टूबर
+    - अक्तूबर
     - नवंबर
     - दिसंबर
     order:
@@ -94,7 +94,7 @@ hi:
         one: एक महीना
         other: "%{count} महीना"
     prompts:
-      second: सेकेंड
+      second: सेकंड
       minute: मिनट
       hour: घंटा
       day: दिन
@@ -156,7 +156,7 @@ hi:
         format: "%n %u"
         units:
           billion: अरब
-          million: दस करोड़
+          million: लाख
           quadrillion: करोड़ शंख
           thousand: हज़ार
           trillion: खरब
@@ -175,10 +175,12 @@ hi:
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: ","
+        format: "%n%"
     precision:
       format:
         delimiter: ''

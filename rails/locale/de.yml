@@ -10,27 +10,27 @@ de:
           has_many: Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren.
   date:
     abbr_day_names:
-    - So
-    - Mo
-    - Di
-    - Mi
-    - Do
-    - Fr
-    - Sa
+    - So.
+    - Mo.
+    - Di.
+    - Mi.
+    - Do.
+    - Fr.
+    - Sa.
     abbr_month_names:
-    - 
-    - Jan
-    - Feb
-    - Mär
-    - Apr
+    -
+    - Jan.
+    - Feb.
+    - März
+    - Apr.
     - Mai
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Okt
-    - Nov
-    - Dez
+    - Juni
+    - Juli
+    - Aug.
+    - Sept.
+    - Okt.
+    - Nov.
+    - Dez.
     day_names:
     - Sonntag
     - Montag
@@ -44,7 +44,7 @@ de:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - März
@@ -156,7 +156,7 @@ de:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -206,8 +206,8 @@ de:
           tb: TB
     percentage:
       format:
-        delimiter: ''
-        format: "%n %"
+        delimiter: "."
+        format: "%n %"
     precision:
       format:
         delimiter: ''

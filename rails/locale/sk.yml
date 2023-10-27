@@ -6,53 +6,53 @@ sk:
         record_invalid: 'Validácia neúspešná: %{errors}'
   date:
     abbr_day_names:
-    - Ne
-    - Po
-    - Ut
-    - St
-    - Št
-    - Pi
-    - So
+    - ne
+    - po
+    - ut
+    - st
+    - št
+    - pi
+    - so
     abbr_month_names:
-    - 
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - Máj
-    - Jún
-    - Júl
-    - Aug
-    - Sep
-    - Okt
-    - Nov
-    - Dec
+    -
+    - jan
+    - feb
+    - mar
+    - apr
+    - máj
+    - jún
+    - júl
+    - aug
+    - sep
+    - okt
+    - nov
+    - dec
     day_names:
-    - Nedeľa
-    - Pondelok
-    - Utorok
-    - Streda
-    - Štvrtok
-    - Piatok
-    - Sobota
+    - nedeľa
+    - pondelok
+    - utorok
+    - streda
+    - štvrtok
+    - piatok
+    - sobota
     formats:
       default: "%d.%m.%Y"
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
-    - 
-    - Január
-    - Február
-    - Marec
-    - Apríl
-    - Máj
-    - Jún
-    - Júl
-    - August
-    - September
-    - Október
-    - November
-    - December
+    -
+    - januára
+    - februára
+    - marca
+    - apríla
+    - mája
+    - júna
+    - júla
+    - augusta
+    - septembra
+    - októbra
+    - novembra
+    - decembra
     order:
     - :day
     - :month
@@ -153,15 +153,15 @@ sk:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false
@@ -170,11 +170,19 @@ sk:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Miliarda
-          million: Milión
+          billion:
+            one: Miliarda
+            other: Miliárd
+          million:
+            one: Milión
+            other: Miliónov
           quadrillion: Biliarda
-          thousand: Tisíc
-          trillion: Bilión
+          thousand:
+            one: Tisíc
+            other: Tisíc
+          trillion:
+            one: Bilión
+            other: Biliónov
           unit: ''
       format:
         delimiter: ''
@@ -185,23 +193,25 @@ sk:
         format: "%n %u"
         units:
           byte:
-            one: B
+            one: Bajt
             few: B
-            other: B
+            other: Bajtov
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: " "
+        delimiter: " "
+        format: "%n %"
     precision:
       format:
         delimiter: ''
   support:
     array:
       last_word_connector: " a "
-      two_words_connector: " a "
+      two_words_connector: " a "
       words_connector: ", "
   time:
     am: dopoludnia

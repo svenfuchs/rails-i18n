@@ -12,14 +12,14 @@ ur:
   date:
     abbr_day_names:
     - اتوار
-    - سوموار
+    - پیر
     - منگل
     - بدھ
     - جمعرات
     - جمعہ
     - ہفتہ
     abbr_month_names:
-    - 
+    -
     - جنوری
     - فروری
     - مارچ
@@ -34,7 +34,7 @@ ur:
     - دسمبر
     day_names:
     - اتوار
-    - سوموار
+    - پیر
     - منگل
     - بدھ
     - جمعرات
@@ -45,7 +45,7 @@ ur:
       long: "%d %B، %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - جنوری
     - فروری
     - مارچ
@@ -103,7 +103,7 @@ ur:
       minute: منٹ
       hour: گھنٹہ
       day: دن
-      month: ماہ
+      month: مہینہ
       year: سال
   errors:
     format: "%{attribute} %{message}"
@@ -152,7 +152,7 @@ ur:
     currency:
       format:
         delimiter: ","
-        format: "%n %u"
+        format: "%u%n"
         precision: 2
         separator: "."
         significant: false
@@ -168,11 +168,11 @@ ur:
       decimal_units:
         format: "%n %u"
         units:
-          billion: بلین
-          million: ملین
+          billion: ارب
+          million: لاکھ
           quadrillion: کواڈریلن
           thousand: ہزار
-          trillion: ٹریلن
+          trillion: کھرب
           unit: Rs
       format:
         delimiter: ''
@@ -183,16 +183,17 @@ ur:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
+            one: بائٹ
+            other: بائٹس
           gb: GB
           kb: KB
           mb: MB
+          pb: پی بی
           tb: TB
     percentage:
       format:
-        delimiter: ''
-        format: "%n فیصد"
+        delimiter: ","
+        format: "%n%"
     precision:
       format:
         delimiter: ''

@@ -14,45 +14,45 @@ mn:
     - Ба
     - Бя
     abbr_month_names:
-    - 
-    - 1 сар
-    - 2 сар
-    - 3 сар
-    - 4 сар
-    - 5 сар
-    - 6 сар
-    - 7 сар
-    - 8 сар
-    - 9 сар
-    - 10 сар
-    - 11 сар
-    - 12 сар
+    -
+    - 1-р сар
+    - 2-р сар
+    - 3-р сар
+    - 4-р сар
+    - 5-р сар
+    - 6-р сар
+    - 7-р сар
+    - 8-р сар
+    - 9-р сар
+    - 10-р сар
+    - 11-р сар
+    - 12-р сар
     day_names:
-    - Ням
-    - Даваа
-    - Мягмар
-    - Лхагва
-    - Пүрэв
-    - Баасан
-    - Бямба
+    - ням
+    - даваа
+    - мягмар
+    - лхагва
+    - пүрэв
+    - баасан
+    - бямба
     formats:
       default: "%Y-%m-%d"
       long: "%Y %B %d"
       short: "%y-%m-%d"
     month_names:
-    - 
-    - 1 сар
-    - 2 сар
-    - 3 сар
-    - 4 сар
-    - 5 сар
-    - 6 сар
-    - 7 сар
-    - 8 сар
-    - 9 сар
-    - 10 сар
-    - 11 сар
-    - 12 сар
+    -
+    - нэгдүгээр сар
+    - хоёрдугаар сар
+    - гуравдугаар сар
+    - дөрөвдүгээр сар
+    - тавдугаар сар
+    - зургаадугаар сар
+    - долоодугаар сар
+    - наймдугаар сар
+    - есдүгээр сар
+    - аравдугаар сар
+    - арван нэгдүгээр сар
+    - арван хоёрдугаар сар
     order:
     - :year
     - :month
@@ -144,15 +144,15 @@ mn:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: ","
+        format: "%u %n"
         precision: 2
         separator: "."
         significant: false
         strip_insignificant_zeros: false
         unit: төг.
     format:
-      delimiter: " "
+      delimiter: ","
       precision: 3
       separator: "."
       significant: false
@@ -181,17 +181,19 @@ mn:
           gb: ГБ
           kb: КБ
           mb: МБ
+          pb: ПБ
           tb: ТБ
     percentage:
       format:
-        delimiter: ''
+        delimiter: ","
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " болон "
-      two_words_connector: " болон "
+      last_word_connector: ", "
+      two_words_connector: ", "
       words_connector: ", "
   time:
     am: өглөө

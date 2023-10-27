@@ -6,7 +6,7 @@ kn:
         record_invalid: 'ತಪ್ಪು ಆಧಾರ: %{errors}'
   date:
     abbr_day_names:
-    - ರವಿ
+    - ಭಾನು
     - ಸೋಮ
     - ಮಂಗಳ
     - ಬುಧ
@@ -14,21 +14,21 @@ kn:
     - ಶುಕ್ರ
     - ಶನಿ
     abbr_month_names:
-    - 
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
+    -
+    - ಜನವರಿ
+    - ಫೆಬ್ರವರಿ
+    - ಮಾರ್ಚ್
+    - ಏಪ್ರಿ
+    - ಮೇ
+    - ಜೂನ್
+    - ಜುಲೈ
+    - ಆಗಸ್ಟ್
+    - ಸೆಪ್ಟೆಂ
+    - ಅಕ್ಟೋ
+    - ನವೆಂ
+    - ಡಿಸೆಂ
     day_names:
-    - ರವಿವಾರ
+    - ಭಾನುವಾರ
     - ಸೋಮವಾರ
     - ಮಂಗಳವಾರ
     - ಬುಧವಾರ
@@ -40,7 +40,7 @@ kn:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - ಜನವರಿ
     - ಫೆಬ್ರವರಿ
     - ಮಾರ್ಚ್
@@ -51,7 +51,7 @@ kn:
     - ಆಗಸ್ಟ್
     - ಸೆಪ್ಟೆಂಬರ್
     - ಅಕ್ಟೋಬರ್
-    - ನವಂಬರ್
+    - ನವೆಂಬರ್
     - ಡಿಸೆಂಬರ್
     order:
     - :year
@@ -94,12 +94,12 @@ kn:
         one: "%{count} ತಿಂಗಳು"
         other: "%{count} ತಿಂಗಳುಗಳು"
     prompts:
-      second: ಸೆಕೆಂಡು
+      second: ಸೆಕೆಂಡ್
       minute: ನಿಮಿಷ
       hour: ಗಂಟೆ
       day: ದಿನ
       month: ತಿಂಗಳು
-      year: ವರುಷ
+      year: ವರ್ಷ
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -155,11 +155,11 @@ kn:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ಲಕ್ಷಕೋಟಿ
-          million: ದಶಲಕ್ಷ
+          billion: ಬಿಲಿಯನ್
+          million: ಮಿಲಿಯನ್
           quadrillion: ಪದ್ಮ
           thousand: ಸಾವಿರ
-          trillion: ನೀಲ್
+          trillion: ಟ್ರಿಲಿಯನ್‌
           unit: ''
       format:
         delimiter: ''
@@ -170,22 +170,24 @@ kn:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
+            one: ಬೈಟ್‌
+            other: ಬೈಟ್‌ಗಳು
+          gb: ಗಿ.ಬೈ.
+          kb: ಕಿ.ಬೈ.
+          mb: ಮೆ.ಬೈ.
+          pb: ಪೆಬೈ
+          tb: ಟೆ.ಬೈ.
     percentage:
       format:
-        delimiter: ''
+        delimiter: ","
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", ಮತ್ತು  "
-      two_words_connector: " ಮತ್ತು  "
+      last_word_connector: ", ಮತ್ತು "
+      two_words_connector: " ಮತ್ತು "
       words_connector: ", "
   time:
     am: ಪ್ರಾತಃಕಾಲ

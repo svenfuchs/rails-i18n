@@ -9,27 +9,27 @@ pt:
           has_many: Não pode ser eliminado por existirem dependências de %{record}
   date:
     abbr_day_names:
-    - dom
-    - seg
-    - ter
-    - qua
-    - qui
-    - sex
-    - sáb
+    - dom.
+    - seg.
+    - ter.
+    - qua.
+    - qui.
+    - sex.
+    - sáb.
     abbr_month_names:
     -
-    - jan
-    - fev
-    - mar
-    - abr
-    - mai
-    - jun
-    - jul
-    - ago
-    - set
-    - out
-    - nov
-    - dez
+    - jan.
+    - fev.
+    - mar.
+    - abr.
+    - mai.
+    - jun.
+    - jul.
+    - ago.
+    - set.
+    - out.
+    - nov.
+    - dez.
     day_names:
     - domingo
     - segunda-feira
@@ -150,7 +150,7 @@ pt:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%u %n"
         precision: 2
         separator: ","
         significant: false
@@ -168,18 +168,18 @@ pt:
         format: "%n %u"
         units:
           billion:
-            one: mil milhões
-            other: mil milhões
+            one: Bilhão
+            other: Bilhões
           million:
-            one: milhão
-            other: milhões
+            one: Milhão
+            other: Milhões
           quadrillion:
             one: mil biliões
             other: mil biliões
-          thousand: mil
+          thousand: Mil
           trillion:
-            one: bilião
-            other: biliões
+            one: Trilhão
+            other: Trilhões
           unit: ''
       format:
         delimiter: ''
@@ -200,8 +200,8 @@ pt:
           tb: TB
     percentage:
       format:
-        delimiter: ''
-        format: "%n %"
+        delimiter: "."
+        format: "%n%"
     precision:
       format:
         delimiter: ''

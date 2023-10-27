@@ -6,27 +6,27 @@ uz:
         record_invalid: "%{errors}ta hato bor."
   date:
     abbr_day_names:
-    - Ya
-    - Du
-    - Sh
-    - Ch
-    - Pa
-    - Ju
-    - Sh
+    - Yak
+    - Dush
+    - Sesh
+    - Chor
+    - Pay
+    - Jum
+    - Shan
     abbr_month_names:
-    - 
-    - yan.
-    - fev.
-    - mart
-    - apr.
+    -
+    - yan
+    - fev
+    - mar
+    - apr
     - may
-    - iyun
-    - iyul
-    - avg.
-    - sen.
-    - okt.
-    - noy.
-    - dek.
+    - iyn
+    - iyl
+    - avg
+    - sen
+    - okt
+    - noy
+    - dek
     day_names:
     - yakshanba
     - dushanba
@@ -40,7 +40,7 @@ uz:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - yanvar
     - fevral
     - mart
@@ -49,8 +49,8 @@ uz:
     - iyun
     - iyul
     - avgust
-    - sentyabr
-    - oktyabr
+    - sentabr
+    - oktabr
     - noyabr
     - dekabr
     order:
@@ -116,12 +116,12 @@ uz:
         many: "%{count} oy"
         other: "%{count} oy"
     prompts:
-      second: soniya
-      minute: daqiqa
-      hour: soat
-      day: kun
-      month: oy
-      year: yil
+      second: Soniya
+      minute: Daqiqa
+      hour: Soat
+      day: Kun
+      month: Oy
+      year: Yil
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -174,17 +174,17 @@ uz:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: so'm.
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -233,10 +233,12 @@ uz:
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: " "
+        format: "%n%"
     precision:
       format:
         delimiter: ''

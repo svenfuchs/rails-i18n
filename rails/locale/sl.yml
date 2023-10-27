@@ -6,27 +6,27 @@ sl:
         record_invalid: ''
   date:
     abbr_day_names:
-    - ned
-    - pon
-    - tor
-    - sre
-    - čet
-    - pet
-    - sob
+    - ned.
+    - pon.
+    - tor.
+    - sre.
+    - čet.
+    - pet.
+    - sob.
     abbr_month_names:
-    - 
-    - jan
-    - feb
-    - mar
-    - apr
+    -
+    - jan.
+    - feb.
+    - mar.
+    - apr.
     - maj
-    - jun
-    - jul
-    - avg
-    - sep
-    - okt
-    - nov
-    - dec
+    - jun.
+    - jul.
+    - avg.
+    - sep.
+    - okt.
+    - nov.
+    - dec.
     day_names:
     - nedelja
     - ponedeljek
@@ -40,7 +40,7 @@ sl:
       long: "%d. %b %Y"
       short: "%d. %b"
     month_names:
-    - 
+    -
     - januar
     - februar
     - marec
@@ -116,8 +116,8 @@ sl:
         few: "%{count} mesece"
         other: "%{count} mesecev"
     prompts:
-      second: Sekunde
-      minute: Minute
+      second: Sekunda
+      minute: Minuta
       hour: Ura
       day: Dan
       month: Mesec
@@ -155,7 +155,7 @@ sl:
     currency:
       format:
         delimiter: "."
-        format: "%u%n"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -171,6 +171,16 @@ sl:
       decimal_units:
         format: "%n %u"
         units:
+          billion:
+            one: Milijarda
+            other: Milijard
+          million:
+            one: Milijon
+            other: Milijonov
+          thousand: Tisoč
+          trillion:
+            one: Bilijon
+            other: Bilijonov
           unit: ''
       format:
         delimiter: ''
@@ -181,17 +191,19 @@ sl:
         format: "%n %u"
         units:
           byte:
-            one: Byte
+            one: Bajt
             two: Bytes
             few: Bytes
-            other: Bytes
+            other: Bajtov
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: "."
+        format: "%n %"
     precision:
       format:
         delimiter: ''

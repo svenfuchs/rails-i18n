@@ -10,52 +10,52 @@ az:
   date:
     abbr_day_names:
     - B.
-    - B.E.
-    - Ç.A.
+    - B.e.
+    - Ç.a.
     - Ç.
-    - C.A.
+    - C.a.
     - C.
     - Ş.
     abbr_month_names:
-    - 
-    - Yan
-    - Fev
-    - Mar
-    - Apr
-    - May
-    - İyn
-    - İyl
-    - Avq
-    - Sen
-    - Okt
-    - Noy
-    - Dek
+    -
+    - yan
+    - fev
+    - mar
+    - apr
+    - may
+    - iyn
+    - iyl
+    - avq
+    - sen
+    - okt
+    - noy
+    - dek
     day_names:
-    - Bazar
-    - Bazar ertəsi
-    - Çərşənbə axşamı
-    - Çərşənbə
-    - Cümə axşamı
-    - Cümə
-    - Şənbə
+    - bazar
+    - bazar ertəsi
+    - çərşənbə axşamı
+    - çərşənbə
+    - cümə axşamı
+    - cümə
+    - şənbə
     formats:
       default: "%d.%m.%Y"
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
-    - Yanvar
-    - Fevral
-    - Mart
-    - Aprel
-    - May
-    - İyun
-    - İyul
-    - Avqust
-    - Sentyabr
-    - Oktyabr
-    - Noyabr
-    - Dekabr
+    -
+    - yanvar
+    - fevral
+    - mart
+    - aprel
+    - may
+    - iyun
+    - iyul
+    - avqust
+    - sentyabr
+    - oktyabr
+    - noyabr
+    - dekabr
     order:
     - :day
     - :month
@@ -145,17 +145,17 @@ az:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: AZN
     format:
-      delimiter: " "
+      delimiter: "."
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -182,10 +182,12 @@ az:
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: "."
+        format: "%n%"
     precision:
       format:
         delimiter: ''

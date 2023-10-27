@@ -5,7 +5,8 @@ fy:
       messages:
         record_invalid: 'Falidaasje mislearre: %{errors}'
         restrict_dependent_destroy:
-          has_one: Kin de registraasje net wiskje om't der in %{record} ôfhinklik is
+          has_one: Kin de registraasje net wiskje om't der in %{record} ôfhinklik
+            is
           has_many: Kin de registraasje net wiskje om't der %{record} ôfhinklik binne
   date:
     abbr_day_names:
@@ -17,19 +18,19 @@ fy:
     - fr
     - so
     abbr_month_names:
-    - 
-    - jan
-    - feb
-    - mrt
-    - apr
-    - mai
-    - jun
-    - jul
-    - aug
-    - sep
-    - okt
-    - nov
-    - des
+    -
+    - Jan
+    - Feb
+    - Mrt
+    - Apr
+    - Mai
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Des
     day_names:
     - snein
     - moandei
@@ -43,19 +44,19 @@ fy:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    - 
-    - jannewaris
-    - febrewaris
-    - maart
-    - april
-    - maaie
-    - juny
-    - july
-    - augustus
-    - septimber
-    - oktober
-    - novimber
-    - desimber
+    -
+    - Jannewaris
+    - Febrewaris
+    - Maart
+    - April
+    - Maaie
+    - Juny
+    - July
+    - Augustus
+    - Septimber
+    - Oktober
+    - Novimber
+    - Desimber
     order:
     - :day
     - :month
@@ -100,12 +101,12 @@ fy:
         one: 1 jier
         other: "%{count} jier"
     prompts:
-      second: sekonde
-      minute: minút
-      hour: oere
-      day: dei
-      month: moanne
-      year: jier
+      second: Sekonde
+      minute: Minút
+      hour: Oere
+      day: Dei
+      month: Moanne
+      year: Jier
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -155,7 +156,7 @@ fy:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%u %n"
         precision: 2
         separator: ","
         significant: false
@@ -171,11 +172,11 @@ fy:
       decimal_units:
         format: "%n %u"
         units:
-          billion: miljard
-          million: miljoen
+          billion: Miljard
+          million: Miljoen
           quadrillion: biljard
-          thousand: tûzen
-          trillion: biljoen
+          thousand: Tûzen
+          trillion: Biljoen
           unit: ''
       format:
         delimiter: ''
@@ -196,7 +197,7 @@ fy:
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: "."
         format: "%n%"
     precision:
       format:

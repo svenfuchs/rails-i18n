@@ -3,10 +3,11 @@ sq:
   activerecord:
     errors:
       messages:
-        record_invalid: "Vlerësimi dështoi: %{errors}"
+        record_invalid: 'Vlerësimi dështoi: %{errors}'
         restrict_dependent_destroy:
-          has_one: "S’fshihet dot zëri, ngaqë ekziston një %{record} që varet prej tij"
-          has_many: "S’fshihet dot zëri, ngaqë ekzistojnë %{record} që varen prej tij"
+          has_one: S’fshihet dot zëri, ngaqë ekziston një %{record} që varet prej
+            tij
+          has_many: S’fshihet dot zëri, ngaqë ekzistojnë %{record} që varen prej tij
   date:
     abbr_day_names:
     - Die
@@ -18,44 +19,44 @@ sq:
     - Sht
     abbr_month_names:
     -
-    - Jan
-    - Shk
-    - Mar
-    - Pri
-    - Maj
-    - Qer
-    - Kor
-    - Gus
-    - Sht
-    - Tet
-    - Nën
-    - Dhj
+    - jan
+    - shk
+    - mar
+    - pri
+    - maj
+    - qer
+    - korr
+    - gush
+    - sht
+    - tet
+    - nën
+    - dhj
     day_names:
-    - E dielë
-    - E hënë
-    - E martë
-    - E mërkurë
-    - E enjte
-    - E premte
-    - E shtunë
+    - e diel
+    - e hënë
+    - e martë
+    - e mërkurë
+    - e enjte
+    - e premte
+    - e shtunë
     formats:
       default: "%d-%m-%Y"
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
     -
-    - Janar
-    - Shkurt
-    - Mars
-    - Prill
-    - Maj
-    - Qershor
-    - Korrik
-    - Gusht
-    - Shtator
-    - Tetor
-    - Nëntor
-    - Dhjetor
+    - janar
+    - shkurt
+    - mars
+    - prill
+    - maj
+    - qershor
+    - korrik
+    - gusht
+    - shtator
+    - tetor
+    - nëntor
+    - dhjetor
     order:
     - :day
     - :month
@@ -119,7 +120,7 @@ sq:
       invalid: është i pavlefshëm
       less_than: duhet të jetë më i vogël se %{count}
       less_than_or_equal_to: duhet të jetë më i vogël ose i barabartë me %{count}
-      model_invalid: "Vlerësimi dështoi: %{errors}"
+      model_invalid: 'Vlerësimi dështoi: %{errors}'
       not_a_number: s’është numër
       not_an_integer: duhet të jetë numër i plotë
       odd: duhet të jetë tek
@@ -140,7 +141,7 @@ sq:
       body: 'Pati probleme me fushat vijuese:'
       header:
         one: Ruajtja e këtij %{model} u pengua nga %{count} gabim
-        other: "Ruajtja e këtij %{model} u pengua nga %{count} gabime"
+        other: Ruajtja e këtij %{model} u pengua nga %{count} gabime
   helpers:
     select:
       prompt: Ju lutemi, përzgjidhni
@@ -151,17 +152,17 @@ sq:
   number:
     currency:
       format:
-        delimiter: ","
-        format: "%u%n"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: "$"
     format:
-      delimiter: ","
+      delimiter: " "
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -172,7 +173,7 @@ sq:
           million: Milion
           quadrillion: Kuadrilion
           thousand: Mijë
-          trillion: Trilion
+          trillion: Bilion
           unit: ''
       format:
         delimiter: ''
@@ -193,14 +194,14 @@ sq:
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: " "
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", dhe "
+      last_word_connector: " dhe "
       two_words_connector: " dhe "
       words_connector: ", "
   time:
