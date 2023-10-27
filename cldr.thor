@@ -50,7 +50,7 @@ class Cldr < Thor
       @cldr.deep_merge!(data)
     end
 
-    CheckLocales.list_locales.each do |locale|
+    CheckLocales.list_locales.uniq.each do |locale|
       @locale = locale.to_sym
 
       add_months
