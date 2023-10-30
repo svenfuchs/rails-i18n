@@ -122,9 +122,10 @@ class Cldr < Thor
 
     if format = @cldr.dig(@locale, :numbers, :latn, :formats, :currency, :patterns, :default, :standard).dup
       format.gsub!('¤', '%u')
-      format.gsub!(/;.*/, '')
       format.gsub!(/[#,.0]+/, '%n')
-      add([@locale, :number, :currency, :format, :format], format)
+      positive, negative = format.split(';')
+      add([@locale, :number, :currency, :format, :format], positive)
+      add([@locale, :number, :currency, :format, :negative_format], negative) if negative
     end
   end
 
@@ -159,7 +160,7 @@ class Cldr < Thor
       width = rails_key == :byte ? :long : :short
       next unless unit = @cldr.dig(@locale, :units, :unit_length, width, cldr_key)
 
-      unit.transform_values! { |s| s.gsub(/[[:space:]]*\{0\}[[:space:]]*/, '').upcase_first }
+      unit.transform_values! { |s| s.gsub(/[[:space:]]*\{0\}[[:space:]]*/, '') }
 
       add([@locale, :number, :human, :storage_units, :units, rails_key], plural(unit))
     end
@@ -181,7 +182,7 @@ class Cldr < Thor
     }.each do |rails_key, cldr_key|
       next unless unit = @cldr.dig(@locale, :numbers, :latn, :formats, :decimal, :patterns, :long, :standard, cldr_key)
 
-      unit.transform_values! { |s| s.gsub(/\s*0\s*/, '').strip.upcase_first }
+      unit.transform_values! { |s| s.gsub(/\s*0\s*/, '').strip }
 
       add([@locale, :number, :human, :decimal_units, :units, rails_key], plural(unit))
     end
