@@ -17,12 +17,12 @@ el:
     - Παρ
     - Σάβ
     abbr_month_names:
-    -
+    - 
     - Ιαν
     - Φεβ
     - Μαρ
     - Απρ
-    - Μαΐ
+    - Μαϊ
     - Ιουν
     - Ιουλ
     - Αυγ
@@ -43,19 +43,19 @@ el:
       long: "%e %B %Y"
       short: "%d %b"
     month_names:
-    -
-    - Ιανουαρίου
-    - Φεβρουαρίου
-    - Μαρτίου
-    - Απριλίου
-    - Μαΐου
-    - Ιουνίου
-    - Ιουλίου
-    - Αυγούστου
-    - Σεπτεμβρίου
-    - Οκτωβρίου
-    - Νοεμβρίου
-    - Δεκεμβρίου
+    - 
+    - Ιανουάριος
+    - Φεβρουάριος
+    - Μάρτιος
+    - Απρίλιος
+    - Μάιος
+    - Ιούνιος
+    - Ιούλιος
+    - Αύγουστος
+    - Σεπτέμβριος
+    - Οκτώβριος
+    - Νοέμβριος
+    - Δεκέμβριος
     order:
     - :day
     - :month
@@ -155,7 +155,7 @@ el:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -171,19 +171,11 @@ el:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: Δισεκατομμύριο
-            other: Δισεκατομμύρια
-          million:
-            one: Εκατομμύριο
-            other: Εκατομμύρια
+          billion: δισεκατομμύριο
+          million: εκατομμύριο
           quadrillion: τετράκις εκατομμύριο
-          thousand:
-            one: Χιλιάδα
-            other: Χιλιάδες
-          trillion:
-            one: Τρισεκατομμύριο
-            other: Τρισεκατομμύρια
+          thousand: χίλια
+          trillion: τρισεκατομμύριο
           unit: ''
       format:
         delimiter: ''
@@ -204,7 +196,7 @@ el:
           tb: TB
     percentage:
       format:
-        delimiter: "."
+        delimiter: ''
         format: "%n%"
     precision:
       format:

@@ -6,41 +6,41 @@ he:
         record_invalid: 'האימות נכשל: %{errors}'
   date:
     abbr_day_names:
-    - יום א׳
-    - יום ב׳
-    - יום ג׳
-    - יום ד׳
-    - יום ה׳
-    - יום ו׳
-    - שבת
+    - א
+    - ב
+    - ג
+    - ד
+    - ה
+    - ו
+    - ש
     abbr_month_names:
-    -
-    - ינו׳
-    - פבר׳
+    - 
+    - ינו
+    - פבר
     - מרץ
-    - אפר׳
+    - אפר
     - מאי
-    - יוני
-    - יולי
-    - אוג׳
-    - ספט׳
-    - אוק׳
-    - נוב׳
-    - דצמ׳
+    - יונ
+    - יול
+    - אוג
+    - ספט
+    - אוק
+    - נוב
+    - דצמ
     day_names:
-    - יום ראשון
-    - יום שני
-    - יום שלישי
-    - יום רביעי
-    - יום חמישי
-    - יום שישי
-    - יום שבת
+    - ראשון
+    - שני
+    - שלישי
+    - רביעי
+    - חמישי
+    - שישי
+    - שבת
     formats:
       default: "%d-%m-%Y"
       long: "%e ב%B, %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - ינואר
     - פברואר
     - מרץ
@@ -96,7 +96,7 @@ he:
         one: חודש אחד
         other: "%{count} חודשים"
     prompts:
-      second: שנייה
+      second: שניות
       minute: דקה
       hour: שעה
       day: יום
@@ -141,7 +141,7 @@ he:
     currency:
       format:
         delimiter: ","
-        format: "‏%n ‏%u"
+        format: "%n %u"
         precision: 2
         separator: "."
         significant: false
@@ -157,11 +157,11 @@ he:
       decimal_units:
         format: "%n %u"
         units:
-          billion: "‏מיליארד"
-          million: "‏מיליון"
+          billion: מיליארד
+          million: מיליון
           quadrillion: קודריליון
-          thousand: "‏אלף"
-          trillion: "‏טריליון"
+          thousand: אלף
+          trillion: טריליון
           unit: ''
       format:
         delimiter: ''
@@ -174,15 +174,13 @@ he:
           byte:
             one: בייט
             other: בתים
-          gb: GB
-          kb: KB
-          mb: MB
-          pb: PB
-          tb: TB
+          gb: ג'יגה-בייט
+          kb: קילו-בייט
+          mb: מגה-בייט
+          tb: טרה-בייט
     percentage:
       format:
-        delimiter: ","
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''

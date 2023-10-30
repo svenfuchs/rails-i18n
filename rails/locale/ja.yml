@@ -17,7 +17,7 @@ ja:
     - 金
     - 土
     abbr_month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -43,7 +43,7 @@ ja:
       long: "%Y年%m月%d日(%a)"
       short: "%m/%d"
     month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -124,7 +124,7 @@ ja:
     currency:
       format:
         delimiter: ","
-        format: "%u%n"
+        format: "%n%u"
         precision: 0
         separator: "."
         significant: false
@@ -141,10 +141,10 @@ ja:
       decimal_units:
         format: "%n %u"
         units:
-          billion: 億
-          million: 万
-          quadrillion: 兆
-          thousand: ''
+          billion: 十億
+          million: 百万
+          quadrillion: 千兆
+          thousand: 千
           trillion: 兆
           unit: ''
       format:
@@ -153,7 +153,7 @@ ja:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: "%n%u"
         units:
           byte: バイト
           eb: EB
@@ -164,7 +164,7 @@ ja:
           tb: TB
     percentage:
       format:
-        delimiter: ","
+        delimiter: ''
         format: "%n%"
     precision:
       format:

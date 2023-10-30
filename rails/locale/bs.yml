@@ -17,7 +17,7 @@ bs:
     - pet
     - sub
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mar
@@ -43,7 +43,7 @@ bs:
       long: "%e. %B %Y."
       short: "%e. %b. %Y."
     month_names:
-    -
+    - 
     - januar
     - februar
     - mart
@@ -119,12 +119,12 @@ bs:
         many: "%{count} mjeseci"
         other: "%{count} mjeseci"
     prompts:
-      second: Sekunda
-      minute: Minuta
-      hour: Sat
-      day: Dan
-      month: Mjesec
-      year: Godina
+      second: sekundi
+      minute: minut
+      hour: sat
+      day: dan
+      month: mjesec
+      year: godina
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -168,7 +168,7 @@ bs:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n%u"
         precision: 2
         separator: ","
         significant: false
@@ -185,30 +185,30 @@ bs:
         format: "%n %u"
         units:
           billion:
-            one: Milijarda
+            one: milijarda
             few: milijarde
             many: milijardi
-            other: Milijardi
+            other: milijardi
           million:
-            one: Milion
+            one: milion
             few: miliona
             many: miliona
-            other: Miliona
+            other: miliona
           quadrillion:
             one: bilijarda
             few: bilijarde
             many: bilijardi
             other: bilijardi
           thousand:
-            one: Hiljada
+            one: hiljada
             few: hiljade
             many: hiljada
-            other: Hiljada
+            other: hiljada
           trillion:
-            one: Bilion
+            one: bilion
             few: biliona
             many: biliona
-            other: Biliona
+            other: biliona
           unit: ''
       format:
         delimiter: ","
@@ -219,19 +219,18 @@ bs:
         format: "%n %u"
         units:
           byte:
-            one: Bajt
+            one: bajt
             few: bajta
             many: bajtova
-            other: Bajtova
+            other: bajtova
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "%n %"
+        delimiter: ","
+        format: "%n%"
     precision:
       format:
         delimiter: ''

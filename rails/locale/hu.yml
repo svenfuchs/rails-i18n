@@ -6,15 +6,15 @@ hu:
         record_invalid: Sikertelen validálás %{errors}
   date:
     abbr_day_names:
-    - V
-    - H
-    - K
-    - Sze
-    - Cs
-    - P
-    - Szo
+    - v.
+    - h.
+    - k.
+    - sze.
+    - cs.
+    - p.
+    - szo.
     abbr_month_names:
-    -
+    - 
     - jan.
     - febr.
     - márc.
@@ -40,7 +40,7 @@ hu:
       long: "%Y. %B %e."
       short: "%b %e."
     month_names:
-    -
+    - 
     - január
     - február
     - március
@@ -126,7 +126,7 @@ hu:
     template:
       body: 'Problémás mezők:'
       header:
-        one: "%{count} hiba miatt nem menthető a következő: %{model}"
+        one: '%{count} hiba miatt nem menthető a következő: %{model}'
         other: "%{count} hiba miatt nem menthető a következő: %{model}"
   helpers:
     select:
@@ -138,15 +138,15 @@ hu:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: ''
+        format: "%n %u"
         precision: 0
         separator: ","
         significant: true
         strip_insignificant_zeros: true
         unit: Ft
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 2
       separator: ","
       significant: true
@@ -155,11 +155,11 @@ hu:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Milliárd
-          million: Millió
+          billion: milliárd
+          million: millió
           quadrillion: billiárd
-          thousand: Ezer
-          trillion: Billió
+          thousand: ezer
+          trillion: billió
           unit: ''
       format:
         delimiter: ''
@@ -175,12 +175,10 @@ hu:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: " "
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''

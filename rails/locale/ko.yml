@@ -124,7 +124,7 @@ ko:
     currency:
       format:
         delimiter: ","
-        format: "%u%n"
+        format: "%n%u"
         precision: 0
         separator: "."
         significant: false
@@ -141,8 +141,8 @@ ko:
       decimal_units:
         format: "%n%u"
         units:
-          billion: 억
-          million: 만
+          billion: 십억
+          million: 백만
           quadrillion: 천조
           thousand: 천
           trillion: 조
@@ -159,19 +159,18 @@ ko:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ","
+        delimiter: ''
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " 및 "
-      two_words_connector: " 및 "
+      last_word_connector: ", "
+      two_words_connector: ', '
       words_connector: ", "
   time:
     am: 오전

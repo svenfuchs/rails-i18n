@@ -6,27 +6,27 @@ ro:
         record_invalid: Validare nereuşită %{errors}
   date:
     abbr_day_names:
-    - dum.
-    - lun.
-    - mar.
-    - mie.
+    - dum
+    - lun
+    - mar
+    - mie
     - joi
-    - vin.
-    - sâm.
+    - vin
+    - sâm
     abbr_month_names:
-    -
-    - ian.
-    - feb.
-    - mar.
-    - apr.
+    - 
+    - ian
+    - feb
+    - mar
+    - apr
     - mai
-    - iun.
-    - iul.
-    - aug.
-    - sept.
-    - oct.
-    - nov.
-    - dec.
+    - iun
+    - iul
+    - aug
+    - sep
+    - oct
+    - noi
+    - dec
     day_names:
     - duminică
     - luni
@@ -40,7 +40,7 @@ ro:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - ianuarie
     - februarie
     - martie
@@ -105,12 +105,12 @@ ro:
         few: "%{count} luni"
         other: "%{count} luni"
     prompts:
-      second: Secundă
-      minute: Minut
-      hour: Oră
-      day: Zi
-      month: Lună
-      year: An
+      second: secunda
+      minute: minutul
+      hour: ora
+      day: ziua
+      month: luna
+      year: anul
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -151,7 +151,7 @@ ro:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -167,19 +167,11 @@ ro:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: Miliard
-            other: De miliarde
-          million:
-            one: Milion
-            other: De milioane
+          billion: miliard
+          million: milion
           quadrillion: quadrilion
-          thousand:
-            one: Mie
-            other: De mii
-          trillion:
-            one: Trilion
-            other: De trilioane
+          thousand: mie
+          trillion: trilion
           unit: ''
       format:
         delimiter: ","
@@ -192,16 +184,14 @@ ro:
           byte:
             one: Byte
             few: Bytes
-            other: De byți
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "%n %"
+        delimiter: ","
     precision:
       format:
         delimiter: ''

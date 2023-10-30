@@ -14,33 +14,33 @@ lo:
     - ສຸກ
     - ເສົາ
     abbr_month_names:
-    -
-    - ມ.ກ.
-    - ກ.ພ.
-    - ມ.ນ.
-    - ມ.ສ.
-    - ພ.ພ.
-    - ມິ.ຖ.
-    - ກ.ລ.
-    - ສ.ຫ.
-    - ກ.ຍ.
-    - ຕ.ລ.
-    - ພ.ຈ.
-    - ທ.ວ.
+    - 
+    - ມ.ກ
+    - ກ.ພ
+    - ມ.ນ
+    - ມ.ສ
+    - ພ.ພ
+    - ມິ.ຖ
+    - ກ.ລ
+    - ສ.ຫ
+    - ກ.ຍ
+    - ຕ.ລ
+    - ພ.ຈ
+    - ທ.ວ
     day_names:
-    - ວັນອາທິດ
-    - ວັນຈັນ
-    - ວັນອັງຄານ
-    - ວັນພຸດ
-    - ວັນພະຫັດ
-    - ວັນສຸກ
-    - ວັນເສົາ
+    - ອາທິດ
+    - ຈັນ
+    - ອັງຄານ
+    - ພຸດ
+    - ພະຫັດ
+    - ສຸກ
+    - ເສົາ
     formats:
       default: "%d-%m-%Y"
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - ມັງກອນ
     - ກຸມພາ
     - ມີນາ
@@ -61,12 +61,12 @@ lo:
     distance_in_words:
       about_x_hours: ປະມານ %{count} ຊົ່ວໂມງ
       about_x_months: ປະມານ %{count} ເດືອນ
-      about_x_years: ປະມານ %{count} ປີ
-      almost_x_years: ເກືອບ %{count} ປີ
-      half_a_minute: ເຄິ່ງນາທີ
-      less_than_x_seconds: ນ້ອຍກວ່າ %{count} ວິນາທີ
-      less_than_x_minutes: ນ້ອຍກວ່າ %{count} ນາທີ
-      over_x_years: ຫຼາຍກວ່າ %{count} ປີ
+      about_x_years: 'ປະມານ %{count} ປີ'
+      almost_x_years: 'ເກືອບ %{count} ປີ'
+      half_a_minute: 'ເຄິ່ງນາທີ'
+      less_than_x_seconds: 'ນ້ອຍກວ່າ %{count} ວິນາທີ'
+      less_than_x_minutes: 'ນ້ອຍກວ່າ %{count} ນາທີ'
+      over_x_years: 'ຫຼາຍກວ່າ %{count} ປີ'
       x_seconds: "%{count} ວິນາທີ"
       x_minutes: "%{count} ນາທີ"
       x_days: "%{count} ມື້"
@@ -75,7 +75,7 @@ lo:
       second: ວິນາທີ
       minute: ນາທີ
       hour: ຊົ່ວໂມງ
-      day: ມື້
+      day: ວັນ
       month: ເດືອນ
       year: ປີ
   errors:
@@ -109,27 +109,23 @@ lo:
   number:
     currency:
       format:
-        delimiter: "."
-        format: "%u%n"
+        delimiter: ","
+        format: "%n %u"
         precision: 2
-        separator: ","
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
         unit: Kip
     format:
-      delimiter: "."
+      delimiter: ","
       precision: 3
-      separator: ","
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ຕື້
-          million: ລ້ານ
-          thousand: ພັນ
-          trillion: ລ້ານລ້ານ
           unit: ''
       format:
         delimiter: ''
@@ -149,19 +145,17 @@ lo:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", "
-      two_words_connector: " ແລະ "
+      last_word_connector: ", ແລະ "
+      two_words_connector: 'ແລະ '
       words_connector: ", "
   time:
     am: ເຊົ້າ

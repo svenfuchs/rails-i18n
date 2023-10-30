@@ -9,53 +9,53 @@ dz:
           has_many: ཡིག་ཐོ་ %{record} བརྟེན་ཏེ་ཡོད་པ་ལས་བཏོན་གཏང་མི་བཏུབ་
   date:
     abbr_day_names:
-    - ཟླ་
-    - མིར་
-    - ལྷག་
-    - ཕུར་
-    - སངས་
-    - སྤེན་
-    - ཉི་
+    - གཟའ་ཟླཝ
+    - གཟའ་མིག་དམར
+    - གཟའ་ལྷགཔ
+    - གཟའ་ཕུརཔ
+    - གཟའ་པ་སངས
+    - གཟའ་སྤེན་པ
+    - གཟའ་ཉིམ
     abbr_month_names:
     -
-    - ༡
-    - ༢
-    - ༣
-    - ༤
-    - ༥
-    - ༦
-    - ༧
-    - ༨
-    - ༩
-    - ༡༠
-    - ༡༡
-    - '12'
+    - ཟླཝ་དང་པ
+    - ཟླཝ་གཉིས་པ
+    - ཟླཝ་གསུམ་པ
+    - ཟླཝ་བཞི་པ
+    - ཟླཝ་ལྔ་པ
+    - ཟླཝ་དྲུག་པ
+    - ཟླཝ་བདུན་པ
+    - ཟླཝ་བརྒྱད་པ
+    - ཟླཝ་དགུ་པ
+    - ཟླཝ་བཅུ་པ
+    - ཟླཝ་བཅུ་གཅིག་པ
+    - ཟླཝ་བཅུ་གཉིས་པ
     day_names:
-    - གཟའ་ཟླ་བ་
-    - གཟའ་མིག་དམར་
-    - གཟའ་ལྷག་པ་
-    - གཟའ་ཕུར་བུ་
-    - གཟའ་པ་སངས་
-    - གཟའ་སྤེན་པ་
-    - གཟའ་ཉི་མ་
+    - གཟའ་ཟླཝ
+    - གཟའ་མིག་དམར
+    - གཟའ་ལྷག་པ
+    - གཟའ་ཕུརཔ
+    - གཟའ་པ་སངས
+    - གཟའ་སྤེན་པ
+    - གཟའ་ཉི་མ
     formats:
       default: "%Y-%m-%d"
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
     -
-    - ཟླ་དངཔ་
-    - ཟླ་གཉིས་པ་
-    - ཟླ་གསུམ་པ་
-    - ཟླ་བཞི་པ་
-    - ཟླ་ལྔ་པ་
-    - ཟླ་དྲུག་པ
-    - ཟླ་བདུན་པ་
-    - ཟླ་བརྒྱད་པ་
-    - ཟླ་དགུ་པ་
-    - ཟླ་བཅུ་པ་
-    - ཟླ་བཅུ་གཅིག་པ་
-    - ཟླ་བཅུ་གཉིས་པ་
+    - ཟླཝ་དང་པ
+    - ཟླཝ་གཉིས་པ
+    - ཟླཝ་གསུམ་པ
+    - ཟླཝ་བཞི་པ
+    - ཟླཝ་ལྔ་པ
+    - ཟླཝ་དྲུག་པ
+    - ཟླཝ་བདུན་པ
+    - ཟླཝ་བརྒྱད་པ
+    - ཟླཝ་དགུ་པ
+    - ཟླཝ་བཅུ་པ
+    - ཟླཝ་བཅུ་གཅིག་པ
+    - ཟླཝ་བཅུ་གཉིས་པ
     order:
     - :ལོ
     - :ཟླཝ
@@ -98,11 +98,11 @@ dz:
         one: ལོ་གཅིག
         other: ལོ %{count}
     prompts:
-      second: སྐར་ཆཱ་
+      second: སྐར་ཆ
       minute: སྐར་མ
       hour: ཆུ་ཚོད
-      day: ཚེས་
-      month: ཟླ་ཝ་
+      day: ཉིནམ
+      month: ཟླཝ
       year: ལོ
   errors:
     format: "%{attribute} %{message}"
@@ -169,11 +169,11 @@ dz:
       decimal_units:
         format: "%n %u"
         units:
-          billion: དུང་ཕྱུར་
-          million: ས་ཡ་
+          billion: ཐེར་འབུམ
+          million: ས་ཡ
           quadrillion: Quadrillion
           thousand: སྟོང་ཕྲག
-          trillion: དུང་ཕྱུར་ཁྲི་
+          trillion: ཁྲག་ཁྲིག་ཆེན་པོ
           unit: ''
       format:
         delimiter: ''
@@ -194,16 +194,16 @@ dz:
           tb: TB
     percentage:
       format:
-        delimiter: ","
-        format: "%n %"
+        delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " དང་ "
-      two_words_connector: " དང་ "
-      words_connector: " དང་ "
+      last_word_connector: ", དང "
+      two_words_connector: " དང "
+      words_connector: ", "
   time:
     am: དྲོ་པ་གི་ཆུ་ཚོད་་
     formats:

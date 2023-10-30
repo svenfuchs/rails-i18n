@@ -6,15 +6,15 @@ th:
         record_invalid: 'ไม่ผ่านการตรวจสอบ: %{errors}'
   date:
     abbr_day_names:
-    - อา.
-    - จ.
-    - อ.
-    - พ.
-    - พฤ.
-    - ศ.
-    - ส.
+    - อา
+    - จ
+    - อ
+    - พ
+    - พฤ
+    - ศ
+    - ส
     abbr_month_names:
-    -
+    - 
     - ม.ค.
     - ก.พ.
     - มี.ค.
@@ -28,19 +28,19 @@ th:
     - พ.ย.
     - ธ.ค.
     day_names:
-    - วันอาทิตย์
-    - วันจันทร์
-    - วันอังคาร
-    - วันพุธ
-    - วันพฤหัสบดี
-    - วันศุกร์
-    - วันเสาร์
+    - อาทิตย์
+    - จันทร์
+    - อังคาร
+    - พุธ
+    - พฤหัสบดี
+    - ศุกร์
+    - เสาร์
     formats:
       default: "%d-%m-%Y"
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - มกราคม
     - กุมภาพันธ์
     - มีนาคม
@@ -115,7 +115,7 @@ th:
     currency:
       format:
         delimiter: ","
-        format: "%u%n"
+        format: "%n %u"
         precision: 2
         separator: "."
         significant: false
@@ -146,23 +146,21 @@ th:
         format: "%n %u"
         units:
           byte: ไบต์
-          gb: GB
-          kb: KB
-          mb: MB
-          pb: PB
-          tb: TB
+          gb: จิกะไบต์
+          kb: กิโลไบต์
+          mb: เมกะไบต์
+          tb: เทระไบต์
     percentage:
       format:
-        delimiter: ","
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " และ"
-      two_words_connector: และ
-      words_connector: " "
+      last_word_connector: ", และ "
+      two_words_connector: " และ "
+      words_connector: ", "
   time:
     am: ก่อนเที่ยง
     formats:

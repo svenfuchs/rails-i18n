@@ -9,27 +9,27 @@ lt:
           has_many: Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja
   date:
     abbr_day_names:
-    - sk
-    - pr
-    - an
-    - tr
-    - kt
-    - pn
-    - št
+    - Sek
+    - Pir
+    - Ant
+    - Tre
+    - Ket
+    - Pen
+    - Šeš
     abbr_month_names:
     -
-    - saus.
-    - vas.
-    - kov.
-    - bal.
-    - geg.
-    - birž.
-    - liep.
-    - rugp.
-    - rugs.
-    - spal.
-    - lapkr.
-    - gruod.
+    - Sau
+    - Vas
+    - Kov
+    - Bal
+    - Geg
+    - Bir
+    - Lie
+    - Rgp
+    - Rgs
+    - Spa
+    - Lap
+    - Grd
     day_names:
     - sekmadienis
     - pirmadienis
@@ -108,7 +108,7 @@ lt:
         few: "%{count} mėnesiai"
         other: "%{count} mėnesių"
     prompts:
-      second: Sekundė
+      second: Sekundės
       minute: Minutė
       hour: Valanda
       day: Diena
@@ -161,15 +161,15 @@ lt:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false
@@ -178,19 +178,11 @@ lt:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: Milijardas
-            other: Milijardų
-          million:
-            one: Milijonas
-            other: Milijonų
+          billion: Milijardas
+          million: Milijonas
           quadrillion: Kvadrilijonas
-          thousand:
-            one: Tūkstantis
-            other: Tūkstančių
-          trillion:
-            one: Trilijonas
-            other: Trilijonų
+          thousand: Tūkstantis
+          trillion: Trilijonas
           unit: ''
       format:
         delimiter: ''
@@ -207,12 +199,11 @@ lt:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: " "
-        format: "%n %"
+        delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''

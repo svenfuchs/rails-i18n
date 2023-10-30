@@ -9,15 +9,15 @@ cs:
           has_many: Nemůžu smazat položku protože existuje závislé/ý %{record}
   date:
     abbr_day_names:
-    - ne
-    - po
-    - út
-    - st
-    - čt
-    - pá
-    - so
+    - Ne
+    - Po
+    - Út
+    - St
+    - Čt
+    - Pá
+    - So
     abbr_month_names:
-    -
+    - 
     - led
     - úno
     - bře
@@ -43,19 +43,19 @@ cs:
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
-    -
-    - ledna
-    - února
-    - března
-    - dubna
-    - května
-    - června
-    - července
-    - srpna
+    - 
+    - leden
+    - únor
+    - březen
+    - duben
+    - květen
+    - červen
+    - červenec
+    - srpen
     - září
-    - října
-    - listopadu
-    - prosince
+    - říjen
+    - listopad
+    - prosinec
     order:
     - :day
     - :month
@@ -158,15 +158,15 @@ cs:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: Kč
     format:
-      delimiter: " "
+      delimiter: "."
       precision: 3
       separator: ","
       significant: false
@@ -175,19 +175,11 @@ cs:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: Miliarda
-            other: Miliard
-          million:
-            one: Milion
-            other: Milionů
+          billion: Miliarda
+          million: Milion
           quadrillion: Biliarda
-          thousand:
-            one: Tisíc
-            other: Tisíc
-          trillion:
-            one: Bilion
-            other: Bilionů
+          thousand: Tisíc
+          trillion: Bilion
           unit: ''
       format:
         delimiter: ''
@@ -198,25 +190,24 @@ cs:
         format: "%n %u"
         units:
           byte:
-            one: Bajt
+            one: B
             few: B
-            other: Bajtů
+            other: B
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: " "
-        format: "%n %"
+        delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " a "
-      two_words_connector: " a "
+      last_word_connector: " a "
+      two_words_connector: " a "
       words_connector: ", "
   time:
     am: dopoledne

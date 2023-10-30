@@ -17,7 +17,7 @@ zh-CN:
     - 周五
     - 周六
     abbr_month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -43,7 +43,7 @@ zh-CN:
       long: "%Y年%m月%d日"
       short: "%m月%d日"
     month_names:
-    -
+    - 
     - 一月
     - 二月
     - 三月

@@ -9,41 +9,41 @@ is:
           has_many: Ekki hægt að eyða færslur því %{record} sem hún er háð er til
   date:
     abbr_day_names:
-    - sun.
-    - mán.
-    - þri.
-    - mið.
-    - fim.
-    - fös.
-    - lau.
+    - sun
+    - mán
+    - þri
+    - mið
+    - fim
+    - fös
+    - lau
     abbr_month_names:
-    -
-    - jan.
-    - feb.
-    - mar.
-    - apr.
+    - 
+    - jan
+    - feb
+    - mar
+    - apr
     - maí
-    - jún.
-    - júl.
-    - ágú.
-    - sep.
-    - okt.
-    - nóv.
-    - des.
+    - jún
+    - júl
+    - ágú
+    - sep
+    - okt
+    - nóv
+    - des
     day_names:
-    - sunnudagur
-    - mánudagur
-    - þriðjudagur
-    - miðvikudagur
-    - fimmtudagur
-    - föstudagur
-    - laugardagur
+    - sunnudaginn
+    - mánudaginn
+    - þriðjudaginn
+    - miðvikudaginn
+    - fimmtudaginn
+    - föstudaginn
+    - laugardaginn
     formats:
       default: "%d.%m.%Y"
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    -
+    - 
     - janúar
     - febrúar
     - mars
@@ -150,7 +150,7 @@ is:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -167,18 +167,18 @@ is:
         format: "%n %u"
         units:
           billion:
-            one: Milljarður
-            other: Milljarðar
+            one: milljarður
+            other: milljarðar
           million:
-            one: Milljón
-            other: Milljónir
+            one: milljón
+            other: milljónir
           quadrillion:
             one: billjarður
             other: billjarðar
-          thousand: Þúsund
+          thousand: þúsund
           trillion:
-            one: Billjón
-            other: Billjónir
+            one: billjón
+            other: billjónir
           unit: ''
       format:
         delimiter: ''
@@ -194,11 +194,10 @@ is:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
+        delimiter: ''
         format: "%n%"
     precision:
       format:

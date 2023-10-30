@@ -9,28 +9,6 @@ ta:
           has_many: பதிவை நீக்க முடியாது, ஏனெனில் சார்புகள் %{record} உள்ளது
   date:
     abbr_day_names:
-    - ஞாயி.
-    - திங்.
-    - செவ்.
-    - புத.
-    - வியா.
-    - வெள்.
-    - சனி
-    abbr_month_names:
-    -
-    - ஜன.
-    - பிப்.
-    - மார்.
-    - ஏப்.
-    - மே
-    - ஜூன்
-    - ஜூலை
-    - ஆக.
-    - செப்.
-    - அக்.
-    - நவ.
-    - டிச.
-    day_names:
     - ஞாயிறு
     - திங்கள்
     - செவ்வாய்
@@ -38,12 +16,34 @@ ta:
     - வியாழன்
     - வெள்ளி
     - சனி
+    abbr_month_names:
+    - 
+    - ஜன
+    - பிப்
+    - மார்ச்
+    - ஏப்
+    - மே
+    - ஜூன்
+    - ஜூலை
+    - ஆக
+    - செப்
+    - அக்
+    - நவ
+    - டிச
+    day_names:
+    - ஞாயிற்றுக்கிழமை
+    - திங்கட்கிழமை
+    - செவ்வாய்க்கிழமை
+    - புதன்கிழமை
+    - வியாழக்கிழமை
+    - வெள்ளிக்கிழமை
+    - சனிக்கிழமை
     formats:
       default: "%d-%m-%Y"
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - ஜனவரி
     - பிப்ரவரி
     - மார்ச்
@@ -97,7 +97,7 @@ ta:
         one: "%{count} மாதம்"
         other: "%{count} மாதங்கள்"
     prompts:
-      second: விநாடி
+      second: விநாடிகள்
       minute: நிமிடம்
       hour: மணி
       day: நாள்
@@ -181,23 +181,22 @@ ta:
         format: "%n %u"
         units:
           byte:
-            one: பைட்
-            other: பைட்கள்
+            one: Byte
+            other: Bytes
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ","
+        delimiter: ''
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " மற்றும் "
+      last_word_connector: ", மற்றும் "
       two_words_connector: " மற்றும் "
       words_connector: ", "
   time:

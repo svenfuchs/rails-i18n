@@ -17,7 +17,7 @@ oc:
     - dv
     - ds
     abbr_month_names:
-    -
+    - 
     - gen
     - feb
     - març
@@ -43,7 +43,7 @@ oc:
       long: Lo %e %B de %Y
       short: "%e %b"
     month_names:
-    -
+    - 
     - de genièr
     - de febrièr
     - de març
@@ -154,17 +154,17 @@ oc:
   number:
     currency:
       format:
-        delimiter: ","
-        format: "%u %n"
+        delimiter: "."
+        format: "%n %u"
         precision: 2
-        separator: "."
+        separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: ","
+      delimiter: "."
       precision: 3
-      separator: "."
+      separator: ","
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -188,22 +188,20 @@ oc:
           byte:
             one: octet
             other: octets
-          gb: GB
-          kb: KB
-          mb: MB
-          pb: PB
-          tb: TB
+          gb: Go
+          kb: ko
+          mb: Mo
+          tb: To
     percentage:
       format:
-        delimiter: ","
-        format: "%n%"
+        delimiter: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", "
-      two_words_connector: ", "
+      last_word_connector: ", e "
+      two_words_connector: " e "
       words_connector: ", "
   time:
     am: am

@@ -9,33 +9,33 @@ ne:
           has_many: रेकर्ड मेटाउन सक्दैन किनभने धेरै निर्भर %{record} अवस्थित छन
   date:
     abbr_day_names:
-    - आइत
+    - आईत
     - सोम
-    - मङ्गल
+    - मंगल
     - बुध
-    - बिहि
+    - बिही
     - शुक्र
     - शनि
     abbr_month_names:
-    -
-    - जनवरी
-    - फेब्रुअरी
+    - 
+    - जन.
+    - फेब्रु.
     - मार्च
     - अप्रिल
-    - मे
+    - मई
     - जुन
     - जुलाई
-    - अगस्ट
-    - सेप्टेम्बर
-    - अक्टोबर
-    - नोभेम्बर
-    - डिसेम्बर
+    - अगष्ट
+    - सेप्ट.
+    - अक्टो.
+    - नोभ.
+    - डिसे.
     day_names:
-    - आइतबार
+    - आईतबार
     - सोमबार
-    - मङ्गलबार
+    - मंगलबार
     - बुधबार
-    - बिहिबार
+    - बिहीबार
     - शुक्रबार
     - शनिबार
     formats:
@@ -43,16 +43,16 @@ ne:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - जनवरी
-    - फेब्रुअरी
+    - फेब्रुवरी
     - मार्च
     - अप्रिल
-    - मे
+    - मई
     - जुन
     - जुलाई
-    - अगस्ट
-    - सेप्टेम्बर
+    - अगष्ट
+    - सेप्टेम्बार
     - अक्टोबर
     - नोभेम्बर
     - डिसेम्बर
@@ -97,12 +97,12 @@ ne:
         one: "%{count} महिना"
         other: "%{count} महिना"
     prompts:
-      second: सेकेन्ड
+      second: सेकेण्ड
       minute: मिनेट
       hour: घण्टा
-      day: बार
+      day: दिन
       month: महिना
-      year: वर्ष
+      year: बर्ष
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -148,7 +148,7 @@ ne:
     currency:
       format:
         delimiter: ","
-        format: "%u %n"
+        format: "%u%n"
         precision: 2
         separator: "."
         significant: false
@@ -164,11 +164,11 @@ ne:
       decimal_units:
         format: "%n %u"
         units:
-          billion: अरब
-          million: करोड
+          billion: अर्ब
+          million: Million
           quadrillion: Quadrillion
           thousand: हजार
-          trillion: खरब
+          trillion: Trillion
           unit: ''
       format:
         delimiter: ''
@@ -181,21 +181,19 @@ ne:
           byte:
             one: Byte
             other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          pb: पिटा
-          tb: TB
+          gb: जि.बी.
+          kb: के.बी.
+          mb: एम.बी
+          tb: टि.बी
     percentage:
       format:
-        delimiter: ","
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " र "
+      last_word_connector: ", र "
       two_words_connector: " र "
       words_connector: ", "
   time:

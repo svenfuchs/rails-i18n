@@ -17,7 +17,7 @@ en-CY:
     - Fri
     - Sat
     abbr_month_names:
-    -
+    - 
     - Jan
     - Feb
     - Mar
@@ -43,7 +43,7 @@ en-CY:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - January
     - February
     - March

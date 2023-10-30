@@ -9,53 +9,53 @@ eu:
           has_many: Ezin da erregistroa ezabat menpeko %{record}ak daudelako
   date:
     abbr_day_names:
-    - ig.
-    - al.
-    - ar.
-    - az.
-    - og.
-    - or.
-    - lr.
+    - Igan
+    - Astel
+    - Astear
+    - Asteaz
+    - Oste
+    - Osti
+    - Lar
     abbr_month_names:
-    -
-    - urt.
-    - ots.
-    - mar.
-    - api.
-    - mai.
-    - eka.
-    - uzt.
-    - abu.
-    - ira.
-    - urr.
-    - aza.
-    - abe.
+    - 
+    - Urt
+    - Ots
+    - Mar
+    - Api
+    - Mai
+    - Eka
+    - Uzt
+    - Abu
+    - Ira
+    - Urr
+    - Aza
+    - Aben
     day_names:
-    - igandea
-    - astelehena
-    - asteartea
-    - asteazkena
-    - osteguna
-    - ostirala
-    - larunbata
+    - Igandea
+    - Astelehena
+    - Asteartea
+    - Asteazkena
+    - Osteguna
+    - Ostirala
+    - Larunbata
     formats:
       default: "%Y/%m/%e"
       long: "%Y(e)ko %Bk %e"
       short: "%b %e"
     month_names:
-    -
-    - urtarrila
-    - otsaila
-    - martxoa
-    - apirila
-    - maiatza
-    - ekaina
-    - uztaila
-    - abuztua
-    - iraila
-    - urria
-    - azaroa
-    - abendua
+    - 
+    - Urtarrila
+    - Otsaila
+    - Martxoa
+    - Apirila
+    - Maiatza
+    - Ekaina
+    - Uztaila
+    - Abuztua
+    - Iraila
+    - Urria
+    - Azaroa
+    - Abendua
     order:
     - :year
     - :month
@@ -97,12 +97,12 @@ eu:
         one: hilabete bat
         other: "%{count} hilabete"
     prompts:
-      second: Segundoa
-      minute: Minutua
-      hour: Ordua
-      day: Eguna
-      month: Hilabetea
-      year: Urtea
+      second: Segundu
+      minute: Minutu
+      hour: Ordu
+      day: Egun
+      month: Hilabete
+      year: Urte
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -152,7 +152,7 @@ eu:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -168,11 +168,11 @@ eu:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Milioi
+          billion: Mila milioi
           million: Milioi
           quadrillion: Kuatrilioi
-          thousand: ''
-          trillion: Bilioi
+          thousand: Mila
+          trillion: Trilioi
           unit: ''
       format:
         delimiter: ''
@@ -188,12 +188,11 @@ eu:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "% %n"
+        delimiter: ''
+        format: "%n %"
     precision:
       format:
         delimiter: ''

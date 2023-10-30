@@ -6,27 +6,27 @@ eo:
         record_invalid: 'Validado malsukcesis: %{errors}'
   date:
     abbr_day_names:
-    - di
-    - lu
-    - ma
-    - me
-    - ĵa
-    - ve
-    - sa
-    abbr_month_names:
-    -
-    - jan
-    - feb
+    - dim
+    - lun
     - mar
-    - apr
-    - maj
-    - jun
-    - jul
-    - aŭg
-    - sep
-    - okt
-    - nov
-    - dec
+    - mer
+    - ĵaŭ
+    - ven
+    - sab
+    abbr_month_names:
+    - 
+    - jan.
+    - feb.
+    - mar.
+    - apr.
+    - majo
+    - jun.
+    - jul.
+    - aŭg.
+    - sep.
+    - okt.
+    - nov.
+    - dec.
     day_names:
     - dimanĉo
     - lundo
@@ -40,7 +40,7 @@ eo:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - januaro
     - februaro
     - marto
@@ -140,15 +140,15 @@ eo:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%u %n"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false
@@ -174,22 +174,20 @@ eo:
           byte:
             one: bitoko
             other: bitokoj
-          gb: GB
-          kb: KB
-          mb: MB
-          pb: PB
-          tb: TB
+          gb: Gb
+          kb: kb
+          mb: Mb
+          tb: Tb
     percentage:
       format:
-        delimiter: " "
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", "
-      two_words_connector: ", "
+      last_word_connector: " kaj "
+      two_words_connector: " kaj "
       words_connector: ", "
   time:
     am: am

@@ -9,15 +9,15 @@ ug:
           has_many: "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"
   date:
     abbr_day_names:
-    - يە
-    - دۈ
-    - سە
-    - چا
-    - پە
-    - جۈ
-    - شە
+    - يەكشەنبە
+    - دۈشەنبە
+    - سەيشەنبە
+    - چارشەنبە
+    - پەيشەنبە
+    - جۈمە
+    - شەنبە
     abbr_month_names:
-    -
+    - 
     - يانۋار
     - فېۋرال
     - مارت
@@ -43,7 +43,7 @@ ug:
       long: "%Y-%m-%d"
       short: "%b%d"
     month_names:
-    -
+    - 
     - يانۋار
     - فېۋرال
     - مارت
@@ -97,7 +97,7 @@ ug:
         one: بىر ئاي
         other: "%{count} ئاي"
     prompts:
-      second: سېكۇنت
+      second: سىكنۇت
       minute: مىنۇت
       hour: سائەت
       day: كۈن
@@ -150,7 +150,7 @@ ug:
     currency:
       format:
         delimiter: ","
-        format: "%u%n"
+        format: "%u %n"
         precision: 2
         separator: "."
         significant: false
@@ -170,7 +170,7 @@ ug:
           million: مىليون
           quadrillion: گېگابايت
           thousand: مىڭ
-          trillion: تىرىليون
+          trillion: مېگا
           unit: ''
       format:
         delimiter: ''
@@ -186,19 +186,17 @@ ug:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ","
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", and "
-      two_words_connector: " and "
+      last_word_connector: " ۋە "
+      two_words_connector: " ۋە "
       words_connector: ", "
   time:
     am: چۈشتىن بۇرۇن

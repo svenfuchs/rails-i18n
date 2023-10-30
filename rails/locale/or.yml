@@ -8,29 +8,29 @@ or:
     abbr_day_names:
     - ରବି
     - ସୋମ
-    - ମଙ୍ଗଳ
+    - ମଂଗଳ
     - ବୁଧ
     - ଗୁରୁ
     - ଶୁକ୍ର
     - ଶନି
     abbr_month_names:
-    -
-    - ଜାନୁଆରୀ
-    - ଫେବୃଆରୀ
-    - ମାର୍ଚ୍ଚ
-    - ଅପ୍ରେଲ
-    - ମଇ
-    - ଜୁନ
-    - ଜୁଲାଇ
-    - ଅଗଷ୍ଟ
-    - ସେପ୍ଟେମ୍ବର
-    - ଅକ୍ଟୋବର
-    - ନଭେମ୍ବର
-    - ଡିସେମ୍ବର
+    - 
+    - ଜାନୁ
+    - ଫେବରୁ
+    - ମାର
+    - ଏପ୍ର
+    - ମାଈ
+    - ଜୁନ୍
+    - ଜୁଲ୍
+    - ଅଗସ୍ଟ
+    - ସେପ୍ଟ
+    - ଅକ୍ଟ
+    - ନୋଭ
+    - ଡିସ୍
     day_names:
     - ରବିବାର
     - ସୋମବାର
-    - ମଙ୍ଗଳବାର
+    - ମଗଂଳବାର
     - ବୁଧବାର
     - ଗୁରୁବାର
     - ଶୁକ୍ରବାର
@@ -40,19 +40,19 @@ or:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
-    - ଜାନୁଆରୀ
-    - ଫେବୃଆରୀ
-    - ମାର୍ଚ୍ଚ
-    - ଅପ୍ରେଲ
-    - ମଇ
-    - ଜୁନ
-    - ଜୁଲାଇ
-    - ଅଗଷ୍ଟ
-    - ସେପ୍ଟେମ୍ବର
-    - ଅକ୍ଟୋବର
-    - ନଭେମ୍ବର
-    - ଡିସେମ୍ବର
+    - 
+    - ଜାନୁୟାରୀ
+    - ଫେବୃୟାରୀ
+    - ମାର୍ଚ଼
+    - ଏପ୍ରଲ
+    - ମାଈ
+    - ଜୁନ୍
+    - ଜୁଲାୟ
+    - ଅଗଷ୍ତ
+    - ସେପ୍ଟମ୍ବର୍
+    - ଅକ୍ଟୋବର୍
+    - ନୋଭେମ୍ବର
+    - ଡିସମ୍ବର
     order:
     - :year
     - :month
@@ -94,9 +94,9 @@ or:
         one: "%{count} ମାସ"
         other: "%{count} ମାସ"
     prompts:
-      second: ସେକେଣ୍ଡ୍
-      minute: ମିନିଟ୍
-      hour: ଘଣ୍ଟା
+      second: ସେକଣ୍ଢ
+      minute: ମିନଟ
+      hour: ଘଣ୍ତ
       day: ଦିନ
       month: ମାସ
       year: ବର୍ଷ
@@ -155,11 +155,11 @@ or:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ଶହକୋଟି
-          million: ନିୟୁତ
+          billion: ବିଲିୟନ୍
+          million: ମିଲିୟନ୍
           quadrillion: ହଜାର ବିଲିୟନ୍
           thousand: ହଜାର
-          trillion: ଲକ୍ଷକୋଟି
+          trillion: ଟ୍ରିଲିୟନ୍
           unit: ''
       format:
         delimiter: ''
@@ -175,19 +175,17 @@ or:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: ","
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", ଓ "
-      two_words_connector: " ଓ "
+      last_word_connector: ", ଏବଂ "
+      two_words_connector: " ଏବଂ "
       words_connector: ", "
   time:
     am: ପୁର୍ଵାହ୍ନ

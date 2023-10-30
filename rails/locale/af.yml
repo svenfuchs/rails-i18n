@@ -9,27 +9,27 @@ af:
           has_many: Kan rekord nie skrap nie omdat afhanklike %{record} bestaan
   date:
     abbr_day_names:
-    - So.
-    - Ma.
-    - Di.
-    - Wo.
-    - Do.
-    - Vr.
-    - Sa.
+    - Son
+    - Maan
+    - Dins
+    - Woe
+    - Don
+    - Vry
+    - Sat
     abbr_month_names:
-    -
-    - Jan.
-    - Feb.
-    - Mrt.
-    - Apr.
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
     - Mei
-    - Jun.
-    - Jul.
-    - Aug.
-    - Sep.
-    - Okt.
-    - Nov.
-    - Des.
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Des
     day_names:
     - Sondag
     - Maandag
@@ -43,12 +43,12 @@ af:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - Januarie
     - Februarie
     - Maart
     - April
-    - Mei
+    - Mai
     - Junie
     - Julie
     - Augustus
@@ -100,7 +100,7 @@ af:
         one: "%{count} jaar"
         other: "%{count} jare"
     prompts:
-      second: Sekonde
+      second: Sekondes
       minute: Minuut
       hour: Uur
       day: Dag
@@ -154,28 +154,28 @@ af:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%u%n"
+        delimiter: " "
+        format: "%u %n"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: R
     format:
-      delimiter: " "
+      delimiter: ","
       precision: 3
-      separator: ","
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Miljard
-          million: Miljoen
+          billion: miljard
+          million: miljoen
           quadrillion: biljard
-          thousand: Duisend
-          trillion: Biljoen
+          thousand: duisend
+          trillion: biljoen
           unit: ''
       format:
         delimiter: ''
@@ -188,21 +188,20 @@ af:
           byte:
             one: Greep
             other: Grepe
-          gb: GB
-          kb: KB
-          mb: MB
-          pb: PB
-          tb: TB
+          gb: GG
+          kb: kG
+          mb: MG
+          tb: TG
     percentage:
       format:
-        delimiter: " "
+        delimiter: ''
         format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " en "
+      last_word_connector: ", en "
       two_words_connector: " en "
       words_connector: ", "
   time:

@@ -5,10 +5,8 @@ sc:
       messages:
         record_invalid: 'Validatzione fallida: %{errors}'
         restrict_dependent_destroy:
-          has_one: Su registru non si podet iscantzellare ca esitit unu %{record}
-            chi nde dipendet
-          has_many: Su registru non si podet iscantzellare ca esitint %{record} chi
-            nde dipendent
+          has_one: Su registru non si podet iscantzellare ca esitit unu %{record} chi nde dipendet
+          has_many: Su registru non si podet iscantzellare ca esitint %{record} chi nde dipendent
   date:
     abbr_day_names:
     - dom
@@ -19,7 +17,7 @@ sc:
     - che
     - sàb
     abbr_month_names:
-    -
+    - 
     - ghe
     - fre
     - mar
@@ -45,7 +43,7 @@ sc:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - ghennàrgiu
     - freàrgiu
     - martzu
@@ -120,7 +118,6 @@ sc:
       exclusion: est riservadu
       greater_than: depet èssere prus mannu de %{count}
       greater_than_or_equal_to: depet èssere prus mannu o uguale a %{count}
-      in: depet istare intre %{count}
       inclusion: no est inclùdidu in sa lista
       invalid: no est vàlidu
       less_than: depet èssere prus minore de %{count}
@@ -130,6 +127,7 @@ sc:
       not_an_integer: no est unu nùmeru intreu
       odd: depet èssere dìspari
       other_than: depet èssere unu nùmeru chi non siat %{count}
+      in: "depet istare intre %{count}"
       present: depet èssere lassadu in biancu
       required: depet esìstere
       taken: est giai presente
@@ -158,7 +156,7 @@ sc:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -176,16 +174,16 @@ sc:
         format: "%n %u"
         units:
           billion:
-            one: Milliardu
-            other: Milliardos
+            one: milliardu
+            other: milliardos
           million:
-            one: Millione
-            other: Milliones
+            one: millione
+            other: milliones
           quadrillion:
             one: cuadrillione
             other: cuadrilliones
-          thousand: Mìgia
-          trillion: Mìgia milliardos
+          thousand: mìgia
+          trillion: mìgia milliardos
           unit: ''
       format:
         delimiter: ''
@@ -197,7 +195,7 @@ sc:
         units:
           byte:
             one: Byte
-            other: Bytes
+            other: Byte
           eb: EB
           gb: GB
           kb: KB
@@ -206,7 +204,7 @@ sc:
           tb: TB
     percentage:
       format:
-        delimiter: "."
+        delimiter: ''
         format: "%n%"
     precision:
       format:

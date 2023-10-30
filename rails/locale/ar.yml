@@ -10,12 +10,12 @@ ar:
   date:
     abbr_day_names:
     - الأحد
-    - الاثنين
-    - الثلاثاء
+    - الإثنين
+    - الثّلاثاء
     - الأربعاء
     - الخميس
     - الجمعة
-    - السبت
+    - السّبت
     abbr_month_names:
     -
     - يناير
@@ -32,18 +32,18 @@ ar:
     - ديسمبر
     day_names:
     - الأحد
-    - الاثنين
-    - الثلاثاء
+    - الإثنين
+    - الثّلاثاء
     - الأربعاء
     - الخميس
     - الجمعة
-    - السبت
+    - السّبت
     formats:
       default: "%d-%m-%Y"
       long: "%e %B، %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - يناير
     - فبراير
     - مارس
@@ -141,10 +141,10 @@ ar:
         many: "%{count} شهر"
         other: "%{count} شهر"
     prompts:
-      second: الثواني
-      minute: الدقائق
-      hour: الساعات
-      day: يوم
+      second: ثانية
+      minute: دقيقة
+      hour: ساعة
+      day: اليوم
       month: الشهر
       year: السنة
   errors:
@@ -216,12 +216,12 @@ ar:
     currency:
       format:
         delimiter: ","
-        format: "‏%n %u"
+        format: "%u %n"
         precision: 3
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: KWD
+        unit: "KWD"
     format:
       delimiter: ","
       precision: 3
@@ -233,14 +233,10 @@ ar:
         format: "%n %u"
         units:
           billion: مليار
-          million:
-            one: مليون
-            other: مليون
+          million: مليون
           quadrillion: كدريليون
-          thousand:
-            one: ألف
-            other: ألف
-          trillion: ترليون
+          thousand: ألفّ
+          trillion: تريليون
           unit: ''
       format:
         delimiter: ''
@@ -257,23 +253,22 @@ ar:
             few: Bytes
             many: Bytes
             other: Bytes
-          gb: غ.ب
-          kb: كيلوبايت
-          mb: م.ب
-          pb: بيتابايت
-          tb: تيرابايت
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
-        delimiter: ","
-        format: "%n‎%‎"
+        delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: " و"
-      two_words_connector: " و"
-      words_connector: " و"
+      last_word_connector: " و "
+      two_words_connector: " و "
+      words_connector: " ، "
   time:
     am: صباحًا
     formats:

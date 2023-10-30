@@ -9,51 +9,51 @@ ml:
           has_many: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
   date:
     abbr_day_names:
-    - ഞായർ
-    - തിങ്കൾ
+    - ഞാ.
+    - തി.
+    - ചൊ.
+    - ബു.
+    - വ്യാ.
+    - വെ.
+    - ശ.
+    abbr_month_names:
+    - 
+    - ജനു.
+    - ഫെബ്ര.
+    - മാർ.
+    - എപ്രി.
+    - മെയ്.
+    - ജൂണ്‍.
+    - ജൂലൈ.
+    - ആഗ.
+    - സെപ്തം.
+    - ഒക്ടോ.
+    - നവം.
+    - ഡിസം.
+    day_names:
+    - ഞായര്‍
+    - തിങ്കള്‍
     - ചൊവ്വ
     - ബുധൻ
     - വ്യാഴം
     - വെള്ളി
     - ശനി
-    abbr_month_names:
-    -
-    - ജനു
-    - ഫെബ്രു
-    - മാർ
-    - ഏപ്രി
-    - മേയ്
-    - ജൂൺ
-    - ജൂലൈ
-    - ഓഗ
-    - സെപ്റ്റം
-    - ഒക്ടോ
-    - നവം
-    - ഡിസം
-    day_names:
-    - ഞായറാഴ്‌ച
-    - തിങ്കളാഴ്‌ച
-    - ചൊവ്വാഴ്ച
-    - ബുധനാഴ്‌ച
-    - വ്യാഴാഴ്‌ച
-    - വെള്ളിയാഴ്‌ച
-    - ശനിയാഴ്‌ച
     formats:
       default: "%d-%m-%Y"
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    -
+    - 
     - ജനുവരി
     - ഫെബ്രുവരി
     - മാർച്ച്
     - ഏപ്രിൽ
-    - മേയ്
-    - ജൂൺ
+    - മെയ്
+    - ജൂണ്‍
     - ജൂലൈ
-    - ഓഗസ്റ്റ്
+    - ഓഗസ്റ്റ്‌
     - സെപ്റ്റംബർ
-    - ഒക്‌ടോബർ
+    - ഒക്ടോബർ
     - നവംബർ
     - ഡിസംബർ
     order:
@@ -97,11 +97,11 @@ ml:
         one: "%{count} മാസം"
         other: "%{count} മാസം"
     prompts:
-      second: സെക്കൻഡ്
-      minute: മിനിറ്റ്
+      second: നിമിഷം
+      minute: സുക്ഷ്മ
       hour: മണിക്കൂർ
       day: ദിവസം
-      month: മാസം
+      month: സുക്ഷ്മ
       year: വർഷം
   errors:
     format: "%{attribute} %{message}"
@@ -168,7 +168,7 @@ ml:
       decimal_units:
         format: "%n %u"
         units:
-          billion: ലക്ഷം കോടി
+          billion: നൂറുകോടി
           million: ദശലക്ഷം
           quadrillion: ക്വാഡ്രില്യൺ
           thousand: ആയിരം
@@ -185,22 +185,21 @@ ml:
           byte:
             one: ബൈറ്റ്
             other: ബൈറ്റുകൾ
-          gb: ജിബി
-          kb: കെബി
-          mb: എംബി
-          pb: പിബി
-          tb: ടിബി
+          gb: ജി.ബി
+          kb: കെ.ബി.
+          mb: എം.ബി.
+          tb: ടി.ബി
     percentage:
       format:
-        delimiter: ","
-        format: "%n%"
+        delimiter: ''
+        format: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ",  എന്നിവ"
-      two_words_connector: " കൂടാതെ "
+      last_word_connector: ", ഒപ്പം "
+      two_words_connector: " ഒപ്പം "
       words_connector: ", "
   time:
     am: രാവിലെ

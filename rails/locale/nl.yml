@@ -17,7 +17,7 @@ nl:
     - vr
     - za
     abbr_month_names:
-    -
+    - 
     - jan
     - feb
     - mrt
@@ -43,7 +43,7 @@ nl:
       long: "%e %B %Y"
       short: "%e %b"
     month_names:
-    -
+    - 
     - januari
     - februari
     - maart
@@ -100,12 +100,12 @@ nl:
         one: "%{count} jaar"
         other: "%{count} jaar"
     prompts:
-      second: Seconde
-      minute: Minuut
-      hour: Uur
-      day: Dag
-      month: Maand
-      year: Jaar
+      second: seconde
+      minute: minuut
+      hour: uur
+      day: dag
+      month: maand
+      year: jaar
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -155,7 +155,7 @@ nl:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%u %n"
         precision: 2
         separator: ","
         significant: false
@@ -171,11 +171,11 @@ nl:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Miljard
-          million: Miljoen
+          billion: miljard
+          million: miljoen
           quadrillion: biljard
-          thousand: Duizend
-          trillion: Biljoen
+          thousand: duizend
+          trillion: biljoen
           unit: ''
       format:
         delimiter: ''
@@ -191,11 +191,10 @@ nl:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
+        delimiter: ''
         format: "%n%"
     precision:
       format:

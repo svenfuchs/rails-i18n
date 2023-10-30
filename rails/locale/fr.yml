@@ -11,17 +11,17 @@ fr:
             dépendants existent
   date:
     abbr_day_names:
-    - dim.
-    - lun.
-    - mar.
-    - mer.
-    - jeu.
-    - ven.
-    - sam.
+    - dim
+    - lun
+    - mar
+    - mer
+    - jeu
+    - ven
+    - sam
     abbr_month_names:
     -
-    - janv.
-    - févr.
+    - jan.
+    - fév.
     - mars
     - avr.
     - mai
@@ -159,15 +159,15 @@ fr:
   number:
     currency:
       format:
-        delimiter: " "
-        format: "%n %u"
+        delimiter: " "
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: " "
+      delimiter: " "
       precision: 3
       round_mode: default
       separator: ","
@@ -177,19 +177,11 @@ fr:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: Milliard
-            other: Milliards
-          million:
-            one: Million
-            other: Millions
+          billion: milliard
+          million: million
           quadrillion: million de milliards
-          thousand:
-            one: Millier
-            other: Mille
-          trillion:
-            one: Billion
-            other: Billions
+          thousand: millier
+          trillion: billion
           unit: ''
       format:
         delimiter: ''
@@ -197,21 +189,21 @@ fr:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n%u"
+        format: "%n %u"
         units:
           byte:
-            one: Octet
-            other: Octets
+            one: octet
+            other: octets
           eb: Eo
           gb: Go
-          kb: Ko
+          kb: ko
           mb: Mo
           pb: Po
           tb: To
     percentage:
       format:
-        delimiter: " "
-        format: "%n %"
+        delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''

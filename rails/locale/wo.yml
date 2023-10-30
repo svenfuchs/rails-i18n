@@ -12,50 +12,50 @@ wo:
     - Dib
     - Alt
     - Tal
-    - Àla
+    - All
     - Alx
-    - Àjj
-    - Ase
+    - Ajj
+    - Gaw
     abbr_month_names:
-    -
-    - Sam
-    - Few
+    - 
+    - Jan
+    - Feb
     - Mar
-    - Awr
-    - Mee
-    - Suw
-    - Sul
-    - Ut
-    - Sàt
-    - Okt
-    - Now
-    - Des
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
     day_names:
-    - Dibéer
+    - Dibèer
     - Altine
     - Talaata
-    - Àlarba
-    - Alxamis
-    - Àjjuma
-    - Aseer
+    - Allarba
+    - Alxamess
+    - Ajjouma
+    - Gaawu
     formats:
       default: "%Y-%m-%d"
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    -
-    - Samwiyee
-    - Fewriyee
-    - Mars
-    - Awril
-    - Mee
-    - Suwe
-    - Sulet
-    - Ut
-    - Sàttumbar
-    - Oktoobar
-    - Nowàmbar
-    - Desàmbar
+    - 
+    - Tamkharit
+    - Digui Gamou
+    - Gamou
+    - Raki Gamou
+    - Rakati Gamou
+    - Mamou Kor
+    - Ndeyou Kor
+    - Baraxlou
+    - Kor
+    - Kori
+    - Digui Tabaski
+    - Tabaski
     order:
     - :year
     - :month
@@ -100,12 +100,12 @@ wo:
         one: "%{count} year"
         other: "%{count} years"
     prompts:
-      second: Saa
-      minute: Simili
-      hour: Waxt
-      day: Fan
-      month: Weer
-      year: At
+      second: Second
+      minute: Minute
+      hour: Hour
+      day: Day
+      month: Month
+      year: Year
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -150,17 +150,17 @@ wo:
   number:
     currency:
       format:
-        delimiter: "."
-        format: "%u %n"
+        delimiter: ","
+        format: "%u%n"
         precision: 2
-        separator: ","
+        separator: "."
         significant: false
         strip_insignificant_zeros: false
         unit: "$"
     format:
-      delimiter: "."
+      delimiter: ","
       precision: 3
-      separator: ","
+      separator: "."
       significant: false
       strip_insignificant_zeros: false
     human:
@@ -187,19 +187,17 @@ wo:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "%n%"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
   support:
     array:
-      last_word_connector: ", "
-      two_words_connector: ", "
+      last_word_connector: ", and "
+      two_words_connector: " and "
       words_connector: ", "
   time:
     am: am

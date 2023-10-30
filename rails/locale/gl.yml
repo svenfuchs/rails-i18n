@@ -2,53 +2,53 @@
 gl:
   date:
     abbr_day_names:
-    - dom.
-    - luns
-    - mar.
-    - mér.
-    - xov.
-    - ven.
-    - sáb.
+    - Dom
+    - Lun
+    - Mar
+    - Mer
+    - Xov
+    - Ven
+    - Sab
     abbr_month_names:
-    -
-    - xan.
-    - feb.
-    - mar.
-    - abr.
-    - maio
-    - xuño
-    - xul.
-    - ago.
-    - set.
-    - out.
-    - nov.
-    - dec.
+    - 
+    - Xan
+    - Feb
+    - Mar
+    - Abr
+    - Mai
+    - Xuñ
+    - Xul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dec
     day_names:
-    - domingo
-    - luns
-    - martes
-    - mércores
-    - xoves
-    - venres
-    - sábado
+    - Domingo
+    - Luns
+    - Martes
+    - Mércores
+    - Xoves
+    - Venres
+    - Sábado
     formats:
       default: "%e/%m/%Y"
       long: "%A %e de %B de %Y"
       short: "%e %b"
     month_names:
-    -
-    - xaneiro
-    - febreiro
-    - marzo
-    - abril
-    - maio
-    - xuño
-    - xullo
-    - agosto
-    - setembro
-    - outubro
-    - novembro
-    - decembro
+    - 
+    - Xaneiro
+    - Febreiro
+    - Marzo
+    - Abril
+    - Maio
+    - Xuño
+    - Xullo
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Decembro
     order:
     - :day
     - :month
@@ -89,13 +89,6 @@ gl:
       x_months:
         one: "%{count} mes"
         other: "%{count} meses"
-    prompts:
-      second: Segundo
-      minute: Minuto
-      hour: Hora
-      day: Día
-      month: Mes
-      year: Ano
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -127,7 +120,7 @@ gl:
     currency:
       format:
         delimiter: "."
-        format: "%n %u"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -143,14 +136,6 @@ gl:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Millóns
-          million:
-            one: Millón
-            other: Millóns
-          thousand: ''
-          trillion:
-            one: Billón
-            other: Billóns
           unit: ''
       format:
         delimiter: ''
@@ -166,12 +151,10 @@ gl:
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "%n %"
+        delimiter: ''
     precision:
       format:
         delimiter: ''

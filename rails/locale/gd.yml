@@ -5,10 +5,8 @@ gd:
       messages:
         record_invalid: 'Dh’fhàillig leis an dearbhadh: %{errors}'
         restrict_dependent_destroy:
-          has_one: Cha b’ urrainn dhuinn an reacord a sguabadh às on a tha %{record}
-            ann a tha an eisimeil air
-          has_many: Cha b’ urrainn dhuinn an reacord a sguabadh às on a tha %{record}
-            ann a tha an eisimeil air
+          has_one: Cha b’ urrainn dhuinn an reacord a sguabadh às on a tha %{record} ann a tha an eisimeil air
+          has_many: Cha b’ urrainn dhuinn an reacord a sguabadh às on a tha %{record} ann a tha an eisimeil air
   date:
     abbr_day_names:
     - DiD
@@ -46,18 +44,18 @@ gd:
       short: "%d %b"
     month_names:
     -
-    - dhen Fhaoilleach
-    - dhen Ghearran
-    - dhen Mhàrt
-    - dhen Ghiblean
-    - dhen Chèitean
-    - dhen Ògmhios
-    - dhen Iuchar
-    - dhen Lùnastal
-    - dhen t-Sultain
-    - dhen Dàmhair
-    - dhen t-Samhain
-    - dhen Dùbhlachd
+    - Am Faoilleach
+    - An Gearran
+    - Am Màrt
+    - An Giblean
+    - An Cèitean
+    - An t-Ògmhios
+    - An t-Iuchar
+    - An Lùnastal
+    - An t-Sultain
+    - An Dàmhair
+    - An t-Samhain
+    - An Dùbhlachd
     order:
     - :day
     - :month
@@ -91,10 +89,11 @@ gd:
         few: nas lugha na %{count} diogan
         other: nas lugha na %{count} diog
       less_than_x_minutes:
-        one: nas lugha na mionaid
+        one: nas lugha na %{count} mhionaid
         two: nas lugha na %{count} mhionaid
         few: nas lugha na %{count} mionaidean
         other: nas lugha na %{count} mionaid
+        one: nas lugha na mionaid
       over_x_years:
         one: còrr is %{count} bhliadhna
         two: còrr is %{count} bhliadhna
@@ -143,8 +142,7 @@ gd:
       even: feumaidh seo a bhith ’na àireamh chothrom
       exclusion: tha seo glèidhte
       greater_than: feumaidh seo a bhith nas motha na %{count}
-      greater_than_or_equal_to: feumaidh seo a bhith nas motha na no co-ionann ri
-        %{count}
+      greater_than_or_equal_to: feumaidh seo a bhith nas motha na no co-ionann ri %{count}
       in: feumaidh seo a bhith am broinn %{count}
       inclusion: chan eil seo am broinn na liosta
       invalid: chan eil seo dligheach
@@ -166,10 +164,8 @@ gd:
       too_short:
         one: tha seo ro ghoirid (tha %{count} charactar ceadaichte air a char as lugha)
         two: tha seo ro ghoirid (tha %{count} charactar ceadaichte air a char as lugha)
-        few: tha seo ro ghoirid (tha %{count} caractaran ceadaichte air a char as
-          lugha)
-        other: tha seo ro ghoirid (tha %{count} caractar ceadaichte air a char as
-          lugha)
+        few: tha seo ro ghoirid (tha %{count} caractaran ceadaichte air a char as lugha)
+        other: tha seo ro ghoirid (tha %{count} caractar ceadaichte air a char as lugha)
       wrong_length:
         one: chan eil an fhaide mar bu chòir (bu chòir dha a bhith %{count} charactar)
         two: chan eil an fhaide mar bu chòir (bu chòir dha a bhith %{count} charactar)
@@ -178,10 +174,10 @@ gd:
     template:
       body: 'Bha duilgheadasan ann leis na raointean seo:'
       header:
-        one: Dh’adhbharaich %{count} mhearachd nach gabh a’ %{model} seo a shàbhaladh
-        two: Dh’adhbharaich %{count} mhearachd nach gabh a’ %{model} seo a shàbhaladh
-        few: Dh’adhbharaich %{count} mearachdan nach gabh a’ %{model} seo a shàbhaladh
-        other: Dh’adhbharaich %{count} mearachd nach gabh a’ %{model} seo a shàbhaladh
+        one: "Dh’adhbharaich %{count} mhearachd nach gabh a’ %{model} seo a shàbhaladh"
+        two: "Dh’adhbharaich %{count} mhearachd nach gabh a’ %{model} seo a shàbhaladh"
+        few: "Dh’adhbharaich %{count} mearachdan nach gabh a’ %{model} seo a shàbhaladh"
+        other: "Dh’adhbharaich %{count} mearachd nach gabh a’ %{model} seo a shàbhaladh"
   helpers:
     select:
       prompt: Tagh
@@ -210,19 +206,11 @@ gd:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: Bhillean
-            other: Billean
-          million:
-            one: Mhillean
-            other: Millean
+          billion: billean
+          million: millean
           quadrillion: quadrillean
-          thousand:
-            one: Mhìle
-            other: Mìle
-          trillion:
-            one: Trillean
-            other: Trillean
+          thousand: mìle
+          trillion: trillean
           unit: ''
       format:
         delimiter: ''
@@ -233,10 +221,10 @@ gd:
         format: "%n %u"
         units:
           byte:
-            one: Bhaidht
+            one: bhaidht
             two: bhaidht
             few: baidhtean
-            other: Baidht
+            other: baidht
           eb: EB
           gb: GB
           kb: KB
@@ -245,7 +233,7 @@ gd:
           tb: TB
     percentage:
       format:
-        delimiter: ","
+        delimiter: ''
         format: "%n%"
     precision:
       format:

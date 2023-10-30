@@ -10,19 +10,19 @@ rm:
     - ve
     - so
     abbr_month_names:
-    -
-    - schan.
-    - favr.
+    - 
+    - schan
+    - favr
     - mars
-    - avr.
+    - avr
     - matg
-    - zercl.
-    - fan.
+    - zercl
+    - fan
     - avust
-    - sett.
-    - oct.
-    - nov.
-    - dec.
+    - sett
+    - oct
+    - nov
+    - dec
     day_names:
     - dumengia
     - glindesdi
@@ -36,19 +36,19 @@ rm:
       long: "%e. %B %Y"
       short: "%e. %b"
     month_names:
-    -
-    - da schaner
-    - da favrer
-    - da mars
-    - d’avrigl
-    - da matg
-    - da zercladur
-    - da fanadur
-    - d’avust
-    - da settember
-    - d’october
-    - da november
-    - da december
+    - 
+    - schaner
+    - favrer
+    - mars
+    - avrigl
+    - matg
+    - zercladur
+    - fanadur
+    - avust
+    - settember
+    - october
+    - november
+    - december
     order:
     - :day
     - :month
@@ -127,12 +127,12 @@ rm:
         many: "%{count} mais"
         other: "%{count} mais"
     prompts:
-      second: Secunda
-      minute: Minuta
-      hour: Ura
-      day: Di
-      month: Mais
-      year: Onn
+      second: secundas
+      minute: minutas
+      hour: uras
+      day: dis
+      month: mais
+      year: onns
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -167,15 +167,15 @@ rm:
   number:
     currency:
       format:
-        delimiter: "’"
-        format: "%n %u"
+        delimiter: "'"
+        format: "%n %u"
         precision: 2
         separator: "."
         significant: false
         strip_insignificant_zeros: false
         unit: CHF
     format:
-      delimiter: "’"
+      delimiter: "'"
       precision: 2
       separator: "."
       significant: false
@@ -195,20 +195,18 @@ rm:
         units:
           byte:
             zero: bytes
-            one: Byte
+            one: byte
             two: bytes
             few: bytes
             many: bytes
-            other: Bytes
+            other: bytes
           gb: GB
           kb: KB
           mb: MB
-          pb: PB
           tb: TB
     percentage:
       format:
-        delimiter: "’"
-        format: "%n %"
+        delimiter: ''
     precision:
       format:
         delimiter: ''
