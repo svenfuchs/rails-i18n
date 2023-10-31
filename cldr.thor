@@ -4,6 +4,10 @@ require 'active_support/core_ext/string/inflections'
 require 'cldr'
 
 class Cldr < Thor
+  LOCALE_MAPPING = {
+    pt: :'pt-PT',
+  }
+
   desc 'download', 'Download CLDR XML files'
   def download
     # See available releases https://cldr.unicode.org/index/downloads
@@ -20,13 +24,15 @@ class Cldr < Thor
     export_target = File.dirname(__FILE__) + '/vendor/cldr/yaml'
     FileUtils.mkdir_p export_target
 
-    locales = CheckLocales.list_locales.select { |locale| File.exist?(::Cldr::Download::DEFAULT_TARGET + "/common/main/#{locale}.xml") }
+    rails_locales = CheckLocales.list_locales.map(&:to_sym)
+    cldr_locales = rails_locales.map { |locale| LOCALE_MAPPING[locale] || locale }
+    cldr_locales.select! { |locale| File.exist?(::Cldr::Download::DEFAULT_TARGET + "/common/main/#{locale.to_s.gsub('-', '_')}.xml") }
 
     puts "Building YAML files"
 
     ::Cldr::Export.export(
       target: export_target,
-      locales: locales.map(&:to_sym),
+      locales: cldr_locales,
       components: [:Calendars, :Fields, :Lists, :Numbers, :Units],
       merge: true,
       minimum_draft_status: ::Cldr::DraftStatus::CONTRIBUTED
@@ -51,7 +57,8 @@ class Cldr < Thor
     end
 
     CheckLocales.list_locales.uniq.each do |locale|
-      @locale = locale.to_sym
+      @rails_locale = locale.to_sym
+      @cldr_locale = LOCALE_MAPPING[@rails_locale] || @rails_locale
 
       add_months
       add_weekdays
@@ -73,79 +80,79 @@ class Cldr < Thor
     names = [nil]
     abbr_names = [nil]
     (1..12).each do |key|
-      return unless name = @cldr.dig(@locale, :calendars, :gregorian, :months, :format, :wide, key)
+      return unless name = @cldr.dig(@cldr_locale, :calendars, :gregorian, :months, :format, :wide, key)
       names.push(name)
 
-      return unless name = @cldr.dig(@locale, :calendars, :gregorian, :months, :format, :abbreviated, key)
+      return unless name = @cldr.dig(@cldr_locale, :calendars, :gregorian, :months, :format, :abbreviated, key)
       abbr_names.push(name)
     end
 
-    add([@locale, :date, :month_names], names)
-    add([@locale, :date, :abbr_month_names], abbr_names)
+    add([@rails_locale, :date, :month_names], names)
+    add([@rails_locale, :date, :abbr_month_names], abbr_names)
   end
 
   def add_weekdays
     names = []
     abbr_names = []
     [:sun, :mon, :tue, :wed, :thu, :fri, :sat].each do |key|
-      return unless name = @cldr.dig(@locale, :calendars, :gregorian, :days, :format, :wide, key)
+      return unless name = @cldr.dig(@cldr_locale, :calendars, :gregorian, :days, :format, :wide, key)
       names.push(name)
 
-      return unless name = @cldr.dig(@locale, :calendars, :gregorian, :days, :format, :abbreviated, key)
+      return unless name = @cldr.dig(@cldr_locale, :calendars, :gregorian, :days, :format, :abbreviated, key)
       abbr_names.push(name)
     end
 
-    add([@locale, :date, :day_names], names)
-    add([@locale, :date, :abbr_day_names], abbr_names)
+    add([@rails_locale, :date, :day_names], names)
+    add([@rails_locale, :date, :abbr_day_names], abbr_names)
   end
 
   def add_prompts
     [:second, :minute, :hour, :day, :month, :year].each do |key|
-      return unless display_name = @cldr.dig(@locale, :fields, key, :display_name)
+      return unless display_name = @cldr.dig(@cldr_locale, :fields, key, :display_name)
 
-      add([@locale, :datetime, :prompts, key], display_name.upcase_first)
+      add([@rails_locale, :datetime, :prompts, key], display_name.upcase_first)
     end
   end
 
   def add_number
-    return unless symbols = @cldr.dig(@locale, :numbers, :latn, :symbols)
+    return unless symbols = @cldr.dig(@cldr_locale, :numbers, :latn, :symbols)
 
-    add([@locale, :number, :format, :delimiter], symbols[:group])
-    add([@locale, :number, :format, :separator], symbols[:decimal])
+    add([@rails_locale, :number, :format, :delimiter], symbols[:group])
+    add([@rails_locale, :number, :format, :separator], symbols[:decimal])
   end
 
   def add_currency
-    if symbols = @cldr.dig(@locale, :numbers, :latn, :symbols)
-      add([@locale, :number, :currency, :format, :delimiter], symbols[:currency_group] || symbols[:group])
-      add([@locale, :number, :currency, :format, :separator], symbols[:currency_decimal] || symbols[:decimal])
+    if symbols = @cldr.dig(@cldr_locale, :numbers, :latn, :symbols)
+      add([@rails_locale, :number, :currency, :format, :delimiter], symbols[:currency_group] || symbols[:group])
+      add([@rails_locale, :number, :currency, :format, :separator], symbols[:currency_decimal] || symbols[:decimal])
     end
 
-    if format = @cldr.dig(@locale, :numbers, :latn, :formats, :currency, :patterns, :default, :standard).dup
+    if format = @cldr.dig(@cldr_locale, :numbers, :latn, :formats, :currency, :patterns, :default, :standard).dup
       format.gsub!('¤', '%u')
       format.gsub!(/[#,.0]+/, '%n')
       positive, negative = format.split(';')
-      add([@locale, :number, :currency, :format, :format], positive)
-      add([@locale, :number, :currency, :format, :negative_format], negative) if negative
+      add([@rails_locale, :number, :currency, :format, :format], positive)
+      add([@rails_locale, :number, :currency, :format, :negative_format], negative) if negative
     end
   end
 
   def add_percentage
-    if symbols = @cldr.dig(@locale, :numbers, :latn, :symbols)
-      add([@locale, :number, :percentage, :format, :delimiter], symbols[:group])
+    if symbols = @cldr.dig(@cldr_locale, :numbers, :latn, :symbols)
+      add([@rails_locale, :number, :percentage, :format, :delimiter], symbols[:group])
     end
 
-    if format = @cldr.dig(@locale, :numbers, :latn, :formats, :percent, :patterns, :default, :standard).dup
+    if format = @cldr.dig(@cldr_locale, :numbers, :latn, :formats, :percent, :patterns, :default, :standard).dup
       format.gsub!('%', symbols[:percent_sign]) if symbols
       format.gsub!(/[#,.0]+/, '%n')
-      add([@locale, :number, :percentage, :format, :format], format)
+      add([@rails_locale, :number, :percentage, :format, :format], format)
     end
   end
 
   def add_storage_units
-    if format = @cldr.dig(@locale, :units, :unit_length, :short, :digital_kilobyte, :other).dup
+    if format = @cldr.dig(@cldr_locale, :units, :unit_length, :short, :digital_kilobyte, :other).dup
       ok = format.gsub!(/\A\{0\}(\s*).*\z/, '%n\1%u') || format.gsub!(/\A.*?(\s*)\{0\}\z/, '%u\1%n')
       raise "Unsupported format: #{format}" unless ok
-      add([@locale, :number, :human, :storage_units, :format], format)
+      add([@rails_locale, :number, :human, :storage_units, :format], format)
     end
 
     mapping = {
@@ -158,19 +165,19 @@ class Cldr < Thor
       eb:   :digital_exabyte,
     }.each do |rails_key, cldr_key|
       width = rails_key == :byte ? :long : :short
-      next unless unit = @cldr.dig(@locale, :units, :unit_length, width, cldr_key)
+      next unless unit = @cldr.dig(@cldr_locale, :units, :unit_length, width, cldr_key)
 
       unit.transform_values! { |s| s.gsub(/[[:space:]]*\{0\}[[:space:]]*/, '') }
 
-      add([@locale, :number, :human, :storage_units, :units, rails_key], plural(unit))
+      add([@rails_locale, :number, :human, :storage_units, :units, rails_key], plural(unit))
     end
   end
 
   def add_decimal_units
-    if format = @cldr.dig(@locale, :numbers, :latn, :formats, :decimal, :patterns, :long, :standard, :other).dup
+    if format = @cldr.dig(@cldr_locale, :numbers, :latn, :formats, :decimal, :patterns, :long, :standard, :other).dup
       ok = format.gsub!(/\A\{0\}(\s*).*\z/, '%n\1%u') || format.gsub!(/\A.*?(\s*)\{0\}\z/, '%u\1%n')
       raise "Unsupported format: #{format}" unless ok
-      add([@locale, :number, :human, :decimal_units, :format], format)
+      add([@rails_locale, :number, :human, :decimal_units, :format], format)
     end
 
     {
@@ -180,21 +187,21 @@ class Cldr < Thor
       trillion:    :'1000000000000',
       quadrillion: :'1000000000000000',
     }.each do |rails_key, cldr_key|
-      next unless unit = @cldr.dig(@locale, :numbers, :latn, :formats, :decimal, :patterns, :long, :standard, cldr_key)
+      next unless unit = @cldr.dig(@cldr_locale, :numbers, :latn, :formats, :decimal, :patterns, :long, :standard, cldr_key)
 
       unit.transform_values! { |s| s.gsub(/\s*0\s*/, '').strip }
 
-      add([@locale, :number, :human, :decimal_units, :units, rails_key], plural(unit))
+      add([@rails_locale, :number, :human, :decimal_units, :units, rails_key], plural(unit))
     end
   end
 
   def add_support
-    return unless list = @cldr.dig(@locale, :lists, :default)
+    return unless list = @cldr.dig(@cldr_locale, :lists, :default)
 
     list.transform_values! { |s| s.gsub!(/\{[01]\}/, '') }
 
     add(
-      [@locale, :support, :array],
+      [@rails_locale, :support, :array],
       {
         last_word_connector: list[:end],
         two_words_connector: list[:'2'],
