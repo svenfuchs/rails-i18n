@@ -172,18 +172,18 @@ da:
         format: "%n %u"
         units:
           billion:
-            one: Milliard
-            other: Milliarder
+            one: milliard
+            other: milliarder
           million:
-            one: Million
-            other: Millioner
+            one: million
+            other: millioner
           quadrillion:
             one: Billiard
             other: Billiarder
-          thousand: Tusind
+          thousand: tusind
           trillion:
-            one: Billion
-            other: Billioner
+            one: billion
+            other: billioner
           unit: ''
       format:
         delimiter: ''
@@ -194,11 +194,12 @@ da:
         format: "%n %u"
         units:
           byte:
-            one: Byte
-            other: Bytes
+            one: byte
+            other: bytes
           gb: GB
-          kb: KB
+          kb: kB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
