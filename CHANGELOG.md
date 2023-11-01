@@ -1,5 +1,7 @@
 ## unreleased
 
+- Update following locales:
+  - Danish (da): Remove title case for storage and human decimal units #1108
 
 ## 7.0.8 (2023-08-15)
 
