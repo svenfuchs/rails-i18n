@@ -45,4 +45,15 @@ describe 'Ordinals for' do
       end
     end
   end
+
+  describe 'locales with period-suffix' do
+    it 'uses the custom rule' do
+      period_locales.each do |locale|
+        I18n.with_locale(locale) do
+          ActiveSupport::Inflector.ordinalize(1).should == "1."
+          ActiveSupport::Inflector.ordinalize(2).should == "2."
+        end
+      end
+    end
+  end
 end
