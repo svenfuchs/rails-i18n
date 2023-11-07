@@ -1,5 +1,7 @@
 ## unreleased
 
+- Update following locales:
+  - Italian (it): Fix translation for `second` prompt #1111
 
 ## 7.0.8 (2023-08-15)
 
