@@ -1,6 +1,6 @@
 ## unreleased
 
-- Add ordinalization for many locales (be, bs, cs, da, de, eo, et, fa, fi, hr, hu, is, ka,
+- Add ordinalization for many locales (be, bs, cs, da, eo, et, fa, fi, hr, hu, is, ka,
   lb, lt, lv, mk, nb, ne, nn, pl, sk, sl, sq, sr, sw, tr) #1109
 
 ## 7.0.8 (2023-08-15)

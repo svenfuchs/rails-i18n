@@ -5,7 +5,7 @@ describe 'Ordinals for' do
   # Mock Rails app in order to trigger the Railtie
   let(:app) { double :app, config: config }
   let(:config) { double :config, eager_load_namespaces: [], i18n: I18n, rails_i18n: RailsI18n }
-  let(:period_locales) { %w[be bs cs da de eo et fa fi hr hu is ka lb lt lv mk nb ne nn pl sk sl sq sr sw tr] }
+  let(:period_locales) { %w[be bs cs da de de-AT de-CH de-DE eo et fa fi hr hu is ka lb lt lv mk nb ne nn pl sk sl sq sr sw tr] }
 
   before do
     I18n.available_locales = %w[fr en fr-CA fr-CH fr-FR gd] + period_locales
