@@ -1,5 +1,7 @@
 ## unreleased
 
+- Update following locales:
+  - Afrikaans (af): Fix translation of May #1110
 
 ## 7.0.8 (2023-08-15)
 
