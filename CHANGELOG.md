@@ -1,5 +1,7 @@
 ## unreleased
 
+- Update following locales:
+  - Traditional Chinese (zh-HK, zh-TW, zh-YUE): Use traditional "week" character in `date.abbr_day_names`.
 
 ## 7.0.8 (2023-08-15)
 
