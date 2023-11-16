@@ -1,5 +1,18 @@
 ## unreleased
 
+## 7.0.8 (2023-11-16)
+
+- Fix empty `am` and `pm` keys
+- Update following locales:
+  - Bosnian (bs)
+  - Danish (da)
+  - Galician (gl)
+  - Icelandic (is)
+  - Norwegian Bokmål (nb)
+  - Norwegian Nynorsk (nn)
+  - Portuguese (pt-BR)
+  - Romanian (ro)
+  - Swedish (sv sv-FI sv-SE)
 
 ## 7.0.8 (2023-08-15)
 
