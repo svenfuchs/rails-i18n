@@ -1,7 +1,8 @@
 ## unreleased
 
 - Update following locales:
-  - Traditional Chinese (zh-HK, zh-TW, zh-YUE): Use traditional "week" character in `date.abbr_day_names`.
+  - Afrikaans (af): Fix translation of May #1110
+  - Traditional Chinese (zh-HK, zh-TW, zh-YUE): Use traditional "week" character in `date.abbr_day_names` #1112
 
 ## 7.0.8 (2023-08-15)
 
