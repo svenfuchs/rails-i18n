@@ -1,8 +1,8 @@
 ## unreleased
 
-## 7.0.8 (2023-11-16)
+## 7.0.9 (2023-11-16)
 
-- Fix empty `am` and `pm` keys
+- Fix empty `am` and `pm` keys to make AM and PM dates distinguishable in every language
 - Update following locales:
   - Bosnian (bs)
   - Danish (da)
