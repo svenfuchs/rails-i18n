@@ -2,7 +2,7 @@
 
 ## 7.0.9 (2023-11-16)
 
-- Fix empty `am` and `pm` keys to make dates/times in the 12-hour time format distinguishable in every locale
+- Fix empty `am` and `pm` keys to make dates/times in the 12-hour time format distinguishable in every locale #1105
 - Update following locales:
   - Afrikaans (af): Fix translation of May #1110
   - Traditional Chinese (zh-HK, zh-TW, zh-YUE): Use traditional "week" character in `date.abbr_day_names` #1112
