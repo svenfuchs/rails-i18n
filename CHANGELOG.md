@@ -1,5 +1,7 @@
 ## unreleased
 
+- Add following locales:
+  - Welsh (cy)
 ## 7.0.9 (2023-11-16)
 
 - Fix empty `am` and `pm` keys to make dates/times in the 12-hour time format distinguishable in every locale #1105
