@@ -2,6 +2,22 @@
 
 - Add following locales:
   - Welsh (cy)
+## 7.0.9 (2023-11-16)
+
+- Fix empty `am` and `pm` keys to make dates/times in the 12-hour time format distinguishable in every locale #1105
+- Update following locales:
+  - Afrikaans (af): Fix translation of May #1110
+  - Traditional Chinese (zh-HK, zh-TW, zh-YUE): Use traditional "week" character in `date.abbr_day_names` #1112
+  - Italian (it): Fix translation for `second` prompt #1111
+  - Bosnian (bs): am/pm
+  - Danish (da): am/pm
+  - Galician (gl): am/pm
+  - Icelandic (is): am/pm
+  - Norwegian Bokmål (nb): am/pm
+  - Norwegian Nynorsk (nn): am/pm
+  - Portuguese (pt-BR): am/pm
+  - Romanian (ro): am/pm
+  - Swedish (sv sv-FI sv-SE): am/pm
 
 ## 7.0.8 (2023-08-15)
 

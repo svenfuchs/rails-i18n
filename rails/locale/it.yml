@@ -100,7 +100,7 @@ it:
         one: "%{count} anno"
         other: "%{count} anni"
     prompts:
-      second: Secondi
+      second: Secondo
       minute: Minuto
       hour: Ora
       day: Giorno
