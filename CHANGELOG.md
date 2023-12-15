@@ -5,6 +5,7 @@
 - Fix empty `am` and `pm` keys to make dates/times in the 12-hour time format distinguishable in every locale #1105
 - Update following locales:
   - Afrikaans (af): Fix translation of May #1110
+  - Czech (cs): Capitalise date day and month names for consistency #1113
   - Traditional Chinese (zh-HK, zh-TW, zh-YUE): Use traditional "week" character in `date.abbr_day_names` #1112
   - Italian (it): Fix translation for `second` prompt #1111
   - Bosnian (bs): am/pm
