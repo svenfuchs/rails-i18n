@@ -156,9 +156,11 @@ ko:
         format: "%n%u"
         units:
           byte: 바이트
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:
