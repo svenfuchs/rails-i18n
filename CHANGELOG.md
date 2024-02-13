@@ -17,6 +17,7 @@
   - Portuguese (pt-BR): am/pm
   - Romanian (ro): am/pm
   - Swedish (sv sv-FI sv-SE): am/pm
+  - Welsh (cy): Move the keys to right place and add missing keys
 
 ## 7.0.8 (2023-08-15)
 
