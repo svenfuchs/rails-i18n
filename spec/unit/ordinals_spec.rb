@@ -7,7 +7,7 @@ describe 'Ordinals for' do
   let(:config) { double :config, eager_load_namespaces: [], i18n: I18n, rails_i18n: RailsI18n }
 
   before do
-    I18n.available_locales = %w[fr en fr-CA fr-CH fr-FR gd]
+    I18n.available_locales = %w[fr en fr-CA fr-CH fr-FR gd oc]
 
     RailsI18n::Railtie.initializers.each { |init| init.run(app) }
     I18n.backend.reload!
@@ -46,3 +46,13 @@ describe 'Ordinals for' do
     end
   end
 end
+
+  describe 'Occitan' do
+    it 'uses the default rules' do
+      I18n.with_locale(:oc) do
+        ActiveSupport::Inflector.ordinalize(1).should == "1èr"
+        ActiveSupport::Inflector.ordinalize(2).should == "2nd"
+        ActiveSupport::Inflector.ordinalize(3).should == "3en"
+      end
+    end
+  end
