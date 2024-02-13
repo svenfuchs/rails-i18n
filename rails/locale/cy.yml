@@ -188,7 +188,7 @@ cy:
         zero: Atalwyd y %{model} hwn rhag ei gadw gan 0 nam
         one: Atalwyd y %{model} hwn rhag ei gadw gan 1 nam
         two: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
-        few: Atalwyd y %{model} hwn rhag ei gadw gan ychydig nam
+        few: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
         many: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
         other: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
   helpers:
