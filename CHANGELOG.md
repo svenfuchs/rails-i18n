@@ -18,6 +18,7 @@
   - Romanian (ro): am/pm
   - Swedish (sv sv-FI sv-SE): am/pm
   - Welsh (cy): Move the keys to right place and add missing keys
+  - Danish (da): Remove title case for storage and human decimal units #1108
 - Add ordinalization for many locales (be, bs, cs, da, de-AT, de-CH, de-DE, eo, et, fa, fi, hr, hu, is, ka,
   lb, lt, lv, mk, nb, ne, nn, pl, sk, sl, sq, sr, sw, tr) #1109
 
