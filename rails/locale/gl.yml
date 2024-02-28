@@ -164,9 +164,9 @@ gl:
       two_words_connector: " e "
       words_connector: ", "
   time:
-    am: ''
+    am: am
     formats:
       default: "%A, %e de %B de %Y ás %H:%M"
       long: "%A %e de %B de %Y ás %H:%M"
       short: "%e/%m, %H:%M"
-    pm: ''
+    pm: pm
