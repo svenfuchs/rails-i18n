@@ -199,9 +199,9 @@ sv-FI:
       two_words_connector: " och "
       words_connector: ", "
   time:
-    am: ""
+    am: am
     formats:
       default: "%a, %e %b %Y %H:%M:%S %z"
       long: "%e %B %Y %H:%M"
       short: "%e %b %H:%M"
-    pm: ""
+    pm: pm

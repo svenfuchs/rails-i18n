@@ -214,9 +214,9 @@ da:
       two_words_connector: " og "
       words_connector: ", "
   time:
-    am: ''
+    am: am
     formats:
       default: "%e. %B %Y, %H.%M"
       long: "%A d. %e. %B %Y, %H.%M"
       short: "%e. %b %Y, %H.%M"
-    pm: ''
+    pm: pm

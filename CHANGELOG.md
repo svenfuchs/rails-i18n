@@ -1,7 +1,26 @@
 ## unreleased
 
+- Add following locales:
+  - Welsh (cy)
+- Fix empty `am` and `pm` keys to make dates/times in the 12-hour time format distinguishable in every locale #1105
 - Update following locales:
+  - Afrikaans (af): Fix translation of May #1110
+  - Czech (cs): Capitalise date day and month names for consistency #1113
+  - Traditional Chinese (zh-HK, zh-TW, zh-YUE): Use traditional "week" character in `date.abbr_day_names` #1112
+  - Italian (it): Fix translation for `second` prompt #1111
+  - Bosnian (bs): am/pm
+  - Danish (da): am/pm
+  - Galician (gl): am/pm
+  - Icelandic (is): am/pm
+  - Norwegian Bokmål (nb): am/pm
+  - Norwegian Nynorsk (nn): am/pm
+  - Portuguese (pt-BR): am/pm
+  - Romanian (ro): am/pm
+  - Swedish (sv sv-FI sv-SE): am/pm
+  - Welsh (cy): Move the keys to right place and add missing keys
   - Danish (da): Remove title case for storage and human decimal units #1108
+- Add ordinalization for many locales (be, bs, cs, da, de-AT, de-CH, de-DE, eo, et, fa, fi, hr, hu, is, ka,
+  lb, lt, lv, mk, nb, ne, nn, pl, sk, sl, sq, sr, sw, tr) #1109
 
 ## 7.0.8 (2023-08-15)
 
