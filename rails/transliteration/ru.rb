@@ -13,7 +13,7 @@ module RailsI18n
 
             chars = string.scan(%r{#{multi_keys.join '|'}|\w|.})
 
-            result = ""
+            result = +""
 
             chars.each_with_index do |char, index|
               if upper.has_key?(char) && lower.has_key?(chars[index+1])
