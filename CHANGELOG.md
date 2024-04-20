@@ -1,4 +1,6 @@
 ## unreleased
+- Update following locales:
+  - Lithuanian (lt): Add missing keys (`x_years`, `in`, `model_invalid`, `required`, `round_mode`, `eb`, `pb`)
 
 ## 7.0.9 (2024-03-13)
 
