@@ -150,7 +150,7 @@ pt:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
