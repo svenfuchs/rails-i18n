@@ -145,7 +145,7 @@ pt:
     submit:
       create: Criar %{model}
       submit: Gravar %{model}
-      update: Actualizar %{model}
+      update: Atualizar %{model}
   number:
     currency:
       format:
