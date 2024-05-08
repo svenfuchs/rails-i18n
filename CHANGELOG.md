@@ -1,4 +1,6 @@
 ## unreleased
+- Update following locales:
+  - Portuguese (pt): Fixed `number.currency.format.format` and `helpers.submit.update` #1122
 
 ## 7.0.9 (2024-03-13)
 
