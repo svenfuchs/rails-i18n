@@ -109,6 +109,7 @@ lt:
         other: "%{count} mėnesių"
       x_years:
         one: "%{count} metai"
+        few: "%{count} metai"
         other: "%{count} metai"
     prompts:
       second: Sekundės
