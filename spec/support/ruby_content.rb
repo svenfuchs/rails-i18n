@@ -4,7 +4,7 @@ module RailsI18n
   module Spec
     module RubyContent
       def content
-        @content ||= eval(IO.read(@filepath), TOPLEVEL_BINDING)
+        @content ||= eval(File.read(@filepath), TOPLEVEL_BINDING, @filepath)
       end
     end
   end

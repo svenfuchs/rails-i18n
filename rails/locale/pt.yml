@@ -145,12 +145,12 @@ pt:
     submit:
       create: Criar %{model}
       submit: Gravar %{model}
-      update: Actualizar %{model}
+      update: Atualizar %{model}
   number:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false

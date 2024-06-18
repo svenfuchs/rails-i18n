@@ -7,15 +7,6 @@ cy:
         restrict_dependent_destroy:
           has_many: Methu dileu cofnod oherwydd bod %{record} yn bodoli
           has_one: Methu dileu cofnod oherwydd bod %{record} yn bodoli
-        model_invalid: 'Methodd y dilysu: %{errors}'
-        other_than: rhaid bod yn wahanol na %{count}
-        present: rhaid bod yn wag
-        required: rhaid bodoli
-        in: rhaid bod mewn %{count}
-      template:
-        header:
-          one: "Mae gwall %{count} wedi gwahardd y %{ model} hwn rhag cael ei gadw"
-          other: "Mae gwall %{count} wedi gwahardd y %{ model} hwn rhag cael ei gadw"
   date:
     abbr_day_names:
       - Sul
@@ -150,7 +141,11 @@ cy:
         many: "%{count} mis"
         other: "%{count} mis"
       x_years:
+        zero: "%{count} blwyddyn"
         one: 1 flwyddyn
+        two: "%{count} blwyddyn"
+        few: "%{count} blwyddyn"
+        many: "%{count} blwyddyn"
         other: "%{count} blwyddyn"
     prompts:
       second: Eiliad
@@ -171,13 +166,18 @@ cy:
       exclusion: wedi cadw
       greater_than: angen bod yn fwy na %{count}
       greater_than_or_equal_to: angen bod yr un maint neu fwy na %{count}
+      in: rhaid bod mewn %{count}
       inclusion: heb fod yn y rhestr
       invalid: heb fod yn nheilwng
       less_than: angen bod yn llai na %{count}
       less_than_or_equal_to: angen bod yr un maint neu lai na %{count}
+      model_invalid: 'Methodd y dilysu: %{errors}'
       not_a_number: heb fod yn rhif
       not_an_integer: heb fod yn rhif llawn
       odd: rhaid bod yn odrif
+      other_than: rhaid bod yn wahanol na %{count}
+      present: rhaid bod yn wag
+      required: rhaid bodoli
       taken: wedi'i gymryd yn barod
       too_long: yn rhy hir (cewch %{count} llythyren ar y fwyaf)
       too_short: yn rhy fyr (rhaid am o leiaf %{count} llythyren)
@@ -185,8 +185,10 @@ cy:
     template:
       body: 'Cafwyd broblemau gyda''r meysydd canlynol:'
       header:
+        zero: Atalwyd y %{model} hwn rhag ei gadw gan 0 nam
         one: Atalwyd y %{model} hwn rhag ei gadw gan 1 nam
         two: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
+        few: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
         many: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
         other: Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam
   helpers:
