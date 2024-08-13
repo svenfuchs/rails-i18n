@@ -9,27 +9,27 @@ hr:
           has_many: Nije moguće izbrisati zapis jer postoje ovisni %{record}
   date:
     abbr_day_names:
-    - ned
-    - pon
-    - uto
-    - sri
-    - čet
-    - pet
-    - sub
+    - ned.
+    - pon.
+    - uto.
+    - sri.
+    - čet.
+    - pet.
+    - sub.
     abbr_month_names:
     -
-    - sij
-    - veǉ
-    - ožu
-    - tra
-    - svi
-    - lip
-    - srp
-    - kol
-    - ruj
-    - lis
-    - stu
-    - pro
+    - sij.
+    - velj.
+    - ožu.
+    - tra.
+    - svi.
+    - lip.
+    - srp.
+    - kol.
+    - ruj.
+    - lis.
+    - stu.
+    - pro.
     day_names:
     - nedjelja
     - ponedjeljak
@@ -44,18 +44,18 @@ hr:
       short: "%e.%-m."
     month_names:
     -
-    - siječanj
-    - veljača
-    - ožujak
-    - travanj
-    - svibanj
-    - lipanj
-    - srpanj
-    - kolovoz
-    - rujan
-    - listopad
-    - studeni
-    - prosinac
+    - siječnja
+    - veljače
+    - ožujka
+    - travnja
+    - svibnja
+    - lipnja
+    - srpnja
+    - kolovoza
+    - rujna
+    - listopada
+    - studenoga
+    - prosinca
     order:
     - :day
     - :month

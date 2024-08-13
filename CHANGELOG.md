@@ -1,6 +1,7 @@
 ## unreleased
 - Update following locales:
   - Portuguese (pt): Fixed `number.currency.format.format` and `helpers.submit.update` #1122
+  - Croatian (hr): use genitive case for month names and put a period after weekday and month abbreviations #1126
 - Fix compatibility with frozen string literals. #1120
 
 ## 7.0.9 (2024-03-13)
