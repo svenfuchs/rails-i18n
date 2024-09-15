@@ -40,7 +40,7 @@ tr:
     - Cumartesi
     formats:
       default: "%d.%m.%Y"
-      long: "%e %B %Y, %A"
+      long: "%e %B %Y %A"
       short: "%e %b"
     month_names:
     - 
