@@ -1,5 +1,6 @@
 ## unreleased
 - Update following locales:
+  - Lithuanian (lt): Add missing keys (`x_years`, `in`, `model_invalid`, `required`, `round_mode`, `eb`, `pb`)
   - Portuguese (pt): Fixed `number.currency.format.format` and `helpers.submit.update` #1122
   - Korean (ko): Add missing keys (Storage units) #1118
 - Fix compatibility with frozen string literals. #1120
