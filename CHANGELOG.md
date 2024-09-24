@@ -4,7 +4,8 @@
   - Portuguese (pt): Fixed `number.currency.format.format` and `helpers.submit.update` #1122
   - Croatian (hr): use genitive case for month names and put a period after weekday and month abbreviations #1126
   - Korean (ko): Add missing keys (Storage units) #1118
-  - Fix compatibility with frozen string literals. #1120
+- Fix compatibility with frozen string literals. #1120
+- Refactor translations implemented in Ruby to avoid method redefinition warnings on reload. #1128
 
 ## 7.0.9 (2024-03-13)
 

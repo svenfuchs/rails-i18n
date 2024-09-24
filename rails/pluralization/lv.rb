@@ -1,18 +1,4 @@
-module RailsI18n
-  module Pluralization
-    module Latvian
-      def self.rule
-        lambda do |n|
-          if n.is_a?(Numeric) && n % 10 == 1 && n % 100 != 11
-            :one
-          else
-            :other
-          end
-        end
-      end
-    end
-  end
-end
+require 'rails_i18n/pluralization'
 
 { :lv => {
     :'i18n' => {
