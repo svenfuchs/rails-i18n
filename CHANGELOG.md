@@ -1,4 +1,5 @@
 ## unreleased
+- Update dependencies to allow Rails 8+.
 - Update following locales:
   - Lithuanian (lt): Add missing keys (`x_years`, `in`, `model_invalid`, `required`, `round_mode`, `eb`, `pb`)
   - Portuguese (pt): Fixed `number.currency.format.format` and `helpers.submit.update` #1122
