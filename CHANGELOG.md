@@ -1,4 +1,7 @@
 ## unreleased
+
+## 7.0.10 (2024-10-28)
+
 - Update following locales:
   - Lithuanian (lt): Add missing keys (`x_years`, `in`, `model_invalid`, `required`, `round_mode`, `eb`, `pb`)
   - Portuguese (pt): Fixed `number.currency.format.format` and `helpers.submit.update` #1122
