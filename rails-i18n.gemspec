@@ -16,7 +16,8 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = '>= 1.8.11'
 
   s.add_dependency('i18n', '>= 0.7', '< 2')
-  s.add_dependency('railties', '>= 6.0.0', '< 8')
+  s.add_dependency('railties', '>= 6.0.0')
+
   s.add_development_dependency "rspec-rails", "~> 3.7"
   s.add_development_dependency "i18n-spec", "~> 0.6.0"
   s.add_development_dependency 'i18n-tasks', '~> 0.9.37'

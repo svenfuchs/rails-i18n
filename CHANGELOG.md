@@ -1,5 +1,7 @@
 ## unreleased
 
+- Update dependencies to allow Rails 8+.
+
 ## 7.0.10 (2024-10-28)
 
 - Update following locales:
