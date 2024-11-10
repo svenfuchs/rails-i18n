@@ -128,6 +128,7 @@ en:
       not_an_integer: must be an integer
       odd: must be odd
       other_than: must be other than %{count}
+      password_too_long: is too long
       present: must be blank
       required: must exist
       taken: has already been taken
