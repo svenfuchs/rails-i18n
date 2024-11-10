@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform     = Gem::Platform::RUBY
   s.name         = "rails-i18n"
-  s.version      = "8.0.0"
+  s.version      = "8.0.1"
   s.authors      = ["Rails I18n Group"]
   s.email        = "rails-i18n@googlegroups.com"
   s.homepage     = "https://github.com/svenfuchs/rails-i18n"

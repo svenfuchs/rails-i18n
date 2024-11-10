@@ -1,9 +1,17 @@
 ## unreleased
 
 
-## 8.0.0 (2024-11-09)
+## 8.0.1 (2024-11-10)
+
+- Update following locales:
+  - English (en): Add missing key (`password_too_long`)
+  - Portuguese (pt): Add missing keys (`password_too_long`, `negative_format`, and `zb`)
+- Update Gemfile
+
+## 8.0.0 (2024-11-10)
 
 - Update to Rails 8.0.x
+- Drop support for Ruby 3.0 and 3.1
 
 ## 7.0.10 (2024-10-28)
 
