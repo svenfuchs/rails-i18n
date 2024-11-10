@@ -1,6 +1,9 @@
 ## unreleased
 
-- Update dependencies to allow Rails 8+.
+
+## 8.0.0 (2024-11-09)
+
+- Update to Rails 8.0.x
 
 ## 7.0.10 (2024-10-28)
 

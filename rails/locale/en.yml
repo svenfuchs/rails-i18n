@@ -17,7 +17,7 @@ en:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -43,7 +43,7 @@ en:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -57,9 +57,9 @@ en:
     - November
     - December
     order:
-    - :year
-    - :month
-    - :day
+    - year
+    - month
+    - day
   datetime:
     distance_in_words:
       about_x_hours:
@@ -100,7 +100,7 @@ en:
         one: "%{count} year"
         other: "%{count} years"
     prompts:
-      second: Second
+      second: Seconds
       minute: Minute
       hour: Hour
       day: Day
@@ -157,6 +157,7 @@ en:
       format:
         delimiter: ","
         format: "%u%n"
+        negative_format: "-%u%n"
         precision: 2
         separator: "."
         significant: false
@@ -196,6 +197,7 @@ en:
           mb: MB
           pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ''
