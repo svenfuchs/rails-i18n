@@ -57,9 +57,9 @@ pt:
     - novembro
     - dezembro
     order:
-    - :day
-    - :month
-    - :year
+    - day
+    - month
+    - year
   datetime:
     distance_in_words:
       about_x_hours:
@@ -128,6 +128,7 @@ pt:
       not_an_integer: tem de ser um inteiro
       odd: tem de ser ímpar
       other_than: tem de ser diferente de %{count}
+      password_too_long: é muita longa
       present: não pode estar em branco
       required: é obrigatório
       taken: não está disponível
@@ -151,6 +152,7 @@ pt:
       format:
         delimiter: "."
         format: "%n %u"
+        negative_format: "-%u%n"
         precision: 2
         separator: ","
         significant: false
@@ -198,6 +200,7 @@ pt:
           mb: MB
           pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ''
