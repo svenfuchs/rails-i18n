@@ -1,0 +1,13 @@
+---
+en:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validation failed: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Cannot delete record because a dependent %{record} exists
+          has_many: Cannot delete record because dependent %{record} exist
+  errors:
+    messages:
+      required: must exist
+      taken: has already been taken

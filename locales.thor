@@ -74,6 +74,45 @@ class Locales < Thor
     end
   end
 
+  desc 'normalize_from_rails', 'Download latest Rails locale files, normalize them, and merge into a single file.'
+  def normalize_from_rails
+    curr_dir = File.expand_path(File.dirname(__FILE__))
+    rails_locale_dir = File.expand_path(File.join(curr_dir, 'rails', 'rails'))
+    normalized_dir = File.join(rails_locale_dir, 'normalized')
+
+    puts "Fetching latest Rails locale files to #{rails_locale_dir}... \n\n"
+    system <<-BASH
+      curl -Lo '#{rails_locale_dir}/action_view.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/actionview/lib/action_view/locale/en.yml
+      curl -Lo '#{rails_locale_dir}/active_model.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/activemodel/lib/active_model/locale/en.yml
+      curl -Lo '#{rails_locale_dir}/active_record.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/activerecord/lib/active_record/locale/en.yml
+      curl -Lo '#{rails_locale_dir}/active_support.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/activesupport/lib/active_support/locale/en.yml
+    BASH
+    puts "\nDownload complete.\n\n"
+
+    merged_content = {}
+    Dir.glob("#{rails_locale_dir}/*.yml").each do |filename|
+      puts "Normalizing #{filename}..."
+
+      content = YAML.load_file(filename)
+      normalized_content = Normalize.deep_sort(content)
+
+      output_filename = File.join(normalized_dir, File.basename(filename))
+      File.write(output_filename, normalized_content.to_yaml(line_width: -1))
+      puts "Normalized file saved to #{output_filename}"
+
+      merged_content.deep_merge!(normalized_content)
+    end
+
+    puts "\nAll downloaded files normalized and saved."
+
+    puts "\nNormalizing merged content..."
+    normalized_merged_content = Normalize.deep_sort(merged_content)
+    merged_filename = File.join(normalized_dir, 'merged.yml')
+    File.write(merged_filename, normalized_merged_content.to_yaml(line_width: -1))
+
+    puts "Merged file saved to #{merged_filename}."
+  end
+
   desc 'list', 'List locale names.'
   def list
     puts CheckLocales.list_locales.join(', ')
