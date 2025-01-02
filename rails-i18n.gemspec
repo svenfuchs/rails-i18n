@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "i18n-spec", "~> 0.6.0"
   s.add_development_dependency "i18n-tasks", "~> 0.9.37"
 
-  s.metadata["changelog_uri"] = s.homepage + "/blob/master/CHANGELOG.md"
+  s.metadata["changelog_uri"] = "#{s.homepage}/blob/master/CHANGELOG.md"
 end
