@@ -1,5 +1,7 @@
 ## unreleased
 
+- Update following locales:
+  - Japanese (ja): Add missing key (`password_too_long`)
 
 ## 8.0.1 (2024-11-10)
 
