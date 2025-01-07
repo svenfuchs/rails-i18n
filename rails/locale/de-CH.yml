@@ -125,6 +125,7 @@ de-CH:
       not_an_integer: muss ganzzahlig sein
       odd: muss ungerade sein
       other_than: darf nicht gleich %{count} sein
+      password_too_long: ist zu lang
       present: darf nicht ausgefüllt werden
       required: muss ausgefüllt werden
       taken: ist bereits vergeben
