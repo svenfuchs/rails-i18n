@@ -3,7 +3,7 @@ ml:
   activerecord:
     errors:
       messages:
-        record_invalid: 'Validation failed: %{errors}'
+        record_invalid: 'സാധൂകരണം പരാജയപ്പെട്ടു: %{errors}'
         restrict_dependent_destroy:
           has_one: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
           has_many: "%{record} ആയി ബന്ദം ഉള്ളതിനാൽ നീക്കം ചെയ്യാൻ പറ്റില്ല"
@@ -17,7 +17,7 @@ ml:
     - വെ.
     - ശ.
     abbr_month_names:
-    - 
+    -
     - ജനു.
     - ഫെബ്ര.
     - മാർ.
@@ -43,7 +43,7 @@ ml:
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - ജനുവരി
     - ഫെബ്രുവരി
     - മാർച്ച്
@@ -96,6 +96,9 @@ ml:
       x_months:
         one: "%{count} മാസം"
         other: "%{count} മാസം"
+      x_years:
+        one: "%{count} വർഷം"
+        other: "%{count} വർഷങ്ങൾ"
     prompts:
       second: നിമിഷം
       minute: സുക്ഷ്മ
@@ -115,6 +118,7 @@ ml:
       exclusion: കരുതിവെച്ചിരികുന്നതാണ്
       greater_than: "%{count} നേകാൾ വലുതായിരിക്കണം"
       greater_than_or_equal_to: "%{count} നു തുല്യമോ അല്ലെങ്കിൽ വലുതോ ആയിരിക്കണം"
+      in: "%{count}ൽ ഉൾപ്പെടുത്തണം"
       inclusion: ഇതിൽ ഉള്ട്പെട്ടിട്ടില്ല
       invalid: അസാധുവാണ്
       less_than: "%{count} നേകാൾ ചെറുതായിരിക്കണം"
@@ -123,7 +127,8 @@ ml:
       not_a_number: ഒരു അക്കം അല്ല
       not_an_integer: ഒരു അക്കം ആയിരിക്കണം
       odd: ഒട്ടസന്ഘ്യ ആയിരിക്കണം
-      other_than: must be other than %{count}
+      other_than: "%{count} അല്ലാതെ മറ്റൊന്നായിരിക്കണം"
+      password_too_long: ദൈർഘ്യമേറിയതാണ്
       present: ഒഴിവായി ഇരിക്കണം
       required: എന്തായാലും ഉണ്ടായിരിക്കണം
       taken: ഇതിനു മുൻപേ ഉപയോഗിച്ചിരിക്കുന്നു
@@ -153,14 +158,16 @@ ml:
       format:
         delimiter: ","
         format: "%u%n"
+        negative_format: "-%u%n"
         precision: 2
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: "$"
+        unit: "₹"
     format:
       delimiter: ","
       precision: 3
+      round_mode: default
       separator: "."
       significant: false
       strip_insignificant_zeros: false
@@ -185,10 +192,13 @@ ml:
           byte:
             one: ബൈറ്റ്
             other: ബൈറ്റുകൾ
+          eb: ഇ.ബി
           gb: ജി.ബി
           kb: കെ.ബി.
           mb: എം.ബി.
+          pb: പി.ബി
           tb: ടി.ബി
+          zb: സി.ബി
     percentage:
       format:
         delimiter: ''
