@@ -17,7 +17,7 @@ sr:
     - Пет
     - Суб
     abbr_month_names:
-    - 
+    -
     - Јан
     - Феб
     - Мар
@@ -39,13 +39,13 @@ sr:
     - Петак
     - Субота
     formats:
-      default: "%d/%m/%Y"
-      long: "%B %e, %Y"
-      short: "%e %b"
+      default: "%d. %m. %Y"
+      long: "%-d. %B %Y"
+      short: "%-d. %b"
     month_names:
-    - 
+    -
     - Јануар
-    - Фабруар
+    - Фебруар
     - Март
     - Април
     - Мај
@@ -187,7 +187,7 @@ sr:
         separator: "."
         significant: false
         strip_insignificant_zeros: false
-        unit: ДИН
+        unit: РСД
     format:
       delimiter: "."
       precision: 3
