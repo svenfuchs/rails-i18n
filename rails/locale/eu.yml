@@ -9,13 +9,13 @@ eu:
           has_many: Ezin da erregistroa ezabat menpeko %{record}ak daudelako
   date:
     abbr_day_names:
-    - Igan
-    - Astel
-    - Astear
-    - Asteaz
-    - Oste
-    - Osti
-    - Lar
+    - Ig
+    - Al
+    - Ar
+    - Az
+    - Og
+    - Or
+    - Lr
     abbr_month_names:
     - 
     - Urt
