@@ -203,11 +203,31 @@ hr:
       decimal_units:
         format: "%n %u"
         units:
-          billion: milijarda
-          million: milijun
-          quadrillion: bilijarda
-          thousand: tisuća
-          trillion: bilijun
+          billion:
+            one: milijarda
+            few: milijarde
+            many: milijardi
+            other: milijardi
+          million:
+            one: milijun
+            few: milijuna
+            many: milijuna
+            other: milijuna
+          quadrillion:
+            one: bilijarda
+            few: bilijarde
+            many: bilijardi
+            other: bilijardi
+          thousand:
+            one: tisuća
+            few: tisuće
+            many: tisuća
+            other: tisuća
+          trillion:
+            one: bilijun
+            few: bilijuna
+            many: bilijuna
+            other: bilijuna
           unit: ''
       format:
         delimiter: ''

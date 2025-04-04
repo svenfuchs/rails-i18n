@@ -198,11 +198,31 @@ sr:
       decimal_units:
         format: "%n %u"
         units:
-          billion: Милијарда
-          million: Милион
-          quadrillion: Квадрилион
-          thousand: Хиљаду
-          trillion: Трилион
+          billion:
+            one: милијарда
+            few: милијарде
+            many: милијарди
+            other: милијарди
+          million:
+            one: милион
+            few: милиона
+            many: милиона
+            other: милиона
+          quadrillion:
+            one: квадрилион
+            few: квадрилиона
+            many: квадрилиона
+            other: квадрилиона
+          thousand:
+            one: хиљада
+            few: хиљаде
+            many: хиљада
+            other: хиљада
+          trillion:
+            one: трилион
+            few: трилиона
+            many: трилиона
+            other: трилиона
           unit: ''
       format:
         delimiter: ''
