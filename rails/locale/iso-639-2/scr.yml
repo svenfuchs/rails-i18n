@@ -192,11 +192,31 @@ scr:
       decimal_units:
         format: ! '%n %u'
         units:
-          thousand: Hiljadu
-          million: Milion
-          billion: Milijarda
-          trillion: Trilion
-          quadrillion: Kvadrilion
+          thousand:
+            one: hiljada
+            few: hiljade
+            many: hiljada
+            other: hiljada
+          million:
+            one: milion
+            few: miliona
+            many: miliona
+            other: miliona
+          billion:
+            one: milijarda
+            few: milijarde
+            many: milijardi
+            other: milijardi
+          trillion:
+            one: trilion
+            few: triliona
+            many: triliona
+            other: triliona
+          quadrillion:
+            one: kvadrilion
+            few: kvadriliona
+            many: kvadriliona
+            other: kvadriliona
           unit: ''
       format:
         delimiter: ''
