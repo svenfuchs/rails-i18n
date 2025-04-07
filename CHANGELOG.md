@@ -7,6 +7,8 @@
   - Serbian Cyrillic (sr): Fix date format, February typo, and RSD unit
   - Basque (eu): Fixed week day abbreviations
   - Croatian (hr), Serbian Cyrillic (sr) and Serbian Latin (scr): Add proper plural forms to decimal units
+  - Add following locales:
+    - Montenegrin (cnr)
 
 ## 8.0.1 (2024-11-10)
 
