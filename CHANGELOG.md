@@ -9,6 +9,7 @@
   - Croatian (hr), Serbian Cyrillic (sr) and Serbian Latin (scr): Add proper plural forms to decimal units
   - Add following locales:
     - Montenegrin (cnr)
+    - Armenian (hy)
 
 ## 8.0.1 (2024-11-10)
 
