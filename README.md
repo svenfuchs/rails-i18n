@@ -254,7 +254,7 @@ docker run railsi18n bundle exec rake i18n-spec:completeness rails/locale/en.yml
 
 ## See also
 
-* [devise-i18n](https://github.com/tigrish/devise-i18n)
+* [devise-i18n](https://github.com/devise-i18n/devise-i18n)
 * [will-paginate-i18n](https://github.com/tigrish/will-paginate-i18n)
 * [kaminari-i18n](https://github.com/tigrish/kaminari-i18n)
 * [i18n-country-translation](https://github.com/onomojo/i18n-country-translations) for translations of country names
