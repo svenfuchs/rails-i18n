@@ -2,11 +2,15 @@
 
 - Update following locales:
   - Japanese (ja): Add missing key (`password_too_long`)
+  - English (en, en-\*): Add new key (`datetime.relative`, see rails/rails#55405)
   - German (de, de-DE, de-AT, de-CH): Add missing key (`password_too_long`)
+  - German (de, de-\*): Add new key (`datetime.relative`, see rails/rails#55405)
   - Malayalam (ml): Add missing key (`datetime.distance_in_words.x_years.one`, `datetime.distance_in_words.x_years.other`, `errors.messages.in`, `errors.messages.password_too_long`, `currency.format.negative_format`, `number.format.round_mode`, `storage_units.units.eb`, `storage_units.units.pb`, `storage_units.units.zb`). Fix translation (`activerecord.errors.messages.record_invalid`, `errors.messages.other_than`, `number.currency.format.unit`)
   - Serbian Cyrillic (sr): Fix date format, February typo, and RSD unit
   - Basque (eu): Fixed week day abbreviations, fix percentage symbol position (`number.percentage.format`)
   - Croatian (hr), Serbian Cyrillic (sr) and Serbian Latin (scr): Add proper plural forms to decimal units
+  - Portuguese (pt, pt-\*): Add new key (`datetime.relative`, see rails/rails#55405)
+  - Spanish (es, es-\*): Add new key (`datetime.relative`, see rails/rails#55405)
   - Add following locales:
     - Montenegrin (cnr)
     - Armenian (hy)

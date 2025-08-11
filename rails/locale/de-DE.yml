@@ -104,6 +104,9 @@ de-DE:
       day: Tag
       month: Monat
       year: Jahr
+    relative:
+      future: "in %{time}"
+      past: "vor %{time}"
   errors:
     format: "%{attribute} %{message}"
     messages:
