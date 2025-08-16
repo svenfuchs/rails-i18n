@@ -1,5 +1,8 @@
 ## unreleased
 
+
+## 8.0.2 (2025-08-16)
+
 - Update following locales:
   - Japanese (ja): Add missing key (`errors.messages.password_too_long`, `currency.format.negative_format`, `storage_units.units.zb`)
   - German (de, de-DE, de-AT, de-CH): Add missing key (`password_too_long`)
