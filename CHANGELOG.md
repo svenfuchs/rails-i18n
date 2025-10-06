@@ -1,6 +1,7 @@
-## unreleased
+## Unreleased
 
 - Update following locales:
+  - Korean (ko): Remove `%{attribute}` placeholder from error messages
   - Italian (it): Add missing key (`errors.messages`, `errors.messages.password_too_long`, `number.currency.format.negative_format`, `number.format.round_mode`, `number.human.storage_units.units.zb`)
 
 ## 8.0.2 (2025-08-16)
