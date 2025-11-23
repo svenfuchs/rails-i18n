@@ -142,6 +142,7 @@ uk:
       exclusion: зарезервовано
       greater_than: має бути більше ніж %{count}
       greater_than_or_equal_to: має бути більше ніж або дорівнювати %{count}
+      in: має входити до %{count}
       inclusion: не включено до переліку
       invalid: недійсний
       less_than: має бути менше ніж %{count}
