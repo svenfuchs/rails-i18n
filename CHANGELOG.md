@@ -1,5 +1,7 @@
 ## Unreleased
 
+- Fix constant resolution failures when rules are evaluated in another scope
+
 ## 8.1.0 (2025-11-24)
 
 - Update following locales:
