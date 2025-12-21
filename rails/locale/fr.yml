@@ -110,6 +110,9 @@ fr:
       day: Jour
       month: Mois
       year: Année
+    relative:
+      future: "dans %{time}"
+      past: "il y a %{time}"
   errors:
     format: "%{attribute} %{message}"
     messages:
