@@ -4,4 +4,4 @@ require 'rails_i18n/pluralization'
     :'i18n' => {
       :plural => {
         :keys => [:one, :other],
-        :rule => RailsI18n::Pluralization::Latvian.rule }}}}
+        :rule => ::RailsI18n::Pluralization::Latvian.rule }}}}

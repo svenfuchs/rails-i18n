@@ -4,4 +4,4 @@ require 'rails_i18n/pluralization'
     :'i18n' => {
       :plural => {
         :keys => [:one, :two, :few, :other],
-        :rule => RailsI18n::Pluralization::ScottishGaelic.rule }}}}
+        :rule => ::RailsI18n::Pluralization::ScottishGaelic.rule }}}}
