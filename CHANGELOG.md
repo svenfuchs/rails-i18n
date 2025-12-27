@@ -2,6 +2,7 @@
 
 - Fix constant resolution failures when rules are evaluated in another scope
 - Update to Rails 8.1.x, and run `thor locales:normalize_from_rails`
+- English: Add missing keys
 
 ## 8.1.0 (2025-11-24)
 
