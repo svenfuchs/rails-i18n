@@ -103,6 +103,9 @@ en:
       day: Day
       month: Month
       year: Year
+    relative:
+      future: in %{time}
+      past: "%{time} ago"
   errors:
     format: "%{attribute} %{message}"
     messages:

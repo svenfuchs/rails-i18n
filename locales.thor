@@ -82,10 +82,10 @@ class Locales < Thor
 
     puts "Fetching latest Rails locale files to #{rails_locale_dir}... \n\n"
     system <<-BASH
-      curl -Lo '#{rails_locale_dir}/action_view.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/actionview/lib/action_view/locale/en.yml
-      curl -Lo '#{rails_locale_dir}/active_model.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/activemodel/lib/active_model/locale/en.yml
-      curl -Lo '#{rails_locale_dir}/active_record.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/activerecord/lib/active_record/locale/en.yml
-      curl -Lo '#{rails_locale_dir}/active_support.yml' https://raw.githubusercontent.com/rails/rails/8-0-stable/activesupport/lib/active_support/locale/en.yml
+      curl -Lo '#{rails_locale_dir}/action_view.yml' https://raw.githubusercontent.com/rails/rails/8-1-stable/actionview/lib/action_view/locale/en.yml
+      curl -Lo '#{rails_locale_dir}/active_model.yml' https://raw.githubusercontent.com/rails/rails/8-1-stable/activemodel/lib/active_model/locale/en.yml
+      curl -Lo '#{rails_locale_dir}/active_record.yml' https://raw.githubusercontent.com/rails/rails/8-1-stable/activerecord/lib/active_record/locale/en.yml
+      curl -Lo '#{rails_locale_dir}/active_support.yml' https://raw.githubusercontent.com/rails/rails/8-1-stable/activesupport/lib/active_support/locale/en.yml
     BASH
     puts "\nDownload complete.\n\n"
 
