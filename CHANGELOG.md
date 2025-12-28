@@ -2,6 +2,9 @@
 
 - Fix constant resolution failures when rules are evaluated in another scope
 - Update to Rails 8.1.x, and run `thor locales:normalize_from_rails`
+- English: Add missing keys
+- Spanish: Add missing keys
+- Portuguese: Add missing keys
 
 ## 8.1.0 (2025-11-24)
 
@@ -81,7 +84,7 @@
   - Portuguese (pt pt-BR): Add missing keys (`round_mode`) #1100
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-MX es-NI es-PA es-PE es-US es-VE): Fix typo in word _carácter_ #1090
   - Spanish (es-419 es-AR es-CL es-CO es-CR es-EC es-ES es-MX es-NI es-PA es-PE es-US es-VE): Normalize and add missing keys (`in`) #1089
-  - Ukranian: Use hryvnia symbol as a currency unit #1093
+  - Ukrainian: Use hryvnia symbol as a currency unit #1093
 
 ## 7.0.7 (2023-05-12)
 
@@ -120,7 +123,7 @@
     - Add pluralization #1021
     - Add `in` and `round_mode` keys #1042
   - French (fr, fr-CA, fr-CH, fr-CA):
-    - Change an abreviation for March month in abbr_month_names #1002
+    - Change an abbreviation for March month in abbr_month_names #1002
     - Add `in` and `round_mode` keys #1046
   - Galician (gl): Add missing accent on `incluído` #961
   - German (de-AT, de-CH, de-DE, de):
@@ -423,7 +426,7 @@
   - Estonian (et)
   - French (fr-CA, fr-CH, fr-FR, fr)
   - Norwegian Bokmål (nb)
-  - Russion (ru)
+  - Russian (ru)
   - Wolof (wo)
   - Traditional Chinese (zh-TW)
 
@@ -572,7 +575,7 @@
 - Update Ukrainian translation (uk)
 - Add Papiamento/Curaçao translation (pap-CW)
 - Add Cantonese translation (zh-YUE)
-- Update Portugese translation for Brazil (pt-BR)
+- Update Portuguese translation for Brazil (pt-BR)
 - Update Tagalog translation (tl)
 - Update English translation for India (en-IN)
 - Update Lithuanian translation (lt)
@@ -694,9 +697,9 @@
 - fixed Tagalog delimiter and separator
 - fixed Bosinian translation
 - fixed French translation
-- added Engish (en) translation
-- added Spanish (Venizuela) translation
-- complted Turkish translation
+- added English (en) translation
+- added Spanish (Venezuela) translation
+- completed Turkish translation
 
 ## 0.6.4 (2012-05-17)
 

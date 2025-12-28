@@ -106,6 +106,9 @@ en-US:
       day: Day
       month: Month
       year: Year
+    relative:
+      future: in %{time}
+      past: "%{time} ago"
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -128,6 +131,7 @@ en-US:
       not_an_integer: must be an integer
       odd: must be odd
       other_than: must be other than %{count}
+      password_too_long: is too long
       present: must be blank
       required: must exist
       taken: has already been taken
@@ -157,6 +161,7 @@ en-US:
       format:
         delimiter: ","
         format: "%u%n"
+        negative_format: "-%u%n"
         precision: 2
         separator: "."
         significant: false
@@ -196,6 +201,7 @@ en-US:
           mb: MB
           pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ''

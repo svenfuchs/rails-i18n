@@ -106,6 +106,9 @@ en-IN:
       day: Day
       month: Month
       year: Year
+    relative:
+      future: in %{time}
+      past: "%{time} ago"
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -118,6 +121,7 @@ en-IN:
       exclusion: is reserved
       greater_than: must be greater than %{count}
       greater_than_or_equal_to: must be greater than or equal to %{count}
+      in: must be in %{count}
       inclusion: is not included in the list
       invalid: is invalid
       less_than: must be less than %{count}
@@ -127,6 +131,7 @@ en-IN:
       not_an_integer: must be an integer
       odd: must be odd
       other_than: must be other than %{count}
+      password_too_long: is too long
       present: must be blank
       required: must exist
       taken: has already been taken
@@ -156,6 +161,7 @@ en-IN:
       format:
         delimiter: ","
         format: "%u%n"
+        negative_format: "-%u%n"
         precision: 2
         separator: "."
         significant: false
@@ -164,6 +170,7 @@ en-IN:
     format:
       delimiter: ","
       precision: 3
+      round_mode: default
       separator: "."
       significant: false
       strip_insignificant_zeros: false
@@ -194,6 +201,7 @@ en-IN:
           mb: MB
           pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ''

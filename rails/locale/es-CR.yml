@@ -106,6 +106,9 @@ es-CR:
       day: Día
       month: Mes
       year: Año
+    relative:
+      future: en %{time}
+      past: "hace %{time}"
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -128,6 +131,7 @@ es-CR:
       not_an_integer: debe ser un entero
       odd: debe ser un número impar
       other_than: debe ser distinto de %{count}
+      password_too_long: es demasiado larga
       present: debe estar en blanco
       required: debe existir
       taken: ya ha sido utilizado
@@ -157,6 +161,7 @@ es-CR:
       format:
         delimiter: ","
         format: "%u%n"
+        negative_format: "-%u%n"
         precision: 0
         separator: "."
         significant: false
@@ -200,6 +205,7 @@ es-CR:
           mb: MB
           pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ","
