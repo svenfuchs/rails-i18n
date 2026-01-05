@@ -106,6 +106,9 @@ te:
       day: రోజు
       month: నెల
       year: సంవత్సరం
+    relative:
+      future: "%{time} లో"
+      past: "%{time} క్రితం"
   errors:
     format: "%{attribute} %{message}"
     messages:

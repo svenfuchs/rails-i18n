@@ -122,6 +122,9 @@ sl:
       day: Dan
       month: Mesec
       year: Leto
+    relative:
+      future: čez %{time}
+      past: pred %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

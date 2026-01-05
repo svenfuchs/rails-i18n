@@ -147,6 +147,9 @@ ar:
       day: اليوم
       month: الشهر
       year: السنة
+    relative:
+      future: بعد %{time}
+      past: منذ %{time}
   errors:
     format: "%{message}"
     messages:

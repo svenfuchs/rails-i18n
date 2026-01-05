@@ -106,6 +106,9 @@ et:
       day: Päev
       month: Kuu
       year: Aasta
+    relative:
+      future: "%{time} pärast"
+      past: "%{time} tagasi"
   errors:
     format: "%{attribute} %{message}"
     messages:

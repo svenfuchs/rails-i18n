@@ -89,6 +89,9 @@ gl:
       x_months:
         one: "%{count} mes"
         other: "%{count} meses"
+    relative:
+      future: en %{time}
+      past: hai %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

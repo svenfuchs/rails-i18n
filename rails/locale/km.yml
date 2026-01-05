@@ -81,6 +81,9 @@ km:
       day: ថ្ងៃ
       month: ខែ
       year: ឆ្នាំ
+    relative:
+      future: ក្នុង %{time}
+      past: "%{time} មុន"
   errors:
     format: "%{attribute} %{message}"
     messages:

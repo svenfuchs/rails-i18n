@@ -111,6 +111,9 @@ sk:
       day: Deň
       month: Mesiac
       year: Rok
+    relative:
+      future: o %{time}
+      past: pred %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -106,6 +106,9 @@ fy:
       day: dei
       month: moanne
       year: jier
+    relative:
+      future: oer %{time}
+      past: "%{time} ferlyn"
   errors:
     format: "%{attribute} %{message}"
     messages:

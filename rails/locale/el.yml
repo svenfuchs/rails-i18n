@@ -106,6 +106,9 @@ el:
       day: Ημέρα
       month: Μήνας
       year: Έτος
+    relative:
+      future: σε %{time}
+      past: πριν από %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

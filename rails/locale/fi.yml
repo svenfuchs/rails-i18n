@@ -106,6 +106,9 @@ fi:
       day: Päivä
       month: Kuukausi
       year: Vuosi
+    relative:
+      future: "%{time} kuluttua"
+      past: "%{time} sitten"
   errors:
     format: "%{attribute} %{message}"
     messages:

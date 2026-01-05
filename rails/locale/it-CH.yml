@@ -106,6 +106,9 @@ it-CH:
       day: Giorno
       month: Mese
       year: Anno
+    relative:
+      future: tra %{time}
+      past: "%{time} fa"
   errors:
     format: "%{attribute} %{message}"
     messages:

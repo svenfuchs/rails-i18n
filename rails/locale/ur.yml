@@ -105,6 +105,9 @@ ur:
       day: دن
       month: ماہ
       year: سال
+    relative:
+      future: "%{time} میں"
+      past: "%{time} پہلے"
   errors:
     format: "%{attribute} %{message}"
     messages:

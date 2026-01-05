@@ -82,6 +82,9 @@ ja:
       day: 日
       month: 月
       year: 年
+    relative:
+      future: "%{time}後"
+      past: "%{time}前"
   errors:
     format: "%{attribute}%{message}"
     messages:

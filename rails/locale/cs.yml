@@ -114,6 +114,9 @@ cs:
       day: Den
       month: Měsíc
       year: Rok
+    relative:
+      future: za %{time}
+      past: před %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

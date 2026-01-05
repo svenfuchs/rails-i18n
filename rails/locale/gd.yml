@@ -131,6 +131,9 @@ gd:
       day: Latha
       month: Mìos
       year: Bliadhna
+    relative:
+      future: an ceann %{time}
+      past: bho chionn %{time}
   errors:
     format: "%{attribute}: %{message}"
     messages:

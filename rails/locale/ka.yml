@@ -103,6 +103,9 @@ ka:
       day: დღე
       month: თვე
       year: წელი
+    relative:
+      future: "%{time} შემდეგ"
+      past: "%{time} წინ"
   errors:
     format: "%{attribute} %{message}"
     messages:

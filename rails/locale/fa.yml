@@ -107,6 +107,9 @@ fa:
       day: روز
       month: ماه
       year: سال
+    relative:
+      future: در %{time}
+      past: "%{time} پیش"
   errors:
     format: "%{attribute} %{message}"
     messages:

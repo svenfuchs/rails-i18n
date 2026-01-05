@@ -105,6 +105,9 @@ hy:
       day: Օր
       month: Ամիս
       year: Տարի
+    relative:
+      future: "%{time} հետո"
+      past: "%{time} առաջ"
   errors:
     format: "%{attribute} %{message}"
     messages:

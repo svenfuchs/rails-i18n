@@ -103,6 +103,9 @@ tt:
       day: Көн
       month: Ай
       year: Ел
+    relative:
+      future: "%{time} соң"
+      past: "%{time} элек"
   errors:
     format: "%{attribute} %{message}"
     messages:

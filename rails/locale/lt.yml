@@ -118,6 +118,9 @@ lt:
       day: Diena
       month: Mėnuo
       year: Metai
+    relative:
+      future: po %{time}
+      past: prieš %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

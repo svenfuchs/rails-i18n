@@ -130,6 +130,9 @@ ru:
       day: День
       month: Месяц
       year: Год
+    relative:
+      future: через %{time}
+      past: "%{time} назад"
   errors:
     format: "%{attribute} %{message}"
     messages:

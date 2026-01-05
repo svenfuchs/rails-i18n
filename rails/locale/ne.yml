@@ -103,6 +103,9 @@ ne:
       day: दिन
       month: महिना
       year: बर्ष
+    relative:
+      future: "%{time} पछि"
+      past: "%{time} पहिले"
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -106,6 +106,9 @@ en-TT:
       month: Month
       second: Seconds
       year: Year
+    relative:
+      future: in %{time}
+      past: "%{time} ago"
   errors:
     format: "%{attribute} %{message}"
     messages:

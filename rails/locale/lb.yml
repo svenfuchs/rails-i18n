@@ -105,6 +105,9 @@ lb:
       day: Dag
       month: Mount
       year: Joer
+    relative:
+      future: an %{time}
+      past: virun %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

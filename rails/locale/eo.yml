@@ -102,6 +102,9 @@ eo:
       day: Tago
       month: Monato
       year: Jaro
+    relative:
+      future: post %{time}
+      past: antaŭ %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -100,6 +100,9 @@ or:
       day: ଦିନ
       month: ମାସ
       year: ବର୍ଷ
+    relative:
+      future: "%{time} ରେ"
+      past: "%{time} ପୂର୍ବରୁ"
   errors:
     format: "%{attribute} %{message}"
     messages:

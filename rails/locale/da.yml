@@ -106,6 +106,9 @@ da:
       day: Dag
       month: Måned
       year: År
+    relative:
+      future: om %{time}
+      past: for %{time} siden
   errors:
     format: "%{attribute} %{message}"
     messages:

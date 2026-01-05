@@ -125,6 +125,9 @@ pl:
       day: Dzień
       month: Miesiąc
       year: Rok
+    relative:
+      future: za %{time}
+      past: "%{time} temu"
   errors:
     format: "%{attribute} %{message}"
     messages:

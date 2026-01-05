@@ -106,6 +106,9 @@ pt-BR:
       day: Dia
       month: Mês
       year: Ano
+    relative:
+      future: em %{time}
+      past: há %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

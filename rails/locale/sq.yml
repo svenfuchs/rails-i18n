@@ -103,6 +103,9 @@ sq:
       day: Ditë
       month: Muaj
       year: Vit
+    relative:
+      future: në %{time}
+      past: "%{time} më parë"
   errors:
     format: "%{attribute} %{message}"
     messages:

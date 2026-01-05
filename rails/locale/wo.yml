@@ -106,6 +106,9 @@ wo:
       day: Day
       month: Month
       year: Year
+    relative:
+      future: ci %{time}
+      past: "%{time} ci ginaaw"
   errors:
     format: "%{attribute} %{message}"
     messages:

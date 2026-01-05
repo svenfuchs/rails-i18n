@@ -130,6 +130,9 @@ uk:
       day: День
       month: Місяць
       year: Рік
+    relative:
+      future: через %{time}
+      past: "%{time} тому"
   errors:
     format: "%{attribute} %{message}"
     messages:

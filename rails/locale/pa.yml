@@ -103,6 +103,9 @@ pa:
       day: ਦਿਨ
       month: ਮਹੀਨਾ
       year: ਸਾਲ
+    relative:
+      future: "%{time} ਵਿੱਚ"
+      past: "%{time} ਪਹਿਲਾਂ"
   errors:
     format: "%{attribute} %{message}"
     messages:

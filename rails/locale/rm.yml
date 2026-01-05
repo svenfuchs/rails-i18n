@@ -133,6 +133,9 @@ rm:
       day: dis
       month: mais
       year: onns
+    relative:
+      future: en %{time}
+      past: avant %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

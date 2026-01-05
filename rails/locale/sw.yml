@@ -100,6 +100,9 @@ sw:
       day: Siku
       month: Mwezi
       year: Mwaka
+    relative:
+      future: baada ya %{time}
+      past: "%{time} iliyopita"
   errors:
     format: "%{attribute} %{message}"
     messages:
