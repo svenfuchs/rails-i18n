@@ -130,6 +130,9 @@ hr:
       day: Dan
       month: Mjesec
       year: Godina
+    relative:
+      future: za %{time}
+      past: prije %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

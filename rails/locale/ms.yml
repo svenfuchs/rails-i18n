@@ -100,6 +100,9 @@ ms:
       day: Hari
       month: Bulan
       year: Tahun
+    relative:
+      future: dalam %{time}
+      past: "%{time} yang lalu"
   errors:
     format: "%{attribute} %{message}"
     messages:

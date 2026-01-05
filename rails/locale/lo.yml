@@ -78,6 +78,9 @@ lo:
       day: ວັນ
       month: ເດືອນ
       year: ປີ
+    relative:
+      future: ໃນ %{time}
+      past: "%{time}ກ່ອນ"
   errors:
     format: "%{attribute} %{message}"
     messages:

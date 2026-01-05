@@ -106,6 +106,9 @@ ca:
       day: dia
       month: mes
       year: any
+    relative:
+      future: en %{time}
+      past: fa %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

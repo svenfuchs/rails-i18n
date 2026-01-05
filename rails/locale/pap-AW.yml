@@ -106,6 +106,9 @@ pap-AW:
       month: Luna
       second: Sekònde
       year: Aña
+    relative:
+      future: den %{time}
+      past: "%{time} pasá"
   errors:
     format: '%{attribute} %{message}'
     messages:

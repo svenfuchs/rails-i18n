@@ -106,6 +106,9 @@ sv-SE:
       day: Dag
       month: Månad
       year: År
+    relative:
+      future: om %{time}
+      past: för %{time} sedan
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -111,6 +111,9 @@ ro:
       day: ziua
       month: luna
       year: anul
+    relative:
+      future: "în %{time}"
+      past: "%{time} în urmă"
   errors:
     format: "%{attribute} %{message}"
     messages:

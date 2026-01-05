@@ -130,6 +130,9 @@ be:
       day: Дзень
       month: Месяц
       year: Год
+    relative:
+      future: праз %{time}
+      past: "%{time} таму"
   errors:
     format: "%{attribute} %{message}"
     messages:

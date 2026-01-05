@@ -103,6 +103,9 @@ ta:
       day: நாள்
       month: மாதம்
       year: ஆண்டு
+    relative:
+      future: "%{time} இல்"
+      past: "%{time} முன்"
   errors:
     format: "%{attribute} %{message}"
     messages:

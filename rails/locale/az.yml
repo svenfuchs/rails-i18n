@@ -103,6 +103,9 @@ az:
       day: Gün
       month: Ay
       year: İl
+    relative:
+      future: "%{time} sonra"
+      past: "%{time} əvvəl"
   errors:
     format: "%{attribute} %{message}"
     messages:

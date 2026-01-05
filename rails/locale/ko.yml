@@ -82,6 +82,9 @@ ko:
       day: 일
       month: 월
       year: 년
+    relative:
+      future: "%{time} 후"
+      past: "%{time} 전"
   errors:
     format: "%{message}"
     messages:

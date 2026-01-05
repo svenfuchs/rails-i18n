@@ -100,6 +100,9 @@ hu:
       day: Nap
       month: Hónap
       year: Év
+    relative:
+      future: "%{time} múlva"
+      past: "%{time} ezelőtt"
   errors:
     format: "%{attribute} %{message}"
     messages:

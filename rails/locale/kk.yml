@@ -106,6 +106,9 @@ kk:
       day: Күн
       month: Ай
       year: Жыл
+    relative:
+      future: "%{time} кейін"
+      past: "%{time} бұрын"
   errors:
     format: '%{attribute} %{message}'
     messages:

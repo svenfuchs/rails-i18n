@@ -100,6 +100,9 @@ hi:
       day: दिन
       month: माह
       year: वर्ष
+    relative:
+      future: "%{time} में"
+      past: "%{time} पहले"
   errors:
     format: "%{attribute} %{message}"
     messages:

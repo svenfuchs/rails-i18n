@@ -154,6 +154,9 @@ cy:
       day: Diwrnod
       month: Mis
       year: Blwyddyn
+    relative:
+      future: ymhen %{time}
+      past: "%{time} yn ôl"
   errors:
     format: "%{attribute} %{message}"
     messages:

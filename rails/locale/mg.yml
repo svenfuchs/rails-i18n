@@ -110,6 +110,9 @@ mg:
       day: Andro
       month: Volana
       year: Taona
+    relative:
+      future: afaka %{time}
+      past: "%{time} lasa"
   errors:
     format: "%{attribute} %{message}"
     messages:

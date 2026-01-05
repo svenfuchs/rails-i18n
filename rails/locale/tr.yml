@@ -106,6 +106,9 @@ tr:
       day: Gün
       month: Ay
       year: Yıl
+    relative:
+      future: "%{time} sonra"
+      past: "%{time} önce"
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -102,6 +102,9 @@ he:
       day: יום
       month: חודש
       year: שנה
+    relative:
+      future: בעוד %{time}
+      past: לפני %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

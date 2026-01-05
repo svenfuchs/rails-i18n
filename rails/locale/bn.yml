@@ -96,6 +96,9 @@ bn:
       day: দিন
       month: মাস
       year: বছর
+    relative:
+      future: "%{time} পরে"
+      past: "%{time} আগে"
   errors:
     format: "%{attribute} %{message}"
     messages:

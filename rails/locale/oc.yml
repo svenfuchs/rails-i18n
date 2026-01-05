@@ -106,6 +106,9 @@ oc:
       day: jorn
       month: mes
       year: an
+    relative:
+      future: "d'aicí %{time}"
+      past: fa %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

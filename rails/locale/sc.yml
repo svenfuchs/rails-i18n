@@ -106,6 +106,9 @@ sc:
       day: Die
       month: Mese
       year: Annu
+    relative:
+      future: intr'a %{time}
+      past: "%{time} a como"
   errors:
     format: "%{attribute} %{message}"
     messages:

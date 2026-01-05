@@ -114,6 +114,9 @@ lv:
       day: diena
       month: mēnesis
       year: gads
+    relative:
+      future: pēc %{time}
+      past: pirms %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

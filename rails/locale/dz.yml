@@ -104,6 +104,9 @@ dz:
       day: ཉིནམ
       month: ཟླཝ
       year: ལོ
+    relative:
+      future: "%{time} ནང་"
+      past: "%{time} སྔོན་ལ་"
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -103,6 +103,9 @@ eu:
       day: Egun
       month: Hilabete
       year: Urte
+    relative:
+      future: "%{time} barruan"
+      past: duela %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

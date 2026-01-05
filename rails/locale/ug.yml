@@ -103,6 +103,9 @@ ug:
       day: كۈن
       month: ئاي
       year: يىل
+    relative:
+      future: "%{time} كېيىن"
+      past: "%{time} بۇرۇن"
   errors:
     format: "%{attribute}%{message}"
     messages:

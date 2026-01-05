@@ -100,6 +100,9 @@ bg:
       day: Ден
       month: Месец
       year: Година
+    relative:
+      future: след %{time}
+      past: преди %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -78,6 +78,9 @@ th:
       day: วัน
       month: เดือน
       year: ปี
+    relative:
+      future: ใน %{time}
+      past: "%{time}ที่แล้ว"
   errors:
     format: "%{attribute} %{message}"
     messages:

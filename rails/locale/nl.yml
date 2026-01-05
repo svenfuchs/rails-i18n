@@ -106,6 +106,9 @@ nl:
       day: dag
       month: maand
       year: jaar
+    relative:
+      future: over %{time}
+      past: "%{time} geleden"
   errors:
     format: "%{attribute} %{message}"
     messages:

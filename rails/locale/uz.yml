@@ -122,6 +122,9 @@ uz:
       day: kun
       month: oy
       year: yil
+    relative:
+      future: "%{time} dan keyin"
+      past: "%{time} oldin"
   errors:
     format: "%{attribute} %{message}"
     messages:

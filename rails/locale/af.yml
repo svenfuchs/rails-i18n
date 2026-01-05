@@ -106,6 +106,9 @@ af:
       day: Dag
       month: Maand
       year: Jaar
+    relative:
+      future: oor %{time}
+      past: "%{time} gelede"
   errors:
     format: "%{attribute} %{message}"
     messages:

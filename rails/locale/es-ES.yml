@@ -106,6 +106,9 @@ es-ES:
       day: Día
       month: Mes
       year: Año
+    relative:
+      future: en %{time}
+      past: hace %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

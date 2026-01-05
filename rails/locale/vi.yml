@@ -81,6 +81,9 @@ vi:
       day: Ngày
       month: Tháng
       year: Năm
+    relative:
+      future: trong %{time}
+      past: "%{time} trước"
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -103,6 +103,9 @@ mr-IN:
       day: दिवस
       month: महिना
       year: वर्ष
+    relative:
+      future: "%{time} मध्ये"
+      past: "%{time} पूर्वी"
   errors:
     format: "%{attribute} %{message}"
     messages:

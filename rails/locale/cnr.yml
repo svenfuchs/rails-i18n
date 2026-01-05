@@ -125,6 +125,9 @@ cnr:
       day: dan
       month: mjesec
       year: godina
+    relative:
+      future: za %{time}
+      past: prije %{time}
   errors:
     format: "%{attribute} %{message}"
     messages:

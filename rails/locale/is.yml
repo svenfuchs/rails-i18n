@@ -103,6 +103,9 @@ is:
       day: Dagur
       month: Mánuður
       year: Ár
+    relative:
+      future: eftir %{time}
+      past: fyrir %{time} síðan
   errors:
     format: "%{attribute} %{message}"
     messages:

@@ -100,6 +100,9 @@ mn:
       day: Өдөр
       month: Сар
       year: Жил
+    relative:
+      future: "%{time} дараа"
+      past: "%{time} өмнө"
   errors:
     format: "%{attribute} %{message}"
     messages:
