@@ -12,6 +12,7 @@ Include the gem to your Gemfile:
 
 ``` ruby
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For bleeding edge unreleased versions
+gem 'rails-i18n', '~> 8.1.0' # For Rails >= 8.1.0
 gem 'rails-i18n', '~> 8.0.0' # For Rails >= 8.0.0
 gem 'rails-i18n', '~> 7.0.0' # For Rails >= 7.0.0
 gem 'rails-i18n', '~> 6.0' # For 6.x
@@ -26,6 +27,7 @@ gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-3-x' # For 3.x
 Alternatively, execute the following command:
 
 ``` shell
+gem install rails-i18n -v '~> 8.1.0' # For Rails >= 8.1.0
 gem install rails-i18n -v '~> 8.0.0' # For Rails >= 8.0.0
 gem install rails-i18n -v '~> 7.0.0' # For Rails >= 7.0.0
 gem install rails-i18n -v '~> 6.0' # For 6.x
