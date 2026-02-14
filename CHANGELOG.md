@@ -5,6 +5,7 @@
 - English: Add missing keys
 - Spanish: Add missing keys
 - Portuguese: Add missing keys
+- Translate ordinals: (nl, nl-NL, nl-BE)
 
 ## 8.1.0 (2025-11-24)
 

@@ -1,0 +1,6 @@
+---
+nl-BE:
+  number:
+    nth:
+      ordinals: "e"
+      ordinalized: "%{number}e"

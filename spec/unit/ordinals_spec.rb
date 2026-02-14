@@ -5,10 +5,15 @@ describe 'Ordinals for' do
   # Mock Rails app in order to trigger the Railtie
   let(:app) { double :app, config: config }
   let(:config) { double :config, eager_load_namespaces: [], i18n: I18n, rails_i18n: RailsI18n }
-  let(:period_locales) { %w[be bs cs da de de-AT de-CH de-DE eo et fa fi hr hu is ka lb lt lv mk nb ne nn pl sk sl sq sr sw tr] }
+  let(:static_suffix_locales) {
+    {
+      %w[be bs cs da de de-AT de-CH de-DE eo et fa fi hr hu is ka lb lt lv mk nb ne nn pl sk sl sq sr sw tr] => ".",
+      %w[nl nl-NL nl-BE] => "e",
+    }
+  }
 
   before do
-    I18n.available_locales = %w[fr en fr-CA fr-CH fr-FR gd] + period_locales
+    I18n.available_locales = static_suffix_locales.keys.flatten + %w[fr en fr-CA fr-CH fr-FR gd]
 
     RailsI18n::Railtie.initializers.each { |init| init.run(app) }
     I18n.backend.reload!
@@ -47,12 +52,15 @@ describe 'Ordinals for' do
     end
   end
 
-  describe 'locales with period-suffix' do
+  describe 'locales with a static suffix' do
     it 'uses the custom rule' do
-      period_locales.each do |locale|
-        I18n.with_locale(locale) do
-          ActiveSupport::Inflector.ordinalize(1).should == "1."
-          ActiveSupport::Inflector.ordinalize(2).should == "2."
+      static_suffix_locales.each do |locales, suffix|
+        locales.each do |locale|
+          I18n.with_locale(locale) do
+            ActiveSupport::Inflector.ordinalize(0).should == "0#{suffix}"
+            ActiveSupport::Inflector.ordinalize(1).should == "1#{suffix}"
+            ActiveSupport::Inflector.ordinalize(2).should == "2#{suffix}"
+          end
         end
       end
     end
