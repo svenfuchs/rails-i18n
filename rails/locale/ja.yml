@@ -126,7 +126,7 @@ ja:
       format:
         delimiter: ","
         format: "%n%u"
-        negative_format: "-%u%n"
+        negative_format: "-%n%u"
         precision: 0
         separator: "."
         significant: false
