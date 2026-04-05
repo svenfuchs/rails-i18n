@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-rails", "~> 3.7"
   s.add_development_dependency "i18n-spec", "~> 0.6.0"
   s.add_development_dependency "i18n-tasks", "~> 1.0"
+  s.add_development_dependency "tsort" # required on Ruby >4
 
   s.metadata["changelog_uri"] = "#{s.homepage}/blob/master/CHANGELOG.md"
 end

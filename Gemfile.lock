@@ -150,6 +150,7 @@ GEM
     terminal-table (4.0.0)
       unicode-display_width (>= 1.1.1, < 4)
     thor (1.4.0)
+    tsort (0.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.1.5)
@@ -167,6 +168,7 @@ DEPENDENCIES
   i18n-tasks (~> 1.0)
   rails-i18n!
   rspec-rails (~> 3.7)
+  tsort
 
 BUNDLED WITH
    2.6.9
