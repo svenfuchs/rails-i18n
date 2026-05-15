@@ -1,6 +1,9 @@
 module RailsI18n
   module Pluralization
     module Arabic
+      FROM_3_TO_10 = (3..10).to_a.freeze
+      FROM_11_TO_99 = (11..99).to_a.freeze
+
       def self.rule
         lambda do |n|
           return :other unless n.is_a?(Numeric)
@@ -13,9 +16,9 @@ module RailsI18n
             :one
           elsif n == 2
             :two
-          elsif (3..10).to_a.include?(mod100)
+          elsif FROM_3_TO_10.include?(mod100)
             :few
-          elsif (11..99).to_a.include?(mod100)
+          elsif FROM_11_TO_99.include?(mod100)
             :many
           else
             :other
