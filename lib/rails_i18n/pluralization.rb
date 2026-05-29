@@ -1,6 +1,9 @@
 module RailsI18n
   module Pluralization
     module Arabic
+      FROM_3_TO_10 = (3..10).to_a.freeze
+      FROM_11_TO_99 = (11..99).to_a.freeze
+
       def self.rule
         lambda do |n|
           return :other unless n.is_a?(Numeric)
@@ -13,9 +16,9 @@ module RailsI18n
             :one
           elsif n == 2
             :two
-          elsif (3..10).to_a.include?(mod100)
+          elsif FROM_3_TO_10.include?(mod100)
             :few
-          elsif (11..99).to_a.include?(mod100)
+          elsif FROM_11_TO_99.include?(mod100)
             :many
           else
             :other
@@ -62,6 +65,9 @@ module RailsI18n
     end
 
     module Lithuanian
+      FROM_2_TO_9 = (2..9).to_a.freeze
+      FROM_11_TO_19 = (11..19).to_a.freeze
+
       def self.rule
         lambda do |n|
           return :other unless n.is_a?(Numeric)
@@ -69,9 +75,9 @@ module RailsI18n
           mod10 = n % 10
           mod100 = n % 100
 
-          if mod10 == 1 && !(11..19).to_a.include?(mod100)
+          if mod10 == 1 && !FROM_11_TO_19.include?(mod100)
             :one
-          elsif (2..9).to_a.include?(mod10) && !(11..19).to_a.include?(mod100)
+          elsif FROM_2_TO_9.include?(mod10) && !FROM_11_TO_19.include?(mod100)
             :few
           else
             :other
