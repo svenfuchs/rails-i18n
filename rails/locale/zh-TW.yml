@@ -82,18 +82,22 @@ zh-TW:
       day: 日
       month: 月
       year: 年
+    relative:
+      future: "%{time}內"
+      past: "%{time}前"
   errors:
     format: "%{attribute}%{message}"
     messages:
       accepted: 必須是可被接受的
       blank: 不能為空白
       confirmation: 與%{attribute}須一致
-      empty: 不能留空
+      empty: 不能空白
       equal_to: 必須等於%{count}
       even: 必須是偶數
       exclusion: 是被保留的關鍵字
       greater_than: 必須大於%{count}
       greater_than_or_equal_to: 必須大於或等於%{count}
+      in: 必須在 %{count} 範圍內
       inclusion: 沒有包含在列表中
       invalid: 是無效的
       less_than: 必須小於%{count}
@@ -103,6 +107,7 @@ zh-TW:
       not_an_integer: 必須是整數
       odd: 必須是奇數
       other_than: 不可以是%{count}個字
+      password_too_long: 密碼過長
       present: 必須是空白
       required: 必須存在
       taken: 已經被使用
@@ -124,7 +129,8 @@ zh-TW:
       format:
         delimiter: ","
         format: "%u%n"
-        precision: 2
+        negative_format: "-%u%n"
+        precision: 1
         separator: "."
         significant: false
         strip_insignificant_zeros: false
@@ -132,6 +138,7 @@ zh-TW:
     format:
       delimiter: ","
       precision: 3
+      round_mode: 預設
       separator: "."
       significant: false
       strip_insignificant_zeros: false
@@ -156,10 +163,13 @@ zh-TW:
           byte:
             one: 位元組
             other: 位元組
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ''
