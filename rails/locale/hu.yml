@@ -138,15 +138,15 @@ hu:
   number:
     currency:
       format:
-        delimiter: ''
-        format: "%n %u"
+        delimiter: ' ' # U+2007 FIGURE SPACE – https://en.wikipedia.org/wiki/Figure_space
+        format: "%n %u" # U+00A0 NO-BREAK SPACE
         precision: 0
         separator: ","
         significant: true
         strip_insignificant_zeros: true
         unit: Ft
     format:
-      delimiter: " "
+      delimiter: ' ' # U+2007 FIGURE SPACE – https://en.wikipedia.org/wiki/Figure_space
       precision: 2
       separator: ","
       significant: true
@@ -167,7 +167,7 @@ hu:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: "%n %u" # U+00A0 NO-BREAK SPACE
         units:
           byte:
             one: bájt
