@@ -138,15 +138,15 @@ hu:
   number:
     currency:
       format:
-        delimiter: ' ' # U+2007 FIGURE SPACE – https://en.wikipedia.org/wiki/Figure_space
-        format: "%n %u" # U+00A0 NO-BREAK SPACE
+        delimiter: ' '
+        format: "%n %u"
         precision: 0
         separator: ","
         significant: true
         strip_insignificant_zeros: true
         unit: Ft
     format:
-      delimiter: ' ' # U+2007 FIGURE SPACE – https://en.wikipedia.org/wiki/Figure_space
+      delimiter: ' '
       precision: 2
       separator: ","
       significant: true
