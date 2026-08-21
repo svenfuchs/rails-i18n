@@ -72,24 +72,24 @@ cy:
       about_x_months:
         zero: tua %{count} mis
         one: tua mis
-        two: tua %{count} mis
+        two: tua %{count} fis
         few: tua %{count} mis
         many: tua %{count} mis
         other: tua %{count} mis
       about_x_years:
         zero: tua %{count} blynedd
         one: tua blwyddyn
-        two: tua %{count} blynedd
+        two: tua %{count} flynedd
         few: tua %{count} blynedd
-        many: tua %{count} blynedd
-        other: tua %{count} blynedd
+        many: tua %{count} mlynedd
+        other: tua %{count} mlynedd
       almost_x_years:
         zero: bron yn %{count} blynedd
         one: bron yn flwyddyn
-        two: bron yn %{count} blynedd
+        two: bron yn %{count} flynedd
         few: bron yn %{count} blynedd
-        many: bron yn %{count} blynedd
-        other: bron yn %{count} blynedd
+        many: bron yn %{count} mlynedd
+        other: bron yn %{count} mlynedd
       half_a_minute: hanner munud
       less_than_x_seconds:
         zero: llai na %{count} eiliad
@@ -101,52 +101,52 @@ cy:
       less_than_x_minutes:
         zero: llai na %{count} munud
         one: llai na munud
-        two: llai na %{count} munud
+        two: llai na %{count} funud
         few: llai na %{count} munud
         many: llai na %{count} munud
         other: llai na %{count} munud
       over_x_years:
         zero: dros %{count} blynedd
         one: dros flwyddyn
-        two: dros %{count} blynedd
+        two: dros %{count} flynedd
         few: dros %{count} blynedd
-        many: dros %{count} blynedd
-        other: dros %{count} blynedd
+        many: dros %{count} mlynedd
+        other: dros %{count} mlynedd
       x_seconds:
         zero: "%{count} o eiliadau"
         one: 1 eiliad
-        two: "%{count} o eiliadau"
-        few: "%{count} o eiliadau"
-        many: "%{count} o eiliadau"
-        other: "%{count} o eiliadau"
+        two: "%{count} eiliad"
+        few: "%{count} eiliad"
+        many: "%{count} eiliad"
+        other: "%{count} eiliad"
       x_minutes:
         zero: "%{count} o funudau"
         one: 1 munud
-        two: "%{count} o funudau"
-        few: "%{count} o funudau"
-        many: "%{count} o funudau"
-        other: "%{count} o funudau"
+        two: "%{count} funud"
+        few: "%{count} munud"
+        many: "%{count} munud"
+        other: "%{count} munud"
       x_days:
         zero: "%{count} diwrnod"
         one: 1 diwrnod
-        two: "%{count} diwrnod"
+        two: "%{count} ddiwrnod"
         few: "%{count} diwrnod"
         many: "%{count} diwrnod"
         other: "%{count} diwrnod"
       x_months:
         zero: "%{count} mis"
         one: 1 mis
-        two: "%{count} mis"
+        two: "%{count} fis"
         few: "%{count} mis"
         many: "%{count} mis"
         other: "%{count} mis"
       x_years:
         zero: "%{count} blwyddyn"
         one: 1 flwyddyn
-        two: "%{count} blwyddyn"
-        few: "%{count} blwyddyn"
-        many: "%{count} blwyddyn"
-        other: "%{count} blwyddyn"
+        two: "%{count} flynedd"
+        few: "%{count} blynedd"
+        many: "%{count} mlynedd"
+        other: "%{count} mlynedd"
     prompts:
       second: Eiliad
       minute: Munud
@@ -233,12 +233,12 @@ cy:
         format: "%n %u"
         units:
           byte:
-            zero: Bytes
-            one: Byte
-            two: Bytes
-            few: Bytes
-            many: Bytes
-            other: Bytes
+            zero: Beit
+            one: Beit
+            two: Feit
+            few: Beit
+            many: Beit
+            other: Beit
           gb: GB
           kb: KB
           mb: MB
