@@ -15,6 +15,7 @@
 - Spanish (es, es-\*): Add new key (`datetime.relative`, see rails/rails#55405)
 - Dutch (nl): Add missing key (`number.currency.format.negative_format`)
 - Welsh (cy): Corrections for strings containing 'two'
+- Welsh (cy): restore pluralization from 7.0.5 since locale was re-added in 7.0.9
 
 ## 8.1.0 (2025-11-24)
 

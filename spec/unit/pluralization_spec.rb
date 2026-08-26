@@ -426,6 +426,41 @@ describe 'Pluralization rule for' do
     it_behaves_like 'other form language'
   end
 
+  describe 'Welsh', :locale => :cy do
+    it_behaves_like 'an ordinary pluralization rule'
+
+    it 'has "zero", "one", "two", "few", "many" and "other" plural keys' do
+      plural_keys.size.should == 6
+      plural_keys.should include(:zero, :one, :two, :few, :many, :other)
+    end
+
+    it "detects that 0 in category 'zero'" do
+      rule.call(0).should == :zero
+    end
+
+    it "detects that 1 in category 'one'" do
+      rule.call(1).should == :one
+    end
+
+    it "detects that 2 in category 'two'" do
+      rule.call(2).should == :two
+    end
+
+    it "detects that 3 in category 'few'" do
+      rule.call(3).should == :few
+    end
+
+    it "detects that 6 in category 'many'" do
+      rule.call(6).should == :many
+    end
+
+    [0.3, 1.2, 2.2, 4, 5, 7, 8.5, nil, "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
+        rule.call(count).should == :other
+      end
+    end
+  end
+
   describe 'Wolof', :locale => :wo do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
