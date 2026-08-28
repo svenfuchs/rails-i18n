@@ -138,7 +138,7 @@ hu:
   number:
     currency:
       format:
-        delimiter: ''
+        delimiter: ' '
         format: "%n %u"
         precision: 0
         separator: ","
@@ -146,7 +146,7 @@ hu:
         strip_insignificant_zeros: true
         unit: Ft
     format:
-      delimiter: " "
+      delimiter: ' '
       precision: 2
       separator: ","
       significant: true
@@ -167,7 +167,7 @@ hu:
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: "%n %u" # U+00A0 NO-BREAK SPACE
         units:
           byte:
             one: bájt
