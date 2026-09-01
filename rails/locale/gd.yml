@@ -93,7 +93,6 @@ gd:
         two: nas lugha na %{count} mhionaid
         few: nas lugha na %{count} mionaidean
         other: nas lugha na %{count} mionaid
-        one: nas lugha na mionaid
       over_x_years:
         one: còrr is %{count} bhliadhna
         two: còrr is %{count} bhliadhna
