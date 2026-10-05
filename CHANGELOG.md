@@ -5,6 +5,7 @@
 - Make Arabic and Lithuanian pluralization faster
 - Update to Rails 8.1.x, and run `thor locales:normalize_from_rails`
 - English: Add missing keys
+- English (en-GB): Use slashes in the default date format
 - Spanish: Add missing keys
 - Portuguese: Add missing keys
 - Traditional Chinese (zh-TW): Add missing keys (`datetime.relative`, `errors.messages.in`, `errors.messages.password_too_long`, `number.currency.format.negative_format`, `number.format.round_mode`, storage units) and update translations

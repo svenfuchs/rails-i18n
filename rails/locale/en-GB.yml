@@ -39,7 +39,7 @@ en-GB:
     - Friday
     - Saturday
     formats:
-      default: "%d-%m-%Y"
+      default: "%d/%m/%Y"
       long: "%d %B, %Y"
       short: "%d %b"
     month_names:
