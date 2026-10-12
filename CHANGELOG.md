@@ -14,6 +14,7 @@
 - Portuguese (pt, pt-\*): Add new key (`datetime.relative`, see rails/rails#55405)
 - Spanish (es, es-\*): Add new key (`datetime.relative`, see rails/rails#55405)
 - Dutch (nl): Add missing key (`number.currency.format.negative_format`)
+- Hungarian (hu): Add delimiter (space) to currency
 
 ## 8.1.0 (2025-11-24)
 
