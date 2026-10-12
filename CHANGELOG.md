@@ -5,6 +5,7 @@
 - Make Arabic and Lithuanian pluralization faster
 - Update to Rails 8.1.x, and run `thor locales:normalize_from_rails`
 - English: Add missing keys
+- English (en-GB): Use slashes in the default date format
 - Spanish: Add missing keys
 - Portuguese: Add missing keys
 - Traditional Chinese (zh-TW): Add missing keys (`datetime.relative`, `errors.messages.in`, `errors.messages.password_too_long`, `number.currency.format.negative_format`, `number.format.round_mode`, storage units) and update translations
@@ -15,6 +16,9 @@
 - Spanish (es, es-\*): Add new key (`datetime.relative`, see rails/rails#55405)
 - Dutch (nl): Add missing key (`number.currency.format.negative_format`)
 - Hungarian (hu): Add delimiter (space) to currency
+- Welsh (cy): Corrections for strings containing 'two'
+- Welsh (cy): restore pluralization from 7.0.5 since locale was re-added in 7.0.9
+- Scottish Gaelic (gd): Remove duplicate `one` key from `datetime.distance_in_words.less_than_x_minutes`
 
 ## 8.1.0 (2025-11-24)
 
