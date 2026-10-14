@@ -19,6 +19,7 @@
 - Welsh (cy): Corrections for strings containing 'two'
 - Welsh (cy): restore pluralization from 7.0.5 since locale was re-added in 7.0.9
 - Scottish Gaelic (gd): Remove duplicate `one` key from `datetime.distance_in_words.less_than_x_minutes`
+- Marathi (mr-IN): Add missing keys (`datetime.distance_in_words.x_years`, `datetime.relative`, `errors.messages.in`, `errors.messages.model_invalid`, `errors.messages.password_too_long`, `errors.messages.required`, `number.currency.format.negative_format`, `number.format.round_mode`, `number.human.storage_units.units.eb`, `number.human.storage_units.units.pb`, `number.human.storage_units.units.zb`, `number.percentage.format.format`)
 
 ## 8.1.0 (2025-11-24)
 
