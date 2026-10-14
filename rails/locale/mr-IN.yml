@@ -17,7 +17,7 @@ mr-IN:
     - शनि
     - रवि
     abbr_month_names:
-    - 
+    -
     - जाने
     - फेब्रु
     - मार्च
@@ -43,7 +43,7 @@ mr-IN:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - जानेवारी
     - फेब्रुवारी
     - मार्च
@@ -96,6 +96,9 @@ mr-IN:
       x_months:
         one: एक महिना
         other: "%{count} महिना"
+      x_years:
+        one: "%{count} वर्ष"
+        other: "%{count} वर्षे"
     prompts:
       second: सेकंद
       minute: मिनिट
@@ -103,6 +106,9 @@ mr-IN:
       day: दिवस
       month: महिना
       year: वर्ष
+    relative:
+      future: "%{time} मध्ये"
+      past: "%{time} पूर्वी"
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -115,15 +121,19 @@ mr-IN:
       exclusion: राखीव आहे
       greater_than: "%{count} पेक्षा जास्त असणे आवश्यक आहे"
       greater_than_or_equal_to: "%{count} पेक्षा मोठे किंवा समान असणे आवश्यक आहे"
+      in: "%{count} मध्ये असणे आवश्यक आहे"
       inclusion: यादीत समाविष्ट नाही
       invalid: अवैध आहे
       less_than: "%{count} पेक्षा कमी असणे आवश्यक"
       less_than_or_equal_to: "%{count} पेक्षा कमी किंवा समान असणे आवश्यक आहे"
+      model_invalid: 'प्रमाणीकरण अयशस्वी: %{errors}'
       not_a_number: क्रमांक नाही
       not_an_integer: पूर्णांक असणे आवश्यक आहे
       odd: विषम संख्या असणे आवश्यक आहे
       other_than: "%{count} पेक्षा इतर असणे आवश्यक आहे"
+      password_too_long: खूप लांब आहे
       present: रिक्त असणे आवश्यक आहे
+      required: अस्तित्वात असणे आवश्यक आहे
       taken: यापूर्वीच घेतले गेले आहे
       too_long:
         one: खूप लांब आहे (जास्तीत जास्त एक वर्ण परवानगी आहे)
@@ -151,6 +161,7 @@ mr-IN:
       format:
         delimiter: ","
         format: "%u%n"
+        negative_format: "-%u%n"
         precision: 2
         separator: "."
         significant: false
@@ -159,6 +170,7 @@ mr-IN:
     format:
       delimiter: ","
       precision: 3
+      round_mode: default
       separator: "."
       significant: false
       strip_insignificant_zeros: false
@@ -183,13 +195,17 @@ mr-IN:
           byte:
             one: Byte
             other: Bytes
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ''
+        format: "%n%"
     precision:
       format:
         delimiter: ''

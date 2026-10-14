@@ -97,7 +97,7 @@ af, ar, az, be, bg, bn, bs, ca, cs, cy, csb, da, de, de-AT, de-CH, de-DE, dsb, d
 
 **Complete locales:**
 
-en, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, fr, fr-CA, fr-CH, fr-FR, gd, ja, pt, pt-BR, ru, sc
+en, en-US, es, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-ES, es-MX, es-NI, es-PA, es-PE, es-US, es-VE, fr, fr-CA, fr-CH, fr-FR, gd, ja, mr-IN, pt, pt-BR, ru, sc
 
 **Locales with missing pluralization rules**
 
