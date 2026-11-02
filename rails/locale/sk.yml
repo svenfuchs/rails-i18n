@@ -28,31 +28,31 @@ sk:
     - Nov
     - Dec
     day_names:
-    - Nedeľa
-    - Pondelok
-    - Utorok
-    - Streda
-    - Štvrtok
-    - Piatok
-    - Sobota
+    - nedeľa
+    - pondelok
+    - utorok
+    - streda
+    - štvrtok
+    - piatok
+    - sobota
     formats:
       default: "%d.%m.%Y"
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
     - 
-    - Január
-    - Február
-    - Marec
-    - Apríl
-    - Máj
-    - Jún
-    - Júl
-    - August
-    - September
-    - Október
-    - November
-    - December
+    - januára
+    - februára
+    - marca
+    - apríla
+    - mája
+    - júna
+    - júla
+    - augusta
+    - septembra
+    - októbra
+    - novembra
+    - decembra
     order:
     - :day
     - :month

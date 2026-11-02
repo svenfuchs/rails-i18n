@@ -219,7 +219,7 @@ pt:
   time:
     am: am
     formats:
-      default: "%A, %d de %B de %Y, %H:%Mh"
-      long: "%A, %d de %B de %Y, %H:%Mh"
-      short: "%d/%m, %H:%M hs"
+      default: "%A, %d de %B de %Y, %H:%M"
+      long: "%A, %d de %B de %Y, %H:%M"
+      short: "%d/%m, %H:%M"
     pm: pm

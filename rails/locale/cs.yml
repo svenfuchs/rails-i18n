@@ -31,31 +31,31 @@ cs:
     - Lis
     - Pro
     day_names:
-    - Neděle
-    - Pondělí
-    - Úterý
-    - Středa
-    - Čtvrtek
-    - Pátek
-    - Sobota
+    - neděle
+    - pondělí
+    - úterý
+    - středa
+    - čtvrtek
+    - pátek
+    - sobota
     formats:
       default: "%d. %m. %Y"
       long: "%d. %B %Y"
       short: "%d %b"
     month_names:
     - 
-    - Leden
-    - Únor
-    - Březen
-    - Duben
-    - Květen
-    - Červen
-    - Červenec
-    - Srpen
-    - Září
-    - Říjen
-    - Listopad
-    - Prosinec
+    - ledna
+    - února
+    - března
+    - dubna
+    - května
+    - června
+    - července
+    - srpna
+    - září
+    - října
+    - listopadu
+    - prosince
     order:
     - :day
     - :month
