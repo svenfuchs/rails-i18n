@@ -1,5 +1,6 @@
 ## Unreleased
 
+- Luxembourgish (lb), Dzongkha (dz): Fix `date.order` to use `:year`, `:month` and `:day`, so `date_select` no longer raises
 - Fix incorrect `ja.number.currency.format.negative_format` definition
 - Fix constant resolution failures when rules are evaluated in another scope
 - Make Arabic and Lithuanian pluralization faster
