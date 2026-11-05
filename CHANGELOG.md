@@ -26,6 +26,7 @@
 - Latvian (lv): Separate thousands with a space
 - Danish (da): Put the currency unit after the amount
 - Romanian (ro): Use `.` as the `number_to_human` delimiter, since `,` is the decimal separator
+- German (de-AT, de-CH, de-DE): Add missing key (`errors.messages.in`)
 
 ## 8.1.0 (2025-11-24)
 

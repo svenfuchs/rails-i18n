@@ -119,6 +119,7 @@ de-CH:
       exclusion: ist nicht verfügbar
       greater_than: muss grösser als %{count} sein
       greater_than_or_equal_to: muss grösser oder gleich %{count} sein
+      in: muss in %{count} enthalten sein
       inclusion: ist kein gültiger Wert
       invalid: ist nicht gültig
       less_than: muss kleiner als %{count} sein
