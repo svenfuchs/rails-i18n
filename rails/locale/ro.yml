@@ -174,7 +174,7 @@ ro:
           trillion: trilion
           unit: ''
       format:
-        delimiter: ","
+        delimiter: "."
         precision: 3
         significant: true
         strip_insignificant_zeros: true
@@ -191,7 +191,7 @@ ro:
           tb: TB
     percentage:
       format:
-        delimiter: ","
+        delimiter: "."
     precision:
       format:
         delimiter: ''
