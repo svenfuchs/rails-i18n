@@ -20,6 +20,7 @@
 - Welsh (cy): restore pluralization from 7.0.5 since locale was re-added in 7.0.9
 - Scottish Gaelic (gd): Remove duplicate `one` key from `datetime.distance_in_words.less_than_x_minutes`
 - German (de-AT, de-CH, de-DE): Add missing key (`errors.messages.in`)
+- Add missing require of `bigdecimal/util` before use of `Numeric#to_d` in one/few/other rule used for `bs`, `hr` and `sr` #1188
 
 ## 8.1.0 (2025-11-24)
 

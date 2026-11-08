@@ -1,3 +1,5 @@
+require 'bigdecimal/util'
+
 module RailsI18n
   module Pluralization
     module OneFewOther
