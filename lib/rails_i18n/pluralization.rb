@@ -113,7 +113,7 @@ module RailsI18n
     module Macedonian
       def self.rule
         lambda do |n|
-          if n.is_a?(Numeric) && n % 10 == 1 && n != 11
+          if n.is_a?(Numeric) && n % 10 == 1 && n % 100 != 11
             :one
           else
             :other
