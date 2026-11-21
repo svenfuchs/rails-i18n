@@ -214,7 +214,6 @@ describe 'Pluralization rule for' do
     end
   end
 
-  # TODO http://unicode.org/cldr/trac/ticket/3426
   describe 'Macedonian', :locale => :mk do
     it_behaves_like 'an ordinary pluralization rule'
 
@@ -223,14 +222,14 @@ describe 'Pluralization rule for' do
       plural_keys.should include(:one, :other)
     end
 
-    [1, 21, 31, 41, 51, 61, 101, 111, 131].each do |count|
+    [1, 21, 31, 41, 51, 61, 101, 121, 131, 1001, 21.0].each do |count|
       it "detects that #{count.inspect} in category 'one'" do
         rule.call(count).should == :one
       end
     end
 
-    [0, 0.4, 1.7, 2, 7, 10, 11, 15, 20, 27, 33, 46, 70, 122.7, nil,
-     "abc"].each do |count|
+    [0, 0.4, 1.7, 2, 7, 10, 11, 15, 20, 27, 33, 46, 70, 111, 211, 1011,
+     122.7, nil, "abc"].each do |count|
       it "detects that #{count.inspect} in category 'other'" do
         rule.call(count).should == :other
       end
