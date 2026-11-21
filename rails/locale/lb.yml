@@ -59,9 +59,9 @@ lb:
     - November
     - Dezember
     order:
-    - :Joer
-    - :Mount
-    - :Dag
+    - :year
+    - :month
+    - :day
   datetime:
     distance_in_words:
       about_x_hours:

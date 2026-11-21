@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 require 'thor'
+require 'yaml'
 require 'spec_helper'
 require_relative '../../rails/test/lib/check_locales.rb'
 
@@ -16,4 +17,14 @@ describe "Locale files" do
     expect(CheckLocales.orphan_locales).to be_empty
   end
 
-end 
+  # Rails raises in date_select/datetime_select when date.order has anything
+  # other than :year, :month and :day
+  it "date.order should only contain year, month and day" do
+    invalid = Dir[File.expand_path('../../../rails/locale/*.yml', __FILE__)].select do |file|
+      order = YAML.unsafe_load_file(file).values.first.dig('date', 'order')
+      order && order.map(&:to_sym).sort != [:day, :month, :year]
+    end
+    expect(invalid.map { |file| File.basename(file) }).to be_empty
+  end
+
+end
