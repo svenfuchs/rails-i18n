@@ -106,6 +106,9 @@ tr:
       day: Gün
       month: Ay
       year: Yıl
+    relative:
+      future: "%{time} sonra"
+      past: "%{time} önce"
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -118,6 +121,7 @@ tr:
       exclusion: kullanılamaz
       greater_than: "%{count} sayısından büyük olmalı"
       greater_than_or_equal_to: "%{count} sayısına eşit veya büyük olmalı"
+      in: "%{count} aralığında olmalı"
       inclusion: kabul edilen bir kelime değil
       invalid: geçersiz
       less_than: "%{count} sayısından küçük olmalı"
@@ -127,6 +131,7 @@ tr:
       not_an_integer: tam sayı olmalı
       odd: tek olmalı
       other_than: "%{count} karakterden oluşamaz"
+      password_too_long: çok uzun
       present: boş bırakılmalı
       required: doldurulmalı
       taken: hali hazırda kullanılmakta
@@ -156,6 +161,7 @@ tr:
       format:
         delimiter: "."
         format: "%n %u"
+        negative_format: "-%n %u"
         precision: 2
         separator: ","
         significant: false
@@ -164,6 +170,7 @@ tr:
     format:
       delimiter: "."
       precision: 2
+      round_mode: default
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -188,10 +195,13 @@ tr:
           byte:
             one: Bayt
             other: Bayt
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
+          zb: ZB
     percentage:
       format:
         delimiter: ''
