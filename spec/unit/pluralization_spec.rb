@@ -124,6 +124,28 @@ describe 'Pluralization rule for' do
     it_behaves_like 'one-other forms language'
   end
 
+  describe 'Icelandic', :locale => :is do
+    it_behaves_like 'an ordinary pluralization rule'
+
+    it 'has "one" and "other" plural keys' do
+      plural_keys.size.should == 2
+      plural_keys.should include(:one, :other)
+    end
+
+    [1, 21, 31, 41, 51, 61, 101, 121, 1001, 21.0].each do |count|
+      it "detects that #{count.inspect} in category 'one'" do
+        rule.call(count).should == :one
+      end
+    end
+
+    [0, 0.4, 1.7, 2, 5, 10, 11, 20, 22, 37, 40, 111, 211, 1011, 123,
+     nil, "abc"].each do |count|
+      it "detects that #{count.inspect} in category 'other'" do
+        rule.call(count).should == :other
+      end
+    end
+  end
+
   describe 'Odiya', :locale => :or do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'one(with zero)-other forms language'

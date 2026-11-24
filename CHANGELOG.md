@@ -21,6 +21,7 @@
 - Scottish Gaelic (gd): Remove duplicate `one` key from `datetime.distance_in_words.less_than_x_minutes`
 - German (de-AT, de-CH, de-DE): Add missing key (`errors.messages.in`)
 - Add missing require of `bigdecimal/util` before use of `Numeric#to_d` in one/few/other rule used for `bs`, `hr` and `sr` #1188
+- Icelandic (is): Pluralize 21, 31, 101, … as `one`, like 1 (CLDR)
 
 ## 8.1.0 (2025-11-24)
 

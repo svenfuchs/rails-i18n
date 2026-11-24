@@ -64,6 +64,18 @@ module RailsI18n
       end
     end
 
+    module Icelandic
+      def self.rule
+        lambda do |n|
+          if n.is_a?(Numeric) && n % 10 == 1 && n % 100 != 11
+            :one
+          else
+            :other
+          end
+        end
+      end
+    end
+
     module Lithuanian
       FROM_2_TO_9 = (2..9).to_a.freeze
       FROM_11_TO_19 = (11..19).to_a.freeze
