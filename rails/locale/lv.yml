@@ -166,7 +166,7 @@ lv:
   number:
     currency:
       format:
-        delimiter: "."
+        delimiter: " "
         format: "%n %u"
         precision: 2
         separator: ","
@@ -174,7 +174,7 @@ lv:
         strip_insignificant_zeros: false
         unit: "€"
     format:
-      delimiter: "."
+      delimiter: " "
       precision: 2
       separator: ","
       significant: false

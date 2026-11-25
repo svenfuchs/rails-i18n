@@ -166,7 +166,7 @@ cs:
         strip_insignificant_zeros: false
         unit: Kč
     format:
-      delimiter: "."
+      delimiter: " "
       precision: 3
       separator: ","
       significant: false

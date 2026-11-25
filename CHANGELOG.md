@@ -1,10 +1,13 @@
 ## Unreleased
 
 - Fix incorrect `ja.number.currency.format.negative_format` definition
+- Polish (pl): Keep both decimals in currency amounts
 - Fix constant resolution failures when rules are evaluated in another scope
 - Make Arabic and Lithuanian pluralization faster
+- Slovenian (sl): Put the currency unit after the amount
 - Update to Rails 8.1.x, and run `thor locales:normalize_from_rails`
 - English: Add missing keys
+- Romanian (ro): Use `.` as the percentage delimiter, since `,` is the decimal separator
 - English (en-GB): Use slashes in the default date format
 - Spanish: Add missing keys
 - Portuguese: Add missing keys
@@ -19,6 +22,10 @@
 - Welsh (cy): Corrections for strings containing 'two'
 - Welsh (cy): restore pluralization from 7.0.5 since locale was re-added in 7.0.9
 - Scottish Gaelic (gd): Remove duplicate `one` key from `datetime.distance_in_words.less_than_x_minutes`
+- Czech (cs): Separate thousands with a space in numbers, as currency amounts already do
+- Latvian (lv): Separate thousands with a space
+- Danish (da): Put the currency unit after the amount
+- Romanian (ro): Use `.` as the `number_to_human` delimiter, since `,` is the decimal separator
 - German (de-AT, de-CH, de-DE): Add missing key (`errors.messages.in`)
 - Turkish (tr): Add missing keys (`datetime.relative`, `errors.messages.in`, `errors.messages.password_too_long`, `number.currency.format.negative_format`, `number.format.round_mode`, storage units)
 - Add missing require of `bigdecimal/util` before use of `Numeric#to_d` in one/few/other rule used for `bs`, `hr` and `sr` #1188
