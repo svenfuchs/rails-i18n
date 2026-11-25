@@ -57,9 +57,9 @@ dz:
     - ཟླཝ་བཅུ་གཅིག་པ
     - ཟླཝ་བཅུ་གཉིས་པ
     order:
-    - :ལོ
-    - :ཟླཝ
-    - :ཉིནམ
+    - :year
+    - :month
+    - :day
   datetime:
     distance_in_words:
       about_x_hours:
