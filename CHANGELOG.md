@@ -7,15 +7,21 @@
 - English: Add missing keys
 - English (en-GB): Use slashes in the default date format
 - Spanish: Add missing keys
+- Czech (cs): Use lowercase day names, and month names in the genitive case used in dates
 - Portuguese: Add missing keys
 - Traditional Chinese (zh-TW): Add missing keys (`datetime.relative`, `errors.messages.in`, `errors.messages.password_too_long`, `number.currency.format.negative_format`, `number.format.round_mode`, storage units) and update translations
+- Slovak (sk): Use lowercase day names, and month names in the genitive case used in dates
 - Translate ordinals: (nl, nl-NL, nl-BE)
 - English (en, en-\*): Add new key (`datetime.relative`, see rails/rails#55405)
+- Greek (el, el-CY): Use month names in the genitive case used in dates
 - German (de, de-\*): Add new key (`datetime.relative`, see rails/rails#55405)
 - Portuguese (pt, pt-\*): Add new key (`datetime.relative`, see rails/rails#55405)
+- Ukrainian (uk): Use lowercase month names
 - Spanish (es, es-\*): Add new key (`datetime.relative`, see rails/rails#55405)
 - Dutch (nl): Add missing key (`number.currency.format.negative_format`)
+- Portuguese (pt): Remove the `h` and `hs` suffixes from time formats
 - Hungarian (hu): Add delimiter (space) to currency
+- Bulgarian (bg): End the long date format with "г."
 - Welsh (cy): Corrections for strings containing 'two'
 - Welsh (cy): restore pluralization from 7.0.5 since locale was re-added in 7.0.9
 - Scottish Gaelic (gd): Remove duplicate `one` key from `datetime.distance_in_words.less_than_x_minutes`
