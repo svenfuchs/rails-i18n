@@ -1,3 +1,7 @@
-require 'rails_i18n/common_pluralizations/one_other'
+require 'rails_i18n/pluralization'
 
-::RailsI18n::Pluralization::OneOther.with_locale(:is)
+{ :is => {
+    :'i18n' => {
+      :plural => {
+        :keys => [:one, :other],
+        :rule => ::RailsI18n::Pluralization::Icelandic.rule }}}}
