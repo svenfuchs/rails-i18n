@@ -1,3 +1,3 @@
-require 'rails_i18n/common_pluralizations/one_with_zero_other'
+require 'rails_i18n/common_pluralizations/one_other'
 
-::RailsI18n::Pluralization::OneWithZeroOther.with_locale(:ml)
+::RailsI18n::Pluralization::OneOther.with_locale(:ml)
