@@ -148,7 +148,7 @@ describe 'Pluralization rule for' do
 
   describe 'Odiya', :locale => :or do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'one(with zero)-other forms language'
+    it_behaves_like 'one-other forms language'
   end
 
   describe 'Indonesian', :locale => :id do
@@ -267,6 +267,16 @@ describe 'Pluralization rule for' do
   describe 'Malay', :locale => :ms do
     it_behaves_like 'an ordinary pluralization rule'
     it_behaves_like 'other form language'
+  end
+
+  describe 'Malayalam', :locale => :ml do
+    it_behaves_like 'an ordinary pluralization rule'
+    it_behaves_like 'one-other forms language'
+  end
+
+  describe 'Marathi', :locale => :'mr-IN' do
+    it_behaves_like 'an ordinary pluralization rule'
+    it_behaves_like 'one-other forms language'
   end
 
   # http://unicode.org/cldr/trac/ticket/4187
