@@ -149,7 +149,7 @@ hu:
       delimiter: " "
       precision: 2
       separator: ","
-      significant: true
+      significant: false
       strip_insignificant_zeros: true
     human:
       decimal_units:
