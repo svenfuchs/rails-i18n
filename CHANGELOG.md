@@ -37,6 +37,7 @@
 - Macedonian (mk): Put a non-breaking space before the percent sign
 - Norwegian Bokmål (nb): Put a non-breaking space before the percent sign
 - Norwegian Nynorsk (nn): Put a non-breaking space before the percent sign
+- Occitan (oc): Fix the percentage format, written as its delimiter, and put a narrow non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
