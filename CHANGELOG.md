@@ -25,6 +25,7 @@
 - Icelandic (is): Pluralize 21, 31, 101, … as `one`, like 1 (CLDR)
 - Belarusian (be): Put a non-breaking space before the percent sign
 - Czech (cs): Put a non-breaking space before the percent sign
+- German (Austria) (de-AT): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
