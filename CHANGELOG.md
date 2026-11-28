@@ -40,6 +40,7 @@
 - Occitan (oc): Fix the percentage format, written as its delimiter, and put a narrow non-breaking space before the percent sign
 - Romanian (ro): Put a non-breaking space before the percent sign
 - Russian (ru): Put a non-breaking space before the percent sign
+- Slovak (sk): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
