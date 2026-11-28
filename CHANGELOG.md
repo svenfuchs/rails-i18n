@@ -32,6 +32,7 @@
 - French (France) (fr-FR): Put a non-breaking space before the percent sign
 - Galician (gl): Put a non-breaking space before the percent sign
 - Croatian (hr): Put a non-breaking space before the percent sign
+- Luxembourgish (lb): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
