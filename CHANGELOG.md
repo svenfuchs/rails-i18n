@@ -27,6 +27,7 @@
 - Czech (cs): Put a non-breaking space before the percent sign
 - German (Austria) (de-AT): Put a non-breaking space before the percent sign
 - Finnish (fi): Put a non-breaking space before the percent sign
+- French (fr): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
