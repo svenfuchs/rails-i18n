@@ -24,6 +24,7 @@
 - Add missing require of `bigdecimal/util` before use of `Numeric#to_d` in one/few/other rule used for `bs`, `hr` and `sr` #1188
 - Icelandic (is): Pluralize 21, 31, 101, … as `one`, like 1 (CLDR)
 - Belarusian (be): Put a non-breaking space before the percent sign
+- Czech (cs): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
