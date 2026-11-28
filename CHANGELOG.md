@@ -43,6 +43,7 @@
 - Slovak (sk): Put a non-breaking space before the percent sign
 - Slovenian (sl): Put a non-breaking space before the percent sign
 - Swedish (Sweden) (sv-SE): Put a non-breaking space before the percent sign
+- Tatar (tt): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
