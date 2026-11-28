@@ -185,6 +185,7 @@ mk:
     percentage:
       format:
         delimiter: ''
+        format: "%n %"
     precision:
       format:
         delimiter: ''
