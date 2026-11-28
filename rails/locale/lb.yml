@@ -194,7 +194,7 @@ lb:
     percentage:
       format:
         delimiter: ''
-        format: "%n%"
+        format: "%n %"
     precision:
       format:
         delimiter: ''

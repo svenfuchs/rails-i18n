@@ -194,7 +194,8 @@ oc:
           tb: To
     percentage:
       format:
-        delimiter: "%n%"
+        delimiter: ''
+        format: "%n %"
     precision:
       format:
         delimiter: ''

@@ -18,6 +18,11 @@ Dir.glob('rails/locale/*.yml') do |locale_file|
     # are found in Rails 5.x.
     it { should_not have_missing_particular_pluralization_keys }
     it { should have_keys_for_restrict_dependent_destroy }
+
+    it 'does not use a percentage format as the percentage delimiter' do
+      delimiter = YAML.load_file(locale_file).values.first.dig('number', 'percentage', 'format', 'delimiter')
+      delimiter.to_s.should_not include('%n')
+    end
   end
 end
 

@@ -23,6 +23,27 @@
 - Turkish (tr): Add missing keys (`datetime.relative`, `errors.messages.in`, `errors.messages.password_too_long`, `number.currency.format.negative_format`, `number.format.round_mode`, storage units)
 - Add missing require of `bigdecimal/util` before use of `Numeric#to_d` in one/few/other rule used for `bs`, `hr` and `sr` #1188
 - Icelandic (is): Pluralize 21, 31, 101, … as `one`, like 1 (CLDR)
+- Belarusian (be): Put a non-breaking space before the percent sign
+- Czech (cs): Put a non-breaking space before the percent sign
+- German (Austria) (de-AT): Put a non-breaking space before the percent sign
+- Finnish (fi): Put a non-breaking space before the percent sign
+- French (fr): Put a non-breaking space before the percent sign
+- French (Canada) (fr-CA): Put a non-breaking space before the percent sign
+- French (France) (fr-FR): Put a non-breaking space before the percent sign
+- Galician (gl): Put a non-breaking space before the percent sign
+- Croatian (hr): Put a non-breaking space before the percent sign
+- Luxembourgish (lb): Put a non-breaking space before the percent sign
+- Lithuanian (lt): Put a non-breaking space before the percent sign
+- Macedonian (mk): Put a non-breaking space before the percent sign
+- Norwegian Bokmål (nb): Put a non-breaking space before the percent sign
+- Norwegian Nynorsk (nn): Put a non-breaking space before the percent sign
+- Occitan (oc): Fix the percentage format, written as its delimiter, and put a narrow non-breaking space before the percent sign
+- Romanian (ro): Put a non-breaking space before the percent sign
+- Russian (ru): Put a non-breaking space before the percent sign
+- Slovak (sk): Put a non-breaking space before the percent sign
+- Slovenian (sl): Put a non-breaking space before the percent sign
+- Swedish (Sweden) (sv-SE): Put a non-breaking space before the percent sign
+- Tatar (tt): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
