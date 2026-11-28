@@ -33,6 +33,7 @@
 - Galician (gl): Put a non-breaking space before the percent sign
 - Croatian (hr): Put a non-breaking space before the percent sign
 - Luxembourgish (lb): Put a non-breaking space before the percent sign
+- Lithuanian (lt): Put a non-breaking space before the percent sign
 
 ## 8.1.0 (2025-11-24)
 
